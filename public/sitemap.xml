@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://www.redbangle.com</loc>
+  <lastmod>2024-07-22T06:18:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.redbangle.com/about/who-we-are</loc>
+  <lastmod>2024-07-22T06:18:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.redbangle.com/about/creative-cloud-platform</loc>
+  <lastmod>2024-07-22T06:18:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.redbangle.com/about/giving-back</loc>
+  <lastmod>2024-07-22T06:18:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.redbangle.com/about/why-the-name-red-bangle</loc>
+  <lastmod>2024-07-22T06:18:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.redbangle.com/collab</loc>
+  <lastmod>2024-07-22T06:18:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.redbangle.com/contact</loc>
+  <lastmod>2024-07-22T06:18:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+</urlset>
