@@ -8,67 +8,91 @@ import styles from '@/styles/sections/Solutions.module.scss'
 
 gsap.registerPlugin(ScrollTrigger)
 const slides = [
-  {
-    key: 0,
-    title: 'B2B GLOBAL',
+    {
+    key: 1,
+    title: 'Design',
     excerpt:
-      'End–to-end creative solutions for global B2B enterprises. Taking brands from strategy and design to global video production, experiential campaigns and AI-enabled content.',
+      'Whether you are looking for a new brand identity system,  unique event branding or well-designed marketing collateral such as white papers and presentations - our design solutions help your brand stand out and spark conversations.',
     video: {
-      src: '/img/b2b_box.webm',
+      src: '/img/design_video.mp4',
+      poster: '/img/services/create-poster.webp',
+      width: '1440',
+      height: '810',
+    },
+    color: 'rgb(51, 51, 51)',
+    buttonName: 'Explore Design Solutions',
+    textColor: '#ffffff',
+    href: '',
+  },
+  {
+    key: 2,
+    title: 'VIDEO',
+    excerpt:
+      'From a strategic approach to planning and growing your YouTube presence to on-demand creative and production solutions around product launch videos, customer testimonials videos, corporate videos, and hiring and culture videos – explore our global creative video services.',
+    video: {
+      src: '/img/case_study_banner_video.mp4',
       // poster: '/img/services/think-poster.webp',
       width: '1440',
       height: '810',
     },
-    color: 'rgb(147 0 0)',
+    color: 'rgb(74, 74, 73)',
+    buttonName: 'Explore Video Solutions',
     textColor: '#ffffff',
-    href: process.env.NEXT_PUBLIC_B2B,
+    // href: process.env.NEXT_PUBLIC_B2B,
+    href: ''
   },
   {
-    key: 1,
-    title: 'B2C INDIA',
+    key: 3,
+    title: 'PODCAST',
     excerpt:
-      'Crafting strategic creative solutions and AI Influencers for ambitious consumer brands in India. Creating cool content IPs targeting Indian GenZs.',
+      'Our podcast conceptualisation, production and distribution framework is a holistic solution for brands and business leaders looking to lead industry conversations, build communities and drive ROI. In fact, an award-winning YouTube show is how our journey began.',
     video: {
       src: '/img/b2c_box.webm',
       // poster: '/img/services/create-poster.webp',
       width: '1440',
       height: '810',
     },
-    color: 'rgb(198, 0, 37)',
+    color: 'rgb(127, 127, 127)',
+    buttonName: 'Explore Podcast Solutions',
     textColor: '#ffffff',
-    href: process.env.NEXT_PUBLIC_B2C,
+    // href: process.env.NEXT_PUBLIC_B2C,
+    href: ''
   },
-  // {
-  //   key: 2,
-  //   title: 'Design',
-  //   excerpt:
-  //     'Experience technology-enabled, scaled video content production services.Go from scripts and storyboards to production across 100 countries.',
-  //   video: {
-  //     src: '/global_box.mp4',
-  //     poster: '/img/services/create-poster.webp',
-  //     width: '1440',
-  //     height: '810',
-  //   },
-  //   color: 'rgb(253, 1, 56)',
-  //   textColor: '#ffffff',
-  //   href: '',
-  // },
-  // {
-  //   key: 3,
-  //   title: 'AI PRODUCTS',
-  //   excerpt:
-  //     'Artificial intelligence solutions that enhance brand communications, and custom-built products that unlock the power of AI for ambitious marketers.',
-  //   video: {
-  //     src: '/img/ai_labs_box.webm',
 
-  //     poster: '/img/services/play-poster.webp',
-  //     width: '1440',
-  //     height: '810',
-  //   },
-  //   color: 'rgb(253, 2, 56)',
-  //   textColor: '#ffffff',
-  //   href: '',
-  // },
+  {
+    key: 4,
+    title: 'CAMPAIGN',
+    excerpt:
+      'From 360-degree campaigns to digital campaigns, outdoor and print campaigns, AI-first and interactive campaigns, and social media campaigns - our creative strategy is rooted in a simple yet powerful human insight unique to your brand and product/service.',
+    video: {
+      src: '/img/makers_campaign.mp4',
+
+      poster: '/img/services/play-poster.webp',
+      width: '1440',
+      height: '810',
+    },
+    color: 'rgb(156, 159, 175)',
+    buttonName: 'Explore Campaign Services',
+    textColor: '#ffffff',
+    href: '',
+  },
+  {
+    key: 5,
+    title: 'BOOK A CREW',
+    excerpt:
+      'On-demand professional video crews across 100 countries. Be it a one-camera shoot, a multi-camera multi-location production or a studio-shoot – we curate crews, book locations, manage the production, and quality-check the footage before it hits your inbox.',
+    video: {
+      src: '/img/crew-preview.mp4',
+
+      poster: '/img/services/play-poster.webp',
+      width: '1440',
+      height: '810',
+    },
+    color: 'rgb(188, 192, 183)',
+    buttonName: 'Get Video Crew Services',
+    textColor: '#ffffff',
+    href: '',
+  },
 ]
 const sReverse = slides
 export const SolutionsSection = () => {
@@ -94,7 +118,7 @@ export const SolutionsSection = () => {
     const mm = gsap.matchMedia()
     mm.add('(min-width:768px)', () => {
       // console.log(window.innerHeight)
-      const totalDuration = 2 * window.innerHeight
+      const totalDuration = 5 * window.innerHeight
       const n = sections.length
       const singleDuration = totalDuration / n
       // gsap.set(contents, { autoAlpha: 0 })
@@ -114,17 +138,17 @@ export const SolutionsSection = () => {
           trigger: container,
           start: () => `top+=200px -=${singleDuration * (i - 1)}`,
           end: () =>
-            i == 2 ? `bottom top+=${singleDuration}` : `+=${singleDuration}`,
+            i == 4 ? `bottom top+=${singleDuration}` : `+=${singleDuration}`,
           markers: false,
           toggleActions: 'play none play reverse ',
         }
 
-        // Check if the current slide is the third one (index 2)
-        if (i === 3) {
-          // Increase the duration for the third slide
-          scrollTriggerSettings.end = () =>
-            `bottom top+=${singleDuration * 1.5}`
-        }
+        // // Check if the current slide is the third one (index 2)
+        // if (i === 3) {
+        //   // Increase the duration for the third slide
+        //   scrollTriggerSettings.end = () =>
+        //     `bottom top+=${singleDuration * 1.5}`
+        // }
 
         const tl = gsap.timeline({
           scrollTrigger: {
@@ -264,39 +288,14 @@ export const SolutionsSection = () => {
                       >
                         {s.excerpt}
                       </p>
-                      {/* <Button
-                        intent="secondary"
-                        suffix={s.title != 'AI PRODUCTS' && <LineArrow hover />}
-                        href={s.href}
-                        className={`w-full md:w-auto md:max-w-max ${s.title === 'AI PRODUCTS' ? 'cursor-none' : ''}`}
-                        style={{ color: s.textColor, borderColor: s.textColor }}
-                      >
-                        {s.title === 'AI PRODUCTS' ? 'COMING SOON' : 'LEARN MORE'}
-                      </Button> */}
-                      {s.title === 'AI PRODUCTS' ? (
-                        <span
-                          className="uppercase group/button flex items-center justify-center whitespace-nowrap transition-colors border-2 text-white h-11 md:h-15 text-xs leading-4.5 md:text-base font-bold rounded-8.5 py-5 px-8 w-full md:w-auto md:max-w-max cursor-none"
-                          style={{
-                            color: s.textColor,
-                            borderColor: s.textColor,
-                          }}
-                        >
-                          COMING SOON
-                        </span>
-                      ) : (
-                        <Button
+                      <Button
                           intent="secondary"
                           suffix={<LineArrow hover />}
                           href={s.href}
                           className="w-full md:w-auto md:max-w-max"
-                          style={{
-                            color: s.textColor,
-                            borderColor: s.textColor,
-                          }}
-                        >
-                          LEARN MORE
+                          style={{color: s.textColor, borderColor: s.textColor}}>
+                          {s.buttonName}
                         </Button>
-                      )}
                     </div>
                   </div>
                 </div>
