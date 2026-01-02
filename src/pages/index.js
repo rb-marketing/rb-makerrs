@@ -182,7 +182,7 @@ const LandPage = () => {
     id: 0,
     countUpProps: {
       value: 60,
-      suffix: <span className="text-rb-red"></span>,
+      suffix: <span className="text-rb-red">+</span>,
     },
     text: (
       <span className="md:max-w-[188px]">
@@ -834,7 +834,7 @@ const TNC = [
       <section className="bg-white pt-18 md:pt-30 pb-18 md:pb-30">
         <div className="container">
           <LineHeading className="mb-6 md:mb-7.5">WHY TRY MAKERRS</LineHeading>
-          <div className="max-w-[1046px]">
+          <div className="max-w-[1090px]">
             <RevealText text="We know what it takes to deliver brand differentiation and engagement in the AI era. Our bold creative teams and borderless execution across videos, podcasts, campaigns and design help you scale your business - be it for B2B, B2C or D2C." />
           </div>
           <Button
@@ -878,7 +878,7 @@ const TNC = [
 
     <Testimonials
       title={'WHAT OUR COLLABORATORS SAY'}
-      className="py-18 md:py-30"
+      className="pt-18 pb-7.5 md:pt-30 md:pb-15"
       testimonialData={createTestimonialData}
       type="semi"
     />
