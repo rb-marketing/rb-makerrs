@@ -1,10 +1,11 @@
 import { SEO } from '@/components/shared/SEO'
-import { SolutionsSection, Marquee, VideoModal } from '@/components/shared'
+import { SolutionsSection, Marquee, VideoModal, RollupNumber, Testimonials } from '@/components/shared'
 import { Button } from '@/components/ui'
 import { LineArrow } from '@/components/icons'
 import { LineHeading, RevealText } from '@/components/shared'
 import { useRef, useState, useEffect } from 'react'
 import { gsap } from 'gsap'
+import statstyles from '@/styles/sections/StatsSection.module.scss'
 
 import styles from '@/styles/home.module.scss'
 const LandPage = () => {
@@ -31,8 +32,16 @@ const LandPage = () => {
       alt: 'indeed',
       className: '',
     },
-    {
+     {
       id: 3,
+      name: 'pudingding.png',
+      width: '100',
+      height: '30',
+      alt: 'pudingding',
+      className: '',
+    },
+    {
+      id: 4,
       name: 'taneria.png',
       width: '132',
       height: '36',
@@ -40,74 +49,68 @@ const LandPage = () => {
       className: '',
     },
     {
-      id: 4,
-      name: 'swiggy.svg',
-      width: '157',
-      height: '39',
-      alt: 'swiggy',
-    },
-    {
       id: 5,
-      name: 'bosch.webp',
-      width: '151',
-      height: '33',
-      alt: 'bosch',
-    },
-    {
-      id: 6,
       name: 'general-electric.png',
       width: '200',
       height: '150',
       alt: 'general-electric',
     },
     {
+      id: 6,
+      name: 'darwinbox.webp',
+      width: '132',
+      height: '36',
+      alt: 'darwinbox',
+      className: '',
+    },
+     {
       id: 7,
-      name: 'Tanishq.png',
-      width: '80',
-      height: '67',
-      alt: 'Tanishq',
-    },
-    {
-      id: 8,
-      name: 'vivo.png',
-      width: '127',
-      height: '52',
-      alt: 'vivo',
-    },
-    {
-      id: 9,
-      name: 'l74-logo.png',
-      width: '60px',
-      // height: '67px',
-      alt: 'l74-logo',
-    },
-    {
-      id: 10,
       name: 'itc.png',
       width: '60px',
       // height: '30px',
       alt: 'itc',
     },
     {
-      id: 11,
+      id: 8,
       name: 'wipro.svg',
       width: '83',
       height: '66',
       alt: 'Wipro',
     },
     {
-      id: 12,
+      id: 9,
       name: 'mumbai-indians.png',
       width: '100px',
       // height: '40px',
       alt: 'mumbai-indians',
     },
     {
-      id: 13,
+      id: 10,
       name: 'sequoia.png',
       width: '167',
       height: '52',
       alt: 'sequoia',
+    },
+    {
+      id: 11,
+      name: 'swiggy.svg',
+      width: '157',
+      height: '39',
+      alt: 'swiggy',
+    },
+    {
+      id: 12,
+      name: 'Tanishq.png',
+      width: '80',
+      height: '67',
+      alt: 'Tanishq',
+    },
+    {
+      id: 13,
+      name: 'bosch.webp',
+      width: '151',
+      height: '33',
+      alt: 'bosch',
     },
     {
       id: 14,
@@ -116,42 +119,223 @@ const LandPage = () => {
       height: '52',
       alt: 'slb',
     },
-    {
+     {
       id: 15,
-      name: 'my-11-circle.webp',
-      width: '154',
-      height: '42',
-      alt: 'my-11-circle',
-    },
-    {
-      id: 16,
       name: 'dara.png',
       width: '200',
       height: '150',
       alt: 'dara',
     },
     {
-      id: 17,
+      id: 16,
       name: 'vymo-logo.webp',
       width: '127',
       height: '52',
       alt: 'vymo-logo',
     },
     {
-      id: 18,
+      id: 17,
       name: 'exicom.png',
       width: '163',
       height: '44',
       alt: 'exicom',
     },
     {
-      id: 19,
+      id: 18,
       name: 'treebo.png',
       width: '163',
       height: '44',
       alt: 'treebo',
     },
+    {
+      id: 19,
+      name: 'virtusa.png',
+      width: '120',
+      height: '44',
+      alt: 'virtusa',
+    },
+    {
+      id: 20,
+      name: 'bagmane.png',
+      width: '140',
+      height: '44',
+      alt: 'bagmane',
+    },
+    {
+      id: 21,
+      name: 'komatsu.png',
+      width: '140',
+      height: '44',
+      alt: 'komatsu',
+    },
+    {
+      id: 22,
+      name: 'aarki.png',
+      width: '140',
+      height: '44',
+      alt: 'aarki',
+    },
   ]
+   const stats = [
+    {
+      id: 0,
+      countUpProps: {
+        value: 60,
+        suffix: (
+          <div className="inline-flex">
+            {/* K <span className="text-rb-red">+</span> */}
+          </div>
+        ),
+      },
+      text: (
+        <span className="">
+          Change count of 
+          <br />
+          brands
+        </span>
+      ),
+    },
+    {
+      id: 1,
+      countUpProps: {
+        value: 4,
+        suffix: (
+          <div className="inline-flex">
+            K <span className="text-rb-red">+</span>
+          </div>
+        ),
+      },
+      text: (
+        <>
+          Change video numbers
+        </>
+      ),
+    }
+  ]
+  const createTestimonialData = [
+    {
+    key: 0,
+    quote:
+      'We are delighted to team up with Red Bangle to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Red Bangle to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+    name: 'ALINA PATRAHAU',
+    designation: 'FOUNDER',
+    company: 'DARUIESTE ARIPI',
+    image: {
+      srcSet:
+        `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+      sizes: '(max-width:768px) 533px, 1066px',
+    },
+  },
+  {
+    key: 1,
+    quote:
+        <>
+        Red Bangle was especially impressive with their creative strategy, design, and copy. They took the quirk and the energy of local markets and their iconic signs and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it has translated into a love for the product itself.
+        </>,
+    name: 'KUNCHERIA MARATTUKALAM',
+    designation: 'FOUNDER & DIRECTOR',
+    company: 'Maratt Group',
+    image: {
+        srcSet:
+
+            `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+    },
+    },
+    {
+    key: 2,
+    quote:
+      'We partnered with Red Bangle to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+
+    designation: 'VP INTERNAL COMMUNICATIONS',
+    company: 'FORTUNE 100 ITES ENTERPRISE',
+    image: {
+      srcSet:
+        `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
+      sizes: '(max-width:768px) 533px, 1066px',
+    },
+  },
+{
+    key: 3,
+    quote:
+      'The Red Bangle team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
+    name: 'ROSHAN CARIAPPA',
+    designation: 'VICE-PRESIDENT MARKETING',
+    company: 'VYMO',
+    image: {
+      srcSet:
+        `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
+      sizes: '(max-width:768px) 533px, 1066px',
+    },
+  },
+  {
+    key: 4,
+    quote:
+      'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Red Bangle supported us on the ground and even helped us manage our golfing ambassador. Thanks team!',
+    name: 'MATT WALKINGTON',
+    designation: 'Account Director',
+    company: 'BRIGHT PARTNERSHIPS',
+    image: {
+      srcSet:
+        `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
+      sizes: '(max-width:768px) 533px, 1066px',
+    },
+  },
+  {
+    key: 5,
+    quote:
+      <>Red Bangle brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
+      </>,
+    name: 'Rinku Agarwal Basu',
+    designation: 'COO',
+    company: 'Lillia Care',
+    image: {
+      srcSet:
+
+        `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
+      sizes: '(max-width:768px) 533px, 1066px',
+    },
+  },
+{
+    key: 6,
+    quote:
+      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Red Bangle has given us a brand bursting with character and joy!',
+    name: 'NAKUL KULKARNI',
+    designation: ' CO-FOUNDER',
+    company: 'P.U. DINGDING',
+    image: {
+      srcSet:
+        `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
+      sizes: '(max-width:768px) 533px, 1066px',
+    },
+  },
+  {
+    key: 7,
+    quote:
+      'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
+    name: 'MARC IRAWAN',
+    designation: 'Founder',
+    company: 'COLEARN',
+    image: {
+      srcSet:
+        `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
+      sizes: '(max-width:768px) 533px, 1066px',
+    },
+  },
+  {
+    key: 8,
+    quote:
+      'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Red Bangle.',
+    name: 'SUNIL SURESH',
+    designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
+    company: 'CAPILLARY TECHNOLOGIES',
+    image: {
+      srcSet:
+        `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+      sizes: '(max-width:768px) 533px, 1066px',
+    },
+  },
+]
   const heroSection = useRef()
   useEffect(() => {
     const mm = gsap.matchMedia()
@@ -308,13 +492,12 @@ const LandPage = () => {
           <div>
             <div className={` ${styles.title}`}>
               <span className={`${styles.ltor}`}>
-                The
-                <span className="hidden md:inline"> AI-First</span>
+                <span className="hidden md:inline"> BORDERLESS</span>
               </span>
             </div>
 
             <div className={` ${styles.title} block md:hidden mt-[-28px]`}>
-              <span className={`${styles.ltor} `}> AI-First</span>
+              <span className={`${styles.ltor} `}> BORDERLESS</span>
             </div>
 
             <div className="banner relative h-[50%] w-full overflow-hidden">
@@ -343,8 +526,7 @@ const LandPage = () => {
           >
             <div>
               <div className="text-rb-black text-[16px] md:text-[24px] leading-[1.5] md:leading-[1.33] tracking-[-0.64px] md:tracking-[-0.96px] font-semibold max-w-[900px]">
-                We are a technology-first independent creative agency. We ask
-                the questions that fuel growth for over 60 brands globally.
+                We help fast-growing businesses build sticky global brands and engaging narratives through videos, podcasts, campaigns and design.
               </div>
               <div className="flex items-center justify-center md:flex-row flex-col md:mt-10 mt-9 md:gap-5 gap-4">
                 <Button
@@ -352,14 +534,14 @@ const LandPage = () => {
                   className="font-bold  w-full md:w-auto !inline-flex"
                   suffix={<LineArrow hover />}
                 >
-                  Get creative solutions
+                  Get creative services
                 </Button>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-12 ">
-          <Marquee duration={50}>
+          <Marquee duration={15}>
             <div className="flex items-center h-[80px] md:h-[70px]">
               {groupIcons.map(({ name, id, ...rest }) => (
                 <div key={id} className="mx-6 md:mx-12 filter grayscale">
@@ -376,7 +558,7 @@ const LandPage = () => {
         </div>
       </section>
 
-      <div
+      {/* <div
         ref={videoRef}
         className={`mt-12 md:mt-8 md:mb-[-2px] video-scroll duration-500 ease-out !overflow-visible lg:h-[200vh] md:h-[150vh] ${
           hasReachedTop ? 'active' : ''
@@ -421,27 +603,13 @@ const LandPage = () => {
           poster="/img/home/why_not_banner.webp"
           className="block md:hidden w-full h-full object-cover"
         ></video>
-
-        {/* <svg
-          className="block play-icon absolute md:hidden opacity-0 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-          width="9"
-          height="10"
-          viewBox="0 0 9 10"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0.570972 0.669922L8.07097 5.00005L0.570971 9.33018L0.570972 0.669922Z"
-            fill="white"
-          />
-        </svg> */}
-      </div>
+      </div> */}
 
       <section className="bg-white pt-18 md:pt-30 pb-18 md:pb-30">
         <div className="container">
-          <LineHeading className="mb-6 md:mb-7.5">Our Manifesto</LineHeading>
+          <LineHeading className="mb-6 md:mb-7.5">WHY TRY MAKERRS</LineHeading>
           <div className="max-w-[1046px]">
-            <RevealText text="We ask the questions that matter the most. Every question is our spark—the thing that flips conventions, fuels fresh ideas and finds answers no one else saw coming. It’s not just how we work; it’s what drives us." />
+            <RevealText text="We know what it takes to deliver brand differentiation and engagement in the AI era. Our bold creative teams and borderless execution across videos, podcasts, campaigns and design help you scale your business - be it for B2B, B2C or D2C." />
           </div>
           <Button
             href="/about/who-we-are"
@@ -456,6 +624,38 @@ const LandPage = () => {
       <div>
         <SolutionsSection />
       </div>
+
+    <section className="bg-white overflow-hidden py-18 md:pt-30 md:pb-0">
+        <div className="container">
+          <LineHeading className="mb-6 md:mb-7.5">We are a borderless creative agency</LineHeading>
+          <div className="grid lg:flex grid-cols-1 md:grid-cols-2 gap-x-5 md:gap-x-[44px] gap-y-12 md:gap-y-6 max-w-[1200px] mx-auto w-full pl-6 md:px-6 ml-0 md:ml-5 md:ml-[3.1rem] transform transform -translate-x-[24px] sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-[7.9rem]">
+            {stats.map((s, i) => (
+              <div
+                className={`w-full lg:w-1/4 text-[42px] leading-14 tracking-[-1.44px] md:text-stat group relative ${statstyles.statline} [&:nth-child(3)]:md:pr-[7px] [&:nth-child(1)]:md:pr-[26px] ${s.id === 3 ? 'md:!pr-[26px] md:!pl-6':''}`}
+                key={s.id}
+              >
+                <div>
+                  <div className={`lg:w-fit lg:mx-auto relative`}>
+                    <div>
+                        <RollupNumber {...s.countUpProps} />
+                      </div>
+                    <div className={`text-sm leading-[17px] md:text-2xl md:leading-7 tracking-normal md:tracking-[-0.96px] text-rb-black mt-0 md:mt-3 font-medium font-everett ${s.id === 0 ? 'md:ml-[5px]':''}`}>
+                      {s.text}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+    </section>
+
+        <Testimonials
+          title={'WHAT OUR COLLABORATORS SAY'}
+          className="py-18 md:py-30"
+          testimonialData={createTestimonialData}
+          type="semi"
+        />
 
       <VideoModal
         open={herovideoOpen}
