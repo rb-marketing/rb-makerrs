@@ -371,29 +371,29 @@ const TNC = [
         </div>
         <h3 className="mt-5 font-semibold  text-base">1. Strategy:</h3>
         <div>
-          We offer a range of strategy services - including brand environment analysis, brand communication strategy, and video content strategy. We blend data, insights and marketing expertise to craft strategies that drive growth for your business.
+          We offer a range of strategy services &ndash; including brand environment analysis, brand communication strategy, and video content strategy. We blend data, insights and marketing expertise to craft strategies that drive growth for your business.
         </div>
         <h3 className="mt-5 font-semibold  text-base">2. Design:</h3>
         <div>
-          We offer a range of design services - from brand identity and event branding, to brand mascots and avatars, print and editorial design, and environmental graphics for corporate offices. We help you build brand differentiation, credibility and human connect through our future-forward design solutions.
+          We offer a range of design services - from brand identity and event branding, to brand mascots and avatars, print and editorial design, and environmental graphics for corporate offices. We help you build brand differentiation, credibility and human connect through our future&ndash;forward design solutions.
         </div>
         <h3 className="mt-5 font-semibold  text-base">3. Videos:</h3>
         <div>
-         We offer strategic and creative video content production services for brand growth. Whether it is driving your YouTube strategy and delivering SEO-first content all year round, crafting your product communications and scaling content for the next 18 months, or creating on-demand case study videos, thought leadership content, product explainer videos, hiring and culture videos, or videos for corporate communications and public relations - our end to end video production services include research, conceptualisation, anywhere production, and endless versioning.
+         We offer strategic and creative video content production services for brand growth. Whether it is driving your YouTube strategy and delivering SEO&ndash;first content all year round, crafting your product communications and scaling content for the next 18 months, or creating on&ndash;demand case study videos, thought leadership content, product explainer videos, hiring and culture videos, or videos for corporate communications and public relations &ndash; our end to end video production services include research, conceptualisation, anywhere production, and endless versioning.
         </div>
         <h3 className="mt-5 font-semibold  text-base">4. Podcast:</h3>
         <div>
-          Our beginnings lay in an award-winning YouTube show. With years of experience running our own show and now having produced several successful podcasts for clients, we have a strong framework for creating your next IP: be it a podcast for your brand or a podcast for you as a business leader. Our end-to-end solutions include research, concept, design, podcast production, publishing, distribution and amplification. And we use modern tools and processes to scale production and publishing as required.
+          Our beginnings lay in an award&ndash;winning YouTube show. With years of experience running our own show and now having produced several successful podcasts for clients, we have a strong framework for creating your next IP: be it a podcast for your brand or a podcast for you as a business leader. Our end&ndash;to&ndash;end solutions include research, concept, design, podcast production, publishing, distribution and amplification. And we use modern tools and processes to scale production and publishing as required.
         </div>
         <h3 className="mt-5 font-semibold  text-base">5. Campaign:</h3>
         <div>
-          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations - we provide comprehensive creative campaign solutions. Whether it's for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns - we support every phase of your brand growth.
+          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations &ndash; we provide comprehensive creative campaign solutions. Whether it's for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns &ndash; we support every phase of your brand growth.
         </div>
         <h3 className="mt-5 font-semibold  text-base">
-          6. On-demand Video Crews or "Book a Crew":
+          6. On&ndash;demand Video Crews or &apos;Book a Crew&apos;:
         </h3>
         <div>
-          We have a strong, curated collaborative of professional video crews available on-demand in 100 countries. Be it a single-camera testimonial shoot or a multi-camera event shoot - our curated video crew services scale to your brief, no matter how many cities and continents. We work closely with your in-house creative teams to help them scale content. Our managed services include crew curation as per your shoot requirement, location booking, artist booking, in-person or remote shoot management, and footage quality checks. 
+          We have a strong, curated collaborative of professional video crews available on&ndash;demand in 100 countries. Be it a single&ndash;camera testimonial shoot or a multi&ndash;camera event shoot &ndash; our curated video crew services scale to your brief, no matter how many cities and continents. We work closely with your in&ndash;house creative teams to help them scale content. Our managed services include crew curation as per your shoot requirement, location booking, artist booking, in&ndash;person or remote shoot management, and footage quality checks. 
         </div>
       </>
     ),
