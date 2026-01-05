@@ -387,7 +387,7 @@ const TNC = [
         </div>
         <h3 className="mt-5 font-semibold  text-base">5. Campaign:</h3>
         <div>
-          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations &ndash; we provide comprehensive creative campaign solutions. Whether it's for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns &ndash; we support every phase of your brand growth.
+          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations &ndash; we provide comprehensive creative campaign solutions. Whether it&apos;s for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns &ndash; we support every phase of your brand growth.
         </div>
         <h3 className="mt-5 font-semibold  text-base">
           6. On&ndash;demand Video Crews or &apos;Book a Crew&apos;:
