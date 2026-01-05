@@ -387,10 +387,10 @@ const TNC = [
         </div>
         <h3 className="mt-5 font-semibold  text-base">5. Campaign:</h3>
         <div>
-          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations - we provide comprehensive creative campaign solutions. Whether it's for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns – we support every phase of your brand growth.
+          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations - we provide comprehensive creative campaign solutions. Whether it's for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns - we support every phase of your brand growth.
         </div>
         <h3 className="mt-5 font-semibold  text-base">
-          6. On-demand Video Crews or ‘Book a Crew’:
+          6. On-demand Video Crews or "Book a Crew":
         </h3>
         <div>
           We have a strong, curated collaborative of professional video crews available on-demand in 100 countries. Be it a single-camera testimonial shoot or a multi-camera event shoot - our curated video crew services scale to your brief, no matter how many cities and continents. We work closely with your in-house creative teams to help them scale content. Our managed services include crew curation as per your shoot requirement, location booking, artist booking, in-person or remote shoot management, and footage quality checks. 
@@ -454,7 +454,7 @@ const TNC = [
         <Link href="https://www.b2b.redbangle.com/contact" className="underline !text-rb-black hover:!text-[#07ef5a]">
           send us a brief
         </Link>{' '}
-        and we’ll set up a meeting at a mutually convenient time.
+        and we&apos;ll set up a meeting at a mutually convenient time.
       </>
     ),
   },

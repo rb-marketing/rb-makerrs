@@ -375,39 +375,46 @@ export const Footer = ({ hasContactForm }) => {
         </>
       )}
 
-      <section className="py-15 md:pt-20 md:pb-8 bg-white">
+       <section className="py-15 md:pt-20 md:pb-8 bg-white">
         <div className="container">
           <div className="flex flex-wrap md:flex-nowrap">
             <div className="w-full lg:w-full">
               <div className="grid gap-y-15 grid-cols-2 md:grid-cols-4 md:gap-x[190px]">
                 <div className="pr-2.5 md:pr-0">
-                  <div className={styles.title}>B2B GLOBAL</div>
+                  <div className={styles.title}>COMPANY</div>
                   <div className={styles.links}>
                     <Link
-                      href={`${b2b}`}
+                      href='/about/who-we-are'
                       data-rb-cursor-state="invisible"
                       className="hover:text-rb-red max-w-max"
                     >
-                      Services
+                      About Us
                     </Link>
                     <Link
-                      href={`${b2b}/work/b2b-video-production-agency`}
+                      href='/about/creative-cloud-platform'
                       data-rb-cursor-state="invisible"
                       className="hover:text-rb-red max-w-max"
                     >
-                      Work
+                      Our Technology
                     </Link>
-                    {/* <Link
-                      href={`${b2b}/collab`}
+                    <Link
+                      href=''
                       data-rb-cursor-state="invisible"
                       className="hover:text-rb-red max-w-max"
                     >
-                      Collab
-                    </Link> */}
+                      Our Impact
+                    </Link>
+                    <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="hover:text-rb-red max-w-max"
+                    >
+                      Our Blog
+                    </Link>
                   </div>
                 </div>
                 <div className="pl-2.5 md:pl-0">
-                  <div className={styles.title}> B2C INDIA</div>
+                  <div className={styles.title}> SERVICES</div>
                   <div className={styles.links}>
                     <Link
                       href={`${b2c}`}
@@ -470,54 +477,54 @@ export const Footer = ({ hasContactForm }) => {
                   </div>
                 </div> */}
                  <div className="pr-2.5 md:pr-0">
-                  <div className={styles.title}>AI LABS</div>
+                  <div className={styles.title}>WORK</div>
                   <div className={styles.links}>
                     <Link
-                      href="/ai-labs/ai-solutions"
+                      href=""
                       data-rb-cursor-state="invisible"
                       className="hover:text-rb-red max-w-max"
                     >
-                      AI Solutions
+                      Design
+                    </Link>
+                    <Link
+                      href=""
+                      data-rb-cursor-state="invisible"
+                      className="hover:text-rb-red max-w-max"
+                    >
+                      Video
+                    </Link>
+                     <Link
+                      href=""
+                      data-rb-cursor-state="invisible"
+                      className="hover:text-rb-red max-w-max"
+                    >
+                      Podcast
+                    </Link>
+                    <Link
+                      href=""
+                      data-rb-cursor-state="invisible"
+                      className="hover:text-rb-red max-w-max"
+                    >
+                      Campaign
+                    </Link>
+                    <Link
+                      href=""
+                      data-rb-cursor-state="invisible"
+                      className="hover:text-rb-red max-w-max"
+                    >
+                      Book a Crew
                     </Link>
                   </div>
                 </div>
                 <div className="pl-2.5 md:pl-0">
-                  <div className={styles.title}>COMPANY</div>
+                  <div className={styles.title}>CONTACT</div>
                   <div className={`${styles.links} md:pl-[2px]`}>
                     <Link
-                      href="/about/who-we-are"
+                      href=""
                       data-rb-cursor-state="invisible"
                       className="hover:text-rb-red max-w-max"
                     >
-                      Who We Are
-                    </Link>
-                    <Link
-                      href="/about/creative-cloud-platform"
-                      data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
-                    >
-                      Technology Platform
-                    </Link>
-                    <Link
-                      href="/about/giving-back"
-                      data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
-                    >
-                      Giving Back
-                    </Link>
-                    <Link
-                      href="/about/why-the-name-red-bangle"
-                      data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
-                    >
-                      Our Name
-                    </Link>
-                    <Link
-                      href="/contact"
-                      data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
-                    >
-                      Contact
+                      Get in Touch
                     </Link>
                      <Link
                       href="/collab"
@@ -525,6 +532,13 @@ export const Footer = ({ hasContactForm }) => {
                       className="hover:text-rb-red max-w-max"
                     >
                      Collab
+                    </Link>
+                    <Link
+                      href="/about/giving-back"
+                      data-rb-cursor-state="invisible"
+                      className="hover:text-rb-red max-w-max"
+                    >
+                     Careers
                     </Link>
                   </div>
                 </div>
