@@ -363,67 +363,37 @@ const LandPage = () => {
 const TNC = [
   {
     key: 0,
-    title: 'What services does your global B2B agency offer?',
+    title: 'What services does your global creative agency offer?',
     content: (
       <>
         <div>
-          Red Bangle offers a range of creative services to global businesses.
+          Makkers offers strategic creative services that help you launch and scale brands across markets. 
         </div>
         <h3 className="mt-5 font-semibold  text-base">1. Strategy:</h3>
         <div>
-          We offer a range of strategy services - including brand environment
-          analysis, brand communication strategy, and video content strategy. We
-          blend data, insights and marketing expertise to craft strategies that
-          drive growth for your B2B enterprise.
+          We offer a range of strategy services - including brand environment analysis, brand communication strategy, and video content strategy. We blend data, insights and marketing expertise to craft strategies that drive growth for your business.
         </div>
         <h3 className="mt-5 font-semibold  text-base">2. Design:</h3>
         <div>
-          We offer a range of design services. From brand identity and
-          experiences, to mascots, print and editorial collateral, to wall
-          graphics for corporate offices. We help you build brand
-          differentiation, credibility and human connect through our design
-          solutions.
+          We offer a range of design services - from brand identity and event branding, to brand mascots and avatars, print and editorial design, and environmental graphics for corporate offices. We help you build brand differentiation, credibility and human connect through our future-forward design solutions.
         </div>
         <h3 className="mt-5 font-semibold  text-base">3. Videos:</h3>
         <div>
-          We offer a wide range of content services for brand growth. Whether it
-          is case study videos, thought leadership content, product explainer
-          videos, hiring and culture videos, or videos for corporate
-          communications and public relations. We offer end to end video
-          production services, including research, conceptualisation, anywhere
-          production, and endless versioning.
+         We offer strategic and creative video content production services for brand growth. Whether it is driving your YouTube strategy and delivering SEO-first content all year round, crafting your product communications and scaling content for the next 18 months, or creating on-demand case study videos, thought leadership content, product explainer videos, hiring and culture videos, or videos for corporate communications and public relations - our end to end video production services include research, conceptualisation, anywhere production, and endless versioning.
         </div>
-        <h3 className="mt-5 font-semibold  text-base">4. Campaign:</h3>
+        <h3 className="mt-5 font-semibold  text-base">4. Podcast:</h3>
         <div>
-          From insightful communication strategies, to big campaign ideas and
-          creatives, exciting campaign plans, and flawless execution across
-          formats and locations – we provide comprehensive campaign solutions.
-          Whether it&apos;s for brand marketing, product and solution marketing,
-          employer branding, localisation or ESG campaigns – we support every
-          phase of enterprise growth.
+          Our beginnings lay in an award-winning YouTube show. With years of experience running our own show and now having produced several successful podcasts for clients, we have a strong framework for creating your next IP: be it a podcast for your brand or a podcast for you as a business leader. Our end-to-end solutions include research, concept, design, podcast production, publishing, distribution and amplification. And we use modern tools and processes to scale production and publishing as required.
+        </div>
+        <h3 className="mt-5 font-semibold  text-base">5. Campaign:</h3>
+        <div>
+          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations – we provide comprehensive creative campaign solutions. Whether it's for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns – we support every phase of your brand growth.
         </div>
         <h3 className="mt-5 font-semibold  text-base">
-          5. Artificial Intelligence:
+          6. On-demand Video Crews or ‘Book a Crew’:
         </h3>
         <div>
-          From using GenAI to generate video and imagery for brand
-          communications and creating AI Influencers to developing AI models for
-          a global campaign - we’ve got what it takes to conceptualise, consult,
-          and develop AI-integrated communications for B2B brands.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">6. Experience:</h3>
-        <div>
-          From beautifully responsive corporate websites and private social apps
-          to immersive XR experiences and gamified content – we conceptualise,
-          design and develop custom technology solutions that help you achieve
-          your B2B brand communication goals.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">7. Crews:</h3>
-        <div>
-          With Red Bangle, you can get professional video crews on-demand in 100
-          countries. Be it a single-camera testimonial shoot or a multi-camera
-          event shoot - our curated video crew services scale to your brief, no
-          matter how many cities and continents.
+          We have a strong, curated collaborative of professional video crews available on-demand in 100 countries. Be it a single-camera testimonial shoot or a multi-camera event shoot - our curated video crew services scale to your brief, no matter how many cities and continents. We work closely with your in-house creative teams to help them scale content. Our managed services include crew curation as per your shoot requirement, location booking, artist booking, in-person or remote shoot management, and footage quality checks. 
         </div>
       </>
     ),
@@ -432,43 +402,29 @@ const TNC = [
     key: 1,
     title: 'How experienced is your team?',
     content:
-      'We’ve been fuelling B2B communications with great creativity and technology for nearly a decade now. We are a team of over 50 people across design, videos, technology and more. We know what sticks in global B2B communications.',
+      'We’ve been fuelling brand communications with great creativity and technology for nearly a decade now. We’ve worked with dozens of brands in technology, FMCG, F&B, Aerospace, Manufacturing, Engineering, Energy, Quick-commerce and more to help craft unique brands, deliver sticky campaigns and scale brand content across regions.',
   },
   {
     key: 2,
-    title: ' Do you have a portfolio I can view?',
+    title: 'Where can I view your portfolio?',
     content: (
       <>
-        Yes. Explore our Campaign portfolio{' '}
+        All of our work is available on{' '}
         <Link
-          href="/work/b2b-brand-campaign-agency"
-          className="underline text-rb-red"
+          href="http://www.makerrs.com/work"
+          className="underline text-rb-black hover:text-[#07ef5a]"
         >
-          here
+          www.makerrs.com/work
         </Link>
-        {''}, Videos portfolio {''}
-        <Link
-          href="/work/b2b-video-production-agency"
-          className="underline text-rb-red"
-        >
-          here
-        </Link>
-        {''}, and our Experience portfolio{' '}
-        <Link
-          href="/work/b2b-brand-experience-agency"
-          className="underline text-rb-red"
-        >
-          here
-        </Link>
-        .
+        {''}, Visit the link to explore our best work.
       </>
     ),
   },
   {
     key: 3,
-    title: 'Typically, what business verticals do you create videos for?',
+    title: 'Which business verticals do you work with?',
     content:
-      'Red Bangle produces a variety of videos and video content to meet the diverse needs of global B2B brands. This includes videos for marketing, corporate communications and public relations, employer branding, internal communications, sales and RFPs, and more. The formats range from corporate films to marketing explainers.',
+      'We work with brand and marketing, corporate communications, employer branding and internal marketing, human resources and recruitment, and with CSR and ESG teams. And, we work with both for-profit and non-profit organizations.',
   },
   {
     key: 5,
@@ -476,73 +432,14 @@ const TNC = [
     content: (
       <>
         <div>
-          Project turnaround times vary based on the format, scale of production
-          as well as the type of service. Here’s a little guidance for each of
-          our services.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">1. Strategy</h3>
-        <div>
-          A smaller ask such as researching and defining your content strategy
-          could take up to 4 weeks, but a larger ask such as brand strategy
-          could take up to 2 months depending on the amount of research and
-          analysis required.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">2. Design</h3>
-        <div>
-          Depending on the requirement, the timeline varies. A simple brochure
-          may take a week. A branded tee may take a couple of days for an
-          existing brand. And a whole new brand identity system could take
-          anywhere between 2 and 6 months depending on the expanse of the brief.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">3. Videos</h3>
-        <div>
-          Depending on the format and the scale of the project, as well as
-          depending on how quickly we receive your feedback - we take anywhere
-          between 10 and 40 working days to turnaround a brief. When we are
-          making a longer-duration video (that’s not a simple testimonial video
-          or an interview video) or an interactive video, this timeline might
-          stretch to over 45 days. A short series of videos could be produced in
-          45 days and a larger requirement - for example, YouTube content to
-          grow subscribers and community - could be run as a year-long project.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">4. Campaign</h3>
-        <div>
-          Workflows and timelines are highly customized and responsive for this
-          service. A simple campaign could be created in 30 working days from
-          the formal contract or take up to 90 days - this is subject to the
-          brief, the scale of the requirement, as well as dependencies on the
-          client-side.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">
-          5. Artificial Intelligence
-        </h3>
-        <div>
-          From using GenAI to generate video and imagery for brand
-          communications and creating AI Influencers to developing AI models for
-          a global campaign - we’ve got what it takes to conceptualise, consult,
-          and develop AI-integrated communications for B2B brands.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">6. Experience</h3>
-        <div>
-          When it comes to experience, the conceptualisation, research,
-          consulting, design and development process could vary between as
-          little as 1 month for a microsite, 4 months for a website (including
-          all the graphics and content) and up to 12 months for a branded game.
-          Turnaround times similarly vary for other services such as augmented
-          reality, private social apps, etc.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">7. Crews</h3>
-        <div>
-          Typically, we can get a curated video crew in place in as little as 3
-          working days. And post the shoot, we could either handover the files
-          at the shoot on a hard disk or quality-check the footage and deliver
-          it online 28 hours post the shoot.
+          Project turnaround times vary based on the brief. For strategic long-term result-oriented engagements, it takes a couple of months to workshop requirements, research and arrive at a project gameplan and metrics to measure. And the project itself may range from 6 to 18 months, or longer. For ongoing and on-demand services, the turnaround times vary from a couple of weeks to a couple of months depending on the scale of the requirement. 
+          When it comes to our book-a-crew service however, we can work with as little as 2 to 3 working days to get you the right crew.
         </div>
       </>
     ),
   },
   {
-    key: 9,
+    key: 6,
     title:
       'What are your policies around intellectual property rights and business data confidentiality?',
     content:
@@ -553,8 +450,8 @@ const TNC = [
     title: 'Which time zone does your company operate in?',
     content: (
       <>
-        Our global services team supports clients across time zones. So,{' '}
-        <Link href="/contact" className="underline text-rb-red">
+        Our borderless agency supports clients across time zones. So, {' '}
+        <Link href="https://www.b2b.redbangle.com/contact" className="underline text-rb-black hover:text-[#07ef5a]">
           send us a brief
         </Link>{' '}
         and we’ll set up a meeting at a mutually convenient time.
@@ -718,12 +615,13 @@ const TNC = [
           <div>
             <div className={` ${styles.title}`}>
               <span className={`${styles.ltor}`}>
-                <span className="hidden md:inline"> BORDERLESS</span>
+                <span className="hidden md:inline"> BORDERLESS AGENCY,</span>
               </span>
             </div>
 
             <div className={` ${styles.title} block md:hidden mt-[-28px]`}>
               <span className={`${styles.ltor} `}> BORDERLESS</span>
+              <span className="text-[40px] tracking-[-1.4px]"> AGENCY,</span>
             </div>
 
             <div className="banner relative h-[50%] w-full overflow-hidden">
@@ -738,7 +636,7 @@ const TNC = [
               ></video>
               <div className={` ${styles.title}`}>
                 <div className={` ${styles.textblend} md:whitespace-nowrap`}>
-                  CREATIVE AGENCY
+                  SCALABLE CREATIVITY
                 </div>
               </div>
             </div>
@@ -752,15 +650,15 @@ const TNC = [
           >
             <div>
               <div className="text-rb-black text-[16px] md:text-[24px] leading-[1.5] md:leading-[1.33] tracking-[-0.64px] md:tracking-[-0.96px] font-semibold max-w-[900px]">
-                We help fast-growing businesses build sticky global brands and engaging narratives through videos, podcasts, campaigns and design.
+                We are a tech-powered borderless agency helping fast-growing businesses build engaging brands and narratives through videos, podcasts, campaigns and design.
               </div>
               <div className="flex items-center justify-center md:flex-row flex-col md:mt-10 mt-9 md:gap-5 gap-4">
                 <Button
                   href="/contact?type=client"
-                  className="font-bold  w-full md:w-auto !inline-flex"
+                  className="font-bold bg-[#07ef5a] !text-rb-black w-full md:w-auto !inline-flex "
                   suffix={<LineArrow hover />}
                 >
-                  Get creative services
+                  Send us a Brief
                 </Button>
               </div>
             </div>
@@ -833,13 +731,13 @@ const TNC = [
 
       <section className="bg-white pt-18 md:pt-30 pb-18 md:pb-30">
         <div className="container">
-          <LineHeading className="mb-6 md:mb-7.5">WHY TRY MAKERRS</LineHeading>
+          <LineHeading className="mb-6 md:mb-7.5 !text-rb-black" lineStyles="!bg-rb-black">WHY TRY MAKERRS</LineHeading>
           <div className="max-w-[1090px]">
-            <RevealText text="We know what it takes to deliver brand differentiation and engagement in the AI era. Our bold creative teams and borderless execution across videos, podcasts, campaigns and design help you scale your business - be it for B2B, B2C or D2C." />
+            <RevealText text="We know what it takes to craft unique brands and engagement in the age of the borderless customer. Our strategic approach, human insights, core creative teams combined with an ever-expanding global collaborative of creative folks, and cloud-based workflows make us the right agency to craft and scale your global brand." />
           </div>
           <Button
             href="/about/who-we-are"
-            className="font-bold mt-11 md:mt-16 w-full md:w-auto !inline-flex"
+            className="font-bold mt-11 md:mt-16 w-full md:w-auto bg-[#07ef5a] !text-rb-black !inline-flex"
             suffix={<LineArrow hover />}
           >
             See manifesto
@@ -853,7 +751,7 @@ const TNC = [
 
     <section className={`bg-white overflow-hidden py-18 md:pt-30 md:pb-0`}> 
         <div className="container">
-          <LineHeading className="mb-6 md:mb-7.5">We are a borderless creative agency</LineHeading>
+          <LineHeading className="mb-6 md:mb-7.5 !text-rb-black" lineStyles="!bg-rb-black">Grow your brand with us</LineHeading>
           <div className="grid lg:flex grid-cols-2 gap-x-5 md:gap-x-[124px] gap-y-12 md:gap-y-6 max-w-full md:max-w-none ml-5 transform transform -translate-x-5 sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-12">
             {stats.map((s, i) => (
               <div
