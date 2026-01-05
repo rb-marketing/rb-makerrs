@@ -181,7 +181,7 @@ export const CollabContactForm = () => {
         </div>
         <Button
           type="submit"
-          className="w-full mt-8 md:mt-10 bg-[#07ef5a] !text-rb-black"
+          className="w-full mt-8 md:mt-10 !bg-[#07ef5a] !text-rb-black"
           suffix={<LineArrow hover />}
         >
           Contact us
