@@ -387,7 +387,7 @@ const TNC = [
         </div>
         <h3 className="mt-5 font-semibold  text-base">5. Campaign:</h3>
         <div>
-          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations – we provide comprehensive creative campaign solutions. Whether it's for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns – we support every phase of your brand growth.
+          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations - we provide comprehensive creative campaign solutions. Whether it's for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns – we support every phase of your brand growth.
         </div>
         <h3 className="mt-5 font-semibold  text-base">
           6. On-demand Video Crews or ‘Book a Crew’:
@@ -412,7 +412,7 @@ const TNC = [
         All of our work is available on{' '}
         <Link
           href="http://www.makerrs.com/work"
-          className="underline text-rb-black hover:text-[#07ef5a]"
+          className="underline !text-rb-black hover:!text-[#07ef5a]"
         >
           www.makerrs.com/work
         </Link>
@@ -451,7 +451,7 @@ const TNC = [
     content: (
       <>
         Our borderless agency supports clients across time zones. So, {' '}
-        <Link href="https://www.b2b.redbangle.com/contact" className="underline text-rb-black hover:text-[#07ef5a]">
+        <Link href="https://www.b2b.redbangle.com/contact" className="underline !text-rb-black hover:!text-[#07ef5a]">
           send us a brief
         </Link>{' '}
         and we’ll set up a meeting at a mutually convenient time.
@@ -655,7 +655,7 @@ const TNC = [
               <div className="flex items-center justify-center md:flex-row flex-col md:mt-10 mt-9 md:gap-5 gap-4">
                 <Button
                   href="/contact?type=client"
-                  className="font-bold bg-[#07ef5a] !text-rb-black w-full md:w-auto !inline-flex "
+                  className="font-bold !bg-[#07ef5a] !text-rb-black w-full md:w-auto !inline-flex "
                   suffix={<LineArrow hover />}
                 >
                   Send us a Brief
@@ -737,7 +737,7 @@ const TNC = [
           </div>
           <Button
             href="/about/who-we-are"
-            className="font-bold mt-11 md:mt-16 w-full md:w-auto bg-[#07ef5a] !text-rb-black !inline-flex"
+            className="font-bold mt-11 md:mt-16 w-full md:w-auto !bg-[#07ef5a] !text-rb-black !inline-flex"
             suffix={<LineArrow hover />}
           >
             See manifesto
