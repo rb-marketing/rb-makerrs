@@ -3,6 +3,7 @@ export const LineHeading = ({
   className = '',
   as = 'div',
   white = false,
+  lineStyles=''
 }) => {
   const Wrapper = as ?? 'div'
   return (
@@ -14,7 +15,7 @@ export const LineHeading = ({
       <span
         className={`h-px w-7.5 md:w-headingLine  block mr-3 ${
           white ? 'bg-white' : 'bg-rb-red'
-        }`}
+        } ${lineStyles}`}
       ></span>
       {children}
     </Wrapper>

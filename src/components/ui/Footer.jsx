@@ -367,7 +367,7 @@ export const Footer = ({ hasContactForm }) => {
             <Marquee scrollSpeedBased>
               <div className="mr-3.5 md:mr-[54px] flex items-center">
                 {/* <span className="text-rb-red">Content&nbsp;</span> */}
-                YOUR AI-FIRST CREATIVE AGENCY
+                BORDERLESS AGENCY, SCALABLE CREATIVITY
                 <div className="w-0.5 md:w-2 h-5 md:h-14 bg-white ml-3.5 md:ml-[54px]"></div>
               </div>
             </Marquee>

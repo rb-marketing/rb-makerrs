@@ -146,7 +146,7 @@ export const Testimonials = ({
       }`}
     >
       <div className="container">
-        <LineHeading className="mb-6 md:mb-9">
+        <LineHeading className="mb-6 md:mb-9 !text-rb-black" lineStyles="!bg-rb-black">
           {/* WHAT OUR COLLABORATORS SAY */}
           {title}
         </LineHeading>
