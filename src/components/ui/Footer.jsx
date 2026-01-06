@@ -311,7 +311,7 @@ export const Footer = ({ hasContactForm }) => {
                       <a
                         href={o.href}
                         data-rb-cursor-state="invisible"
-                        className="flex items-center text-sm leading-5 uppercase font-semibold border-b-2 border-rb-storm-dust pb-1.5 max-w-max hover:text-rb-red hover:border-rb-red"
+                        className="flex items-center text-sm leading-5 uppercase font-semibold border-b-2 border-rb-storm-dust pb-1.5 max-w-max see-on-map"
                       >
                         See on map
                         <svg
@@ -386,28 +386,28 @@ export const Footer = ({ hasContactForm }) => {
                     <Link
                       href='/about/who-we-are'
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       About Us
                     </Link>
                     <Link
                       href='/about/creative-cloud-platform'
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Our Technology
                     </Link>
                     <Link
                       href=''
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Our Impact
                     </Link>
                     <Link
                       href=''
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Our Blog
                     </Link>
@@ -419,14 +419,14 @@ export const Footer = ({ hasContactForm }) => {
                     <Link
                       href={`${b2c}`}
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Services
                     </Link>
                     <Link
                       href={`${b2c}/work/featured`}
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Work
                     </Link>
@@ -482,35 +482,35 @@ export const Footer = ({ hasContactForm }) => {
                     <Link
                       href=""
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Design
                     </Link>
                     <Link
                       href=""
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Video
                     </Link>
                      <Link
                       href=""
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Podcast
                     </Link>
                     <Link
                       href=""
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Campaign
                     </Link>
                     <Link
                       href=""
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Book a Crew
                     </Link>
@@ -522,21 +522,21 @@ export const Footer = ({ hasContactForm }) => {
                     <Link
                       href=""
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                       Get in Touch
                     </Link>
                      <Link
                       href="/collab"
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                      Collab
                     </Link>
                     <Link
                       href="/about/giving-back"
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
                      Careers
                     </Link>
@@ -579,7 +579,7 @@ export const Footer = ({ hasContactForm }) => {
               <Link
                 href="/terms"
                 data-rb-cursor-state="invisible"
-                className="hover:text-rb-red max-w-max"
+                className="max-w-max"
               >
                 Terms & Privacy
               </Link>

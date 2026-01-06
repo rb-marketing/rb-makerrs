@@ -11,7 +11,7 @@ export const ContactSection = ({ type = '' }) => {
             <div className="w-full md:w-1/2">
               <div className="text-[60px] lg:text-[82px] xl:text-[102px] leading-[1.06] text-rb-black tracking-[-2.56px] uppercase font-everett font-medium">
               let&rsquo;s make something{' '}
-              <span>new</span> <br /> today
+              new <br /> today
             </div>
             </div>
           )}
@@ -29,7 +29,7 @@ export const ContactSection = ({ type = '' }) => {
             <h3 className="text-base leading-5.5 md:text-2xl md:leading-6.5 mb-5.5 md:mb-7 font-semibold">
               {type === 'collab'
                 ? 'Drop us a note.'
-                : 'Give us few details and we’ll get in touch'}
+                : 'Grow your borderless brand today'}
             </h3>
             {type === 'collab' ? <CollabContactForm /> : <ContactForm />}
           </div>
