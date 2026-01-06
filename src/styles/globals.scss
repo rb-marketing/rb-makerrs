@@ -111,7 +111,7 @@
 }
 
 .swiper-scrollbar-drag {
-  @apply bg-rb-red;
+  @apply bg-rb-btn-green;
   position: relative;
   height: 4px;
 }
@@ -283,7 +283,7 @@ html.lenis {
         transition: 0.3s ease-in-out;
 
         &:hover {
-          @apply text-rb-red;
+          @apply text-rb-link-green;
         }
       }
 
@@ -874,9 +874,9 @@ html.lenis {
   color: #111010;
 
   &:hover {
-    color: #fff;
-    background-color: #ef001c;
-    border-color: #ef001c;
+    color: #111010;
+    background-color: #00e546;
+    border-color: #00e546;
   }
 }
 
@@ -1147,4 +1147,12 @@ body.disable-scroll {
       color: rgb(17, 16, 16);
     }
   }
+}
+
+a:hover {
+  color: #13c33f;
+}
+
+.see-on-map:hover {
+  border-color: #13c33f;
 }

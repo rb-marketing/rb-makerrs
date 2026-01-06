@@ -9,12 +9,12 @@ module.exports = {
     extend: {
       colors: {
         rb: {
-          red: '#EF001C', //'#DB2F2C',
+          red: '#07ef5a', //'#DB2F2C',
           black: '#111010',
           mercury: '#F1F2F6',
           scarlet: '#930000',
-          'milano-red': '#D20019',
-          'torch-red': '#fd0138 ',
+          'milano-red': '#00e546',
+          'torch-red': '#00e546',
           'campaign':'#fd0138',
           production:'#fcb4b4',
           tech:'#fd96ad',
@@ -33,7 +33,10 @@ module.exports = {
           'grayish' : '#4A4A49',
           'dark-grey' : '#666666',
           'bluish-gray' : '#5A5F6B',
-          'light-gray' : '#898989'
+          'light-gray' : '#898989',
+          'btn-green': '#07ef5a',
+          'btn-hover': '#00e546',
+          'link-green': '#13c33f'
         },
       },
       spacing: {

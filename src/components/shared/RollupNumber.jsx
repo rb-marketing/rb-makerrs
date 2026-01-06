@@ -34,7 +34,7 @@ export const RollupNumber = ({ value, prefix, suffix, className = '' }) => {
         {splitText.map((d, i) =>
           d == '.' ? (
             <Fragment key={i}>
-              <span className="text-rb-red">.</span>
+              <span className="text-rb-link-green">.</span>
             </Fragment>
           ) : (
             <div

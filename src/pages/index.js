@@ -412,7 +412,7 @@ const TNC = [
         All of our work is available on{' '}
         <Link
           href="http://www.makerrs.com/work"
-          className="underline !text-rb-black hover:!text-[#07ef5a]"
+          className="underline"
         >
           www.makerrs.com/work
         </Link>
@@ -451,7 +451,7 @@ const TNC = [
     content: (
       <>
         Our borderless agency supports clients across time zones. So, {' '}
-        <Link href="https://www.b2b.redbangle.com/contact" className="underline !text-rb-black hover:!text-[#07ef5a]">
+        <Link href="https://www.b2b.redbangle.com/contact" className="underline">
           send us a brief
         </Link>{' '}
         and we&apos;ll set up a meeting at a mutually convenient time.
@@ -655,7 +655,7 @@ const TNC = [
               <div className="flex items-center justify-center md:flex-row flex-col md:mt-10 mt-9 md:gap-5 gap-4">
                 <Button
                   href="/contact?type=client"
-                  className="font-bold !bg-[#07ef5a] !text-rb-black w-full md:w-auto !inline-flex "
+                  className="font-bold w-full md:w-auto !inline-flex "
                   suffix={<LineArrow hover />}
                 >
                   Send us a Brief
@@ -731,13 +731,13 @@ const TNC = [
 
       <section className="bg-white pt-18 md:pt-30 pb-18 md:pb-30">
         <div className="container">
-          <LineHeading className="mb-6 md:mb-7.5 !text-rb-black" lineStyles="!bg-rb-black">WHY TRY MAKERRS</LineHeading>
+          <LineHeading className="mb-6 md:mb-7.5">WHY TRY MAKERRS</LineHeading>
           <div className="max-w-[1090px]">
             <RevealText text="We know what it takes to craft unique brands and engagement in the age of the borderless customer. Our strategic approach, human insights, core creative teams combined with an ever-expanding global collaborative of creative folks, and cloud-based workflows make us the right agency to craft and scale your global brand." />
           </div>
           <Button
             href="/about/who-we-are"
-            className="font-bold mt-11 md:mt-16 w-full md:w-auto !bg-[#07ef5a] !text-rb-black !inline-flex"
+            className="font-bold mt-11 md:mt-16 w-full md:w-auto !inline-flex"
             suffix={<LineArrow hover />}
           >
             See manifesto
@@ -751,8 +751,8 @@ const TNC = [
 
     <section className={`bg-white overflow-hidden py-18 md:pt-30 md:pb-0`}> 
         <div className="container">
-          <LineHeading className="mb-6 md:mb-7.5 !text-rb-black" lineStyles="!bg-rb-black">Grow your brand with us</LineHeading>
-          <div className="grid lg:flex grid-cols-2 gap-x-5 md:gap-x-[124px] gap-y-12 md:gap-y-6 max-w-full md:max-w-none ml-5 transform transform -translate-x-5 sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-12">
+          <LineHeading className="mb-6 md:mb-7.5">Grow your brand with us</LineHeading>
+          <div className="grid lg:flex grid-cols-2 gap-x-5 md:gap-x-[124px] gap-y-12 md:gap-y-6 max-w-full md:max-w-none ml-5 transform -translate-x-5 sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-12">
             {stats.map((s, i) => (
               <div
                 className={`w-full lg:w-1/4 text-[42px] leading-14 tracking-[-1.44px] md:text-stat group relative ${statsStyles.statline}`}

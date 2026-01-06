@@ -27,22 +27,37 @@ const dropDownArrow = (
 )
 
 const outsideLinks = [
- {
-    title: 'AI Labs',
+  {
+    title: 'Services',
     menu: [
       {
-        title: 'AI Solutions',
-        href: '/ai-labs/ai-solutions',
+        title: 'Design',
+        href: '/services/design'
+      },
+      {
+        title: 'Video',
+        href: '/services/video'
+      },
+      {
+        title: 'Podcast',
+        href: '/services/podcast'
+      },
+      {
+        title: 'Campaigns',
+        href: '/services/campaigns'
+      },
+      {
+        title: 'Book a Crew',
+        href: '/services/book-a-crew'
       },
     ],
   },
   {
     title: 'ABOUT',
     menu: [
-      { title: 'Who We Are', href: '/about/who-we-are' },
-      { title: 'Technology Platform', href: '/about/creative-cloud-platform' },
-      { title: 'Giving Back', href: '/about/giving-back' },
-      { title:'Our Name' , href:'/about/why-the-name-red-bangle'}
+      { title: 'Team', href: '/about/who-we-are' },
+      { title: 'Technology', href: '/about/creative-cloud-platform' },
+      { title: 'Careers', href: '/about/giving-back' }
     ],
   },
 ]
@@ -172,20 +187,16 @@ export const Header = () => {
                     className={`hidden md:flex items-center md:h-full mr-[47px] top-0 right-0`}
                   >
                     <Link
-                      href={b2b}
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black/60 hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
+                      href="/work/global"
+                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
                     >
-                      B2B Global
+                      Work
                     </Link>
-                    <Link
-                      href={b2c}
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black/60 hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
-                    >
-                      B2C India
-                    </Link>
+
+
                     {outsideLinks.map((l, i) => (
                       <div
-                        className="inline-block h-full font-semibold text-sm md:mr-10 relative group text-rb-black/60 hover:text-rb-black transition-all"
+                        className="inline-block h-full font-semibold text-sm md:mr-10 relative group text-rb-black hover:text-rb-black transition-all"
                         key={i}
                       >
                         <button className="uppercase flex h-full items-center">
@@ -250,26 +261,32 @@ export const Header = () => {
                     ))}
 
 
-                     <Link
+                    <Link
+                      href="/blog"
+                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
+                    >
+                      Blog
+                    </Link>
+
+                    <Link
                       href="/collab"
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black/60 hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
+                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       COLLAB
-                    </Link> 
+                    </Link>
                     {/* <Link
                       href="/contact"
                       className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black/60 hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       Contact
                     </Link> */}
-                    <Button href="/contact" size="sm">
+                    <Button href="/contact" size="sm" className="font-bold">
                       GET IN TOUCH
                     </Button>
                   </div>
                   <button
-                    className={`button-container bg-rb-black ${
-                      isSticky ? 'sticky-button sticky' : ''
-                    }`}
+                    className={`button-container bg-rb-black ${isSticky ? 'sticky-button sticky' : ''
+                      }`}
                     aria-label="toggle menu"
                     onClick={mainMenuTrigger}
                   >
@@ -287,15 +304,13 @@ export const Header = () => {
       </header>
 
       <div
-        className={`fixed bg-white z-[999] inset-0 w-full h-full full-width-nav cursor-auto ${
-          mainMenu ? 'nav-open' : ''
-        }`}
+        className={`fixed bg-white z-[999] inset-0 w-full h-full full-width-nav cursor-auto ${mainMenu ? 'nav-open' : ''
+          }`}
       >
         <div className="container relative z-50">
           <button
-            className={`absolute top-10 right-4 z-50 duration-500 ease-out block md:hidden ${
-              mainMenu ? 'scale-100' : 'scale-0'
-            }`}
+            className={`absolute top-10 right-4 z-50 duration-500 ease-out block md:hidden ${mainMenu ? 'scale-100' : 'scale-0'
+              }`}
             onClick={mainMenuTrigger}
           >
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -462,7 +477,7 @@ export const Header = () => {
 
             <div
               className="px-2 w-full md:w-3/5 bg-rb-mercury py-10 md:pl-12"
-              // data-lenis-prevent
+            // data-lenis-prevent
             >
               <div
                 data-lenis-prevent
@@ -552,9 +567,8 @@ export const Header = () => {
                     </div>
                   </div> */}
                   <div
-                    className={`dropdown relative nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-3 order-3 ${
-                      dropdownMenu === 0 ? 'open' : ''
-                    }`}
+                    className={`dropdown relative nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-3 order-3 ${dropdownMenu === 0 ? 'open' : ''
+                      }`}
                   >
                     <button
                       onClick={dropDownTrigger(0)}
@@ -573,15 +587,14 @@ export const Header = () => {
                           href="/ai-labs/ai-solutions"
                           className="hover:!text-rb-black cursor-default"
                         >
-                          AI Solutions 
+                          AI Solutions
                         </Link>
                       </div>
                     </div>
                   </div>
                   <div
-                    className={`dropdown relative nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-4 order-4 ${
-                      dropdownMenu === 1 ? 'open' : ''
-                    }`}
+                    className={`dropdown relative nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-4 order-4 ${dropdownMenu === 1 ? 'open' : ''
+                      }`}
                   >
                     <button
                       onClick={dropDownTrigger(1)}
