@@ -182,7 +182,7 @@ export const Testimonials = ({
                 </div>
 
                 <div className={`w-full md:w-7/12 flex flex-col justify-end`}>
-                  <div className={`mb-8  ${t.name ? 'md:mb-12' : 'md:mb-0'}`}>
+                  <div className={`mb-8 md:mb-12`}>
                     {htmlQuote ? (
                       <div
                         className={cx(

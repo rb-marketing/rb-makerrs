@@ -12,7 +12,7 @@ const slides = [
     key: 1,
     title: 'GET DESIGN',
     excerpt:
-      'Whether you are looking for a new brand identity system,  sticky event branding or well-designed marketing collateral such as white papers, brochures and presentations - our design solutions help your business stand out and start conversations.',
+      'Whether you are looking for a new brand identity system,  sticky event branding or well-designed marketing collateral - our design solutions help your business stand out and start conversations.',
     video: {
       src: '/img/design_video.mp4',
       poster: '/img/services/create-poster.webp',
@@ -28,7 +28,7 @@ const slides = [
     key: 2,
     title: 'GET VIDEOS',
     excerpt:
-      'We take a strategic approach to planning, crafting and scaling video content for brands - be it product communications or YouTube channel growth. We also support on-demand creative video requirements around customer testimonial videos, hiring and culture videos and more.',
+      'We take a strategic approach to planning, crafting and scaling video content for brands - be it for a product launch or for YouTube channel growth. We also support on-demand end-to-end video production requirements around customer testimonial videos, hiring and culture videos, and more.',
     video: {
       src: '/img/case_study_banner_video.mp4',
       // poster: '/img/services/think-poster.webp',
@@ -45,7 +45,7 @@ const slides = [
     key: 3,
     title: 'GET PODCAST',
     excerpt:
-      'If you are a brand or business leader looking to lead industry conversations, build community and drive ROI - our experienced content strategists, writers and podcast producers are here to craft, launch and scale for you. Go from research, positioning, concept, design and podcast production to distribution with one agency.',
+      'Looking to lead industry conversations, build community and drive ROI? Go from content research, concept and positioning to podcast branding, production, distribution and amplification with one global podcast partner.',
     video: {
       src: '/img/makers_podcast.mp4',
       // poster: '/img/services/create-poster.webp',
@@ -63,7 +63,7 @@ const slides = [
     key: 4,
     title: 'GET CAMPAIGN',
     excerpt:
-      'From 360-degree campaigns to digital campaigns, outdoor and print campaigns, AI-first and interactive campaigns, and social media campaigns - our creative strategy is rooted in a simple yet powerful human insight unique to your brand and product/service.',
+      'From brand awareness campaigns and product launch campaigns to employer branding campaigns and ESG campaigns-we take our cues from people and culture, and turn real insights into relatable campaigns that align perfectly with your business goals.',
     video: {
       src: '/img/makers_campaign.mp4',
 
@@ -80,7 +80,7 @@ const slides = [
     key: 5,
     title: 'BOOK A CREW',
     excerpt:
-      'Get on-demand professional video crews across 100 countries. Be it a one-camera shoot, a multi-camera multi-location production or a studio-shoot – we curate the right video crews for you, book locations, manage the production, and quality-check the footage before it hits your inbox.',
+      'Hire professional video crews across 100 countries. Be it a one-camera shoot, a multi-camera multi-location production or a studio shoot-we curate the right video crews for you, book locations, manage the production, and quality-check the footage before it hits your inbox.',
     video: {
       src: '/img/crew-preview.mp4',
 
