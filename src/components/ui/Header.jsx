@@ -497,77 +497,14 @@ export const Header = () => {
                     id="firstlink"
                   >
                     <Link
-                      href={b2b}
+                      href='/work/global'
                       className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
                     >
-                      B2B GLOBAL
+                      WORK
                     </Link>
                   </div>
-                  <div className="nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-2 order-2">
-                    <Link
-                      href={b2c}
-                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
-                    >
-                      B2C INDIA
-                    </Link>
-                  </div>
-                  {/* <div className="nav-link opacity-30 duration-300 ease-out md:order-3 order-3">
-                    <Link
-                      href="/"
-                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      AI LABS <span className="text-[26px]">Coming soon</span>
-                    </Link>
-                  </div> */}
-                  {/* <div
-                    className={`dropdown relative nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-3 order-3 ${
-                      dropdownMenu === 0 ? 'open' : ''
-                    }`}
-                  >
-                    <button
-                      onClick={dropDownTrigger(0)}
-                      href="http://ai.redbangle.com/"
-                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px] relative"
-                    >
-                      AI PRODUCTS{' '}
-                      <span className="text-[26px] leading-none align-middle">
-                        Coming soon
-                      </span>
-                      <div className="absolute top-3 -right-8 dropdown-arrow">
-                        {dropDownArrow}
-                      </div>
-                    </button>
-
-                    <div className="dropdown-menu rounded-lg bg-white py-5 px-6 !min-w-[120px]">
-                      <div>
-                        <Link
-                          href="http://www.ai.redbangle.com/kalp-ai"
-                          onClick={(e) => e.preventDefault()}
-                          className="hover:!text-rb-black cursor-default"
-                        >
-                          Imaginpod AI <br />
-                          <span className="text-[0.7875rem] font-semibold">
-                            Coming soon
-                          </span>
-                        </Link>
-                      </div>
-                      <div>
-                        <Link
-                          href="http://www.ai.redbangle.com/beanshoot"
-                          onClick={(e) => e.preventDefault()}
-                          className="hover:!text-rb-black cursor-default"
-                        >
-                          Beanshoot AI Labs{' '}
-                          <span className="text-[0.7875rem] font-semibold">
-                            Coming soon
-                          </span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div> */}
-                  <div
-                    className={`dropdown relative nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-3 order-3 ${dropdownMenu === 0 ? 'open' : ''
+                   <div
+                    className={`dropdown relative nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-4 order-4 ${dropdownMenu === 0 ? 'open' : ''
                       }`}
                   >
                     <button
@@ -575,21 +512,28 @@ export const Header = () => {
                       href="/"
                       className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px] relative"
                     >
-                      AI LABS
+                      SERVICES
                       <div className="absolute top-3 -right-8 dropdown-arrow">
                         {dropDownArrow}
                       </div>
                     </button>
 
-                    <div className="dropdown-menu rounded-lg bg-white py-5 px-6 !min-w-[120px]">
-                      <div>
-                        <Link
-                          href="/ai-labs/ai-solutions"
-                          className="hover:!text-rb-black cursor-default"
-                        >
-                          AI Solutions
+                    <div className="dropdown-menu rounded-lg bg-white py-5 px-6">
+                       <Link href="/services/design" className="hover:!text-rb-black cursor-default">
+                          Design
                         </Link>
-                      </div>
+                         <Link href="/services/video" className="hover:!text-rb-black cursor-default">
+                          Video
+                        </Link>
+                         <Link href="/services/podcast" className="hover:!text-rb-black cursor-default">
+                          Podcast
+                        </Link>
+                         <Link href="/services/campaigns" className="hover:!text-rb-black cursor-default">
+                          Campaigns
+                        </Link>
+                         <Link href="/services/book-a-crew" className="hover:!text-rb-black cursor-default">
+                          Book a Crew
+                        </Link>
                     </div>
                   </div>
                   <div
@@ -609,21 +553,25 @@ export const Header = () => {
 
                     <div className="dropdown-menu rounded-lg bg-white py-5 px-6">
                       <div>
-                        <Link href="/about/who-we-are"> Who We Are </Link>
+                        <Link href="/about/who-we-are"> Team </Link>
                       </div>
                       <div>
                         <Link href="/about/creative-cloud-platform">
-                          {' '}
-                          Technology Platform{' '}
+                          Technology
                         </Link>
                       </div>
                       <div>
-                        <Link href="/about/giving-back"> Giving Back </Link>
-                      </div>
-                      <div>
-                        <Link href="/about/why-the-name-red-bangle">Our Name</Link>
+                        <Link href="/about/giving-back"> Careers </Link>
                       </div>
                     </div>
+                  </div>
+                  <div className="nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-4 order-4">
+                    <Link
+                      href="/blog"
+                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
+                    >
+                      BLOG
+                    </Link>
                   </div>
                   <div className="nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-4 order-4">
                     <Link
