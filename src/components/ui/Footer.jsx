@@ -411,6 +411,13 @@ export const Footer = ({ hasContactForm }) => {
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
+                      The Lakshmi Rebecca Show
+                    </Link>
+                    <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="max-w-max"
+                    >
                       Our Blog
                     </Link>
                   </div>
@@ -419,26 +426,40 @@ export const Footer = ({ hasContactForm }) => {
                   <div className={styles.title}> SERVICES</div>
                   <div className={styles.links}>
                     <Link
-                      href={`${b2c}`}
+                      href=''
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
-                      Services
+                      Design
                     </Link>
                     <Link
-                      href={`${b2c}/work/featured`}
+                      href=''
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
-                      Work
+                      Videos
                     </Link>
-                    {/* <Link
-                      href={`${b2c}/collab`}
+                     <Link
+                      href=''
                       data-rb-cursor-state="invisible"
-                      className="hover:text-rb-red max-w-max"
+                      className="max-w-max"
                     >
-                      Collab
-                    </Link> */}
+                      Podcast
+                    </Link>
+                    <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="max-w-max"
+                    >
+                      Campaign
+                    </Link>
+                     <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="max-w-max"
+                    >
+                      Book a Crew
+                    </Link>
                   </div>
                 </div>
                 {/* <div className="pr-2.5 md:pr-0">

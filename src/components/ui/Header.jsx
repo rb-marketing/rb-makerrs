@@ -342,7 +342,7 @@ export const Header = () => {
                   ></video> */}
                   <img
                     className="nav-menu-image w-full h-full rounded-lg"
-                    src="/img/home/hamburger_image.png"
+                    src="/img/home/hamburger_image_new.png"
                     alt="Menu preview"
                   />
                 </div>
@@ -493,7 +493,7 @@ export const Header = () => {
 
                 <div className="flex flex-col gap-6 md:gap-8 items-start pb-20">
                   <div
-                    className="nav-link opacity-30 duration-300 ease-out hover:opacity-100 order-1"
+                    className="nav-link  duration-300 ease-out hover:opacity-100 order-1"
                     id="firstlink"
                   >
                     <Link
@@ -504,7 +504,7 @@ export const Header = () => {
                     </Link>
                   </div>
                    <div
-                    className={`dropdown relative nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-4 order-4 ${dropdownMenu === 0 ? 'open' : ''
+                    className={`dropdown relative nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4 ${dropdownMenu === 0 ? 'open' : ''
                       }`}
                   >
                     <button
@@ -537,7 +537,7 @@ export const Header = () => {
                     </div>
                   </div>
                   <div
-                    className={`dropdown relative nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-4 order-4 ${dropdownMenu === 1 ? 'open' : ''
+                    className={`dropdown relative nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4 ${dropdownMenu === 1 ? 'open' : ''
                       }`}
                   >
                     <button
@@ -565,7 +565,7 @@ export const Header = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-4 order-4">
+                  <div className="nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4">
                     <Link
                       href="/blog"
                       className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
@@ -573,7 +573,7 @@ export const Header = () => {
                       BLOG
                     </Link>
                   </div>
-                  <div className="nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-4 order-4">
+                  <div className="nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4">
                     <Link
                       href="/collab"
                       className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
@@ -582,7 +582,7 @@ export const Header = () => {
                     </Link>
                   </div>
                   <div
-                    className="nav-link opacity-30 duration-300 ease-out hover:opacity-100 md:order-5 order-5"
+                    className="nav-link  duration-300 ease-out hover:opacity-100 md:order-5 order-5"
                     id="lastlink"
                   >
                     <Link
