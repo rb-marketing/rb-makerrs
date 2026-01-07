@@ -465,7 +465,7 @@ export const Header = () => {
                   <div>
                     <a
                       href="mailto:hello@makerrs.com"
-                      className="text-[18px] font-semibold duration-300 ease-out"
+                      className="text-[18px] font-semibold duration-300 ease-out underline"
                     >
                       hello@makerrs.com
                     </a>
@@ -503,13 +503,13 @@ export const Header = () => {
                     </Link>
                   </div>
                    <div
-                    className={`dropdown relative nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4 ${dropdownMenu === 0 ? 'open' : ''
+                    className={`dropdown relative nav-link  duration-300 ease-out hover:opacity-100 hover:text-rb-link-green md:order-4 order-4 ${dropdownMenu === 0 ? 'open' : ''
                       }`}
                   >
                     <button
                       onClick={dropDownTrigger(0)}
                       href="/"
-                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px] relative"
+                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px] relative hover:text-rb-link-green"
                     >
                       SERVICES
                       <div className="absolute top-3 -right-8 dropdown-arrow">
@@ -517,7 +517,7 @@ export const Header = () => {
                       </div>
                     </button>
 
-                    <div className="dropdown-menu rounded-lg bg-white py-5 px-6">
+                    <div className="dropdown-menu rounded-lg bg-white py-5 px-6 text-black">
                        <Link href="/services/design">
                           Design
                         </Link>
@@ -536,13 +536,13 @@ export const Header = () => {
                     </div>
                   </div>
                   <div
-                    className={`dropdown relative nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4 ${dropdownMenu === 1 ? 'open' : ''
+                    className={`dropdown relative nav-link  duration-300 ease-out hover:text-rb-link-green md:order-4 order-4 ${dropdownMenu === 1 ? 'open' : ''
                       }`}
                   >
                     <button
                       onClick={dropDownTrigger(1)}
                       href="/"
-                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px] relative"
+                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px] relative hover:text-rb-link-green focus:text-rb-link-green"
                     >
                       ABOUT
                       <div className="absolute top-3 -right-8 dropdown-arrow">
@@ -550,7 +550,7 @@ export const Header = () => {
                       </div>
                     </button>
 
-                    <div className="dropdown-menu rounded-lg bg-white py-5 px-6">
+                    <div className="dropdown-menu rounded-lg bg-white py-5 px-6 text-black">
                       <div>
                         <Link href="/about/who-we-are"> Team </Link>
                       </div>

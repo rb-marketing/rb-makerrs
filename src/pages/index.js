@@ -770,7 +770,7 @@ const TNC = [
         </div>
     </section>
     
-      <div className='py-18 md:pt-30 md:pb-0'>
+      <div className='py-18 md:pt-18 md:pb-0'>
         <SolutionsSection />
       </div>
 
