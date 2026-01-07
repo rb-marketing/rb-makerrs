@@ -615,7 +615,7 @@ const TNC = [
           <div>
             <div className={` ${styles.title}`}>
               <span className={`${styles.ltor}`}>
-                <span className="hidden md:inline"> CREATIVE PARTNER TO,</span>
+                <span className="hidden md:inline"> CREATIVE PARTNER TO</span>
               </span>
             </div>
 
