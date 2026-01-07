@@ -432,12 +432,54 @@ export const Footer = ({ hasContactForm }) => {
                     >
                       Design
                     </Link>
+                     <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="max-w-max ml-5 mt-[-5px]"
+                    >
+                      Brand Identity Design
+                    </Link>
                     <Link
                       href=''
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       Videos
+                    </Link>
+                     <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="max-w-max ml-5 mt-[-5px]"
+                    >
+                      Explainer Videos
+                    </Link>
+                     <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="max-w-max ml-5 mt-[-5px]"
+                    >
+                      Corporate Videos
+                    </Link>
+                     <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="max-w-max ml-5 mt-[-5px]"
+                    >
+                      Case Study Videos
+                    </Link>
+                     <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="max-w-max ml-5 mt-[-5px]"
+                    >
+                      Recruitment Videos
+                    </Link>
+                     <Link
+                      href=''
+                      data-rb-cursor-state="invisible"
+                      className="max-w-max ml-5 mt-[-5px]"
+                    >
+                      GenAI Videos
                     </Link>
                      <Link
                       href=''

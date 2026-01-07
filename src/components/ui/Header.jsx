@@ -188,7 +188,7 @@ export const Header = () => {
                   >
                     <Link
                       href="/work/global"
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
+                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       Work
                     </Link>
@@ -196,7 +196,7 @@ export const Header = () => {
 
                     {outsideLinks.map((l, i) => (
                       <div
-                        className="inline-block h-full font-semibold text-sm md:mr-10 relative group text-rb-black hover:text-rb-black transition-all"
+                        className="inline-block h-full font-semibold text-sm md:mr-10 relative group text-rb-black hover:text-rb-link-green transition-all"
                         key={i}
                       >
                         <button className="uppercase flex h-full items-center">
@@ -206,7 +206,7 @@ export const Header = () => {
                               width="21"
                               height="20"
                               viewBox="0 0 21 20"
-                              className="group-hover:rotate-90 transition-all group-hover:text-rb-red"
+                              className="group-hover:rotate-90 transition-all group-hover:text-rb-link-green"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
                             >
@@ -250,7 +250,7 @@ export const Header = () => {
                               <Link
                                 key={li}
                                 href={lItem.href}
-                                className="mt-4 first:mt-0 text-lg leading-6 text-rb-black hover:text-rb-red transition-all"
+                                className="mt-4 first:mt-0 text-lg leading-6 text-rb-black hover:text-rb-link-green transition-all"
                               >
                                 {lItem.title}
                               </Link>
@@ -263,14 +263,14 @@ export const Header = () => {
 
                     <Link
                       href="/blog"
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
+                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       Blog
                     </Link>
 
                     <Link
                       href="/collab"
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
+                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       COLLAB
                     </Link>
