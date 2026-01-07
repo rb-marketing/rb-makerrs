@@ -349,6 +349,27 @@ export const Header = () => {
 
                 <div className="flex items-center gap-4 flex-wrap">
                   <div className="flex gap-2">
+                     <a
+                      target="_blank"
+                      href="https://www.youtube.com/channel/UCbPlh2ukO1Qz6Ib2fY724QQ"
+                      className="w-10 h-10 flex justify-center items-center border border-[#F00] rounded-full"
+                    >
+                      <svg
+                        width="21"
+                        height="16"
+                        viewBox="0 0 21 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.398 3.013a2.585 2.585 0 0 0-1.825-1.825C16.964.757 10.51.757 10.51.757s-6.456 0-8.065.431A2.585 2.585 0 0 0 .62 3.013C.188 4.623.188 7.982.188 7.982s0 3.359.431 4.968a2.585 2.585 0 0 0 1.825 1.825c1.61.431 8.065.431 8.065.431s6.455 0 8.064-.431a2.585 2.585 0 0 0 1.825-1.825c.432-1.609.432-4.968.432-4.968s-.002-3.36-.432-4.969Z"
+                          fill="red"
+                        />
+                        <path
+                          d="m8.445 11.085 5.363-3.096-5.363-3.096v6.192Z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </a>
                     <a
                       target="_blank"
                       href="https://www.linkedin.com/company/redbanglecreative/"
@@ -437,38 +458,16 @@ export const Header = () => {
                         />
                       </svg>
                     </a> */}
-
-                    {/* <a
-                      target="_blank"
-                      href="https://www.youtube.com/channel/UCbPlh2ukO1Qz6Ib2fY724QQ"
-                      className="w-10 h-10 flex justify-center items-center border border-[#F00] rounded-full"
-                    >
-                      <svg
-                        width="21"
-                        height="16"
-                        viewBox="0 0 21 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M20.398 3.013a2.585 2.585 0 0 0-1.825-1.825C16.964.757 10.51.757 10.51.757s-6.456 0-8.065.431A2.585 2.585 0 0 0 .62 3.013C.188 4.623.188 7.982.188 7.982s0 3.359.431 4.968a2.585 2.585 0 0 0 1.825 1.825c1.61.431 8.065.431 8.065.431s6.455 0 8.064-.431a2.585 2.585 0 0 0 1.825-1.825c.432-1.609.432-4.968.432-4.968s-.002-3.36-.432-4.969Z"
-                          fill="red"
-                        />
-                        <path
-                          d="m8.445 11.085 5.363-3.096-5.363-3.096v6.192Z"
-                          fill="#fff"
-                        />
-                      </svg>
-                    </a> */}
                   </div>
 
                   <div className="w-[1px] h-10 bg-black/10"></div>
 
                   <div>
                     <a
-                      href="mailto:hello@redbangle.com"
-                      className="text-[18px] font-semibold text-rb-red hover:text-black duration-300 ease-out"
+                      href="mailto:hello@makerrs.com"
+                      className="text-[18px] font-semibold duration-300 ease-out"
                     >
-                      hello@redbangle.com
+                      hello@makerrs.com
                     </a>
                   </div>
                 </div>
