@@ -9,7 +9,7 @@ const button = cva(
     variants: {
       intent: {
         primary: [
-          'bg-rb-btn-green text-black hover:bg-rb-btn-hover focus:bg-rb-btn-hover',
+          'bg-rb-btn-green text-black hover:bg-rb-btn-hover focus:bg-rb-btn-hover hover:text-black focus:text-black',
         ],
         'p-secondary': ['border-2 border-rb-btn-green text-black'],
         secondary: ['border-2 border-white text-white'],

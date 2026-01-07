@@ -745,11 +745,7 @@ const TNC = [
         </div>
       </section>
 
-      <div>
-        <SolutionsSection />
-      </div>
-
-    <section className={`bg-white overflow-hidden py-18 md:pt-30 md:pb-0`}> 
+ <section className={`bg-white overflow-hidden`}> 
         <div className="container">
           <LineHeading className="mb-6 md:mb-7.5">Grow your brand with us</LineHeading>
           <div className="grid lg:flex grid-cols-2 gap-x-5 md:gap-x-[124px] gap-y-12 md:gap-y-6 max-w-full md:max-w-none ml-5 transform -translate-x-5 sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-12">
@@ -773,6 +769,12 @@ const TNC = [
           </div>
         </div>
     </section>
+    
+      <div className='py-18 md:pt-18 md:pb-0'>
+        <SolutionsSection />
+      </div>
+
+   
 
     <Testimonials
       title={'WHAT OUR COLLABORATORS SAY'}
