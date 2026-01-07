@@ -254,7 +254,7 @@ const LandPage = () => {
     key: 1,
     quote:
         <>
-        Red Bangle was especially impressive with their creative strategy, design, and copy. They took the quirk and the energy of local markets and their iconic signs and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it has translated into a love for the product itself.
+         Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
         </>,
     name: 'KUNCHERIA MARATTUKALAM',
     designation: 'FOUNDER & DIRECTOR',
@@ -282,7 +282,7 @@ const LandPage = () => {
 {
     key: 3,
     quote:
-      'The Red Bangle team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
+      'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
     name: 'ROSHAN CARIAPPA',
     designation: 'VICE-PRESIDENT MARKETING',
     company: 'VYMO',
@@ -295,7 +295,7 @@ const LandPage = () => {
   {
     key: 4,
     quote:
-      'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Red Bangle supported us on the ground and even helped us manage our golfing ambassador. Thanks team!',
+      'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Makerrs supported us on the ground and even helped us manage our golfing ambassador. Thanks, team!',
     name: 'MATT WALKINGTON',
     designation: 'Account Director',
     company: 'BRIGHT PARTNERSHIPS',
@@ -308,7 +308,7 @@ const LandPage = () => {
   {
     key: 5,
     quote:
-      <>Red Bangle brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
+      <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
       </>,
     name: 'Rinku Agarwal Basu',
     designation: 'COO',
@@ -323,7 +323,7 @@ const LandPage = () => {
 {
     key: 6,
     quote:
-      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Red Bangle has given us a brand bursting with character and joy!',
+      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Makerrs has given us a brand bursting with character and joy! Seeing customers connect with it at our dessert cafe feels incredible.',
     name: 'NAKUL KULKARNI',
     designation: ' CO-FOUNDER',
     company: 'P.U. DINGDING',
@@ -349,7 +349,7 @@ const LandPage = () => {
   {
     key: 8,
     quote:
-      'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Red Bangle.',
+      'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
     name: 'SUNIL SURESH',
     designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
     company: 'CAPILLARY TECHNOLOGIES',
@@ -615,13 +615,13 @@ const TNC = [
           <div>
             <div className={` ${styles.title}`}>
               <span className={`${styles.ltor}`}>
-                <span className="hidden md:inline"> BORDERLESS AGENCY,</span>
+                <span className="hidden md:inline"> CREATIVE PARTNER TO,</span>
               </span>
             </div>
 
             <div className={` ${styles.title} block md:hidden mt-[-28px]`}>
-              <span className={`${styles.ltor} `}> BORDERLESS</span>
-              <span className="text-[40px] tracking-[-1.4px]"> AGENCY,</span>
+              <span className={`${styles.ltor} `}> CREATIVE </span>
+              <span className="text-[40px] tracking-[-1.4px]"> PARTNER TO</span>
             </div>
 
             <div className="banner relative h-[50%] w-full overflow-hidden">
@@ -636,7 +636,7 @@ const TNC = [
               ></video>
               <div className={` ${styles.title}`}>
                 <div className={` ${styles.textblend} md:whitespace-nowrap`}>
-                  SCALABLE CREATIVITY
+                  BORDERLESS BRANDS
                 </div>
               </div>
             </div>
