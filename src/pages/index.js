@@ -186,7 +186,7 @@ const LandPage = () => {
     },
     text: (
       <span className="md:max-w-[188px]">
-        Change count <br />
+        count <br />
         of brands
       </span>
     ),
@@ -203,7 +203,7 @@ const LandPage = () => {
     },
     text: (
       <>
-      Change video <br/>numbers
+      video <br/>numbers
       </>
     ),
   },
@@ -240,7 +240,7 @@ const LandPage = () => {
     {
     key: 0,
     quote:
-      'We are delighted to team up with Red Bangle to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Red Bangle to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+      'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
     name: 'ALINA PATRAHAU',
     designation: 'FOUNDER',
     company: 'DARUIESTE ARIPI',
@@ -269,7 +269,7 @@ const LandPage = () => {
     {
     key: 2,
     quote:
-      'We partnered with Red Bangle to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+      'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
 
     designation: 'VP INTERNAL COMMUNICATIONS',
     company: 'FORTUNE 100 ITES ENTERPRISE',
@@ -432,7 +432,7 @@ const TNC = [
     content: (
       <>
         <div>
-          Project turnaround times vary based on the brief. For strategic long-term result-oriented engagements, it takes a couple of months to workshop requirements, research and arrive at a project gameplan and metrics to measure. And the project itself may range from 6 to 18 months, or longer. For ongoing and on-demand services, the turnaround times vary from a couple of weeks to a couple of months depending on the scale of the requirement. 
+          Project turnaround times vary based on the brief. For strategic long-term result-oriented engagements, it takes a couple of months to workshop requirements, research and arrive at a project gameplan and metrics to measure. And the project itself may range from 6 to 18 months, or longer. For ongoing and on-demand services, the turnaround times vary from a couple of weeks to a couple of months depending on the scale of the requirement. <br/>
           When it comes to our book-a-crew service however, we can work with as little as 2 to 3 working days to get you the right crew.
         </div>
       </>
@@ -601,7 +601,7 @@ const TNC = [
   return (
     <>
       <SEO
-        title="AI-First Creative Agency for Global Brands - Red Bangle"
+        title="AI-First Creative Agency for Global Brands - Makerrs"
         description="We craft brand solutions, creative campaigns, AI products, interactive brand experiences, AI avatars and sticky original content IPs for over 60 brands globally."
         url="https://www.redbangle.com"
       />
@@ -650,7 +650,7 @@ const TNC = [
           >
             <div>
               <div className="text-rb-black text-[16px] md:text-[24px] leading-[1.5] md:leading-[1.33] tracking-[-0.64px] md:tracking-[-0.96px] font-semibold max-w-[900px]">
-                We are a tech-powered borderless agency helping fast-growing businesses build engaging brands and narratives through videos, podcasts, campaigns and design.
+                We are a tech-powered creative agency and collaborative. We help global businesses craft brands and narratives through videos, podcasts, campaigns and design.
               </div>
               <div className="flex items-center justify-center md:flex-row flex-col md:mt-10 mt-9 md:gap-5 gap-4">
                 <Button
@@ -733,7 +733,7 @@ const TNC = [
         <div className="container">
           <LineHeading className="mb-6 md:mb-7.5">WHY TRY MAKERRS</LineHeading>
           <div className="max-w-[1090px]">
-            <RevealText text="We know what it takes to craft unique brands and engagement in the age of the borderless customer. Our strategic approach, human insights, core creative teams combined with an ever-expanding global collaborative of creative folks, and cloud-based workflows make us the right agency to craft and scale your global brand." />
+            <RevealText text="We know what it takes to craft unique brands and engagement in the age of the borderless customer. Our creative teams, strategic approach and human insights, combined with an ever-expanding global collaborative of creators and makerrs, and cloud-based workflows make us the right partner to craft and scale your borderless brand." />
           </div>
           <Button
             href="/about/who-we-are"
@@ -770,7 +770,7 @@ const TNC = [
         </div>
     </section>
     
-      <div className='py-18 md:pt-18 md:pb-0'>
+      <div className='pt-18 md:pt-18 md:pb-0'>
         <SolutionsSection />
       </div>
 
