@@ -519,19 +519,19 @@ export const Header = () => {
                     </button>
 
                     <div className="dropdown-menu rounded-lg bg-white py-5 px-6">
-                       <Link href="/services/design" className="hover:!text-rb-black cursor-default">
+                       <Link href="/services/design">
                           Design
                         </Link>
-                         <Link href="/services/video" className="hover:!text-rb-black cursor-default">
+                         <Link href="/services/video">
                           Video
                         </Link>
-                         <Link href="/services/podcast" className="hover:!text-rb-black cursor-default">
+                         <Link href="/services/podcast">
                           Podcast
                         </Link>
-                         <Link href="/services/campaigns" className="hover:!text-rb-black cursor-default">
+                         <Link href="/services/campaigns">
                           Campaigns
                         </Link>
-                         <Link href="/services/book-a-crew" className="hover:!text-rb-black cursor-default">
+                         <Link href="/services/book-a-crew">
                           Book a Crew
                         </Link>
                     </div>
