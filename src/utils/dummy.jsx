@@ -1478,4 +1478,33 @@ export const ecs = [
   },
 ]
 
+export const strategyPosts = [
+  {
+    key: 0,
+    name: 'Launching an AI-powered healthcare brand in record time',
+    company: 'Lillia Care',
+    image: '/img/works/lillia_img.jpg',
+    alt:'Lillia Care',
+    tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
+    href: ''
+  },
+  {
+    key: 1,
+    name: 'Branding for an Indulgent Dessert Café',
+    company: 'P.U. Dingding',
+    image: '/img/works/pudingding-thumbnail.jpg',
+    tags: ['Brand Identity', 'Design Collateral', 'Film & Video Content', 'F&B'],
+    href: '',
+  },
+  {
+    key: 2,
+    name: "Unveiling Harmony Direct 2.0 - Electric Fleet Charger",
+    company: 'Exicom',
+    image: '/img/works/exicom_work_thumbnail.png',
+    alt: 'Exicom',
+    tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
+    href:''
+  },
+]
+
 export const featuredPlay = ecs.slice(0, 8)

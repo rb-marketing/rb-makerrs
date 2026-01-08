@@ -451,7 +451,7 @@ const TNC = [
     content: (
       <>
         Our borderless agency supports clients across time zones. So, {' '}
-        <Link href="https://www.b2b.redbangle.com/contact" className="underline">
+        <Link href="https://www.b2b.redbangle.com/contact" className="underline hover:text-rb-link-green2">
           send us a brief
         </Link>{' '}
         and we&apos;ll set up a meeting at a mutually convenient time.
@@ -603,7 +603,7 @@ const TNC = [
       <SEO
         title="AI-First Creative Agency for Global Brands - Makerrs"
         description="We craft brand solutions, creative campaigns, AI products, interactive brand experiences, AI avatars and sticky original content IPs for over 60 brands globally."
-        url="https://www.redbangle.com"
+        url="https://www.makerrs.com"
       />
 
       <section
@@ -770,7 +770,7 @@ const TNC = [
         </div>
     </section>
     
-      <div className='pt-18 md:pt-18 md:pb-0'>
+      <div className='py-18 md:pt-30 md:pb-0'>
         <SolutionsSection />
       </div>
 

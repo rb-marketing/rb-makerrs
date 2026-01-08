@@ -11,7 +11,7 @@ export const ContactSection = ({ type = '' }) => {
             <div className="w-full md:w-1/2">
               <div className="text-[60px] lg:text-[82px] xl:text-[102px] leading-[1.06] text-rb-black tracking-[-2.56px] uppercase font-everett font-medium">
               let&rsquo;s make something{' '}
-              new <br /> today
+              <span className="text-rb-link-green">new</span> <br /> today
             </div>
             </div>
           )}

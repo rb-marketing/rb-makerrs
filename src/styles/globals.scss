@@ -1150,9 +1150,9 @@ body.disable-scroll {
 }
 
 a:hover {
-  color: #13c33f;
+  @apply text-rb-link-green;
 }
 
 .see-on-map:hover {
-  border-color: #13c33f;
+  @apply border-rb-link-green;
 }

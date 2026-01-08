@@ -147,7 +147,7 @@ export const icons = [
 
 export const TrustedBrandsSection = ({
   className = '',
-  heading = 'Our Brand Partners',
+  heading = 'Our Clients',
   ...props
 }) => {
   return (

@@ -146,6 +146,7 @@ export const services = [
   },
 ]
 
+
 export const redbanglewayCreate = [
   {
     key: '0',
@@ -496,5 +497,248 @@ export const TNC = [
         and we’ll set up a meeting at a mutually convenient time.
       </>
     ),
+  },
+]
+
+export const serviceVideos = {
+  get_design: {
+    video: {
+      src: '/img/services/service_get_design.mp4',
+      poster: '/img/services/think-poster.webp',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/service_get_design.mp4',
+      poster: '/img/services/think-full-poster.webp',
+      width: '1920',
+      height: '1080',
+    },
+  },
+  campaign: {
+    video: {
+      src: '/img/services/campaign-slid-1.mp4',
+      poster: '/img/services/campaign-slid-1.webp',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/campaign-slid-1.mp4',
+      poster: '/img/services/campaign-slid-1.webp',
+      width: '1920',
+      height: '1080',
+    },
+  },
+  design: {
+    video: {
+      src: '/img/services/design_video.mp4',
+      poster: '/img/services/design_video.png',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/design_video.mp4',
+     poster: '/img/services/design_video.png',
+      width: '1920',
+      height: '1080',
+    },
+  },
+  content: {
+    video: {
+      src: '/img/services/content-rect-2.mp4',
+      poster: '/img/services/content-rect-2.webp',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/content-rect-2.mp4',
+      poster: '/img/services/content-rect-2.webp',
+      width: '1920',
+      height: '1080',
+    },
+  },
+  technology: {
+    video: {
+      src: '/img/services/tech-rect2.mp4',
+      poster: '/img/services/tech-rect2.webp',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/tech-rect2.mp4',
+      poster: '/img/services/tech-rect2.webp',
+      width: '1920',
+      height: '1080',
+    },
+  },
+  production: {
+    video: {
+      src: '/img/services/production-rect.mp4',
+      poster: '/img/services/production_rect.webp',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/production-rect.mp4',
+      poster: '/img/services/production_rect.webp',
+      width: '1920',
+      height: '1080',
+    },
+  },
+  ai: {
+    video: {
+      src: '/img/services/ai-react.mp4',
+      poster: '/img/services/ai-react.webp',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/ai-react.mp4',
+      poster: '/img/services/ai-react.webp',
+      width: '1920',
+      height: '1080',
+    },
+  }
+}
+
+export const capabilitiesSCS = [
+  {
+    key: 0,
+    title: 'Brand Design Systems',
+    text: 'Get unique, multi-sensory Brand Design Systems-visual, verbal, and sonic-that deliver a cohesive brand story and brand experience across touch points. Sign up for an immersive branding workshop and get started today!',
+    icon: {
+      src: '/img/services/approach/s-star.svg',
+      alt:'star',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 1,
+    title: 'Event Branding',
+    text: 'Be it your own brand event or a branded booth-our comprehensive event branding services include event theme and logo design, invites, motion graphics, mailers, zone and booth design, presentation design, merchandise design, and giveaway curation.',
+    icon: {
+      src: '/img/services/approach/s-megaphone.svg',
+      alt: 'S-circles',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 2,
+    title: 'Collateral Design',
+    text: 'From presentations and coffee table books to packaging design, brochure design, brand merchandise design, social media creatives, and more—we help you slay brand conversations through great design.',
+    icon: {
+      src: '/img/services/approach/s-circles.svg',
+      alt: 'S-Maze',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 3,
+    title: 'Interactive Experiences',
+    text: 'We design and develop interactive and immersive brand experiences that transform physical and digital spaces into dynamic storytelling platforms. Be it interactive, augmented, virtual, or mixed reality experiences–we help you forge unforgettable connections with your audiences.',
+    icon: {
+      src: '/img/services/approach/s-think.svg',
+      alt: 'Think',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 4,
+    title: 'Brand Mascots and Avatars',
+    text: 'Fuel infinite customer engagement possibilities with custom-crafted brand mascots and avatars inspired by human, animal, object, sci-fi, or hybrid DNA. Supercharge your brand across web, social, email, events, and more.',
+    icon: {
+      src: '/img/services/approach/s-gear.svg',
+      alt: 'Services',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 5,
+    title: 'Environmental Graphics',
+    text: 'We design visually appealing environments and physical spaces for retail, corporate offices, galleries, public spaces, events, and more—helping people feel, navigate, and interact with your brand through curiosity and joy.',
+    icon: {
+      src: '/img/services/approach/s-megaphone.svg',
+      alt: 's-megaphone',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 6,
+    title: 'Motion Graphics',
+    text: (
+          <>
+          We&apos;re motion-first. In today&apos;s digital landscape, motion is key to captivate audiences through a &apos;fourth dimension&apos; in graphic design. We specialize in motion graphics, animation, VFX, CGI, and more.
+          </>
+    ),
+    icon: {
+      src: '/img/services/approach/s-chart.svg',
+      alt: 's-chart',
+      width: 111,
+      height: 111,
+    },
+  },
+]
+
+export const redbanglewayThink = [
+  {
+    key: '0',
+    heading: 'Discovery',
+    content:
+      "We explore your brand DNA and aspirations through research, interviews, analysis, and discussions.",
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
+    },
+  },
+  {
+    key: '1',
+    heading: 'Strategy',
+    content:
+      'We craft a creative strategy to give your brand and communication a unique personality and advantage.',
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
+    },
+  },
+  {
+    key: '2',
+    heading: 'Creative',
+    content:
+      'We explore creative directions and build design assets for your unique requirements.',
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
+    },
+  },
+  {
+    key: '3',
+    heading: ' Delivery',
+    content:
+      'We compile and deliver all assets along with clear guidelines for consistent usage.',
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
+    },
+  },
+  {
+    key: '4',
+    heading: 'Scale',
+    content:
+      'From brand identity to brand mascots, we help roll out and scale.',
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
+    },
   },
 ]
