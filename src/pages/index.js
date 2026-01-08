@@ -601,8 +601,8 @@ const TNC = [
   return (
     <>
       <SEO
-        title="AI-First Creative Agency for Global Brands - Makerrs"
-        description="We craft brand solutions, creative campaigns, AI products, interactive brand experiences, AI avatars and sticky original content IPs for over 60 brands globally."
+        title="Branding, Video and Podcast Production Agency | Makerrs"
+        description="Top agency for branding services, video production, podcast production and video crew services. Global creative partner to borderless brands and enterprises."
         url="https://www.makerrs.com"
       />
 
