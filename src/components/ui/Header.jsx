@@ -32,23 +32,23 @@ const outsideLinks = [
     menu: [
       {
         title: 'Design',
-        href: '/services/design'
+        href: '/brand-design-agency'
       },
       {
         title: 'Video',
-        href: '/services/video'
+        href: '/video-production'
       },
       {
         title: 'Podcast',
-        href: '/services/podcast'
+        href: '/podcast-production-services'
       },
       {
         title: 'Campaign',
-        href: '/services/campaigns'
+        href: '/advertising-agency'
       },
       {
         title: 'Book a Crew',
-        href: '/services/book-a-crew'
+        href: '/video-production-near-me'
       },
     ],
   }
@@ -59,9 +59,9 @@ const outsideLinks2 = [
   {
     title: 'ABOUT',
     menu: [
-      { title: 'About Us', href: '/about/who-we-are' },
-      { title: 'Our Technology', href: '/about/creative-cloud-platform' },
-      { title: 'Our Impact', href: '/about/giving-back' }
+      { title: 'About Us', href: '/about-us' },
+      { title: 'Our Technology', href: '/creative-cloud-platform' },
+      { title: 'Our Impact', href: '/impact' }
     ],
   },
 ]
@@ -191,7 +191,7 @@ export const Header = () => {
                     className={`hidden md:flex items-end md:h-[45px] mr-[47px] top-0 right-0`}
                   >
                     <Link
-                      href="/work/global"
+                      href="/work"
                       className="mr-8 uppercase flex md:h-auto items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       Work
@@ -340,7 +340,7 @@ export const Header = () => {
                     ))}
 
                     <Link
-                      href="/collab"
+                      href="/freelance-gigs"
                       className="mr-8 uppercase flex md:h-auto items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       COLLAB
@@ -563,7 +563,7 @@ export const Header = () => {
                     id="firstlink"
                   >
                     <Link
-                      href='/work/global'
+                      href='/work'
                       className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
                     >
                       WORK
@@ -585,19 +585,19 @@ export const Header = () => {
                     </button>
 
                     <div className="dropdown-menu rounded-lg bg-white py-5 px-6 text-black">
-                      <Link href="/services/design">
+                      <Link href="/brand-design-agency">
                         Design
                       </Link>
-                      <Link href="/services/video">
+                      <Link href="/video-production">
                         Video
                       </Link>
-                      <Link href="/services/podcast">
+                      <Link href="/podcast-production-services">
                         Podcast
                       </Link>
-                      <Link href="/services/campaigns">
+                      <Link href="/advertising-agency">
                         Campaign
                       </Link>
-                      <Link href="/services/book-a-crew">
+                      <Link href="/video-production-near-me">
                         Book a Crew
                       </Link>
                     </div>
@@ -629,22 +629,22 @@ export const Header = () => {
 
                     <div className="dropdown-menu rounded-lg bg-white py-5 px-6 text-black">
                       <div>
-                        <Link href="/about/who-we-are"> About Us </Link>
+                        <Link href="/about-us"> About Us </Link>
                       </div>
                       <div>
-                        <Link href="/about/creative-cloud-platform">
+                        <Link href="/creative-cloud-technology">
                           Our Technology
                         </Link>
                       </div>
                       <div>
-                        <Link href="/about/giving-back"> Our Impact </Link>
+                        <Link href="/impact"> Our Impact </Link>
                       </div>
                     </div>
                   </div>
 
                   <div className="nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4">
                     <Link
-                      href="/collab"
+                      href="/freelance-gigs"
                       className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
                     >
                       COLLAB

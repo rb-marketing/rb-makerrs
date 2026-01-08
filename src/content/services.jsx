@@ -515,6 +515,20 @@ export const serviceVideos = {
       height: '1080',
     },
   },
+   get_podcast: {
+    video: {
+      src: '/img/services/service_get_podcast.mp4',
+      poster: '/img/services/think-poster.webp',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/service_get_podcast.mp4',
+      poster: '/img/services/think-full-poster.webp',
+      width: '1920',
+      height: '1080',
+    },
+  },
   campaign: {
     video: {
       src: '/img/services/campaign-slid-1.mp4',
@@ -604,8 +618,8 @@ export const serviceVideos = {
 export const capabilitiesSCS = [
   {
     key: 0,
-    title: 'Brand Design Systems',
-    text: 'Get unique, multi-sensory Brand Design Systems-visual, verbal, and sonic-that deliver a cohesive brand story and brand experience across touch points. Sign up for an immersive branding workshop and get started today!',
+    title: 'Podcast Research & Strategy',
+    text: 'We study your industry, audience and competitors, and build on your strategic priorities to define the themes and direction for your podcast. We ensure that your podcast reflects your brand purpose, market positioning and long-term goals.',
     icon: {
       src: '/img/services/approach/s-star.svg',
       alt:'star',
@@ -615,8 +629,8 @@ export const capabilitiesSCS = [
   },
   {
     key: 1,
-    title: 'Event Branding',
-    text: 'Be it your own brand event or a branded booth-our comprehensive event branding services include event theme and logo design, invites, motion graphics, mailers, zone and booth design, presentation design, merchandise design, and giveaway curation.',
+    title: 'Podcast Concept',
+    text: 'We translate focus themes into a unique podcast concept and structure the format to ensure that each episode embraces your brand, expresses your point of view consistently and with authority, and offers something memorable to your audience.',
     icon: {
       src: '/img/services/approach/s-megaphone.svg',
       alt: 'S-circles',
@@ -626,8 +640,8 @@ export const capabilitiesSCS = [
   },
   {
     key: 2,
-    title: 'Collateral Design',
-    text: 'From presentations and coffee table books to packaging design, brochure design, brand merchandise design, social media creatives, and more—we help you slay brand conversations through great design.',
+    title: 'Podcast Branding',
+    text: 'We craft a great name and tagline for your podcast, design the logo, channel art, thumbnails, in-episode graphics, music, and more. We bring the whole package together so your podcast stands out no matter where it is viewed and how.',
     icon: {
       src: '/img/services/approach/s-circles.svg',
       alt: 'S-Maze',
@@ -637,8 +651,8 @@ export const capabilitiesSCS = [
   },
   {
     key: 3,
-    title: 'Interactive Experiences',
-    text: 'We design and develop interactive and immersive brand experiences that transform physical and digital spaces into dynamic storytelling platforms. Be it interactive, augmented, virtual, or mixed reality experiences–we help you forge unforgettable connections with your audiences.',
+    title: 'Global Production',
+    text: 'From a two-camera shoot to a four-camera setup and a mix of production setups. Whether it’s 1 shoot a month or 4 shoots a month. Whether it’s in a studio, at an event, or on the go. Whether it’s in New York or New Delhi. Makerrs has podcast production covered for your brand, no matter what the scale, format, or genre.',
     icon: {
       src: '/img/services/approach/s-think.svg',
       alt: 'Think',
@@ -648,8 +662,8 @@ export const capabilitiesSCS = [
   },
   {
     key: 4,
-    title: 'Brand Mascots and Avatars',
-    text: 'Fuel infinite customer engagement possibilities with custom-crafted brand mascots and avatars inspired by human, animal, object, sci-fi, or hybrid DNA. Supercharge your brand across web, social, email, events, and more.',
+    title: 'Podcast Publishing',
+    text: 'Our eye-grabbing thumbnails, SEO-friendly titles, descriptions, chapters, and transcripts, and our overall comprehensive project management ensure every episode goes live on schedule across YouTube, Spotify, Apple Podcast, and more. ',
     icon: {
       src: '/img/services/approach/s-gear.svg',
       alt: 'Services',
@@ -659,8 +673,8 @@ export const capabilitiesSCS = [
   },
   {
     key: 5,
-    title: 'Environmental Graphics',
-    text: 'We design visually appealing environments and physical spaces for retail, corporate offices, galleries, public spaces, events, and more—helping people feel, navigate, and interact with your brand through curiosity and joy.',
+    title: 'Podcast Amplification',
+    text: 'Every good episode needs several pieces of amplification content – teaser, down edits, carousel, and static graphic – and supporting thumbnails, titles, captions, descriptions, and more! Our podcast producers, writers, and editors are here to scale podcast post-production and marketing content to meet your community growth ambitions.',
     icon: {
       src: '/img/services/approach/s-megaphone.svg',
       alt: 's-megaphone',
@@ -670,11 +684,10 @@ export const capabilitiesSCS = [
   },
   {
     key: 6,
-    title: 'Motion Graphics',
+    title: 'Podcast Marketing',
     text: (
           <>
-          We&apos;re motion-first. In today&apos;s digital landscape, motion is key to captivate audiences through a &apos;fourth dimension&apos; in graphic design. We specialize in motion graphics, animation, VFX, CGI, and more.
-          </>
+We craft, publish, and track organic marketing content across LinkedIn, X, Instagram, and other social platforms to ensure audience growth. And when you want more than organic growth, we have you covered with planned media spends. We’ll propose the right media spend strategy to achieve your brand and podcast growth goals.          </>
     ),
     icon: {
       src: '/img/services/approach/s-chart.svg',
