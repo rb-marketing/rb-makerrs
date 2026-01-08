@@ -4,39 +4,21 @@ import { ContactSection, Marquee } from '@/components/shared'
 import { useRouter } from 'next/router'
 import useBaseUrl from '@/utils/baseUrl'
 
+const dropDownArrow = (
+  <svg width="12" height="12" viewBox="0 0 17 17" fill="none">
+    <path
+      d="m1.625 15.375 13.75-13.75m0 0H1.625m13.75 0v13.75"
+      stroke="#13c33f"
+      strokeWidth="2.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+)
+
 const socials = [
   {
     key: 0,
-    icon: (
-      <svg
-        className="w-full group-hover:text-[#FF0000] transition-all"
-        width="40"
-        height="40"
-        viewBox="0 0 40 40"
-        fill="none"
-      >
-        <circle
-          cx="20"
-          cy="20"
-          r="19.375"
-          fill="#fff"
-          stroke="currentColor"
-          strokeWidth="1.25"
-        />
-        <path
-          fill="currentColor"
-          d="M29.802 14.71a2.532 2.532 0 0 0-1.788-1.787c-1.577-.423-7.901-.423-7.901-.423s-6.325 0-7.902.423a2.532 2.532 0 0 0-1.788 1.788C10 16.287 10 19.579 10 19.579s0 3.291.423 4.868c.233.87.917 1.555 1.788 1.788 1.577.422 7.902.422 7.902.422s6.324 0 7.901-.422a2.532 2.532 0 0 0 1.788-1.788c.423-1.577.423-4.868.423-4.868s-.002-3.292-.423-4.868Z"
-        />
-        <path fill="#fff" d="m18.09 22.611 5.254-3.033-5.254-3.033v6.066Z" />
-      </svg>
-    ),
-     href: 'https://www.youtube.com/@RedBangleIndia',
-    title: (
-      <span className="group-hover:text-[#FF0000] transition-all">YouTube</span>
-    ),
-  },
-  {
-    key: 1,
     icon: (
       <svg
         className="w-full group-hover:text-[#006699] transition-all"
@@ -68,7 +50,7 @@ const socials = [
     ),
   },
   {
-    key: 2,
+    key: 1,
     icon: (
       <div className="relative">
         <svg
@@ -182,6 +164,36 @@ const socials = [
     className: styles.instagram,
     title: <span className="transition-all">Instagram</span>,
   },
+    {
+    key: 2,
+    icon: (
+      <svg
+        className="w-full group-hover:text-[#FF0000] transition-all"
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+      >
+        <circle
+          cx="20"
+          cy="20"
+          r="19.375"
+          fill="#fff"
+          stroke="currentColor"
+          strokeWidth="1.25"
+        />
+        <path
+          fill="currentColor"
+          d="M29.802 14.71a2.532 2.532 0 0 0-1.788-1.787c-1.577-.423-7.901-.423-7.901-.423s-6.325 0-7.902.423a2.532 2.532 0 0 0-1.788 1.788C10 16.287 10 19.579 10 19.579s0 3.291.423 4.868c.233.87.917 1.555 1.788 1.788 1.577.422 7.902.422 7.902.422s6.324 0 7.901-.422a2.532 2.532 0 0 0 1.788-1.788c.423-1.577.423-4.868.423-4.868s-.002-3.292-.423-4.868Z"
+        />
+        <path fill="#fff" d="m18.09 22.611 5.254-3.033-5.254-3.033v6.066Z" />
+      </svg>
+    ),
+     href: 'https://www.youtube.com/@RedBangleIndia',
+    title: (
+      <span className="group-hover:text-[#FF0000] transition-all">YouTube</span>
+    ),
+  }
 ]
 
 const offices = [
@@ -428,9 +440,12 @@ export const Footer = ({ hasContactForm }) => {
                     <Link
                       href=''
                       data-rb-cursor-state="invisible"
-                      className="max-w-max"
+                      className="max-w-max flex items-center gap-3"
                     >
-                      Design
+                     <span>Design</span>
+                       <div className="dropdown-arrow rotate-90 mt-0.5">
+                        {dropDownArrow}
+                      </div>
                     </Link>
                      <Link
                       href=''
@@ -442,9 +457,13 @@ export const Footer = ({ hasContactForm }) => {
                     <Link
                       href=''
                       data-rb-cursor-state="invisible"
-                      className="max-w-max"
+                      className="max-w-max flex items-center gap-3"
                     >
-                      Videos
+                       <span>Videos</span>
+                       <div className="dropdown-arrow rotate-90 mt-0.5">
+                        {dropDownArrow}
+                      </div>
+                      
                     </Link>
                      <Link
                       href=''

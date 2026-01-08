@@ -81,7 +81,7 @@ const Design = ({setisPopupOpen}) => {
         'Get marketing explainer videos, video case studies, corporate videos, hiring and culture videos and more. Red Bangle offers end to end video production services across locations and formats. Get scalable video production services for your B2B brand.',
       serviceAmblem: '/img/services/content_asset1.svg',
 
-          bgColor: '#c60025',
+      bgColor: '#333333',
       textColor:'#ffffff',
     href: '',
     },
@@ -91,7 +91,7 @@ const Design = ({setisPopupOpen}) => {
     serviceDescription:
       'Bowl your audience over with our AI-first campaigns, content, experiences and more. Take your brand into the future with our end-to-end AI solutions: concept, design, curation, development, AI training and more.',
     serviceAmblem: '/img/services/campaigns_aset.svg',
-    bgColor: ' #fd96ad',
+    bgColor: ' #4a4a49',
     textColor:'#ffffff',
     href: '',
   },
@@ -101,7 +101,7 @@ const Design = ({setisPopupOpen}) => {
       serviceDescription:
         'We take our cues from people and culture, turning creative insights into campaigns that cut through the noise. From bold ideas to flawless execution, we create work that gets your brand noticed, talked about, and loved.',
       serviceAmblem: '/img/services/campaigns_aset.svg',
-      bgColor: ' #fd0238',
+      bgColor: ' #7f7f7f',
       textColor:'#FFFFFF',
       href: '',
     },
@@ -111,8 +111,8 @@ const Design = ({setisPopupOpen}) => {
       serviceDescription:
         'Book professional video crews on-demand in 100 countries. Our team of experienced producers curate video crews for every brief and location, manage the shoots and quality-check the footage for you. Shoot video testimonials, events, drone footage, and more wherever you need them!',
       serviceAmblem: '/img/services/crews_asset1.svg',
-      bgColor: '#fddfdf',
-      textColor:'#e5011c',
+      bgColor: '#9b9dad',
+      textColor:'#ffffff',
       href: '/b2b-international-video-crew-agency',
     }, 
   ]
@@ -120,35 +120,33 @@ const Design = ({setisPopupOpen}) => {
   const TNC = [
   {
     key: 1,
-    title: 'physical brand experiences?',
+    title: 'Do you offer end-to-end design solutions?',
     content: (
       <>
         <div>
-         ranges from environmental graphics for corporate offices to interactive experiences at events.
+          We provide end-to-end design solutions, managing every aspect of a project from concept to roll out. Our services encompass strategy, design, development, deployment, and ongoing support. Our dedicated design processes ensure a streamlined experience—whether you need comprehensive branding services or a well-designed business presentation.
         </div>
       </>
     )
   },
   {
     key: 2,
-    title: 'Can you help with packaging design?',
+    title: 'What are the design services you provide?',
     content:
-      'Yes, our packaging design services take you from initial concept development to final production-ready designs, no matter which industry.',
+      'We offer the full spectrum of design services–from brand identity systems, editorial design, to environmental graphics, motion graphics, and experience design. With a great in-house design team and a curated community of creative talent from around the world, we leverage a variety of skills and techniques to bring to life ideas that are fresh and dynamic.',
   },
   {
     key: 3,
-    title: (
-      <>
-        <div>
-          How long does it take you to develop a brand identity?
-        </div>
-      </>
-    ),
+    title: 'What’s included in your brand identity solution?',
     content: (
       <>
-        <div>
-        Depending on the complexity and scope of work, the process can take anywhere from one month to a year. A limited-scope project consisting of logo design, font, and colors may be completed in a few weeks. While a more comprehensive brand identity-covering strategy, brand identity, design collateral, and launch execution-may take a few months.
-        </div>
+        <p>
+We create unique, multi-sensory Brand Design Systems—visual, verbal, and sonic—for a consistent and impactful brand presence which resonates with customers. 
+        </p>
+        <p>The first leg involves market research, competitor analysis, and immersive brand workshops with the client. Then we cull out a creative strategy for the brand, articulate the positioning, brand values, and brand story. </p>
+        <p>Next, we develop a comprehensive brand identity which includes the name, brand voice, logo design, typography, iconography, color palettes, imagery, and usage guidelines–all of which go into a comprehensive Brand Manual. </p>
+        <p>We also create a stipulated number of relevant brand collaterals. These include physical and digital assets that reinforce the new brand identity through various use cases, such as business stationery, email templates, brochures, websites, posters, games, jingles, and other formats.</p>
+        <p>In some cases, we also support brands during the launch phase by executing strategic rollouts across key channels, including social media.</p>
       </>
     ),
   },
@@ -294,13 +292,13 @@ const Design = ({setisPopupOpen}) => {
         url="https://www.staging.b2c.redbangle.com/brand-strategy-agency-india"
       />
       <ServiceHeroSection
-        className="bg-[#930000]"
+        className=""
         type="GET DESIGN"
         video={serviceVideos.get_design.video}
         fullVideo={serviceVideos.get_design.fullVideo}
         ctaText="Design with us "
         ctaLink="/contact"
-         textColor ='#FFFFFF'
+         textColor ='#111010'
         content={
           <>
             <h1 className="inline">From brand identity systems, experiential design, and event branding to editorial design, illustrations, and motion graphics-build brand differentiation and human connect with us.</h1>
@@ -340,10 +338,10 @@ const Design = ({setisPopupOpen}) => {
         heading='Explore Our Design Process'
         title='How we design for brand growth'
       />
-       <FeaturedWorkSection posts={_posts} href="" title="Work that brands and consumers loved"/> 
+       <FeaturedWorkSection posts={_posts} href="" title="Explore Our Design Work"/> 
         <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
         <Testimonials
-            title={'WHAT OUR CLIENTS SAY'}
+            title={'WHAT CLIENTS SAY'}
             className="py-7.5 md:py-15"
             testimonialData={createTestimonialData}
             type="semi"

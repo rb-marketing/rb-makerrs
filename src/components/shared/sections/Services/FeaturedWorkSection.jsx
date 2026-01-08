@@ -1,5 +1,7 @@
 import { ContentPostCard } from '@/components/shared/Cards/ContentPostCard'
 import { LineHeading } from '../../Heading'
+import { Button } from '@/components/ui'
+import { LineArrow } from '@/components/icons'
 
 export const FeaturedWorkSection = ({
   title = 'Here’s a portfolio of work that worked',
@@ -9,7 +11,7 @@ export const FeaturedWorkSection = ({
   return (
     <section className="bg-white py-7.5 md:py-15">
       <div className="container">
-        <LineHeading className="mb-6 md:mb-9">FEATURED WORK</LineHeading>
+        {/* <LineHeading className="mb-6 md:mb-9">FEATURED WORK</LineHeading> */}
 
         <div className="rb-row mb-10 md:mb-18 md:items-center">
           <div className="w-full md:w-7/12">
@@ -18,14 +20,13 @@ export const FeaturedWorkSection = ({
             </h3>
           </div>
           <div className="w-full hidden md:block md:w-5/12">
-            {/* <Button
+            <Button
               suffix={<LineArrow hover />}
-              intent="p-secondary"
               href={href}
               className="md:float-right"
             >
               EXPLORE WORK
-            </Button> */}
+            </Button>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-x-6 mt-16 md:mt-20">

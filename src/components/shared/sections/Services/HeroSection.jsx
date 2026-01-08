@@ -34,7 +34,7 @@ export const ServiceHeroSection = ({
           <Button
             href={ctaLink}
             suffix={<LineArrow hover />}
-            className="w-full md:w-max uppercase " style={{color:textColor , borderColor:textColor}}
+            className="w-full md:w-max uppercase bg-rb-red hover:bg-rb-milano-red" style={{color:textColor}}
             intent="secondary"
           >
             {ctaText}

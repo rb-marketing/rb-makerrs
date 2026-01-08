@@ -43,7 +43,7 @@ const outsideLinks = [
         href: '/services/podcast'
       },
       {
-        title: 'Campaigns',
+        title: 'Campaign',
         href: '/services/campaigns'
       },
       {
@@ -51,13 +51,17 @@ const outsideLinks = [
         href: '/services/book-a-crew'
       },
     ],
-  },
+  }
+ 
+]
+
+const outsideLinks2 = [
   {
     title: 'ABOUT',
     menu: [
-      { title: 'Team', href: '/about/who-we-are' },
-      { title: 'Technology', href: '/about/creative-cloud-platform' },
-      { title: 'Careers', href: '/about/giving-back' }
+      { title: 'About Us', href: '/about/who-we-are' },
+      { title: 'Our Technology', href: '/about/creative-cloud-platform' },
+      { title: 'Our Impact', href: '/about/giving-back' }
     ],
   },
 ]
@@ -184,11 +188,11 @@ export const Header = () => {
               <div className="flex-1 md:flex-none md:w-3/4 -mr-4 md:mr-0">
                 <div className="flex items-center justify-end h-[60px] md:h-[85px]">
                   <div
-                    className={`hidden md:flex items-center md:h-full mr-[47px] top-0 right-0`}
+                    className={`hidden md:flex items-end md:h-[45px] mr-[47px] top-0 right-0`}
                   >
                     <Link
                       href="/work/global"
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
+                      className="mr-8 uppercase flex md:h-auto items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       Work
                     </Link>
@@ -196,7 +200,7 @@ export const Header = () => {
 
                     {outsideLinks.map((l, i) => (
                       <div
-                        className="inline-block h-full font-semibold text-sm md:mr-10 relative group text-rb-black hover:text-rb-link-green transition-all"
+                        className="inline-block h-auto font-semibold text-sm md:mr-10 relative group text-rb-black hover:text-rb-link-green transition-all"
                         key={i}
                       >
                         <button className="uppercase flex h-full items-center">
@@ -229,7 +233,7 @@ export const Header = () => {
                             </svg>
                           </div>
                         </button>
-                        <div className="absolute font-medium min-w-[210px] p-6 top-20 rounded-lg shadow-menu invisible group-hover:visible group-hover:opacity-100 transition-all opacity-0 flex flex-col z-[1] bg-white">
+                        <div className="absolute font-medium min-w-[210px] p-6 top-10 rounded-lg shadow-menu invisible group-hover:visible group-hover:opacity-100 transition-all opacity-0 flex flex-col z-[1] bg-white">
                           {l.menu?.map((lItem, li) => {
                             const isComingSoon =
                               lItem.title.includes('Coming soon')
@@ -263,23 +267,85 @@ export const Header = () => {
 
                     <Link
                       href="/blog"
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
+                      className="mr-8 uppercase flex md:h-auto items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       Blog
                     </Link>
 
+
+                      {outsideLinks2.map((l, i) => (
+                      <div
+                        className="inline-block h-auto font-semibold text-sm md:mr-10 relative group text-rb-black hover:text-rb-link-green transition-all"
+                        key={i}
+                      >
+                        <button className="uppercase flex h-full items-center">
+                          {l.title}
+                          <div className="w-5 h-5 flex items-center justify-center ml-1">
+                            <svg
+                              width="21"
+                              height="20"
+                              viewBox="0 0 21 20"
+                              className="group-hover:rotate-90 transition-all group-hover:text-rb-link-green"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g>
+                                <path
+                                  d="M7.65234 13.7046L14.0942 7.26275"
+                                  stroke="currentColor"
+                                  strokeWidth="1.6"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                                <path
+                                  d="M8.20312 6.84087L14.645 6.84087L14.645 13.2827"
+                                  stroke="currentColor"
+                                  strokeWidth="1.6"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </g>
+                            </svg>
+                          </div>
+                        </button>
+                        <div className="absolute font-medium min-w-[210px] p-6 top-10 rounded-lg shadow-menu invisible group-hover:visible group-hover:opacity-100 transition-all opacity-0 flex flex-col z-[1] bg-white">
+                          {l.menu?.map((lItem, li) => {
+                            const isComingSoon =
+                              lItem.title.includes('Coming soon')
+                            const comingSoonTags = lItem.title
+                              .replace('Coming soon', '')
+                              .trim()
+                            return isComingSoon ? (
+                              <span
+                                key={li}
+                                className="mt-4 first:mt-0 text-lg leading-6 text-rb-black"
+                              >
+                                {comingSoonTags}
+                                <div className="text-[0.7875rem] relative bottom-[5px]">
+                                  Coming soon
+                                </div>
+                              </span>
+                            ) : (
+                              <Link
+                                key={li}
+                                href={lItem.href}
+                                className="mt-4 first:mt-0 text-lg leading-6 text-rb-black hover:text-rb-link-green transition-all"
+                              >
+                                {lItem.title}
+                              </Link>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    ))}
+
                     <Link
                       href="/collab"
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
+                      className="mr-8 uppercase flex md:h-auto items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       COLLAB
                     </Link>
-                    {/* <Link
-                      href="/contact"
-                      className="mr-8 uppercase flex md:h-full items-center text-sm font-semibold text-rb-black/60 hover:text-rb-black transition-all w-full md:w-auto py-4 md:py-0"
-                    >
-                      Contact
-                    </Link> */}
+                   
                     <Button href="/contact" size="sm" className="font-bold">
                       GET IN TOUCH
                     </Button>
@@ -349,27 +415,7 @@ export const Header = () => {
 
                 <div className="flex items-center gap-4 flex-wrap">
                   <div className="flex gap-2">
-                     <a
-                      target="_blank"
-                      href="https://www.youtube.com/channel/UCbPlh2ukO1Qz6Ib2fY724QQ"
-                      className="w-10 h-10 flex justify-center items-center border border-[#F00] rounded-full"
-                    >
-                      <svg
-                        width="21"
-                        height="16"
-                        viewBox="0 0 21 16"
-                        fill="none"
-                      >
-                        <path
-                          d="M20.398 3.013a2.585 2.585 0 0 0-1.825-1.825C16.964.757 10.51.757 10.51.757s-6.456 0-8.065.431A2.585 2.585 0 0 0 .62 3.013C.188 4.623.188 7.982.188 7.982s0 3.359.431 4.968a2.585 2.585 0 0 0 1.825 1.825c1.61.431 8.065.431 8.065.431s6.455 0 8.064-.431a2.585 2.585 0 0 0 1.825-1.825c.432-1.609.432-4.968.432-4.968s-.002-3.36-.432-4.969Z"
-                          fill="red"
-                        />
-                        <path
-                          d="m8.445 11.085 5.363-3.096-5.363-3.096v6.192Z"
-                          fill="#fff"
-                        />
-                      </svg>
-                    </a>
+                   
                     <a
                       target="_blank"
                       href="https://www.linkedin.com/company/redbanglecreative/"
@@ -440,6 +486,27 @@ export const Header = () => {
                         </defs>
                       </svg>
                     </a>
+                     <a
+                      target="_blank"
+                      href="https://www.youtube.com/channel/UCbPlh2ukO1Qz6Ib2fY724QQ"
+                      className="w-10 h-10 flex justify-center items-center border border-[#F00] rounded-full"
+                    >
+                      <svg
+                        width="21"
+                        height="16"
+                        viewBox="0 0 21 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.398 3.013a2.585 2.585 0 0 0-1.825-1.825C16.964.757 10.51.757 10.51.757s-6.456 0-8.065.431A2.585 2.585 0 0 0 .62 3.013C.188 4.623.188 7.982.188 7.982s0 3.359.431 4.968a2.585 2.585 0 0 0 1.825 1.825c1.61.431 8.065.431 8.065.431s6.455 0 8.064-.431a2.585 2.585 0 0 0 1.825-1.825c.432-1.609.432-4.968.432-4.968s-.002-3.36-.432-4.969Z"
+                          fill="red"
+                        />
+                        <path
+                          d="m8.445 11.085 5.363-3.096-5.363-3.096v6.192Z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </a>
                     {/* <a
                       target="_blank"
                       href="https://twitter.com/red_bangle"
@@ -502,7 +569,7 @@ export const Header = () => {
                       WORK
                     </Link>
                   </div>
-                   <div
+                  <div
                     className={`dropdown relative nav-link  duration-300 ease-out hover:opacity-100 hover:text-rb-link-green md:order-4 order-4 ${dropdownMenu === 0 ? 'open' : ''
                       }`}
                   >
@@ -518,23 +585,33 @@ export const Header = () => {
                     </button>
 
                     <div className="dropdown-menu rounded-lg bg-white py-5 px-6 text-black">
-                       <Link href="/services/design">
-                          Design
-                        </Link>
-                         <Link href="/services/video">
-                          Video
-                        </Link>
-                         <Link href="/services/podcast">
-                          Podcast
-                        </Link>
-                         <Link href="/services/campaigns">
-                          Campaigns
-                        </Link>
-                         <Link href="/services/book-a-crew">
-                          Book a Crew
-                        </Link>
+                      <Link href="/services/design">
+                        Design
+                      </Link>
+                      <Link href="/services/video">
+                        Video
+                      </Link>
+                      <Link href="/services/podcast">
+                        Podcast
+                      </Link>
+                      <Link href="/services/campaigns">
+                        Campaign
+                      </Link>
+                      <Link href="/services/book-a-crew">
+                        Book a Crew
+                      </Link>
                     </div>
                   </div>
+
+                  <div className="nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4">
+                    <Link
+                      href="/blog"
+                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
+                    >
+                      BLOG
+                    </Link>
+                  </div>
+
                   <div
                     className={`dropdown relative nav-link  duration-300 ease-out hover:text-rb-link-green md:order-4 order-4 ${dropdownMenu === 1 ? 'open' : ''
                       }`}
@@ -552,26 +629,19 @@ export const Header = () => {
 
                     <div className="dropdown-menu rounded-lg bg-white py-5 px-6 text-black">
                       <div>
-                        <Link href="/about/who-we-are"> Team </Link>
+                        <Link href="/about/who-we-are"> About Us </Link>
                       </div>
                       <div>
                         <Link href="/about/creative-cloud-platform">
-                          Technology
+                          Our Technology
                         </Link>
                       </div>
                       <div>
-                        <Link href="/about/giving-back"> Careers </Link>
+                        <Link href="/about/giving-back"> Our Impact </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4">
-                    <Link
-                      href="/blog"
-                      className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
-                    >
-                      BLOG
-                    </Link>
-                  </div>
+
                   <div className="nav-link  duration-300 ease-out hover:opacity-100 md:order-4 order-4">
                     <Link
                       href="/collab"

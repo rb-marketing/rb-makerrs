@@ -213,7 +213,7 @@ const ImageAccordionTrigger = forwardRef(
         ref={forwardedRef}
       >
         <span className="inline-flex text-left items-start flex-col flex-wrap group-data-[state='open']:opacity-100 opacity-50">
-          <span className="text-rb-red group-data-[state='closed']:hidden text-accordion-medium md:mb-6 mb-2">
+          <span className="text-rb-link-green group-data-[state='closed']:hidden text-accordion-medium md:mb-6 mb-2">
             {index != null && `${`${index}`.padStart(2, '0')}`}
             &nbsp;
           </span>
