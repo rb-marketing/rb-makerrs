@@ -1,3 +1,4 @@
+import React from 'react'
 import { LineHeading } from '../Heading'
 import { Marquee } from '../Marquee'
 
@@ -168,41 +169,46 @@ export const icons = [
 
 export const TrustedBrandsSection = ({
   className = '',
-  heading = 'Our Clients',
+  heading = 'Trusted by global brands',
   ...props
 }) => {
+  
   return (
     <section className={className} {...props}>
       <div className="container">
         <LineHeading className="mb-7 md:mb-10">{heading}</LineHeading>
         <div className="overflow-hidden md:min-h-[188px]">
-          <Marquee duration={50}>
+          <Marquee duration={25}>
             <div className="flex items-center">
-              {icons.slice(0, icons.length / 2).map(({ name, id, ...rest }) => (
-                <div key={id} className="mx-6 md:mx-12 filter grayscale">
-                  <img
-                    src={`/img/logos/${name}`}
-                    loading="lazy"
-                    alt=""
-                    {...rest}
-                  />
-                </div>
-              ))}
+              {icons
+                .slice(0, icons.length / 2)
+                .map(({ name, id, ...rest }) => (
+                  <div key={id} className="mx-6 md:mx-12">
+                    <img
+                      src={`/img/logos/${name}`}
+                      loading="lazy"
+                      alt=""
+                      {...rest}
+                    />
+                  </div>
+                ))}
             </div>
           </Marquee>
           <div className="mt-0 md:mt-0"></div>
-          <Marquee duration={50} direction={-1}>
-            <div className="flex items-center mt-4">
-              {icons.slice(icons.length / 2).map(({ name, id, ...rest }) => (
-                <div key={id} className="mx-6 md:mx-12 filter grayscale">
-                  <img
-                    src={`/img/logos/${name}`}
-                    loading="lazy"
-                    alt=""
-                    {...rest}
-                  />
-                </div>
-              ))}
+          <Marquee duration={25} direction={-1}>
+            <div className="flex items-center">
+              {icons
+                .slice(icons.length / 2)
+                .map(({ name, id, ...rest }) => (
+                  <div key={id} className="mx-6 md:mx-12">
+                    <img
+                      src={`/img/logos/${name}`}
+                      loading="lazy"
+                      alt=""
+                      {...rest}
+                    />
+                  </div>
+                ))}
             </div>
           </Marquee>
         </div>

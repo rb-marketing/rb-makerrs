@@ -10,41 +10,6 @@ import {
 import { useRouter } from 'next/router'
 import { CommercialSection } from '@/components/pages/work'
 
-export const similarPostsData = [
-  {
-    key: 0,
-    name: "Supporting young women in pursuit of a Future in STEM",
-    company: 'WeRise',
-    image: '/img/works/we_rise.webp',
-    alt: 'WeRise',
-     tags: ['Non-profit', 'CSR Video', 'Documentary'],
-    tabs: ['Videos'],
-    case_study_title: 'werise-women-in-science-documentary',
-    href: '/work/b2b-video-production-agency/werise-women-in-science-documentary',
-  },
-  {
-    key: 1,
-    name: "Corporate Film for Aerospace Manufacturing giant in India",
-    company: 'GE Aerospace',
-    image: '/img/works/ge_aerospace.webp',
-    alt: 'GE Aerospace',
-     tags: ['Manufacturing', 'Aerospace', 'Corporate Films & Videos'],
-    tabs: ['Videos'],
-    case_study_title: 'ge-aerospace-corporate-film',
-    href: '/work/b2b-video-production-agency/ge-aerospace-corporate-film',
-  },
-  {
-    key: 2,
-    name: "Gordon Ritter on the Future of Software",
-    company: 'Vymo',
-    image: '/img/works/vymo_gordon_ritter.webp',
-    alt: 'Vymo',
-    tags: ['SaaS', 'Thought Leadership Video', 'Corporate Film', 'Interview Video'],
-    case_study_title: 'vymo-gordon-ritter-thought-leadership-video',
-    href: '/work/b2b-video-production-agency/vymo-gordon-ritter-thought-leadership-video',
-  },
-]
-
 const pageData = {
   logo: {
     src: '/img/logos/infosys-logo.png',
@@ -115,7 +80,7 @@ function AIPoweredCampaign() {
         url="https://www.b2b.redbangle.com/work/ai-creatives/infosys-thrive-ai-powered-campaign"
       />
       <WorkHeroSection
-        // logo={logo}
+        logo={logo}
         socials={socials}
         tags={tags}
         title="AI-Powered Campaign That Inspires Employees To Imagine Their Best Selves"
@@ -199,7 +164,7 @@ function AIPoweredCampaign() {
               <div className="block md:hidden grid grid-rows-[0.2fr_0.2fr_0.2fr_0.2fr_0.2fr_0.2fr] grid-cols-2 md:grid-rows-[0.15fr_0.28fr_0.37fr_0.20fr] md:grid-cols-[0.17fr_0.25fr_0.333fr_0.247fr]  aspect-[343/586] md:aspect-[1260/787] w-full mt-[70px] mb-[10rem] gap-x-[2rem] gap-y-[9rem]">
                 <div className="!row-start-3 col-start-1 row-span-2 md:row-span-1 relative">
                   <img
-                    alt=""
+                    alt="thrive"
                     loading="lazy"
                     className=" w-[15rem] object-cover rounded-lg shadow-md"
                     src="/img/case-study/thrive_img_5.jpg"
@@ -208,7 +173,7 @@ function AIPoweredCampaign() {
 
                 <div className="row-start-1 row-span-2 md:col-start-3 md:row-span-3 relative">
                   <img
-                    alt=""
+                    alt="thrive"
                     loading="lazy"
                     className=" w-[15rem] object-cover rounded-lg shadow-md"
                     src="/img/case-study/thrive_img_1.jpg"
@@ -216,7 +181,7 @@ function AIPoweredCampaign() {
                 </div>
                 <div className="row-start-4 md:row-start-3 col-start-2 row-span-2  relative">
                   <img
-                    alt=""
+                    alt="thrive"
                     loading="lazy"
                     className=" w-[15rem] object-cover rounded-lg shadow-md"
                     src="/img/case-study/thrive_img_2.jpg"
@@ -225,7 +190,7 @@ function AIPoweredCampaign() {
 
                 <div className="row-start-5 row-span-2 col-start-1 relative">
                   <img
-                    alt=""
+                    alt="thrive"
                     loading="lazy"
                     className=" w-[15rem] object-cover rounded-lg shadow-md"
                     src="/img/case-study/thrive_img_4.jpg"
@@ -233,7 +198,7 @@ function AIPoweredCampaign() {
                 </div>
                 <div className="row-start-2 col-start-2 md:col-start-4  relative row-span-2 md:-translate-y-6">
                   <img
-                    alt=""
+                    alt="thrive"
                     loading="lazy"
                     className=" w-[15rem] object-cover rounded-lg shadow-md"
                     src="/img/case-study/thrive_img_3.jpg"
@@ -274,12 +239,6 @@ function AIPoweredCampaign() {
         />
       </section>
 
-
-      {/* <SimilarPosts
-         tag="explore more case studies"
-        className="py-15 md:pb-30"
-        posts={similarPostsData}
-      /> */}
     </>
   )
 }

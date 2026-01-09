@@ -3,16 +3,18 @@ export const ContentPostCard = ({
   className = '',
   type = 'md', //md, lg
   href = '#!',
-  alt = '',
   name,
   company,
   image,
   tags = [],
+  cursorText = 'view',
+  page=''
 }) => (
   <a
-  href={href}
-  className={`flex flex-col group ${className}`}
-  data-rb-cursor-type="view"
+    href={`/work${href}`}
+    className={`flex flex-col group ${className}`}
+    data-rb-cursor-type={cursorText}
+    
   >
     <div
       className={cx(
@@ -22,15 +24,15 @@ export const ContentPostCard = ({
     >
       <img
         src={image}
-        alt={alt}
+        alt=""
         className="h-full w-full object-cover md:group-hover:scale-105 transition-all"
       />
       <div
         className={`flex flex-wrap text-white justify-start absolute left-4 bottom-4.5 md:bottom-5 md:left-5 z-[1] mr-2 font-semibold text-xs ${
-          type === 'md' ? 'gap-3 gap-x-2  lg:max-w-[71%]' : 'gap-3 md:gap-2'
+          type === 'md' ? 'gap-3 gap-x-2  lg:max-w-[70%]' : 'gap-3 md:gap-2'
         }`}
       >
-        {tags.map((t, i) => (
+       {tags.slice(0, 2).map((t, i) => (
           <div
             className="px-3.5 py-1.5 md:py-2 md:px-4 rounded-2xl border border-white"
             key={i}
@@ -38,6 +40,12 @@ export const ContentPostCard = ({
             {t}
           </div>
         ))}
+
+        {tags.length > 2 && (
+          <div className="px-3.5 py-1.5 md:py-2 md:px-4 rounded-2xl border border-white">
+          {page === 'work' ? `+${tags.length - 2}`: `${tags[2]}`}         
+          </div>
+        )}
       </div>
     </div>
     <div
@@ -49,7 +57,7 @@ export const ContentPostCard = ({
       )}
     >
       {name}
-      {/* <span className="hidden md:inline">,</span>{' '} */}
+      <span className="hidden md:inline"></span>{' '}
       <span
         className={cx(
           'opacity-60 text-sm leading-[25px] tracking-[-0.56px] block',
