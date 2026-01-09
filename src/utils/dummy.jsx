@@ -360,64 +360,34 @@ export const scsPosts = [
 
 export const campaignPosts = [
   {
-    key: 1,
-    name: 'Trip Different',
-    company: 'L74 Craft Cider',
+    key: 0,
+    name: 'RedMi Buds 6',
+    company: 'XIAOMI',
     image: '/img/works/l74-strategy.jpg',
-    alt:'metro wholesale ad',
-    tags: ['Brand Strategy' ,'Campaign Strategy','Creative Concepts','Content Production','Alcobev'],
+    alt:'Action-packed launch film for Redmi Buds 6',
+    tags: ['Consumer Electronics' ,'Ad Film','Digital Campaign','Product Launch Campaign'],
     href: '/work/l74-case-study',
   },
   {
-    key: 2,
-    name: 'Indeed for Indian SMBs',
-    company: 'Indeed',
-    image: '/img/works/indeed.jpg',
-    alt: 'Indeed',
-    tags: ['Ad Film', 'Creative Ideation', 'Production'],
-    href: '/work/create/indeed-case-study',
-  },
-  {
-    key: 2,
-    name: 'Swiggy Wali Jacket',
-    company: 'Swiggy',
-    image: '/img/works/Swiggy_Wali_Jacket.png',
-    alt: 'Swiggy Wali Jacket',
-    tags: ['Creative Ideation', 'Content Production'],
-    href: '/work/create/swiggy-winter-jacket-case-study',
-  },
-  {
-    key: 0,
-    name: '5 STAR QUALITY',
-    company: 'Metro Wholesale',
-    image: '/img/works/metro-wholesale.jpg',
-    alt:'metro wholesale ad',
-    tags: ['Creative Ideation', 'Content Production', 'Content Production'],
-    href: '/work/create/metro-wholesale-case-study',
-  },
-  {
-    key: 3,
-    name: 'Swiggy New Year Earning',
-    company: 'Swiggy',
-    image: '/img/works/Swiggy_NYE.png',
-    alt: 'Swiggy NYE',
-    tags: ['Creative Ideation', 'Content Production'],
-    href: '/work/create/swiggy-extra-earning-case-study',
-  },
-  {
     key: 1,
-    name: 'Try Ball Offer',
-    company: ' My 11 Circle',
-    image: '/img/works/my-11-circle.jpg',
-    alt:'my 11 circle ',
-    tags: ['Creative Ideation', 'Content Production', 'Content Production'],
-    href: '/work/create/my11circle-case-study',
+    name: 'Vymo SME',
+    company: 'Vymo',
+    image: '/img/works/vymo_sme.webp',
+    alt: 'Vymo SME',
+    tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
+    case_study_title: 'vymo-sme-bank-explainer-video'
   },
- 
-
-
-  
+  {
+    key: 2,
+    name: 'Infosys Global Leaders Campaign',
+    company: 'Infosys',
+    image: '/img/case-study/infosys-global-leaders.webp',
+    alt: 'Global Leaders: a Hiring Campaign',
+    tags: ['Technology', 'Campaign', 'Employer Branding Video', 'Global Video Production'],
+    href:'/campaigns/infosys-global-leaders-employer-branding'
+  }  
 ]
+
 export const contentSolutionPosts = [
   {
     key: 0,
