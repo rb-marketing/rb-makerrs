@@ -755,3 +755,83 @@ export const redbanglewayThink = [
     },
   },
 ]
+
+export const designCards = [
+  {
+    key: 0,
+    title: 'Brand Design Systems',
+    text: 'Get unique, multi-sensory Brand Design Systems–visual, verbal, and sonic–that deliver a cohesive brand story and brand experience across touch points. Sign up for an immersive branding workshop and get started today!',
+    icon: {
+      src: '/img/services/design/icon1.svg',
+      alt:'star',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 1,
+    title: 'Event Branding',
+    text: 'Be it your own brand event or a branded booth–our comprehensive event branding services include event theme and logo design, invites, motion graphics, mailers, zone and booth design, presentation design, merchandise design, and giveaway curation.',
+    icon: {
+      src: '/img/services/design/icon2.svg',
+      alt: 'S-circles',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 2,
+    title: 'Collateral Design',
+    text: 'From presentations and coffee table books to packaging design, brochure design, brand merchandise design, social media creatives, and more—we help you slay brand conversations through great design.',
+    icon: {
+      src: '/img/services/design/icon3.svg',
+      alt: 'S-Maze',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 3,
+    title: 'Interactive Experiences',
+    text: 'We design and develop interactive and immersive brand experiences that transform physical and digital spaces into dynamic storytelling platforms. Be it interactive, augmented or mixed reality - we forge unforgettable experiences for your brand.',
+    icon: {
+      src: '/img/services/design/icon4.svg',
+      alt: 'Think',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 4,
+    title: 'Brand Mascots and Avatars',
+    text: 'Fuel infinite customer engagement possibilities with custom-crafted brand mascots and avatars inspired by human, animal, object, sci-fi, or hybrid DNA. Supercharge your brand across web, social, email, events, and more.',
+    icon: {
+      src: '/img/services/design/icon5.svg',
+      alt: 'Services',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 5,
+    title: 'Environmental Graphics',
+    text: 'We design visually appealing environments and physical spaces for retail, corporate offices, galleries, public spaces, events, and more—helping people feel, navigate, and interact with your brand through curiosity and joy.',
+    icon: {
+      src: '/img/services/design/icon6.svg',
+      alt: 's-megaphone',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 6,
+    title: 'Motion Graphics',
+    text: 'We\'re motion-first. In today\'s digital landscape, motion is key to captivate audiences through a "fourth dimension" in graphic design. We specialize in motion graphics, animation, VFX, CGI, and more.',
+    icon: {
+      src: '/img/services/design/icon7.svg',
+      alt: 's-chart',
+      width: 111,
+      height: 111,
+    },
+  },
+]

@@ -43,17 +43,8 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[]})
                   <SwiperSlide key={id}>
                     <Link href={href} className="group">
                       <div
-                        className={`h-[22rem] p-8 md:p-14 relative overflow-hidden min-h-full md:h-[31rem]`}
-                        style={{ backgroundColor: bgColor }}
-                      >
-                        <div className="absolute top-0 right-0 translate-x-[35%] -translate-y-12 md:-translate-y-28 opacity-20">
-                          <img
-                            src={serviceAmblem}
-                            alt=""
-                            className="w-[176px] h-[176px] md:w-[350px] md:h-[350px]"
-                          />
-                        </div>
-                        <h3 className="relative text-white text-3xl md:text-6xl font-semibold flex items-center gap-3 mb-15 md:mb-[160px] " style={{ color: textColor }}>
+                        className={`h-[22rem] p-8 md:p-14 relative overflow-hidden min-h-full md:h-[31rem] border border-rb-black hover:bg-rb-gray/10 transition-colors duration-300`}>
+                        <h3 className="relative text-black text-3xl md:text-6xl font-semibold flex items-center gap-3 mb-15 md:mb-[160px] group-hover:text-rb-link-green">
                           {serviceTitle}
                           <svg
                             width="34"
@@ -69,7 +60,7 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[]})
                           </svg>
                         </h3>
 
-                        <p className="text-sm md:text-xl text-white"   style={{ color: textColor }}>{serviceDescription}</p>
+                        <p className="text-sm md:text-xl text-black">{serviceDescription}</p>
                       </div>
                     </Link>
                   </SwiperSlide>
@@ -80,20 +71,17 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[]})
             <div className="md:flex bottom-[-80px] left-0 flex gap-2 justify-start mt-6 md:mt-10">
               <button
                 ref={prevButtonRef}
-                className="prev w-[66px] h-10 md:h-[50px] rounded-8.5 flex items-center justify-center bg-transparent duration-300 ease-out border-2 border-rb-black/60 hover:bg-rb-red hover:border-rb-red group"
+                className="custom-button prev w-[66px] h-10 md:h-[50px] rounded-8.5 flex items-center justify-center border-2 group"
               >
-                <LineArrow className="text-rb-black max-w-[16px] group-hover:text-white" left />
+                <LineArrow className="text-rb-black max-w-[16px] group-hover:text-black" left />
               </button>
               <button
                 ref={nextButtonRef}
-                className="next w-[66px] h-10 md:h-[50px] rounded-8.5 flex items-center justify-center bg-transparent duration-300 ease-out border-2 border-rb-black/60 hover:bg-rb-red hover:border-rb-red group"
+                className="custom-button next w-[66px] h-10 md:h-[50px] rounded-8.5 flex items-center justify-center border-2 group"
               >
-                <LineArrow className="text-rb-black max-w-[16px] group-hover:text-white" />
+                <LineArrow className="text-rb-black max-w-[16px] group-hover:text-black" />
               </button>
             </div>
-
-             {/* Use ArrowNavigation */}
-            {/* <ArrowNavigation prevRef={prevButtonRef} nextRef={nextButtonRef} /> */}
           </div>
 
           {/* Grid (for mobile) */}
@@ -104,17 +92,10 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[]})
                   // relative px-7.5 py-8 md:p-14 text-white overflow-hidden group bg-rb-torch-red
                   <Link key={id} href={href} className=" relative">
                     <div
-                      className={`h-[18rem] p-8 md:p-14 relative overflow-hidden min-h-full md:h-[31rem]`}
+                      className={`h-[18rem] p-8 md:p-14 relative overflow-hidden min-h-full md:h-[31rem] border border-rb-black hover:bg-rb-gray/10 transition-colors duration-300`}
                       style={{ backgroundColor: bgColor }}
                     >
-                      <div className="absolute top-0 right-0 translate-x-[45%] -translate-y-12 md:-translate-y-28 opacity-20">
-                        <img
-                          src={serviceAmblem}
-                          alt=""
-                          className="w-[176px] h-[176px] md:w-[350px] md:h-[350px]"
-                        />
-                      </div>
-                      <h3 className="relative text-white text-3xl md:text-6xl font-semibold flex items-center gap-3 mb-15 md:mb-[160px]" style={{ color: textColor }}>
+                      <h3 className="relative text-black text-3xl md:text-6xl font-semibold flex items-center gap-3 mb-15 md:mb-[160px] ">
                         {serviceTitle}
                         <svg
                           width="34"
@@ -130,7 +111,7 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[]})
                         </svg>
                       </h3>
 
-                      <p className="text-sm md:text-xl text-white" style={{ color: textColor }}>{serviceDescription}</p>
+                      <p className="text-sm md:text-xl text-black">{serviceDescription}</p>
                     </div>
                   </Link>
                 )

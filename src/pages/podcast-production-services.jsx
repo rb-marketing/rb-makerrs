@@ -327,7 +327,7 @@ We create unique, multi-sensory Brand Design Systems—visual, verbal, and sonic
         iconClassName="w-15 h-15"
         cards={capabilitiesSCS}
       />
-      <RedbangleWaySection
+      {/* <RedbangleWaySection
         data={redbanglewayThink}
         image={{
           src: '/img/services/design_redbangle_way.png',
@@ -337,8 +337,8 @@ We create unique, multi-sensory Brand Design Systems—visual, verbal, and sonic
         }}
         heading='Explore Our Design Process'
         title='How we design for brand growth'
-      />
-       <FeaturedWorkSection posts={_posts} href="" title="Explore Our Design Work"/> 
+      /> */}
+       <FeaturedWorkSection posts={_posts} href="" title="Explore Our Podcast Work"/> 
         <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
         <Testimonials
             title={'WHAT CLIENTS SAY'}

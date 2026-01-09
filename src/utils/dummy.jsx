@@ -1486,7 +1486,7 @@ export const strategyPosts = [
     image: '/img/works/lillia_img.jpg',
     alt:'Lillia Care',
     tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
-    href: ''
+    href: 'work/brand-designs/lillia-care-brand-launch'
   },
   {
     key: 1,

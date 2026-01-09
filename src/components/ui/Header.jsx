@@ -52,7 +52,7 @@ const outsideLinks = [
       },
     ],
   }
- 
+
 ]
 
 const outsideLinks2 = [
@@ -188,7 +188,7 @@ export const Header = () => {
               <div className="flex-1 md:flex-none md:w-3/4 -mr-4 md:mr-0">
                 <div className="flex items-center justify-end h-[60px] md:h-[85px]">
                   <div
-                    className={`hidden md:flex items-end md:h-[45px] mr-[47px] top-0 right-0`}
+                    className={`hidden md:flex items-end md:h-[45px] top-0 right-0`}
                   >
                     <Link
                       href="/work"
@@ -273,7 +273,7 @@ export const Header = () => {
                     </Link>
 
 
-                      {outsideLinks2.map((l, i) => (
+                    {outsideLinks2.map((l, i) => (
                       <div
                         className="inline-block h-auto font-semibold text-sm md:mr-10 relative group text-rb-black hover:text-rb-link-green transition-all"
                         key={i}
@@ -345,11 +345,16 @@ export const Header = () => {
                     >
                       COLLAB
                     </Link>
-                   
+
+
+                  </div>
+                  <div className='mr-[47px] hidden md:flex h-[55px] items-end'>
                     <Button href="/contact" size="sm" className="font-bold">
                       GET IN TOUCH
                     </Button>
                   </div>
+
+
                   <button
                     className={`button-container bg-rb-black ${isSticky ? 'sticky-button sticky' : ''
                       }`}
@@ -415,7 +420,7 @@ export const Header = () => {
 
                 <div className="flex items-center gap-4 flex-wrap">
                   <div className="flex gap-2">
-                   
+
                     <a
                       target="_blank"
                       href="https://www.linkedin.com/company/redbanglecreative/"
@@ -486,7 +491,7 @@ export const Header = () => {
                         </defs>
                       </svg>
                     </a>
-                     <a
+                    <a
                       target="_blank"
                       href="https://www.youtube.com/channel/UCbPlh2ukO1Qz6Ib2fY724QQ"
                       className="w-10 h-10 flex justify-center items-center border border-[#F00] rounded-full"
