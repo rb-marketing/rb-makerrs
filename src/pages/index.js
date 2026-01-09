@@ -15,21 +15,21 @@ const LandPage = () => {
       name: 'cain.webp',
       width: '100px',
       height: '34px',
-      alt: 'cain',
+      alt: 'Mccain',
     },
     {
       id: 1,
       name: 'infosys-logo.jpg',
       width: '90',
       height: '30',
-      alt: 'infosis',
+      alt: 'Infosys',
     },
     {
       id: 2,
       name: 'indeed.webp',
       width: '132',
       height: '36',
-      alt: 'indeed',
+      alt: 'Indeed',
       className: '',
     },
      {
@@ -226,7 +226,7 @@ const LandPage = () => {
   {
     id: 3,
     countUpProps: {
-      value: 90,
+      value: 100,
       suffix: <span className="text-rb-red">+</span>,
     },
     text: (
@@ -360,7 +360,7 @@ const LandPage = () => {
     },
   },
 ]
-const TNC = [
+  const TNC = [
   {
     key: 0,
     title: 'What services does your global creative agency offer?',
@@ -607,7 +607,7 @@ const TNC = [
       />
 
       <section
-        className="bg-white md:-mb-[3px] md:pt-9  relative overflow-hidden "
+        className="bg-white md:-mb-[3px] md:pt-14 relative overflow-hidden "
         ref={heroSection}
       >
         <div className="height-div aspect-video absolute w-full opacity-0 pointer-events-none z-30 bg-rb-red top-0" />
@@ -615,7 +615,7 @@ const TNC = [
           <div>
             <div className={` ${styles.title}`}>
               <span className={`${styles.ltor}`}>
-                <span className="hidden md:inline"> CREATIVE PARTNER TO</span>
+                <span className="hidden md:inline"> CREATIVE PARTNER</span>
               </span>
             </div>
 
@@ -636,7 +636,7 @@ const TNC = [
               ></video>
               <div className={` ${styles.title}`}>
                 <div className={` ${styles.textblend} md:whitespace-nowrap`}>
-                  BORDERLESS BRANDS
+                  TO BORDERLESS BRANDS
                 </div>
               </div>
             </div>
@@ -650,7 +650,7 @@ const TNC = [
           >
             <div>
               <div className="text-rb-black text-[16px] md:text-[24px] leading-[1.5] md:leading-[1.33] tracking-[-0.64px] md:tracking-[-0.96px] font-semibold max-w-[900px]">
-                We are a tech-powered creative agency and collaborative. We help global businesses craft brands and narratives through videos, podcasts, campaigns and design.
+                We are a tech-powered creative agency and collaborative. We help global businesses craft brands and narratives through design, videos, podcasts and campaigns.              
               </div>
               <div className="flex items-center justify-center md:flex-row flex-col md:mt-10 mt-9 md:gap-5 gap-4">
                 <Button
@@ -731,9 +731,9 @@ const TNC = [
 
       <section className="bg-white pt-18 md:pt-30 pb-18 md:pb-30">
         <div className="container">
-          <LineHeading className="mb-6 md:mb-7.5">WHY TRY MAKERRS</LineHeading>
+          <LineHeading className="mb-6 md:mb-7.5">WHY PARTNER WITH MAKERRS</LineHeading>
           <div className="max-w-[1090px]">
-            <RevealText text="We know what it takes to craft unique brands and engagement in the age of the borderless customer. Our creative teams, strategic approach and human insights, combined with an ever-expanding global collaborative of creators and makerrs, and cloud-based workflows make us the right partner to craft and scale your borderless brand." />
+            <RevealText text="We craft brands and engagement in the age of the borderless customer. Our creative teams, strategic approach, human insights, global collaborative of creators and makerrs, and cloud-based workflows make us the right partner for your brand." />
           </div>
           <Button
             href="/about/who-we-are"
@@ -777,7 +777,7 @@ const TNC = [
    
 
     <Testimonials
-      title={'WHAT OUR COLLABORATORS SAY'}
+      title={'WHAT CLIENTS SAY'}
       className="pt-18 pb-7.5 md:pt-30 md:pb-15"
       testimonialData={createTestimonialData}
       type="semi"

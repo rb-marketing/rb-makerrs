@@ -37,7 +37,8 @@ module.exports = {
           'btn-green': '#07ef5a',
           'btn-hover': '#00e546',
           'link-green': '#13c33f',
-          'link-green2': '#0c7d29'
+          'link-green2': '#0c7d29',
+          'gray': '#7f7f7f',
         },
       },
       spacing: {
