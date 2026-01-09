@@ -12,7 +12,7 @@ export const RedbangleWaySection = ({
 }) => (
   <section className={`${sectionBG} py-7.5 md:py-15`}>
     <div className="container">
-      <LineHeading className="mb-6 md:mb-9">{heading}</LineHeading>
+      <LineHeading className="mb-6 md:mb-7.5">{heading}</LineHeading>
       <h3 className="text-title md:text-title-md mb-10 md:mb-18 font-everett max-w-[800px]">
         {title}
       </h3>

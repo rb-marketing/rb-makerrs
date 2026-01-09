@@ -236,7 +236,7 @@ const LandPage = () => {
     ),
   },
 ]
-  const createTestimonialData = [
+const createTestimonialData = [
     {
     key: 0,
     quote:

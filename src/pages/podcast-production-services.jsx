@@ -10,7 +10,7 @@ import {
 } from '@/components/shared'
 import { SEO } from '@/components/shared/SEO'
 import {
-  capabilitiesSCS,
+  podcastCards,
   redbanglewayThink,
   serviceVideos,
 } from '@/content/services'
@@ -117,157 +117,151 @@ const Design = ({setisPopupOpen}) => {
     }, 
   ]
 
-  const TNC = [
+const TNC = [
   {
     key: 1,
-    title: 'Do you offer end-to-end design solutions?',
+    title: 'Do you produce both video and audio podcasts?',
     content: (
       <>
         <div>
-          We provide end-to-end design solutions, managing every aspect of a project from concept to roll out. Our services encompass strategy, design, development, deployment, and ongoing support. Our dedicated design processes ensure a streamlined experience—whether you need comprehensive branding services or a well-designed business presentation.
+          Yes. We offer full, flexible, and scalable podcast production services. Whether you want traditional audio-only episodes for platforms like Spotify and Apple Podcasts, video podcasts optimized for YouTube and LinkedIn, or hybrid content that works across both mediums, we deliver professional-quality content. 
         </div>
       </>
     )
   },
   {
     key: 2,
-    title: 'What are the design services you provide?',
+    title: 'What is the typical timeline for producing a podcast episode?',
     content:
-      'We offer the full spectrum of design services–from brand identity systems, editorial design, to environmental graphics, motion graphics, and experience design. With a great in-house design team and a curated community of creative talent from around the world, we leverage a variety of skills and techniques to bring to life ideas that are fresh and dynamic.',
+      'Podcast turnaround times depend on format complexity and post-production requirements. Typically, a standard podcast takes around 14–15 days for end-to-end production—from recording, editing, sound design, and final optimization. For more complex episodes that require extensive research, we recommend allocating at least 30 days to ensure a smooth workflow and great results. Our process includes research, copywriting, speaker prep, production, post-production editing, sound design, and versioning.',
   },
   {
     key: 3,
-    title: 'What’s included in your brand identity solution?',
-    content: (
-      <>
-        <p>
-We create unique, multi-sensory Brand Design Systems—visual, verbal, and sonic—for a consistent and impactful brand presence which resonates with customers. 
-        </p>
-        <p>The first leg involves market research, competitor analysis, and immersive brand workshops with the client. Then we cull out a creative strategy for the brand, articulate the positioning, brand values, and brand story. </p>
-        <p>Next, we develop a comprehensive brand identity which includes the name, brand voice, logo design, typography, iconography, color palettes, imagery, and usage guidelines–all of which go into a comprehensive Brand Manual. </p>
-        <p>We also create a stipulated number of relevant brand collaterals. These include physical and digital assets that reinforce the new brand identity through various use cases, such as business stationery, email templates, brochures, websites, posters, games, jingles, and other formats.</p>
-        <p>In some cases, we also support brands during the launch phase by executing strategic rollouts across key channels, including social media.</p>
-      </>
-    ),
+    title: 'Do you work with remote guests and distributed teams?',
+    content: 
+    'Many of our podcast projects involve guests and team members across different time zones and locations. We coordinate remote recordings using professional-grade audio/video setups and provide technical guidance to ensure broadcast-quality results. We seamlessly integrate content from multiple locations into cohesive episodes while maintaining consistent quality and branding throughout.'
   },
   {
     key: 4,
-    title: 'What’s your process for creating a brand identity?',
+    title: 'How do you create podcasts that are engaging? ',
     content: (
-      <>
-        <div>
-          We develop your unique brand identity in 6 progressive steps: 
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">1. Discovery:</h3>
-        <div>
-        We explore and analyse your business origins, offerings, customer segment, competition, etc., through immersive discussions. We also host a brand workshop for all stakeholders to gather diverse opinions + vision for the brand.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">2. Distillation:</h3>
-        <div>
-          We relay back the focal points from the dialogue, and align all parties to lock on business goals, brand vision, brand personality, and broad stylistic preferences.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">3. Strategy:</h3>
-        <div>
-         We map out where your brand needs to sit in the minds of your customers, crafting a brand differentiator based on research + on our own creative hunch!
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">4. Creative:</h3>
-        <div>
-          We dive into an iterative creative process, exploring visual styles, voice, and personas, to arrive at a unique design direction and brand story.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">5. Brand:</h3>
-        <div>
-          We bring the brand to life-compiling all the brand assets and identity guidelines into a comprehensive brand manual that captures the brand story, logo, imagery, colours, typography, usage guidelines, and more!
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">
-          6. Boom:
-        </h3>
-        <div>
-            We help you roll out your brand with the big bang it deserves. This is an ongoing process of implementation that ranges in scope from sales and marketing collateral, launch campaign, website, social media, to merchandise. 
-        </div>
-      </>
+     'This goes well beyond a great shoot and a good edit. We ensure that your podcast themes align with your business intent and brand purpose, that guests and hosts align with your podcast concept, that the format makes your content flow, that the branding is memorable, and that the call to actions deliver the desired interactions.'
     ),
   },
 
   {
     key: 5,
-    title: 'Do you work on retainers for ongoing design support?',
+    title: 'How do you ensure consistent audio and video quality across episodes?',
     content:
-      'Yes, we work on retainers for brands that require ongoing design support. This could be for marketing collateral or communications, packaging, or other requirements. We strive to deliver on-brand consistency and align with your evolving business goals.',
+      'We maintain broadcast-standard quality through professional equipment, controlled recording environments, and rigorous post-production processes. Our audio experts handle noise reduction, level balancing, and sound design to ensure consistent listening experiences. For video podcasts, we provide professional lighting setups, multiple camera angles, and color grading. Every episode goes through our quality control process before delivery, ensuring your podcast maintains the professional standard your brand demands.',
   },
   {
     key: 6,
-    title: 'What industries do you specialize in for brand identity and design?',
-    content:
-      'With experience in technology, FMCG, healthcare, F&B, manufacturing, aerospace, education, energy, engineering, and pharma-we understand industry-specific demands, design cultures, and market dynamics. We craft compelling brand identities and design solutions with an adaptable approach.',
-  },
-  {
-    key: 7,
-    title: 'Do you use AI or other technology in your design process?',
+    title: 'Do you follow a specific podcast creation process?',
     content:(
         <>
          <div>
-           <p>We are tech-first in our approach and see AI as a powerful tool to solve for faster outcomes, to enhance creativity with new and infinite possibilities. We actively integrate technology to streamline workflows and to innovate.</p><br />
-           <p>That said, while AI supports our craft, it&apos;s our people who shape the brand vision, bring emotion, human connection, and uniqueness to ideas and design.</p>
+          <p>Broadly, here’s our workflow.</p>
+           <h3 className="mt-5 font-semibold text-base">Discovery:</h3>
+           <p>We explore your brand’s voice, themes, and audience to identify the conversation your podcast can uniquely own.</p><br />
+           <h3 className="mt-5 font-semibold text-base">Strategy & SEO:</h3>
+           <p>We research, strategise, and position your podcast. We take a thorough look at SEO to identify key buckets to lean into for strong traction.</p><br />
+           <h3 className="mt-5 font-semibold text-base">Concept and Design:</h3>
+           <p>We conceptualise and design your podcast around a unique theme to start creating content that aligns with business, brand, and communication goals.</p><br />
+           <h3 className="mt-5 font-semibold text-base">Episode Construct:</h3>
+           <p>We design frameworks, hooks, segments, question maps, and more to turn complex expertise into sharp, engaging episodes.</p><br />
+           <h3 className="mt-5 font-semibold text-base">Production & Post Production:</h3>
+           <p>From crews, locations, and lighting to episodes, teasers, extracts, thumbnails, and more–we offer scalable and efficient end-to-end podcast production and post-production solutions.</p><br />
+           <h3 className="mt-5 font-semibold text-base">Publishing, Distribution & Amplification:</h3>
+           <p>We publish, we post, we report, we review, we optimize, and we do it all again. We publish on YouTube, Spotify, and Apple Podcast, and elsewhere via distribution platforms. We post about the show and the episodes on LinkedIn, Instagram, X, Facebook, and other social platforms to build visibility, community, and long-term ROI.</p>
          </div>
         </>
     )
-  },
-  {
-    key: 8,
-    title:
-      'Do you handle experiential design for physical spaces?',
-    content: (
-      <>
-        <div>
-          We design interactive and immersive brand experiences that transform physical and digital spaces into dynamic storytelling platforms. From interactive installations or augmented and mixed reality experiences-we design and develop concepts end to end, and even recommend suitable hardware for the on-ground roll out.
-        </div>
-      </>
-    ),
-  },
-  {
-    key: 9,
-    title: 'What’s included in your design collateral services?',
-    content: (
-      <>
-        <div>
-            Our collateral design services include presentation design, brochure design, poster design, mailer design, coffee table book design, social media creatives, and more.
-        </div>
-      </>
-    ),
-  },
-  {
-    key: 10,
-    title: 'How do you approach brand storytelling through design?',
-    content: (
-      <>
-        We articulate a creative strategy that drives the brand&apos;s narrative and creates an emotional, value-driven connection with your target audience. Everything from the brand voice, colors, typography, and imagery to sound and messaging comes together to form a cohesive personality for the brand. Through this holistic bundle of traits, we tell stories of impact, shared dreams, adventures, or histories to build trust and delight for customers.
-      </>
-    ),
-  },
-  {
-    key: 11,
-    title: 'How do you store and deliver final design assets?',
-    content: (
-      <>
-        <div>
-           <p>All your creative assets get stored on a secure cloud and are delivered via our Creative Cloud platform. This ensures easy access, smooth project management, organised storage, and easy repurposing of creative assets in the future.</p><br />
-           <p>All your creative assets are stored for free for up to a year. You can access these anytime to download or share with colleagues. On high-profile or confidential projects, asset access can also be restricted to select individuals within your organisation.</p>
-         </div>
-      </>
-    ),
-  },
-  {
-    key: 12,
-    title: 'How do you handle copyright and ownership of design assets?',
-    content: (
-      <>
-        <div>
-            With the majority of our work, as stipulated in pre-agreed contracts, copyright for creative assets is assigned to the client upon receipt of final payment for the commissioned work.
-        </div>
-      </>
-    ),
-  },
+  }
 ]
+
+  const data = [
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Research & Strategy',
+      others: 'Not available',
+      redBangle: 'Sound research & strategy',
+    },
+    {
+      icon: '/img/services/podcast/why-icon2.svg',
+      need: 'Content Design',
+      others: 'Hit or miss',
+      redBangle: 'Audience-focused Content Design',
+    },
+    {
+      icon: '/img/services/podcast/why-icon3.svg',
+      need: 'Podcast Branding',
+      others: 'Not available',
+      redBangle: 'Extensive Podcast branding services',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Podcast SEO',
+      others: 'Not available',
+      redBangle: 'SEO-first approach to podcast publishing, marketing',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Podcast Quality',
+      others: 'Hit or miss',
+      redBangle: 'Consistent high quality',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Podcast Marketing',
+      others: 'Not available',
+      redBangle: 'Comprehensive support',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Formats & Genres',
+      others: 'Limited formats & genres',
+      redBangle: 'Any format & genre',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Podcast Formats',
+      others: 'Limited formats',
+      redBangle: 'Unlimited formats',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Reviews & Feedback',
+      others: 'Emails back & forth',
+      redBangle: 'Single dashboard & interactive reviews',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Production & Schedules',
+      others: 'You chase them',
+      redBangle: 'We manage for you',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Podcast Versioning',
+      others: 'Limited versioning',
+      redBangle: 'Limitless versioning',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Project Management',
+      others: 'Emails, spreadsheets',
+      redBangle: 'Cloud-based workflows',
+    },
+    {
+      icon: '/img/services/podcast/why-icon1.svg',
+      need: 'Turnaround Times',
+      others: 'They work at their speed',
+      redBangle: 'We work at podcast speed',
+    },
+  ]
+
+  
   useEffect(() => {
     if (!stopVisible) {
       const handleScroll = () => {
@@ -287,8 +281,8 @@ We create unique, multi-sensory Brand Design Systems—visual, verbal, and sonic
   return (
     <>
       <SEO
-        title="Red Bangle - Winning Brand Strategy for your B2C Business"
-        description="Get brand strategy services that unlock growth for your B2C brand. Talk to Red Bangle for brand positioning, campaign strategy and content strategy."
+        title="Branded Podcast Production and Marketing Services | Makerrs"
+        description="Video podcast production and marketing solutions for brands. We research, conceptualise, design, produce, publish and amplify podcasts for YouTube, Spotify, and more."
         url="https://www.staging.b2c.redbangle.com/brand-strategy-agency-india"
       />
       <ServiceHeroSection
@@ -325,19 +319,62 @@ We create unique, multi-sensory Brand Design Systems—visual, verbal, and sonic
           </div>
         }
         iconClassName="w-15 h-15"
-        cards={capabilitiesSCS}
+        cards={podcastCards}
       />
-      {/* <RedbangleWaySection
-        data={redbanglewayThink}
-        image={{
-          src: '/img/services/design_redbangle_way.png',
-          alt:'design_redbangle_way',
-          width: '500',
-          height: '500',
-        }}
-        heading='Explore Our Design Process'
-        title='How we design for brand growth'
-      /> */}
+
+
+      <section className={`overflow-hidden bg-white pt-[48px] pb-18 md:py-30 `}>
+        <div className="container text-center">
+          <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
+           Why choose Makerrs <br /> over other podcast production agencies?
+          </h3>
+          <div className="w-full overflow-x-auto md:p-0">
+            <div className="max-w-full">
+              <table className="w-full max-w-full md:w-[940px] mx-auto text-sm border-collapse border-spacing-0 text-left font-everett leading-[24px]">
+                <thead>
+                  <tr className="h-[50px] border-b border-[#D4D4D4]">
+                    <th className="md:!w-[313px] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#030104] md:whitespace-nowrap text-left">
+                      What You Need
+                    </th>
+                    <th className="md:!w-[313px] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#030104] md:whitespace-nowrap text-left">
+                      What Others Offer
+                    </th>
+                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-rb-link-green md:whitespace-nowrap text-left">
+                      What We Offer
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.map((row, idx) => (
+                    <tr
+                      key={idx}
+                      className="odd:bg-[#F1F1F1] border-t border-[#eee]"
+                    >
+                      <td className="md:!w-[313px] px-4 py-3 font-medium md:text-[18px] tracking-[-0.32px] font-everett text-[#030104]">
+                        <div className="flex items-center">
+                          <img
+                            src={row.icon}
+                            alt=""
+                            className="w-5 h-5 mr-5 hidden md:inline"
+                          />
+                          <span>{row.need}</span>
+                        </div>
+                      </td>
+                      <td className="md:!w-[313px] px-4 py-3 font-normal md:text-[18px] leading-[24px] text-rb-dune tracking-[-0.02em] font-opensans">
+                        {row.others}
+                      </td>
+                      <td className="md:!w-[313px] px-4 py-3 font-semibold md:text-[18px] leading-[24px] tracking-[-0.02em] text-rb-dune/90 font-opensans">
+                        {row.redBangle}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+     
        <FeaturedWorkSection posts={_posts} href="" title="Explore Our Podcast Work"/> 
         <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
         <Testimonials

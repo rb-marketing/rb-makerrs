@@ -529,16 +529,16 @@ export const serviceVideos = {
       height: '1080',
     },
   },
-  campaign: {
+  get_campaign: {
     video: {
-      src: '/img/services/campaign-slid-1.mp4',
-      poster: '/img/services/campaign-slid-1.webp',
+      src: '/img/services/campaign/hero.mp4',
+      poster: '/img/services/campaign/hero.webp',
       width: '1440',
       height: '810',
     },
     fullVideo: {
-      src: '/img/services/campaign-slid-1.mp4',
-      poster: '/img/services/campaign-slid-1.webp',
+      src: '/img/services/campaign/hero.mp4',
+      poster: '/img/services/campaign/hero.webp',
       width: '1920',
       height: '1080',
     },
@@ -615,13 +615,13 @@ export const serviceVideos = {
   }
 }
 
-export const capabilitiesSCS = [
+export const podcastCards = [
   {
     key: 0,
     title: 'Podcast Research & Strategy',
     text: 'We study your industry, audience and competitors, and build on your strategic priorities to define the themes and direction for your podcast. We ensure that your podcast reflects your brand purpose, market positioning and long-term goals.',
     icon: {
-      src: '/img/services/approach/s-star.svg',
+      src: '/img/services/podcast/icon2.svg',
       alt:'star',
       width: 111,
       height: 111,
@@ -632,7 +632,7 @@ export const capabilitiesSCS = [
     title: 'Podcast Concept',
     text: 'We translate focus themes into a unique podcast concept and structure the format to ensure that each episode embraces your brand, expresses your point of view consistently and with authority, and offers something memorable to your audience.',
     icon: {
-      src: '/img/services/approach/s-megaphone.svg',
+      src: '/img/services/podcast/icon2.svg',
       alt: 'S-circles',
       width: 111,
       height: 111,
@@ -643,7 +643,7 @@ export const capabilitiesSCS = [
     title: 'Podcast Branding',
     text: 'We craft a great name and tagline for your podcast, design the logo, channel art, thumbnails, in-episode graphics, music, and more. We bring the whole package together so your podcast stands out no matter where it is viewed and how.',
     icon: {
-      src: '/img/services/approach/s-circles.svg',
+      src: '/img/services/podcast/icon3.svg',
       alt: 'S-Maze',
       width: 111,
       height: 111,
@@ -654,7 +654,7 @@ export const capabilitiesSCS = [
     title: 'Global Production',
     text: 'From a two-camera shoot to a four-camera setup and a mix of production setups. Whether it’s 1 shoot a month or 4 shoots a month. Whether it’s in a studio, at an event, or on the go. Whether it’s in New York or New Delhi. Makerrs has podcast production covered for your brand, no matter what the scale, format, or genre.',
     icon: {
-      src: '/img/services/approach/s-think.svg',
+      src: '/img/services/podcast/icon4.svg',
       alt: 'Think',
       width: 111,
       height: 111,
@@ -665,7 +665,7 @@ export const capabilitiesSCS = [
     title: 'Podcast Publishing',
     text: 'Our eye-grabbing thumbnails, SEO-friendly titles, descriptions, chapters, and transcripts, and our overall comprehensive project management ensure every episode goes live on schedule across YouTube, Spotify, Apple Podcast, and more. ',
     icon: {
-      src: '/img/services/approach/s-gear.svg',
+      src: '/img/services/podcast/icon5.svg',
       alt: 'Services',
       width: 111,
       height: 111,
@@ -676,7 +676,7 @@ export const capabilitiesSCS = [
     title: 'Podcast Amplification',
     text: 'Every good episode needs several pieces of amplification content – teaser, down edits, carousel, and static graphic – and supporting thumbnails, titles, captions, descriptions, and more! Our podcast producers, writers, and editors are here to scale podcast post-production and marketing content to meet your community growth ambitions.',
     icon: {
-      src: '/img/services/approach/s-megaphone.svg',
+      src: '/img/services/podcast/icon6.svg',
       alt: 's-megaphone',
       width: 111,
       height: 111,
@@ -690,7 +690,7 @@ export const capabilitiesSCS = [
 We craft, publish, and track organic marketing content across LinkedIn, X, Instagram, and other social platforms to ensure audience growth. And when you want more than organic growth, we have you covered with planned media spends. We’ll propose the right media spend strategy to achieve your brand and podcast growth goals.          </>
     ),
     icon: {
-      src: '/img/services/approach/s-chart.svg',
+      src: '/img/services/podcast/icon7.svg',
       alt: 's-chart',
       width: 111,
       height: 111,
@@ -832,6 +832,186 @@ export const designCards = [
       alt: 's-chart',
       width: 111,
       height: 111,
+    },
+  },
+]
+
+export const campaignCards = [
+  {
+    key: 0,
+    title: 'Brand & Marketing Campaigns',
+    text: 'Get brand awareness campaigns for your new markets that cut through the noise. Get marketing campaigns that drive sales for your product/service. Talk to us today for campaign services that win big for your business.',
+    icon: {
+      src: '/img/services/campaign/icon1.svg',
+      alt:'star',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 1,
+    title: 'Employer Branding & Recruitment Campaigns',
+    text: 'Get employer brand awareness campaigns to drive recruitment in new regions. Get interactive campaigns that engage your people globally. Talk to us for employer branding campaigns that work hard for your employer brand.',
+    icon: {
+      src: '/img/services/campaign/icon2.svg',
+      alt: 'S-circles',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 2,
+    title: 'CorpComm and Public Relations Campaigns',
+    text: 'Enhance your corporate communications with great campaigns that engage every stakeholder group. Our strategy and creative teams are here to craft meaningful campaign strategy, ideas and creatives for you.',
+    icon: {
+      src: '/img/services/campaign/icon3.svg',
+      alt: 'S-Maze',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 3,
+    title: 'Environmental, Social & Governance Campaigns',
+    text: 'From campaigns big on documentary films to campaigns big on data-driven storytelling and immersive experiences–craft exciting ESG campaigns with us. Get great ideas and global execution for your ESG campaigns.',
+    icon: {
+      src: '/img/services/campaign/icon4.svg',
+      alt: 'Think',
+      width: 111,
+      height: 111,
+    },
+  }
+]
+
+export const campaignCards2 = [
+  {
+    key: 0,
+    title: 'Integrated',
+    icon: {
+      src: '/img/services/campaign/icon5.svg',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 1,
+    title: 'Digital',
+    icon: {
+      src: '/img/services/campaign/icon6.svg',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 2,
+    title: 'Interactive & Immersive',
+    icon: {
+      src: '/img/services/campaign/icon7.svg',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 3,
+    title: 'AI-first',
+    icon: {
+      src: '/img/services/campaign/icon8.svg',
+      width: 111,
+      height: 111,
+    },
+  },
+   {
+    key: 4,
+    title: 'Gamified',
+    icon: {
+      src: '/img/services/campaign/icon9.svg',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 5,
+    title: 'Television',
+    icon: {
+      src: '/img/services/campaign/icon10.svg',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 6,
+    title: 'Print & POSM',
+    icon: {
+      src: '/img/services/campaign/icon11.svg',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 7,
+    title: 'Outdoor & Offline',
+    icon: {
+      src: '/img/services/campaign/icon12.svg',
+      width: 111,
+      height: 111,
+    },
+  }
+]
+
+export const campaignCards3 = [
+  {
+    key: '0',
+    heading: 'Discovery',
+    content:
+      "We understand your brand, offering, audience and business objectives. We then design a tailored approach to solve communication challenges and craft compelling campaigns.",
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
+    },
+  },
+  {
+    key: '1',
+    heading: 'Strategy',
+    content:
+      'We go beyond the brief–connecting the dots between your goals, audience, competitive landscape and market to uncover insights and shape a message that stands out for your campaign.',
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
+    },
+  },
+  {
+    key: '2',
+    heading: 'Creative Direction',
+    content:
+      'We craft unique ideas and stunning visuals, making your campaigns sticky and memorable. From the campaign key visual and tag line to videos, hoardings, and more–we offer end-to-end campaign solutions.',
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
+    },
+  },
+  {
+    key: '3',
+    heading: 'Creative Execution',
+    content:
+      'From copy and design across genres and styles to high-quality film and video production, and limitless versioning–we offer comprehensive, scalable creative execution services so you can focus on the rest.',
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
+    },
+  },
+  {
+    key: '4',
+    heading: 'Technology Integrations',
+    content:
+      'From leveraging AI for interactive campaigns, immersive technologies for memorable campaign experiences and gamified high-engagement campaigns–we bring the tech chops required to deliver new-age campaigns online and offline.',
+    image: {
+      src: '/img/services/service-image.webp',
+      width: '726',
+      height: '915',
     },
   },
 ]

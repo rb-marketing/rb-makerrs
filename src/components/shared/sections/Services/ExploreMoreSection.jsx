@@ -7,14 +7,14 @@ import { useRef } from 'react';
 import {LineArrow} from '@/components/icons/LineArrow';
 
 
-export const ExploreMoreSection = ({ type = 'create', className = '', cards=[]}) => {
+export const ExploreMoreSection = ({ type = 'create', className = '', cards=[], title = 'Explore More Services'}) => {
   const prevButtonRef = useRef(null);
   const nextButtonRef = useRef(null);
   return (
     <section className="py-6 md:py-12 overflow-hidden">
         <div className="container">
           <h2 className="text-title md:text-title-md font-medium mb-10 md:mb-16">
-            Explore More Services
+              {title}
           </h2>
 
           {/* Swiper Slider (for md and above) */}

@@ -7,9 +7,11 @@ export const ServiceCardSection = ({
   cards = [],
   iconClassName = 'w-12 h-12',
   pageSpecificLayout = 'grid-cols-1',
+  sectionStyle = {}
 }) => {
   return (
-    <section className={`pb-7.5 md:pb-15 pt-15 md:pt-30 bg-white ${className}`}>
+    <section className={`pb-7.5 md:pb-15 pt-15 md:pt-30 bg-white ${className}`}
+    style={sectionStyle}>
       <div className="container">
         <LineHeading className="mb-6 md:mb-9">{tag}</LineHeading>
         <h3 className="text-title md:text-title-md mb-10 md:mb-18 font-everett max-w-[343px] md:max-w-[963px]">
