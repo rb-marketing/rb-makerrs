@@ -13,7 +13,7 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[], 
   return (
     <section className="py-6 md:py-12 overflow-hidden">
         <div className="container">
-          <h2 className="text-title md:text-title-md font-medium mb-10 md:mb-16">
+          <h2 className="text-title md:text-title-md font-medium mb-10 md:mb-16 font-everett">
               {title}
           </h2>
 

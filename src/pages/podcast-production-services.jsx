@@ -14,7 +14,6 @@ import {
   redbanglewayThink,
   serviceVideos,
 } from '@/content/services'
-import { strategyPosts } from '@/utils/dummy'
 import { postsMapper } from '@/utils/mapper'
 import Script from 'next/script'
 import { useEffect, useState } from 'react'
@@ -22,163 +21,157 @@ import { Accordion } from '@/components/ui'
 
 
 
-const Design = ({setisPopupOpen}) => {
+const Design = ({ setisPopupOpen }) => {
 
-  const _posts = strategyPosts.map(postsMapper)
   const [stopVisible, setstopVisible] = useState(false)
 
- const createTestimonialData = [
+  const createTestimonialData = [
     {
-    key: 0,
-    quote:
-      <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
-      </>,
-    name: 'Rinku Agarwal Basu',
-    designation: 'COO',
-    company: 'Lillia Care',
-    image: {
-      srcSet:
-
-        `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  },
-    {
-    key: 1,
-    quote:
-        <>
-         Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
+      key: 0,
+      quote:
+        <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
         </>,
-    name: 'KUNCHERIA MARATTUKALAM',
-    designation: 'FOUNDER & DIRECTOR',
-    company: 'Maratt Group',
-    image: {
+      name: 'Rinku Agarwal Basu',
+      designation: 'COO',
+      company: 'Lillia Care',
+      image: {
         srcSet:
 
-            `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+          `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
-    },
+      },
     },
     {
-    key: 2,
-    quote:
-      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Makerrs has given us a brand bursting with character and joy! Seeing customers connect with it at our dessert cafe feels incredible.',
-    name: 'NAKUL KULKARNI',
-    designation: ' CO-FOUNDER',
-    company: 'P.U. DINGDING',
-    image: {
-      srcSet:
-        `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  },
-  ]
-  const cards= [
-     {
-      id: 0,
-      serviceTitle: 'GET VIDEOS',
-      serviceDescription:
-        'Get marketing explainer videos, video case studies, corporate videos, hiring and culture videos and more. Red Bangle offers end to end video production services across locations and formats. Get scalable video production services for your B2B brand.',
-      serviceAmblem: '/img/services/content_asset1.svg',
+      key: 1,
+      quote:
+        <>
+          Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
+        </>,
+      name: 'KUNCHERIA MARATTUKALAM',
+      designation: 'FOUNDER & DIRECTOR',
+      company: 'Maratt Group',
+      image: {
+        srcSet:
 
-      bgColor: '#333333',
-      textColor:'#ffffff',
-    href: '',
+          `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
     {
-    id: 1,
-    serviceTitle: 'GET PODCAST',
-    serviceDescription:
-      'Bowl your audience over with our AI-first campaigns, content, experiences and more. Take your brand into the future with our end-to-end AI solutions: concept, design, curation, development, AI training and more.',
-    serviceAmblem: '/img/services/campaigns_aset.svg',
-    bgColor: ' #4a4a49',
-    textColor:'#ffffff',
-    href: '',
-  },
+      key: 2,
+      quote:
+        'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Makerrs has given us a brand bursting with character and joy! Seeing customers connect with it at our dessert cafe feels incredible.',
+      name: 'NAKUL KULKARNI',
+      designation: ' CO-FOUNDER',
+      company: 'P.U. DINGDING',
+      image: {
+        srcSet:
+          `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
+    },
+  ]
+  const cards = [
+    {
+      id: 1,
+      serviceTitle: 'GET DESIGN',
+      serviceDescription:
+        'Get brand identity systems, event branding, editorial design, illustrations, and motion graphics. Build brand differentiation and human connect with Makerrs. Explore our branding and design services.',
+      bgColor: '#ffffff',
+      textColor: '#13c33f',
+      href: '/brand-design-agency',
+    },
+    {
+      id: 0,
+      serviceTitle: 'GET VIDEO',
+      serviceDescription:
+        'We plan, conceptualise, produce and scale video content – be it for your next product or your YouTube channel. We also offer on-demand video production services for customer testimonial videos, recruitment videos, corporate videos and more. Explore our video production services.',
+      bgColor: '#ffffff',
+      textColor: '#13c33f',
+      href: '/video-production',
+    },
     {
       id: 2,
       serviceTitle: 'GET CAMPAIGN',
       serviceDescription:
-        'We take our cues from people and culture, turning creative insights into campaigns that cut through the noise. From bold ideas to flawless execution, we create work that gets your brand noticed, talked about, and loved.',
-      serviceAmblem: '/img/services/campaigns_aset.svg',
-      bgColor: ' #7f7f7f',
-      textColor:'#FFFFFF',
-      href: '',
+        'From digital campaigns and integrated campaigns, to outdoor and print campaigns – our creative strategy is rooted in a simple yet powerful human insight unique to your brand and product or service. Send us a campaign brief today.',
+     bgColor: '#ffffff',
+      textColor: '#13c33f',
+      href: '/advertising-agency',
     },
     {
-      id: 5,
-      serviceTitle: 'CREWS',
+      id: 3,
+      serviceTitle: 'BOOK A CREW',
       serviceDescription:
-        'Book professional video crews on-demand in 100 countries. Our team of experienced producers curate video crews for every brief and location, manage the shoots and quality-check the footage for you. Shoot video testimonials, events, drone footage, and more wherever you need them!',
-      serviceAmblem: '/img/services/crews_asset1.svg',
-      bgColor: '#9b9dad',
-      textColor:'#ffffff',
-      href: '/b2b-international-video-crew-agency',
-    }, 
+        'Get on-demand professional video crews anywhere in the world. Be it a one-camera shoot or a multi-camera multi-location production–we curate and manage the production, and quality-check the footage for you. Hire a professional video crew today!',
+      bgColor: '#ffffff',
+      textColor: '#13c33f',
+      href: '/video-production-near-me',
+    },
   ]
 
-const TNC = [
-  {
-    key: 1,
-    title: 'Do you produce both video and audio podcasts?',
-    content: (
-      <>
-        <div>
-          Yes. We offer full, flexible, and scalable podcast production services. Whether you want traditional audio-only episodes for platforms like Spotify and Apple Podcasts, video podcasts optimized for YouTube and LinkedIn, or hybrid content that works across both mediums, we deliver professional-quality content. 
-        </div>
-      </>
-    )
-  },
-  {
-    key: 2,
-    title: 'What is the typical timeline for producing a podcast episode?',
-    content:
-      'Podcast turnaround times depend on format complexity and post-production requirements. Typically, a standard podcast takes around 14–15 days for end-to-end production—from recording, editing, sound design, and final optimization. For more complex episodes that require extensive research, we recommend allocating at least 30 days to ensure a smooth workflow and great results. Our process includes research, copywriting, speaker prep, production, post-production editing, sound design, and versioning.',
-  },
-  {
-    key: 3,
-    title: 'Do you work with remote guests and distributed teams?',
-    content: 
-    'Many of our podcast projects involve guests and team members across different time zones and locations. We coordinate remote recordings using professional-grade audio/video setups and provide technical guidance to ensure broadcast-quality results. We seamlessly integrate content from multiple locations into cohesive episodes while maintaining consistent quality and branding throughout.'
-  },
-  {
-    key: 4,
-    title: 'How do you create podcasts that are engaging? ',
-    content: (
-     'This goes well beyond a great shoot and a good edit. We ensure that your podcast themes align with your business intent and brand purpose, that guests and hosts align with your podcast concept, that the format makes your content flow, that the branding is memorable, and that the call to actions deliver the desired interactions.'
-    ),
-  },
-
-  {
-    key: 5,
-    title: 'How do you ensure consistent audio and video quality across episodes?',
-    content:
-      'We maintain broadcast-standard quality through professional equipment, controlled recording environments, and rigorous post-production processes. Our audio experts handle noise reduction, level balancing, and sound design to ensure consistent listening experiences. For video podcasts, we provide professional lighting setups, multiple camera angles, and color grading. Every episode goes through our quality control process before delivery, ensuring your podcast maintains the professional standard your brand demands.',
-  },
-  {
-    key: 6,
-    title: 'Do you follow a specific podcast creation process?',
-    content:(
+  const TNC = [
+    {
+      key: 1,
+      title: 'Do you produce both video and audio podcasts?',
+      content: (
         <>
-         <div>
-          <p>Broadly, here’s our workflow.</p>
-           <h3 className="mt-5 font-semibold text-base">Discovery:</h3>
-           <p>We explore your brand’s voice, themes, and audience to identify the conversation your podcast can uniquely own.</p><br />
-           <h3 className="mt-5 font-semibold text-base">Strategy & SEO:</h3>
-           <p>We research, strategise, and position your podcast. We take a thorough look at SEO to identify key buckets to lean into for strong traction.</p><br />
-           <h3 className="mt-5 font-semibold text-base">Concept and Design:</h3>
-           <p>We conceptualise and design your podcast around a unique theme to start creating content that aligns with business, brand, and communication goals.</p><br />
-           <h3 className="mt-5 font-semibold text-base">Episode Construct:</h3>
-           <p>We design frameworks, hooks, segments, question maps, and more to turn complex expertise into sharp, engaging episodes.</p><br />
-           <h3 className="mt-5 font-semibold text-base">Production & Post Production:</h3>
-           <p>From crews, locations, and lighting to episodes, teasers, extracts, thumbnails, and more–we offer scalable and efficient end-to-end podcast production and post-production solutions.</p><br />
-           <h3 className="mt-5 font-semibold text-base">Publishing, Distribution & Amplification:</h3>
-           <p>We publish, we post, we report, we review, we optimize, and we do it all again. We publish on YouTube, Spotify, and Apple Podcast, and elsewhere via distribution platforms. We post about the show and the episodes on LinkedIn, Instagram, X, Facebook, and other social platforms to build visibility, community, and long-term ROI.</p>
-         </div>
+          <div>
+            Yes. We offer full, flexible, and scalable podcast production services. Whether you want traditional audio-only episodes for platforms like Spotify and Apple Podcasts, video podcasts optimized for YouTube and LinkedIn, or hybrid content that works across both mediums, we deliver professional-quality content.
+          </div>
         </>
-    )
-  }
-]
+      )
+    },
+    {
+      key: 2,
+      title: 'What is the typical timeline for producing a podcast episode?',
+      content:
+        'Podcast turnaround times depend on format complexity and post-production requirements. Typically, a standard podcast takes around 14–15 days for end-to-end production—from recording, editing, sound design, and final optimization. For more complex episodes that require extensive research, we recommend allocating at least 30 days to ensure a smooth workflow and great results. Our process includes research, copywriting, speaker prep, production, post-production editing, sound design, and versioning.',
+    },
+    {
+      key: 3,
+      title: 'Do you work with remote guests and distributed teams?',
+      content:
+        'Many of our podcast projects involve guests and team members across different time zones and locations. We coordinate remote recordings using professional-grade audio/video setups and provide technical guidance to ensure broadcast-quality results. We seamlessly integrate content from multiple locations into cohesive episodes while maintaining consistent quality and branding throughout.'
+    },
+    {
+      key: 4,
+      title: 'How do you create podcasts that are engaging? ',
+      content: (
+        'This goes well beyond a great shoot and a good edit. We ensure that your podcast themes align with your business intent and brand purpose, that guests and hosts align with your podcast concept, that the format makes your content flow, that the branding is memorable, and that the call to actions deliver the desired interactions.'
+      ),
+    },
+
+    {
+      key: 5,
+      title: 'How do you ensure consistent audio and video quality across episodes?',
+      content:
+        'We maintain broadcast-standard quality through professional equipment, controlled recording environments, and rigorous post-production processes. Our audio experts handle noise reduction, level balancing, and sound design to ensure consistent listening experiences. For video podcasts, we provide professional lighting setups, multiple camera angles, and color grading. Every episode goes through our quality control process before delivery, ensuring your podcast maintains the professional standard your brand demands.',
+    },
+    {
+      key: 6,
+      title: 'Do you follow a specific podcast creation process?',
+      content: (
+        <>
+          <div>
+            <p>Broadly, here’s our workflow.</p>
+            <h3 className="mt-5 font-semibold text-base">Discovery:</h3>
+            <p>We explore your brand’s voice, themes, and audience to identify the conversation your podcast can uniquely own.</p><br />
+            <h3 className="mt-5 font-semibold text-base">Strategy & SEO:</h3>
+            <p>We research, strategise, and position your podcast. We take a thorough look at SEO to identify key buckets to lean into for strong traction.</p><br />
+            <h3 className="mt-5 font-semibold text-base">Concept and Design:</h3>
+            <p>We conceptualise and design your podcast around a unique theme to start creating content that aligns with business, brand, and communication goals.</p><br />
+            <h3 className="mt-5 font-semibold text-base">Episode Construct:</h3>
+            <p>We design frameworks, hooks, segments, question maps, and more to turn complex expertise into sharp, engaging episodes.</p><br />
+            <h3 className="mt-5 font-semibold text-base">Production & Post Production:</h3>
+            <p>From crews, locations, and lighting to episodes, teasers, extracts, thumbnails, and more–we offer scalable and efficient end-to-end podcast production and post-production solutions.</p><br />
+            <h3 className="mt-5 font-semibold text-base">Publishing, Distribution & Amplification:</h3>
+            <p>We publish, we post, we report, we review, we optimize, and we do it all again. We publish on YouTube, Spotify, and Apple Podcast, and elsewhere via distribution platforms. We post about the show and the episodes on LinkedIn, Instagram, X, Facebook, and other social platforms to build visibility, community, and long-term ROI.</p>
+          </div>
+        </>
+      )
+    }
+  ]
 
   const data = [
     {
@@ -200,68 +193,82 @@ const TNC = [
       redBangle: 'Extensive Podcast branding services',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon4.svg',
       need: 'Podcast SEO',
       others: 'Not available',
       redBangle: 'SEO-first approach to podcast publishing, marketing',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon5.svg',
       need: 'Podcast Quality',
       others: 'Hit or miss',
       redBangle: 'Consistent high quality',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon6.svg',
       need: 'Podcast Marketing',
       others: 'Not available',
       redBangle: 'Comprehensive support',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon7.svg',
       need: 'Formats & Genres',
       others: 'Limited formats & genres',
       redBangle: 'Any format & genre',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon8.svg',
       need: 'Podcast Formats',
       others: 'Limited formats',
       redBangle: 'Unlimited formats',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon9.svg',
       need: 'Reviews & Feedback',
       others: 'Emails back & forth',
       redBangle: 'Single dashboard & interactive reviews',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon10.svg',
       need: 'Production & Schedules',
       others: 'You chase them',
       redBangle: 'We manage for you',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon11.svg',
       need: 'Podcast Versioning',
       others: 'Limited versioning',
       redBangle: 'Limitless versioning',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon12.svg',
       need: 'Project Management',
       others: 'Emails, spreadsheets',
       redBangle: 'Cloud-based workflows',
     },
     {
-      icon: '/img/services/podcast/why-icon1.svg',
+      icon: '/img/services/podcast/why-icon13.svg',
       need: 'Turnaround Times',
       others: 'They work at their speed',
       redBangle: 'We work at podcast speed',
     },
   ]
 
-  
+  const posts = [
+    {
+      key: 0,
+      name: 'The Lakshmi Rebecca Show',
+      company: 'Lakshmi Rebecca',
+      image: '/img/works/lakshmi_rebecca_show.jpg',
+      alt: 'Lakshmi Rebecca Show',
+      tags: ['Video Content', 'YouTube Series'],
+      href: 'work/brand-designs/lakshmi-rebecca-show'
+    }
+  ]
+
+  const _posts = posts.map(postsMapper)
+
+
   useEffect(() => {
     if (!stopVisible) {
       const handleScroll = () => {
@@ -292,11 +299,11 @@ const TNC = [
         fullVideo={serviceVideos.get_podcast.fullVideo}
         ctaText="Podcast with us "
         ctaLink="/contact"
-         textColor ='#111010'
+        textColor='#111010'
         content={
           <>
             <h1 className="inline">Build market leadership and influence through podcasts. Go from podcast research and strategy to concept, design, production, distribution, and amplification with Makerrs. We don’t just make podcasts, we make podcasts work hard for you.</h1>
-           
+
           </>
         }
       />
@@ -311,7 +318,7 @@ const TNC = [
         <h2>Content Marketing Strategy</h2>
         <h2>Full Service Advertising Agency</h2>
       </div>
-       <ServiceCardSection
+      <ServiceCardSection
         tag="Explore Our Podcast Solution"
         title={
           <div className="md:max-w-[620px]">
@@ -323,13 +330,15 @@ const TNC = [
       />
 
 
-      <section className={`overflow-hidden bg-white pt-[48px] pb-18 md:py-30 `}>
+      <section className={`overflow-hidden bg-white pt-[48px] pb-15 md:pt-30 md:pb-15`}>
         <div className="container text-center">
-          <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
-           Why choose Makerrs <br /> over other podcast production agencies?
-          </h3>
+
           <div className="w-full overflow-x-auto md:p-0">
             <div className="max-w-full">
+              <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett md:w-[940px] mx-auto">
+                Why choose Makerrs <br /> over other podcast production agencies?
+              </h3>
+
               <table className="w-full max-w-full md:w-[940px] mx-auto text-sm border-collapse border-spacing-0 text-left font-everett leading-[24px]">
                 <thead>
                   <tr className="h-[50px] border-b border-[#D4D4D4]">
@@ -374,22 +383,22 @@ const TNC = [
           </div>
         </div>
       </section>
+
+      <div className="md:pt-15">
+        <FeaturedWorkSection posts={_posts} href="" title="Explore Our Podcast Work" />
+      </div>
+
+
+      <TrustedBrandsSection className="py-12 md:pt-15 md:pb-15" />
      
-       <FeaturedWorkSection posts={_posts} href="" title="Explore Our Podcast Work"/> 
-        <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
-        <Testimonials
-            title={'WHAT CLIENTS SAY'}
-            className="py-7.5 md:py-15"
-            testimonialData={createTestimonialData}
-            type="semi"
-        />
-      <div id="leap-explore">
+     <div className="pt-7.5 md:pt-18 pb-15 md:pb-3">
         <ExploreMoreSection
           type="think"
-          className="pt-7.5 md:pt-15 pb-15 md:pb-30" 
           cards={cards}
         />
-      </div>
+     </div>
+     
+
       <section className="md:pt-12 pt-6 md:pb-24 pb-12">
         <div className="container">
           <div className="rb-row">

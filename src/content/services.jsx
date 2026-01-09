@@ -621,7 +621,7 @@ export const podcastCards = [
     title: 'Podcast Research & Strategy',
     text: 'We study your industry, audience and competitors, and build on your strategic priorities to define the themes and direction for your podcast. We ensure that your podcast reflects your brand purpose, market positioning and long-term goals.',
     icon: {
-      src: '/img/services/podcast/icon2.svg',
+      src: '/img/services/podcast/icon1.svg',
       alt:'star',
       width: 111,
       height: 111,
