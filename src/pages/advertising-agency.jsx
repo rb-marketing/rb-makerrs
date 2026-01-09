@@ -58,7 +58,7 @@ const Campaign = ({ setisPopupOpen }) => {
     {
       key: 2,
       quote:
-        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They\’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
 
       designation: 'VP INTERNAL COMMUNICATIONS',
       company: 'FORTUNE 100 ITES ENTERPRISE',
@@ -129,7 +129,7 @@ const Campaign = ({ setisPopupOpen }) => {
       content: (
         <>
           <div>
-            From insightful communication strategies, to big campaign ideas and creatives, exciting campaign plans, and flawless execution across formats and locations–Makerrs provides comprehensive campaign solutions. Whether it's for brand marketing, product and solution marketing, employer branding, localization or ESG campaigns–we support every phase of enterprise growth.
+            From insightful communication strategies, to big campaign ideas and creatives, exciting campaign plans, and flawless execution across formats and locations–Makerrs provides comprehensive campaign solutions. Whether it&apos;s for brand marketing, product and solution marketing, employer branding, localization or ESG campaigns–we support every phase of enterprise growth.
           </div>
         </>
       )
