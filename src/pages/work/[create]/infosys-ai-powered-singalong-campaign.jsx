@@ -10,47 +10,13 @@ import {
 import { useRouter } from 'next/router'
 import { CommercialSection } from '@/components/pages/work'
 
-export const similarPostsData = [
-  {
-    key: 0,
-    name: "Supporting young women in pursuit of a Future in STEM",
-    company: 'WeRise',
-    image: '/img/works/we_rise.webp',
-    alt: 'WeRise',
-     tags: ['Non-profit', 'CSR Video', 'Documentary'],
-    tabs: ['Videos'],
-    case_study_title: 'werise-women-in-science-documentary',
-    href: '/work/b2b-video-production-agency/werise-women-in-science-documentary',
-  },
-  {
-    key: 1,
-    name: "Corporate Film for Aerospace Manufacturing giant in India",
-    company: 'GE Aerospace',
-    image: '/img/works/ge_aerospace.webp',
-    alt: 'GE Aerospace',
-     tags: ['Manufacturing', 'Aerospace', 'Corporate Films & Videos'],
-    tabs: ['Videos'],
-    case_study_title: 'ge-aerospace-corporate-film',
-    href: '/work/b2b-video-production-agency/ge-aerospace-corporate-film',
-  },
-  {
-    key: 2,
-    name: "Gordon Ritter on the Future of Software",
-    company: 'Vymo',
-    image: '/img/works/vymo_gordon_ritter.webp',
-    alt: 'Vymo',
-    tags: ['SaaS', 'Thought Leadership Video', 'Corporate Film', 'Interview Video'],
-    case_study_title: 'vymo-gordon-ritter-thought-leadership-video',
-    href: '/work/b2b-video-production-agency/vymo-gordon-ritter-thought-leadership-video',
-  },
-]
 
 const pageData = {
-  // logo: {
-  //   src: '/img/logos/infosys-logo.png',
-  //   width: '150',
-  //   height: '70',
-  // },
+  logo: {
+    src: '/img/logos/infosys-logo.png',
+    width: '150',
+    height: '70',
+  },
   image: '/img/case-study/singalong-2.jpg',
   tags: ['Technology', 'AI', 'Digital Campaign', 'Hyper-Personalized Campaign', 'Global Video Production'],
   // desktopVideo: '/img/works/metro-wholesale-big.mp4',
@@ -205,13 +171,6 @@ function InfosysSingalong() {
           type={commercials?.type}
         />
       </section>
-
-
-      {/* <SimilarPosts
-         tag="explore more case studies"
-        className="py-15 md:pb-30"
-        posts={similarPostsData}
-      /> */}
     </>
   )
 }
