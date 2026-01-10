@@ -543,6 +543,20 @@ export const serviceVideos = {
       height: '1080',
     },
   },
+  book_a_crew: {
+    video: {
+      src: '/img/services/crew/crew-preview..mp4',
+      poster: '/img/services/crew/poster-crew.webp',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/crew/crew-preview.mp4',
+      poster: '/img/services/crew/poster-crew.webp',
+      width: '1920',
+      height: '1080',
+    },
+  },
   design: {
     video: {
       src: '/img/services/design_video.mp4',
