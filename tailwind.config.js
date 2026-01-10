@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         rb: {
           red: '#07ef5a', //'#DB2F2C',
-          black: '#111010',
+          black: '#000000',
+          white: '#FFFFFF',
           mercury: '#F1F2F6',
           scarlet: '#930000',
           'milano-red': '#00e546',

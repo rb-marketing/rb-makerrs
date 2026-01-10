@@ -688,7 +688,7 @@ export const podcastCards = [
   {
     key: 5,
     title: 'Podcast Amplification',
-    text: 'Every good episode needs several pieces of amplification content – teaser, down edits, carousel, and static graphic – and supporting thumbnails, titles, captions, descriptions, and more! Our podcast producers, writers, and editors are here to scale podcast post-production and marketing content to meet your community growth ambitions.',
+    text: 'Every podcast episode needs several pieces of amplification content – thumbnails, teaser, reels, carousels, captions, and more! Our podcast producers, writers, and editors are here to scale podcast post-production and marketing content for you.',
     icon: {
       src: '/img/services/podcast/icon6.svg',
       alt: 's-megaphone',
@@ -701,7 +701,8 @@ export const podcastCards = [
     title: 'Podcast Marketing',
     text: (
           <>
-We craft, publish, and track organic marketing content across LinkedIn, X, Instagram, and other social platforms to ensure audience growth. And when you want more than organic growth, we have you covered with planned media spends. We’ll propose the right media spend strategy to achieve your brand and podcast growth goals.          </>
+          We amplify and track your podcast across LinkedIn, X, Instagram, and other social platforms. When you want more than organic audience growth, we&apos;ll propose the media spend strategy that will help you achieve your podcast growth goals.
+          </>
     ),
     icon: {
       src: '/img/services/podcast/icon7.svg',
@@ -776,7 +777,7 @@ export const designCards = [
     title: 'Brand Design Systems',
     text: 'Get unique, multi-sensory Brand Design Systems–visual, verbal, and sonic–that deliver a cohesive brand story and brand experience across touch points. Sign up for an immersive branding workshop and get started today!',
     icon: {
-      src: '/img/services/design/icon1.svg',
+      src: '/img/services/design/icon1-b.svg',
       alt:'star',
       width: 111,
       height: 111,
@@ -787,7 +788,7 @@ export const designCards = [
     title: 'Event Branding',
     text: 'Be it your own brand event or a branded booth–our comprehensive event branding services include event theme and logo design, invites, motion graphics, mailers, zone and booth design, presentation design, merchandise design, and giveaway curation.',
     icon: {
-      src: '/img/services/design/icon2.svg',
+      src: '/img/services/design/icon2-b.svg',
       alt: 'S-circles',
       width: 111,
       height: 111,
@@ -798,7 +799,7 @@ export const designCards = [
     title: 'Collateral Design',
     text: 'From presentations and coffee table books to packaging design, brochure design, brand merchandise design, social media creatives, and more—we help you slay brand conversations through great design.',
     icon: {
-      src: '/img/services/design/icon3.svg',
+      src: '/img/services/design/icon3-b.svg',
       alt: 'S-Maze',
       width: 111,
       height: 111,
@@ -809,7 +810,7 @@ export const designCards = [
     title: 'Interactive Experiences',
     text: 'We design and develop interactive and immersive brand experiences that transform physical and digital spaces into dynamic storytelling platforms. Be it interactive, augmented or mixed reality - we forge unforgettable experiences for your brand.',
     icon: {
-      src: '/img/services/design/icon4.svg',
+      src: '/img/services/design/icon4-b.svg',
       alt: 'Think',
       width: 111,
       height: 111,
@@ -820,7 +821,7 @@ export const designCards = [
     title: 'Brand Mascots and Avatars',
     text: 'Fuel infinite customer engagement possibilities with custom-crafted brand mascots and avatars inspired by human, animal, object, sci-fi, or hybrid DNA. Supercharge your brand across web, social, email, events, and more.',
     icon: {
-      src: '/img/services/design/icon5.svg',
+      src: '/img/services/design/icon5-b.svg',
       alt: 'Services',
       width: 111,
       height: 111,
@@ -831,7 +832,7 @@ export const designCards = [
     title: 'Environmental Graphics',
     text: 'We design visually appealing environments and physical spaces for retail, corporate offices, galleries, public spaces, events, and more—helping people feel, navigate, and interact with your brand through curiosity and joy.',
     icon: {
-      src: '/img/services/design/icon6.svg',
+      src: '/img/services/design/icon6-b.svg',
       alt: 's-megaphone',
       width: 111,
       height: 111,
@@ -842,7 +843,7 @@ export const designCards = [
     title: 'Motion Graphics',
     text: 'We\'re motion-first. In today\'s digital landscape, motion is key to captivate audiences through a "fourth dimension" in graphic design. We specialize in motion graphics, animation, VFX, CGI, and more.',
     icon: {
-      src: '/img/services/design/icon7.svg',
+      src: '/img/services/design/icon7-b.svg',
       alt: 's-chart',
       width: 111,
       height: 111,

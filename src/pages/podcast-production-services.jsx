@@ -106,7 +106,7 @@ const Design = ({ setisPopupOpen }) => {
         'Get on-demand professional video crews anywhere in the world. Be it a one-camera shoot or a multi-camera multi-location production–we curate and manage the production, and quality-check the footage for you. Hire a professional video crew today!',
       bgColor: '#ffffff',
       textColor: '#13c33f',
-      href: '/video-production-near-me',
+      href: '/professional-video-crews',
     },
   ]
 
@@ -391,7 +391,7 @@ const Design = ({ setisPopupOpen }) => {
 
       <TrustedBrandsSection className="py-12 md:pt-15 md:pb-15" />
      
-     <div className="pt-7.5 md:pt-18 pb-15 md:pb-3">
+     <div className="pt-7.5 md:pt-0 pb-15 md:pb-3">
         <ExploreMoreSection
           type="think"
           cards={cards}

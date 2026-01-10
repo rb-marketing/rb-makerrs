@@ -44,7 +44,7 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[], 
                     <Link href={href} className="group">
                       <div
                         className={`h-[22rem] p-8 md:p-14 relative overflow-hidden min-h-full md:h-[31rem] border border-rb-black hover:bg-rb-gray/10 transition-colors duration-300`}>
-                        <h3 className="relative text-black text-3xl md:text-6xl font-semibold flex items-center gap-3 mb-15 md:mb-[160px] group-hover:text-rb-link-green">
+                        <h3 className="relative text-black text-3xl md:text-6xl font-semibold flex items-center gap-3 mb-15 md:mb-[75px] group-hover:text-rb-link-green">
                           {serviceTitle}
                           <svg
                             width="34"
@@ -60,7 +60,7 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[], 
                           </svg>
                         </h3>
 
-                        <p className="text-sm md:text-xl text-black">{serviceDescription}</p>
+                        <p className="text-sm md:text-2xl text-black">{serviceDescription}</p>
                       </div>
                     </Link>
                   </SwiperSlide>

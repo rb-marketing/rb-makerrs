@@ -118,7 +118,7 @@ const Campaign = ({ setisPopupOpen }) => {
         'Book professional video crews on-demand in 100 countries. Our team of experienced producers curate video crews for every brief and location, manage the shoots and quality-check the footage for you. Shoot video testimonials, events, drone footage, and more wherever you need them!',
       bgColor: '#ffffff',
       textColor: '#13c33f',
-      href: '/video-production-near-me',
+      href: '/professional-video-crews',
     },
   ]
 
@@ -275,6 +275,22 @@ const Campaign = ({ setisPopupOpen }) => {
         sectionStyle={{ 'padding-bottom': 0 }}
       />
 
+      <div className='md:pt-15'>
+        <RedbangleWaySection
+          data={campaignCards3}
+          video={{
+            src: '/img/services/campaign/b2b-campaigns-gif.mp4',
+            width: '1080',
+            height: '1080',
+          }}
+          heading='The Makerrs Way'
+          title='How we craft Campaigns that drive growth for your brand'
+          flexValue="md:flex-row"
+        />
+      </div>
+
+
+
       <ServiceCardSection
         tag="Explore Our Campaign Formats"
         title={
@@ -284,22 +300,16 @@ const Campaign = ({ setisPopupOpen }) => {
         }
         iconClassName="w-15 h-15"
         cards={campaignCards2}
+        containerClassName="flex flex-row items-center gap-6 camaign-cards"
       />
 
-      <RedbangleWaySection
-        data={campaignCards3}
-        video={{
-          src: '/img/services/campaign/b2b-campaigns-gif.mp4',
-          width: '1080',
-          height: '1080',
-        }}
-        heading='The Makerrs Way'
-        title='How we craft Campaigns that drive growth for your brand'
-        flexValue="md:flex-row"
-      />
 
-      <FeaturedWorkSection posts={_posts} href="" title="Explore Our Campaign Work" />
-      <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
+      <div className='md:pt-15'>
+        <FeaturedWorkSection posts={_posts} href="" title="Explore Our Campaign Work" />
+      </div>
+
+      <TrustedBrandsSection className="py-12 md:pt-15 md:pb-12" />
+      
       <Testimonials
         title={'WHAT CLIENTS SAY'}
         className="py-7.5 md:py-15"
