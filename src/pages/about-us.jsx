@@ -4,7 +4,8 @@ import {
   TrustedBrandsSection,
   VideoModal,
   ExploreMoreSection,
-  Testimonials
+  Testimonials,
+  RedbangleWaySection
 } from '@/components/shared'
 import { SEO } from '@/components/shared/SEO'
 import Script from 'next/script'
@@ -13,24 +14,151 @@ import styles from '@/styles/home.module.scss'
 import { gsap } from 'gsap'
 import 'swiper/css'
 import 'swiper/css/navigation'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import { useLenis } from '@studio-freight/react-lenis'
 import Link from 'next/link'
 import React from 'react'
 
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 const WhoWeAre = () => {
 
-  const heroSection = useRef()
-  const containerRef = useRef()
-  const prevButtonRef = useRef(null)
-  const nextButtonRef = useRef(null)
-  const [herovideoOpen, setHerovideoOpen] = useState(false)
+  const redbangleway = [
+    {
+      key: '0',
+      heading: 'The New Global',
+      content:
+        'Experience the power of a global, professional, creative agency that scales with your business. Our central creative teams and our creative collaborative spread across 100 countries come together on our technology platform to meet your brand’s growing needs.'
+    },
+    {
+      key: '1',
+      heading: 'Relentless Creativity',
+      content:
+        'With nearly a decade in business, we understand what sticks in branding, marketing communications, corporate communications, employer branding, ESG and more. And we always bring fresh ideas to the table.'
+    },
+    {
+      key: '2',
+      heading: 'Borderless Execution',
+      content:
+        'Be it 30 customer testimonial videos filmed across 5 continents or never-before event branding for your next big annual event - we’ve got the creative inspiration, the scalable systems and the on-demand creative experts you need.'
+    },
+    {
+      key: '3',
+      heading: 'Creative Cloud Workflows',
+      content:
+        'Our patent-pending technology platform is built to support hundreds of projects in parallel. You can upload briefs, track project progress, review draft videos and more on the cloud with great efficiency. And oh, did we mention repurpose creative assets in just a couple of clicks? Yes.'
+    },
+  ]
 
+  const [herovideoOpen, setHerovideoOpen] = useState(false)
+  const containerRef = useRef()
+
+  const heroSection = useRef()
   const insetRef = useRef()
+
   useEffect(() => {
     const mm = gsap.matchMedia()
+    mm.add('(max-width:768px)', () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          scrub: 0.2,
+          start: '50% 40%',
+          end: '80% 20%',
+          trigger: heroSection.current,
+
+          // markers: true,
+        },
+      })
+      const getY = () => {
+        const mEl = 72 + 50 + 72
+        const titleElm = containerMbRef.current.getBoundingClientRect().height
+
+        const y = mEl + titleElm
+        return y
+      }
+      tl.fromTo(
+        '.content-showreel',
+        { opacity: 1, y: 0, duration: 0.05 },
+        { opacity: 0, y: () => getY() },
+        0
+      ).fromTo('.play-circle, .play-icon', { opacity: 0.5 }, { opacity: 1 })
+
+      return () => {
+        tl.kill()
+      }
+    })
+    mm.add('(min-width:768px)', () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          scrub: 0.2,
+          start: '35% 40%',
+          end: '60% 32%',
+          trigger: heroSection.current,
+          // markers: true,
+        },
+      })
+
+      const getY = () => {
+        const mEl = document
+          .querySelector(`.heroMarquee`)
+          .getBoundingClientRect().height
+        //   +
+        // 32 + //padding
+        // 80 + // marquee margin
+        // 108 // content height
+        const titleElm = document
+          .querySelector(`.hero-text`)
+          .getBoundingClientRect().height
+
+        const y = mEl + titleElm - 50
+
+        return y
+      }
+
+      tl.fromTo(
+        insetRef.current,
+        {
+          width: () => {
+            const cistyles = containerRef.current?.getBoundingClientRect()
+            return cistyles.width
+          },
+
+          y: () => -1 * getY(),
+        },
+        {
+          width: '100%',
+
+          y: 0,
+
+          duration: 0.8,
+        }
+      )
+        .fromTo(
+          '.web-vid',
+          {
+            x: () => {
+              const istyles = containerRef.current?.getBoundingClientRect()
+              const nstyles = insetRef.current?.getBoundingClientRect()
+              const diffContainer = Math.min(istyles.left - nstyles.left, 0)
+              return diffContainer
+            },
+            borderRadius: '70px',
+          },
+          { x: 0, borderRadius: '0' },
+          0
+        )
+
+        .fromTo(
+          '.content-showreel',
+          { opacity: 1 },
+          { opacity: 0, y: () => getY(), duration: 0.01 },
+          0
+        )
+
+      return () => {
+        tl.kill()
+      }
+    })
     const resize = () => {
       gsap.matchMediaRefresh()
     }
@@ -87,24 +215,32 @@ const WhoWeAre = () => {
       mm.kill()
     }
   }, [])
+
+    const heroHeightRef = useRef(0)
+  useEffect(() => {
+    const heightDiv = document.querySelector('.height-div').offsetHeight
+
+    if (heroHeightRef.current === 0) {
+      heroHeightRef.current = heroSection.current.offsetHeight
+    }
+
+    const heroHeightFunc = () => {
+      if (window.innerWidth > 767) {
+        heroSection.current.style.minHeight =
+          heroHeightRef.current + heightDiv - 120 + 'px'
+        ScrollTrigger.refresh()
+      } else {
+        // do nothing
+      }
+    }
+    heroHeightFunc()
+  }, [])
+
+
   const onModalOpen = (e) => {
     setHerovideoOpen(true)
     e.stopPropagation()
   }
-  useEffect(() => {
-    if (prevButtonRef.current && nextButtonRef.current) {
-      const swiperInstance = document.querySelector(
-        '.aboutServicesSlider'
-      )?.swiper
-
-      if (swiperInstance) {
-        swiperInstance.params.navigation.prevEl = prevButtonRef.current
-        swiperInstance.params.navigation.nextEl = nextButtonRef.current
-        swiperInstance.navigation.init()
-        swiperInstance.navigation.update()
-      }
-    }
-  }, [])
 
   const lenis = useLenis()
   const [bioModal, setBioModal] = useState({
@@ -342,178 +478,178 @@ const WhoWeAre = () => {
     },
   ]
 
-  const cards = [
-     {
+  const explorecards = [
+    {
       id: 0,
       serviceTitle: 'GET DESIGN',
       serviceDescription:
-        'From brand identity to experiential design - we help you break through the clutter, and build credibility and human connect. We don\'t just design; we sculpt masterpieces that defy convention and elevate your brand into a unique entity that amazes in every touch point.',
+        'Get brand identity systems, event branding, editorial design, illustrations, and motion graphics. Build brand differentiation and human connect with Makerrs. Explore our branding and design services.',
       bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/brand-design-agency',
     },
     {
-      id: 0,
+      id: 1,
       serviceTitle: 'GET VIDEO',
       serviceDescription:
-        'Get marketing explainer videos, video case studies, corporate videos, hiring and culture videos and more. Red Bangle offers end to end video production services across locations and formats. Get scalable video production services for your B2B brand.',
+        'We plan, conceptualise, produce and scale video content – be it for your next product or your YouTube channel. We also offer on-demand video production services for customer testimonial videos, recruitment videos, corporate videos and more. Explore our video production services.',
       bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/video-production',
     },
     {
-      id: 1,
+      id: 2,
       serviceTitle: 'GET PODCAST',
       serviceDescription:
-        'Bowl your audience over with our AI-first campaigns, content, experiences and more. Take your brand into the future with our end-to-end AI solutions: concept, design, curation, development, AI training and more.',
+        'Looking to lead industry conversations, build community and drive ROI? Go from content research, podcast concept and positioning, to podcast branding, production, distribution and amplification with one agency. Make a successful podcast today.',
       bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/podcast-production-services',
     },
     {
-      id: 2,
+      id: 3,
       serviceTitle: 'GET CAMPAIGN',
       serviceDescription:
-        'We take our cues from people and culture, turning creative insights into campaigns that cut through the noise. From bold ideas to flawless execution, we create work that gets your brand noticed, talked about, and loved.',
+        'From digital campaigns and integrated campaigns, to outdoor and print campaigns – our creative strategy is rooted in a simple yet powerful human insight unique to your brand and product or service. Send us a campaign brief today.',
       bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/advertising-agency',
     },
     {
-      id: 3,
+      id: 4,
       serviceTitle: 'BOOK A CREW',
       serviceDescription:
-        'Book professional video crews on-demand in 100 countries. Our team of experienced producers curate video crews for every brief and location, manage the shoots and quality-check the footage for you. Shoot video testimonials, events, drone footage, and more wherever you need them!',
+        'Get on-demand professional video crews anywhere in the world. Be it a one-camera shoot or a multi-camera multi-location production–we curate and manage the production, and quality-check the footage for you. Hire a professional video crew today!',
       bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/professional-video-crews',
     },
   ]
 
-  const createTestimonialData = [
+  const testimonials = [
     {
-    key: 0,
-    quote:
-      'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
-    name: 'ALINA PATRAHAU',
-    designation: 'FOUNDER',
-    company: 'DARUIESTE ARIPI',
-    image: {
-      srcSet:
-        `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      key: 0,
+      quote:
+        'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+      name: 'ALINA PATRAHAU',
+      designation: 'FOUNDER',
+      company: 'DARUIESTE ARIPI',
+      image: {
+        srcSet:
+          `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 1,
-    quote:
+    {
+      key: 1,
+      quote:
         <>
-         Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
+          Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
         </>,
-    name: 'KUNCHERIA MARATTUKALAM',
-    designation: 'FOUNDER & DIRECTOR',
-    company: 'Maratt Group',
-    image: {
+      name: 'KUNCHERIA MARATTUKALAM',
+      designation: 'FOUNDER & DIRECTOR',
+      company: 'Maratt Group',
+      image: {
         srcSet:
 
-            `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+          `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
-    },
+      },
     },
     {
-    key: 2,
-    quote:
-      'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+      key: 2,
+      quote:
+        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
 
-    designation: 'VP INTERNAL COMMUNICATIONS',
-    company: 'FORTUNE 100 ITES ENTERPRISE',
-    image: {
-      srcSet:
-        `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      designation: 'VP INTERNAL COMMUNICATIONS',
+      company: 'FORTUNE 100 ITES ENTERPRISE',
+      image: {
+        srcSet:
+          `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-{
-    key: 3,
-    quote:
-      'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
-    name: 'ROSHAN CARIAPPA',
-    designation: 'VICE-PRESIDENT MARKETING',
-    company: 'VYMO',
-    image: {
-      srcSet:
-        `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 3,
+      quote:
+        'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
+      name: 'ROSHAN CARIAPPA',
+      designation: 'VICE-PRESIDENT MARKETING',
+      company: 'VYMO',
+      image: {
+        srcSet:
+          `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 4,
-    quote:
-      'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Makerrs supported us on the ground and even helped us manage our golfing ambassador. Thanks, team!',
-    name: 'MATT WALKINGTON',
-    designation: 'Account Director',
-    company: 'BRIGHT PARTNERSHIPS',
-    image: {
-      srcSet:
-        `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 4,
+      quote:
+        'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Makerrs supported us on the ground and even helped us manage our golfing ambassador. Thanks, team!',
+      name: 'MATT WALKINGTON',
+      designation: 'Account Director',
+      company: 'BRIGHT PARTNERSHIPS',
+      image: {
+        srcSet:
+          `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 5,
-    quote:
-      <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
-      </>,
-    name: 'Rinku Agarwal Basu',
-    designation: 'COO',
-    company: 'Lillia Care',
-    image: {
-      srcSet:
+    {
+      key: 5,
+      quote:
+        <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
+        </>,
+      name: 'Rinku Agarwal Basu',
+      designation: 'COO',
+      company: 'Lillia Care',
+      image: {
+        srcSet:
 
-        `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+          `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-{
-    key: 6,
-    quote:
-      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Makerrs has given us a brand bursting with character and joy! Seeing customers connect with it at our dessert cafe feels incredible.',
-    name: 'NAKUL KULKARNI',
-    designation: ' CO-FOUNDER',
-    company: 'P.U. DINGDING',
-    image: {
-      srcSet:
-        `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 6,
+      quote:
+        'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Makerrs has given us a brand bursting with character and joy! Seeing customers connect with it at our dessert cafe feels incredible.',
+      name: 'NAKUL KULKARNI',
+      designation: ' CO-FOUNDER',
+      company: 'P.U. DINGDING',
+      image: {
+        srcSet:
+          `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 7,
-    quote:
-      'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
-    name: 'MARC IRAWAN',
-    designation: 'Founder',
-    company: 'COLEARN',
-    image: {
-      srcSet:
-        `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 7,
+      quote:
+        'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
+      name: 'MARC IRAWAN',
+      designation: 'Founder',
+      company: 'COLEARN',
+      image: {
+        srcSet:
+          `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 8,
-    quote:
-      'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
-    name: 'SUNIL SURESH',
-    designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
-    company: 'CAPILLARY TECHNOLOGIES',
-    image: {
-      srcSet:
-        `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 8,
+      quote:
+        'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
+      name: 'SUNIL SURESH',
+      designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
+      company: 'CAPILLARY TECHNOLOGIES',
+      image: {
+        srcSet:
+          `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-]
+  ]
 
   return (
     <>
@@ -524,246 +660,190 @@ const WhoWeAre = () => {
       />
 
       <section
-        className="pt-15 md:pb-24 md:pt-24 relative bg-rb-mercury text-rb-black "
+        className="pt-10 pb-0 md:pb-0 md:pt-24 relative bg-rb-mercury text-rb-black "
         ref={heroSection}
       >
         <div className="height-div aspect-video absolute w-full opacity-0 pointer-events-none z-30 bg-rb-red top-0" />
         <div className="container">
           <h1 className="hero-text md:text-[112px] md:leading-[1.01] font-everett font-medium md:tracking-[-2.24px] uppercase text-[56px] leading-[1.07] tracking-[-1.96px]">
-            The tech-enabled
+            The tech-enabled 
             <br />
-            <span className="text-[#FF1A40] block md:hidden">AI-first</span>
             creative{' '}
             <div
               className={`content aspect-[1920/1080] origin-top ${styles.content} hidden md:inline-block`}
               ref={containerRef}
-            >
-              <div
-                className="w-full  bottom-0 left-0 select-none md:aspect-[1920/1080] relative mx-auto translate-y-4"
-                ref={insetRef}
-              >
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  src="/creative_agency.mp4"
-                  poster="/img/who-we-are/creative_agency_thumbnail.webp"
-                  className="w-full md:block translate-x-[-0.225px] translate-y-0 rotate-0 scale-100 rounded-[70px]"
-                  width="1920"
-                  height="1080"
-                ></video>
-              </div>
-            </div>
-            <span className="md:translate-x-[20px] inline-block">Agency </span>
+            ></div>
+            <span className="md:translate-x-[20px] inline-block">agency</span>
           </h1>
           <div className="heroMarquee flex md:flex-row flex-col items-start justify-between border-t border-t-rb-davy-grey/50 pt-6 md:pt-8 mt-6 md:mt-20 gap-4 md:gap-0">
             <div className="w-full md:w-1/2 text-[16px] leading-[1.25] tracking-[-0.64px] font-everett md:text-[22px] md:leading-[1.45] md:tracking-[-0.88px] font-medium">
-              For brands that cater to the borderless customer.
+              For brands that cater to the borderless customer. 
             </div>
             <div className="w-full md:w-1/2 text-[16px] leading-[1.5] md:text-[28px] md:leading-[1.28] tracking-[-0.64px] md:tracking-[-1.12px] font-semibold">
-              We are a tech-powered global creative agency and collaborative. We’ve crafted brand design systems, video content, podcast IPs and creative campaigns for over 60 borderless brands.
+             We are a tech-powered global creative agency and collaborative. We’ve crafted brand design systems, video content, podcast IPs and creative campaigns for over 60 borderless brands. 
             </div>
           </div>
         </div>
+        {/* <picture>
+          <source
+            media="(min-width:768px)"
+            srcSet="/img/about/about-hero.webp"
+            width="1440"
+            height="688"
+          />
+          <img
+            src="/img/about/about-hero.webp"
+            alt="hero"
+            width="708"
+            height="790"
+            className="w-full md:mt-32 mt-12"
+          />
+        </picture> */}
         <div
-          className="w-full  bottom-0 left-0 select-none md:aspect-[1920/1080] relative block md:hidden  md:origin-top mx-auto"
-          // onClick={onModalOpen}
-          // data-rb-cursor
-          // data-rb-cursor-type="play"
+          className="w-full  bottom-0 left-0 select-none md:aspect-[1920/1080] relative  md:origin-top mx-auto"
+          onClick={onModalOpen}
+          data-rb-cursor
+          data-rb-cursor-type="play"
           ref={insetRef}
         >
-          {/* <video
+          <video
             autoPlay
             muted
             loop
             playsInline
-            src="/creative_agency.mp4"
-            poster="/img/who-we-are/creative_agency_thumbnail.webp"
-            className="w-full hidden md:block web-vid "
+            src="/img/about-us/hero.mp4"
+            poster="/img/about-us/hero-poster.webp"
+            className="w-full hidden md:block web-vid"
             width="1920"
             height="1080"
-          ></video> */}
+          ></video>
 
           <video
             autoPlay
             muted
             loop
             playsInline
-            src="/creative_agency.mp4"
-            poster="/img/who-we-are/creative_agency_thumbnail.webp"
+            src="/img/about-us/hero.mp4"
+            poster="/img/about-us/hero-poster.webp"
             className="w-[100%] max-w-[100%] mt-8 block md:hidden"
             width="1920"
             height="1080"
           ></video>
 
-          <div className=" absolute play-circle md:hidden opacity-0 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-rb-black/50 rounded-full w-13 h-13">
-            <svg
-              className="block play-icon absolute md:hidden opacity-0 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-              width="9"
-              height="10"
-              viewBox="0 0 9 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.570972 0.669922L8.07097 5.00005L0.570971 9.33018L0.570972 0.669922Z"
-                fill="white"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-15 md:py-30">
-        <div className="container">
-          <div className="flex flex-wrap items-center">
-            <div className="w-full md:w-[60%]">
-              <h1 className="text-title md:text-title-md font-everett mb-6 md:mb-12">
-                Our Manifesto
-              </h1>
-
-              <p className="text-xl md:text-2xl mb-0 text-rb-black/80 opacity-90 md:leading-[33px]">
-                We ask the questions that matter the most.
-                <br />
-                <br />
-                <span className="font-bold">“Why not?”</span> when everyone else
-                says “Impossible.” <br />
-                <span className="font-bold">“What’s next?”</span> when everyone
-                else says “We’re done.” <br />
-                <span className="font-bold">“What’s missing?”</span> when
-                everyone else says “It’s good enough.”
-                <br />
-                <br />
-                Every question is our spark—the thing that flips conventions,
-                fuels fresh ideas and finds answers no one else saw coming. It’s
-                not just how we work; it’s what drives us. <br />
-                <br />
-                We’re all about helping brands differentiate, connect, endure in
-                a world that’s witnessing a dozen new brands and a hundred new
-                app launches every day. We thrive on keeping brands relevant
-                today, and ready for tomorrow.
-                <br />
-                <br />
-                To us, every challenge is a chance to craft ideas that stick,
-                solve, and resonate. We go deeper, finding the insights that
-                fuel real growth – not just for brands, but for everyone we work
-                with.
-                <br />
-                <br />
-                We are Red Bangle. The Why Nots in a world of Same Olds.
-              </p>
-            </div>
-
-            <div className="w-full md:w-[40%] pt-8 md:pt-0 md:pl-10 self-center">
-              {/* <img src="/img/who-we-are/manifesto.jpg" alt="Our Manifesto" /> */}
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                src="/img/who-we-are/our_manifesto.mp4"
-              />
+          <div className="absolute bottom-4 right-4 z-10 backdrop-blur-2xl bg-rb-black/50 rounded-[32px] py-[17px] px-4.5 pl-[20px] overflow-hidden md:hidden block">
+            <div className="flex items-center gap-2 justify-center text-white ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="13"
+                fill="none"
+              >
+                <path
+                  fill="#fff"
+                  d="M.043 1.124c0-.442.489-.71.86-.47L9.09 5.916c.342.22.342.72 0 .94L.903 12.117a.559.559 0 0 1-.86-.47V1.125Z"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </section>
 
-      <div style={{ display: 'none' }}>
-        <h2>Brand content production agency</h2>
-        <h2>Integrated marketing agency</h2>
-        <h2>Holistic marketing agency</h2>
-        <h2>Brand strategy</h2>
-        <h2>Content production agency</h2>
-        <h2>Integrated agency</h2>
-        <h2>Creative agency</h2>
-        <h2>Digital marketing company</h2>
-        <h2>Advertising agency</h2>
-        <h2>Global team</h2>
-        <h2>Brand content</h2>
-      </div>
 
-      {/* <section className="py-15 md:py-30 bg-rb-mercury">
+      <section className="bg-white md:py-30 py-10">
         <div className="container">
-          <h2 className="font-everett text-2xl md:text-7xl mb-6 md:mb-18">
-            Why choose us
+          <h2 className="text-center text-title md:text-title-md mb-10 md:mb-18 font-everett">
+            Our Fundamentals
           </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-11 gap-y-18">
-            {[
-              {
-                id: 0,
-                title: 'Fueling Client Growth',
-                description:
-                  'Our aim is impact. Every move we make is crafted to help clients differentiate, connect, and reach their biggest goals.',
-              },
-              {
-                id: 1,
-                title: 'Building Lasting Bonds',
-                description:
-                  'Whether it’s 5 months or 5 years, we keep relationships fresh. Every project is an opportunity to succeed - together.',
-              },
-              {
-                id: 2,
-                title: 'Collaboration Meets Accountability',
-                description:
-                  'Inspired by collaboration, powered by ownership. We take every idea further because the buck stops with us.',
-              },
-              {
-                id: 3,
-                title: 'Relentless Curiosity',
-                description:
-                  'Curiosity is our obsession. We dive deep into every project, asking questions that others overlook to uncover real opportunities.',
-              },
-              {
-                id: 4,
-                title: 'Solutions, Not Shortcuts',
-                description:
-                  'For us, excellence is about real solutions, not quick fixes. We invest the time to ensure the results are built to last.',
-              },
-              {
-                id: 5,
-                title: 'A Shared Journey',
-                description:
-                  'For us, growth is a collective journey. Every project is a chance to enhance your brand, refine our craft, and empower our team.',
-              },
-            ].map(({ id, title, description }) => (
-              <div key={id}>
-                <h4 className="font-everett mb-1 text-7xl md:text-[86px]">
-                  0{id + 1}
-                  <span className="text-rb-red">.</span>
-                </h4>
-                <p className="text-lg font-semibold mb-2">{title}</p>
-
-                <p>{description}</p>
+          <div className="grid md:grid-cols-2 md:grid-rows-2 grid-cols-1">
+            <div className="grid md:grid-cols-2 grid-cols-1">
+              <div className="md:px-4 md:bg-[#DCDDDF] flex flex-col justify-end md:pb-8 pb-10 order-2 md:order-1 mt-4 md:mt-0">
+                <div className="md:text-[28px] text-xl font-medium mb-2 font-everett">
+                  For Today’s Enterprises
+                </div>
+                <p className="text-16">
+                  We’re all about helping brands differentiate, connect, endure in a world that’s witnessing a dozen new brands and a hundred new product launches every day.
+                </p>
               </div>
-            ))}
+              <div className="order-1 md:order-2">
+                <img
+                  src="/img/about-us/fundemental-1.png"
+                  alt=""
+                  className="h-[192px] md:h-auto w-full object-cover"
+                />
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 grid-cols-1">
+              <div className="md:px-4 md:bg-[#DCDDDF] flex flex-col justify-end md:pb-8 pb-10 order-2 md:order-1 mt-4 md:mt-0">
+                <div className="md:text-[28px] text-xl font-medium mb-2 font-everett">
+                  With Great Pride
+                </div>
+                <p className="text-16">
+                  We go beyond great creative quality and dependable processes. We believe in pride and ownership in everything we do.
+                </p>
+              </div>
+              <div className="order-1 md:order-2">
+                <img
+                  src="/img/about-us/fundemental-2.png"
+                  alt=""
+                  className="h-[192px] md:h-auto w-full object-cover"
+                />
+              </div>
+            </div>
+            <div className="grid  md:grid-cols-2 grid-cols-1">
+              <div>
+                <img
+                  src="/img/about-us/fundemental-3.png"
+                  alt=""
+                  className="h-[192px] md:h-auto w-full object-cover"
+                />
+              </div>
+              <div className="md:px-4 md:bg-white flex flex-col justify-end md:pb-8 pb-10 mt-4 md:mt-0">
+                <div className="md:text-[28px] text-xl font-medium mb-2 font-everett">
+                  Go the Distance
+                </div>
+                <p className="text-16">
+                  We believe in building long-term relationships with our clients, collaborators and employees, and in constructive, open feedback sharing.
+                </p>
+              </div>
+            </div>
+            <div className="grid  md:grid-cols-2 grid-cols-1">
+              <div>
+                <img
+                  src="/img/about-us/fundemental-4.png"
+                  alt=""
+                  className="h-[192px] md:h-auto w-full object-cover"
+                />
+              </div>
+              <div className="md:px-4 md:bg-white flex flex-col justify-end md:pb-8 pb-0 mt-4 md:mt-0">
+                <div className="md:text-[28px] text-xl font-medium mb-2 font-everett">
+                  Borderless Collaboration
+                </div>
+                <p className="text-16">
+                  Our business is designed to nurture creative collaboration with our clients and with independent creators and filmmakers the world over - no matter where they are.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <RedbangleWaySection
-        sectionBG="bg-rb-mercury md:!py-30 !py-15"
+      <RedbangleWaySection
+        heading='The Makerrs Way'
+        sectionBG="bg-rb-mercury md:py-30 py-10"
         title={
           <div className="md:max-w-[720px]">
-            We run on our patented technology
+            The agency for ambitious brands
           </div>
         }
-        data={redbanglewayCreateAbout}
-        // image={{
-        //   src: 'img/who-we-are/our_cloud_platform.jpg',
-        //   width: '491',
-        //   height: '562',
-        // }}
-        video={{
-          src: '/img/who-we-are/about-rb-cloud-video.mp4',
+        data={redbangleway}
+        image={{
+          src: 'img/about-us/what-makes-us-unique.webp',
           width: '491',
           height: '562',
         }}
-        heading="Our creative cloud platform"
-      /> */}
+      />
 
-      <section className="pb-5 md:pb-6 bg-white">
+      <section className="pb-5 md:pb-7.5 md:pt-30 pt-7.5 bg-white">
         <div className="container">
           <h1 className="text-title md:text-title-md font-everett mb-6 md:mb-8 md:!tracking-[-2.08px] !tracking-[-.52px] ">
             Meet the Makerrs
@@ -832,15 +912,6 @@ const WhoWeAre = () => {
           </div>
         </div>
       </section>
-
-      <div className="pb-15 md:pb-30">
-        <ExploreMoreSection
-          className="pt-7.5 md:pt-15 pb-15 md:pb-30"
-          cards={cards}
-          title='Explore our services'
-        />
-      </div>
-
 
       {bioModal.open && (
         <div className="fixed cursor-auto left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50 z-[9998]">
@@ -967,18 +1038,26 @@ const WhoWeAre = () => {
       )}
 
       <TrustedBrandsSection
-        className="bg-white pb-15 md:pb-15"
+        className="bg-white pb-15 md:pb-12"
         heading="Our clients"
       />
 
       <Testimonials
         title={'WHAT CLIENTS SAY'}
-        className="pt-18 pb-7.5 md:pt-30 md:pb-15"
-        testimonialData={createTestimonialData}
+        className="pt-18 pb-7.5 md:pt-15 md:pb-15"
+        testimonialData={testimonials}
         type="semi"
       />
 
-     
+      <div className="pb-15 md:pb-15">
+        <ExploreMoreSection
+          className="pb-15 md:pb-30"
+          cards={explorecards}
+          title='Explore our services'
+        />
+      </div>
+
+
       <VideoModal
         open={herovideoOpen}
         setOpen={setHerovideoOpen}
