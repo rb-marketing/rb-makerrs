@@ -660,7 +660,7 @@ const WhoWeAre = () => {
       />
 
       <section
-        className="pt-10 pb-0 md:pb-0 md:pt-24 relative bg-rb-mercury text-rb-black "
+        className="pt-10 pb-0 md:pb-0 md:pt-24 relative text-rb-black "
         ref={heroSection}
       >
         <div className="height-div aspect-video absolute w-full opacity-0 pointer-events-none z-30 bg-rb-red top-0" />
