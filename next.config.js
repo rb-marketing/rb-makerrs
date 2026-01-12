@@ -26,8 +26,7 @@ const nextConfig = {
         },
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
-          './collab': 'src/pages/collab.jsx',
-          './ourname':'src/pages/about/why-the-name-red-bangle.jsx'
+          './collab': 'src/pages/collab.jsx'
         },
         extraOptions: {
           exposePages: true,

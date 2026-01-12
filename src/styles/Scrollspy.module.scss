@@ -19,7 +19,7 @@
     .link {
       @apply border-b border-b-transparent md:border-b-0 text-sm md:text-5xl text-rb-black/50  md:tracking-[-0.768px] font-everett mr-5 md:mr-15 last:mr-0 whitespace-nowrap transition-all;
       &[data-active='true'] {
-        @apply text-rb-red border-b-rb-red;
+        @apply text-rb-link-green border-b-rb-link-green;
       }
     }
   }

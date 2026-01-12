@@ -212,7 +212,7 @@ export const redbanglewayCreateAbout = [
     key: '0',
     heading: 'Always tech-first',
     content:
-      'We started building our technology platform on day zero. Our intent was to bake efficiencies into creative workflows, ensure zero information and asset loss, and accelerate growth.',
+      'We started building our technology on day zero. Our intent was to bake efficiencies into creative workflows and cross-border creative collaboration, ensure zero information and asset loss, and accelerate growth.',
     image: {
       src: '/img/services/service-image.webp',
       width: '726',
@@ -234,7 +234,7 @@ export const redbanglewayCreateAbout = [
     key: '2',
     heading: 'Efficient Workflows',
     content:
-      'From briefs to estimates, project management, real-time reviews, asset organisation, expense logging and timesheets. Year after year, our platform helps us create with greater efficiency.',
+      'From briefs to estimates, project management, real-time reviews, asset organisation, expense logging and timesheets. Project upon project, our platform helps us create with greater efficiency.',
     image: {
       src: '/img/services/service-image.webp',
       width: '726',
@@ -254,9 +254,9 @@ export const redbanglewayCreateAbout = [
   },
   {
     key: '4',
-    heading: 'Value for Collaborators',
+    heading: 'Value for Freelancers',
     content:
-      'Whether it’s video crews in North America or graphic designers in India—our platform allows us to seamlessly onboard, curate and co-create with creative talent the world over.',
+      'Whether it’s video crews in North America or graphic designers in India—our platform allows us to seamlessly onboard, curate and co-create with creative gig workers the world over.',
     image: {
       src: '/img/services/service-image.webp',
       width: '726',
@@ -276,6 +276,7 @@ export const approach = [
   { key: 8, title: 'Delivery', src: 'delivery.svg' },
   { key: 9, title: 'Video Asset Repurposing', src: 'videoasset.svg' },
 ]
+
 export const aboutServices = [
   {
     id: 0,
