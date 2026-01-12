@@ -6,7 +6,9 @@ import {
   RollupNumber,
   ServiceHeroSection,
   ExploreMoreSection,
-  ServiceCardSection
+  ServiceCardSection,
+  VideoMetaModal,
+  PlayCard
 } from '@/components/shared'
 import { VideoModal } from '@/components/shared'
 import { LineArrow } from '@/components/icons'
@@ -32,12 +34,20 @@ import {
 } from '@/content/services'
 import statsStyles from '@/styles/sections/StatsSection.module.scss'
 
+const INIT_MODAL = {
+  open: false,
+  video: null,
+  loading: false,
+  title: null
+}
+
 const VideosServices = () => {
   const _posts = similarPosts.map(postsMapper)
   const [herovideoOpen, setHerovideoOpen] = useState(false)
   const prevButtonRef = useRef(null)
   const nextButtonRef = useRef(null)
   const router = useRouter()
+  const [modal, setModal] = useState(INIT_MODAL)
 
   const onModalOpen = (e) => {
     setHerovideoOpen(true)
@@ -120,121 +130,87 @@ const VideosServices = () => {
     {
       key: 0,
       title:
-        'How agile and scalable are your international video production services?',
+        'What types of videos do you create?',
       content:
-        'From a skeleton crew for a single testimonial video shoot to a full-fledged team of Directors, Producers, Cinematographers, Sound Technicians, and Spot-Editors required to capture a large-scale event, we offer scalable video production services for your business. Craft global communications worry-free with Makerrs.',
+        'We offer a wide range of video content services for brand growth. Whether it is commercial videos, social media videos, case study videos, thought leadership videos, product explainer videos, recruitment videos, documentary films of other formats – we create content that connects with your audiences.',
     },
     {
       key: 1,
-      title: 'Do you support multi-location shoots?',
+      title: 'Which industries do you specialise in?',
       content:
-        'Be it a 3-location shoot in 1 city for one commercial video or film, or a 10-city production for a documentary film or series—talk to us for every film and video production requirement you have. No matter where you need a shoot done, our experienced producers custom-curate and brief local crews, and manage the production end-to-end for you.',
+        'We’ve worked across technology, F&B, travel, aerospace, manufacturing, engineering, hiring, fashion, hospitality and more. So, we are a bit diverse with our industry focus. Which means, we are great at cross-pollinating our learnings. And we approach every brief with an intent to learn, explore and make something new.',
     },
     {
       key: 2,
-      title: 'Is the video production managed in-house at Makerrs?',
+      title: 'Which locations can you produce videos in?',
       content:
-        'Yes, the video production process is managed end-to-end by an experienced team of internationally qualified producers at Makerrs. Our producers have worked with crews across continents and on a wide range of film and video requirements. They are pros at curating crews, detailing shoot briefs, and running shoots on time and on budget.',
+        'As a global creative agency and collaborative, we can produce films and videos for you across 100 countries. Here’s how we do this: our in-house times strategise, conceptualise, script and storyboard your videos. Our producers match the creative brief to a curated crew in the location we need to film in. We brief, creatively supervise and manage the entire production. The footage comes back to our in-house post production team for the rest of the magic.',
     },
     {
       key: 3,
-      title: 'Which countries do you have video crews in?',
+      title: 'Which platforms do you create videos for?',
       content:
-        'From the USA, UK and Europe to Japan, Indonesia, Thailand, Singapore, Australia, China, South Africa, Kenya, and India–we provide professional video crews across 100+ countries. Our services cover all the major cities and business hubs in the world. We are here to support the communication needs of your borderless brand.',
+        'As a creative agency and collaborative, we conceptualize and produce videos for digital, offline and events. Our goal is to ensure every piece of content you commission connects with your audience, and drives engagement, no matter where it’s seen - LinkedIn, YouTube, event, website or Whatsapp.',
     },
     {
       key: 4,
       title:
-        'How do you ensure quality consistency in the case of a multi-country production?',
-      content: (
-        <>
-          <div>
-            There are several ways in which we ensure quality consistency across locations. These include:
-          </div>
-          <div className="mt-5">
-            <ol className="list-disc space-y-4 ml-8">
-              <li>Curating the right on-ground crews</li>
-              <li>
-                Detailed shoot briefing documents that define everything from cameras, lights and frames to sound, local weather information, shoot-day schedule, footage upload guidelines and more
-              </li>
-              <li>
-                Active remote Producer involvement in real time to ensure location access and the right video framing and lighting
-              </li>
-              <li>
-                A virtual Film Director for the whole project, if required, to ensure quality consistency across crews, locations and footage
-              </li>
-              <li>
-                And, on more complex projects, a film Director, Assistant Director or Producer on location or on set to guide every crew.
-              </li>
-            </ol>
-          </div>
-        </>
-      ),
+        'Do you create branded content?',
+      content: 'Yes, we can strategise and create branded content IPs. This could be specific to one platform or adaptable across platforms. From a limited video series to an ongoing branded IP - we strategise, plan, conceptualise, produce and help amplify branded video content.'
     },
     {
       key: 5,
-      title: 'What is your typical international videography workflow?',
-      content: (
-        <>
-          <div>
-          Our on-demand video crew services typically have the following workflow:
-          </div>
-          <ol className="list-decimal pl-[25px] py-3">
-            <li>Project Briefing</li>
-            <li>Crew Curation</li>
-            <li>Estimate &amp; Proposal</li>
-            <li>Shoot Detailing</li>
-            <li>Shoot Guidelines Document</li>
-            <li>Crew Briefing</li>
-            <li>Payment & Shoot Confirmation</li>
-            <li>Scheduling &amp; Coordination</li>
-            <li>Production / Shoot</li>
-            <li>Footage Upload to Cloud</li>
-            <li>Quality Checks of the Footage</li>
-            <li>Footage Transfer</li>
-          </ol>
-        </>
-      ),
+      title: 'Do you create illustrated and animated content?',
+      content: 'Our in-house illustrators, designers and animators collaborate closely with each other – and, sometimes also with specialised collaborators – to craft stunning illustrated and animated videos for your brand.'
     },
     {
       key: 6,
-      title: 'How do you deliver the footage after the shoot?',
+      title: 'How do you handle copyright and ownership of the content?',
       content:
-        'All the captured footage is uploaded to the cloud and delivered via Dropbox, Google Drive or our Creative Cloud platform. Alternatively, we could upload the footage to a cloud platform of your choice that you provide us access to, or on a hard disk.',
+        'With the majority of our work, as per pre-agreed contracts, the copyright for creative assets transfer to the client upon receipt of final payment. In some cases though, the copyright is not assigned or transferred for perpetuity. Examples of short-term rights assignment include custom-composed music, celebrity cast, etc. Rights with these creators and artists are agreed to on a case-to-case basis, and usually are for a year or three to begin with for specific mediums. The client may extend such rights for additional years and mediums via Makerrs, at a future date and at an additional cost.',
     },
     {
       key: 7,
-      title: 'Do you also offer video post-production services?',
+      title: 'What is your video production process? ',
       content: (
         <>
-          Yes, often clients require video post-production services once a shoot
-          is done. Just{' '}
-          <a
-            onClick={handleClick}
-            className="underline cursor-pointer hover:text-rb-link-green"
-          >
-            send us a brief
-          </a>{' '}
-          and we’ll be happy to undertake custom video editing for you. We will also be able to support any additional requirements you may have, such as voice over, music from stock, addition of stock or archival footage, graphic design, motion graphics, colour grading, etc. 
+         <p>Over the years, we’ve crafted and shaped thousands of videos. We have a tried-and-tested process that enables our clients to grow their brands and us to keep delivering on-point and on-time. Here’s a look at our cloud-based workflow for on-demand video services. (Note: our process for strategic, long-term video engagements are slightly different to this.)</p>
+         <h3 className="mt-4 font-semibold">1. Project Briefing</h3>
+         <p>We start by understanding your business objectives, target audience, and key messages. Our Client Servicing team collaborates closely with you to outline project goals, ensuring a clear and actionable direction from the start.</p>
+
+                  <h3 className="mt-4 font-semibold">1. Project Briefing</h3>
+         <p>We start by understanding your business objectives, target audience, and key messages. Our Client Servicing team collaborates closely with you to outline project goals, ensuring a clear and actionable direction from the start.</p>
+
+
+         <h3 className="mt-4 font-semibold">2. Research & Insights</h3>
+         <p>Before diving into the creative process, we do our own research and understand the brief as well as the context. This ensures that our solutions align with your business goals and resonate with your target audience.</p>
+
+
+         <h3 className="mt-4 font-semibold">3. Concepts & Estimates</h3>
+         <p>We develop and present a couple of creative concepts and estimate options for your brief, to help you choose the most suitable way forward.</p>
+
+
+         <h3 className="mt-4 font-semibold">4. Copy & Design</h3>
+         <p>Our creative team works on copy and design to bring our unique concept to life. For videos, this includes scripting, visualisation, graphic design, music research, mood boards, location scouting, curated crews, styling and more.</p>
+
+         <h3 className="mt-4 font-semibold">5.  Execution / Production</h3>
+         <p>From one-camera testimonial videos at an office to a series of videos produced across 5 countries - we support videos across formats, locations and at any scales. For projects that don’t require a live shoot, we go from design to post production, and deliver the initial draft. We then refine the draft video based on your feedback, delivering a final product that aligns perfectly with the business intent and brand aesthetics.</p>
+
+         <h3 className="mt-4 font-semibold">6.  Video Post-Production & Versioning</h3>
+         <p>We manage the entire post production process — from editing, animation, sound design to audio mixing and mastering and colour grading – ensuring quality consistency across all creative assets.
+We also handle video versioning supporting custom adaptations requirements so that your content is tailored to engage your audience across mediums.</p>
+
+         <h3 className="mt-4 font-semibold">7.  Asset Delivery</h3>
+         <p>All final creative assets are uploaded to our technology platform, ensuring easy access, downloads and repurposing for your brand.</p>
+
         </>
       ),
     },
     {
       key: 8,
       title:
-        'What happens if I cannot be at the shoot location? How can I still see or track what’s happening on-ground?',
-      content: (
-        <>
-         We’ll be happy to organise a live-stream feed of the shoot for you. You won’t miss a thing.<br/>
-          <a
-            onClick={handleClick}
-            className="underline cursor-pointer hover:text-rb-link-green"
-          >
-            Book a video crew
-          </a>{' '}
-          with Makerrs today!
-        </>
-      ),
+        'How do you ensure that the videos you create are right for my brand and audience?',
+      content: 'We begin our engagement with you by understanding your product/service, brand and audience. Our work begins here. And everything we do for you is influenced by our knowledge of creative innovations happening around us, and industry and audience trends.',
     }
   ]
 
@@ -268,33 +244,6 @@ const VideosServices = () => {
     {
       key: 2,
       quote:
-        'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Makerrs supported us on the ground and even helped us manage our golfing ambassador. Thanks, team!',
-      name: 'MATT WALKINGTON',
-      designation: 'Account Director',
-      company: 'BRIGHT PARTNERSHIPS',
-      image: {
-        srcSet:
-          `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
-    },
-
-    {
-      key: 3,
-      quote:
-        'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
-      name: 'MARC IRAWAN',
-      designation: 'Founder',
-      company: 'COLEARN',
-      image: {
-        srcSet:
-          `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
-    },
-    {
-      key: 4,
-      quote:
         'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
 
       designation: 'VP INTERNAL COMMUNICATIONS',
@@ -306,7 +255,7 @@ const VideosServices = () => {
       },
     },
     {
-      key: 5,
+      key: 3,
       quote:
         'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
       name: 'SUNIL SURESH',
@@ -318,60 +267,6 @@ const VideosServices = () => {
         sizes: '(max-width:768px) 533px, 1066px',
       },
     }
-  ]
-
-  const ourOfferings = [
-    {
-      title: (
-        <>
-          Single-camera&nbsp;
-        </>
-      ),
-      description:
-        'Get a single-camera video crew to shoot interview, testimonial and leadership videos wherever you need. Book a curated video crew today.',
-      content: [
-        'Experienced Cinematographer',
-        'Camera, Sound & Lights',
-        'Local Booking & Permissions',
-        'Footage Transfer: via hard disk or cloud',
-      ],
-      img: '/img/services/crew/single-camera-shoot.jpg',
-    },
-    {
-      title: (
-        <>
-          Multi-camera&nbsp;
-        </>
-      ),
-      description:
-        'From a 3-camera video crew to capture a podcast interview to a 6-camera crew to film an event—get professional video crews that scale with your brief.',
-      content: [
-        'Experienced Producers',
-        'Hand-picked Video Crews',
-        'Directors and Assistant Directors',
-        'Complete Equipment Support',
-        'Footage Transfer: via hard disk or cloud',
-      ],
-      img: '/img/services/crew/multi-camera-shoot.webp',
-    },
-    {
-      title: (
-        <>
-          Multi-location&nbsp;
-        </>
-      ),
-      description:
-        'When you need a single-camera shoot in multiple cities or a multi-camera shoot in multiple countries. Video production that scales with your business.',
-      content: [
-        'Experienced Producers',
-        'Hand-picked Video Crews',
-        'Directors and Assistant Directors',
-        'Complete Equipment Support',
-        'Local Booking & Permissions',
-        'Footage Transfer: via hard disk or cloud',
-      ],
-      img: '/img/services/crew/multi-location-shoot.webp',
-    },
   ]
 
   const explorecards = [
@@ -386,15 +281,6 @@ const VideosServices = () => {
     },
     {
       id: 1,
-      serviceTitle: 'GET VIDEO',
-      serviceDescription:
-        'We plan, conceptualise, produce and scale video content – be it for your next product or your YouTube channel. We also offer on-demand video production services for customer testimonial videos, recruitment videos, corporate videos and more. Explore our video production services.',
-      bgColor: '#ffffff',
-      textColor: '#13c33f',
-      href: '/video-production',
-    },
-    {
-      id: 2,
       serviceTitle: 'GET PODCAST',
       serviceDescription:
         'Looking to lead industry conversations, build community and drive ROI? Go from content research, podcast concept and positioning, to podcast branding, production, distribution and amplification with one agency. Make a successful podcast today.',
@@ -403,15 +289,571 @@ const VideosServices = () => {
       href: '/podcast-production-services',
     },
     {
-      id: 3,
+      id: 2,
       serviceTitle: 'GET CAMPAIGN',
       serviceDescription:
         'From digital campaigns and integrated campaigns, to outdoor and print campaigns – our creative strategy is rooted in a simple yet powerful human insight unique to your brand and product or service. Send us a campaign brief today.',
       bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/advertising-agency',
-    }
+    },
+    {
+      id: 3,
+      serviceTitle: 'BOOK A CREW',
+      serviceDescription:
+        'Get on-demand professional video crews anywhere in the world. Be it a one-camera shoot or a multi-camera multi-location production–we curate and manage the production, and quality-check the footage for you. Hire a professional video crew today!',
+      bgColor: '#ffffff',
+      textColor: '#13c33f',
+      href: '/professional-video-crews',
+    },
   ]
+
+  const workData = [
+    {
+      slug: 'SLB interactive explainers',
+      featuredImage: {
+        src: '/img/explainer-video/SLB.png',
+      },
+
+      title: 'Commercial Video',
+      company: {
+        name: 'Xiaomi',
+      },
+      video: {
+        workDetails: {
+          videolink:
+            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
+        },
+        content:
+          'SLB was digitizing its sales, manufacturing, and product engineering workflows. And this interactive explainer helped their IT team launch and drive adoption across the organisation.',
+      },
+      popUpTitle:
+        'Animated Explainer on Sales Digitization for ~30,000 employees',
+      popUpPoints: [
+        '01. Data sorting',
+        '02. Creative Consulting',
+        '03. Concept',
+        '04. Script',
+        '05. Storyboard',
+        '06. Animation',
+        '07. Interactivity',
+        '08. Hosting',
+      ],
+      redText: 'Premium Interactive Explainer',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1092040991?share=copy',
+          thumbnail: '/img/explainer-video/adobe.png',
+          title: 'Whiteboard Explainer Video on DAM',
+          duration: '02:21',
+        },
+        {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+          thumbnail: '/img/explainer-video/Hansel.png',
+          title: 'Live Action Explainer for SAAS product',
+          duration: '01:30',
+        },
+        {
+          videolink: 'https://vimeo.com/1092042256?share=copy',
+          thumbnail: '/img/explainer-video/DCMO.png',
+          title: 'Animated Explainer for DCMO Services',
+          duration: '02:20',
+        },
+        {
+          videolink: 'https://vimeo.com/1092041941?share=copy',
+          thumbnail: '/img/explainer-video/wipro.png',
+          title: 'Motion Graphics Case Study for HIMSS',
+          duration: '01:50',
+        },
+      ],
+    },
+    {
+      slug: 'Adobe eDam',
+      featuredImage: {
+        src: '/img/explainer-video/adobe.png',
+      },
+      title: 'Whiteboard Explainer Video on DAM',
+      company: {
+        name: 'Infosys',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1092040991?share=copy',
+        },
+        content:
+          'How do you pitch a great Digital Asset Management to busy marketers? By telling them an engaging persona-driven story (made using custom whiteboard illustration) that hits the mark.',
+      },
+      popUpTitle: 'Whiteboard Explainer Video on Digital Asset Management',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script',
+        '03. Illustrations',
+        '04. Storyboard',
+        '05. Animation',
+        '06. Voice over',
+        '07. Music & SFX',
+        '08. Project Management',
+      ],
+      redText: 'Premium Whiteboard Animation',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+          thumbnail: '/img/explainer-video/Hansel.png',
+          title: 'Live Action Explainer for SAAS product',
+          duration: '01:30',
+        },
+        {
+          videolink: 'https://vimeo.com/1092042256?share=copy',
+          thumbnail: '/img/explainer-video/DCMO.png',
+          title: 'Animated Explainer for DCMO Services',
+          duration: '02:20',
+        },
+        {
+          videolink: 'https://vimeo.com/1092041941?share=copy',
+          thumbnail: '/img/explainer-video/wipro.png',
+          title: 'Motion Graphics Case Study for HIMSS',
+          duration: '01:50',
+        },
+        {
+          videolink: 'https://vimeo.com/1092039633?share=copy',
+          thumbnail: '/img/explainer-video/vymo_sme.png',
+          title: 'Live action explainer with Motion Graphics',
+          duration: '02:05',
+        },
+      ],
+    },
+    {
+      slug: 'Hansel / Superbeard',
+      featuredImage: {
+        src: '/img/explainer-video/Hansel.png',
+      },
+      title: 'Live Action Explainer for SAAS product',
+      company: {
+        name: 'Hansel.io',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+        },
+        content:
+          'How we communicated complex information using a simple, human-centric story. Here’s our live action explainer for Hansel - a SAAS product for context aware A/B testing.',
+      },
+      popUpTitle:
+        'Live Action Explainer on user drop-off management product - Hansel',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script',
+        '03. Custom UI Graphics',
+        '04. Fictitious brand ',
+        '05. Casting & Styling',
+        '06. Production',
+        '07. Post Production',
+        '08. Versioning',
+      ],
+      redText: 'Live Action Explainer',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1092042256?share=copy',
+          thumbnail: '/img/explainer-video/DCMO.png',
+          title: 'Animated Explainer for DCMO Services',
+          duration: '02:20',
+        },
+        {
+          videolink: 'https://vimeo.com/1092041941?share=copy',
+          thumbnail: '/img/explainer-video/wipro.png',
+          title: 'Motion Graphics Case Study for HIMSS',
+          duration: '01:50',
+        },
+        {
+          videolink: 'https://vimeo.com/1092039633?share=copy',
+          thumbnail: '/img/explainer-video/vymo_sme.png',
+          title: 'Live action explainer with Motion Graphics',
+          duration: '02:05',
+        },
+        {
+          videolink: 'https://vimeo.com/1042874327',
+          thumbnail: '/img/explainer-video/ai_first_employees.png',
+          title: 'Mixed Media Explainer Video Case Study',
+          duration: '01:20',
+        },
+      ],
+    },
+    {
+      slug: 'DCMO',
+      featuredImage: {
+        src: '/img/explainer-video/DCMO.png',
+      },
+      title: 'Animated Explainer for DCMO Services',
+      company: {
+        name: 'Infosys Equinox',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1092042256?share=copy',
+        },
+        content:
+          'An exciting explainer video to help increase awareness for Digital Commerce Marketing Offerings from Infosys Equinox. The target audience: CXOs at E-Commerce businesses.',
+      },
+      popUpTitle: 'Animated Explainer for Digital Commerce Marketing  Services',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script',
+        '03. Graphic Design',
+        '04. Storyboard',
+        '05. Animation',
+        '06. Voice Over',
+        '07. Music',
+        '08. Teaser Video',
+      ],
+
+      redText: 'Custom 2D Animation',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1092041941?share=copy',
+          thumbnail: '/img/explainer-video/wipro.png',
+          title: 'Motion Graphics Case Study for HIMSS',
+          duration: '01:50',
+        },
+        {
+          videolink: 'https://vimeo.com/1092039633?share=copy',
+          thumbnail: '/img/explainer-video/vymo_sme.png',
+          title: 'Live action explainer with Motion Graphics',
+          duration: '02:05',
+        },
+        {
+          videolink: 'https://vimeo.com/1042874327',
+          thumbnail: '/img/explainer-video/ai_first_employees.png',
+          title: 'Mixed Media Explainer Video Case Study',
+          duration: '01:20',
+        },
+        {
+          videolink: 'https://vimeo.com/1030707001',
+          thumbnail: '/img/explainer-video/Multiplier.png',
+          title: 'SAAS Marketing Explainer',
+          duration: '01:29',
+        },
+      ],
+    },
+
+    {
+      slug: 'Wipro Animated Case Study',
+      featuredImage: {
+        src: '/img/explainer-video/wipro.png',
+      },
+      title: 'Motion Graphics Case Study for HIMSS',
+      company: {
+        name: 'Wipro',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1092041941?share=copy',
+        },
+        content:
+          'IT giant Wipro had a challenging task for us: 24 case study videos in 90 days. We made them and delivered them on time! Check out one of the sophisticated videos from the project.',
+      },
+      popUpTitle: 'Motion Graphics Case Study for Wipro’s booth at HIMSS event',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script',
+        '03. Design & Storyboard',
+        '04. Motion Graphics',
+        '05. Voice over',
+        '06. Music & SFX',
+        '07. Project Management',
+        '08. Asset Management',
+      ],
+
+      redText: 'Sophisticated Motion Graphics',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1092039633?share=copy',
+          thumbnail: '/img/explainer-video/vymo_sme.png',
+          title: 'Live action explainer with Motion Graphics',
+          duration: '02:05',
+        },
+        {
+          videolink: 'https://vimeo.com/1042874327',
+          thumbnail: '/img/explainer-video/ai_first_employees.png',
+          title: 'Mixed Media Explainer Video Case Study',
+          duration: '01:20',
+        },
+        {
+          videolink: 'https://vimeo.com/1030707001',
+          thumbnail: '/img/explainer-video/Multiplier.png',
+          title: 'SAAS Marketing Explainer',
+          duration: '01:29',
+        },
+        {
+          videolink:
+            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
+          thumbnail: '/img/explainer-video/SLB.png',
+          title: 'Interactive Explainer for oilfield services',
+          duration: '09:03',
+        },
+      ],
+    },
+    {
+      slug: 'Vymo SMB Explainer',
+      featuredImage: {
+        src: '/img/explainer-video/vymo_sme.png',
+      },
+      title: 'Live action explainer with Motion Graphics',
+      company: {
+        name: 'Vymo',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1092039633?share=copy',
+        },
+        content:
+          'When Vymo wanted a great explainer to target North American regional banks - we created a studio-shot live-action film with a fun set, actors and custom motion graphics.',
+      },
+      popUpTitle: 'Live action explainer with Motion Graphics for SAAS Brand',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script Customisation',
+        '03. Graphic design',
+        '04. Casting & Styling',
+        '05. Set Design',
+        '06. Production',
+        '07. Editing & Animation',
+        '08. Music, SFX & more',
+      ],
+
+      redText: 'Studio-Shot Explainer Video',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1042874327',
+          thumbnail: '/img/explainer-video/ai_first_employees.png',
+          title: 'Mixed Media Explainer Video Case Study',
+          duration: '01:20',
+        },
+        {
+          videolink: 'https://vimeo.com/1030707001',
+          thumbnail: '/img/explainer-video/Multiplier.png',
+          title: 'SAAS Marketing Explainer',
+          duration: '01:29',
+        },
+        {
+          videolink:
+            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
+          thumbnail: '/img/explainer-video/SLB.png',
+          title: 'Interactive Explainer for oilfield services',
+          duration: '09:03',
+        },
+        {
+          videolink: 'https://vimeo.com/1092040991?share=copy',
+          thumbnail: '/img/explainer-video/adobe.png',
+          title: 'Whiteboard Explainer Video on DAM',
+          duration: '02:21',
+        },
+      ],
+    },
+    {
+      slug: 'Collage style explainer - Univ Upskilling (Infosys)',
+      featuredImage: {
+        src: '/img/explainer-video/ai_first_employees.png',
+      },
+      title: 'Mixed Media Explainer Video Case Study',
+      company: {
+        name: 'Infosys',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1042874327',
+        },
+        content:
+          'We flipped the script of typical case study videos by placing our client’s employees at the center of the story—giving them the spotlight as enablers of AI-first software solutions.',
+      },
+      popUpTitle: 'Mixed Media Explainer Video Case Studies for Social Media',
+      popUpPoints: [
+        '01. Script',
+        '02. Graphic design',
+        '03. Motion Graphics',
+        '04. Voice Over',
+        '05. Music & SFX',
+        '06. Video Thumbnail',
+      ],
+      redText: 'Mixed Media Explainer Video Case Study',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1030707001',
+          thumbnail: '/img/explainer-video/Multiplier.png',
+          title: 'SAAS Marketing Explainer',
+          duration: '01:29',
+        },
+        {
+          videolink:
+            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
+          thumbnail: '/img/explainer-video/SLB.png',
+          title: 'Interactive Explainer for oilfield services',
+          duration: '09:03',
+        },
+        {
+          videolink: 'https://vimeo.com/1092040991?share=copy',
+          thumbnail: '/img/explainer-video/adobe.png',
+          title: 'Whiteboard Explainer Video on DAM',
+          duration: '02:21',
+        },
+        {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+          thumbnail: '/img/explainer-video/Hansel.png',
+          title: 'Live Action Explainer for SAAS product',
+          duration: '01:30',
+        },
+      ],
+    },
+    {
+      slug: 'Introducing Multiplier',
+      featuredImage: {
+        src: '/img/explainer-video/Multiplier.png',
+      },
+      title: 'SAAS Marketing Explainer',
+      company: {
+        name: 'Multiplier',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1030707001',
+        },
+        content:
+          'Multiplier - a SAAS solution that simplifies the complexities of global employee onboarding - needed a video for its global launch. Here’s the on-brand custom 2D explainer we created.',
+      },
+      popUpTitle: 'SAAS Marketing Explainer for Multiplier',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script',
+        '03. Graphic Design',
+        '04. Stock image curation',
+        '05. Storyboard',
+        '06. Animation',
+        '07. Voice Over',
+        '08. Music',
+      ],
+
+      redText: 'SAAS Marketing Explainer',
+      relatedVideos: [
+        {
+          videolink:
+            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
+          thumbnail: '/img/explainer-video/SLB.png',
+          title: 'Interactive Explainer for oilfield services',
+          duration: '09:03',
+        },
+        {
+          videolink: 'https://vimeo.com/1092040991?share=copy',
+          thumbnail: '/img/explainer-video/adobe.png',
+          title: 'Whiteboard Explainer Video on DAM',
+          duration: '02:21',
+        },
+        {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+          thumbnail: '/img/explainer-video/Hansel.png',
+          title: 'Live Action Explainer for SAAS product',
+          duration: '01:30',
+        },
+        {
+          videolink: 'https://vimeo.com/1092042256?share=copy',
+          thumbnail: '/img/explainer-video/DCMO.png',
+          title: 'Animated Explainer for DCMO Services',
+          duration: '02:20',
+        },
+      ],
+    },
+  ]
+
+  const gridData = [
+    {
+      icon: '/img/services/videos/grid-icon1.svg',
+      need: 'Strategic Video Solutions',
+      others: 'Creative video solutions',
+      redBangle: 'Video strategy, SEO and more',
+    },
+    {
+      icon: '/img/services/videos/grid-icon2.svg',
+      need: 'End to end services',
+      others: 'Limited services',
+      redBangle: 'Research, concept, production, post production & versioning!',
+    },
+    {
+      icon: '/img/services/videos/grid-icon3.svg',
+      need: 'Video Quality',
+      others: 'Hit or miss',
+      redBangle: 'Consistent, premium quality',
+    },
+    {
+      icon: '/img/services/videos/grid-icon4.svg',
+      need: 'Industry Knowledge',
+      others: 'Limited industry exposure',
+      redBangle: 'We research, immerse and then craft',
+    },
+    {
+      icon: '/img/services/videos/grid-icon5.svg',
+      need: 'Video Genres',
+      others: 'Limited genres',
+      redBangle: 'Any genre video',
+    },
+    {
+      icon: '/img/services/videos/grid-icon6.svg',
+      need: 'Video Formats',
+      others: 'Limited formats',
+      redBangle: 'Unlimited formats',
+    },
+    {
+      icon: '/img/services/videos/grid-icon7.svg',
+      need: 'Video Feedback',
+      others: 'Emails back and forth',
+      redBangle: 'Easy, cloud-based interactive reviews',
+    },
+    {
+      icon: '/img/services/videos/grid-icon8.svg',
+      need: 'Turnaround Times',
+      others: 'They work at their speed',
+      redBangle: 'We work at your need',
+    },
+    {
+      icon: '/img/services/videos/grid-icon9.svg',
+      need: 'Deadlines',
+      others: 'You follow up with them',
+      redBangle: 'We proactively plan, follow up',
+    },
+    {
+      icon: '/img/services/videos/grid-icon10.svg',
+      need: 'Versioning',
+      others: 'Limited Versioning Support',
+      redBangle: 'Scalable Versioning Services',
+    },
+    {
+      icon: '/img/services/videos/grid-icon11.svg',
+      need: 'Language Adapts',
+      others: 'Mostly English only',
+      redBangle: 'Any language Adapt',
+    },
+     {
+      icon: '/img/services/videos/grid-icon12.svg',
+      need: 'Project Management',
+      others: 'Emails, spreadsheets',
+      redBangle: 'Cloud-based workflows',
+    },
+  ]
+
+  const handleRelatedVideoClick = (videolink) => {
+    const clickedVideoData = workData.find(
+      (item) => item.video.workDetails.videolink === videolink
+    )
+
+    if (clickedVideoData) {
+      setModal({
+        open: true,
+        loading: false,
+        video: clickedVideoData.video,
+        title: clickedVideoData.popUpTitle,
+        points: clickedVideoData.popUpPoints,
+        redText: clickedVideoData.redText,
+        relatedVideos: clickedVideoData.relatedVideos,
+      })
+    }
+  }
 
   useEffect(() => {
     if (prevButtonRef.current && nextButtonRef.current) {
@@ -446,7 +888,7 @@ const VideosServices = () => {
         textColor='#000000'
         content={
           <>
-            <h1 className="inline">Be it your next big product launch video or YouTube channel growth, be it on-demand video production or a branded video series - we strategise, script and produce videos across formats, genres and locations. On-brand and on-time, every time.</h1>
+            <h1 className="inline">Be it your next big product launch video or YouTube channel growth, be it on-demand video production or a branded video series - we strategise, script and produce videos across formats, genres and locations. On-brand and on-time, <br />every time.</h1>
           </>
         }
       />
@@ -488,6 +930,103 @@ const VideosServices = () => {
         cards={videosCards}
       />
 
+      <section className={`overflow-hidden pb-18 pt-18 md:pb-18`}>
+        <div className="container">
+          <LineHeading className="mb-6 md:mb-9"> Get great videos</LineHeading>
+          <h3 className="text-title md:text-title-md mb-12 md:mb-14 font-everett max-w-[911px]">
+            Explore Our Video Portfolio
+          </h3>
+          <div className="grid gap-y-8 md:gap-y-[42px] gap-x-5 md:gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 md:mt-10">
+            {workData.slice(0, 8).map((v) => (
+              <PlayCard
+                onClick={() => {
+                  setModal({
+                    open: true,
+                    loading: false,
+                    video: v.video,
+                    title: v.popUpTitle,
+                    points: v.popUpPoints,
+                    redText: v.redText,
+                    relatedVideos: v.relatedVideos,
+                  })
+                }}
+                src={v?.featuredImage?.src}
+                name={v?.title}
+                company={v?.company?.name}
+                key={v.slug}
+              />
+            ))}
+          </div>
+
+          <VideoMetaModal
+            showContent={true}
+            loading={modal.loading}
+            open={modal.open}
+            video={modal.video}
+            title={modal.title}
+            points={modal.points}
+            redText={modal.redText}
+            relatedVideos={modal.relatedVideos}
+            setOpen={(v) => {
+              setModal((m) => ({ ...m, open: v }))
+            }}
+            onRelatedVideoClick={handleRelatedVideoClick}
+          />
+        </div>
+      </section>
+
+      <section className={`overflow-hidden bg-white py-18 md:py-30`}>
+        <div className="container text-center">
+          <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
+            Why choose Makerrs <br /> over other agencies?
+          </h3>
+          <div className="w-full overflow-x-auto md:p-0">
+            <div className="max-w-full">
+              <table className="w-full max-w-full md:w-[940px] mx-auto text-sm border-collapse border-spacing-0 text-left font-everett leading-[24px]">
+                <thead>
+                  <tr className="h-[50px] border-b border-[#D4D4D4]">
+                    <th className="md:!w-[313px] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#030104] md:whitespace-nowrap text-left">
+                      What You Need
+                    </th>
+                    <th className="md:!w-[313px] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#030104] md:whitespace-nowrap text-left">
+                      What Others Offer
+                    </th>
+                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-rb-link-green md:whitespace-nowrap text-left">
+                      What you get with us
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {gridData.map((row, idx) => (
+                    <tr
+                      key={idx}
+                      className="odd:bg-[#F1F1F1] border-t border-[#eee]"
+                    >
+                      <td className="md:!w-[313px] px-4 py-3 font-medium md:text-[18px] tracking-[-0.32px] font-everett text-[#030104]">
+                        <div className="flex items-center">
+                          <img
+                            src={row.icon}
+                            alt=""
+                            className="w-5 h-5 mr-5 hidden md:inline"
+                          />
+                          <span>{row.need}</span>
+                        </div>
+                      </td>
+                      <td className="md:!w-[313px] px-4 py-3 font-normal md:text-[18px] leading-[24px] text-rb-dune tracking-[-0.02em] font-opensans">
+                        {row.others}
+                      </td>
+                      <td className="md:!w-[313px] px-4 py-3 font-semibold md:text-[18px] leading-[24px] tracking-[-0.02em] text-rb-dune/90 font-opensans">
+                        {row.redBangle}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-rb-service-grey md:py-30 py-10">
         <div className="container">
           <div className="flex flex-wrap -mx-4 items-center md:flex-row flex-col gap-8 md:gap-0">
@@ -516,146 +1055,6 @@ const VideosServices = () => {
                 muted
                 playsInline
               ></video>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="md:pt-30 md:pb-15 py-7.5">
-        <div className="container">
-          <h2 className="text-center text-title md:text-title-md mb-10 md:mb-18 font-everett">
-            Your international video crew booking agency
-          </h2>
-          <div className="grid md:grid-cols-2 md:grid-rows-2 grid-cols-1">
-            <div className="grid md:grid-cols-2 grid-cols-1">
-              <div className="md:px-4 md:bg-[#DCDDDF] flex flex-col justify-end md:pb-8 pb-10 order-2 md:order-1 mt-4 md:mt-0">
-                <div className="md:text-[28px] text-xl font-medium mb-2 font-everett">
-                  Borderless Production
-                </div>
-                <p className="text-16">
-                  From Paris to Singapore and New York to New Delhi–get professional video crews for hire anywhere you need them. Send us a production brief today.
-                </p>
-              </div>
-              <div className="order-1 md:order-2">
-                <img
-                  src="/img/services/crew/video-shoot-service-2.webp"
-                  alt=""
-                  className="h-[192px] md:h-auto w-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="grid md:grid-cols-2 grid-cols-1">
-              <div className="md:px-4 md:bg-[#DCDDDF] flex flex-col justify-end md:pb-8 pb-10 order-2 md:order-1 mt-4 md:mt-0">
-                <div className="md:text-[28px] text-xl font-medium mb-2 font-everett">
-                  Curated Crews
-                </div>
-                <p className="text-16">
-                  Get hand-picked professional video crews, custom creative and technical briefs, and hands-on quality control on every shoot. Get professional video production services with Makerrs.
-                </p>
-              </div>
-              <div className="order-1 md:order-2">
-                <img
-                  src="/img/services/crew/video-shoot-service-1.webp"
-                  alt=""
-                  className="h-[192px] md:h-auto w-full object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="grid  md:grid-cols-2 grid-cols-1">
-              <div>
-                <img
-                  src="/img/services/crew/video-shoot-service-3.webp"
-                  alt=""
-                  className="h-[192px] md:h-auto w-full object-cover"
-                />
-              </div>
-              <div className="md:px-4 md:bg-white flex flex-col justify-end md:pb-8 pb-10 mt-4 md:mt-0">
-                <div className="md:text-[28px] text-xl font-medium mb-2 font-everett">
-                  Scalable Services
-                </div>
-                <p className="text-16">
-                  Be it a single-camera testimonial shoot or a multi-camera event shoot, our managed video crew services scale with your brief—no matter how many shoots you need in one week or how many crews you need on one day.
-                </p>
-              </div>
-            </div>
-            <div className="grid  md:grid-cols-2 grid-cols-1">
-              <div>
-                <img
-                  src="/img/services/crew/video-shoot-service-4.webp"
-                  alt=""
-                  className="h-[192px] md:h-auto w-full object-cover"
-                />
-              </div>
-              <div className="md:px-4 md:bg-white flex flex-col justify-end md:pb-8 pb-0 mt-4 md:mt-0">
-                <div className="md:text-[28px] text-xl font-medium mb-2 font-everett">
-                  Quality & Ownership
-                </div>
-                <p className="text-16">
-                  Our curated film and video crews and tried and tested cloud-based processes drive complete execution ownership at our end. You won’t have to worry about creative quality and consistency.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="md:pb-15 md:pt-30 py-7.5">
-        <div className="container">
-          <div>
-            <div className="uppercase text-rb-black text-sm md:text-xl font-semibold flex items-center">
-              <span
-                className={`h-px w-7.5 md:w-headingLine block mr-3 bg-rb-black`}
-              ></span>
-              <span>Book a Video Shoot</span>
-            </div>
-            <h3 className="text-title md:text-title-md mb-10 md:mb-18 md:mt-8 mt-6 font-everett max-w-[718px]">
-              Book a video crew anywhere, anytime
-            </h3>
-          </div>
-          <div className="md:mt-18">
-            <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
-              {ourOfferings.map((item) => {
-                return (
-                  <div
-                    key={item.id}
-                    className={`bg-rb-service-grey  md:p-8 px-4 py-6 ${styles.offeringcard}`}
-                  >
-                    <div className="flex flex-col justify-between min-h-full">
-                      <div>
-                        <div className="flex gap-[10px]">
-                          <h3
-                            className={`md:text-[36px] text-xl md:mb-3 mb-2 font-medium font-everett md:leading-[39px] leading-6 tracking-[-1.44px] `}
-                          >
-                            {item.title}
-                          </h3>
-                        </div>
-                        <p className="md:text-base text-sm">
-                          {item.description}
-                        </p>
-                        <hr className="my-6" />
-                        <div className="gap-[14px] flex flex-col">
-                          {item.content.map((data, index) => {
-                            return (
-                              <div className="flex md:gap-3 gap-2" key={index}>
-                                <div className={`${styles.successcheck}`}></div>
-                                <p className="font-semibold text-sm md:text-base">
-                                  {data}
-                                </p>
-                              </div>
-                            )
-                          })}
-                        </div>
-                      </div>
-                      <div>
-                        <div className="mt-8">
-                          <img src={item.img} alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
             </div>
           </div>
         </div>
