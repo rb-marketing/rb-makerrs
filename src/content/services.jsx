@@ -515,6 +515,20 @@ export const serviceVideos = {
       height: '1080',
     },
   },
+  get_videos: {
+    video: {
+      src: '/img/services/videos/hero.mp4',
+      poster: '/img/services/videos/hero.png',
+      width: '1440',
+      height: '810',
+    },
+    fullVideo: {
+      src: '/img/services/videos/hero.mp4',
+      poster: '/img/services/videos/hero.png',
+      width: '1920',
+      height: '1080',
+    },
+  },
    get_podcast: {
     video: {
       src: '/img/services/service_get_podcast.mp4',
@@ -1029,4 +1043,73 @@ export const campaignCards3 = [
       height: '915',
     },
   },
+]
+
+export const videosCards = [
+  {
+    key: 0,
+    title: 'Video Strategy & SEO',
+    text: 'As your strategic video partner, we begin by understanding your business and communication goals. We then define your video strategy and plan for the right channels, strong video SEO / AEO, and define goals-to-achieve in the next 12 and 18 months.',
+    icon: {
+      src: '/img/services/design/icon1-b.svg',
+      alt:'star',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 1,
+    title: 'Concepts & Scripts',
+    text: 'We explore and understand your brand, product/service, market and audience. We then brainstorm and craft creative concepts, scripts, visual approaches and design ideas that are unique to your brand and suitable to your objectives.',
+    icon: {
+      src: '/img/services/design/icon2-b.svg',
+      alt: 'S-circles',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 2,
+    title: 'Video Visualisation & Design',
+    text: 'From the right actor to the right stock video clip and the right illustrations - we detail out every frame of every video. Our visualisation, design and storyboarding are in-line with your brand, your audience, your message and sticky video trends.',
+    icon: {
+      src: '/img/services/design/icon3-b.svg',
+      alt: 'S-Maze',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 3,
+    title: 'Video Production Across Locations',
+    text: 'From locations and studios to crews, casting and styling. From one-camera testimonial videos filmed at an office to a series of videos produced across 5 countries and commercial videos produced on custom sets - we do it all, across 100 countries!',
+    icon: {
+      src: '/img/services/design/icon4-b.svg',
+      alt: 'Think',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 4,
+    title: 'Editing, Motion Graphics, Animation, & GenAI',
+    text: 'From basic video editing to documentary editing, motion graphics, 2D / 3D animation and GenAI videos - our post production studios are experienced in a wide range of video tools, styles, formats and genres. We also offer unlimited versioning.',
+    icon: {
+      src: '/img/services/design/icon5-b.svg',
+      alt: 'Services',
+      width: 111,
+      height: 111,
+    },
+  },
+  {
+    key: 5,
+    title: 'Cloud-based Workflows',
+    text: 'We run all your projects on our proprietary creative cloud platform. From briefs to project management, easy and interactive video reviews, to anytime asset access - our platform ensures we work together seamlessly, no matter how complex the project.',
+    icon: {
+      src: '/img/services/design/icon6-b.svg',
+      alt: 's-megaphone',
+      width: 111,
+      height: 111,
+    },
+  }
 ]
