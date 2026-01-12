@@ -55,8 +55,8 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Red Bangle | Your Brand Solutions Partner"
-        description="Get in touch with Red Bangle, your partner for strategy, design solutions, creative campaigns, brand content, influencer marketing and technology solutions."
+        title="Best Video, Podcast and Design Agency | Contact Makerrs"
+        description="Top agency for branding services, video production, podcast production and video crew services. Creative partner to global B2B and B2C brands."
         url="https://www.redbangle.com/contact"
       />
 
@@ -102,9 +102,9 @@ const Contact = () => {
                 <button
                   onClick={() => handleTabClick(item)}
                   className={`${activeInquiry === item
-                      ? 'text-rb-red border-b-rb-red'
+                      ? 'text-rb-link-green'
                       : 'text-rb-black opacity-50 md:opacity-20 border-transparent'
-                    }  hover:text-rb-red hover:opacity-100 transition-all border-b-2 md:border-b-0 pb-2 md:pb-0`}
+                    }  hover:text-rb-link-green hover:opacity-100 transition-all border-b-2 md:border-b-0 pb-2 md:pb-0`}
                 >
                   {item}
                 </button>
