@@ -164,6 +164,7 @@ export const ContactForm = () => {
         acceptCharset="UTF-8"
         encType="multipart/form-data"
         onSubmit={onSubmit}
+        style={{ color: 'white' }}
       >
         <MetaFields />
         <input
@@ -270,26 +271,29 @@ export const ContactForm = () => {
               name="First_Name"
               placeholder="First Name"
               required
+              inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"
             />
             <Input
               borderedInput
               name="Last_Name"
               placeholder="Last Name"
               required
+              inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"
             />
-            <Input borderedInput name="Email" placeholder="Work Email" required />
-            {/* <Input
-            borderedInput
-            name="Phone"
-            placeholder="Phone Number"
-            required
-          /> */}
-
+            <Input
+              borderedInput
+              name="Email"
+              placeholder="Work Email"
+              required
+              inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"
+            />
+          
             <PhoneInput
               borderedInput
               name="Phone"
               placeholder="Phone Number "
               required
+              inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"
             />
           </div>
           <Input
@@ -297,6 +301,7 @@ export const ContactForm = () => {
             name="Company"
             placeholder="Company Name"
             required
+            inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"
           />
 
           <Input
@@ -304,8 +309,15 @@ export const ContactForm = () => {
             name="Designation"
             placeholder="Designation"
             required
+            inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"  
           />
-          <Input borderedInput name="Description" placeholder="Message" />
+          <Input
+            borderedInput
+            name="Description"
+            placeholder="Message"
+            required
+            inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"
+          />
         </div>
         <Button
           type="submit"
@@ -316,9 +328,6 @@ export const ContactForm = () => {
         </Button>
         <Script
           id="wf_anal"
-          // src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=085cc69187c7848f10bdb9778be4b4a6aa6d940a6de6344bb4107f9f9091d273gid4cc8622095994ef39e8cdc2b3cd1fd98c36d2e2b911d8ae251785b602a4261aegid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a"
-
-
           src="https://crm.zoho.com/crm/WebFormServeServlet?rid=98534105cfab9c9c5abad7800f35488593710a1a319d580fb3d0a33d14d1040b110ccdbe5460435a5e3acc4d644f82adgid03f30335e7c3e5f1f864248c0ca94611a90767737aba1aae1e480486624cc0e6"
         ></Script>
       </form>

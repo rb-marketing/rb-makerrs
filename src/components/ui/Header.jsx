@@ -48,7 +48,7 @@ const outsideLinks = [
       },
       {
         title: 'Book a Crew',
-        href: '/video-production-near-me'
+        href: '/professional-video-crews'
       },
     ],
   }
@@ -602,7 +602,7 @@ export const Header = () => {
                       <Link href="/advertising-agency">
                         Campaign
                       </Link>
-                      <Link href="/video-production-near-me">
+                      <Link href="/professional-video-crews">
                         Book a Crew
                       </Link>
                     </div>

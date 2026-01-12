@@ -244,21 +244,6 @@ const offices = [
   },
 ]
 
-const links = [
-  // {
-  //   // href: "#!",
-  //   // imgSrc: "/img/india-icon.svg",
-  //   imgAlt: "India",
-  //   text: "Visit Red Bangle Group",
-  // },
-  {
-    href: 'https://www.redbangle.global/',
-    // imgSrc: "/img/india-icon.svg",
-    imgAlt: 'India',
-    text: 'Visit Red Bangle Global',
-  },
-]
-
 export const Footer = ({ hasContactForm }) => {
   const router = useRouter()
   const { b2b, b2c } = useBaseUrl()
@@ -289,26 +274,6 @@ export const Footer = ({ hasContactForm }) => {
               <div className="rb-row flex-col md:flex-row md:mb-15">
                 {offices.map((o) => (
                   <div className="w-full md:w-1/3 mb-10 md:mb-0" key={o.key}>
-                    {/* <div
-                      className={`font-medium text-base md:text-2xl uppercase tracking-[-1px] font-everett  
-                      ${
-                        ['Delhi', 'Mumbai'].includes(o.city)
-                          ? 'md:pl-[70px]'
-                          : ''
-                      }`}
-                    >
-                      {o.city}
-                    </div>
-                    <div
-                      className={`mt-2 mb-5.5 md:mb-8 text-sm md:text-base text-rb-black/70  
-                      ${
-                        ['Delhi', 'Mumbai'].includes(o.city)
-                          ? 'md:pl-[70px]'
-                          : ''
-                      }`}
-                    >
-                      {o.location}
-                    </div> */}
                     <div className="font-medium text-base md:text-2xl uppercase tracking-[-1px] font-everett">
                       {o.city}
                     </div>
@@ -398,35 +363,35 @@ export const Footer = ({ hasContactForm }) => {
                   <div className={styles.title}>COMPANY</div>
                   <div className={styles.links}>
                     <Link
-                      href='/about/who-we-are'
+                      href='/about-us'
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       About Us
                     </Link>
                     <Link
-                      href='/about/creative-cloud-platform'
+                      href='/creative-cloud-technology'
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       Our Technology
                     </Link>
                     <Link
-                      href=''
+                      href='/impact'
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       Our Impact
                     </Link>
-                    <Link
+                    {/* <Link
                       href=''
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       The Lakshmi Rebecca Show
-                    </Link>
+                    </Link> */}
                     <Link
-                      href=''
+                      href='/blog'
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
@@ -438,7 +403,7 @@ export const Footer = ({ hasContactForm }) => {
                   <div className={styles.title}> SERVICES</div>
                   <div className={styles.links}>
                     <Link
-                      href=''
+                      href='/brand-design-agency'
                       data-rb-cursor-state="invisible"
                       className="max-w-max flex items-center gap-3"
                     >
@@ -448,14 +413,14 @@ export const Footer = ({ hasContactForm }) => {
                       </div>
                     </Link>
                      <Link
-                      href=''
+                      href='/brand-identity-design-services'
                       data-rb-cursor-state="invisible"
                       className="max-w-max ml-5 mt-[-5px]"
                     >
                       Brand Identity Design
                     </Link>
                     <Link
-                      href=''
+                      href='/video-production'
                       data-rb-cursor-state="invisible"
                       className="max-w-max flex items-center gap-3"
                     >
@@ -501,21 +466,21 @@ export const Footer = ({ hasContactForm }) => {
                       GenAI Videos
                     </Link>
                      <Link
-                      href=''
+                      href='/podcast-production-services'
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       Podcast
                     </Link>
                     <Link
-                      href=''
+                      href='/advertising-agency'
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       Campaign
                     </Link>
                      <Link
-                      href=''
+                      href='/professional-video-crews'
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
@@ -523,76 +488,39 @@ export const Footer = ({ hasContactForm }) => {
                     </Link>
                   </div>
                 </div>
-                {/* <div className="pr-2.5 md:pr-0">
-                  <div className={`md:w-[250px] w-[200px] ${styles.title} track`}>
-                    AI Products{' '}
-                    <span className="text-[0.7875rem] hidden md:inline font-opensans capitalize font-normal md:relative md:bottom-[1px]">
-                      Coming soon
-                    </span>
-                  </div>
-                  <div className={styles.links}>
-                    <span
-                      data-rb-cursor-state="invisible"
-                      className="hover:text-rb-black max-w-max cursor-inherit"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      Services
-                      <span className="text-[0.7875rem] block md:hidden font-opensans capitalize font-normal md:relative md:bottom-[1px]">
-                        Coming soon
-                      </span>
-                    </span>
-                    <span
-                      href="http://www.ai.redbangle.com/kalp-ai"
-                      data-rb-cursor-state="invisible"
-                      className="hover:text-rb-black max-w-max cursor-inherit"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      Imaginpod AI <br className="block md:hidden" />
-                      <span className="text-[0.7875rem]">Coming soon</span>
-                    </span>
-                    <span
-                      href="http://www.ai.redbangle.com/beanshoot"
-                      data-rb-cursor-state="invisible"
-                      className="hover:text-rb-black max-w-max cursor-inherit"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      Beanshoot AI Labs
-                    </span>
-                  </div>
-                </div> */}
                  <div className="pr-2.5 md:pr-0">
                   <div className={styles.title}>WORK</div>
                   <div className={styles.links}>
                     <Link
-                      href=""
+                      href="/work/design"
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       Design
                     </Link>
                     <Link
-                      href=""
+                      href="/work/video"
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       Video
                     </Link>
                      <Link
-                      href=""
+                      href="/work/podcast"
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       Podcast
                     </Link>
                     <Link
-                      href=""
+                      href="/work/campaign"
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
                       Campaign
                     </Link>
                     <Link
-                      href=""
+                      href="/work/professional-video-crews"
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
@@ -604,7 +532,7 @@ export const Footer = ({ hasContactForm }) => {
                   <div className={styles.title}>CONTACT</div>
                   <div className={`${styles.links} md:pl-[2px]`}>
                     <Link
-                      href=""
+                      href="/contact"
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
@@ -618,7 +546,7 @@ export const Footer = ({ hasContactForm }) => {
                      Collab
                     </Link>
                     <Link
-                      href="/about/giving-back"
+                      href="/careers"
                       data-rb-cursor-state="invisible"
                       className="max-w-max"
                     >
@@ -628,33 +556,6 @@ export const Footer = ({ hasContactForm }) => {
                 </div>
               </div>
             </div>
-
-            {/* Second Div - External Links */}
-            {/* <div className="w-full lg:w-[20%] lg:flex lg:flex-col mt-[2rem] md:mt-0 md:mb-0">
-              {links.map((link, index) => (
-                <div key={index} className="pb-4 md:pb-4">
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group max-w-[300px] md:ml-auto border border-rb-black/20 rounded-md px-4 py-3 flex items-center justify-between hover:border-rb-red transition-all duration-300 ease-out"
-                  >
-                    <div className="flex items-center gap-2 font-semibold">
-                      <img src={link.imgSrc} className="w-8" alt={link.imgAlt} />
-                      {link.text}
-                    </div>
-                    <span className="group-hover:translate-x-2 transition-all duration-300 ease-out">
-                      <svg width="26" height="24" viewBox="0 0 26 24" fill="none">
-                        <path
-                          d="M24.981 12.9815C25.5229 12.4397 25.5229 11.5612 24.9811 11.0193L16.1513 2.18903C15.6095 1.64716 14.731 1.64713 14.1891 2.18897C13.6473 2.7308 13.6472 3.60932 14.1891 4.15119L22.0377 12.0003L14.1885 19.849C13.6467 20.3908 13.6466 21.2693 14.1885 21.8112C14.7303 22.3531 15.6088 22.3531 16.1507 21.8112L24.981 12.9815ZM-0.000140075 13.3871L23.9999 13.3879L24 10.6129L-4.8026e-05 10.6121L-0.000140075 13.3871Z"
-                          fill="#EF001C"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              ))}
-            </div> */}
           </div>
 
           <div className="flex flex-col-reverse md:flex-row border-t mt-10.5 md:mt-[80px] border-t-rb-black/20 pt-10.5 md:pt-8 justify-between">

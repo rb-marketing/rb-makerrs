@@ -235,8 +235,9 @@ const LandPage = () => {
       </>
     ),
   },
-]
-const createTestimonialData = [
+  ]
+
+  const createTestimonialData = [
     {
     key: 0,
     quote:
@@ -359,7 +360,8 @@ const createTestimonialData = [
       sizes: '(max-width:768px) 533px, 1066px',
     },
   },
-]
+  ]
+
   const TNC = [
   {
     key: 0,
@@ -458,7 +460,8 @@ const createTestimonialData = [
       </>
     ),
   },
-]
+  ]
+
   const heroSection = useRef()
   useEffect(() => {
     const mm = gsap.matchMedia()
@@ -607,7 +610,7 @@ const createTestimonialData = [
       />
 
       <section
-        className="bg-white md:-mb-[3px] md:pt-14 relative overflow-hidden "
+        className="bg-white md:-mb-[3px] md:pt-18 relative overflow-hidden "
         ref={heroSection}
       >
         <div className="height-div aspect-video absolute w-full opacity-0 pointer-events-none z-30 bg-rb-red top-0" />
@@ -682,53 +685,6 @@ const createTestimonialData = [
         </div>
       </section>
 
-      {/* <div
-        ref={videoRef}
-        className={`mt-12 md:mt-8 md:mb-[-2px] video-scroll duration-500 ease-out !overflow-visible lg:h-[200vh] md:h-[150vh] ${
-          hasReachedTop ? 'active' : ''
-        }`}
-        onClick={onModalOpen}
-        data-rb-cursor
-        data-rb-cursor-type="play"
-      >
-        <div className="absolute bottom-4 right-4 z-10 backdrop-blur-2xl bg-rb-black/50 rounded-[32px] py-[17px] px-4.5 pl-[20px] overflow-hidden md:hidden block">
-          <div className="flex items-center gap-2 justify-center text-white ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="10"
-              height="13"
-              fill="none"
-            >
-              <path
-                fill="#fff"
-                d="M.043 1.124c0-.442.489-.71.86-.47L9.09 5.916c.342.22.342.72 0 .94L.903 12.117a.559.559 0 0 1-.86-.47V1.125Z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div className="md:sticky top-1/4 lg:top-0 overflow-hidden hidden md:block lg:h-screen">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            src="/img/home/why-not-video.mp4"
-            poster="/img/home/why_not_banner.webp"
-            className="web-vid w-full h-full object-cover relative"
-          ></video>
-        </div>
-
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          src="/img/home/why-not-video.mp4"
-          poster="/img/home/why_not_banner.webp"
-          className="block md:hidden w-full h-full object-cover"
-        ></video>
-      </div> */}
-
       <section className="bg-white pt-18 md:pt-30 pb-18 md:pb-30">
         <div className="container">
           <LineHeading className="mb-6 md:mb-7.5">WHY PARTNER WITH MAKERRS</LineHeading>
@@ -745,7 +701,7 @@ const createTestimonialData = [
         </div>
       </section>
 
- <section className={`bg-white overflow-hidden`}> 
+      <section className={`bg-white overflow-hidden`}> 
         <div className="container">
           <LineHeading className="mb-6 md:mb-7.5">Grow your brand with us</LineHeading>
           <div className="grid lg:flex grid-cols-2 gap-x-5 md:gap-x-[124px] gap-y-12 md:gap-y-6 max-w-full md:max-w-none ml-5 transform -translate-x-5 sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-12">
@@ -770,11 +726,10 @@ const createTestimonialData = [
         </div>
     </section>
     
-      <div className='py-18 md:pt-30 md:pb-0'>
-        <SolutionsSection />
-      </div>
+    <div className='py-18 md:pt-30 md:pb-0'>
+      <SolutionsSection />
+    </div>
 
-   
 
     <Testimonials
       title={'WHAT CLIENTS SAY'}
@@ -791,12 +746,6 @@ const createTestimonialData = [
                 <h3 className="max-w-[400px] mb-8 text-title-md-tight font-everett text-rb-black !text-[26px] md:!text-[52px]">
                   Frequently Asked Questions
                 </h3>
-                {/* <div className="text-[16px] md:text-[20px] leading-[1.5] text-rb-black/80 mb-10 md:mb-0">
-                  For any queries please contact us at{' '}
-                  <a className="text-rb-red" href="mailto:hello@redbangle.com">
-                    hello@redbangle.com
-                  </a>
-                </div> */}
               </div>
             </div>
             <div className="w-full md:w-7/12">
@@ -816,17 +765,9 @@ const createTestimonialData = [
       <VideoModal
         open={herovideoOpen}
         setOpen={setHerovideoOpen}
-        // vimeoId="1084150253"
         videopath="/img/home/why-not-video.mp4"
       >
         <div className="relative max-w-[90%] md:max-w-[80%] w-full">
-          {/* <iframe
-            src="https://player.vimeo.com/video/1084150253?h=dff56feeb5&autoplay=1&title=0&byline=0&portrait=0"
-            className="w-full aspect-video h-full"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe> */}
           <video
             autoPlay
             muted

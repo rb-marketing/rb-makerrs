@@ -108,7 +108,7 @@ const Design = ({ setisPopupOpen }) => {
         'Get on-demand professional video crews anywhere in the world. Be it a one-camera shoot or a multi-camera multi-location production–we curate and manage the production, and quality-check the footage for you. Hire a professional video crew today!',
       bgColor: '#ffffff',
       textColor: '#13c33f',
-      href: '/video-production-near-me',
+      href: '/professional-video-crews',
     },
   ]
 
@@ -297,7 +297,6 @@ const Design = ({ setisPopupOpen }) => {
         content={
           <>
             <h1 className="inline">From brand identity systems, experiential design, and event branding to editorial design, illustrations, and motion graphics-build brand differentiation and human connect with us.</h1>
-
           </>
         }
       />
