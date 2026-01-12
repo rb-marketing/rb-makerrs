@@ -191,8 +191,8 @@ export const CSRPage = () => {
   return (
     <>
       <SEO
-        title="Inspiring Social Impact with Creative Ad Campaigns | Red Bangle"
-        description="Take a look at Red Bangle's powerful social impact videos content & brand communicaton. We create compelling content that drives positive change in our environment and communities."
+        title="How we give back to society and animals | Makerrs"
+        description="We support amazing causes. From street cats in Mumbai to social entrepreneurs across India—here’s how we give back and support the world we are grateful for."
         url="https://www.redbangle.com/about/giving-back"
       />
 
@@ -202,9 +202,7 @@ export const CSRPage = () => {
             GIVING BACK & COMMUNITY
           </h1>
           <p className="text-sm md:text-accordion-large font-semibold max-w-[1153px] mt-4 md:mt-20">
-            We make time to support some amazing causes. From stray cats in
-            Mumbai to social entrepreneurs across India—here’s how we give back
-            and support the world we are grateful for.
+            We make time to support some amazing causes. From street cats in Mumbai to social entrepreneurs across India - here’s how we give back and support the world we are grateful for.
           </p>
 
           <div style={{ display: 'none' }}>
@@ -230,7 +228,7 @@ export const CSRPage = () => {
                 Caring and Sharing
               </LineHeading>
               <h3 className=" text-title md:text-title-md font-everett font-medium mb-6 md:mb-8">
-                Feeding the Stray Cats of Mumbai
+                Feeding Street Cats in Mumbai
               </h3>
             </div>
 
@@ -256,13 +254,12 @@ export const CSRPage = () => {
                 Caring and Sharing
               </LineHeading>
               <h3 className=" text-title md:text-title-md font-everett font-medium mb-6 md:mb-8">
-                Feeding the Stray Cats of Mumbai
+               Feeding Street Cats in Mumbai
               </h3>
             </div>
             <p className="text-lg text-rb-black/80">
-              For the past couple of years, we have had the opportunity to
-              support the feeding of stray cats in Mumbai via our colleague and
-              friend, Debarti Banerjee (
+             For the past couple of years, we have had the opportunity to support the feeding street cats in Mumbai via our colleague and friend, Debarti Banerjee
+              (
               <a
                 href="https://www.linkedin.com/in/debarti-banerjee-2899b7249/"
                 className="underline text-[#007BFF]"
@@ -270,12 +267,7 @@ export const CSRPage = () => {
               >
                 in
               </a>
-              ). Debarti is our Vice President of Operations, and for the
-              last 20 years has been feeding hundreds of street cats and dogs in
-              Mumbai every single day. Our little contribution to Debarti’s work
-              has sponsored 18,000 cat meals over the past 2 years. In other
-              words, we have been helping feed 25 stray cats every day for the
-              last 24 months.
+              ).Debarti is our Head of Production and Recruitment, and for the last 20 years has been feeding hundreds of street cats and dogs in Mumbai every single day. Our little contribution to Debarti’s work has sponsored 18,000 cat meals over the past 2 years. In other words, we have been helping feed 25 stray cats every day for the last 24 months. 
             </p>
           </div>
         </div>
@@ -358,14 +350,14 @@ export const CSRPage = () => {
                 </h3>
               </div>
               <p className="text-lg text-rb-black/80 hidden md:block">
-                Positive social change is a shared goal at Red Bangle. We
+                Positive social change is a shared goal at Makerrs. We
                 believe that an inspiring true story can inspire a hundred more.
                 That’s why we created The Lakshmi Rebecca Show, a YouTube series
                 on social entrepreneurs in India. Hosted by Lakshmi Rebecca
-                (Founder & CEO, Red Bangle,{' '}
+                (Founder & CEO, Makerrs,{' '}
                 <a
                   href="https://www.linkedin.com/in/lakshmirebecca/"
-                  className="underline text-[#007BFF]"
+                  className="underline hover:text-rb-link-green"
                   target="_blank"
                 >
                   in
@@ -403,7 +395,7 @@ export const CSRPage = () => {
               & CEO, Red Bangle,{' '}
               <a
                 href="https://www.linkedin.com/in/lakshmirebecca/"
-                className="underline text-[#007BFF]"
+                  className="underline hover:text-rb-link-green"
                 target="_blank"
               >
                 in
