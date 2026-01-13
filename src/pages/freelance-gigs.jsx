@@ -309,48 +309,6 @@ const createTestimonialData = [
 ]
 
 const sliderCards = [
-  // {
-  //   key: 1,
-  //   imgurl: 'img/collab/icon-01.svg',
-  //   alt: 'icon-01',
-  //   title: 'Gigs for you',
-  //   desc: 'Get gigs that suit your skill, experience and location. We curate, so you don’t have to.',
-  // },
-  // {
-  //   key: 2,
-  //   imgurl: 'img/collab/icon-02.svg',
-  //   alt: 'icon-02',
-  //   title: 'Top-notch brands',
-  //   desc: 'Work with top-notch brands to create content for marketing, PR and more.',
-  // },
-  // {
-  //   key: 3,
-  //   imgurl: 'img/collab/icon-03.svg',
-  //   alt: 'icon-03',
-  //   title: 'On-time Pay',
-  //   desc: 'Our international billings and payments process ensure you get paid on-time.',
-  // },
-  // {
-  //   key: 4,
-  //   imgurl: 'img/collab/icon-04.svg',
-  //   alt: 'icon-04',
-  //   title: 'Professionally-run Projects',
-  //   desc: 'Our Creative Project Managers and processes support every workflow - so you can focus on creativity.',
-  // },
-  // {
-  //   key: 5,
-  //   imgurl: 'img/collab/icon-05.svg',
-  //   alt: 'icon-05',
-  //   title: 'Collaborate on the cloud',
-  //   desc: 'Our custom-built technology enables easy onboarding, briefing and file sharing.',
-  // },
-  // {
-  //   key: 6,
-  //   imgurl: 'img/collab/icon-06.svg',
-  //   alt: 'icon-06',
-  //   title: 'Your Experience Matters',
-  //   desc: 'We believe in long-term relationships and mutual growth. And we bring this attitude to projects with you.',
-  // },
   {
     key: 1,
     imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/icon-01.svg`,
