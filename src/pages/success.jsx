@@ -15,20 +15,20 @@ const Success = () => {
             alt="success"
           />
           <h1 className="text-[26px] w-full mb-4 md:max-w-[70%] text-center font-medium md:leading-[54px] leading-7 tracking-[-0.52px] md:tracking-[-1.04px] md:text-[52px]">
-            { type === 'collab'? 'We got your message.':'Thank you for contacting us!'}
+            { type === 'collab'? 'Hey Makerr! We got your message.':'Thank you for contacting us!'}
             
           </h1>
           <p className="text-rb-black/80 font-normal text-sm md:text-2xl opacity-90 md:max-w-[65%] text-center">
           { type === 'collab' 
-          ?'Thanks for writing to us. We’ll get back to you soon. In the meantime, please feel free to explore our company website.'
+          ?'Thanks for writing to us. We’ll get back to you soon. In the meantime, please feel free to explore more on our website.'
           :'We appreciate your interest and will respond to your message shortly. In the meantime, feel free to explore our website.'}
           </p>
           <Button
-            href={ type === 'collab' ? 'http://redbangle.com':'/'}
+            href={ type === 'collab' ? 'http://makerrs.com':'/'}
             suffix={<LineArrow hover />}
             className="w-full md:w-[297px] mt-8 md:mt-10 uppercase"
           >
-            { type === 'collab' ? 'Explore company': 'View Homepage'}
+            { type === 'collab' ? 'Explore Makerrs': 'View Homepage'}
           </Button>
         </div>
       </div>

@@ -137,51 +137,35 @@ export const CollabContactForm = () => {
               name="First_Name"
               placeholder="First Name"
               required
+              inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"  
             />
             <Input
               borderedInput
               name="Last_Name"
               placeholder="Last Name"
               required
+              inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"  
             />
-            <Input borderedInput name="Email" placeholder="Email" required />
-            {/* <Input
-            borderedInput
-            name="Phone"
-            placeholder="Phone Number"
-            required
-          /> */}
+            <Input borderedInput name="Email" placeholder="Email" required
+              inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"  
+            />
 
             <PhoneInput
               borderedInput
               name="Phone"
               placeholder="Mobile"
               required
+              inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"  
             />
           </div>
 
-          {/* <>
-          <Input
-            borderedInput
-            name="Company"
-            placeholder="Company Name"
-            required
+          <Input borderedInput name="Description" placeholder="Message"
+            inputClassname="text-rb-white placeholder:text-rb-white/100 border-b-rb-white/100"  
           />
-
-          <Input
-            borderedInput
-            name="Designation"
-            placeholder="Designation"
-            required
-          />
-        </> */}
-
-
-          <Input borderedInput name="Description" placeholder="Message" />
         </div>
         <Button
           type="submit"
-          className="w-full mt-8 md:mt-10 !bg-[#07ef5a] !text-rb-black"
+          className="w-full mt-8 md:mt-10 !bg-rb-red !hover:bg-rb-milano-red !text-rb-black"
           suffix={<LineArrow hover />}
         >
           Contact us

@@ -261,7 +261,7 @@ export const Footer = ({ hasContactForm }) => {
   currentPath !== '/custom-campaign-landing-page' &&
   currentPath !== '/end-to-end-video-production' &&
   currentPath !== '/career' && (
-    currentPath === '/collab' ? (
+    currentPath === '/freelance-gigs' ? (
       <ContactSection type="collab" />
     ) : (
       <ContactSection />

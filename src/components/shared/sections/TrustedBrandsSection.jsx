@@ -183,7 +183,7 @@ export const TrustedBrandsSection = ({
               {icons
                 .slice(0, icons.length / 2)
                 .map(({ name, id, ...rest }) => (
-                  <div key={id} className="mx-6 md:mx-12 filter grayscale">
+                  <div key={id} className="mx-6 md:mx-12">
                     <img
                       src={`/img/logos/${name}`}
                       loading="lazy"

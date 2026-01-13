@@ -796,13 +796,13 @@ export const CollabFormRecreate = ({ modalTrigger }) => {
                           name="TNC"
                           label={
                             <>
-                              I accept the
+                              I accept the&nbsp;
                               <a
                                 href="https://collab.redbangle.com/terms-of-service"
-                                className="text-rb-red"
+                                className="text-black underline hover:text-rb-link-green"
                                 target="_blank"
                               >
-                                &nbsp;Terms & Conditions
+                                Terms & Conditions
                               </a>
                             </>
                           }
@@ -840,11 +840,11 @@ export const CollabFormRecreate = ({ modalTrigger }) => {
                   )}
                   {headingCount === 2 && (
                     <>
-                      <div className="text-[16px] leading-[1.8] tracking-[-0.64px] font-semibold text-rb-black/40 mt-3 mb-6 md:mb-9">
+                      <div className="text-[16px] leading-[1.8] tracking-[-0.64px] font-semibold text-rb-black mt-3 mb-6 md:mb-9">
                         Already on collab?{' '}
                         <a
                           href="https://collab.redbangle.com/login"
-                          className="text-rb-red"
+                          className="text-black underline hover:text-rb-link-green"
                           target="_blank"
                         >
                           Login

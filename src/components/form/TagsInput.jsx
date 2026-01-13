@@ -78,14 +78,14 @@ const TagsInput = ({
                 >
                   <path
                     d="M14 6L6 14"
-                    stroke="#EF001C"
+                    stroke="#000"
                     strokeWidth="1.6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M6 6L14 14"
-                    stroke="#EF001C"
+                    stroke="#000"
                     strokeWidth="1.6"
                     strokeLinecap="round"
                     strokeLinejoin="round"

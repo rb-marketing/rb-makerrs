@@ -20,7 +20,7 @@ export const ContactSection = ({ type = '' }) => {
               <div className="text-[52px] lg:text-[70px] xl:text-[97px] leading-[1.06] text-rb-white tracking-[-2.56px] uppercase font-everett font-medium">
                 Collaborate with
                 <br />
-                <span className="text-rb-red ">Red Bangle</span>{' '}
+                <span className="text-rb-red ">Makerrs</span>{' '}
                 <br className="hidden md:block" /> today
               </div>
             </div>
