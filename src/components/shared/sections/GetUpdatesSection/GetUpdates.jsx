@@ -49,7 +49,7 @@ const GetUpdates = () => {
     <section className="bg-rb-mercury py-16 md:py-32">
       <div className="container">
         <h2 className="text-[24px] md:text-[64px] lg:text-[100px] leading-[120%] tracking-[-1px] lg:tracking-[-4px] uppercase font-semibold mb-15 text-center">
-          Get cool <span className="text-rb-red">updates</span>
+          Get cool updates
         </h2>
         <form
           method="POST"
@@ -293,7 +293,7 @@ const GetUpdates = () => {
                 disabled={firstStepDisabled}
                 onClick={onStepChange}
                 type={step == 1 ? 'button' : 'submit'}
-                suffix={<LineArrow />}
+                suffix={<LineArrow hover />}
               >
                 SUBSCRIBE
               </Button>
@@ -305,7 +305,7 @@ const GetUpdates = () => {
                 disabled={firstStepDisabled}
                 onClick={onStepChange}
                 type={step == 1 ? 'button' : 'submit'}
-                suffix={<LineArrow />}
+                suffix={<LineArrow hover />}
               >
                 SUBSCRIBE
               </Button>

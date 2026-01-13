@@ -543,17 +543,7 @@ const Career = () => {
             Take a look at our open positions
           </h2>
 
-          {/* <p className="text-2xl opacity-80">
-            We are hiring for multiple openings, Email us at{' '}
-            <a
-              href="mailto:careers@redbangle.com"
-              className="text-rb-red duration-300 ease-out hover:text-rb-black"
-            >
-              careers@redbangle.com
-            </a>
-          </p> */}
-
-          <div className="mt-20 group ">
+          <div className="mt-20 group">
             {filteredJobOpenings.slice(0, displayCount).map(
               ({
                 id,
@@ -571,10 +561,10 @@ const Career = () => {
                     key={id}
                     href={`https://redbangle.zohorecruit.in/jobs/Careers/${id}`}
                     target="_blank"
-                    className="group-hover:opacity-60 hover:!opacity-100 duration-300 ease-out items-center border border-rb-stroke-dark rounded-xl md:rounded-3xl mb-6 p-6 md:py-16 md:px-10 grid md:grid-cols-2 gap-6"
+                    className="group-hover:opacity-60 hover:!opacity-100 hover:text-black group-hover:text-rb-black duration-300 ease-out items-center border border-rb-stroke-dark rounded-xl md:rounded-3xl mb-6 p-6 md:py-16 md:px-10 grid md:grid-cols-2 gap-6"
                   >
                     <div>
-                      <p className="text-xl md:text-2xl font-semibold text-rb-red mb-2">
+                      <p className="text-xl md:text-2xl font-semibold mb-2">
                         {Job_Opening_Name}
                       </p>
 
@@ -590,7 +580,7 @@ const Career = () => {
                         {Job_Summary}
                       </p>
 
-                      <p className="inline-flex gap-2 items-center text-rb-red font-semibold">
+                      <p className="inline-flex gap-2 items-center font-semibold hover:text-rb-link-green">
                         View more
                         <LineArrow className=" max-w-[20px] duration-300 ease-out " />
                       </p>

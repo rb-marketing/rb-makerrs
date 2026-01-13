@@ -2,14 +2,12 @@
 
 import { LineArrow } from '@/components/icons'
 import { LineHeading, NewsletterField, SEO } from '@/components/shared'
-import { ContentPostCard } from '@/components/shared/Cards'
 import GetUpdates from '@/components/shared/sections/GetUpdatesSection/GetUpdates'
-import { ArrowButton, Button } from '@/components/ui'
+import { Button } from '@/components/ui'
 import React, { useState, useEffect } from 'react'
 import { getBlogs } from '@/utils/graphql'
 import { formatBlogPosts } from '@/utils/formate'
 import { blogSchema } from '@/components/schema/blog-schema'
-import Script from 'next/script'
 import { Dropdown } from '@/components/dropdown/dropdown'
 import { useRouter } from 'next/router'
 
@@ -139,8 +137,8 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
   return (
     <>
       <SEO
-        title="Red Bangle - Insights on B2B Video Production and Content"
-        description="Explore Red Bangle’s insights and blogs on B2B video production, brand identity design, marketing campaigns, corporate communications, employer branding and more."
+        title="The Blog for Borderless Brands | Makerrs"
+        description="Explore insights and expert views on branding, design, video content, branded podcast production, marketing campaigns, employer branding campaigns and more."
         keywords="Read our latest Articles,
         Stay updated with Latest News and Insights,
         Marketing Blogs,
@@ -151,12 +149,12 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
       <section className="bg-rb-mercury py-23">
         <div className="container">
           <h1 className="font-everett text-[32px] md:text-[64px] xl:text-[120px] font-normal mb-8 md:mb-18 leading-[100%]">
-            BLOGS & ARTICLES
+            Read Our Blog
           </h1>
 
           <div className="flex flex-wrap lg:flex-nowrap gap-8 items-center mb-13 border-b border-b-rb-davy-grey pb-13">
             <p className="flex-1 md:text-[32px] font-semibold tracking-[-1.28px] mb-0">
-              Discover how creativity, content and technology can drive growth for your B2B brand.
+              Explore how creativity and content can drive growth for your borderless brand.
             </p>
 
             <NewsletterField />
@@ -181,7 +179,7 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
                     {featuredPost?.categories?.map((c) => (
                       <div
                         key={c.slug}
-                        className="border border-white rounded-full py-2 px-4 text-[12px] font-semibold text-white capitalize"
+                        className="border border-white bg-black/50 rounded-full py-2 px-4 text-[12px] font-semibold text-white capitalize"
                       >
                         {c.name}
                       </div>
@@ -192,16 +190,6 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
             </div>
 
             <div>
-              {/* <div className="flex gap-2 mb-4">
-                <span className="text-[14px] md:text-[16px]">
-                  {featuredPost?.date}
-                </span>
-                <span className="text-[14px] md:text-[16px]">|</span>
-                <span className="text-[14px] md:text-[16px]">
-                  {featuredPost?.author}
-                </span>
-              </div> */}
-
               <h3 className="text-[26px] md:text-[32px] leading-[120%] font-semibold mb-4 tracking-[-1.28px]">
                 {featuredPost?.title}
               </h3>
@@ -213,11 +201,11 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
 
               <a
                 href={`/${featuredPost?.tags[0]?.name || 'blog'}/${featuredPost?.slug}`}
-                className="inline-flex gap-2 items-center text-rb-red font-semibold"
+                className="inline-flex gap-2 items-center text-black underline font-semibold hover:text-rb-link-green"
                 target="_blank"
               >
                 Continue reading
-                <LineArrow className=" max-w-[20px]" />
+                <LineArrow arrowcolor="#13c33f" className="max-w-[20px] text-rb-link-green hover:text-rb-link-green" />
               </a>
             </div>
           </div>
@@ -226,12 +214,8 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
 
       <section className="py-24">
         <div className="container">
-          <LineHeading className="mb-6 md:mb-9">Discover more</LineHeading>
-          {/* 
-          <h2 className="text-title md:text-title-md mb-8 font-everett">
-            Leverage Videos for Growth
-          </h2> */}
-
+          <LineHeading className="mb-6 md:mb-9">Explore more</LineHeading>
+         
           <div>
             <Dropdown
               placeholder={selectedCategory && selectedCategory !== 'all-blogs' ? selectedCategory : 'ALL BLOGS'}
@@ -244,7 +228,7 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
               ({ date, author, featuredImage, slug, categories, title, tags }) => (
                 <div key={slug}>
                 <a href={`/${tags[0]?.name || 'blog'}/${slug}`} target="_blank"
-                  className="">
+                  className="text-black hover:text-black">
                     <div className="h-[384px] block md:h-[272px] overflow-hidden relative mb-4">
                       <div className="w-full h-full overflow-hidden group">
                         <img
@@ -259,7 +243,7 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
                           <div
                             key={c.slug}
                             className={`${c.name === 'Uncategorized' ? 'hidden' : ''
-                              } capitalize border border-white rounded-full py-2 px-4 text-[12px] font-semibold text-white`}
+                              } capitalize bg-black/50 border border-white rounded-full py-2 px-4 text-[12px] font-semibold text-white`}
                           >
                             {c.name}
                           </div>
@@ -268,26 +252,16 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
                     </div>
 
                     <div>
-                      {/* <div className="flex gap-2 mb-4">
-                        <span className="text-[14px] md:text-[16px]">
-                          {date}
-                        </span>
-                        <span className="text-[14px] md:text-[16px]">|</span>
-                        <span className="text-[14px] md:text-[16px]">
-                          {author}
-                        </span>
-                      </div> */}
-
                       <h3 className="text-[22px] md:text-[24px] leading-[120%] font-semibold mb-5.5 md:mb-4 tracking-[-0.96px] line-clamp-2">
                         {title}
                       </h3>
 
                       <span
-                        className="inline-flex gap-2 items-center text-rb-red font-semibold"
+                        className="inline-flex gap-2 items-center underline font-semibold hover:text-rb-link-green"
                        
                       >
                         Continue reading
-                        <LineArrow className=" max-w-[20px]" />
+                        <LineArrow arrowcolor="#13c33f" className=" max-w-[20px]" />
                       </span>
                     </div>
                   </a>
@@ -301,7 +275,7 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
               <Button
                 className="w-full md:w-fit mx-auto mt-[30px] md:mt-12 focus:outline-none"
                 onClick={loadMorePosts}
-                suffix={<LineArrow />}
+                suffix={<LineArrow hover />}
               >
                 SEE MORE
               </Button>
@@ -313,7 +287,7 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
                 onClick={() => {
                   setVisiblePosts(6); // or set to 6 if that's your default
                 }}
-                suffix={<LineArrow />}
+                suffix={<LineArrow hover />}
               >
                 SEE LESS
               </Button>

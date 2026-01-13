@@ -746,7 +746,7 @@ const Collab = () => {
                   key={id}
                   className="mb-8 last:mb-10 text-[16px] leading-[26px] md:text-[20px] tracking-[-0.16px] font-medium font-everett"
                 >
-                  <span className="text-black">{number}</span>&nbsp;
+                  <span className="text-rb-link-green">{number}</span>&nbsp;
                   <span className="text-black">{header}</span>
                   <span className="tracking-[-0.256px] font-opensans font-normal">
                     {text}

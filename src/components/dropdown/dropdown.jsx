@@ -42,7 +42,7 @@ export const Dropdown = ({ placeholder, options = [], onChange }) => {
     return (
         <div className='relative w-fit' ref={dropdownRef}>
             <div
-                className='w-56 cursor-pointer rb-select-blogs border border-rb-red/40 bg-rb-white pt-2 pb-8 px-4 rounded-6xl h-7.5 text-rb-red uppercase font-medium'
+                className='w-56 cursor-pointer rb-select-blogs border border-rb-black/40 bg-rb-white pt-2 pb-8 px-4 rounded-6xl h-7.5 text-rb-black uppercase font-medium'
                 onClick={toggleDropdown}
             >
                 {selected_options}
