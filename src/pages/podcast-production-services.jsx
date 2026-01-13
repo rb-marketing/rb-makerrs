@@ -259,10 +259,10 @@ const Design = ({ setisPopupOpen }) => {
       key: 0,
       name: 'The Lakshmi Rebecca Show',
       company: 'Lakshmi Rebecca',
-      image: '/img/works/lakshmi_rebecca_show.jpg',
+      image: '/img/works/lrs.png',
       alt: 'Lakshmi Rebecca Show',
       tags: ['Video Content', 'YouTube Series'],
-      href: 'work/brand-designs/lakshmi-rebecca-show'
+      href: '/brand-designs/lakshmi-rebecca-show'
     }
   ]
 
@@ -385,7 +385,7 @@ const Design = ({ setisPopupOpen }) => {
       </section>
 
       <div className="md:pt-15">
-        <FeaturedWorkSection posts={_posts} href="" title="Explore Our Podcast Work" />
+        <FeaturedWorkSection posts={_posts} href="/work/brand-designs" title="Explore Our Podcast Work" />
       </div>
 
 
