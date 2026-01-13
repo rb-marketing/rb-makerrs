@@ -504,7 +504,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
         </div>
       </section>
 
-      <section className="bg-rb-service-grey md:py-30 py-10">
+      <section className="md:py-30 py-10">
         <div className="container">
           <div className="flex flex-wrap -mx-4 items-center md:flex-row flex-col gap-8 md:gap-0">
             <div className="w-full md:w-2/5 px-4">

@@ -650,7 +650,7 @@ export const podcastCards = [
     title: 'Podcast Research & Strategy',
     text: 'We study your industry, audience and competitors, and build on your strategic priorities to define the themes and direction for your podcast. We ensure that your podcast reflects your brand purpose, market positioning and long-term goals.',
     icon: {
-      src: '/img/services/podcast/green-03.svg',
+      src: '/img/services/podcast/icon1.svg',
       alt:'star',
       width: 111,
       height: 111,
@@ -661,7 +661,7 @@ export const podcastCards = [
     title: 'Podcast Concept',
     text: 'We translate focus themes into a unique podcast concept and structure the format to ensure that each episode embraces your brand, expresses your point of view consistently and with authority, and offers something memorable to your audience.',
     icon: {
-      src: '/img/services/podcast/green-05.svg',
+      src: '/img/services/podcast/icon2.svg',
       alt: 'S-circles',
       width: 111,
       height: 111,
@@ -672,7 +672,7 @@ export const podcastCards = [
     title: 'Podcast Branding',
     text: 'We craft a great name and tagline for your podcast, design the logo, channel art, thumbnails, in-episode graphics, music, and more. We bring the whole package together so your podcast stands out no matter where it is viewed and how.',
     icon: {
-      src: '/img/services/podcast/green-07.svg',
+      src: '/img/services/podcast/icon3.svg',
       alt: 'S-Maze',
       width: 111,
       height: 111,
@@ -681,9 +681,9 @@ export const podcastCards = [
   {
     key: 3,
     title: 'Global Production',
-    text: 'From a two-camera shoot to a four-camera setup and a mix of production setups. Whether it’s 1 shoot a month or 4 shoots a month. Whether it’s in a studio, at an event, or on the go. Whether it’s in New York or New Delhi. Makerrs has podcast production covered for your brand, no matter what the scale, format, or genre.',
+    text: 'From a two-camera shoot to a four-camera setup. Whether it’s in a studio, at an event, or on the go. Whether it’s in New York or New Delhi. Makerrs has podcast production covered for your brand, no matter what the scale, format, or genre.',
     icon: {
-      src: '/img/services/podcast/green-13.svg',
+      src: '/img/services/podcast/icon4.svg',
       alt: 'Think',
       width: 111,
       height: 111,
@@ -694,7 +694,7 @@ export const podcastCards = [
     title: 'Podcast Publishing',
     text: 'Our eye-grabbing thumbnails, SEO-friendly titles, descriptions, chapters, and transcripts, and our overall comprehensive project management ensure every episode goes live on schedule across YouTube, Spotify, Apple Podcast, and more. ',
     icon: {
-      src: '/img/services/podcast/green-29.svg',
+      src: '/img/services/podcast/icon5.svg',
       alt: 'Services',
       width: 111,
       height: 111,
@@ -702,17 +702,6 @@ export const podcastCards = [
   },
   {
     key: 5,
-    title: 'Podcast Amplification',
-    text: 'Every podcast episode needs several pieces of amplification content – thumbnails, teaser, reels, carousels, captions, and more! Our podcast producers, writers, and editors are here to scale podcast post-production and marketing content for you.',
-    icon: {
-      src: '/img/services/podcast/green-30.svg',
-      alt: 's-megaphone',
-      width: 111,
-      height: 111,
-    },
-  },
-  {
-    key: 6,
     title: 'Podcast Marketing',
     text: (
           <>
@@ -720,7 +709,7 @@ export const podcastCards = [
           </>
     ),
     icon: {
-      src: '/img/services/podcast/green-43.svg',
+      src: '/img/services/podcast/icon6.svg',
       alt: 's-chart',
       width: 111,
       height: 111,
@@ -792,7 +781,7 @@ export const designCards = [
     title: 'Brand Design Systems',
     text: 'Get unique, multi-sensory Brand Design Systems–visual, verbal, and sonic–that deliver a cohesive brand story and brand experience across touch points. Sign up for an immersive branding workshop and get started today!',
     icon: {
-      src: '/img/services/design/icon1-b.svg',
+      src: '/img/services/design/icon1.svg',
       alt:'star',
       width: 111,
       height: 111,
@@ -803,7 +792,7 @@ export const designCards = [
     title: 'Event Branding',
     text: 'Be it your own brand event or a branded booth–our comprehensive event branding services include event theme and logo design, invites, motion graphics, mailers, zone and booth design, presentation design, merchandise design, and giveaway curation.',
     icon: {
-      src: '/img/services/design/icon2-b.svg',
+      src: '/img/services/design/icon2.svg',
       alt: 'S-circles',
       width: 111,
       height: 111,
@@ -814,7 +803,7 @@ export const designCards = [
     title: 'Collateral Design',
     text: 'From presentations and coffee table books to packaging design, brochure design, brand merchandise design, social media creatives, and more—we help you slay brand conversations through great design.',
     icon: {
-      src: '/img/services/design/icon3-b.svg',
+      src: '/img/services/design/icon3.svg',
       alt: 'S-Maze',
       width: 111,
       height: 111,
@@ -825,7 +814,7 @@ export const designCards = [
     title: 'Interactive Experiences',
     text: 'We design and develop interactive and immersive brand experiences that transform physical and digital spaces into dynamic storytelling platforms. Be it interactive, augmented or mixed reality - we forge unforgettable experiences for your brand.',
     icon: {
-      src: '/img/services/design/icon4-b.svg',
+      src: '/img/services/design/icon4.svg',
       alt: 'Think',
       width: 111,
       height: 111,
@@ -836,7 +825,7 @@ export const designCards = [
     title: 'Brand Mascots and Avatars',
     text: 'Fuel infinite customer engagement possibilities with custom-crafted brand mascots and avatars inspired by human, animal, object, sci-fi, or hybrid DNA. Supercharge your brand across web, social, email, events, and more.',
     icon: {
-      src: '/img/services/design/icon5-b.svg',
+      src: '/img/services/design/icon5.svg',
       alt: 'Services',
       width: 111,
       height: 111,
@@ -847,7 +836,7 @@ export const designCards = [
     title: 'Environmental Graphics',
     text: 'We design visually appealing environments and physical spaces for retail, corporate offices, galleries, public spaces, events, and more—helping people feel, navigate, and interact with your brand through curiosity and joy.',
     icon: {
-      src: '/img/services/design/icon6-b.svg',
+      src: '/img/services/design/icon6.svg',
       alt: 's-megaphone',
       width: 111,
       height: 111,
@@ -858,7 +847,7 @@ export const designCards = [
     title: 'Motion Graphics',
     text: 'We\'re motion-first. In today\'s digital landscape, motion is key to captivate audiences through a "fourth dimension" in graphic design. We specialize in motion graphics, animation, VFX, CGI, and more.',
     icon: {
-      src: '/img/services/design/icon7-b.svg',
+      src: '/img/services/design/icon7.svg',
       alt: 's-chart',
       width: 111,
       height: 111,
@@ -1052,7 +1041,7 @@ export const videosCards = [
     title: 'Video Strategy & SEO',
     text: 'As your strategic video partner, we begin by understanding your business and communication goals. We then define your video strategy and plan for the right channels, strong video SEO / AEO, and define goals-to-achieve in the next 12 and 18 months.',
     icon: {
-      src: '/img/services/design/icon1-b.svg',
+      src: '/img/services/videos/icon1.svg',
       alt:'star',
       width: 111,
       height: 111,
@@ -1063,7 +1052,7 @@ export const videosCards = [
     title: 'Concepts & Scripts',
     text: 'We explore and understand your brand, product/service, market and audience. We then brainstorm and craft creative concepts, scripts, visual approaches and design ideas that are unique to your brand and suitable to your objectives.',
     icon: {
-      src: '/img/services/design/icon2-b.svg',
+      src: '/img/services/videos/icon2.svg',
       alt: 'S-circles',
       width: 111,
       height: 111,
@@ -1074,7 +1063,7 @@ export const videosCards = [
     title: 'Video Visualisation & Design',
     text: 'From the right actor to the right stock video clip and the right illustrations - we detail out every frame of every video. Our visualisation, design and storyboarding are in-line with your brand, your audience, your message and sticky video trends.',
     icon: {
-      src: '/img/services/design/icon3-b.svg',
+      src: '/img/services/videos/icon3.svg',
       alt: 'S-Maze',
       width: 111,
       height: 111,
@@ -1085,7 +1074,7 @@ export const videosCards = [
     title: 'Video Production Across Locations',
     text: 'From locations and studios to crews, casting and styling. From one-camera testimonial videos filmed at an office to a series of videos produced across 5 countries and commercial videos produced on custom sets - we do it all, across 100 countries!',
     icon: {
-      src: '/img/services/design/icon4-b.svg',
+      src: '/img/services/videos/icon4.svg',
       alt: 'Think',
       width: 111,
       height: 111,
@@ -1096,7 +1085,7 @@ export const videosCards = [
     title: 'Editing, Motion Graphics, Animation, & GenAI',
     text: 'From basic video editing to documentary editing, motion graphics, 2D / 3D animation and GenAI videos - our post production studios are experienced in a wide range of video tools, styles, formats and genres. We also offer unlimited versioning.',
     icon: {
-      src: '/img/services/design/icon5-b.svg',
+      src: '/img/services/videos/icon5.svg',
       alt: 'Services',
       width: 111,
       height: 111,
@@ -1107,7 +1096,7 @@ export const videosCards = [
     title: 'Cloud-based Workflows',
     text: 'We run all your projects on our proprietary creative cloud platform. From briefs to project management, easy and interactive video reviews, to anytime asset access - our platform ensures we work together seamlessly, no matter how complex the project.',
     icon: {
-      src: '/img/services/design/icon6-b.svg',
+      src: '/img/services/videos/icon6.svg',
       alt: 's-megaphone',
       width: 111,
       height: 111,

@@ -520,7 +520,7 @@ const WhoWeAre = () => {
       <section className="bg-white md:py-30 py-10">
         <div className="container">
           <h2 className="text-center text-title md:text-title-md mb-10 md:mb-18 font-everett">
-            Our Fundamentals
+            Our Core Principles
           </h2>
           <div className="grid md:grid-cols-2 md:grid-rows-2 grid-cols-1">
             <div className="grid md:grid-cols-2 grid-cols-1">

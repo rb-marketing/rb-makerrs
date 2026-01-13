@@ -463,7 +463,7 @@ export const TechnologyPlatform = () => {
                     Other Project Management Tools
                     </th>
                     <th className="md:!w-[313px] capitalize max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-rb-link-green md:whitespace-nowrap text-left">
-                    Red Bangle Platform
+                    Our Creative Cloud Platform
                     </th>
                   </tr>
                 </thead>
