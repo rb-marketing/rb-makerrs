@@ -30,8 +30,8 @@ function Select({
       <select
         className={
           borderedInput
-            ? 'w-full pr-7 text-base text-rb-black placeholder:text-rb-black/60 pb-3 border-b border-b-rb-davy-grey/60 bg-transparent focus:outline-none appearance-none rb-select'
-            : 'w-full p-4 md:p-6 font-semibold text-input md:text-input-large placeholder:text-rb-black/40 text-rb-black border border-rb-border-grey rounded-lg appearance-none rb-select'
+            ? 'w-full pr-7 text-base text-[#625F5F] placeholder:text-rb-black/60 pb-3 border-b border-b-rb-davy-grey/60 bg-transparent focus:outline-none appearance-none rb-select'
+            : 'w-full p-4 md:p-6 text-input md:text-input-large placeholder:text-rb-black/40 text-[#9C9898] border border-rb-border-grey rounded-lg appearance-none rb-select'
         }
         placeholder={`${placeholder ?? ''}${
           borderedInput && required ? '*' : ''
