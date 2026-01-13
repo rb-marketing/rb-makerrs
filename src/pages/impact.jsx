@@ -202,7 +202,7 @@ export const CSRPage = () => {
             GIVING BACK & COMMUNITY
           </h1>
           <p className="text-sm md:text-accordion-large font-semibold max-w-[1153px] mt-4 md:mt-20">
-            We make time to support some amazing causes. From street cats in Mumbai to social entrepreneurs across India - here’s how we give back and support the world we are grateful for.
+            From street cats in Mumbai to entrepreneurs the world over - here’s how we give back and support the world we are grateful for.
           </p>
 
           <div style={{ display: 'none' }}>
@@ -220,12 +220,12 @@ export const CSRPage = () => {
         </div>
       </section>
 
-      <section className="overflow-hidden bg-rb-service-grey pt-15 pb-0 md:pt-0 md:pb-0">
+      <section className="overflow-hidden pt-15 pb-0 md:pt-0 md:pb-0">
         <div className="flex flex-wrap items-center">
           <div className="w-full md:w-1/2">
             <div className="block md:hidden px-4">
               <LineHeading className="mb-6 md:mb-9">
-                Caring and Sharing
+                Caring for Homeless Animals
               </LineHeading>
               <h3 className=" text-title md:text-title-md font-everett font-medium mb-6 md:mb-8">
                 Feeding Street Cats in Mumbai
@@ -251,7 +251,7 @@ export const CSRPage = () => {
           <div className="w-full md:w-1/2 pt-12 md:pt-0 px-4 md:pl-14 max-w-[586px]">
             <div className="hidden md:block">
               <LineHeading className="mb-6 md:mb-9">
-                Caring and Sharing
+               Caring for Homeless Animals
               </LineHeading>
               <h3 className=" text-title md:text-title-md font-everett font-medium mb-6 md:mb-8">
                Feeding Street Cats in Mumbai
@@ -262,12 +262,12 @@ export const CSRPage = () => {
               (
               <a
                 href="https://www.linkedin.com/in/debarti-banerjee-2899b7249/"
-                className="underline text-[#007BFF]"
+                className="underline hover:text-rb-link-green"
                 target="_blank"
               >
                 in
               </a>
-              ).Debarti is our Head of Production and Recruitment, and for the last 20 years has been feeding hundreds of street cats and dogs in Mumbai every single day. Our little contribution to Debarti’s work has sponsored 18,000 cat meals over the past 2 years. In other words, we have been helping feed 25 stray cats every day for the last 24 months. 
+              ). Debarti is our Vice President of Operations, and for the last 20 years has been feeding hundreds of street cats and dogs in Mumbai every single day. Our little contribution to Debarti’s work has sponsored 18,000 cat meals over the past 2 years. In other words, we have been helping feed 25 stray cats every day for the last 24 months. 
             </p>
           </div>
         </div>
@@ -328,175 +328,12 @@ export const CSRPage = () => {
 
         <Testimonials
           title={'A Note from Debarti'}
-          className="pb-15 md:pb-30 pt-0 !bg-rb-service-grey"
+          className="pb-15 md:pb-30 pt-0"
           testimonialData={Testimonial_1}
           htmlQuote="true"
           type="semi"
           widthClassName="md:w-max"
           imageCustomClass="md:w-[318px]"
-        />
-      </section>
-
-      <section className="overflow-hidden pt-15 md:pt-30 pb-0 relative">
-        <div className="flex flex-wrap items-center relative">
-          <div className="w-full flex md:w-1/2 pt-0 justify-end md:pr-14">
-            <div className="max-w-[586px] px-4 md:pr-0 md:pl-2.5">
-              <div>
-                <LineHeading className="mb-6 md:mb-9">
-                  Storytelling for Change
-                </LineHeading>
-                <h3 className=" text-title md:text-title-md font-everett font-medium mb-6 md:mb-8">
-                  YouTube Series on Social Entrepreneurs
-                </h3>
-              </div>
-              <p className="text-lg text-rb-black/80 hidden md:block">
-                Positive social change is a shared goal at Makerrs. We
-                believe that an inspiring true story can inspire a hundred more.
-                That’s why we created The Lakshmi Rebecca Show, a YouTube series
-                on social entrepreneurs in India. Hosted by Lakshmi Rebecca
-                (Founder & CEO, Makerrs,{' '}
-                <a
-                  href="https://www.linkedin.com/in/lakshmirebecca/"
-                  className="underline hover:text-rb-link-green"
-                  target="_blank"
-                >
-                  in
-                </a>
-                ), the series features handpicked stories of sustainable,
-                scalable and proven social enterprises. We invested up to a
-                month in crafting each episode to bring you an engaging,
-                information-filled and moving story of each hand-picked social
-                enterprise. Today, The Lakshmi Rebecca Show has over 11Mn views.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 relative">
-            <picture>
-              <source
-                media="(min-width:768px)"
-                srcSet="/img/who-we-are/L2.png"
-                width="1416"
-                height="1580"
-              />
-              <img
-                src="/img/who-we-are/L2.png"
-                alt="Lakshmi Rebecca"
-                width="708"
-                height="790"
-                className="w-full right-0 top-0 h-full object-cover z-0"
-              />
-            </picture>
-
-            <p className="text-lg text-rb-black/80 block md:hidden pt-12 px-4 md:py-12">
-              Positive social change is a shared goal at Red Bangle. We believe
-              that an inspiring true story can inspire a hundred more. That’s
-              why we created The Lakshmi Rebecca Show, a YouTube series on
-              social entrepreneurs in India. Hosted by Lakshmi Rebecca (Founder
-              & CEO, Red Bangle,{' '}
-              <a
-                href="https://www.linkedin.com/in/lakshmirebecca/"
-                  className="underline hover:text-rb-link-green"
-                target="_blank"
-              >
-                in
-              </a>
-              ), the series features handpicked stories of sustainable, scalable
-              and proven social enterprises. We invested up to a month in
-              crafting each episode to bring you an engaging, information-filled
-              and moving story of each hand-picked social enterprise. Today, The
-              Lakshmi Rebecca Show has over 12Mn views.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white pt-8 pb-0 md:pt-8">
-          <div className="container">
-            <Swiper
-              onSwiper={(swiper) => (sliderRef2.current = swiper)}
-              spaceBetween={12}
-              slidesPerView={1}
-              className="swiper-overflow-visible"
-              breakpoints={{
-                768: {
-                  slidesPerView: 1,
-                  spaceBetween: 24,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 24,
-                },
-              }}
-              onSlideChange={(swiper) => {
-                setSlider2Progress(swiper.progress)
-              }}
-            >
-              {videoList.map(({ id, title, url, youtubeThumbnail, alt }) => (
-                <SwiperSlide key={id}>
-                  <button
-                    data-rb-cursor
-                    data-rb-cursor-type="play"
-                    onClick={(e) => onModalOpen(e, url)}
-                    className="w-full block"
-                  >
-                    <div className="h-[240px] overflow-hidden mb-4 relative">
-                      <img
-                        src={youtubeThumbnail}
-                        className="w-full h-full object-cover"
-                        alt={alt || ''}
-                      />
-                    </div>
-
-                    {/* <h3 className="font-everett text-base md:text-2xl font-medium">
-                      {title}
-                    </h3> */}
-                  </button>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <div className="flex gap-6 justify-end mb-4 md:mb-0">
-              <div className="">
-                <SliderButton
-                  left
-                  onClick={() => {
-                    sliderRef2.current.slidePrev()
-                  }}
-                  disabled={isSlider2PrevDisabled}
-                />
-                <SliderButton
-                  className="ml-1"
-                  onClick={() => {
-                    sliderRef2.current.slideNext()
-                  }}
-                  disabled={isSlider2NextDisabled}
-                />
-              </div>
-            </div>
-
-            {youTubeUrl && (
-              <VideoModal
-                youtubeVideo={youTubeUrl}
-                open={herovideoOpen}
-                setOpen={setHerovideoOpen}
-              >
-                <iframe
-                  className="youtube-iframe w-full aspect-video max-w-[95%] md:max-w-[80%]"
-                  src="https://www.youtube.com/embed/4pxJSzRnH28?si=aCfgT9BwRNn74ZjS"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                ></iframe>
-              </VideoModal>
-            )}
-          </div>
-        </div>
-
-        <Testimonials
-          title={'WHAT GUESTS SAY'}
-          className="pb-7.5 pt-0 md:pb-15"
-          testimonialData={TestimonialData}
-          contentClassName="md:min-h-[350px] md:flex md:items-end"
-          arrowBtnClassName="flex justify-end"
-          type="semi"
         />
       </section>
 
