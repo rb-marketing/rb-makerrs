@@ -41,13 +41,14 @@ const INIT_MODAL = {
   title: null
 }
 
-const VideosServices = () => {
+const VideosServices = ({ setisPopupOpen }) => {
   const _posts = similarPosts.map(postsMapper)
   const [herovideoOpen, setHerovideoOpen] = useState(false)
   const prevButtonRef = useRef(null)
   const nextButtonRef = useRef(null)
   const router = useRouter()
   const [modal, setModal] = useState(INIT_MODAL)
+  const [stopVisible, setstopVisible] = useState(false)
 
   const onModalOpen = (e) => {
     setHerovideoOpen(true)
@@ -868,6 +869,23 @@ We also handle video versioning supporting custom adaptations requirements so th
     }
   }, [])
 
+    useEffect(() => {
+    if (!stopVisible) {
+      const handleScroll = () => {
+        const section = document.getElementById('leap-explore'); // Replace 'section-id' with the ID of your section
+        if (section && window.scrollY > section.offsetTop) {
+          setisPopupOpen(true);
+          setstopVisible(true)
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, [stopVisible]);
+
   return (
     <>
       <SEO
@@ -1069,11 +1087,13 @@ We also handle video versioning supporting custom adaptations requirements so th
 
       <TrustedBrandsSection className="bg-white py-7.5 md:py-15" />
 
-      <ExploreMoreSection
-        type="think"
-        className="pt-7.5 md:pt-15 pb-15 md:pb-30"
-        cards={explorecards}
-      />
+      <div id="leap-explore">
+        <ExploreMoreSection
+          type="think"
+          className="pt-7.5 md:pt-15 pb-15 md:pb-30"
+          cards={explorecards}
+        />
+      </div>
 
       <section className="md:pt-12 pt-6 md:pb-24 pb-12">
         <div className="container">

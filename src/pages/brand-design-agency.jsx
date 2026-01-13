@@ -332,7 +332,7 @@ const Design = ({ setisPopupOpen }) => {
         heading='Explore Our Design Process'
         title='How we design for brand growth'
       />
-      <FeaturedWorkSection posts={_posts} href="" title="Explore Our Design Work" />
+      <FeaturedWorkSection posts={_posts} href="/work/brand-designs" title="Explore Our Design Work" />
       <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
       <Testimonials
         title={'WHAT CLIENTS SAY'}

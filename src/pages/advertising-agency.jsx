@@ -305,7 +305,7 @@ const Campaign = ({ setisPopupOpen }) => {
 
 
       <div className='md:pt-15'>
-        <FeaturedWorkSection posts={_posts} href="" title="Explore Our Campaign Work" />
+        <FeaturedWorkSection posts={_posts} href="/work/campaigns" title="Explore Our Campaign Work" />
       </div>
 
       <TrustedBrandsSection className="py-12 md:pt-15 md:pb-12" />

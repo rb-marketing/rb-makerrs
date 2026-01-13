@@ -1,6 +1,6 @@
 import styles from '@/styles/Footer.module.scss'
 import Link from 'next/link'
-import { ContactSection, Marquee } from '@/components/shared'
+import { ContactSection, Marquee, NewsletterField } from '@/components/shared'
 import { useRouter } from 'next/router'
 import useBaseUrl from '@/utils/baseUrl'
 
@@ -244,6 +244,7 @@ const offices = [
   },
 ]
 
+
 export const Footer = ({ hasContactForm }) => {
   const router = useRouter()
   const { b2b, b2c } = useBaseUrl()
@@ -356,9 +357,9 @@ export const Footer = ({ hasContactForm }) => {
 
        <section className="py-15 md:pt-20 md:pb-8 bg-white">
         <div className="container">
-          <div className="flex flex-wrap md:flex-nowrap">
-            <div className="w-full lg:w-full">
-              <div className="grid gap-y-15 grid-cols-2 md:grid-cols-4 md:gap-x[190px]">
+          <div className="flex -mx-4 flex-wrap">
+            <div className="w-full md:w-2/3 px-4">
+              <div className="grid gap-y-15 grid-cols-2 md:grid-cols-4">
                 <div className="pr-2.5 md:pr-0">
                   <div className={styles.title}>COMPANY</div>
                   <div className={styles.links}>
@@ -398,166 +399,169 @@ export const Footer = ({ hasContactForm }) => {
                       Our Blog
                     </Link>
                   </div>
-                </div>
-                <div className="pl-2.5 md:pl-0">
-                  <div className={styles.title}> SERVICES</div>
-                  <div className={styles.links}>
-                    <Link
-                      href='/brand-design-agency'
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max flex items-center gap-3"
-                    >
-                     <span>Design</span>
-                       <div className="dropdown-arrow rotate-90 mt-0.5">
-                        {dropDownArrow}
-                      </div>
-                    </Link>
-                     <Link
-                      href='/brand-identity-design-services'
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max ml-5 mt-[-5px]"
-                    >
-                      Brand Identity Design
-                    </Link>
-                    <Link
-                      href='/video-production'
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max flex items-center gap-3"
-                    >
-                       <span>Videos</span>
-                       <div className="dropdown-arrow rotate-90 mt-0.5">
-                        {dropDownArrow}
-                      </div>
-                      
-                    </Link>
-                     <Link
-                      href=''
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max ml-5 mt-[-5px]"
-                    >
-                      Explainer Videos
-                    </Link>
-                     <Link
-                      href=''
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max ml-5 mt-[-5px]"
-                    >
-                      Corporate Videos
-                    </Link>
-                     <Link
-                      href=''
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max ml-5 mt-[-5px]"
-                    >
-                      Case Study Videos
-                    </Link>
-                     <Link
-                      href=''
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max ml-5 mt-[-5px]"
-                    >
-                      Recruitment Videos
-                    </Link>
-                     <Link
-                      href=''
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max ml-5 mt-[-5px]"
-                    >
-                      GenAI Videos
-                    </Link>
-                     <Link
-                      href='/podcast-production-services'
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                      Podcast
-                    </Link>
-                    <Link
-                      href='/advertising-agency'
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                      Campaign
-                    </Link>
-                     <Link
-                      href='/professional-video-crews'
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                      Book a Crew
-                    </Link>
                   </div>
-                </div>
-                 <div className="pr-2.5 md:pr-0">
-                  <div className={styles.title}>WORK</div>
-                  <div className={styles.links}>
-                    <Link
-                      href="/work/design"
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                      Design
-                    </Link>
-                    <Link
-                      href="/work/video"
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                      Video
-                    </Link>
-                     <Link
-                      href="/work/podcast"
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                      Podcast
-                    </Link>
-                    <Link
-                      href="/work/campaign"
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                      Campaign
-                    </Link>
-                    <Link
-                      href="/work/professional-video-crews"
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                      Book a Crew
-                    </Link>
+                  <div className="pl-2.5 md:pl-0">
+                    <div className={styles.title}> SERVICES</div>
+                    <div className={styles.links}>
+                      <Link
+                        href='/brand-design-agency'
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max flex items-center gap-3"
+                      >
+                      <span>Design</span>
+                        <div className="dropdown-arrow rotate-90 mt-0.5">
+                          {dropDownArrow}
+                        </div>
+                      </Link>
+                      <Link
+                        href='/brand-identity-design-services'
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Brand Identity Design
+                      </Link>
+                      <Link
+                        href='/video-production'
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max flex items-center gap-3"
+                      >
+                        <span>Videos</span>
+                        <div className="dropdown-arrow rotate-90 mt-0.5">
+                          {dropDownArrow}
+                        </div>
+                        
+                      </Link>
+                      <Link
+                        href=''
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Explainer Videos
+                      </Link>
+                      <Link
+                        href=''
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Corporate Videos
+                      </Link>
+                      <Link
+                        href=''
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Case Study Videos
+                      </Link>
+                      <Link
+                        href=''
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Recruitment Videos
+                      </Link>
+                      <Link
+                        href=''
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        GenAI Videos
+                      </Link>
+                      <Link
+                        href='/podcast-production-services'
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                        Podcast
+                      </Link>
+                      <Link
+                        href='/advertising-agency'
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                        Campaign
+                      </Link>
+                      <Link
+                        href='/professional-video-crews'
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                        Book a Crew
+                      </Link>
+                    </div>
                   </div>
-                </div>
-                <div className="pl-2.5 md:pl-0">
-                  <div className={styles.title}>CONTACT</div>
-                  <div className={`${styles.links} md:pl-[2px]`}>
-                    <Link
-                      href="/contact"
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                      Get in Touch
-                    </Link>
-                     <Link
-                      href="/collab"
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                     Collab
-                    </Link>
-                    <Link
-                      href="/careers"
-                      data-rb-cursor-state="invisible"
-                      className="max-w-max"
-                    >
-                     Careers
-                    </Link>
+                  <div className="pr-2.5 md:pr-0">
+                    <div className={styles.title}>WORK</div>
+                    <div className={styles.links}>
+                      <Link
+                        href="/work/design"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                        Design
+                      </Link>
+                      <Link
+                        href="/work/video"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                        Video
+                      </Link>
+                      <Link
+                        href="/work/podcast"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                        Podcast
+                      </Link>
+                      <Link
+                        href="/work/campaign"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                        Campaign
+                      </Link>
+                      <Link
+                        href="/work/professional-video-crews"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                        Book a Crew
+                      </Link>
+                    </div>
                   </div>
-                </div>
+                  <div className="pl-2.5 md:pl-0">
+                    <div className={styles.title}>CONTACT</div>
+                    <div className={`${styles.links} md:pl-[2px]`}>
+                      <Link
+                        href="/contact"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                        Get in Touch
+                      </Link>
+                      <Link
+                        href="/collab"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                      Collab
+                      </Link>
+                      <Link
+                        href="/careers"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max"
+                      >
+                      Careers
+                      </Link>
+                    </div>
+                  </div>
               </div>
             </div>
+            <div className="w-full mt-4 md:mt-0 md:w-[28%] md:flex md:flex-col px-4">
+              <NewsletterField />
+            </div>
           </div>
-
+          
           <div className="flex flex-col-reverse md:flex-row border-t mt-10.5 md:mt-[80px] border-t-rb-black/20 pt-10.5 md:pt-8 justify-between">
             <span>Copyright ©{new Date().getFullYear()} Red Bangle</span>
             <div className="flex justify-between md:justify-start md:gap-x-8 mb-7.5 md:mb-0">

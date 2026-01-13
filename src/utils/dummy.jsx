@@ -363,10 +363,10 @@ export const campaignPosts = [
     key: 0,
     name: 'RedMi Buds 6',
     company: 'XIAOMI',
-    image: '/img/works/l74-strategy.jpg',
+    image: '/img/works/xiaomi_buds_6_work_thumbnail.png',
     alt:'Action-packed launch film for Redmi Buds 6',
     tags: ['Consumer Electronics' ,'Ad Film','Digital Campaign','Product Launch Campaign'],
-    href: '/work/l74-case-study',
+    href: '/campaigns/xiaomi-buds',
   },
   {
     key: 1,
@@ -375,7 +375,8 @@ export const campaignPosts = [
     image: '/img/works/vymo_sme.webp',
     alt: 'Vymo SME',
     tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
-    case_study_title: 'vymo-sme-bank-explainer-video'
+    case_study_title: 'vymo-sme-bank-explainer-video',
+    href: '/campaigns/vymo-sme-bank-explainer-video',
   },
   {
     key: 2,
@@ -384,7 +385,7 @@ export const campaignPosts = [
     image: '/img/case-study/infosys-global-leaders.webp',
     alt: 'Global Leaders: a Hiring Campaign',
     tags: ['Technology', 'Campaign', 'Employer Branding Video', 'Global Video Production'],
-    href:'/campaigns/infosys-global-leaders-employer-branding'
+    href:'/campaigns/infosys-global-leaders-employer-branding',
   }  
 ]
 
@@ -1456,7 +1457,7 @@ export const strategyPosts = [
     image: '/img/works/lillia_img.jpg',
     alt:'Lillia Care',
     tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
-    href: 'work/brand-designs/lillia-care-brand-launch'
+    href: '/brand-designs/lillia-care-brand-launch'
   },
   {
     key: 1,
@@ -1464,7 +1465,7 @@ export const strategyPosts = [
     company: 'P.U. Dingding',
     image: '/img/works/pudingding-thumbnail.jpg',
     tags: ['Brand Identity', 'Design Collateral', 'Film & Video Content', 'F&B'],
-    href: '',
+    href: '/brand-designs/pu-dingding-dessert-cafe-branding',
   },
   {
     key: 2,
@@ -1473,7 +1474,7 @@ export const strategyPosts = [
     image: '/img/works/exicom_work_thumbnail.png',
     alt: 'Exicom',
     tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
-    href:''
+    href:'/brand-designs/exicom-3d-animation-product-launch'
   },
 ]
 
