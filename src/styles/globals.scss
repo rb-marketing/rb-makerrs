@@ -1159,3 +1159,9 @@ a:hover {
     font-size: 1.25rem;
   }
 }
+
+.careers-stat:nth-last-of-type(2) {
+  &::after {
+      visibility: hidden;
+    }
+}
