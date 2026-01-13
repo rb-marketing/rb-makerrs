@@ -26,7 +26,7 @@ const nextConfig = {
         },
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
-          './collab': 'src/pages/collab.jsx'
+          // './collab': 'src/pages/collab.jsx'
         },
         extraOptions: {
           exposePages: true,

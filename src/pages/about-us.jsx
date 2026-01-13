@@ -54,193 +54,6 @@ const WhoWeAre = () => {
   const containerRef = useRef()
 
   const heroSection = useRef()
-  const insetRef = useRef()
-
-  useEffect(() => {
-    const mm = gsap.matchMedia()
-    mm.add('(max-width:768px)', () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          scrub: 0.2,
-          start: '50% 40%',
-          end: '80% 20%',
-          trigger: heroSection.current,
-
-          // markers: true,
-        },
-      })
-      const getY = () => {
-        const mEl = 72 + 50 + 72
-        const titleElm = containerMbRef.current.getBoundingClientRect().height
-
-        const y = mEl + titleElm
-        return y
-      }
-      tl.fromTo(
-        '.content-showreel',
-        { opacity: 1, y: 0, duration: 0.05 },
-        { opacity: 0, y: () => getY() },
-        0
-      ).fromTo('.play-circle, .play-icon', { opacity: 0.5 }, { opacity: 1 })
-
-      return () => {
-        tl.kill()
-      }
-    })
-    mm.add('(min-width:768px)', () => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          scrub: 0.2,
-          start: '35% 40%',
-          end: '60% 32%',
-          trigger: heroSection.current,
-          // markers: true,
-        },
-      })
-
-      const getY = () => {
-        const mEl = document
-          .querySelector(`.heroMarquee`)
-          .getBoundingClientRect().height
-        //   +
-        // 32 + //padding
-        // 80 + // marquee margin
-        // 108 // content height
-        const titleElm = document
-          .querySelector(`.hero-text`)
-          .getBoundingClientRect().height
-
-        const y = mEl + titleElm - 50
-
-        return y
-      }
-
-      tl.fromTo(
-        insetRef.current,
-        {
-          width: () => {
-            const cistyles = containerRef.current?.getBoundingClientRect()
-            return cistyles.width
-          },
-
-          y: () => -1 * getY(),
-        },
-        {
-          width: '100%',
-
-          y: 0,
-
-          duration: 0.8,
-        }
-      )
-        .fromTo(
-          '.web-vid',
-          {
-            x: () => {
-              const istyles = containerRef.current?.getBoundingClientRect()
-              const nstyles = insetRef.current?.getBoundingClientRect()
-              const diffContainer = Math.min(istyles.left - nstyles.left, 0)
-              return diffContainer
-            },
-            borderRadius: '70px',
-          },
-          { x: 0, borderRadius: '0' },
-          0
-        )
-
-        .fromTo(
-          '.content-showreel',
-          { opacity: 1 },
-          { opacity: 0, y: () => getY(), duration: 0.01 },
-          0
-        )
-
-      return () => {
-        tl.kill()
-      }
-    })
-    const resize = () => {
-      gsap.matchMediaRefresh()
-    }
-    window.addEventListener('resize', resize)
-
-    let singleLetterTimeline = gsap.timeline({
-      ease: 'power2.out',
-      repeat: -1,
-    })
-
-    singleLetterTimeline
-      .to(
-        `.${styles.letterRoll}`,
-
-        {
-          yPercent: 0,
-          delay: 2,
-        }
-      )
-
-      .to(
-        `.${styles.letterRoll}`,
-
-        {
-          yPercent: 100,
-        },
-        '+=1'
-      )
-      .to(
-        `.${styles.letterRoll}`,
-
-        {
-          yPercent: 0,
-        },
-        '+=2'
-      )
-
-    const letterTimeline = gsap.timeline()
-    letterTimeline.to(
-      `.${styles.rtol}, .${styles.ltor}`,
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.6,
-        stagger: {
-          each: 0.256,
-        },
-      },
-      0
-    )
-    return () => {
-      window.removeEventListener('resize', resize)
-      letterTimeline.kill()
-      mm.kill()
-    }
-  }, [])
-
-    const heroHeightRef = useRef(0)
-  useEffect(() => {
-    const heightDiv = document.querySelector('.height-div').offsetHeight
-
-    if (heroHeightRef.current === 0) {
-      heroHeightRef.current = heroSection.current.offsetHeight
-    }
-
-    const heroHeightFunc = () => {
-      if (window.innerWidth > 767) {
-        heroSection.current.style.minHeight =
-          heroHeightRef.current + heightDiv - 120 + 'px'
-        ScrollTrigger.refresh()
-      } else {
-        // do nothing
-      }
-    }
-    heroHeightFunc()
-  }, [])
-
-
-  const onModalOpen = (e) => {
-    setHerovideoOpen(true)
-    e.stopPropagation()
-  }
 
   const lenis = useLenis()
   const [bioModal, setBioModal] = useState({
@@ -660,7 +473,7 @@ const WhoWeAre = () => {
       />
 
       <section
-        className="pt-10 pb-0 md:pb-0 md:pt-24 relative text-rb-black "
+        className="pt-15 md:pb-24 md:pt-24 relative text-rb-black "
         ref={heroSection}
       >
         <div className="height-div aspect-video absolute w-full opacity-0 pointer-events-none z-30 bg-rb-red top-0" />
@@ -672,77 +485,32 @@ const WhoWeAre = () => {
             <div
               className={`content aspect-[1920/1080] origin-top ${styles.content} hidden md:inline-block`}
               ref={containerRef}
-            ></div>
-            <span className="md:translate-x-[20px] inline-block">agency</span>
+            >
+              <div
+                className="w-full  bottom-0 left-0 select-none md:aspect-[1920/1080] relative mx-auto translate-y-4"
+                // ref={insetRef}
+              >
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  src="/img/about-us/hero.mp4"
+                  poster="/img/about-us/hero-poster.webp"
+                  className="w-full md:block translate-x-[-0.225px] translate-y-0 rotate-0 scale-100 rounded-[70px]"
+                  width="1920"
+                  height="1080"
+                ></video>
+              </div>
+            </div>
+            <span className="md:translate-x-[20px] inline-block">Agency</span>
           </h1>
           <div className="heroMarquee flex md:flex-row flex-col items-start justify-between border-t border-t-rb-davy-grey/50 pt-6 md:pt-8 mt-6 md:mt-20 gap-4 md:gap-0">
             <div className="w-full md:w-1/2 text-[16px] leading-[1.25] tracking-[-0.64px] font-everett md:text-[22px] md:leading-[1.45] md:tracking-[-0.88px] font-medium">
               For brands that cater to the borderless customer. 
             </div>
             <div className="w-full md:w-1/2 text-[16px] leading-[1.5] md:text-[28px] md:leading-[1.28] tracking-[-0.64px] md:tracking-[-1.12px] font-semibold">
-             We are a tech-powered global creative agency and collaborative. We’ve crafted brand design systems, video content, podcast IPs and creative campaigns for over 60 borderless brands. 
-            </div>
-          </div>
-        </div>
-        {/* <picture>
-          <source
-            media="(min-width:768px)"
-            srcSet="/img/about/about-hero.webp"
-            width="1440"
-            height="688"
-          />
-          <img
-            src="/img/about/about-hero.webp"
-            alt="hero"
-            width="708"
-            height="790"
-            className="w-full md:mt-32 mt-12"
-          />
-        </picture> */}
-        <div
-          className="w-full  bottom-0 left-0 select-none md:aspect-[1920/1080] relative  md:origin-top mx-auto"
-          onClick={onModalOpen}
-          data-rb-cursor
-          data-rb-cursor-type="play"
-          ref={insetRef}
-        >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            src="/img/about-us/hero.mp4"
-            poster="/img/about-us/hero-poster.webp"
-            className="w-full hidden md:block web-vid"
-            width="1920"
-            height="1080"
-          ></video>
-
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            src="/img/about-us/hero.mp4"
-            poster="/img/about-us/hero-poster.webp"
-            className="w-[100%] max-w-[100%] mt-8 block md:hidden"
-            width="1920"
-            height="1080"
-          ></video>
-
-          <div className="absolute bottom-4 right-4 z-10 backdrop-blur-2xl bg-rb-black/50 rounded-[32px] py-[17px] px-4.5 pl-[20px] overflow-hidden md:hidden block">
-            <div className="flex items-center gap-2 justify-center text-white ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="13"
-                fill="none"
-              >
-                <path
-                  fill="#fff"
-                  d="M.043 1.124c0-.442.489-.71.86-.47L9.09 5.916c.342.22.342.72 0 .94L.903 12.117a.559.559 0 0 1-.86-.47V1.125Z"
-                />
-              </svg>
+                We are a tech-powered global creative agency and collaborative. We’ve crafted brand design systems, video content, podcast IPs and creative campaigns for over 60 borderless brands. 
             </div>
           </div>
         </div>
@@ -829,7 +597,7 @@ const WhoWeAre = () => {
 
       <RedbangleWaySection
         heading='The Makerrs Way'
-        sectionBG="bg-rb-mercury md:py-30 py-10"
+        sectionBG="md:py-30 py-10"
         title={
           <div className="md:max-w-[720px]">
             The agency for ambitious brands
