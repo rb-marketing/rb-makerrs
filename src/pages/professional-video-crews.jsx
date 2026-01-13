@@ -33,13 +33,14 @@ import {
   serviceVideos,
 } from '@/content/services'
 
-const CrewsServices = () => {
+const CrewsServices = ({ setisPopupOpen }) => {
   // const videoRef = useRef(null)
   const _posts = similarPosts.map(postsMapper)
   const [herovideoOpen, setHerovideoOpen] = useState(false)
   const prevButtonRef = useRef(null)
   const nextButtonRef = useRef(null)
   const router = useRouter()
+  const [stopVisible, setstopVisible] = useState(false)
 
   const onModalOpen = (e) => {
     setHerovideoOpen(true)
@@ -437,6 +438,23 @@ const CrewsServices = () => {
     }
   }, [])
 
+   useEffect(() => {
+    if (!stopVisible) {
+      const handleScroll = () => {
+        const section = document.getElementById('leap-explore'); // Replace 'section-id' with the ID of your section
+        if (section && window.scrollY > section.offsetTop) {
+          setisPopupOpen(true);
+          setstopVisible(true)
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, [stopVisible]);
+
   return (
     <>
       <SEO
@@ -666,12 +684,14 @@ const CrewsServices = () => {
       />
 
       <TrustedBrandsSection className="bg-white py-7.5 md:py-15" />
+      <div id="leap-explore">      
+        <ExploreMoreSection
+          type="think"
+          className="pt-7.5 md:pt-15 pb-15 md:pb-30"
+          cards={explorecards}
+        />
+      </div>
 
-      <ExploreMoreSection
-        type="think"
-        className="pt-7.5 md:pt-15 pb-15 md:pb-30"
-        cards={explorecards}
-      />
 
       <section className="md:pt-12 pt-6 md:pb-24 pb-12">
         <div className="container">
