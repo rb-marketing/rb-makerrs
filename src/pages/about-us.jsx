@@ -473,7 +473,7 @@ const WhoWeAre = () => {
       />
 
       <section
-        className="pt-15 md:pb-24 md:pt-24 relative text-rb-black "
+        className="pt-15 md:pb-24 md:pt-24 relative text-rb-black bg-rb-mercury"
         ref={heroSection}
       >
         <div className="height-div aspect-video absolute w-full opacity-0 pointer-events-none z-30 bg-rb-red top-0" />
@@ -517,7 +517,7 @@ const WhoWeAre = () => {
       </section>
 
 
-      <section className="bg-white md:py-30 py-10">
+      <section className="bg-white md:pt-30 md:pb-15 py-10">
         <div className="container">
           <h2 className="text-center text-title md:text-title-md mb-10 md:mb-18 font-everett">
             Our Core Principles
@@ -611,7 +611,7 @@ const WhoWeAre = () => {
         }}
       />
 
-      <section className="pb-5 md:pb-7.5 md:pt-30 pt-7.5 bg-white">
+      <section className="pb-5 md:pb-7.5 md:pt-15 pt-7.5 bg-white">
         <div className="container">
           <h1 className="text-title md:text-title-md font-everett mb-6 md:mb-8 md:!tracking-[-2.08px] !tracking-[-.52px] ">
             Meet the Makerrs
@@ -817,7 +817,7 @@ const WhoWeAre = () => {
         type="semi"
       />
 
-      <div className="pb-15 md:pb-15">
+      <div className="pb-15 md:pb-15 md:pt-12">
         <ExploreMoreSection
           className="pb-15 md:pb-30"
           cards={explorecards}

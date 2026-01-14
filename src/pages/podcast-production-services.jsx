@@ -391,7 +391,7 @@ const Design = ({ setisPopupOpen }) => {
 
       <TrustedBrandsSection className="py-12 md:pt-15 md:pb-15" />
      
-     <div id="leap-explore">
+     <div id="leap-explore" className='md:py-12'>
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-0 pb-15 md:pb-3"

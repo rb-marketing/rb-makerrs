@@ -340,7 +340,7 @@ const Design = ({ setisPopupOpen }) => {
         testimonialData={createTestimonialData}
         type="semi"
       />
-      <div id="leap-explore">
+      <div id="leap-explore" className='md:py-12'>
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"

@@ -220,7 +220,7 @@ export const CSRPage = () => {
         </div>
       </section>
 
-      <section className="overflow-hidden pt-15 pb-0 md:pt-0 md:pb-0">
+      <section className="overflow-hidden pt-15 pb-0 md:pt-0 md:pb-0 bg-rb-service-grey">
         <div className="flex flex-wrap items-center">
           <div className="w-full md:w-1/2">
             <div className="block md:hidden px-4">
@@ -328,7 +328,7 @@ export const CSRPage = () => {
 
         <Testimonials
           title={'A Note from Debarti'}
-          className="pb-15 md:pb-30 pt-0"
+          className="pb-15 md:pb-30 pt-0 !bg-rb-service-grey"
           testimonialData={Testimonial_1}
           htmlQuote="true"
           type="semi"

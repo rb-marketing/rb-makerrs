@@ -1087,7 +1087,7 @@ We also handle video versioning supporting custom adaptations requirements so th
 
       <TrustedBrandsSection className="bg-white py-7.5 md:py-15" />
 
-      <div id="leap-explore">
+      <div id="leap-explore" className='md:py-12'>
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"

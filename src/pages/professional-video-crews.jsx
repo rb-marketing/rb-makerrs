@@ -481,7 +481,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
         }
       />
 
-      <section className="md:py-30 py-12">
+      <section className="md:pb-30 md:pt-12 py-12">
         <div className="container">
           <div className="md:text-[40px] font-everett text-[26px] md:mb-15 mb-8  font-medium md:leading-[44px] leading-[28px] tracking-[-0.52px] md:tracking-[-1.6px]">
             International Video Production Services for B2B Brands
@@ -504,7 +504,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
         </div>
       </section>
 
-      <section className="md:py-30 py-10">
+      <section className="bg-rb-service-grey md:py-30 py-10">
         <div className="container">
           <div className="flex flex-wrap -mx-4 items-center md:flex-row flex-col gap-8 md:gap-0">
             <div className="w-full md:w-2/5 px-4">
@@ -684,7 +684,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       />
 
       <TrustedBrandsSection className="bg-white py-7.5 md:py-15" />
-      <div id="leap-explore">      
+      <div id="leap-explore" className='md:py-12'>      
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"
