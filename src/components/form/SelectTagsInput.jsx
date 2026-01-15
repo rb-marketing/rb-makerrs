@@ -19,9 +19,9 @@ const customStyles = {
   }),
   multiValue: (provided) => ({
     ...provided,
-    backgroundColor: '#FDE0E3', // Set the background color for selected tags
+    backgroundColor: 'rgba(7,239,90,0.7)', // Set the background color for selected tags
     borderRadius: '32px', // Set rounded corners for selected tags
-    color: '#ef001c',
+    color: '#000',
     padding: '4px 10px',
     fontSize: '12px',
     fontWeight: '600',
@@ -32,17 +32,17 @@ const customStyles = {
   }),
   multiValueLabel: (provided) => ({
     ...provided,
-    color: '#ef001c', // Set the text color for selected tag labels
+    color: '#000', // Set the text color for selected tag labels
   }),
   multiValueRemove: (provided) => ({
     ...provided,
-    color: '#ef001c', // Set the color for the remove (x) button
+    color: '#000', // Set the color for the remove (x) button
     padding: '0px',
     width: '16px',
     height: '16px',
     marginLeft: '4px',
     ':hover': {
-      backgroundColor: '#F9BCBC', // Set a different color on hover
+        backgroundColor: 'rgba(7,239,90,0.7)', // Set the background color for selected tags
     },
   }),
 }

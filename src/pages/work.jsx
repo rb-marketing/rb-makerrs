@@ -23,33 +23,25 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
   const _posts = workPosts
 
   const caseStudyTags = [
-    { 
-      name: 'Featured', 
-      url: 'featured',
+    // { 
+    //   name: 'Featured', 
+    //   url: 'featured',
+    // },
+     { 
+      name: 'Design', 
+      url: 'brand-designs',
     },
     { 
       name: 'Videos', 
       url: 'videos',
     },
-    { 
-      name: 'Design', 
-      url: 'brand-designs',
+     { 
+      name: 'Podcast', 
+      url: 'podcast',
     },
     { 
       name: 'Campaign', 
       url: 'campaigns',
-    },
-    { 
-      name: 'AI', 
-      url: 'ai-creatives',
-    },
-    { 
-      name: 'Experience', 
-      url: 'brand-experiences',
-    },
-    { 
-      name: 'Book a Crew',
-      url: 'international-video-crews',
     }
   ]
 
@@ -677,7 +669,7 @@ const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || ca
               {caseStudyTags.map(tag => (
                 <a key={tag.url} href="#" onClick={e => { e.preventDefault(); handleTagClick(tag.url) }}
                    className={`inline-block align-top leading-[1] p-0 m-0 !mr-[9px] text-[32px] font-medium font-everett relative whitespace-nowrap
-                   ${selectedTag === tag.url ? 'text-rb-red after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[7px]' : 'text-[#11101080] hover:text-rb-red'}`}>
+                   ${selectedTag === tag.url ? 'text-rb-link-green after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[7px]' : 'text-[#11101080] hover:text-rb-link-green'}`}>
                   {tag.name}
                 </a>
               ))}
@@ -689,11 +681,7 @@ const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || ca
         {selectedTag === 'videos' ? (
           <section className={`overflow-hidden pb-18 pt-18 md:pb-0`}>
             <div className="container">
-              <LineHeading className="mb-6 md:mb-9">FEATURED WORK</LineHeading>
-              <h3 className="text-title md:text-title-md mb-12 md:mb-14 font-everett max-w-[911px]">
-                Explore our Explainer Video Portfolio
-              </h3>
-              <div className="grid gap-y-8 md:gap-y-[42px] gap-x-5 md:gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 md:mt-10">
+              <div className="grid gap-y-8 md:gap-y-[42px] gap-x-5 md:gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 md:mt-0">
                 {workData.slice(0, 8).map((v) => (
                   <PlayCard
                     onClick={() => {

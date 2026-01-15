@@ -285,6 +285,7 @@ const Design = ({ setisPopupOpen }) => {
         title="Premium Branding and Brand Design Services | Makerrs"
         description="Get brand identity design, packaging design, editorial design, experiential design, motion graphics and more. Build brand differentiation and human connect with us."
         url="https://www.staging.b2c.redbangle.com/brand-strategy-agency-india"
+        keywords="b2b brand design, b2b brand agency, b2b branding services, b2b creative agency"
       />
       <ServiceHeroSection
         className=""
@@ -340,7 +341,7 @@ const Design = ({ setisPopupOpen }) => {
         testimonialData={createTestimonialData}
         type="semi"
       />
-      <div id="leap-explore">
+      <div id="leap-explore" className='md:py-12'>
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"

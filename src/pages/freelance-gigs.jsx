@@ -21,7 +21,7 @@ const TNC = [
     (
       <>
       <div>
-        Head to <a href="https://collab.redbangle.com/login" target="_blank" class="text-blue-500 hover:text-blue-700" >
+        Head to <a href="https://collab.redbangle.com/login" target="_blank" class="underline hover:text-rb-link-green" >
         https://collab.redbangle.com/login</a> and click on the &rdquo;Sign&rdquo; Up button.
       </div>
       </>
@@ -64,7 +64,7 @@ const TNC = [
     (
       <>
       <div>
-      Yes, you can edit your profile at any time after registering on our <a href="https://collab.redbangle.com/login" target="_blank" class="text-blue-500 hover:text-blue-700" >
+      Yes, you can edit your profile at any time after registering on our <a href="https://collab.redbangle.com/login" target="_blank" class="underline hover:text-rb-link-green" >
       platform</a>.
       </div>
       </>
@@ -77,7 +77,7 @@ const TNC = [
     (
       <>
       <div>
-       Use the “Forgot Password” button on the <a href="https://collab.redbangle.com/login" target="_blank" class="text-blue-500 hover:text-blue-700">
+       Use the “Forgot Password” button on the <a href="https://collab.redbangle.com/login" target="_blank" class="underline hover:text-rb-link-green">
        login page</a>. This will take you to the password reset process.
       </div>
       </>
@@ -98,7 +98,7 @@ const TNC = [
 const Agreement = [
   {
     key: 0,
-    title: 'What services does Red Bangle provide?',
+    title: 'What services does Makerrs provide?',
     content:
       'We are strategists, creators, designers, filmmakers and technologists crafting brands, campaigns, content and experiences for ambitious B2B enterprises across the world.',
   },
@@ -114,12 +114,6 @@ const Agreement = [
     content:
       "If you're selected for a project, you'll receive notification via email and a Project Manager will call you to discuss the scope and schedule.",
   },
-  // {
-  //   key: 3,
-  //   title: "How will I be notified if I'm chosen for a project?",
-  //   content:
-  //     "If you're selected for a project, you'll receive notification via email and a Producer will call you to confirm the gig.",
-  // },
   {
     key: 4,
     title: 'What does a typical project workflow entail?',
@@ -173,15 +167,15 @@ const Agreement = [
   },
   {
     key: 5,
-    title: 'Can I publicly share the work I do with or for Red Bangle?',
+    title: 'Can I publicly share the work I do with or for Makerrs?',
     content:
       'Most of our service agreements with clients prevent us from publicly sharing any of the work we create for them. And if any specific work contains confidential client data, then everyone involved has to delete files after handing this over and the work can’t be shared on any public or private domain. Therefore, our platform terms do not allow you to showcase any work. However, if you wish to share a specific piece of work, please email us to request for clearance. We will then approach the client for the same, and should they allow this - you and us can both share the work publicly. ',
   },
   {
     key: 6,
-    title: 'What can I do on the Red Bangle Platform?',
+    title: 'What can I do on the Makerrs Platform?',
     content:
-      "The Red Bangle platform serves as your central hub for seamless project work. You can easily upload, download, and review all project files, including briefs, decks, docs, films and footage. Our platform ensures smooth creative workflows between you, our clients, and us by keeping everything organized in one convenient place.",
+      "The Makerrs platform serves as your central hub for seamless project work. You can easily upload, download, and review all project files, including briefs, decks, docs, films and footage. Our platform ensures smooth creative workflows between you, our clients, and us by keeping everything organized in one convenient place.",
   },
 ]
 const FAQ = [
@@ -189,7 +183,7 @@ const FAQ = [
     key: 0,
     title: 'What documents do you require for project confirmation and payment processing?',
     content:
-      'Empanelling with Red Bangle is a straightforward process. We only need two essential documents: a Master Services Agreement and your bank account details.',
+      'Empanelling with Makerrs is a straightforward process. We only need two essential documents: a Master Services Agreement and your bank account details.',
   },
   {
     key: 1,
@@ -213,154 +207,150 @@ const FAQ = [
 
 const createTestimonialData = [
      {
-    key: 2,
+    key: 0,
     quote:
-      'Working with Red Bangle is always like a very very kind and impersonated manual. You can always ask anything anytime and you get the answer. You are always up to date, very well briefed and also the people at the shooting site are aware and know when and what to do.',
+      'Working with Makerrs is always like a very, very kind and impersonated manual. You can always ask anything anytime, and you get the answer. You are always up to date, very well briefed, and also the people at the shooting site are aware and know when and what to do.',
     name: 'Mert Beken',
     designation: 'Cinematographer',
     company: 'Germany',
     image: {
       srcSet:
-        `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator9.webp 533w, ${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator9.webp 1066w`,
+        `/img/collab/collaborator9.webp 533w, /img/collab/collaborator9.webp 1066w`,
       sizes: '(max-width:768px) 533px, 1066px',
     },
   },
    {
     key: 1,
     quote:
-      'I was contacted by Red Bangle to help produce a livestream in Ho Chi Minh City, Vietnam. Communication was very easy throughout. That was very helpful while working 3000 kilometers apart. The team is young and motivated. Payment was done swiftly. Definitely a great partner to be working with!',
+      'I was contacted by Makerrs to help produce a livestream in Ho Chi Minh City, Vietnam. Communication was very easy throughout. That was very helpful while working 3000 kilometers apart. The team is young and motivated. Payment was done swiftly. Definitely a great partner to be working with!',
     name: 'Hugo Leenhardt',
     designation: 'Cinematographer',
     company: 'Vietnam',
     image: {
       srcSet:
-        `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator4.webp 533w, ${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator4.webp 1066w`,
+        `/img/collab/collaborator4.webp 533w, /img/collab/collaborator4.webp 1066w`,
       sizes: '(max-width:768px) 533px, 1066px',
     },
   },
    {
-    key: 10,
+    key: 2,
     quote:"Their process is seamless, their work ethic is impeccable, and the way they bring collaborators into their fold makes you feel like part of something bigger. The culture they’ve built rubs off on you, making every collaboration not just efficient but truly enjoyable. Looking forward to many more projects together!",
     name: 'Arati Bhatt',
     designation: 'Line Producer',
     company: 'India',
     image: {
       srcSet:
-        `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/arati_bhatt.jpg 533w, ${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/arati_bhatt.jpg 1066w`,
+        `/img/collab/arati_bhatt.jpg 533w, /img/collab/arati_bhatt.jpg 1066w`,
       sizes: '(max-width:768px) 533px, 1066px',
     },
   },
    {
     key: 3,
     quote:
-      'This year we had the pleasure of working with Red Bangle on two different projects in Las Vegas. Their people were great to work with, and a special shout out to the producers who were our main point of contact for them both. The shoots went off without a hitch. Looking forward to working with them many more times in the future.',
+      'This year, we had the pleasure of working with Makerrs on two different projects in Las Vegas. Their people were great to work with, and a special shout-out to the producers who were our main point of contact for them both. The shoots went off without a hitch. Looking forward to working with them many more times in the future.',
     name: 'Mike Levy',
     designation: 'Group Producer',
     company: 'USA',
     image: {
       srcSet:
-        `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator11.webp 533w, ${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator11.webp 1066w`,
+        `/img/collab/collaborator11.webp 533w, /img/collab/collaborator11.webp 1066w`,
       sizes: '(max-width:768px) 533px, 1066px',
     },
   },
    {
-    key: 8,
+    key: 4,
     quote:
-      "I had the pleasure of working with Red Bangle as a sound engineer on two projects—one for Xiaomi and another for Redmi. Both experiences were incredibly smooth and professionally managed. The team at Red Bangle is highly organized, creative, and collaborative, making every project a rewarding experience.",
+      "I had the pleasure of working with Makerrs as a sound engineer on two projects—one for Xiaomi and another for Redmi. Both experiences were incredibly smooth and professionally managed. The team at Makerrs is highly organized, creative, and collaborative, making every project a rewarding experience.",
     name: 'Prince Prabjyot',
     designation: 'Music Producer',
     company: 'India',
     image: {
       srcSet:
-        `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/prince_prabjyot.jpg 533w, ${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/prince_prabjyot.jpg 1066w`,
+        `/img/collab/prince_prabjyot.jpg 533w, /img/collab/prince_prabjyot.jpg 1066w`,
       sizes: '(max-width:768px) 533px, 1066px',
     },
   },
    {
-    key: 9,
+    key: 5,
     quote:
-      "I loved working with the Red Bengal team! Super sorted, effortless teamwork, and a fun vibe! That's what makes the creative process smooth and exciting.",
+      "I loved working with the Makerrs team! Super sorted, effortless teamwork, and a fun vibe! That's what makes the creative process smooth and exciting.",
     name: 'Arindham Debnath',
     designation: 'Director of Photography',
     company: 'India',
     image: {
       srcSet:
-        `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/arindham_debnath.jpg 533w, ${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/arindham_debnath.jpg 1066w`,
+        `/img/collab/arindham_debnath.jpg 533w, /img/collab/arindham_debnath.jpg 1066w`,
       sizes: '(max-width:768px) 533px, 1066px',
     },
   },
   {
     key: 6,
     quote:
-      "Working with Red Bangle was nothing short of a delight. Special shoutout to Maanvi, & Debarti. They worked with us tirelessly, through nights & helped deliver exactly what we promised to our clients. With a strong creative team and in-house producers - Red Bangle is a dream to work with.",
+      "Working with Makerrs was nothing short of a delight. Special shoutout to Maanvi, & Debarti. They worked with us tirelessly, through nights & helped deliver exactly what we promised to our clients. With a strong creative team and in-house producers, Makerrs is a dream to work with.",
     name: 'Nithin Anil',
     designation: 'Director',
     company: 'India',
     image: {
       srcSet:
-        `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/nithin_anil.jpg 533w, ${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/nithin_anil.jpg 1066w`,
+        `/img/collab/nithin_anil.jpg 533w, /img/collab/nithin_anil.jpg 1066w`,
       sizes: '(max-width:768px) 533px, 1066px',
     },
-  },
- 
-
- 
- 
+  }
 ]
 
 const sliderCards = [
   {
     key: 1,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/icon-01.svg`,
+    imgurl: `/img/collab/icon1.svg`,
     alt: 'icon-01',
     title: 'Curated Gigs',
-    desc: 'Curated gigs that suit your skill, experience and location (where it matters).',
+    desc: 'Get curated gigs that suit your skill, experience, and location (where it matters).',
   },
   {
     key: 2,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/services/approach/s-circles.svg`,
+    imgurl: `/img/collab/icon2.svg`,
     alt: 'icon-02',
     title: 'Exciting Brands',
-    desc: 'Work with ambitious brands on strategy, branding, campaigns, content, immersive experiences and more.',
+    desc: 'Work with ambitious brands on strategy, design, content, campaigns, immersive experiences, video production, and more.',
     width:60,
     hight:60
   },
 
   {
-    key: 4,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/icon-04.svg`,
+    key: 3,
+    imgurl: `/img/collab/icon3.svg`,
     alt: 'icon-05',
     title: 'Professional Workflows',
-    desc: 'Seasoned Creative Project Managers who ensure seamless project coordination and proactive communication.',
+    desc: 'Work with seasoned Creative Project Managers. Experience proactive communications and coordination on every project.',
   },
     {
-    key: 3,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/icon-02.svg`,
+    key: 4,
+    imgurl: `/img/collab/icon4.svg`,
     alt: 'icon-02',
     title: 'Creative Value',
-    desc: 'Meaningful contribution opportunities. Your creative voice matters on the project.',
+    desc: 'Get meaningful contribution opportunities. Work on projects where your creative voice matters.',
   },
    
   {
-    key: 6,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/icon-05.svg`,
+    key: 5,
+    imgurl: `/img/collab/icon5.svg`,
     alt: 'icon-05',
     title: 'Cloud Collaboration',
-    desc: 'Custom-built technology platform that enables easy collaboration, reviews and file sharing on the cloud.',
+    desc: 'Work with us on our Creative Cloud platform. Enjoy the ease of creative collaboration, reviews, and file sharing.',
   },
   {
-    key: 5,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/icon-06.svg`,
+    key: 6,
+    imgurl: `/img/collab/icon6.svg`,
     alt: 'icon-06',
     title: 'Great Experience',
-    desc: 'Long-term relationships and mutual growth. Every project is an opportunity to create something awesome.',
+    desc: 'We believe in long-term relationships and mutual growth. Every project is an opportunity to make something awesome.',
   },
 ]
 
 const collaborators = [
      {
     id: 0,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/arati_bhatt.jpg`,
+    imgurl: `/img/collab/arati_bhatt.jpg`,
     width: '153',
     height: '34',
     alt: 'collaborator6',
@@ -370,7 +360,7 @@ const collaborators = [
   },
     {
     id: 1,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator6.webp`,
+    imgurl: `/img/collab/collaborator6.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator6',
@@ -380,7 +370,7 @@ const collaborators = [
   },
   {
     id: 2,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator12.webp`,
+    imgurl: `/img/collab/collaborator12.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator12',
@@ -390,7 +380,7 @@ const collaborators = [
   },
   {
     id: 3,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator9.webp`,
+    imgurl: `/img/collab/collaborator9.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator9',
@@ -400,7 +390,7 @@ const collaborators = [
   },
    {
     id: 4,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/nithin_anil.jpg`,
+    imgurl: `/img/collab/nithin_anil.jpg`,
     width: '153',
     height: '34',
     alt: 'collaborator3',
@@ -410,7 +400,7 @@ const collaborators = [
   },
   {
     id: 5,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator1.webp`,
+    imgurl: `/img/collab/collaborator1.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator1',
@@ -420,7 +410,7 @@ const collaborators = [
   },
   {
     id: 6,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator2.webp`,
+    imgurl: `/img/collab/collaborator2.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator2',
@@ -430,7 +420,7 @@ const collaborators = [
   },
     {
     id: 7,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/prince_prabjyot.jpg`,
+    imgurl: `/img/collab/prince_prabjyot.jpg`,
     width: '153',
     height: '34',
     alt: 'collaborator4',
@@ -440,7 +430,7 @@ const collaborators = [
   },
   {
     id: 8,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator4.webp`,
+    imgurl: `/img/collab/collaborator4.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator4',
@@ -450,7 +440,7 @@ const collaborators = [
   },
   {
     id: 9,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator5.webp`,
+    imgurl: `/img/collab/collaborator5.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator5',
@@ -461,7 +451,7 @@ const collaborators = [
 
  {
     id: 10,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/arindham_debnath.jpg`,
+    imgurl: `/img/collab/arindham_debnath.jpg`,
     width: '153',
     height: '34',
     alt: 'collaborator5',
@@ -471,7 +461,7 @@ const collaborators = [
   },
     {
     id: 11,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator11.webp`,
+    imgurl: `/img/collab/collaborator11.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator11',
@@ -481,7 +471,7 @@ const collaborators = [
   },
   {
     id: 12,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator8.webp`,
+    imgurl: `/img/collab/collaborator8.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator8',
@@ -491,18 +481,14 @@ const collaborators = [
   },
   {
     id: 13,
-    imgurl: `${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/collaborator7.webp`,
+    imgurl: `/img/collab/collaborator7.webp`,
     width: '153',
     height: '34',
     alt: 'collaborator7',
     className: 'md:w-[298px] w-[138px]',
     name: 'Kostis Nikolas',
     designation: 'DOP',
-  },
-  
-
-
-
+  }
 ]
 
 const steps = [
@@ -528,7 +514,7 @@ const steps = [
     id: 4,
     number: '04',
     header: 'Meet and Greet: ',
-    text: 'We handpick the folks we work with. Therefore, once you’ve created a complete profile, one of our Project Managers will get in touch to get to know you and your work.',
+    text: 'We handpick the folks we work with. Therefore, once you’ve created a complete profile, one of our Creative Project Managers will get in touch to get to know you and your work.',
   },
   {
     id: 5,
@@ -542,7 +528,7 @@ const steps = [
     header: 'Stay in Touch: ',
     text: (
       <>
-        We love hearing from our collaborators. And we know that you are always doing new work, so feel free to <a  href="/contact?type=collab"  class="text-blue-500 underline hover:text-blue-700" target="_blank" >write in to us</a> and share your latest work.
+        We love hearing from our collaborators. And we know that you are always doing new work, so feel free to <a  href="/contact?type=collab"  class="underline hover:text-rb-link-green" target="_blank" >write in to us</a> and share your latest work.
       </>
     ),
   },
@@ -575,7 +561,7 @@ const Collab = () => {
       <section className="py-14 md:py-24 bg-rb-mercury">
         <div className="container">
           <h1 className="uppercase mb-6 md:mb-18 font-everett font-medium text-[45px] leading-[1.07] tracking-[-0.89px] md:text-[110px] md:leading-[122px] md:tracking-[-1.76px] ">
-          COLLABORATE WITH RED BANGLE
+          GET FREELANCE GIGS WITH MAKERRS
           </h1>
           <div style={{ display: 'none' }}>
             <h2>Work With Us In Creative Agency As A Collaborator</h2>
@@ -587,7 +573,7 @@ const Collab = () => {
           </div>
 
           <p className="md:text-[32px] font-semibold md:leading-10 leading-5 tracking-[-0.56px] md:tracking-[-1.28px]">
-        From Copywriters and Filmmakers to Graphic Designers and Techies—we like collaborating with amazing independent talent and specialised studios. Join our creative Collaborative today.
+        From Copywriters and Videographers to Graphic Designers and Techies—we love collaborating with amazing independent talent and specialised studios. Join our creative collaborative today.
           </p>
           <div className="flex md:flex-row flex-col gap-3 mt-10 md:mt-16">
             <Button
@@ -598,7 +584,7 @@ const Collab = () => {
               Sign up 
             </Button>
             <Button
-              className="font-bold  w-full md:w-auto !inline-flex uppercase "
+              className="font-bold w-full md:w-auto !inline-flex uppercase "
               intent="p-secondary"
               href="https://collab.redbangle.com/login"
               target="_blank"
@@ -611,9 +597,9 @@ const Collab = () => {
       </section>
       <TrustedBrandsSection
         className="bg-white py-12 md:py-30"
-        heading="COLLABORATE FOR AMBITIOUS BRANDS"
+        heading="CREATE FOR AMBITIOUS BRANDS"
       />
-      <section className="py-14 md:py-24 bg-rb-mercury overflow-hidden">
+      <section className="py-14 md:pb-5 md:pt-0 overflow-hidden">
         <div className="container">
           <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
           Join our Creative Collaborative
@@ -624,10 +610,12 @@ const Collab = () => {
               {sliderCards.map(({ key, imgurl, alt, title, desc }) => (
                 <div
                   key={key}
-                  className="bg-white py-6 md:py-8 px-5 md:px-6 rounded-md md:rounded-lg "
+                  className="bg-rb-service-grey py-6 md:py-8 px-5 md:px-6 rounded-md md:rounded-lg "
                 >
                   <div className=" text-black">
-                    <img src={imgurl} alt={alt} />
+                    <div className='w-12 h-12'>
+                      <img src={imgurl} alt={alt} />
+                    </div>
                     <div className="mt-4 mb-2 md:mb-[6px] text-[16px] leading-[1.1] font-medium font-everett md:text-input-large">
                       {title}
                     </div>
@@ -654,7 +642,8 @@ const Collab = () => {
           </div>
         </div>
       </section>
-       <section className="py-12 md:py-30 overflow-hidden">
+
+       <section className="pt-12 pb-30 md:py-30 overflow-hidden">
         <div className="container">
           <div className="text-title md:text-title-md font-everett ">
             Featured Collaborators
@@ -735,6 +724,7 @@ const Collab = () => {
           </Marquee>
         </div>
       </section>
+
       <section>
         <div className="container">
           <div className="text-title md:text-title-md font-everett text-center md:text-left md:max-w-[830px] mb-12 md:mb-20">
@@ -744,7 +734,7 @@ const Collab = () => {
             <div className="w-full md:w-5/12 ">
               <div className="h-full">
                 <img
-                  src={`${process.env.NEXT_PUBLIC_HOST_URL}/img/collab/get-started.webp`}
+                  src={`/img/collab/get-started.webp`}
                   alt="get-started"
                   className="w-full h-full object-cover"
                 />
@@ -756,9 +746,9 @@ const Collab = () => {
                   key={id}
                   className="mb-8 last:mb-10 text-[16px] leading-[26px] md:text-[20px] tracking-[-0.16px] font-medium font-everett"
                 >
-                  <span className="text-rb-red">{number}</span>&nbsp;
+                  <span className="text-rb-link-green">{number}</span>&nbsp;
                   <span className="text-black">{header}</span>
-                  <span className="tracking-[-0.256px] font-opensans font-normal text-[#808080]">
+                  <span className="tracking-[-0.256px] font-opensans font-normal">
                     {text}
                   </span>
                 </div>
@@ -774,9 +764,10 @@ const Collab = () => {
           </div>
         </div>
       </section>
+
       <Testimonials
         title={'WHAT OUR COLLABORATORS SAY'}
-        className="py-12 md:py-30"
+        className="pb-12 pt-30 md:py-30"
         testimonialData={createTestimonialData}
         type="semi"
       />
@@ -788,12 +779,6 @@ const Collab = () => {
                 <h3 className="max-w-[250px] mb-8 text-title-md-tight font-everett text-rb-black">
                   Frequently Asked Questions
                 </h3>
-                {/* <div className="text-[16px] md:text-[20px] leading-[1.5] text-rb-black/80">
-                  For any queries please contact us at{' '}
-                  <a className="text-rb-red" href="mailto:hello@redbangle.com">
-                    hello@redbangle.com
-                  </a>
-                </div> */}
               </div>
             </div>
             <div className="w-full md:w-7/12">
@@ -838,7 +823,6 @@ const Collab = () => {
         className={`fixed bg-white z-[9999] inset-0 w-full h-full full-width-modal cursor-auto ${modal ? 'modal-open' : ''
           }`}
       >
-        {/* <CollabForm modalTrigger={modalTrigger} /> */}
         <CollabFormRecreate modalTrigger={modalTrigger} />
       </div>
       <Script id="schema" type="application/ld+json">

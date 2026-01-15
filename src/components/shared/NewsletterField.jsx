@@ -43,14 +43,14 @@ export const NewsletterField = () => {
           name="CONTACT_EMAIL"
           type="email"
           placeholder="Enter email to subscribe"
-          className="border border-rb-dune/30 w-full h-12 md:h-[58px] tracking-[-0.16px] rounded-6xl pl-5 md:pl-6 pr-28 font-semibold md:font-bold placeholder:text-rb-black/70 bg-rb-black/5"
+          className="border border-rb-black w-full h-12 md:h-[58px] tracking-[-0.16px] rounded-6xl pl-5 md:pl-6 pr-28 font-semibold placeholder:text-rb-black"
         />
         <ArrowButton
           disabled={disabled}
           onClick={() => {
             setOpen(true)
           }}
-          className="absolute right-2 hover:bg-rb-black duration-300 ease-out max-w-[76px] md:max-w-[92px]"
+          className="absolute right-2 hover:bg-rb-btn-hover duration-300 ease-out max-w-[76px] md:max-w-[92px]"
         />
       </div>
       <FormProvider {...methods}>

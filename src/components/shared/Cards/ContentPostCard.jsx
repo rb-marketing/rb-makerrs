@@ -12,7 +12,7 @@ export const ContentPostCard = ({
 }) => (
   <a
     href={`/work${href}`}
-    className={`flex flex-col group ${className}`}
+    className={`flex flex-col group ${className} text-rb-black hover:text-rb-black`}
     data-rb-cursor-type={cursorText}
     
   >

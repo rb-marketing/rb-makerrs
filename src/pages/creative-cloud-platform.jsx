@@ -306,7 +306,7 @@ export const TechnologyPlatform = () => {
             muted
             loop
             playsInline
-            src="https://d2z2y0r24g3lw0.cloudfront.net/group-assets/who-we-are/rb_cloud_platform_video.mp4"
+            src="img/technology/hero.mp4"
             poster="/img/who-we-are/rb_cloud_platform_thumbnail.png"
             className="web-vid w-full h-full object-cover relative"
           ></video>
@@ -317,7 +317,7 @@ export const TechnologyPlatform = () => {
           muted
           loop
           playsInline
-          src="https://d2z2y0r24g3lw0.cloudfront.net/group-assets/who-we-are/rb_cloud_platform_video.mp4"
+          src="img/technology/hero.mp4"
           poster="/img/who-we-are/rb_cloud_platform_thumbnail.png"
           className="block md:hidden w-full h-full object-cover"
         ></video>
@@ -401,7 +401,7 @@ export const TechnologyPlatform = () => {
         heading="Our patent-pending technology"
       />
       
-      <Scrollspy centered secStyles = "md:!pb-15 md:!pt-7">
+      <Scrollspy centered secStyles = "md:!pb-15 md:!pt-15">
         {services.map((s, si) => (
           <section
             key={s.key}
@@ -446,7 +446,7 @@ export const TechnologyPlatform = () => {
         ))}
       </Scrollspy>
 
-      <section className={`overflow-hidden bg-white !pt-[32px] !pb-15 md:!py-15 `}>
+      <section className={`overflow-hidden bg-white !pt-[32px] !pb-15 md:!pb-15 md:!pt-30 `}>
         <div className="container text-center">
           <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
             Our Platform vs Other Workflow <br className='hidden md:block'/>Management Platforms
@@ -463,7 +463,7 @@ export const TechnologyPlatform = () => {
                     Other Project Management Tools
                     </th>
                     <th className="md:!w-[313px] capitalize max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-rb-link-green md:whitespace-nowrap text-left">
-                    Red Bangle Platform
+                    Our Creative Cloud Platform
                     </th>
                   </tr>
                 </thead>

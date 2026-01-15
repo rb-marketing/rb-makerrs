@@ -261,7 +261,7 @@ export const Footer = ({ hasContactForm }) => {
   currentPath !== '/custom-campaign-landing-page' &&
   currentPath !== '/end-to-end-video-production' &&
   currentPath !== '/career' && (
-    currentPath === '/collab' ? (
+    currentPath === '/freelance-gigs' ? (
       <ContactSection type="collab" />
     ) : (
       <ContactSection />
@@ -400,7 +400,7 @@ export const Footer = ({ hasContactForm }) => {
                     </Link>
                   </div>
                   </div>
-                  <div className="pl-2.5 md:pl-0">
+                  <div className="pl-2.5 md:pl-0 md:-ml-[10px]">
                     <div className={styles.title}> SERVICES</div>
                     <div className={styles.links}>
                       <Link
@@ -432,35 +432,35 @@ export const Footer = ({ hasContactForm }) => {
                         
                       </Link>
                       <Link
-                        href=''
+                        href='/explainer-video-production-services'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
                         Explainer Videos
                       </Link>
                       <Link
-                        href=''
+                        href='/corporate-video-production-services'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
                         Corporate Videos
                       </Link>
                       <Link
-                        href=''
+                        href='/video-testimonial-production'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
                         Case Study Videos
                       </Link>
                       <Link
-                        href=''
+                        href='recruitment-video-production'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
                         Recruitment Videos
                       </Link>
                       <Link
-                        href=''
+                        href='/ai-video-agency'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
@@ -489,7 +489,7 @@ export const Footer = ({ hasContactForm }) => {
                       </Link>
                     </div>
                   </div>
-                  <div className="pr-2.5 md:pr-0">
+                  <div className="pr-2.5 md:pr-0 md:pl-[3.2rem]">
                     <div className={styles.title}>WORK</div>
                     <div className={styles.links}>
                       <Link

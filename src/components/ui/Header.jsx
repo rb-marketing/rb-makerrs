@@ -30,27 +30,20 @@ const outsideLinks = [
   {
     title: 'Services',
     menu: [
-      {
-        title: 'Design',
-        href: '/brand-design-agency'
-      },
-      {
-        title: 'Video',
-        href: '/video-production'
-      },
-      {
-        title: 'Podcast',
-        href: '/podcast-production-services'
-      },
-      {
-        title: 'Campaign',
-        href: '/advertising-agency'
-      },
-      {
-        title: 'Book a Crew',
-        href: '/professional-video-crews'
-      },
+      { title: 'Design', href: '/brand-design-agency'},
+      { title: 'Video', href: '/video-production' },
+      { title: 'Podcast', href: '/podcast-production-services'},
+      { title: 'Campaign', href: '/advertising-agency' },
+      { title: 'Book a Crew', href: '/professional-video-crews' },
     ],
+    subMenu: [
+      { title: "Explainer Video", href: "/explainer-video-production-services", type: "videos" },
+      { title: "Corporate Video", href: "/corporate-video-production-services", type: "videos" },
+      { title: "Case Study Video", href: "/video-testimonial-production", type: "videos" },
+      { title: "Recruitment Video", href:"/recruitment-video-production", type: "videos"},
+      { title: "GenAI Video", href:"/ai-video-agency", type: "videos"},
+      { title: "Brand Identity Design", href:"/brand-identity-design-services", type: "design"}
+    ]
   }
 
 ]
@@ -233,23 +226,88 @@ export const Header = () => {
                             </svg>
                           </div>
                         </button>
-                        <div className="absolute font-medium min-w-[210px] p-6 top-10 rounded-lg shadow-menu invisible group-hover:visible group-hover:opacity-100 transition-all opacity-0 flex flex-col z-[1] bg-white">
+                         <div className="absolute font-medium min-w-[210px] p-6 top-10 rounded-lg shadow-menu invisible group-hover:visible group-hover:opacity-100 transition-all opacity-0 flex flex-col z-[1] bg-white">
                           {l.menu?.map((lItem, li) => {
-                            const isComingSoon =
-                              lItem.title.includes('Coming soon')
-                            const comingSoonTags = lItem.title
-                              .replace('Coming soon', '')
-                              .trim()
-                            return isComingSoon ? (
-                              <span
-                                key={li}
-                                className="mt-4 first:mt-0 text-lg leading-6 text-rb-black"
+                            const isVideos = lItem.title === "Video";
+                            const isDesign = lItem.title === "Design";
+                            return isVideos ? (
+                              <div key={li} className="relative group/videos mt-4 first:mt-0">
+                              <Link
+                                href={lItem.href}
+                                className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-link-green transition-all"
                               >
-                                {comingSoonTags}
-                                <div className="text-[0.7875rem] relative bottom-[5px]">
-                                  Coming soon
-                                </div>
-                              </span>
+                                {lItem.title}
+                                <svg
+                                  width="21"
+                                  height="20"
+                                  viewBox="0 0 21 20"
+                                  className="ml-2 group-hover/videos:rotate-90 transition-all"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path d="M7.65234 13.7046L14.0942 7.26275" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                  <path d="M8.20312 6.84087L14.645 6.84087L14.645 13.2827" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                              </Link>
+
+                              {/* Submenu for Videos */}
+                              <div className="absolute top-0 left-full md:left-24 ml-4 md:ml-0 min-w-[225px] bg-white p-6 rounded-md shadow-lg opacity-0 group-hover/videos:opacity-100 pointer-events-none group-hover/videos:pointer-events-auto transition-all z-50">
+                                {l?.subMenu
+                                  ?.filter((sub) => sub.type === "videos")
+                                  .map((sub, si) => (
+                                    <Link
+                                      key={si}
+                                      href={sub.href}
+                                      className="block text-lg leading-6 text-rb-black hover:text-rb-link-green mt-4 first:mt-0 transition-all"
+                                    >
+                                      {sub.title}
+                                    </Link>
+                                  ))}
+                              </div>
+                            </div>
+                            ): isDesign ? (
+                              <div key={li} className="relative group/design mt-4 first:mt-0">
+                              <Link
+                                href={lItem.href}
+                                className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-link-green transition-all"
+                              >
+                                {lItem.title}
+                                <svg
+                                  width="21"
+                                  height="20"
+                                  viewBox="0 0 21 20"
+                                  className="ml-2 group-hover/design:rotate-90 transition-all"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path d="M7.65234 13.7046L14.0942 7.26275" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                  <path d="M8.20312 6.84087L14.645 6.84087L14.645 13.2827" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                              </Link>
+
+                              {/* Submenu for Design */}
+                              <div className="absolute top-0 left-full md:left-24 ml-4 md:ml-0 min-w-[240px] bg-white p-6 rounded-md shadow-lg opacity-0 group-hover/design:opacity-100 pointer-events-none group-hover/design:pointer-events-auto transition-all z-50">
+                                {l?.subMenu
+                                  ?.filter((sub) => sub.type === "design")
+                                  .map((sub, si) => (
+                                    <Link
+                                      key={si}
+                                      href={sub.href}
+                                      className="block text-lg leading-6 text-rb-black hover:text-rb-link-green mt-4 first:mt-0 transition-all"
+                                    >
+                                      {sub.title}
+                                    </Link>
+                                  ))}
+                              </div>
+                            </div>
+                            ):lItem.title.includes("Coming soon") ? (
+                              <span
+                              key={li}
+                              className="mt-4 first:mt-0 text-lg leading-6 flex text-rb-black transition-all"
+                            >
+                              {lItem.title.replace("Coming soon", "").trim()}
+                              <span className="text-[0.7875rem] ml-2">Coming soon</span>
+                            </span>
                             ) : (
                               <Link
                                 key={li}
