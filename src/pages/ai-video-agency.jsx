@@ -1404,7 +1404,7 @@ const AIvideoAgency = () => {
                     <th className="md:!w-[313px] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#030104] md:whitespace-nowrap text-left">
                       What Others Offer
                     </th>
-                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#FF0038] md:whitespace-nowrap text-left">
+                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#07ef5a] md:whitespace-nowrap text-left">
                       What you get with us
                     </th>
                   </tr>
@@ -1442,7 +1442,7 @@ const AIvideoAgency = () => {
 
       <TrustedBrandsSection className="bg-white pb-[48px] md:!pb-[80px]" />
 
-        <section className="py-18 md:py-30 bg-rb-mercury overflow-hidden">
+        <section className="py-18 md:py-30 overflow-hidden">
         <div className="container">
           <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
             How do we create GenAI Videos
@@ -1453,19 +1453,19 @@ const AIvideoAgency = () => {
               {sliderVerticleCards.map(({ key, imgurl, alt, title, desc }) => (
                 <div
                   key={key}
-                  className="bg-white py-6 md:py-8 px-5 md:px-6 rounded-md md:rounded-lg "
+                  className="bg-rb-service-grey py-6 md:py-8 px-5 md:px-6 rounded-md md:rounded-lg "
                 >
                   <div className=" text-black">
-                    {/* <img src={imgurl} alt={alt} width={60}/> */}
-                    <div className="mt-4 mb-2 md:mb-[6px] text-[16px] leading-[1.1] text-[#07ef5a] font-medium font-everett md:text-[32px]">
-                        {key}
-                      </div>
+                    {/* <img src={imgurl} alt={alt} /> */}
+                    <div className="mt-4 mb-2 md:mb-[6px] text-[16px] leading-[1.1] text-rb-link-green font-medium font-everett md:text-[32px]">
+                      {key}
+                    </div>
                     <div className="mt-4 mb-2 md:mb-[6px] text-[16px] leading-[1.1] font-medium font-everett md:text-input-large">
-                        {title}
-                      </div>
-                      <div className="text-sm md:text-[16px] md:leading-[1.5] opacity-80">
-                        {desc}
-                      </div>
+                      {title}
+                    </div>
+                    <div className="text-sm md:text-[16px] md:leading-[1.5] opacity-80">
+                      {desc}
+                    </div>
                   </div>
                 </div>
               ))}
