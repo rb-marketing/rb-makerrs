@@ -82,40 +82,6 @@ export const TechnologyPlatform = () => {
     },
   ]
 
-  const cards = [
-    {
-      id: 0,
-      serviceTitle: 'B2B Global Services',
-      serviceDescription:
-        'End–to-end creative solutions for global B2B enterprises.',
-      serviceAmblem: '/img/who-we-are/b2b_global_full.svg',
-      bgColor: 'rgb(147 0 0)',
-      textColor: '#ffffff',
-      href: process.env.NEXT_PUBLIC_B2B,
-    },
-    {
-      id: 1,
-      serviceTitle: 'B2C India Services',
-      serviceDescription:
-        'Brand Content solutions for consumer brands in India.',
-      serviceAmblem: '/img/who-we-are/b2c_india_full.svg',
-      bgColor: 'rgb(198, 0, 37)',
-      textColor: '#ffffff',
-      href: process.env.NEXT_PUBLIC_B2C,
-    },
-
-    // {
-    //   id: 2,
-    //   serviceTitle: 'AI Products',
-    //   serviceDescription:
-    //     'Artificial intelligence products that amplify brand communications.',
-    //   serviceAmblem: '/img/who-we-are/ai_products_full.svg',
-    //   bgColor: 'rgb(253, 2, 56)',
-    //   textColor: '#ffffff',
-    //   href: '',
-    // },
-  ]
-
   const tableData = [
     {
       icon: '/img/services/bulb.svg',

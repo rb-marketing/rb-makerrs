@@ -285,7 +285,6 @@ export const aboutServices = [
     img: '/img/who-we-are/B2B.jpg',
     imgmweb: '/img/who-we-are/B2B.jpg',
     alt: 'B2B Global',
-    href: process.env.NEXT_PUBLIC_B2B,
   },
   {
     id: 1,
@@ -294,7 +293,6 @@ export const aboutServices = [
     img: '/img/who-we-are/B2C.jpg',
     imgmweb: '/img/who-we-are/B2C.jpg',
     alt: 'B2C India',
-    href: process.env.NEXT_PUBLIC_B2C,
   },
   // {
   //   id: 2,
