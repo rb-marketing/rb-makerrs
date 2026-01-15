@@ -432,35 +432,35 @@ export const Footer = ({ hasContactForm }) => {
                         
                       </Link>
                       <Link
-                        href=''
+                        href='/explainer-video-production-services'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
                         Explainer Videos
                       </Link>
                       <Link
-                        href=''
+                        href='/corporate-video-production-services'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
                         Corporate Videos
                       </Link>
                       <Link
-                        href=''
+                        href='/video-testimonial-production'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
                         Case Study Videos
                       </Link>
                       <Link
-                        href=''
+                        href='recruitment-video-production'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
                         Recruitment Videos
                       </Link>
                       <Link
-                        href=''
+                        href='/ai-video-agency'
                         data-rb-cursor-state="invisible"
                         className="max-w-max ml-5 mt-[-5px]"
                       >
