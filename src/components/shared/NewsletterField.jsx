@@ -43,7 +43,7 @@ export const NewsletterField = () => {
           name="CONTACT_EMAIL"
           type="email"
           placeholder="Enter email to subscribe"
-          className="border border-rb-black w-full h-12 md:h-[58px] tracking-[-0.16px] rounded-6xl pl-5 md:pl-6 pr-28 font-semibold md:font-bold placeholder:text-rb-black"
+          className="border border-rb-black w-full h-12 md:h-[58px] tracking-[-0.16px] rounded-6xl pl-5 md:pl-6 pr-28 font-semibold placeholder:text-rb-black"
         />
         <ArrowButton
           disabled={disabled}
