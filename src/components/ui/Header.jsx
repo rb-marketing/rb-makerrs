@@ -39,11 +39,10 @@ const outsideLinks = [
     subMenu: [
       { title: "Explainer Video", href: "/explainer-video-production-services", type: "videos" },
       { title: "Corporate Video", href: "/corporate-video-production-services", type: "videos" },
-      { title: "Case Study Video", href: "/case-study-video-production-services", type: "videos" },
-      { title:"Recruitment Video", href:"/recruitment-video-production-services", type: "videos"},
-      { title:"GenAI Video", href:"/ai-video-agency", type: "videos"},
-      { title:"Podcast", href:"/podcast-video-agency", type: "videos"},
-      { title:"Brand Identity Design", href:"/brand-identity-design-services", type: "design"}
+      { title: "Case Study Video", href: "/video-testimonial-production", type: "videos" },
+      { title: "Recruitment Video", href:"/recruitment-video-production", type: "videos"},
+      { title: "GenAI Video", href:"/ai-video-agency", type: "videos"},
+      { title: "Brand Identity Design", href:"/brand-identity-design-services", type: "design"}
     ]
   }
 
@@ -235,7 +234,7 @@ export const Header = () => {
                               <div key={li} className="relative group/videos mt-4 first:mt-0">
                               <Link
                                 href={lItem.href}
-                                className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-red transition-all"
+                                className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-link-green transition-all"
                               >
                                 {lItem.title}
                                 <svg
@@ -259,7 +258,7 @@ export const Header = () => {
                                     <Link
                                       key={si}
                                       href={sub.href}
-                                      className="block text-lg leading-6 text-rb-black hover:text-rb-red mt-4 first:mt-0 transition-all"
+                                      className="block text-lg leading-6 text-rb-black hover:text-rb-link-green mt-4 first:mt-0 transition-all"
                                     >
                                       {sub.title}
                                     </Link>
@@ -270,7 +269,7 @@ export const Header = () => {
                               <div key={li} className="relative group/design mt-4 first:mt-0">
                               <Link
                                 href={lItem.href}
-                                className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-red transition-all"
+                                className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-link-green transition-all"
                               >
                                 {lItem.title}
                                 <svg
@@ -294,7 +293,7 @@ export const Header = () => {
                                     <Link
                                       key={si}
                                       href={sub.href}
-                                      className="block text-lg leading-6 text-rb-black hover:text-rb-red mt-4 first:mt-0 transition-all"
+                                      className="block text-lg leading-6 text-rb-black hover:text-rb-link-green mt-4 first:mt-0 transition-all"
                                     >
                                       {sub.title}
                                     </Link>

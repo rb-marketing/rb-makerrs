@@ -688,8 +688,8 @@ const CaseStudyVideoProduction = () => {
       redBangle: 'Cloud-based interactive reviews',
     },
     {
-      icon: '/img/explainer-video/flexible_turnaround_times.svg',
-      need: 'Deadlines',
+      icon: '/img/explainer-video/on_time_delivery.svg',
+      need: 'Turnaround Time',
       others: 'They work at their speed',
       redBangle: 'We work at the speed you need',
     },
@@ -705,12 +705,12 @@ const CaseStudyVideoProduction = () => {
       others: 'Emails, spreadsheets',
       redBangle: 'Cloud-based workflows, notifications',
     },
-    // {
-    //   icon: '/img/explainer-video/professional_project_management.svg',
-    //   need: 'Professional project management',
-    //   others: 'Emails, spreadsheets',
-    //   redBangle: 'Cloud-based workflows, notifications',
-    // },
+    {
+      icon: '/img/explainer-video/flexible_turnaround_times.svg',
+      need: 'Deadlines',
+      others: 'You follow up with them',
+      redBangle: 'We proactively plan, communicate',
+    },
   ]
 
   const processCards = [
