@@ -235,7 +235,7 @@ const BrandIdentityDesign = () => {
       key: 0,
       quote:
         <>
-          Makerrs brought a unique blend of clarity and creativity, translating complex healthcare concepts into a simple brand identity system that was 'full of heart'. They also created a cohesive website within incredibly tight deadlines. Their efficiency was pivotal in successfully launching our brand.
+          Makerrs brought a unique blend of clarity and creativity, translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website within incredibly tight deadlines. Their efficiency was pivotal in successfully launching our brand.
         </>,
       name: 'Rinku Agarwal Basu',
       designation: 'COO',
