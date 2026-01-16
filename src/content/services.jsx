@@ -146,6 +146,257 @@ export const services = [
   },
 ]
 
+export const RecruitmentVideoFaq = [
+  {
+    key: 0,
+    title: 'What types of employer branding and hiring videos do you create?',
+    content: (
+      <>
+        <div className="mb-5">
+          We craft a wide range of hiring, culture, and employer branding videos
+          suited to communication needs and channels. These include:
+        </div>
+        <ul>
+          <li className="mb-5">- Culture and workplace videos</li>
+          <li className="mb-5">- Employee spotlight films</li>
+          <li className="mb-5">- Diversity &amp; inclusion stories</li>
+          <li className="mb-5">- Day-in-the-life videos</li>
+          <li className="mb-5">- Leadership messages</li>
+          <li className="mb-5">- Employee Value Proposition (EVP) Videos</li>
+          <li className="mb-5">- Role-specific or department videos</li>
+          <li className="mb-5">- Campus and internship videos</li>
+          <li className="mb-5">- Recruitment teasers for social media</li>
+          <li className="mb-5">- Onboarding and internal welcome videos</li>
+          <li className="mb-5">- Employee onboarding and training videos</li>
+          <li className="mb-5">- And more!</li>
+        </ul>
+
+        <div className="mt-5">
+          We help you choose the right format, genre, and creative approach for
+          every brief, whether you’re building brand awareness or doubling down
+          on hiring in a specific region or vertical.
+        </div>
+      </>
+    ),
+  },
+  {
+    key: 1,
+    title: 'How will you create a positioning video for our employer brand?',
+    content:
+      'We’ll help you tell the story of your employer brand in a way that is most meaningful to you and your target audience. We begin by understanding your brand story and core messaging, and we conceptualise and shape the narrative. Whether we create a testimonial-led video, a 3D animation video or a fictional film with actors - we creatively guide and manage all the details of the project end to end - always checking in with you to ensure our work delivers the distinct essence, culture and mood you are looking to communicate.',
+  },
+  {
+    key: 2,
+    title: 'What types of diversity and inclusion videos do you create?',
+    content:
+      "We create videos that do more than say you're inclusive—they show it. Whether it’s an employee story that reveals a personal journey, a leadership message grounded in vulnerability, or a vibrant highlight reel from your Pride Month events, we create videos that feel human, thoughtful, and real. Our process starts with understanding your inclusion goals and the communities you want to spotlight. We then shape stories that celebrate authenticity, build empathy, and reflect the everyday experiences of your people. From Employee Resource Group (ERG) showcases to cultural moments and allyship narratives, every frame is crafted to inspire connection and spark conversation.",
+  },
+  {
+    key: 3,
+    title:
+      'How and where do you use animated videos in employer branding, hiring, and culture communication?',
+    content:
+      'We use animation when your message needs to be clear, consistent, and visually engaging—especially when live footage isn’t the best fit. Think of it as storytelling with design: we bring policies, processes, and values to life using motion graphics, illustration, and kinetic typography. From explaining how your hiring journey works to what your onboarding workflows, hybrid work guidelines, or even your culture code are—animation makes information feel effortless and branded. It’s also the go-to format when timelines are tight, teams are remote, or content needs to be adapted across regions. Plus, animated videos are highly reusable across your career site, internal comms, learning modules, and social platforms—making them a smart, scalable part of your employer brand toolkit.',
+  },
+  {
+    key: 4,
+    title:
+      'Do you make videos for special occasions such as employee milestones, Pride Month, etc?',
+    content: (
+      <>
+        <div className="mb-5">
+          We love creating employer branding videos for the moments that matter.
+          Whether it&apos;s celebrating a 20th work anniversary, launching a
+          campaign for Pride Month, spotlighting a team achievement, or
+          delivering a heartfelt Christmas message from your leadership – we
+          help you mark the occasion with creativity, meaning, and authenticity.
+          We offer tailored content for:
+        </div>
+        <ul>
+          <li className="mb-5">
+            - <span className="font-semibold">Cultural moments</span> – Pride,
+            Women’s Day, Black History Month, Mental Health Awareness Week, etc
+          </li>
+          <li className="mb-5">
+            - <span className="font-semibold">Company milestones</span> –
+            anniversaries, mergers, new locations, growth highlights.
+          </li>
+          <li className="mb-5">
+            - <span className="font-semibold">Employee experiences</span> –
+            onboarding journeys, thank-you messages, end-of-year tributes.
+          </li>
+        </ul>
+        <div className="mt-5">
+          These videos are more than just nice-to-haves—they’re cultural
+          touchpoints that reinforce recognition, inclusion, and community. They
+          are designed to energize internal culture, boost morale, and show your
+          people that you’re paying attention while keeping your brand voice
+          intact.
+        </div>
+      </>
+    ),
+  },
+  {
+    key: 5,
+    title:
+      'How do you create hiring videos that are a great representation of our work and culture?',
+    content: (
+      <>
+        <div className="mb-5">
+          We help B2B brands attract top talent through authentic storytelling
+          and high-quality production. Here&apos;s how our typical recruitment
+          video production process works:
+        </div>
+        <ul>
+          <li className="mb-5">
+            - We begin with a clear brief that outlines your communication
+            goals, EVP themes, and the specific roles or audiences you want to
+            reach.
+          </li>
+          <li className="mb-5">
+            - Our creative team develops a concept that reflects your company
+            culture and brings your employee experience to life – whether it’s a
+            leadership video, employee spotlight, or day-in-the-life video.
+          </li>
+          <li className="mb-5">
+            - We visualize the story through scripting, moodboards, and
+            storyboards, and design branded graphics and motion elements that
+            align with your tone and visual identity.
+          </li>
+          <li className="mb-5">
+            - We help identify the right voices to feature in the film across
+            functions, levels, and locations, and prep your speakers using
+            talking points or interview prompts.
+          </li>
+          <li className="mb-5">
+            - Our directors, writers, and producers run the shoot, guiding
+            speakers around on-camera delivery and capturing moments that feel
+            real and relatable.
+          </li>
+          <li className="mb-5">
+            - Our post-production experts edit the footage, adding the required
+            graphics, music, subtitles, and voiceovers while keeping the film
+            on-brand.
+          </li>
+          <li className="mb-5">
+            - And, our entire video creation process is managed on our
+            proprietary creative cloud workflows platform that aligns our teams,
+            schedules, approvals, feedback, and delivery seamlessly for you.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    key: 6,
+    title: 'How do you make recruitment videos that feel authentic?',
+    content:
+      'The key to authenticity lies in two things: the people you feature, and how you tell their story. We work closely with your talent or employer branding team to identify the right voices - employees, leaders, new joiners - and shape a narrative that captures their genuine experiences. We guide people on camera so they come across as comfortable and natural, not rehearsed. We also avoid scripting testimonials too tightly wherever possible. Instead, we shape the story around real emotions, cultural values, and day-to-day experiences with simple talking points to get authentic content. We also visualize and capture supporting B-roll footage to enhance the narrative in a relatable manner.',
+  },
+  {
+    key: 7,
+    title:
+      'Our employees are not media-trained. How will you work around this when filming testimonials or interviews?',
+    content:
+      'We hear this often. Worry not, you’re in good hands with our experienced writers, directors, and producers. They’re skilled at putting people at ease in front of the camera by creating a relaxed, supportive environment. Instead of scripted lines, we guide employees through natural conversations, often filming in familiar or relaxed settings to help them feel more comfortable. We also provide prep materials ahead of time, keep the shoot informal, and allow multiple takes so there’s no pressure to get it right the first time. With the right crew and setup, even first-time speakers can come across as confident and authentic on camera.',
+  },
+  {
+    key: 8,
+    title: 'What is the typical timeline for crafting a video end-to-end?',
+    content:
+      'Video turnaround times depend on the scale and complexity of the requirement. A simple testimonial video can often be completed in as little as 1 week, while larger projects, like multi-location employer branding films or a larger campaign, can take 4–6 weeks end-to-end. Our process includes briefing and goal alignment, concept development, project planning, scripting, graphic design, production across locations, followed by post-production, which includes editing, music, subtitles, voice-over, and animation. We work fast, but thoughtfully—giving you enough time to share feedback and approvals at every key milestone. If you have a set launch or hiring deadline, we’ll plan backwards from there to ensure everything’s ready on time.',
+  },
+  {
+    key: 9,
+    title: 'How do you make sure the video reflects our employer brand?',
+    content:
+      "We work with your brand and talent teams to align the video with your employer's brand positioning, tone of voice, visual identity, and key messaging pillars. We reference your brand guidelines, talent personas, and EVP (Employee Value Proposition) throughout the creative process. From colors and music to voiceover and visuals, the final film will feel like a natural extension of your careers page, social content, and company culture.",
+  },
+  {
+    key: 10,
+    title: 'Can you work with teams across different locations?',
+    content:
+      'Yes, many of our recruitment video projects involve global teams. We coordinate multi-location shoots or even fully remote interviews using guided filming setups and local crews. We can also stitch together footage from different offices or countries into a unified employer brand story, showcasing your company’s culture across geographies without compromising on quality or messaging.',
+  },
+  {
+    key: 11,
+    title: 'Do you follow a specific hiring video creation process?',
+    content: (
+      <>
+        <div className="mb-5">
+          As experts who have produced hundreds of employer branding videos
+          across industries, geographies, and formats, with every new brief,
+          we’re always on the lookout to try something new. This has helped us
+          come up with a tried-and-tested process that delivers impactful
+          employer branding and hiring videos for you. Our typical workflow
+          starts with a clear brief, followed by research, concepts, script,
+          design, production, post-production, reviews, and versioning. But
+          what’s unique about how we do it, is our proprietary platform that
+          facilitates efficient cloud-based workflows. Here’s a quick
+          run-through of how it helps:
+        </div>
+        <ul>
+          <li className="mb-5">
+            - Your brief is loaded on our platform. This contains all the
+            information you&apos;ve shared, everything we&apos;ve dug up, and all the
+            creative assets we need to work on. Everything is in one place.
+          </li>
+          <li className="mb-5">
+            - We use rate cards, add-ons, and an efficient costing tool on our
+            platform to speed up the pricing and contract process for you.
+          </li>
+          <li className="mb-5">
+            - We propose a narrative structure with one or more creative
+            approaches that align with your industry, audience, tone, and brand
+            identity. You can choose what resonates most with your brand and
+            communication needs.
+          </li>
+          <li className="mb-5">
+            - Our project managers draft the most optimal project schedule on
+            our platform, setting milestones that work best for your
+            requirements. Everyone on the project knows exactly when something
+            is due to you, so no follow-ups are required.
+          </li>
+          <li className="mb-5">
+            - Our creative team gets going with their work, coming to you for
+            reviews at the script and design stages.
+          </li>
+          <li className="mb-5">
+            - Our producers coordinate all logistics – scheduling interviews,
+            sharing prep material, confirming availability, and curating and
+            managing professional on-ground crews.
+          </li>
+          <li className="mb-5">
+            - Files, links, and updates are all on the cloud, so you and your
+            colleagues are never left wondering what&apos;s next or how things are
+            progressing.
+          </li>
+          <li className="mb-5">
+            - Once the post-production team gets going with their work, video
+            drafts are uploaded directly to the platform where you use our
+            interactive review feature to share frame-accurate comments and
+            respond to our creative suggestions – all without lengthy email
+            chains or missed feedback. Additionally, all video drafts on the
+            project are accessible to you on one dashboard, so you won’t have to
+            hunt for links to compare notes.
+          </li>
+          <li className="mb-5">
+            - Once the project is complete, your video assets are uploaded to
+            our platform. Everything is neatly organised, downloadable,
+            shareable with colleagues and partners, and ready for repurposing in
+            the future.
+          </li>
+        </ul>
+
+        <div className="mt-5">
+          Our cloud-based platform-led workflow allows us to maintain creative
+          excellence while delivering at speed and scale. It also gives you an
+          efficient and transparent experience from start to finish.
+        </div>
+      </>
+    ),
+  },
+]
 
 export const redbanglewayCreate = [
   {

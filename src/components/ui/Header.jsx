@@ -40,7 +40,7 @@ const outsideLinks = [
       { title: "Explainer Video", href: "/explainer-video-production-services", type: "videos" },
       { title: "Corporate Video", href: "/corporate-video-production-services", type: "videos" },
       { title: "Case Study Video", href: "/video-testimonial-production", type: "videos" },
-      { title: "Recruitment Video", href:"/recruitment-video-production", type: "videos"},
+      { title: "Recruitment Video", href:"/recruitment-video-production-services", type: "videos"},
       { title: "GenAI Video", href:"/ai-video-agency", type: "videos"},
       { title: "Brand Identity Design", href:"/brand-identity-design-services", type: "design"}
     ]
