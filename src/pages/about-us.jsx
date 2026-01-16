@@ -469,7 +469,8 @@ const WhoWeAre = () => {
       <SEO
         title="Tech-Enabled Creative Agency & Collaborative | Makerrs"
         description="We are a tech-powered global creative agency and collaborative. We’ve crafted branding, videos, podcast IPs, campaigns and more for over 60 brands."
-        url="https://www.redbangle.com/about/who-we-are"
+        url="https://www.makerrs.com/about-us"
+        keywords="Creative agency, B2B Brand, B2B Enterprise, B2C Brand, Consumer Brand, Artificial Intelligence, AI, Brand Communication, Creative Solutions, Brand solutions, Cloud Platform"
       />
 
       <section

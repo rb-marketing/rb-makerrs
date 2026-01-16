@@ -15,7 +15,7 @@ const Terms = () => {
 
       <section className="py-28">
         <div className="container !max-w-[1046px]">
-          <ol className='custom-font'>
+          <ol className="custom-font">
             <li className="!mb-16 md:!mb-28">
               <h3 className="font-everett font-medium text-[40px] md:text-[52px] mb-6">
                 Terms of Use
@@ -26,9 +26,15 @@ const Terms = () => {
                     1. Acceptance of Terms
                   </h3>
                   <p className=" mb-6">
-                    By accessing or using our websites (<a href="https://www.redbangle.com" className='hover:text-rb-red'>www.redbangle.com</a> {' / '}
-                     <a href="https://www.b2b.redbangle.com" className='hover:text-rb-red'>www.b2b.redbangle.com</a> {' / '} <a href="https://www.b2c.redbangle.com" className='hover:text-rb-red'>www.b2c.redbangle.com</a>), you agree to
-                    be bound by these Terms of Use and our Privacy Policy.
+                    By accessing or using our websites (
+                    <a
+                      href="https://www.makerrs.com"
+                      className="hover:text-rb-red"
+                    >
+                      www.makerrs.com
+                    </a>
+                    , you agree to be bound by these Terms of Use and our
+                    Privacy Policy.
                   </p>
                 </li>
                 <li className="!mb-16 md:!mb-28">
@@ -63,9 +69,9 @@ const Terms = () => {
                   <p className=" mb-6">
                     Unless otherwise specified, all content on this website —
                     including original text, logos, images, and code — is the
-                    property of Red Bangle Film Collaborative Ltd. (Red Bangle)
-                    and is protected under applicable copyright and intellectual
-                    property laws.
+                    property of Red Bangle Film Collaborative Ltd., operating
+                    under the brand name ‘Makerrs’, and is protected under
+                    applicable copyright and intellectual property laws.
                   </p>
                   <p className=" mb-6">
                     We may feature client logos, case studies, or externally
@@ -75,7 +81,7 @@ const Terms = () => {
                   </p>
                   <p className=" mb-6">
                     You may not reuse, reproduce, or distribute any part of this
-                    website’s content — including Red Bangle&apos;s original
+                    website’s content — including Makerrs&apos; original
                     material or third-party content — without prior written
                     permission, unless otherwise explicitly stated.
                   </p>
@@ -108,8 +114,8 @@ const Terms = () => {
                 Privacy Policy
               </h3>
               <p className=" mb-6">
-                Red Bangle Film Collaborative Ltd. values your privacy and is
-                committed to protecting your personal information.
+                Makerrs values your privacy and is committed to protecting your
+                personal information.
               </p>
               <ol>
                 <li className="!mb-16 md:!mb-28">
@@ -217,10 +223,13 @@ const Terms = () => {
                   </h3>
                   <p className=" mb-6">
                     If you have any questions regarding these Terms or our
-                    Privacy Policy, please contact us at: <a
-                      href="mailto:hello@redbangle.com"
+                    Privacy Policy, please contact us at:{' '}
+                    <a
+                      href="mailto:hello@makerrs.com"
                       className="hover:text-rb-red duration-300 ease-out"
-                    >hello@redbangle.com</a>
+                    >
+                      hello@makerrs.com
+                    </a>
                   </p>
                 </li>
               </ol>

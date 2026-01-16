@@ -230,7 +230,7 @@ export const TechnologyPlatform = () => {
       <SEO
         title="Our Creative Cloud Platform | Makerrs"
         description="Our technology platform enables efficient creative workflows and collaboration between us, our clients and our global network of creative freelancers and studios."
-        url="https://www.redbangle.com/about/creative-cloud-platform"
+        url="https://www.makerrs.com/creative-cloud-technology"
       />
       <section className="pt-15 pb-15 md:pb-24 md:pt-24 relative text-rb-black">
         <div className="container">

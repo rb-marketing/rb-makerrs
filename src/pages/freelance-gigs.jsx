@@ -31,7 +31,7 @@ const TNC = [
     key: 1,
     title: 'What information do I need to provide during the sign-up process?',
     content:
-      'You will typically need to provide details like your name, email address and location. And you can create your own login ID and password.',
+      'You will typically need to provide details like your name, email address, and location. And you can create your own login ID and password.',
   },
   {
     key: 2,
@@ -43,7 +43,7 @@ const TNC = [
     key: 3,
     title: 'Who can apply?',
     content:
-      'We welcome studios, independent artists, brand strategists, graphic designers, techies/technologists, musicians, writers, filmmakers and producers to join our collaborative. Your location does not matter. We work across the world.',
+      'We welcome studios, independent artists, brand strategists, graphic designers, interaction designers, musicians, writers, filmmakers, and producers to join our global creative collaborative. Your location does not matter. We work across the world.',
   },
   {
     key: 4,
@@ -55,7 +55,7 @@ const TNC = [
     key: 5,
     title: 'What are the legal terms and conditions?',
     content:
-      'When you sign up, you will be asked to accept our Terms and Conditions. Click on the document link to go through the same in detail. This document lays out terms that protect our clients, you and us. It covers things like copyright, non disclosure, and more. ',
+      'When you sign up, you will be asked to accept our Terms and Conditions. Click on the document link to go through the same in detail. This document lays out terms that protect our clients, you, and us. It covers things like copyright, non-disclosure, and more.',
   },
   {
     key: 6,
@@ -100,7 +100,7 @@ const Agreement = [
     key: 0,
     title: 'What services does Makerrs provide?',
     content:
-      'We are strategists, creators, designers, filmmakers and technologists crafting brands, campaigns, content and experiences for ambitious B2B enterprises across the world.',
+      'We are strategists, creators, designers, filmmakers and technologists crafting brands, videos, campaigns and experiences for borderless brands across the world.',
   },
   {
     key: 1,
@@ -120,47 +120,39 @@ const Agreement = [
     content: (
       <>
         <div>
-        Our project workflow typically involves the following.
+          Our project workflow typically involves the following.
         </div>
         <div className="mt-4">
           <span className="font-bold">Pitch Briefing: </span>
-          We provide a comprehensive project brief to help you express your interest and availability.
+            We provide a comprehensive project brief to help you express your interest and availability.
         </div>
         <div className="mt-4">
-          <span className="font-bold">Estimate and Confirmation: </span> Once you submit a quote for your services, we’ll 
-          review it, set up a follow-on discussion if required, and then process 
-          the necessary paperwork to define terms of project engagement.
+          <span className="font-bold">Estimate &amp; Confirmation: </span>
+          Once you submit a quote for your services, we’ll review it, set up a follow-on discussion if required, and then process the necessary paperwork to define terms of project engagement.
         </div>
         <div className="mt-4">
-          <span className="font-bold">Project Briefing & Brainstorming: </span> 
-          While you would have seen a brief before agreeing to take on a project with us, it always helps to get everyone 
-          into a virtual or an in-person meeting to go over all the details, the schedule, the benchmarks and more.
+          <span className="font-bold">Project Briefing &amp; Brainstorming: </span>
+          While you would have seen a brief before agreeing to take on a project with us, it always helps to get everyone into a virtual or an in-person meeting to go over all the details, the schedule, the benchmarks and more.
         </div>
         <div className="mt-4">
-          <span className="font-bold">Project Kickoff: </span> 
-          Our Project Managers and Client Servicing teams will define the project schedule and set up 
-          the required file-sharing infrastructure to help get things started.
+          <span className="font-bold">Project Kickoff: </span>
+          Our Project Managers and Client Servicing teams will define the project schedule and set up the required file-sharing infrastructure to help get things started.
         </div>
         <div className="mt-4">
-          <span className="font-bold">Project Execution: </span> 
-          We will be in frequent contact over emails and calls to ensure that work is progressing smoothly 
-          at your end and between us, and provide any support you need throughout the execution process.
+          <span className="font-bold">Project Execution: </span>
+          We will be in frequent contact over emails and calls to ensure that work is progressing smoothly at your end and between us, and provide any support you need throughout the execution process.
         </div>
         <div className="mt-4">
-          <span className="font-bold">Reviews & Feedback: </span> 
-          Internal reviews are conducted by senior folks at Red Bangle and feedback provided to ensure everything is 
-          aligned to the brief and to expectations set with the client. This is usually followed by client reviews.
+          <span className="font-bold">Reviews &amp; Feedback: </span>
+          Internal reviews are conducted by senior folks at Makerrs and feedback provided to ensure everything is aligned to the brief and to expectations set with the client. This is usually followed by client reviews.
         </div>
         <div className="mt-4">
-          <span className="font-bold">Project Files & Delivery: </span> 
-          Decks, docs, videos, music, design assets and other associated files should be uploaded to the 
-          respective folder on the project within the Red Bangle platform.
+          <span className="font-bold">Project Files &amp; Delivery: </span>
+          Decks, docs, videos, music, design assets and other associated files should be uploaded to the respective folder on the project within our creative cloud platform.
         </div>
         <div className="mt-4">
-          <span className="font-bold">Invoicing & Payment: </span> 
-          Once you submit your invoice, our project managers will verify that all project files have been delivered 
-          and that the invoice has all the information required to process the payment. Following this, the payment 
-          will be processed as per the agreed timeline.
+          <span className="font-bold">Invoicing &amp; Payment: </span>
+          Once you submit your invoice, our project managers will verify that all project files have been delivered and that the invoice has all the information required to process the payment. Following this, the payment will be processed as per the agreed timeline.
         </div>
       </>
     ),
@@ -169,13 +161,13 @@ const Agreement = [
     key: 5,
     title: 'Can I publicly share the work I do with or for Makerrs?',
     content:
-      'Most of our service agreements with clients prevent us from publicly sharing any of the work we create for them. And if any specific work contains confidential client data, then everyone involved has to delete files after handing this over and the work can’t be shared on any public or private domain. Therefore, our platform terms do not allow you to showcase any work. However, if you wish to share a specific piece of work, please email us to request for clearance. We will then approach the client for the same, and should they allow this - you and us can both share the work publicly. ',
+      'Most of our service agreements with clients prevent us from publicly sharing any of the work we create for them. And if any specific work contains confidential client data, then everyone involved has to delete files after handing this over and the work can’t be shared on any public or private domain. Therefore, our platform terms do not allow you to showcase any work. However, if you wish to share a specific piece of work, please email us to request for clearance. We will then approach the client for the same, and should they allow this - you and us can both share the work publicly.',
   },
   {
     key: 6,
     title: 'What can I do on the Makerrs Platform?',
     content:
-      "The Makerrs platform serves as your central hub for seamless project work. You can easily upload, download, and review all project files, including briefs, decks, docs, films and footage. Our platform ensures smooth creative workflows between you, our clients, and us by keeping everything organized in one convenient place.",
+      "Our proprietary platform serves as your central hub for seamless project work. You can easily upload, download, and review all project files, including briefs, decks, docs, films and footage. Our platform ensures smooth creative workflows between you, our clients, and us by keeping everything organized in one convenient place.",
   },
 ]
 const FAQ = [
@@ -554,8 +546,8 @@ const Collab = () => {
   return (
     <>
       <SEO
-        title="Join Our Creative Collaborative, Work with B2C Brands in India"
-        description="From strategy experts, illustrators and SEO geeks to Directors, Cinematographers and copywriters - we are looking to collaborate with the best in the industry."
+        title="Freelance Gigs for Videographers, Graphic Designers | Makerrs"
+        description="Are you a freelance writer, filmmaker or graphic designer? Join our global creative collaborative and craft brands, videos, campaigns and more for global brands"
         url={fullUrl}
       />
       <section className="py-14 md:py-24 bg-rb-mercury">
@@ -794,7 +786,7 @@ const Collab = () => {
               />
 
               <div className="text-[16px] leading-[1.12] tracking-[-0.64px] md:text-accordion-large font-medium uppercase font-everett md:mt-16 md:mb-6 mt-8 mb-5">
-                WORKING WITH RED BANGLE
+                WORKING WITH MAKERRS
               </div>
               <Accordion
                 data={Agreement?.map((c) => ({

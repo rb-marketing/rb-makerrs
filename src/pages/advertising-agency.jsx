@@ -235,7 +235,8 @@ const Campaign = ({ setisPopupOpen }) => {
       <SEO
         title="Campaigns for Marketing, Employer branding & ESG | Makerrs"
         description="Get the marketing campaigns, employer branding campaigns and ESG campaigns for your global brand. Get digital campaigns, print ad campaigns, and more with Makerrs."
-        url="https://www.staging.b2c.redbangle.com/brand-strategy-agency-india"
+        url="https://www.staging.makerrs.com/advertising-agency"
+        keywords="Digital campaign, Best digital campaigns, Campaign events, Print ad campaigns, ESG campaigns, Best employer branding campaigns, Best corporate communications campaigns, Best interactive campaigns, Offline campaign"
       />
       <ServiceHeroSection
         className=""

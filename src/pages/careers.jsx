@@ -172,6 +172,7 @@ const Career = () => {
       <SEO
         title="Careers at Global Creative Agency & Network | Makerrs"
         description="Work with top brands on strategy, branding, design, videos, podcasts, campaigns and production. Grow your career in a fun, open environment. Explore opportunities today."
+        keywords="Career opportunities, Job opportunities, Careers, Career openings, Jobs, Employment opportunities, Best workplaces, Workplaces, Career options, Work opportunities, Job listing, Creative job, Creative careers, Job vacancies, Job hiring, Job postings, Dynamic environment, Team, Dynamic team"
       />
 
       <section className="py-16 md:py-30 bg-rb-mercury">

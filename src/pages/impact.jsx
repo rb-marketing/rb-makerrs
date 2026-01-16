@@ -193,7 +193,7 @@ export const CSRPage = () => {
       <SEO
         title="How we give back to society and animals | Makerrs"
         description="We support amazing causes. From street cats in Mumbai to social entrepreneurs across India—here’s how we give back and support the world we are grateful for."
-        url="https://www.redbangle.com/about/giving-back"
+        url="https://www.makerrs.com/impact"
       />
 
       <section className="bg-white py-15 md:py-30">
