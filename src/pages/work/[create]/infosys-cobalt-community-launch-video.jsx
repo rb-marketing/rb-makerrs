@@ -112,7 +112,7 @@ function Colearn() {
       <SEO 
       title="Infosys Cobalt Cloud Community Explainer Video | Red Bangle" 
       description="We created an animated explainer for Infosys Cobalt Cloud Community, scaling collaboration and positioning Infosys as a leader in cloud innovation."
-      url="https://www.b2b.redbangle.com/work/campaigns/infosys-cobalt-community-launch-video"
+      url="https://www.b2b.redbangle.com/work/campaign/infosys-cobalt-community-launch-video"
       />
       <WorkHeroSection
         logo={logo}

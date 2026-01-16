@@ -386,7 +386,7 @@ const Design = ({ setisPopupOpen }) => {
       </section>
 
       <div className="md:pt-15">
-        <FeaturedWorkSection posts={_posts} href="/work/brand-designs" title="Explore Our Podcast Work" />
+        <FeaturedWorkSection posts={_posts} href="/work/design" title="Explore Our Podcast Work" />
       </div>
 
 

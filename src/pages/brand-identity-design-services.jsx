@@ -1352,7 +1352,7 @@ const BrandIdentityDesign = () => {
       <div className="md:pt-20">
         <FeaturedWorkSection
           posts={brandIdentityDesignPosts}
-          href="/work/brand-designs"
+          href="/work/design"
           title="EXPLORE BRAND IDENTITY PROJECTS"
           pageName='servicebrand'
         />

@@ -2096,7 +2096,7 @@ export const workPosts = [
     company: 'MULTIPLIER',
     image: '/img/works/multiplier_work.webp',
     tags: ['SaaS', 'Lead Gen Campaign', 'Product Launch Video', 'Explainer Video', '2D Animation Video'],
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     case_study_title: 'multiplier-hr-saas-explainer-video',
     href: '/campaigns/multiplier-hr-saas-explainer-video'
   },
@@ -2105,7 +2105,7 @@ export const workPosts = [
     name: 'Launching the Cobalt Cloud Community',
     company: 'Infosys',
     alt: 'Cobalt Community Launch',
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     image: '/img/works/cobalt_community.jpg',
     tags: ['Technology', 'Digital Campaign', 'Platform Launch Video', '2D Animation Video'],
     case_study_title: 'infosys-cobalt-community-launch-video'
@@ -2116,7 +2116,7 @@ export const workPosts = [
     company: 'VYMO',
     image: '/img/works/vymo_sme.webp',
     tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     case_study_title: 'vymo-sme-bank-explainer-video'
   },
   {
@@ -2125,7 +2125,7 @@ export const workPosts = [
     image: '/img/case-study/singalong.jpg',
     // company: 'Infosys',
     alt: 'AI‑powered Singalong Campaign that united a Global Workforce',
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     tags: ['Technology', 'AI', 'Digital Campaign', 'Hyper-Personalized Campaign', 'Global Video Production'],
     case_study_title: 'infosys-ai-powered-singalong-campaign',
     href: '/ai-creatives/infosys-ai-powered-singalong-campaign'
@@ -2137,7 +2137,7 @@ export const workPosts = [
     image: '/img/works/slb_work.webp',
     company: 'SLB',
     alt: 'slb',
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     tags: ['Engineering', 'Campaign', 'Explainer Video', 'Demo Video', 'Interactive Video'],
     case_study_title: 'slb-interactive-explainer',
     href: '/campaigns/slb-interactive-explainer'
@@ -2150,7 +2150,7 @@ export const workPosts = [
     image: '/img/case-study/infy-equinox.webp',
     company: 'Infosys Equinox',
     alt: 'infy-equinox',
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     tags: ['SaaS', 'Marketing Campaign', 'Brand Launch', 'Video', 'Thought Leadership'],
     case_study_title: 'infosys-equinox-brand-launch'
   },
@@ -2163,7 +2163,7 @@ export const workPosts = [
     company: 'Jigsaw',
     image: '/img/works/jigsaw_work.webp',
     tags: ['Ed-tech', 'Digital Campaign', 'Marketing Video', 'Product Launch Video'],
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     case_study_title: 'jigsaw-e-learning-explainer-video'
   },
 
@@ -2174,7 +2174,7 @@ export const workPosts = [
     image: '/img/case-study/vymo-lead-management.webp',
     company: 'Vymo',
     alt: 'vymo-lead-management ',
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
     case_study_title: 'vymo-lead-management '
   },
@@ -2186,7 +2186,7 @@ export const workPosts = [
     company: 'Infosys',
     image: '/img/works/infy-ai-first-work.webp',
      tags: ['Technology', 'Digital Campaign','Employer Branding video', 'Social Media Content'],
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     case_study_title: 'infosys-employees-social-media-campaign'
   },
 
@@ -2198,7 +2198,7 @@ export const workPosts = [
     image: '/img/case-study/infosys-global-leaders.webp',
     company: 'Infosys',
     alt: 'infosys-global-leaders',
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     tags: ['Technology', 'Campaign', 'Employer Branding Video', 'Global Video Production'],
     case_study_title: 'infosys-global-leaders-employer-branding'
   },
@@ -2209,7 +2209,7 @@ export const workPosts = [
     image: '/img/case-study/vymo-wholesale.webp',
     company: 'Vymo',
     alt: 'vymo-wholesalers',
-    tabs: ['campaigns'],
+    tabs: ['campaign'],
     tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
     case_study_title: 'vymo-wholesalers-explainer-video'
   },
@@ -2221,7 +2221,7 @@ export const workPosts = [
     image: '/img/works/lillia_img.jpg',
     alt: 'Lillia Care',
     tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
-    tabs: ['brand-designs'],
+    tabs: ['design'],
     case_study_title: 'lillia-care-brand-launch'
   },
   {
@@ -2230,7 +2230,7 @@ export const workPosts = [
     company: 'Exicom',
     image: '/img/case-study/exicom_brand_refresh_work.jpg',
     tags: ['E-Mobility','Design', 'Brand Transformation', 'Visual Identity'],
-    tabs: ['brand-designs'],
+    tabs: ['design'],
     case_study_title: 'exicom-e-mobility-rebrand'
   },
   {
@@ -2239,7 +2239,7 @@ export const workPosts = [
     image: '/img/works/infosys-living-labs-gallery.jpg',
     company: 'Infosys',
     alt: 'infosys-living-labs-gallery',
-    tabs: ['brand-designs'],
+    tabs: ['design'],
     tags: ['Technology', 'Integrated Design Services', 'Brand Experience', 'ESG'],
     case_study_title: 'infosys-sustainability-design-gallery'
   },
@@ -2249,7 +2249,7 @@ export const workPosts = [
     image: '/img/case-study/medalio_thumbnail.webp',
     company: 'Medalio',
     alt: 'Medalio',
-    tabs: ['brand-designs'],
+    tabs: ['design'],
     tags: ['Hospitality', 'Brand Identity', 'Logo Design'],
     case_study_title: 'medalio-hospitality-brand-identity'
   },
@@ -2259,7 +2259,7 @@ export const workPosts = [
     company: 'P.U. Dingding',
     image: '/img/case-study/pudingding-thumbnail.jpg',
     tags: ['F&B', 'Cafe', 'Brand Identity', 'Launch Video'],
-    tabs: ['brand-designs'],
+    tabs: ['design'],
     case_study_title: 'pu-dingding-dessert-cafe-branding'
   },
    {
@@ -2268,7 +2268,7 @@ export const workPosts = [
     company: 'Biocon',
     image: '/img/case-study/biocon_work_thumbnail.png',
     tags: ['Biopharmaceutical', 'Integrated Design Services', 'Brand Experience'],
-    tabs: ['brand-designs'],
+    tabs: ['design'],
     case_study_title: 'office-branding-for-biocon'
   },
   {
@@ -2277,7 +2277,7 @@ export const workPosts = [
     company: 'Axis Bank',
     image: '/img/case-study/axis_bank_work_thumbnail.jpg',
     tags: ['Finance','Internal Communications Campaign', 'Marketing Campaign'],
-    tabs: ['brand-designs'],
+    tabs: ['design'],
     case_study_title: 'axis-bank-activation-campaign'
   },
   {

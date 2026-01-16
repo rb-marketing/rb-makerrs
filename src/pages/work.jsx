@@ -29,7 +29,7 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     // },
      { 
       name: 'Design', 
-      url: 'brand-designs',
+      url: 'design',
     },
     { 
       name: 'Videos', 
@@ -41,7 +41,7 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     },
     { 
       name: 'Campaign', 
-      url: 'campaigns',
+      url: 'campaign',
     }
   ]
 

@@ -117,7 +117,7 @@ function Medalio() {
             <SEO
                 title="Medalio Hospitality Brand Identity Design | Red Bangle"
                 description="We created a hospitality brand identity for Medalio that unites elegance and warmth, symbolizing progress and offering a sanctuary for travelers."
-                url="https://www.b2b.redbangle.com/work/brand-designs/medalio-hospitality-brand-identity"
+                url="https://www.b2b.redbangle.com/work/design/medalio-hospitality-brand-identity"
             />
             <WorkHeroSection
                 title={'Crafting a Symbol of Success in Hospitality'}

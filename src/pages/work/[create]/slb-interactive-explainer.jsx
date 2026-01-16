@@ -115,7 +115,7 @@ function Slb() {
       <SEO 
       title="SLB Sales Digitisation Explainer Video | Red Bangle" 
       description="We built a modular explainer video that streamlined SLB’s digital transformation, scaling adoption and showcasing the value of its new sales toolkit"
-      url="https://www.b2b.redbangle.com/work/campaigns/slb-interactive-explainer"
+      url="https://www.b2b.redbangle.com/work/campaign/slb-interactive-explainer"
       />
       <WorkHeroSection
         logo={logo}
