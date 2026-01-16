@@ -669,7 +669,7 @@ const LandPage = () => {
           </div>
         </div>
         <div className="mt-12 ">
-          <Marquee duration={50}>
+          <Marquee duration={65}>
             <div className="flex items-center h-[80px] md:h-[70px]">
               {groupIcons.map(({ name, id, ...rest }) => (
                 <div key={id} className="mx-6 md:mx-12 filter grayscale">

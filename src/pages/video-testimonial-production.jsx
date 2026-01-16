@@ -1765,7 +1765,7 @@ const CaseStudyVideoProduction = () => {
         className="py-18 md:py-30 !mt-0"
         testimonialData={testimonialsDefault}
         type="semi"
-        title="Why Brands Trust Us"
+        title="Why Our Clients Trust Us"
       />
 
       <section className=" pb-18 md:pb-30">

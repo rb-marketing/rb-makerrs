@@ -309,7 +309,7 @@ const AIvideoAgency = () => {
     },
     {
       icon: '/img/explainer-video/on_time_delivery.svg',
-      need: 'Deadlines',
+      need: 'Turnaround Time',
       others: 'They work at their speed',
       redBangle: 'We work at the speed you need',
     },
@@ -856,11 +856,13 @@ const AIvideoAgency = () => {
     },
     {
     key: 6,
-    title: 'Do you create Gen AI videos for B2B campaigns and product launches? ',
+    title: 'Do you create Gen AI videos for campaigns and product launches?',
     content:
-      'Yes, we create Gen AI videos tailored for B2B campaigns and product launches. Whether it’s AI-powered explainers or cinematic AI-video content, we help you launch your product with a bang—boosting conversions, enhancing customer engagement, and ensuring your brand stands out. Our focus is on delivering high-quality, brand-aligned campaigns that differentiate your solutions and create market stickiness.',
+      'Yes, we create Gen AI videos tailored for campaigns and product launches. Whether it’s AI-powered explainers or cinematic AI-video content, we help you launch your product with a bang—boosting conversions, enhancing customer engagement, and ensuring your brand stands out. Our focus is on delivering high-quality, brand-aligned campaigns that differentiate your solutions and create market stickiness.',
     },
   ]
+
+
    const createTestimonialAIData = [
     {
     key: 0,
@@ -1287,42 +1289,6 @@ const AIvideoAgency = () => {
         </div>
       </section>
 
-      {/* <section className="overflow-hidden bg-white md:pt-4 pt-4 md:pb-0">
-        <Marquee duration={30}>
-          {[
-            {
-              id: 0,
-              marqueeContent: 'AI-powered Videos',
-            },
-            {
-              id: 1,
-              marqueeContent: 'AI Avatar Videos',
-            },
-            {
-              id: 2,
-              marqueeContent: 'Gen AI Video Explainer',
-            },
-            {
-              id: 3,
-              marqueeContent: 'Gen AI Video Commercial',
-            },
-            {
-              id: 4,
-              marqueeContent: 'Cinematic AI Videos',
-            },
-            {
-              id: 5,
-              marqueeContent: 'Gen AI Training Videos',
-            }
-          ].map(({ id, marqueeContent }) => (
-            <div key={id} className="mx-10">
-              <h3 className="relative font-everett tracking-[-1.12px] text-xl md:text-3xl after:content-['|'] after:absolute after:-right-10 after:top-0 after:text-rb-red after:font-normal">
-                {marqueeContent}
-              </h3>
-            </div>
-          ))}
-        </Marquee>
-      </section> */}
 
      <section className="bg-white overflow-hidden pt-18 md:pt-30 pb-[48px] md:pb-0">
         <div className="container">
@@ -1404,7 +1370,7 @@ const AIvideoAgency = () => {
                     <th className="md:!w-[313px] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#030104] md:whitespace-nowrap text-left">
                       What Others Offer
                     </th>
-                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#07ef5a] md:whitespace-nowrap text-left">
+                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-rb-link-green md:whitespace-nowrap text-left">
                       What you get with us
                     </th>
                   </tr>
@@ -1442,7 +1408,7 @@ const AIvideoAgency = () => {
 
       <TrustedBrandsSection className="bg-white pb-[48px] md:!pb-[80px]" />
 
-        <section className="py-18 md:py-30 overflow-hidden">
+        <section className="py-18 md:py-15 overflow-hidden">
         <div className="container">
           <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
             How do we create GenAI Videos
@@ -1488,13 +1454,13 @@ const AIvideoAgency = () => {
       </section>
 
        <Testimonials
-      title={'WHAT CLIENTS SAY'}
+      title={'Why Our Clients Trust Us'}
       className="py-18 md:py-30"
       testimonialData={createTestimonialAIData}
       type="semi"
     />
 
-      <section className=" py-18 md:py-30 bg-rb-mercury">
+      <section className="py-18 md:pt-0 md:pb-30">
         <div className="container">
           <div className="rb-row">
             <div className="w-full md:w-5/12">

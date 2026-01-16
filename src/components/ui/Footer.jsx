@@ -342,7 +342,7 @@ export const Footer = ({ hasContactForm }) => {
           </section>
           <section className="bg-rb-black uppercase font-medium overflow-hidden text-white py-4 md:py-11.5 text-[26px] leading-7 md:text-[68px] md:leading-[74px]">
             {/* <div className={styles.footerMarquee}></div> */}
-            <Marquee scrollSpeedBased>
+            <Marquee scrollSpeedBased duration={65}>
               <div className="mr-3.5 md:mr-[54px] flex items-center">
                 {/* <span className="text-rb-red">Content&nbsp;</span> */}
                 CREATIVE PARTNER TO BORDERLESS BRANDS

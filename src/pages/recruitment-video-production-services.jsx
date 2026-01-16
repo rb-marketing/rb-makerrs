@@ -976,7 +976,7 @@ const RecruitmentVideoProduction = () => {
     },
     {
       icon: '/img/explainer-video/on_time_delivery.svg',
-      need: 'Deadlines',
+      need: 'Turnaround Time',
       others: 'They work at their speed',
       redBangle: 'We work at the speed you need',
     },
@@ -1766,8 +1766,6 @@ const RecruitmentVideoProduction = () => {
         </Marquee>
       </section>
 
-      {/* <GetUpdates /> */}
-
       <section className={`overflow-hidden bg-white pt-[48px] pb-18 md:py-30 `}>
         <div className="container text-center">
           <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
@@ -1784,7 +1782,7 @@ const RecruitmentVideoProduction = () => {
                     <th className="md:!w-[313px] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#030104] md:whitespace-nowrap text-left">
                       What Others Offer
                     </th>
-                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#07ef5a] md:whitespace-nowrap text-left">
+                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-rb-link-green md:whitespace-nowrap text-left">
                       What you get with us
                     </th>
                   </tr>
@@ -1861,10 +1859,10 @@ const RecruitmentVideoProduction = () => {
         </div>
       </section>
 
-       <section className="py-18 md:py-30 overflow-hidden">
+       <section className="py-18 md:py-10 overflow-hidden">
         <div className="container">
           <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
-            How do we create GenAI Videos
+            How we create great hiring videos
           </div>
 
           <div className="flex gap-6 md:flex-row flex-col-reverse">
@@ -1907,7 +1905,7 @@ const RecruitmentVideoProduction = () => {
       </section>
 
        <Testimonials
-          title={'WHAT CLIENTS SAY'}
+          title={'Why Our Clients Trust Us'}
           className="py-18 md:py-30"
           testimonialData={testimonialRecruiterData}
           type="semi"
@@ -1936,53 +1934,6 @@ const RecruitmentVideoProduction = () => {
         </div>
       </section>
 
-      {/* <section className="bg-rb-mercury py-12 md:py-23">
-        <div className="container">
-          <div className="rb-row md:items-center md:justify-between">
-            <div className="w-full md:w-1/2">
-              <div className="text-[60px] lg:text-[70px] xl:text-[110px] leading-[1.06] text-rb-black tracking-[-2.56px] uppercase font-everett font-medium">
-                Make
-                <br />
-                <span className="text-rb-red">Corporate</span>
-                <br />
-                <span className="whitespace-nowrap">
-                  <span className="text-rb-red">Videos</span> with
-                </span>
-                <br />
-                <span className="whitespace-nowrap">Red Bangle</span>
-              </div>
-            </div>
-            <div className="w-full md:w-5/12 mt-10 md:mt-0">
-              <ContactForm />
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section className="bg-rb-black uppercase font-medium overflow-hidden text-white py-4 md:py-11.5 text-[26px] leading-7 md:text-[68px] md:leading-[74px]">
-        <Marquee scrollSpeedBased>
-          <div className="mr-3.5 md:mr-[54px] flex items-center">
-            GET Great Corporate Films and Videos
-            <div className="w-0.5 md:w-2 h-5 md:h-14 bg-white ml-3.5 md:ml-[54px]"></div>
-          </div>
-        </Marquee>
-      </section>
-      <section className="bg-white">
-        <div className="container">
-          <div className="flex flex-col-reverse md:flex-row  py-10.5 md:pt-[80px] md:pb-8 justify-between">
-            <span>Copyright ©{new Date().getFullYear()} Red Bangle</span>
-            <div className="flex justify-between md:justify-start md:gap-x-8 mb-7.5 md:mb-0">
-              <Link
-                href="/terms"
-                data-rb-cursor-state="invisible"
-                className="hover:text-rb-red max-w-max"
-              >
-                Terms & Privacy
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <VideoModal open={herovideoOpen} setOpen={setHerovideoOpen}>
         <div className="relative max-w-[80%] w-full">
           <video
