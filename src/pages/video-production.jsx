@@ -305,7 +305,7 @@ We also handle video versioning supporting custom adaptations requirements so th
         'Get on-demand professional video crews anywhere in the world. Be it a one-camera shoot or a multi-camera multi-location production–we curate and manage the production, and quality-check the footage for you. Hire a professional video crew today!',
       bgColor: '#ffffff',
       textColor: '#13c33f',
-      href: '/professional-video-crews',
+      href: '/video-production-near-me',
     },
   ]
 
@@ -891,8 +891,8 @@ We also handle video versioning supporting custom adaptations requirements so th
       <SEO
         title="Video Production Company for Brands | Makerrs"
         description="Video production services for borderless brands. Get commercial video production, corporate video production, non profit videos and more in 100 countries."
-        keywords="b2b video marketing, corporate video agency, b2b video services, corporate video production, business video production"
-        url="https://www.b2b.redbangle.com/b2b-international-video-crew-agency"
+        keywords="Content creation, Video production services, Digital content creation, Corporate video production agency, Agency content creation, Animated video production, Corporate promotional video production, Social media video creation, Branded content creation, Branded content production company, Marketing video production, Influencer marketing services"
+        url="https://www.staging.makerrs.com/video-production"
       />
 
 

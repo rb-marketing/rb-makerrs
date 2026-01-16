@@ -118,7 +118,7 @@ const Campaign = ({ setisPopupOpen }) => {
         'Book professional video crews on-demand in 100 countries. Our team of experienced producers curate video crews for every brief and location, manage the shoots and quality-check the footage for you. Shoot video testimonials, events, drone footage, and more wherever you need them!',
       bgColor: '#ffffff',
       textColor: '#13c33f',
-      href: '/professional-video-crews',
+      href: '/video-production-near-me',
     },
   ]
 
@@ -235,7 +235,8 @@ const Campaign = ({ setisPopupOpen }) => {
       <SEO
         title="Campaigns for Marketing, Employer branding & ESG | Makerrs"
         description="Get the marketing campaigns, employer branding campaigns and ESG campaigns for your global brand. Get digital campaigns, print ad campaigns, and more with Makerrs."
-        url="https://www.staging.b2c.redbangle.com/brand-strategy-agency-india"
+        url="https://www.staging.makerrs.com/advertising-agency"
+        keywords="Digital campaign, Best digital campaigns, Campaign events, Print ad campaigns, ESG campaigns, Best employer branding campaigns, Best corporate communications campaigns, Best interactive campaigns, Offline campaign"
       />
       <ServiceHeroSection
         className=""

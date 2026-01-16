@@ -460,7 +460,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       <SEO
         title="Professional Video Crews for Hire | Makerrs"
         description="Hire professional video crews in New York, San Francisco, Bangalore, London, Paris, Tokyo, Singapore & 100 other cities. Shoot testimonial videos, event videos & more."
-        keywords="video production services, video production company, professional video crews for hire, video crew agency, video crew, video production team"
+        keywords="Production teams, Global video crews, On-demand video production, Professional filmmakers, Commercial video production, Documentary filming, Video production solutions, Testimonial video services, Testimonial video production"
         url="https://www.b2b.redbangle.com/b2b-international-video-crew-agency"
       />
 

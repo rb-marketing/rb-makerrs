@@ -32,7 +32,7 @@ const LandPage = () => {
       alt: 'Indeed',
       className: '',
     },
-     {
+    {
       id: 3,
       name: 'pudingding.png',
       width: '100',
@@ -63,7 +63,7 @@ const LandPage = () => {
       alt: 'darwinbox',
       className: '',
     },
-     {
+    {
       id: 7,
       name: 'itc.png',
       width: '60px',
@@ -119,7 +119,7 @@ const LandPage = () => {
       height: '52',
       alt: 'slb',
     },
-     {
+    {
       id: 15,
       name: 'dara.png',
       width: '200',
@@ -176,290 +176,290 @@ const LandPage = () => {
       alt: 'aarki',
     },
   ]
- 
+
   const stats = [
-  {
-    id: 0,
-    countUpProps: {
-      value: 60,
-      suffix: <span className="text-rb-red">+</span>,
-    },
-    text: (
-      <span className="md:max-w-[188px]">
-        count <br />
-        of brands
-      </span>
-    ),
-  },
-  {
-    id: 1,
-    countUpProps: {
-      value: 4,
-      suffix: (
-        <div className="inline-flex">
-          K <span className="text-rb-red">+</span>
-        </div>
-      ),
-    },
-    text: (
-      <>
-      video <br/>numbers
-      </>
-    ),
-  },
-  {
-    id: 2,
-    countUpProps: {
-      value: 40,
-      suffix: (
-        <span className="inline-flex">
-          <span className="text-rb-red">+</span>
+    {
+      id: 0,
+      countUpProps: {
+        value: 60,
+        suffix: <span className="text-rb-red">+</span>,
+      },
+      text: (
+        <span className="md:max-w-[188px]">
+          count <br />
+          of brands
         </span>
       ),
     },
-    text:
-      <>
-       thinkers <br />
-       and creators
-      </>,
-  },
-  {
-    id: 3,
-    countUpProps: {
-      value: 100,
-      suffix: <span className="text-rb-red">+</span>,
+    {
+      id: 1,
+      countUpProps: {
+        value: 4,
+        suffix: (
+          <div className="inline-flex">
+            K <span className="text-rb-red">+</span>
+          </div>
+        ),
+      },
+      text: (
+        <>
+          video <br />numbers
+        </>
+      ),
     },
-    text: (
-      <>
-        country production network
-      </>
-    ),
-  },
+    {
+      id: 2,
+      countUpProps: {
+        value: 40,
+        suffix: (
+          <span className="inline-flex">
+            <span className="text-rb-red">+</span>
+          </span>
+        ),
+      },
+      text:
+        <>
+          thinkers <br />
+          and creators
+        </>,
+    },
+    {
+      id: 3,
+      countUpProps: {
+        value: 100,
+        suffix: <span className="text-rb-red">+</span>,
+      },
+      text: (
+        <>
+          country production network
+        </>
+      ),
+    },
   ]
 
   const createTestimonialData = [
     {
-    key: 0,
-    quote:
-      'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
-    name: 'ALINA PATRAHAU',
-    designation: 'FOUNDER',
-    company: 'DARUIESTE ARIPI',
-    image: {
-      srcSet:
-        `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  },
-  {
-    key: 1,
-    quote:
-        <>
-         Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
-        </>,
-    name: 'KUNCHERIA MARATTUKALAM',
-    designation: 'FOUNDER & DIRECTOR',
-    company: 'Maratt Group',
-    image: {
+      key: 0,
+      quote:
+        'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+      name: 'ALINA PATRAHAU',
+      designation: 'FOUNDER',
+      company: 'DARUIESTE ARIPI',
+      image: {
         srcSet:
-
-            `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+          `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
-    },
+      },
     },
     {
-    key: 2,
-    quote:
-      'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+      key: 1,
+      quote:
+        <>
+          Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
+        </>,
+      name: 'KUNCHERIA MARATTUKALAM',
+      designation: 'FOUNDER & DIRECTOR',
+      company: 'Maratt Group',
+      image: {
+        srcSet:
 
-    designation: 'VP INTERNAL COMMUNICATIONS',
-    company: 'FORTUNE 100 ITES ENTERPRISE',
-    image: {
-      srcSet:
-        `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+          `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-{
-    key: 3,
-    quote:
-      'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
-    name: 'ROSHAN CARIAPPA',
-    designation: 'VICE-PRESIDENT MARKETING',
-    company: 'VYMO',
-    image: {
-      srcSet:
-        `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  },
-  {
-    key: 4,
-    quote:
-      'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Makerrs supported us on the ground and even helped us manage our golfing ambassador. Thanks, team!',
-    name: 'MATT WALKINGTON',
-    designation: 'Account Director',
-    company: 'BRIGHT PARTNERSHIPS',
-    image: {
-      srcSet:
-        `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  },
-  {
-    key: 5,
-    quote:
-      <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
-      </>,
-    name: 'Rinku Agarwal Basu',
-    designation: 'COO',
-    company: 'Lillia Care',
-    image: {
-      srcSet:
+    {
+      key: 2,
+      quote:
+        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
 
-        `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      designation: 'VP INTERNAL COMMUNICATIONS',
+      company: 'FORTUNE 100 ITES ENTERPRISE',
+      image: {
+        srcSet:
+          `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-{
-    key: 6,
-    quote:
-      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Makerrs has given us a brand bursting with character and joy! Seeing customers connect with it at our dessert cafe feels incredible.',
-    name: 'NAKUL KULKARNI',
-    designation: ' CO-FOUNDER',
-    company: 'P.U. DINGDING',
-    image: {
-      srcSet:
-        `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 3,
+      quote:
+        'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
+      name: 'ROSHAN CARIAPPA',
+      designation: 'VICE-PRESIDENT MARKETING',
+      company: 'VYMO',
+      image: {
+        srcSet:
+          `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 7,
-    quote:
-      'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
-    name: 'MARC IRAWAN',
-    designation: 'Founder',
-    company: 'COLEARN',
-    image: {
-      srcSet:
-        `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 4,
+      quote:
+        'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Makerrs supported us on the ground and even helped us manage our golfing ambassador. Thanks, team!',
+      name: 'MATT WALKINGTON',
+      designation: 'Account Director',
+      company: 'BRIGHT PARTNERSHIPS',
+      image: {
+        srcSet:
+          `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 8,
-    quote:
-      'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
-    name: 'SUNIL SURESH',
-    designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
-    company: 'CAPILLARY TECHNOLOGIES',
-    image: {
-      srcSet:
-        `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 5,
+      quote:
+        <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
+        </>,
+      name: 'Rinku Agarwal Basu',
+      designation: 'COO',
+      company: 'Lillia Care',
+      image: {
+        srcSet:
+
+          `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
+    {
+      key: 6,
+      quote:
+        'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Makerrs has given us a brand bursting with character and joy! Seeing customers connect with it at our dessert cafe feels incredible.',
+      name: 'NAKUL KULKARNI',
+      designation: ' CO-FOUNDER',
+      company: 'P.U. DINGDING',
+      image: {
+        srcSet:
+          `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
+    },
+    {
+      key: 7,
+      quote:
+        'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
+      name: 'MARC IRAWAN',
+      designation: 'Founder',
+      company: 'COLEARN',
+      image: {
+        srcSet:
+          `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
+    },
+    {
+      key: 8,
+      quote:
+        'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
+      name: 'SUNIL SURESH',
+      designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
+      company: 'CAPILLARY TECHNOLOGIES',
+      image: {
+        srcSet:
+          `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
+    },
   ]
 
   const TNC = [
-  {
-    key: 0,
-    title: 'What services does your global creative agency offer?',
-    content: (
-      <>
-        <div>
-          Makkers offers strategic creative services that help you launch and scale brands across markets. 
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">1. Strategy:</h3>
-        <div>
-          We offer a range of strategy services &ndash; including brand environment analysis, brand communication strategy, and video content strategy. We blend data, insights and marketing expertise to craft strategies that drive growth for your business.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">2. Design:</h3>
-        <div>
-          We offer a range of design services - from brand identity and event branding, to brand mascots and avatars, print and editorial design, and environmental graphics for corporate offices. We help you build brand differentiation, credibility and human connect through our future&ndash;forward design solutions.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">3. Videos:</h3>
-        <div>
-         We offer strategic and creative video content production services for brand growth. Whether it is driving your YouTube strategy and delivering SEO&ndash;first content all year round, crafting your product communications and scaling content for the next 18 months, or creating on&ndash;demand case study videos, thought leadership content, product explainer videos, hiring and culture videos, or videos for corporate communications and public relations &ndash; our end to end video production services include research, conceptualisation, anywhere production, and endless versioning.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">4. Podcast:</h3>
-        <div>
-          Our beginnings lay in an award&ndash;winning YouTube show. With years of experience running our own show and now having produced several successful podcasts for clients, we have a strong framework for creating your next IP: be it a podcast for your brand or a podcast for you as a business leader. Our end&ndash;to&ndash;end solutions include research, concept, design, podcast production, publishing, distribution and amplification. And we use modern tools and processes to scale production and publishing as required.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">5. Campaign:</h3>
-        <div>
-          From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations &ndash; we provide comprehensive creative campaign solutions. Whether it&apos;s for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns &ndash; we support every phase of your brand growth.
-        </div>
-        <h3 className="mt-5 font-semibold  text-base">
-          6. On&ndash;demand Video Crews or &apos;Book a Crew&apos;:
-        </h3>
-        <div>
-          We have a strong, curated collaborative of professional video crews available on&ndash;demand in 100 countries. Be it a single&ndash;camera testimonial shoot or a multi&ndash;camera event shoot &ndash; our curated video crew services scale to your brief, no matter how many cities and continents. We work closely with your in&ndash;house creative teams to help them scale content. Our managed services include crew curation as per your shoot requirement, location booking, artist booking, in&ndash;person or remote shoot management, and footage quality checks. 
-        </div>
-      </>
-    ),
-  },
-  {
-    key: 1,
-    title: 'How experienced is your team?',
-    content:
-      'We’ve been fuelling brand communications with great creativity and technology for nearly a decade now. We’ve worked with dozens of brands in technology, FMCG, F&B, Aerospace, Manufacturing, Engineering, Energy, Quick-commerce and more to help craft unique brands, deliver sticky campaigns and scale brand content across regions.',
-  },
-  {
-    key: 2,
-    title: 'Where can I view your portfolio?',
-    content: (
-      <>
-        All of our work is available on{' '}
-        <Link
-          href="http://www.makerrs.com/work"
-          className="underline"
-        >
-          www.makerrs.com/work
-        </Link>
-        {''}, Visit the link to explore our best work.
-      </>
-    ),
-  },
-  {
-    key: 3,
-    title: 'Which business verticals do you work with?',
-    content:
-      'We work with brand and marketing, corporate communications, employer branding and internal marketing, human resources and recruitment, and with CSR and ESG teams. And, we work with both for-profit and non-profit organizations.',
-  },
-  {
-    key: 5,
-    title: 'What are your typical project turnaround times?',
-    content: (
-      <>
-        <div>
-          Project turnaround times vary based on the brief. For strategic long-term result-oriented engagements, it takes a couple of months to workshop requirements, research and arrive at a project gameplan and metrics to measure. And the project itself may range from 6 to 18 months, or longer. For ongoing and on-demand services, the turnaround times vary from a couple of weeks to a couple of months depending on the scale of the requirement. <br/>
-          When it comes to our book-a-crew service however, we can work with as little as 2 to 3 working days to get you the right crew.
-        </div>
-      </>
-    ),
-  },
-  {
-    key: 6,
-    title:
-      'What are your policies around intellectual property rights and business data confidentiality?',
-    content:
-      'We take data security, privacy, confidentiality, and intellectual property rights very seriously. Our practices adhere to global standards. We license every single software and creative asset required, and ensure that necessary media release documents and service contracts are in place to explicitly call out the intellectual property rights assigned to the client.',
-  },
-  {
-    key: 10,
-    title: 'Which time zone does your company operate in?',
-    content: (
-      <>
-        Our borderless agency supports clients across time zones. So, {' '}
-        <Link href="https://www.b2b.redbangle.com/contact" className="underline hover:text-rb-link-green2">
-          send us a brief
-        </Link>{' '}
-        and we&apos;ll set up a meeting at a mutually convenient time.
-      </>
-    ),
-  },
+    {
+      key: 0,
+      title: 'What services does your global creative agency offer?',
+      content: (
+        <>
+          <div>
+            Makkers offers strategic creative services that help you launch and scale brands across markets.
+          </div>
+          <h3 className="mt-5 font-semibold  text-base">1. Strategy:</h3>
+          <div>
+            We offer a range of strategy services &ndash; including brand environment analysis, brand communication strategy, and video content strategy. We blend data, insights and marketing expertise to craft strategies that drive growth for your business.
+          </div>
+          <h3 className="mt-5 font-semibold  text-base">2. Design:</h3>
+          <div>
+            We offer a range of design services - from brand identity and event branding, to brand mascots and avatars, print and editorial design, and environmental graphics for corporate offices. We help you build brand differentiation, credibility and human connect through our future&ndash;forward design solutions.
+          </div>
+          <h3 className="mt-5 font-semibold  text-base">3. Videos:</h3>
+          <div>
+            We offer strategic and creative video content production services for brand growth. Whether it is driving your YouTube strategy and delivering SEO&ndash;first content all year round, crafting your product communications and scaling content for the next 18 months, or creating on&ndash;demand case study videos, thought leadership content, product explainer videos, hiring and culture videos, or videos for corporate communications and public relations &ndash; our end to end video production services include research, conceptualisation, anywhere production, and endless versioning.
+          </div>
+          <h3 className="mt-5 font-semibold  text-base">4. Podcast:</h3>
+          <div>
+            Our beginnings lay in an award&ndash;winning YouTube show. With years of experience running our own show and now having produced several successful podcasts for clients, we have a strong framework for creating your next IP: be it a podcast for your brand or a podcast for you as a business leader. Our end&ndash;to&ndash;end solutions include research, concept, design, podcast production, publishing, distribution and amplification. And we use modern tools and processes to scale production and publishing as required.
+          </div>
+          <h3 className="mt-5 font-semibold  text-base">5. Campaign:</h3>
+          <div>
+            From insightful communication strategies to exciting campaign plans, big campaign ideas, inspiring creatives, and flawless execution across formats and locations &ndash; we provide comprehensive creative campaign solutions. Whether it&apos;s for brand marketing campaigns, product and solution marketing campaigns, employer branding campaigns, localisation campaigns or ESG campaigns &ndash; we support every phase of your brand growth.
+          </div>
+          <h3 className="mt-5 font-semibold  text-base">
+            6. On&ndash;demand Video Crews or &apos;Book a Crew&apos;:
+          </h3>
+          <div>
+            We have a strong, curated collaborative of professional video crews available on&ndash;demand in 100 countries. Be it a single&ndash;camera testimonial shoot or a multi&ndash;camera event shoot &ndash; our curated video crew services scale to your brief, no matter how many cities and continents. We work closely with your in&ndash;house creative teams to help them scale content. Our managed services include crew curation as per your shoot requirement, location booking, artist booking, in&ndash;person or remote shoot management, and footage quality checks.
+          </div>
+        </>
+      ),
+    },
+    {
+      key: 1,
+      title: 'How experienced is your team?',
+      content:
+        'We’ve been fuelling brand communications with great creativity and technology for nearly a decade now. We’ve worked with dozens of brands in technology, FMCG, F&B, Aerospace, Manufacturing, Engineering, Energy, Quick-commerce and more to help craft unique brands, deliver sticky campaigns and scale brand content across regions.',
+    },
+    {
+      key: 2,
+      title: 'Where can I view your portfolio?',
+      content: (
+        <>
+          All of our work is available on{' '}
+          <Link
+            href="http://www.makerrs.com/work"
+            className="underline"
+          >
+            www.makerrs.com/work
+          </Link>
+          {''}, Visit the link to explore our best work.
+        </>
+      ),
+    },
+    {
+      key: 3,
+      title: 'Which business verticals do you work with?',
+      content:
+        'We work with brand and marketing, corporate communications, employer branding and internal marketing, human resources and recruitment, and with CSR and ESG teams. And, we work with both for-profit and non-profit organizations.',
+    },
+    {
+      key: 5,
+      title: 'What are your typical project turnaround times?',
+      content: (
+        <>
+          <div>
+            Project turnaround times vary based on the brief. For strategic long-term result-oriented engagements, it takes a couple of months to workshop requirements, research and arrive at a project gameplan and metrics to measure. And the project itself may range from 6 to 18 months, or longer. For ongoing and on-demand services, the turnaround times vary from a couple of weeks to a couple of months depending on the scale of the requirement. <br />
+            When it comes to our book-a-crew service however, we can work with as little as 2 to 3 working days to get you the right crew.
+          </div>
+        </>
+      ),
+    },
+    {
+      key: 6,
+      title:
+        'What are your policies around intellectual property rights and business data confidentiality?',
+      content:
+        'We take data security, privacy, confidentiality, and intellectual property rights very seriously. Our practices adhere to global standards. We license every single software and creative asset required, and ensure that necessary media release documents and service contracts are in place to explicitly call out the intellectual property rights assigned to the client.',
+    },
+    {
+      key: 10,
+      title: 'Which time zone does your company operate in?',
+      content: (
+        <>
+          Our borderless agency supports clients across time zones. So, {' '}
+          <Link href="https://www.b2b.redbangle.com/contact" className="underline hover:text-rb-link-green2">
+            send us a brief
+          </Link>{' '}
+          and we&apos;ll set up a meeting at a mutually convenient time.
+        </>
+      ),
+    },
   ]
 
   const heroSection = useRef()
@@ -607,6 +607,7 @@ const LandPage = () => {
         title="Branding, Video and Podcast Production Agency | Makerrs"
         description="Top agency for branding services, video production, podcast production and video crew services. Global creative partner to borderless brands and enterprises."
         url="https://www.makerrs.com"
+        keywords="Creative agency, B2B Brand, B2B Enterprise, B2C Brand, Consumer Brand, Artificial Intelligence, AI, Brand Communication, Creative Solutions, Brand solutions, Brand positioning, Brand development strategy, Brand design, Campaign Strategy, Video Production, Digital experiences, Cutting edge technology, Tailored digital solutions, Technology solutions"
       />
 
       <section
@@ -653,8 +654,7 @@ const LandPage = () => {
           >
             <div>
               <div className="text-rb-black text-[16px] md:text-[24px] leading-[1.5] md:leading-[1.33] tracking-[-0.64px] md:tracking-[-0.96px] font-semibold max-w-[900px]">
-                We are a tech-powered creative agency and collaborative. We help global businesses craft brands and narratives through design, videos, podcasts and campaigns.              
-              </div>
+                We are a creative agency and collaborative helping global businesses craft brands and narratives through design, videos, podcasts and campaigns.              </div>
               <div className="flex items-center justify-center md:flex-row flex-col md:mt-10 mt-9 md:gap-5 gap-4">
                 <Button
                   href="/contact?type=client"
@@ -689,7 +689,7 @@ const LandPage = () => {
         <div className="container">
           <LineHeading className="mb-6 md:mb-7.5">WHY PARTNER WITH MAKERRS</LineHeading>
           <div className="max-w-[1090px]">
-            <RevealText text="We craft brands and engagement in the age of the borderless customer. Our creative teams, strategic approach, human insights, global collaborative of creators and makerrs, and cloud-based workflows make us the right partner for your brand." />
+            <RevealText text="We craft brands and engagement in the age of the borderless customer. Our creative teams, strategic approach, human insights, global collaborative of creators and makerrs, and cloud-based workflows make us the right partner for your ambitious brand." />
           </div>
           <Button
             href="/about/who-we-are"
@@ -701,7 +701,7 @@ const LandPage = () => {
         </div>
       </section>
 
-      <section className={`bg-white overflow-hidden`}> 
+      <section className={`bg-white overflow-hidden`}>
         <div className="container">
           <LineHeading className="mb-6 md:mb-7.5">Grow your brand with us</LineHeading>
           <div className="grid lg:flex grid-cols-2 gap-x-5 md:gap-x-[124px] gap-y-12 md:gap-y-6 max-w-full md:max-w-none ml-5 transform -translate-x-5 sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-12">
@@ -710,11 +710,11 @@ const LandPage = () => {
                 className={`w-full lg:w-1/4 text-[42px] leading-14 tracking-[-1.44px] md:text-stat group relative ${statsStyles.statline}`}
                 key={s.id}
               >
-                <div className={`${i == 2 && 'lg:ml-[20%]'} ${s.id === 3 ? 'ipad-mini-ml':''}`}>
+                <div className={`${i == 2 && 'lg:ml-[20%]'} ${s.id === 3 ? 'ipad-mini-ml' : ''}`}>
                   <div className='lg:w-fit lg:mx-auto'>
-                    <div className={`${s.id === 1 ? '!-ml-[4px] md:!-ml-[8px]':''} ${s.id === 0 ? '!-ml-[4px] md:!-ml-[7px]':''} ${s.id === 2 ? '!-ml-[2px] md:!-ml-[3px]':''} ${s.id === 3 ? '!-ml-[3px] md:!-ml-[5px]':''}`}>
-                        <RollupNumber {...s.countUpProps} />
-                      </div>
+                    <div className={`${s.id === 1 ? '!-ml-[4px] md:!-ml-[8px]' : ''} ${s.id === 0 ? '!-ml-[4px] md:!-ml-[7px]' : ''} ${s.id === 2 ? '!-ml-[2px] md:!-ml-[3px]' : ''} ${s.id === 3 ? '!-ml-[3px] md:!-ml-[5px]' : ''}`}>
+                      <RollupNumber {...s.countUpProps} />
+                    </div>
                     <div className="text-sm leading-[17px] md:text-2xl md:leading-7 tracking-normal md:tracking-[-0.96px] text-rb-black mt-0 md:mt-3 font-medium font-everett">
                       {s.text}
                     </div>
@@ -724,21 +724,21 @@ const LandPage = () => {
             ))}
           </div>
         </div>
-    </section>
-    
-    <div className='py-18 md:pt-30 md:pb-0'>
-      <SolutionsSection />
-    </div>
+      </section>
+
+      <div className='py-18 md:pt-30 md:pb-0'>
+        <SolutionsSection />
+      </div>
 
 
-    <Testimonials
-      title={'WHAT CLIENTS SAY'}
-      className="pt-18 pb-7.5 md:pt-30 md:pb-15"
-      testimonialData={createTestimonialData}
-      type="semi"
-    />
+      <Testimonials
+        title={'WHAT CLIENTS SAY'}
+        className="pt-18 pb-7.5 md:pt-30 md:pb-15"
+        testimonialData={createTestimonialData}
+        type="semi"
+      />
 
-    <section className=" py-12 md:py-24">
+      <section className=" py-12 md:py-24">
         <div className="container">
           <div className="rb-row">
             <div className="w-full md:w-5/12">

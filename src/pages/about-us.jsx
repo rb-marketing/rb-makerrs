@@ -335,7 +335,7 @@ const WhoWeAre = () => {
         'Get on-demand professional video crews anywhere in the world. Be it a one-camera shoot or a multi-camera multi-location production–we curate and manage the production, and quality-check the footage for you. Hire a professional video crew today!',
       bgColor: '#ffffff',
       textColor: '#13c33f',
-      href: '/professional-video-crews',
+      href: '/video-production-near-me',
     },
   ]
 
@@ -469,7 +469,8 @@ const WhoWeAre = () => {
       <SEO
         title="Tech-Enabled Creative Agency & Collaborative | Makerrs"
         description="We are a tech-powered global creative agency and collaborative. We’ve crafted branding, videos, podcast IPs, campaigns and more for over 60 brands."
-        url="https://www.redbangle.com/about/who-we-are"
+        url="https://www.makerrs.com/about-us"
+        keywords="Creative agency, B2B Brand, B2B Enterprise, B2C Brand, Consumer Brand, Artificial Intelligence, AI, Brand Communication, Creative Solutions, Brand solutions, Cloud Platform"
       />
 
       <section

@@ -22,7 +22,7 @@ const slides = [
     color: '#ffffff',
     buttonName: 'Explore Design Solutions',
     textColor: '#111010',
-    href: '',
+    href: '/brand-design-agency',
   },
   {
     key: 2,
@@ -38,7 +38,7 @@ const slides = [
     color: '#ffffff',
     buttonName: 'Explore Video Solutions',
     textColor: '#111010',
-    href: ''
+    href: '/video-production'
   },
   {
     key: 3,
@@ -55,7 +55,7 @@ const slides = [
     buttonName: 'Explore Podcast Solutions',
     textColor: '#111010',
     // href: process.env.NEXT_PUBLIC_B2C,
-    href: ''
+    href: '/podcast-production-services'
   },
 
   {
@@ -73,7 +73,7 @@ const slides = [
     color: '#ffffff',
     buttonName: 'Explore Campaign Services',
     textColor: '#111010',
-    href: '',
+    href: '/advertising-agency',
   },
   {
     key: 5,
@@ -82,7 +82,6 @@ const slides = [
       'Hire professional video crews across 100 countries. Be it a one-camera shoot, a multi-camera multi-location production or a studio shoot–we curate the right video crews for you, book locations, manage the production, and quality-check the footage before it hits your inbox.',
     video: {
       src: '/img/crew-preview.mp4',
-
       poster: '/img/services/play-poster.webp',
       width: '1440',
       height: '810',
@@ -90,9 +89,10 @@ const slides = [
     color: '#ffffff',
     buttonName: 'Hire Video Crews',
     textColor: '#111010',
-    href: '',
+    href: '/video-production-near-me',
   },
 ]
+
 const sReverse = slides
 export const SolutionsSection = () => {
   const containerRef = useRef()
