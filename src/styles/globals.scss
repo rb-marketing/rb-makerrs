@@ -325,7 +325,7 @@ html.lenis {
 
 .blog-content-main {
   a {
-    @apply text-rb-red focus:text-rb-scarlet;
+    @apply text-rb-black underline hover:text-rb-link-green focus:text-rb-link-green;
   }
 
   h2 {
@@ -335,7 +335,7 @@ html.lenis {
     line-height: 120%;
     letter-spacing: -1.28px;
     margin-bottom: 24px;
-    color: #111010;
+    color: #000000;
     @apply font-everett;
   }
 
@@ -422,11 +422,11 @@ html.lenis {
       width: 5px;
       height: 5px;
       content: '';
-      @apply bg-rb-red rounded-full left-0 absolute top-2 opacity-0 duration-300 ease-out;
+      @apply bg-rb-link-green rounded-full left-0 absolute top-2 opacity-0 duration-300 ease-out;
     }
 
     &.active {
-      @apply pl-4 text-rb-red;
+      @apply pl-4 text-rb-link-green;
 
       &:before {
         opacity: 1;
@@ -536,7 +536,7 @@ html.lenis {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-size: 37px 9px;
-  background-position: 180px 16px;
+  background-position: right 16px;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg width='23' height='13' viewBox='0 0 23 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.4454 1.72272L11.7227 11.4454L1.99994 1.72272' stroke='%2307ef5a' stroke-width='2.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); 
 }
@@ -550,9 +550,9 @@ html.lenis {
   }
 }
 
-.rb-select-blogs:hover {
+/* .rb-select-blogs:hover {
   animation: movetopBottom 0.1s ease-in-out forwards
-}
+} */
 
 .rb-select-blogs:focus {
   outline: none; 
@@ -1164,4 +1164,12 @@ a:hover {
   &::after {
       visibility: hidden;
     }
+}
+
+.blogs-dd{
+  .dd-field{
+    width: auto;
+    padding-right: 2.5rem;
+    min-width: 250px;
+  }
 }

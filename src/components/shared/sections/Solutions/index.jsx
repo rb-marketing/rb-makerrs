@@ -38,7 +38,6 @@ const slides = [
     color: '#ffffff',
     buttonName: 'Explore Video Solutions',
     textColor: '#111010',
-    // href: process.env.NEXT_PUBLIC_B2B,
     href: ''
   },
   {

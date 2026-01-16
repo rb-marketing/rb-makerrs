@@ -1,17 +1,17 @@
-
-
 import { LineArrow } from '@/components/icons'
 import { LineHeading, NewsletterField, SEO } from '@/components/shared'
+import { ContentPostCard } from '@/components/shared/Cards'
 import GetUpdates from '@/components/shared/sections/GetUpdatesSection/GetUpdates'
-import { Button } from '@/components/ui'
+import { ArrowButton, Button } from '@/components/ui'
 import React, { useState, useEffect } from 'react'
 import { getBlogs } from '@/utils/graphql'
 import { formatBlogPosts } from '@/utils/formate'
 import { blogSchema } from '@/components/schema/blog-schema'
+import Script from 'next/script'
 import { Dropdown } from '@/components/dropdown/dropdown'
 import { useRouter } from 'next/router'
 
-const PAGE_LIMIT = 100;
+const PAGE_LIMIT = 70;
 
 const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
   const [state, setState] = useState({
@@ -22,11 +22,8 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
     posts: edges,
   })
 
-
   const loadMore = async () => {
-    const {
-      data: { posts },
-    } = await getBlogs(state.pageInfo.endCursor, PAGE_LIMIT); 
+   const { data: { posts },} = await getBlogs(state.pageInfo.endCursor, PAGE_LIMIT); 
 
     setState((prev) => ({
       pageInfo: posts.pageInfo,
@@ -85,18 +82,6 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
   const router = useRouter();
   const { category } = router.query;
 
-
-  useEffect(() => {
-    const handlePopState = (event) => {
-      setSelectedCategory('Select Category');
-    };
-
-    if (category === undefined) {
-      window.addEventListener('popstate', handlePopState);
-    }
-
-  }, [])
-
   let categoryOptions = allPosts
     .flatMap(item => item.categories)
     .filter((category, index, self) =>
@@ -146,7 +131,7 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
         Brand Content Resources"
         url={category !== undefined ? `https://www.staging.b2b.redbangle.com/blog?category=${category}`:`https://www.staging.b2b.redbangle.com/blog`}
       />
-      <section className="bg-rb-mercury py-23">
+      <section className="py-23">
         <div className="container">
           <h1 className="font-everett text-[32px] md:text-[64px] xl:text-[120px] font-normal mb-8 md:mb-18 leading-[100%]">
             Read Our Blog
@@ -216,7 +201,7 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
         <div className="container">
           <LineHeading className="mb-6 md:mb-9">Explore more</LineHeading>
          
-          <div>
+          <div className='blogs-dd'>
             <Dropdown
               placeholder={selectedCategory && selectedCategory !== 'all-blogs' ? selectedCategory : 'ALL BLOGS'}
               options={categoryOptions}
@@ -299,10 +284,9 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
       </section>
 
       <GetUpdates />
-      <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
-      ></script>
+      <Script id="schema" type="application/ld+json">
+        {JSON.stringify(blogSchema)}
+      </Script>
     </>
   )
 }

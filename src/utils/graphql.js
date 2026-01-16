@@ -24,9 +24,9 @@ const TAXANOMY_QUERY = `
     nodes {
         name
         slug
-        description
     }
 `
+
 const WORK_PLAY_DETAILS = `
 title
 content
@@ -70,6 +70,30 @@ const WORK_POST_QUERY = `
     }
 `
 
+const GLOBAL_LP_POST_QUERY = `
+    nodes {
+      title
+      slug
+      featuredImage {
+        ${FEATURED_IMAGE_QUERY}
+      }
+      categories {
+        ${TAXANOMY_QUERY}
+      }
+      tags {
+        ${TAXANOMY_QUERY}
+      }
+      companies {
+        ${TAXANOMY_QUERY}
+      }
+      globalLp {
+        customTitle
+        globalLpVideo
+      }
+           
+    }
+`
+
 const POST_QUERY = `
 slug
 title
@@ -87,10 +111,9 @@ categories {
 tags {
   ${TAXANOMY_QUERY}
 }
-primary_category {
-  primaryCategory
-  secondaryCategory
-  tertiaryCategory
+blog_additional_data {
+  seoDesc
+  seoTitle
 }
 `
 
@@ -132,6 +155,7 @@ const getWpQuery = async (query, variables) => {
 
   return resBody
 }
+
 export const getPlayWorks = (tags) => {
   return getWpQuery(
     tags
@@ -146,6 +170,27 @@ query MyQuery($tags:[String]) {
 query MyQuery {
     works(first:200, where: {orderby: {field: DATE, order: DESC}}) {
         ${WORK_POST_QUERY}
+    }
+  }
+`,
+    tags ? { tags } : null
+  )
+}
+
+export const getGlobalWorks = (tags) => {
+  return getWpQuery(
+    tags
+      ? `
+query MyQuery($tags:[String]) {
+  works(first:200, where: {tagSlugIn: $tags,orderby: {field: DATE, order: DESC}}) {
+      ${GLOBAL_LP_POST_QUERY}
+  }
+}
+`
+      : `
+query MyQuery {
+    works(first:200, where: {orderby: {field: DATE, order: DESC}}) {
+        ${GLOBAL_LP_POST_QUERY}
     }
   }
 `,
