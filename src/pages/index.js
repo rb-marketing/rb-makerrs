@@ -654,8 +654,7 @@ const LandPage = () => {
           >
             <div>
               <div className="text-rb-black text-[16px] md:text-[24px] leading-[1.5] md:leading-[1.33] tracking-[-0.64px] md:tracking-[-0.96px] font-semibold max-w-[900px]">
-                We are a tech-powered creative agency and collaborative. We help global businesses craft brands and narratives through design, videos, podcasts and campaigns.
-              </div>
+                We are a creative agency and collaborative helping global businesses craft brands and narratives through design, videos, podcasts and campaigns.              </div>
               <div className="flex items-center justify-center md:flex-row flex-col md:mt-10 mt-9 md:gap-5 gap-4">
                 <Button
                   href="/contact?type=client"
@@ -690,7 +689,7 @@ const LandPage = () => {
         <div className="container">
           <LineHeading className="mb-6 md:mb-7.5">WHY PARTNER WITH MAKERRS</LineHeading>
           <div className="max-w-[1090px]">
-            <RevealText text="We craft brands and engagement in the age of the borderless customer. Our creative teams, strategic approach, human insights, global collaborative of creators and makerrs, and cloud-based workflows make us the right partner for your brand." />
+            <RevealText text="We craft brands and engagement in the age of the borderless customer. Our creative teams, strategic approach, human insights, global collaborative of creators and makerrs, and cloud-based workflows make us the right partner for your ambitious brand." />
           </div>
           <Button
             href="/about/who-we-are"

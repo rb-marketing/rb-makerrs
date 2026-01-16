@@ -481,7 +481,7 @@ export const Footer = ({ hasContactForm }) => {
                         Campaign
                       </Link>
                       <Link
-                        href='/professional-video-crews'
+                        href='/video-production-near-me'
                         data-rb-cursor-state="invisible"
                         className="max-w-max"
                       >

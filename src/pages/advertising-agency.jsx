@@ -118,7 +118,7 @@ const Campaign = ({ setisPopupOpen }) => {
         'Book professional video crews on-demand in 100 countries. Our team of experienced producers curate video crews for every brief and location, manage the shoots and quality-check the footage for you. Shoot video testimonials, events, drone footage, and more wherever you need them!',
       bgColor: '#ffffff',
       textColor: '#13c33f',
-      href: '/professional-video-crews',
+      href: '/video-production-near-me',
     },
   ]
 

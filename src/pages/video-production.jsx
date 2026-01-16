@@ -305,7 +305,7 @@ We also handle video versioning supporting custom adaptations requirements so th
         'Get on-demand professional video crews anywhere in the world. Be it a one-camera shoot or a multi-camera multi-location production–we curate and manage the production, and quality-check the footage for you. Hire a professional video crew today!',
       bgColor: '#ffffff',
       textColor: '#13c33f',
-      href: '/professional-video-crews',
+      href: '/video-production-near-me',
     },
   ]
 

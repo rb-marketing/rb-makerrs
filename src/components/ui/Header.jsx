@@ -46,7 +46,7 @@ const outsideLinks = [
       { title: 'Video', href: '/video-production' },
       { title: 'Podcast', href: '/podcast-production-services' },
       { title: 'Campaign', href: '/advertising-agency' },
-      { title: 'Book a Crew', href: '/professional-video-crews' },
+      { title: 'Book a Crew', href: '/video-production-near-me' },
     ],
     subMenu: [
       {
@@ -772,7 +772,7 @@ export const Header = () => {
                       </Link>
                       <Link href="/podcast-production-services">Podcast</Link>
                       <Link href="/advertising-agency">Campaign</Link>
-                      <Link href="/professional-video-crews">Book a Crew</Link>
+                      <Link href="/video-production-near-me">Book a Crew</Link>
                     </div>
                   </div>
 
