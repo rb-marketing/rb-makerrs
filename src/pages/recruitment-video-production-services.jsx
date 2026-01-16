@@ -976,7 +976,7 @@ const RecruitmentVideoProduction = () => {
     },
     {
       icon: '/img/explainer-video/on_time_delivery.svg',
-      need: 'Deadlines',
+      need: 'Turnaround Time',
       others: 'They work at their speed',
       redBangle: 'We work at the speed you need',
     },
@@ -1766,8 +1766,6 @@ const RecruitmentVideoProduction = () => {
         </Marquee>
       </section>
 
-      {/* <GetUpdates /> */}
-
       <section className={`overflow-hidden bg-white pt-[48px] pb-18 md:py-30 `}>
         <div className="container text-center">
           <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
@@ -1784,7 +1782,7 @@ const RecruitmentVideoProduction = () => {
                     <th className="md:!w-[313px] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#030104] md:whitespace-nowrap text-left">
                       What Others Offer
                     </th>
-                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-[#07ef5a] md:whitespace-nowrap text-left">
+                    <th className="md:!w-[313px] max-w-[30%] px-4 py-2 font-medium text-[16px] md:text-[20px] tracking-[-0.02em] text-rb-link-green md:whitespace-nowrap text-left">
                       What you get with us
                     </th>
                   </tr>
@@ -1861,10 +1859,10 @@ const RecruitmentVideoProduction = () => {
         </div>
       </section>
 
-       <section className="py-18 md:py-30 overflow-hidden">
+       <section className="py-18 md:py-10 overflow-hidden">
         <div className="container">
           <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
-            How do we create GenAI Videos
+            How we create great hiring videos
           </div>
 
           <div className="flex gap-6 md:flex-row flex-col-reverse">
@@ -1907,7 +1905,7 @@ const RecruitmentVideoProduction = () => {
       </section>
 
        <Testimonials
-          title={'WHAT CLIENTS SAY'}
+          title={'Why Our Clients Trust Us'}
           className="py-18 md:py-30"
           testimonialData={testimonialRecruiterData}
           type="semi"
