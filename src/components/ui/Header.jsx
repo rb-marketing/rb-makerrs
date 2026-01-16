@@ -26,26 +26,57 @@ const dropDownArrow = (
   </svg>
 )
 
+const dropDownArrowMini = (
+  <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+    <path
+      d="m1.242 11.748 10.51-10.51 m0 0 H1.242 m10.51 0 v10.51"
+      stroke="#111010"
+      strokeWidth="2.10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+)
+
 const outsideLinks = [
   {
     title: 'Services',
     menu: [
-      { title: 'Design', href: '/brand-design-agency'},
+      { title: 'Design', href: '/brand-design-agency' },
       { title: 'Video', href: '/video-production' },
-      { title: 'Podcast', href: '/podcast-production-services'},
+      { title: 'Podcast', href: '/podcast-production-services' },
       { title: 'Campaign', href: '/advertising-agency' },
       { title: 'Book a Crew', href: '/professional-video-crews' },
     ],
     subMenu: [
-      { title: "Explainer Video", href: "/explainer-video-production-services", type: "videos" },
-      { title: "Corporate Video", href: "/corporate-video-production-services", type: "videos" },
-      { title: "Case Study Video", href: "/video-testimonial-production", type: "videos" },
-      { title: "Recruitment Video", href:"/recruitment-video-production-services", type: "videos"},
-      { title: "GenAI Video", href:"/ai-video-agency", type: "videos"},
-      { title: "Brand Identity Design", href:"/brand-identity-design-services", type: "design"}
-    ]
-  }
-
+      {
+        title: 'Explainer Video',
+        href: '/explainer-video-production-services',
+        type: 'videos',
+      },
+      {
+        title: 'Corporate Video',
+        href: '/corporate-video-production-services',
+        type: 'videos',
+      },
+      {
+        title: 'Case Study Video',
+        href: '/video-testimonial-production',
+        type: 'videos',
+      },
+      {
+        title: 'Recruitment Video',
+        href: '/recruitment-video-production-services',
+        type: 'videos',
+      },
+      { title: 'GenAI Video', href: '/ai-video-agency', type: 'videos' },
+      {
+        title: 'Brand Identity Design',
+        href: '/brand-identity-design-services',
+        type: 'design',
+      },
+    ],
+  },
 ]
 
 const outsideLinks2 = [
@@ -54,7 +85,7 @@ const outsideLinks2 = [
     menu: [
       { title: 'About Us', href: '/about-us' },
       { title: 'Our Technology', href: '/creative-cloud-platform' },
-      { title: 'Our Impact', href: '/impact' }
+      { title: 'Our Impact', href: '/impact' },
     ],
   },
 ]
@@ -190,7 +221,6 @@ export const Header = () => {
                       Work
                     </Link>
 
-
                     {outsideLinks.map((l, i) => (
                       <div
                         className="inline-block h-auto font-semibold text-sm md:mr-10 relative group text-rb-black hover:text-rb-link-green transition-all"
@@ -226,88 +256,120 @@ export const Header = () => {
                             </svg>
                           </div>
                         </button>
-                         <div className="absolute font-medium min-w-[210px] p-6 top-10 rounded-lg shadow-menu invisible group-hover:visible group-hover:opacity-100 transition-all opacity-0 flex flex-col z-[1] bg-white">
+                        <div className="absolute font-medium min-w-[210px] p-6 top-10 rounded-lg shadow-menu invisible group-hover:visible group-hover:opacity-100 transition-all opacity-0 flex flex-col z-[1] bg-white">
                           {l.menu?.map((lItem, li) => {
-                            const isVideos = lItem.title === "Video";
-                            const isDesign = lItem.title === "Design";
+                            const isVideos = lItem.title === 'Video'
+                            const isDesign = lItem.title === 'Design'
                             return isVideos ? (
-                              <div key={li} className="relative group/videos mt-4 first:mt-0">
-                              <Link
-                                href={lItem.href}
-                                className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-link-green transition-all"
+                              <div
+                                key={li}
+                                className="relative group/videos mt-4 first:mt-0"
                               >
-                                {lItem.title}
-                                <svg
-                                  width="21"
-                                  height="20"
-                                  viewBox="0 0 21 20"
-                                  className="ml-2 group-hover/videos:rotate-90 transition-all"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
+                                <Link
+                                  href={lItem.href}
+                                  className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-link-green transition-all"
                                 >
-                                  <path d="M7.65234 13.7046L14.0942 7.26275" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                                  <path d="M8.20312 6.84087L14.645 6.84087L14.645 13.2827" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                              </Link>
+                                  {lItem.title}
+                                  <svg
+                                    width="21"
+                                    height="20"
+                                    viewBox="0 0 21 20"
+                                    className="ml-2 group-hover/videos:rotate-90 transition-all"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M7.65234 13.7046L14.0942 7.26275"
+                                      stroke="currentColor"
+                                      strokeWidth="1.6"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
+                                    <path
+                                      d="M8.20312 6.84087L14.645 6.84087L14.645 13.2827"
+                                      stroke="currentColor"
+                                      strokeWidth="1.6"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
+                                  </svg>
+                                </Link>
 
-                              {/* Submenu for Videos */}
-                              <div className="absolute top-0 left-full md:left-24 ml-4 md:ml-0 min-w-[225px] bg-white p-6 rounded-md shadow-lg opacity-0 group-hover/videos:opacity-100 pointer-events-none group-hover/videos:pointer-events-auto transition-all z-50">
-                                {l?.subMenu
-                                  ?.filter((sub) => sub.type === "videos")
-                                  .map((sub, si) => (
-                                    <Link
-                                      key={si}
-                                      href={sub.href}
-                                      className="block text-lg leading-6 text-rb-black hover:text-rb-link-green mt-4 first:mt-0 transition-all"
-                                    >
-                                      {sub.title}
-                                    </Link>
-                                  ))}
+                                {/* Submenu for Videos */}
+                                <div className="absolute top-0 left-full md:left-24 ml-4 md:ml-0 min-w-[225px] bg-white p-6 rounded-md shadow-lg opacity-0 group-hover/videos:opacity-100 pointer-events-none group-hover/videos:pointer-events-auto transition-all z-50">
+                                  {l?.subMenu
+                                    ?.filter((sub) => sub.type === 'videos')
+                                    .map((sub, si) => (
+                                      <Link
+                                        key={si}
+                                        href={sub.href}
+                                        className="block text-lg leading-6 text-rb-black hover:text-rb-link-green mt-4 first:mt-0 transition-all"
+                                      >
+                                        {sub.title}
+                                      </Link>
+                                    ))}
+                                </div>
                               </div>
-                            </div>
-                            ): isDesign ? (
-                              <div key={li} className="relative group/design mt-4 first:mt-0">
-                              <Link
-                                href={lItem.href}
-                                className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-link-green transition-all"
+                            ) : isDesign ? (
+                              <div
+                                key={li}
+                                className="relative group/design mt-4 first:mt-0"
                               >
-                                {lItem.title}
-                                <svg
-                                  width="21"
-                                  height="20"
-                                  viewBox="0 0 21 20"
-                                  className="ml-2 group-hover/design:rotate-90 transition-all"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
+                                <Link
+                                  href={lItem.href}
+                                  className="text-lg leading-6 flex items-center text-rb-black hover:text-rb-link-green transition-all"
                                 >
-                                  <path d="M7.65234 13.7046L14.0942 7.26275" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                                  <path d="M8.20312 6.84087L14.645 6.84087L14.645 13.2827" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                              </Link>
+                                  {lItem.title}
+                                  <svg
+                                    width="21"
+                                    height="20"
+                                    viewBox="0 0 21 20"
+                                    className="ml-2 group-hover/design:rotate-90 transition-all"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M7.65234 13.7046L14.0942 7.26275"
+                                      stroke="currentColor"
+                                      strokeWidth="1.6"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
+                                    <path
+                                      d="M8.20312 6.84087L14.645 6.84087L14.645 13.2827"
+                                      stroke="currentColor"
+                                      strokeWidth="1.6"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
+                                  </svg>
+                                </Link>
 
-                              {/* Submenu for Design */}
-                              <div className="absolute top-0 left-full md:left-24 ml-4 md:ml-0 min-w-[240px] bg-white p-6 rounded-md shadow-lg opacity-0 group-hover/design:opacity-100 pointer-events-none group-hover/design:pointer-events-auto transition-all z-50">
-                                {l?.subMenu
-                                  ?.filter((sub) => sub.type === "design")
-                                  .map((sub, si) => (
-                                    <Link
-                                      key={si}
-                                      href={sub.href}
-                                      className="block text-lg leading-6 text-rb-black hover:text-rb-link-green mt-4 first:mt-0 transition-all"
-                                    >
-                                      {sub.title}
-                                    </Link>
-                                  ))}
+                                {/* Submenu for Design */}
+                                <div className="absolute top-0 left-full md:left-24 ml-4 md:ml-0 min-w-[240px] bg-white p-6 rounded-md shadow-lg opacity-0 group-hover/design:opacity-100 pointer-events-none group-hover/design:pointer-events-auto transition-all z-50">
+                                  {l?.subMenu
+                                    ?.filter((sub) => sub.type === 'design')
+                                    .map((sub, si) => (
+                                      <Link
+                                        key={si}
+                                        href={sub.href}
+                                        className="block text-lg leading-6 text-rb-black hover:text-rb-link-green mt-4 first:mt-0 transition-all"
+                                      >
+                                        {sub.title}
+                                      </Link>
+                                    ))}
+                                </div>
                               </div>
-                            </div>
-                            ):lItem.title.includes("Coming soon") ? (
+                            ) : lItem.title.includes('Coming soon') ? (
                               <span
-                              key={li}
-                              className="mt-4 first:mt-0 text-lg leading-6 flex text-rb-black transition-all"
-                            >
-                              {lItem.title.replace("Coming soon", "").trim()}
-                              <span className="text-[0.7875rem] ml-2">Coming soon</span>
-                            </span>
+                                key={li}
+                                className="mt-4 first:mt-0 text-lg leading-6 flex text-rb-black transition-all"
+                              >
+                                {lItem.title.replace('Coming soon', '').trim()}
+                                <span className="text-[0.7875rem] ml-2">
+                                  Coming soon
+                                </span>
+                              </span>
                             ) : (
                               <Link
                                 key={li}
@@ -322,14 +384,12 @@ export const Header = () => {
                       </div>
                     ))}
 
-
                     <Link
                       href="/blog"
                       className="mr-8 uppercase flex md:h-auto items-center text-sm font-semibold text-rb-black hover:text-rb-link-green transition-all w-full md:w-auto py-4 md:py-0"
                     >
                       Blog
                     </Link>
-
 
                     {outsideLinks2.map((l, i) => (
                       <div
@@ -403,19 +463,17 @@ export const Header = () => {
                     >
                       COLLAB
                     </Link>
-
-
                   </div>
-                  <div className='mr-[47px] hidden md:flex h-[55px] items-end'>
+                  <div className="mr-[47px] hidden md:flex h-[55px] items-end">
                     <Button href="/contact" size="sm" className="font-bold">
                       GET IN TOUCH
                     </Button>
                   </div>
 
-
                   <button
-                    className={`button-container bg-rb-black ${isSticky ? 'sticky-button sticky' : ''
-                      }`}
+                    className={`button-container bg-rb-black ${
+                      isSticky ? 'sticky-button sticky' : ''
+                    }`}
                     aria-label="toggle menu"
                     onClick={mainMenuTrigger}
                   >
@@ -433,13 +491,15 @@ export const Header = () => {
       </header>
 
       <div
-        className={`fixed bg-white z-[999] inset-0 w-full h-full full-width-nav cursor-auto ${mainMenu ? 'nav-open' : ''
-          }`}
+        className={`fixed bg-white z-[999] inset-0 w-full h-full full-width-nav cursor-auto ${
+          mainMenu ? 'nav-open' : ''
+        }`}
       >
         <div className="container relative z-50">
           <button
-            className={`absolute top-10 right-4 z-50 duration-500 ease-out block md:hidden ${mainMenu ? 'scale-100' : 'scale-0'
-              }`}
+            className={`absolute top-10 right-4 z-50 duration-500 ease-out block md:hidden ${
+              mainMenu ? 'scale-100' : 'scale-0'
+            }`}
             onClick={mainMenuTrigger}
           >
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -478,7 +538,6 @@ export const Header = () => {
 
                 <div className="flex items-center gap-4 flex-wrap">
                   <div className="flex gap-2">
-
                     <a
                       target="_blank"
                       href="https://www.linkedin.com/company/redbanglecreative/"
@@ -606,7 +665,7 @@ export const Header = () => {
 
             <div
               className="px-2 w-full md:w-3/5 bg-rb-mercury py-10 md:pl-12"
-            // data-lenis-prevent
+              // data-lenis-prevent
             >
               <div
                 data-lenis-prevent
@@ -626,15 +685,16 @@ export const Header = () => {
                     id="firstlink"
                   >
                     <Link
-                      href='/work/featured'
+                      href="/work/featured"
                       className="text-[40px] md:text-[64px] leading-[100%] font-everett tracking-[-2.7px]"
                     >
                       WORK
                     </Link>
                   </div>
                   <div
-                    className={`dropdown relative nav-link  duration-300 ease-out hover:opacity-100 hover:text-rb-link-green md:order-4 order-4 ${dropdownMenu === 0 ? 'open' : ''
-                      }`}
+                    className={`dropdown relative nav-link  duration-300 ease-out hover:opacity-100 hover:text-rb-link-green md:order-4 order-4 ${
+                      dropdownMenu === 0 ? 'open' : ''
+                    }`}
                   >
                     <button
                       onClick={dropDownTrigger(0)}
@@ -648,21 +708,71 @@ export const Header = () => {
                     </button>
 
                     <div className="dropdown-menu rounded-lg bg-white py-5 px-6 text-black">
-                      <Link href="/brand-design-agency">
-                        Design
+                      <Link
+                        href="/brand-design-agency"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max !flex items-center gap-3"
+                      >
+                        <span>Design</span>
+                        <div className="dropdown-arrow rotate-90 mt-0.5">
+                          {dropDownArrowMini}
+                        </div>
                       </Link>
-                      <Link href="/video-production">
-                        Video
+                      <Link
+                        href="/brand-identity-design-services"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Brand Identity Design
                       </Link>
-                      <Link href="/podcast-production-services">
-                        Podcast
+                      <Link
+                        href="/video-production"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max !flex items-center gap-3"
+                      >
+                        <span>Videos</span>
+                        <div className="dropdown-arrow rotate-90 mt-0.5">
+                          {dropDownArrowMini}
+                        </div>
                       </Link>
-                      <Link href="/advertising-agency">
-                        Campaign
+                      <Link
+                        href="/explainer-video-production-services"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Explainer Videos
                       </Link>
-                      <Link href="/professional-video-crews">
-                        Book a Crew
+                      <Link
+                        href="/corporate-video-production-services"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Corporate Videos
                       </Link>
+                      <Link
+                        href="/video-testimonial-production"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Case Study Videos
+                      </Link>
+                      <Link
+                        href="recruitment-video-production"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        Recruitment Videos
+                      </Link>
+                      <Link
+                        href="/ai-video-agency"
+                        data-rb-cursor-state="invisible"
+                        className="max-w-max ml-5 mt-[-5px]"
+                      >
+                        GenAI Videos
+                      </Link>
+                      <Link href="/podcast-production-services">Podcast</Link>
+                      <Link href="/advertising-agency">Campaign</Link>
+                      <Link href="/professional-video-crews">Book a Crew</Link>
                     </div>
                   </div>
 
@@ -676,8 +786,9 @@ export const Header = () => {
                   </div>
 
                   <div
-                    className={`dropdown relative nav-link  duration-300 ease-out hover:text-rb-link-green md:order-4 order-4 ${dropdownMenu === 1 ? 'open' : ''
-                      }`}
+                    className={`dropdown relative nav-link  duration-300 ease-out hover:text-rb-link-green md:order-4 order-4 ${
+                      dropdownMenu === 1 ? 'open' : ''
+                    }`}
                   >
                     <button
                       onClick={dropDownTrigger(1)}
