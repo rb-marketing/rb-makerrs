@@ -17,7 +17,7 @@ export const SEO = ({
     <>
       <Head>
         <title>{title}</title>
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, nofollow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="author" content="Red Bangle" />
