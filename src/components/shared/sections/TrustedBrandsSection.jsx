@@ -178,7 +178,7 @@ export const TrustedBrandsSection = ({
       <div className="container">
         <LineHeading className="mb-7 md:mb-10">{heading}</LineHeading>
         <div className="overflow-hidden md:min-h-[188px]">
-          <Marquee duration={30}>
+          <Marquee duration={50}>
             <div className="flex items-center md:mb-3">
               {icons
                 .slice(0, icons.length / 2)
@@ -195,7 +195,7 @@ export const TrustedBrandsSection = ({
             </div>
           </Marquee>
           <div className="mt-0 md:mt-0"></div>
-          <Marquee duration={30} direction={-1}>
+          <Marquee duration={50} direction={-1}>
             <div className="flex items-center">
               {icons
                 .slice(icons.length / 2)

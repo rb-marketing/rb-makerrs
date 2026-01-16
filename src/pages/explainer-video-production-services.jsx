@@ -1548,50 +1548,6 @@ const ExplainerVideoLandPage = () => {
         </div>
       </section>
 
-      {/* <section className="bg-rb-mercury py-12 md:py-23">
-        <div className="container">
-          <div className="rb-row md:items-center md:justify-between">
-            <div className="w-full md:w-1/2">
-              <div className="text-[60px] lg:text-[70px] xl:text-[110px] leading-[1.06] text-rb-black tracking-[-2.56px] uppercase font-everett font-medium">
-                Make <br className="md:block" />
-                <span className="text-rb-red">B2B video</span>{' '}
-                <br className="hidden md:block" /> Explainers
-                <br className="hidden md:block" /> with us
-              </div>
-            </div>
-            <div className="w-full md:w-5/12 mt-10 md:mt-0">
-              <ContactForm />
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section className="bg-rb-black uppercase font-medium overflow-hidden text-white py-4 md:py-11.5 text-[26px] leading-7 md:text-[68px] md:leading-[74px]">
-        <Marquee scrollSpeedBased>
-          <div className="mr-3.5 md:mr-[54px] flex items-center">
-            GET B2B Explainer Videos that Impress
-            <div className="w-0.5 md:w-2 h-5 md:h-14 bg-white ml-3.5 md:ml-[54px]"></div>
-          </div>
-        </Marquee>
-      </section>
-
-      <section className="bg-white">
-        <div className="container">
-          <div className="flex flex-col-reverse md:flex-row  py-10.5 md:pt-[80px] md:pb-8 justify-between">
-            <span>Copyright ©{new Date().getFullYear()} Red Bangle</span>
-            <div className="flex justify-between md:justify-start md:gap-x-8 mb-7.5 md:mb-0">
-              <Link
-                href="/terms"
-                data-rb-cursor-state="invisible"
-                className="hover:text-rb-red max-w-max"
-              >
-                Terms & Privacy
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <VideoModal open={herovideoOpen} setOpen={setHerovideoOpen}>
         <div className="relative max-w-[80%] w-full">
           <video
