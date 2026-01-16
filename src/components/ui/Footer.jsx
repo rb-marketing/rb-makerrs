@@ -42,7 +42,7 @@ const socials = [
         />
       </svg>
     ),
-    href: 'https://www.linkedin.com/company/redbanglecreative/',
+    href: 'https://www.linkedin.com/company/makerrsagency',
     title: (
       <span className="group-hover:text-[#006699] transition-all">
         LinkedIn
@@ -160,7 +160,7 @@ const socials = [
         </svg>
       </div>
     ),
-    href: 'https://www.instagram.com/redbangle.global?igsh=MW8wc28xZHY4MGN2bQ==',
+    href: 'https://www.instagram.com/makerrsagency/',
     className: styles.instagram,
     title: <span className="transition-all">Instagram</span>,
   },
@@ -189,7 +189,7 @@ const socials = [
         <path fill="#fff" d="m18.09 22.611 5.254-3.033-5.254-3.033v6.066Z" />
       </svg>
     ),
-     href: 'https://www.youtube.com/@RedBangleIndia',
+     href: 'https://www.youtube.com/@MakerrsAgency',
     title: (
       <span className="group-hover:text-[#FF0000] transition-all">YouTube</span>
     ),
