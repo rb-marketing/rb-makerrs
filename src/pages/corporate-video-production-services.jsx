@@ -91,14 +91,21 @@ const CorporateVideoLandPage = () => {
   })
 
   useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY >= 350)
-    }
+    const videoEl = document.getElementById('video-section')
+    if (!videoEl) return
 
-    window.addEventListener('scroll', handleScroll)
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // show sticky once the video is out of view
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0 }
+    )
+
+    observer.observe(videoEl)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      observer.disconnect()
     }
   }, [])
 
@@ -196,7 +203,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/infosys_europe_localisation.png',
       },
-      title: 'Corporate Video for a large IT firm',
+      title: 'Infosys Europe Localisation',
       company: {
         name: 'Infosys',
       },
@@ -224,25 +231,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092046382?share=copy',
           thumbnail: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
-          title: 'Pre-IPO Corporate Film for a D2C Startup',
+          title: 'Honasa Pre-IPO Corporate Film',
           duration: '03:10',
         },
         {
           videolink: 'https://vimeo.com/1031074650',
           thumbnail: '/img/corporate-video/wipro_australia.png',
-          title: 'Corporate Film for an IT Giant',
+          title: 'Wipro Australia',
           duration: '01:10',
         },
         {
           videolink: 'https://vimeo.com/1092044663?share=copy',
           thumbnail: '/img/corporate-video/bagmane_corporate_film.png',
-          title: 'Corporate Film for Real Estate Conglomorate',
+          title: 'Bagmane Corporate Film',
           duration: '03:17',
         },
         {
           videolink: 'https://vimeo.com/1078429989',
           thumbnail: '/img/corporate-video/ge_aerospace.png',
-          title: 'Corporate Film for Aerospace Manufacturer',
+          title: 'GE Aerospace Brand film',
           duration: '02:10',
         },
       ],
@@ -252,7 +259,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
       },
-      title: 'Pre-IPO Corporate Film for a D2C Startup',
+      title: 'Honasa Pre-IPO Corporate Film',
       company: {
         name: 'Honasa',
       },
@@ -280,25 +287,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1031074650',
           thumbnail: '/img/corporate-video/wipro_australia.png',
-          title: 'Corporate Film for an IT Giant',
+          title: 'Wipro Australia',
           duration: '01:10',
         },
         {
           videolink: 'https://vimeo.com/1092044663?share=copy',
           thumbnail: '/img/corporate-video/bagmane_corporate_film.png',
-          title: 'Corporate Film for Real Estate Conglomorate',
+          title: 'Bagmane Corporate Film',
           duration: '03:17',
         },
         {
           videolink: 'https://vimeo.com/1078429989',
           thumbnail: '/img/corporate-video/ge_aerospace.png',
-          title: 'Corporate Film for Aerospace Manufacturer',
+          title: 'GE Aerospace Brand film',
           duration: '02:10',
         },
         {
           videolink: 'https://vimeo.com/1031815235',
           thumbnail: '/img/corporate-video/infosys_andrea_hendricks.png',
-          title: 'Corporate Video Featuring Global Leaders',
+          title: 'Infosys - Andrea Hendricks',
           duration: '01:28',
         },
       ],
@@ -308,7 +315,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/wipro_australia.png',
       },
-      title: 'Corporate Film for an IT Giant',
+      title: 'Wipro Australia',
       company: {
         name: 'Wipro',
       },
@@ -319,7 +326,7 @@ const CorporateVideoLandPage = () => {
         content:
           'Wipro Australia’s corporate film delves into the business unit’s profound impact and seamless integration in the land Down Under. It’s a testament to their local commitment as well as growth.',
       },
-      popUpTitle: 'Australia-region Corporate Film for an IT Giant',
+      popUpTitle: 'Australia-region Wipro Australia',
       popUpPoints: [
         '01. Concept',
         '02. Script',
@@ -336,25 +343,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092044663?share=copy',
           thumbnail: '/img/corporate-video/bagmane_corporate_film.png',
-          title: 'Corporate Film for Real Estate Conglomorate',
+          title: 'Bagmane Corporate Film',
           duration: '03:17',
         },
         {
           videolink: 'https://vimeo.com/1078429989',
           thumbnail: '/img/corporate-video/ge_aerospace.png',
-          title: 'Corporate Film for Aerospace Manufacturer',
+          title: 'GE Aerospace Brand film',
           duration: '02:10',
         },
         {
           videolink: 'https://vimeo.com/1031815235',
           thumbnail: '/img/corporate-video/infosys_andrea_hendricks.png',
-          title: 'Corporate Video Featuring Global Leaders',
+          title: 'Infosys - Andrea Hendricks',
           duration: '01:28',
         },
         {
           videolink: 'https://vimeo.com/1092045236?share=copy',
           thumbnail: '/img/corporate-video/stopak_corporate_film.png',
-          title: 'Corporate Video for Packaging Manufacturer',
+          title: 'Stopak corporate film',
           duration: '01:34',
         },
       ],
@@ -364,7 +371,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/bagmane_corporate_film.png',
       },
-      title: 'Corporate Film for Real Estate Conglomorate',
+      title: 'Bagmane Corporate Film',
       company: {
         name: 'Bagmane',
       },
@@ -392,25 +399,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1078429989',
           thumbnail: '/img/corporate-video/ge_aerospace.png',
-          title: 'Corporate Film for Aerospace Manufacturer',
+          title: 'GE Aerospace Brand film',
           duration: '02:10',
         },
         {
           videolink: 'https://vimeo.com/1031815235',
           thumbnail: '/img/corporate-video/infosys_andrea_hendricks.png',
-          title: 'Corporate Video Featuring Global Leaders',
+          title: 'Infosys - Andrea Hendricks',
           duration: '01:28',
         },
         {
           videolink: 'https://vimeo.com/1092045236?share=copy',
           thumbnail: '/img/corporate-video/stopak_corporate_film.png',
-          title: 'Corporate Video for Packaging Manufacturer',
+          title: 'Stopak corporate film',
           duration: '01:34',
         },
         {
           videolink: 'https://vimeo.com/1078406512',
           thumbnail: '/img/corporate-video/gordon_ritter.png',
-          title: 'Thought Leadership Videos for Vymo',
+          title: 'Gordon Ritter',
           duration: '10:18',
         },
       ],
@@ -420,7 +427,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/ge_aerospace.png',
       },
-      title: 'Corporate Film for Aerospace Manufacturer',
+      title: 'GE Aerospace Brand film',
       company: {
         name: 'GE Aerospace',
       },
@@ -447,25 +454,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1031815235',
           thumbnail: '/img/corporate-video/infosys_andrea_hendricks.png',
-          title: 'Corporate Video Featuring Global Leaders',
+          title: 'Infosys - Andrea Hendricks',
           duration: '01:28',
         },
         {
           videolink: 'https://vimeo.com/1092045236?share=copy',
           thumbnail: '/img/corporate-video/stopak_corporate_film.png',
-          title: 'Corporate Video for Packaging Manufacturer',
+          title: 'Stopak corporate film',
           duration: '01:34',
         },
         {
           videolink: 'https://vimeo.com/1078406512',
           thumbnail: '/img/corporate-video/gordon_ritter.png',
-          title: 'Thought Leadership Videos for Vymo',
+          title: 'Gordon Ritter',
           duration: '10:18',
         },
         {
           videolink: 'https://vimeo.com/1092044365/6eb7300c7c?share=copy',
           thumbnail: '/img/corporate-video/infosys_europe_localisation.png',
-          title: 'Corporate Video for a large IT firm',
+          title: 'Infosys Europe Localisation',
           duration: '02:01',
         },
       ],
@@ -475,7 +482,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/infosys_andrea_hendricks.png',
       },
-      title: 'Corporate Video Featuring Global Leaders',
+      title: 'Infosys - Andrea Hendricks',
       company: {
         name: 'Infosys',
       },
@@ -501,25 +508,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092045236?share=copy',
           thumbnail: '/img/corporate-video/stopak_corporate_film.png',
-          title: 'Corporate Video for Packaging Manufacturer',
+          title: 'Stopak corporate film',
           duration: '01:34',
         },
         {
           videolink: 'https://vimeo.com/1078406512',
           thumbnail: '/img/corporate-video/gordon_ritter.png',
-          title: 'Thought Leadership Videos for Vymo',
+          title: 'Gordon Ritter',
           duration: '10:18',
         },
         {
           videolink: 'https://vimeo.com/1092044365/6eb7300c7c?share=copy',
           thumbnail: '/img/corporate-video/infosys_europe_localisation.png',
-          title: 'Corporate Video for a large IT firm',
+          title: 'Infosys Europe Localisation',
           duration: '02:01',
         },
         {
           videolink: 'https://vimeo.com/1092046382?share=copy',
           thumbnail: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
-          title: 'Pre-IPO Corporate Film for a D2C Startup',
+          title: 'Honasa Pre-IPO Corporate Film',
           duration: '03:10',
         },
       ],
@@ -529,7 +536,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/stopak_corporate_film.png',
       },
-      title: 'Corporate Video for Packaging Manufacturer',
+      title: 'Stopak corporate film',
       company: {
         name: 'Stopak',
       },
@@ -557,25 +564,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1078406512',
           thumbnail: '/img/corporate-video/gordon_ritter.png',
-          title: 'Thought Leadership Videos for Vymo',
+          title: 'Gordon Ritter',
           duration: '10:18',
         },
         {
           videolink: 'https://vimeo.com/1092044365/6eb7300c7c?share=copy',
           thumbnail: '/img/corporate-video/infosys_europe_localisation.png',
-          title: 'Corporate Video for a large IT firm',
+          title: 'Infosys Europe Localisation',
           duration: '02:01',
         },
         {
           videolink: 'https://vimeo.com/1092046382?share=copy',
           thumbnail: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
-          title: 'Pre-IPO Corporate Film for a D2C Startup',
+          title: 'Honasa Pre-IPO Corporate Film',
           duration: '03:10',
         },
         {
           videolink: 'https://vimeo.com/1031074650',
           thumbnail: '/img/corporate-video/wipro_australia.png',
-          title: 'Corporate Film for an IT Giant',
+          title: 'Wipro Australia',
           duration: '01:10',
         },
       ],
@@ -585,7 +592,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/gordon_ritter.png',
       },
-      title: 'Thought Leadership Videos for Vymo',
+      title: 'Gordon Ritter',
       company: {
         name: 'Vymo',
       },
@@ -613,25 +620,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092044365/6eb7300c7c?share=copy',
           thumbnail: '/img/corporate-video/infosys_europe_localisation.png',
-          title: 'Corporate Video for a large IT firm',
+          title: 'Infosys Europe Localisation',
           duration: '02:01',
         },
         {
           videolink: 'https://vimeo.com/1092046382?share=copy',
           thumbnail: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
-          title: 'Pre-IPO Corporate Film for a D2C Startup',
+          title: 'Honasa Pre-IPO Corporate Film',
           duration: '03:10',
         },
         {
           videolink: 'https://vimeo.com/1031074650',
           thumbnail: '/img/corporate-video/wipro_australia.png',
-          title: 'Corporate Film for an IT Giant',
+          title: 'Wipro Australia',
           duration: '01:10',
         },
         {
           videolink: 'https://vimeo.com/1092044663?share=copy',
           thumbnail: '/img/corporate-video/bagmane_corporate_film.png',
-          title: 'Corporate Film for Real Estate Conglomorate',
+          title: 'Bagmane Corporate Film',
           duration: '03:17',
         },
       ],
@@ -758,153 +765,162 @@ const CorporateVideoLandPage = () => {
   ]
 
   const testimonialsDefault = [
-     {
-    key: 0,
-    quote:
-      'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
-    name: 'ALINA PATRAHAU',
-    designation: 'FOUNDER',
-    company: 'DARUIESTE ARIPI',
-    image: {
-      srcSet:
-        `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  },
     {
-    key: 7,
-    quote:
-      'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
-    name: 'MARC IRAWAN',
-    designation: 'Founder',
-    company: 'COLEARN',
-    image: {
-      srcSet:
-        `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      key: 0,
+      quote:
+        'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+      name: 'ALINA PATRAHAU',
+      designation: 'FOUNDER',
+      company: 'DARUIESTE ARIPI',
+      image: {
+        srcSet: `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
     {
-    key: 3,
-    quote:
-      'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
-    name: 'ROSHAN CARIAPPA',
-    designation: 'VICE-PRESIDENT MARKETING',
-    company: 'VYMO',
-    image: {
-      srcSet:
-        `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      key: 7,
+      quote:
+        'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
+      name: 'MARC IRAWAN',
+      designation: 'Founder',
+      company: 'COLEARN',
+      image: {
+        srcSet: `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
     {
-    key: 2,
-    quote:
-      'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+      key: 3,
+      quote:
+        'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
+      name: 'ROSHAN CARIAPPA',
+      designation: 'VICE-PRESIDENT MARKETING',
+      company: 'VYMO',
+      image: {
+        srcSet: `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
+    },
+    {
+      key: 2,
+      quote:
+        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
 
-    designation: 'VP INTERNAL COMMUNICATIONS',
-    company: 'FORTUNE 100 ITES ENTERPRISE',
-    image: {
-      srcSet:
-        `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      designation: 'VP INTERNAL COMMUNICATIONS',
+      company: 'FORTUNE 100 ITES ENTERPRISE',
+      image: {
+        srcSet: `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  }
   ]
 
   const FAQ = [
-  {
-    key: 0,
-    title: 'Do you have a unique video creation process?',
-    content: (
-      <>
-        <div className="mb-5">
-        Over the years, we have scripted, designed and produced thousands of videos across several countries and industries. On every project, we ask ourselves what we could do differently and how we could do it better—while still following a tried-and-tested process that helps our clients grow their brands and enables us to consistently deliver work that’s on-point and on-quality. Our typical project workflow is something that starts with a clear brief, moves on to research, concepts, script, visualisation, design, production, post production, reviews and versioning. But what’s unique about how we do it, is our proprietary platform that facilitates efficient cloud-based workflows. Here’s a quick run through of how it helps:
-        </div>
-        <ul>
-          <li className="mb-5">
-            - Your brief is loaded on our platform. This contains all the information you&apos;ve shared, everything we&apos;ve dug up, and all the creative assets we need to work on. Everything is in one place.
-          </li>
-          <li className="mb-5">
-            - We use rate cards, add-ons and an efficient costing tool on our
-            platform to speed up the pricing and contract process for you.
-          </li>
-          <li className="mb-5">
-            - A great creative team is assigned to your project and briefed in
-            detail.
-          </li>
-          <li className="mb-5">
-            - Our producers choose the most optimal schedule on our platform,
-            and update the dates as per your requirement. This way, everyone on
-            the project knows exactly when something is due to you.
-          </li>
-          <li className="mb-5">
-            - The creative team gets going with their work, coming to you for
-            reviews at the script, storyboard or design stage.
-          </li>
-          <li className="mb-5">
-            - We deliver the draft video on our platform and make it easy for
-            you to review videos using our interactive review feature.
-          </li>
-          <li>
-            - Once done, all the project assets are also uploaded to our
-            platform so you can find them anytime you need and even share them
-            with colleagues.
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    key: 1,
-    title:
-      'How do you ensure that the films and videos you create are engaging for our target audience?',
-    content:
-      'We don’t just spend time understanding your business and competitors to arrive at a great video idea for you, we are also tuned into creative trends, AI innovations, top content consumption platforms and marketing shifts happening around us. We track and continuously gather fresh knowledge and creative inspiration that keeps us delivering amazing and effective work for you. With every new creative idea we unleash and bring to life, we focus on what’s going to work for your business, brand, audience and mediums.',
-  },
-  {
-    key: 2,
-    title:
-      'How do you ensure that the films and videos created for us align with our brand?',
-    content:
-      'We start by getting to know your brand, its values and audiences. We always ask for your brand manual. We use our understanding of your brand and business, as well as your brand guidelines to align our creative craft and develop videos that not only reflect your brand but also support your business objectives.',
-  },
-  {
-    key: 3,
-    title: 'Which platforms do you create videos for?',
-    content:
-      'As a B2B video and creative agency, we conceptualize and craft videos that work across a range of platforms such as YouTube, LinkedIn, WhatsApp, events and internal portals. Our goal is to ensure every piece of video content you commission connects with your audience, and drives engagement, no matter where it’s seen. Let’s say you are making a premium corporate film with us, we are also able to help you create versions and thumbnails of this film for various platforms.',
-  },
-  {
-    key: 4,
-    title: 'Do you create illustrated and animated videos?',
-    content:
-      'Yes, from 2D animation videos to 3D and mixed media—we script, visualise, illustrate, design, and animate a range of animated videos for corporate communications, PR, internal communications, employer branding, and more, take care of voice-overs in the accent suitable to your audience, find the right stock music or craft a custom-composed track, and handle sound effects, audio mixing, and mastering. Ours is an end-to-end process across illustrated and animated video styles.',
-  },
-  {
-    key: 5,
-    title: 'How do you handle copyright and ownership of the video content?',
-    content: (
-      <>
-        <div>
-          With the majority of our work, as per our pre-agreed contracts with
-          our clients, the copyright for creative assets are transferred to the
-          client upon receipt of final payment for the commissioned work.
-        </div>
-        <br />
-        <div>
-          In some cases though, the copyright is not assigned or transferred for
-          perpetuity. Examples of short-term rights assignment include
-          custom-composed music, celebrity cast, etc. Rights with these creators
-          and artists are agreed to on a case-to-case basis, and usually are for
-          a year or three to begin with for specific mediums. Clients may extend
-          such rights for additional years and mediums via Red Bangle, at a
-          future date and at an additional cost.
-        </div>
-      </>
-    ),
-  },
-]
+    {
+      key: 0,
+      title: 'Do you have a unique video creation process?',
+      content: (
+        <>
+          <div className="mb-5">
+            Over the years, we have scripted, designed and produced thousands of
+            videos across several countries and industries. On every project, we
+            ask ourselves what we could do differently and how we could do it
+            better—while still following a tried-and-tested process that helps
+            our clients grow their brands and enables us to consistently deliver
+            work that’s on-point and on-quality. Our typical project workflow is
+            something that starts with a clear brief, moves on to research,
+            concepts, script, visualisation, design, production, post
+            production, reviews and versioning. But what’s unique about how we
+            do it, is our proprietary platform that facilitates efficient
+            cloud-based workflows. Here’s a quick run through of how it helps:
+          </div>
+          <ul>
+            <li className="mb-5">
+              - Your brief is loaded on our platform. This contains all the
+              information you&apos;ve shared, everything we&apos;ve dug up, and
+              all the creative assets we need to work on. Everything is in one
+              place.
+            </li>
+            <li className="mb-5">
+              - We use rate cards, add-ons and an efficient costing tool on our
+              platform to speed up the pricing and contract process for you.
+            </li>
+            <li className="mb-5">
+              - A great creative team is assigned to your project and briefed in
+              detail.
+            </li>
+            <li className="mb-5">
+              - Our producers choose the most optimal schedule on our platform,
+              and update the dates as per your requirement. This way, everyone
+              on the project knows exactly when something is due to you.
+            </li>
+            <li className="mb-5">
+              - The creative team gets going with their work, coming to you for
+              reviews at the script, storyboard or design stage.
+            </li>
+            <li className="mb-5">
+              - We deliver the draft video on our platform and make it easy for
+              you to review videos using our interactive review feature.
+            </li>
+            <li>
+              - Once done, all the project assets are also uploaded to our
+              platform so you can find them anytime you need and even share them
+              with colleagues.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      key: 1,
+      title:
+        'How do you ensure that the films and videos you create are engaging for our target audience?',
+      content:
+        'We don’t just spend time understanding your business and competitors to arrive at a great video idea for you, we are also tuned into creative trends, AI innovations, top content consumption platforms and marketing shifts happening around us. We track and continuously gather fresh knowledge and creative inspiration that keeps us delivering amazing and effective work for you. With every new creative idea we unleash and bring to life, we focus on what’s going to work for your business, brand, audience and mediums.',
+    },
+    {
+      key: 2,
+      title:
+        'How do you ensure that the films and videos created for us align with our brand?',
+      content:
+        'We start by getting to know your brand, its values and audiences. We always ask for your brand manual. We use our understanding of your brand and business, as well as your brand guidelines to align our creative craft and develop videos that not only reflect your brand but also support your business objectives.',
+    },
+    {
+      key: 3,
+      title: 'Which platforms do you create videos for?',
+      content:
+        'As a B2B video and creative agency, we conceptualize and craft videos that work across a range of platforms such as YouTube, LinkedIn, WhatsApp, events and internal portals. Our goal is to ensure every piece of video content you commission connects with your audience, and drives engagement, no matter where it’s seen. Let’s say you are making a premium corporate film with us, we are also able to help you create versions and thumbnails of this film for various platforms.',
+    },
+    {
+      key: 4,
+      title: 'Do you create illustrated and animated videos?',
+      content:
+        'Yes, from 2D animation videos to 3D and mixed media—we script, visualise, illustrate, design, and animate a range of animated videos for corporate communications, PR, internal communications, employer branding, and more, take care of voice-overs in the accent suitable to your audience, find the right stock music or craft a custom-composed track, and handle sound effects, audio mixing, and mastering. Ours is an end-to-end process across illustrated and animated video styles.',
+    },
+    {
+      key: 5,
+      title: 'How do you handle copyright and ownership of the video content?',
+      content: (
+        <>
+          <div>
+            With the majority of our work, as per our pre-agreed contracts with
+            our clients, the copyright for creative assets are transferred to
+            the client upon receipt of final payment for the commissioned work.
+          </div>
+          <br />
+          <div>
+            In some cases though, the copyright is not assigned or transferred
+            for perpetuity. Examples of short-term rights assignment include
+            custom-composed music, celebrity cast, etc. Rights with these
+            creators and artists are agreed to on a case-to-case basis, and
+            usually are for a year or three to begin with for specific mediums.
+            Clients may extend such rights for additional years and mediums via
+            Red Bangle, at a future date and at an additional cost.
+          </div>
+        </>
+      ),
+    },
+  ]
 
   useEffect(() => {
     const mm = gsap.matchMedia()
@@ -939,7 +955,7 @@ const CorporateVideoLandPage = () => {
     })
     mm.add('(min-width:768px)', () => {
       const tl = gsap.timeline({
-         scrollTrigger: {
+        scrollTrigger: {
           scrub: 0.2,
           start: '30% 35%',
           end: '55% 27%',
@@ -1135,7 +1151,7 @@ const CorporateVideoLandPage = () => {
             corporate promotional videos"
       />
       <section
-        className="py-15 md:pb-0 md:pt-18 relative bg-rb-mercury text-rb-black overflow-hidden md:!h-[690px]" 
+        className="py-15 md:pb-0 md:pt-18 relative bg-rb-mercury text-rb-black overflow-hidden md:!h-[690px]"
         ref={heroSection}
       >
         <div className="height-div aspect-video absolute w-full invisible pointer-events-none z-30 bg-rb-red top-0" />
@@ -1173,19 +1189,34 @@ const CorporateVideoLandPage = () => {
               <div className="mt-6 md:mt-8 heroMarquee">
                 <ul className="list-inside space-y-3 text-[16px] leading-[1.25] tracking-[-0.64px] font-opensans md:text-[24px] md:leading-[32px] md:tracking-[-0.24px] font-semibold">
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>Professional corporate video production</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>Corporate & enterprise storytelling</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>
                       Company profile videos, corporate{' '}
                       <br className="hidden md:block" />
-                     history videos, internal videos & more
+                      history videos, internal videos & more
                     </span>
                   </li>
                 </ul>
@@ -1234,7 +1265,31 @@ const CorporateVideoLandPage = () => {
               </h3>
               <GetUpdatesForm />
             </div>
-            
+            <div
+              ref={stickyButtonRef}
+              className={`hidden fixed top-8 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+                isSticky ? 'lg:block' : ''
+              } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+            >
+              <Button
+                onClick={() => {
+                  setTimeout(() => {
+                    router.push(
+                      {
+                        pathname: router.pathname,
+                        query: { type: 'send-us-a-brief' },
+                      },
+                      undefined,
+                      { shallow: true }
+                    )
+                  }, 100)
+                }}
+                className="w-full"
+                suffix={<LineArrow hover />}
+              >
+                Let&apos;s talk
+              </Button>
+            </div>
           </div>
         </div>
         <div
@@ -1267,7 +1322,7 @@ const CorporateVideoLandPage = () => {
           <div className="grid grid-cols-2 gap-y-12 mx-0 md:flex md:flex-row ">
             {stats.map((s, i) => (
               <div
-               key={s.id}
+                key={s.id}
                 className={`text-[42px] leading-14 tracking-[-1.44px] md:text-stat group relative
         ${statstyles.statlinecorporate}`}
               >
@@ -1276,15 +1331,15 @@ const CorporateVideoLandPage = () => {
                     s.id === 1
                       ? 'md:ml-[80px] md:mr-[30px]'
                       : s.id === 2
-                      ? 'md:ml-[80px] md:mr-[80px]'
-                      : i === 0
-                      ? 'md:ml-0 md:mr-[clamp(10px,5vw,10px)]'
-                      : 'md:mx-[clamp(10px,5vw,80px)]'
+                        ? 'md:ml-[80px] md:mr-[80px]'
+                        : i === 0
+                          ? 'md:ml-0 md:mr-[clamp(10px,5vw,10px)]'
+                          : 'md:mx-[clamp(10px,5vw,80px)]'
                   }`}
                 >
                   <RollupNumber
                     {...s.countUpProps}
-                     className={`${
+                    className={`${
                       s.countUpProps.value === 1 ? '-ml-3' : '-ml-[6px]'
                     } ${s.id === 0 ? 'md:!-ml-[6px] !-ml-[3px]' : ''} ${
                       s.id === 1 ? 'md:!-ml-[3px] !-ml-[2px]' : ''
@@ -1418,7 +1473,7 @@ const CorporateVideoLandPage = () => {
               id: 7,
               marqueeContent: 'Corporate Event Video',
             },
-             {
+            {
               id: 8,
               marqueeContent: 'Internal Video',
             },
@@ -1432,7 +1487,6 @@ const CorporateVideoLandPage = () => {
         </Marquee>
       </section>
 
-     
       <section className={`overflow-hidden bg-white py-18 md:py-30`}>
         <div className="container text-center">
           <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
@@ -1486,8 +1540,6 @@ const CorporateVideoLandPage = () => {
       </section>
 
       <TrustedBrandsSection className="bg-white pb-12 md:pb-20" />
-
-
 
       <section className="py-18 md:py-10 overflow-hidden">
         <div className="container ">
@@ -1571,7 +1623,7 @@ const CorporateVideoLandPage = () => {
             loop
             playsInline
             src="/img/services/videos/corporate_hero.mp4"
-            poster='/img/services/videos/corporate_hero.png'
+            poster="/img/services/videos/corporate_hero.png"
             className="w-full"
             width="1920"
             height="1068"

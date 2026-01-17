@@ -160,14 +160,21 @@ const RecruitmentVideoProduction = () => {
   })
 
   useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY >= 350)
-    }
+    const videoEl = document.getElementById('video-section')
+    if (!videoEl) return
 
-    window.addEventListener('scroll', handleScroll)
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // show sticky once the video is out of view
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0 }
+    )
+
+    observer.observe(videoEl)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      observer.disconnect()
     }
   }, [])
 

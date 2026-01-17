@@ -90,14 +90,21 @@ const CaseStudyVideoProduction = () => {
   })
 
   useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY >= 350)
-    }
+    const videoEl = document.getElementById('video-section')
+    if (!videoEl) return
 
-    window.addEventListener('scroll', handleScroll)
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // show sticky once the video is out of view
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0 }
+    )
+
+    observer.observe(videoEl)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      observer.disconnect()
     }
   }, [])
 
@@ -198,7 +205,7 @@ const CaseStudyVideoProduction = () => {
       featuredImage: {
         src: '/img/case-study-video/kia.png',
       },
-      title: 'Premium Live Action Case Study FEATURING  KIA',
+      title: 'Kia America',
       company: {
         name: 'Infosys',
       },
@@ -227,26 +234,27 @@ const CaseStudyVideoProduction = () => {
         {
           videolink: 'https://vimeo.com/1092041941',
           thumbnail: '/img/case-study-video/stockd.png',
-          title: 'Motion Graphics Case Study for HIMSS',
+          title: 'Stockd, Wipro',
           duration: '01:50',
+        },
+        {
+          videolink: 'https://vimeo.com/1098727880/e3f71a77f1',
+          thumbnail: '/img/case-study-video/indeed_hichki.png',
+          title: 'Integrated movie campaign case study (Indeed Hichki)',
+          duration: '02:21',
         },
         {
           videolink: 'https://vimeo.com/1098725688/e68027e196',
           thumbnail: '/img/case-study-video/bata_capillary.png',
-          title: 'Customer Testimonial Video in Thailand',
+          title: 'Bata Testimonial',
           duration: '03:23',
         },
         {
-          videolink: 'https://vimeo.com/1098726297/a7deb3d916',
-          thumbnail: '/img/case-study-video/siam_macro.png',
-          title: 'Whiteboard Animation case study video',
+          videolink:
+            'https://vimeo.com/1153861064/061b34dd9d?share=copy&fl=sv&fe=ci',
+          thumbnail: '/img/case-study-video/kaavu.png',
+          title: 'Consumer Testimonial for an F&B Experience',
           duration: '02:10',
-        },
-        {
-          videolink: 'https://vimeo.com/1098727042/e03aee0ffd',
-          thumbnail: '/img/case-study-video/infosys_mining.png',
-          title: 'Premium Stock Footage Case Study on Tech',
-          duration: '02:18',
         },
       ],
     },
@@ -255,7 +263,7 @@ const CaseStudyVideoProduction = () => {
       featuredImage: {
         src: '/img/case-study-video/stockd.png',
       },
-      title: 'Motion Graphics Case Study for HIMSS',
+      title: 'Stockd, Wipro',
       company: {
         name: 'Wipro',
       },
@@ -281,196 +289,29 @@ const CaseStudyVideoProduction = () => {
       redText: 'Sophisticated Motion Graphics',
       relatedVideos: [
         {
+          videolink: 'https://vimeo.com/1098727880/e3f71a77f1',
+          thumbnail: '/img/case-study-video/indeed_hichki.png',
+          title: 'Integrated movie campaign case study (Indeed Hichki)',
+          duration: '02:21',
+        },
+        {
           videolink: 'https://vimeo.com/1098725688/e68027e196',
           thumbnail: '/img/case-study-video/bata_capillary.png',
-          title: 'Customer Testimonial Video in Thailand',
+          title: 'Bata Testimonial',
           duration: '03:23',
         },
         {
-          videolink: 'https://vimeo.com/1098726297/a7deb3d916',
-          thumbnail: '/img/case-study-video/siam_macro.png',
-          title: 'Whiteboard Animation case study video',
+          videolink:
+            'https://vimeo.com/1153861064/061b34dd9d?share=copy&fl=sv&fe=ci',
+          thumbnail: '/img/case-study-video/kaavu.png',
+          title: 'Consumer Testimonial for an F&B Experience',
           duration: '02:10',
         },
         {
-          videolink: 'https://vimeo.com/1098727042/e03aee0ffd',
-          thumbnail: '/img/case-study-video/infosys_mining.png',
-          title: 'Premium Stock Footage Case Study on Tech',
-          duration: '02:18',
-        },
-        {
-          videolink: 'https://vimeo.com/1098727880/e3f71a77f1',
-          thumbnail: '/img/case-study-video/indeed_hichki.png',
-          title: 'Integrated Movie Campaign Case Study Video',
-          duration: '02:21',
-        },
-      ],
-    },
-    {
-      slug: 'Capillary x Bata Testimonial Video',
-      featuredImage: {
-        src: '/img/case-study-video/bata_capillary.png',
-      },
-      title: 'Customer Testimonial Video in Thailand',
-      company: {
-        name: 'Capillary Technologies',
-      },
-      video: {
-        workDetails: {
-          videolink: 'https://vimeo.com/1098725688/e68027e196',
-        },
-        content:
-          'When the largest shoe retailer in Thailand wanted to push the limits on omnichannel retail, Capitally Technologies worked as a strategic partner and provided the CRM of the future.',
-      },
-      popUpTitle: 'Live Action Testimonial for Bata’s Journey with Capillary',
-      popUpPoints: [
-        '01. Treatment Referencing',
-        '02. Local Crew Curation',
-        '03. Shoot in Thailand',
-        '04. Editing',
-        '05. Graphic Design',
-        '06. Motion Graphics',
-        '07. Colour Correction',
-        '08. Project Management',
-      ],
-
-      redText: 'Live Action Testimonial Video',
-      relatedVideos: [
-        {
-          videolink: 'https://vimeo.com/1098726297/a7deb3d916',
-          thumbnail: '/img/case-study-video/siam_macro.png',
-          title: 'Whiteboard Animation case study video',
-          duration: '02:10',
-        },
-        {
-          videolink: 'https://vimeo.com/1098727042/e03aee0ffd',
-          thumbnail: '/img/case-study-video/infosys_mining.png',
-          title: 'Premium Stock Footage Case Study on Tech',
-          duration: '02:18',
-        },
-        {
-          videolink: 'https://vimeo.com/1098727880/e3f71a77f1',
-          thumbnail: '/img/case-study-video/indeed_hichki.png',
-          title: 'Integrated Movie Campaign Case Study Video',
-          duration: '02:21',
-        },
-        {
           videolink: 'https://vimeo.com/1098728642/35b24a6295',
           thumbnail: '/img/case-study-video/baggage_case_study.png',
-          title: 'Stock-footage Case Study for IT Consulting',
+          title: 'Infosys stock footage based case study (Skywise Airbus)',
           duration: '01:48',
-        },
-      ],
-    },
-    {
-      slug: 'Siam Macro China Expansion Case Study',
-      featuredImage: {
-        src: '/img/case-study-video/siam_macro.png',
-      },
-      title: 'Whiteboard Animation case study video',
-      company: {
-        name: 'Infosys',
-      },
-      video: {
-        workDetails: {
-          videolink: 'https://vimeo.com/1098726297/a7deb3d916',
-        },
-        content:
-          'A sophisticated, custom-illustrated whiteboard animation case study video on how IT giant Infosys helped a Thai wholesaler tackle hyper-local challenges in a complex new market, China.',
-      },
-      popUpTitle: 'Retail Expansion in China for Siam Macro',
-      popUpPoints: [
-        '01. Concept',
-        '02. Script',
-        '03. Design & Illustration',
-        '04. Storyboard',
-        '05. Animation',
-        '06. Voice Over',
-        '07. Stock Music Curation',
-        '08. Project Management',
-      ],
-
-      redText: 'Whiteboard Animation Case Study',
-      relatedVideos: [
-        {
-          videolink: 'https://vimeo.com/1098727042/e03aee0ffd',
-          thumbnail: '/img/case-study-video/infosys_mining.png',
-          title: 'Premium Stock Footage Case Study on Tech',
-          duration: '02:18',
-        },
-        {
-          videolink: 'https://vimeo.com/1098727880/e3f71a77f1',
-          thumbnail: '/img/case-study-video/indeed_hichki.png',
-          title: 'Integrated Movie Campaign Case Study Video',
-          duration: '02:21',
-        },
-        {
-          videolink: 'https://vimeo.com/1098728642/35b24a6295',
-          thumbnail: '/img/case-study-video/baggage_case_study.png',
-          title: 'Stock-footage Case Study for IT Consulting',
-          duration: '01:48',
-        },
-        {
-          videolink: 'https://vimeo.com/1042874327',
-          thumbnail: '/img/case-study-video/ai-first-employee.png',
-          title: 'Collage-style Video Case Study',
-          duration: '01:20',
-        },
-      ],
-    },
-    {
-      slug: 'Infosys Mining Resilience Case Study',
-      featuredImage: {
-        src: '/img/case-study-video/infosys_mining.png',
-      },
-      title: 'Premium Stock Footage Case Study on Tech',
-      company: {
-        name: 'Infosys',
-      },
-      video: {
-        workDetails: {
-          videolink: 'https://vimeo.com/1098727042/e03aee0ffd',
-        },
-        content:
-          'When Infosys rolled out a safety and welfare app for a Brazilian mining company during Covid19 – we brought the powerful story to life in a premium stock-footage-led case study video.',
-      },
-      popUpTitle: 'How technology kept Brazilian miners safe during Covid-19',
-      popUpPoints: [
-        '01. Visualisation',
-        '02. Graphic Design',
-        '03. Stock Footage Curation',
-        '04. Editing',
-        '05. Motion Graphics',
-        '06. 2.5D Animation',
-        '07. Voice Over',
-        '08. Stock Music Curation',
-      ],
-
-      redText: 'Premium stock-based case study',
-      relatedVideos: [
-        {
-          videolink: 'https://vimeo.com/1098727880/e3f71a77f1',
-          thumbnail: '/img/case-study-video/indeed_hichki.png',
-          title: 'Integrated Movie Campaign Case Study Video',
-          duration: '02:21',
-        },
-        {
-          videolink: 'https://vimeo.com/1098728642/35b24a6295',
-          thumbnail: '/img/case-study-video/baggage_case_study.png',
-          title: 'Stock-footage Case Study for IT Consulting',
-          duration: '01:48',
-        },
-        {
-          videolink: 'https://vimeo.com/1042874327',
-          thumbnail: '/img/case-study-video/ai-first-employee.png',
-          title: 'Collage-style Video Case Study',
-          duration: '01:20',
-        },
-        {
-          videolink: 'https://vimeo.com/1084658661/b2d6c34787',
-          thumbnail: '/img/case-study-video/kia.png',
-          title: 'Premium Live Action Case Study FEATURING  KIA',
-          duration: '02:43',
         },
       ],
     },
@@ -479,7 +320,7 @@ const CaseStudyVideoProduction = () => {
       featuredImage: {
         src: '/img/case-study-video/indeed_hichki.png',
       },
-      title: 'Integrated Movie Campaign Case Study Video',
+      title: 'Integrated movie campaign case study (Indeed Hichki)',
       company: {
         name: 'Indeed',
       },
@@ -505,28 +346,144 @@ const CaseStudyVideoProduction = () => {
       redText: 'Campaign Case Study Video',
       relatedVideos: [
         {
+          videolink: 'https://vimeo.com/1098725688/e68027e196',
+          thumbnail: '/img/case-study-video/bata_capillary.png',
+          title: 'Bata Testimonial',
+          duration: '03:23',
+        },
+        {
+          videolink:
+            'https://vimeo.com/1153861064/061b34dd9d?share=copy&fl=sv&fe=ci',
+          thumbnail: '/img/case-study-video/kaavu.png',
+          title: 'Consumer Testimonial for an F&B Experience',
+          duration: '02:10',
+        },
+        {
           videolink: 'https://vimeo.com/1098728642/35b24a6295',
           thumbnail: '/img/case-study-video/baggage_case_study.png',
-          title: 'Stock-footage Case Study for IT Consulting',
+          title: 'Infosys stock footage based case study (Skywise Airbus)',
           duration: '01:48',
+        },
+        {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+          thumbnail: '/img/case-study-video/hansel.png',
+          title: 'Fictionalised Case Study for SAAS',
+          duration: '02:18',
+        },
+      ],
+    },
+    {
+      slug: 'Capillary x Bata Testimonial Video',
+      featuredImage: {
+        src: '/img/case-study-video/bata_capillary.png',
+      },
+      title: 'Bata Testimonial',
+      company: {
+        name: 'Capillary Technologies',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1098725688/e68027e196',
+        },
+        content:
+          'When the largest shoe retailer in Thailand wanted to push the limits on omnichannel retail, Capitally Technologies worked as a strategic partner and provided the CRM of the future.',
+      },
+      popUpTitle: 'Live Action Testimonial for Bata’s Journey with Capillary',
+      popUpPoints: [
+        '01. Treatment Referencing',
+        '02. Local Crew Curation',
+        '03. Shoot in Thailand',
+        '04. Editing',
+        '05. Graphic Design',
+        '06. Motion Graphics',
+        '07. Colour Correction',
+        '08. Project Management',
+      ],
+
+      redText: 'Live Action Testimonial Video',
+      relatedVideos: [
+        {
+          videolink:
+            'https://vimeo.com/1153861064/061b34dd9d?share=copy&fl=sv&fe=ci',
+          thumbnail: '/img/case-study-video/kaavu.png',
+          title: 'Consumer Testimonial for an F&B Experience',
+          duration: '02:10',
+        },
+        {
+          videolink: 'https://vimeo.com/1098728642/35b24a6295',
+          thumbnail: '/img/case-study-video/baggage_case_study.png',
+          title: 'Infosys stock footage based case study (Skywise Airbus)',
+          duration: '01:48',
+        },
+        {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+          thumbnail: '/img/case-study-video/hansel.png',
+          title: 'Fictionalised Case Study for SAAS',
+          duration: '02:18',
         },
         {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/case-study-video/ai-first-employee.png',
-          title: 'Collage-style Video Case Study',
+          title: 'Collage-style case study video',
+          duration: '01:20',
+        },
+      ],
+    },
+    {
+      slug: 'Kaavu',
+      featuredImage: {
+        src: '/img/case-study-video/kaavu.png',
+      },
+      title: 'Consumer Testimonial for an F&B Experience',
+      company: {
+        name: 'Kaavu',
+      },
+      video: {
+        workDetails: {
+          videolink:
+            'https://vimeo.com/1153861064/061b34dd9d?share=copy&fl=sv&fe=ci',
+        },
+        content:
+          'When Kaavu opened its spaces designed for friends and families to hang and relax, we crafted testimonial-style videos to launch the brand on social media.',
+      },
+      popUpTitle: 'Fun and warm testimonial video for a great F&B experience',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script',
+        '03. Visualisation',
+        '04. Graphic Design',
+        '05. Casting',
+        '06. Video Production',
+        '07. Editing',
+        '08. Motion Graphics',
+        '09. Voice Over',
+      ],
+
+      redText: 'Consumer Video Testimonial',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1098728642/35b24a6295',
+          thumbnail: '/img/case-study-video/baggage_case_study.png',
+          title: 'Infosys stock footage based case study (Skywise Airbus)',
+          duration: '01:48',
+        },
+        {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+          thumbnail: '/img/case-study-video/hansel.png',
+          title: 'Fictionalised Case Study for SAAS',
+          duration: '02:18',
+        },
+        {
+          videolink: 'https://vimeo.com/1042874327',
+          thumbnail: '/img/case-study-video/ai-first-employee.png',
+          title: 'Collage-style case study video',
           duration: '01:20',
         },
         {
           videolink: 'https://vimeo.com/1084658661/b2d6c34787',
           thumbnail: '/img/case-study-video/kia.png',
-          title: 'Premium Live Action Case Study FEATURING  KIA',
+          title: 'Kia America',
           duration: '02:43',
-        },
-        {
-          videolink: 'https://vimeo.com/1092041941',
-          thumbnail: '/img/case-study-video/stockd.png',
-          title: 'Motion Graphics Case Study for HIMSS',
-          duration: '01:50',
         },
       ],
     },
@@ -535,7 +492,7 @@ const CaseStudyVideoProduction = () => {
       featuredImage: {
         src: '/img/case-study-video/baggage_case_study.png',
       },
-      title: 'Stock-footage Case Study for IT Consulting',
+      title: 'Infosys stock footage based case study (Skywise Airbus)',
       company: {
         name: 'Infosys',
       },
@@ -561,28 +518,84 @@ const CaseStudyVideoProduction = () => {
       redText: 'Stock-Footage-Based Case Study',
       relatedVideos: [
         {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+          thumbnail: '/img/case-study-video/hansel.png',
+          title: 'Fictionalised Case Study for SAAS',
+          duration: '02:18',
+        },
+        {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/case-study-video/ai-first-employee.png',
-          title: 'Collage-style Video Case Study',
+          title: 'Collage-style case study video',
           duration: '01:20',
         },
         {
           videolink: 'https://vimeo.com/1084658661/b2d6c34787',
           thumbnail: '/img/case-study-video/kia.png',
-          title: 'Premium Live Action Case Study FEATURING  KIA',
+          title: 'Kia America',
           duration: '02:43',
         },
         {
           videolink: 'https://vimeo.com/1092041941',
           thumbnail: '/img/case-study-video/stockd.png',
-          title: 'Motion Graphics Case Study for HIMSS',
+          title: 'Stockd, Wipro',
+          duration: '01:50',
+        },
+      ],
+    },
+    {
+      slug: 'Hansel',
+      featuredImage: {
+        src: '/img/case-study-video/hansel.png',
+      },
+      title: 'Fictionalised Case Study for SAAS',
+      company: {
+        name: 'Hansel.io',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+        },
+        content:
+          'How we communicated complex information using a simple, human-centric story. Here’s our fictionalised case study explainer for Hansel - a SAAS product for context aware A/B testing.',
+      },
+      popUpTitle: 'Live Action Case-study Video on user drop-off management',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script',
+        '03. Custom UI Graphics',
+        '04. Fictitious Brand',
+        '05. Casting & Styling',
+        '06. Production',
+        '07. Post Production',
+        '08. Versioning',
+      ],
+
+      redText: 'Fictionalised Case Study for SAAS',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1042874327',
+          thumbnail: '/img/case-study-video/ai-first-employee.png',
+          title: 'Collage-style case study video',
+          duration: '01:20',
+        },
+        {
+          videolink: 'https://vimeo.com/1084658661/b2d6c34787',
+          thumbnail: '/img/case-study-video/kia.png',
+          title: 'Kia America',
+          duration: '02:43',
+        },
+        {
+          videolink: 'https://vimeo.com/1092041941',
+          thumbnail: '/img/case-study-video/stockd.png',
+          title: 'Stockd, Wipro',
           duration: '01:50',
         },
         {
-          videolink: 'https://vimeo.com/1098725688/e68027e196',
-          thumbnail: '/img/case-study-video/bata_capillary.png',
-          title: 'Customer Testimonial Video in Thailand',
-          duration: '03:23',
+          videolink: 'https://vimeo.com/1098727880/e3f71a77f1',
+          thumbnail: '/img/case-study-video/indeed_hichki.png',
+          title: 'Integrated movie campaign case study (Indeed Hichki)',
+          duration: '02:21',
         },
       ],
     },
@@ -591,7 +604,7 @@ const CaseStudyVideoProduction = () => {
       featuredImage: {
         src: '/img/case-study-video/ai-first-employee.png',
       },
-      title: 'Collage-style Video Case Study',
+      title: 'Collage-style case study video',
       company: {
         name: 'Infosys',
       },
@@ -619,26 +632,26 @@ const CaseStudyVideoProduction = () => {
         {
           videolink: 'https://vimeo.com/1084658661/b2d6c34787',
           thumbnail: '/img/case-study-video/kia.png',
-          title: 'Premium Live Action Case Study FEATURING  KIA',
+          title: 'Kia America',
           duration: '02:43',
         },
         {
           videolink: 'https://vimeo.com/1092041941',
           thumbnail: '/img/case-study-video/stockd.png',
-          title: 'Motion Graphics Case Study for HIMSS',
+          title: 'Stockd, Wipro',
           duration: '01:50',
+        },
+        {
+          videolink: 'https://vimeo.com/1098727880/e3f71a77f1',
+          thumbnail: '/img/case-study-video/indeed_hichki.png',
+          title: 'Integrated movie campaign case study (Indeed Hichki)',
+          duration: '02:21',
         },
         {
           videolink: 'https://vimeo.com/1098725688/e68027e196',
           thumbnail: '/img/case-study-video/bata_capillary.png',
-          title: 'Customer Testimonial Video in Thailand',
+          title: 'Bata Testimonial',
           duration: '03:23',
-        },
-        {
-          videolink: 'https://vimeo.com/1098726297/a7deb3d916',
-          thumbnail: '/img/case-study-video/siam_macro.png',
-          title: 'Whiteboard Animation case study video',
-          duration: '02:10',
         },
       ],
     },
@@ -748,205 +761,201 @@ const CaseStudyVideoProduction = () => {
 
   const testimonialsDefault = [
     {
-    key: 0,
-    quote:
-      'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
-    name: 'ALINA PATRAHAU',
-    designation: 'FOUNDER',
-    company: 'DARUIESTE ARIPI',
-    image: {
-      srcSet:
-        `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      key: 0,
+      quote:
+        'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+      name: 'ALINA PATRAHAU',
+      designation: 'FOUNDER',
+      company: 'DARUIESTE ARIPI',
+      image: {
+        srcSet: `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
     {
-    key: 1,
-    quote:
-      'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
-    name: 'MARC IRAWAN',
-    designation: 'Founder',
-    company: 'COLEARN',
-    image: {
-      srcSet:
-        `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      key: 1,
+      quote:
+        'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
+      name: 'MARC IRAWAN',
+      designation: 'Founder',
+      company: 'COLEARN',
+      image: {
+        srcSet: `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
     {
-    key: 2,
-    quote:
-      'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
-    name: 'ROSHAN CARIAPPA',
-    designation: 'VICE-PRESIDENT MARKETING',
-    company: 'VYMO',
-    image: {
-      srcSet:
-        `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      key: 2,
+      quote:
+        'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
+      name: 'ROSHAN CARIAPPA',
+      designation: 'VICE-PRESIDENT MARKETING',
+      company: 'VYMO',
+      image: {
+        srcSet: `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-     {
-    key: 3,
-    quote:
-      'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+    {
+      key: 3,
+      quote:
+        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
 
-    designation: 'VP INTERNAL COMMUNICATIONS',
-    company: 'FORTUNE 100 ITES ENTERPRISE',
-    image: {
-      srcSet:
-        `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      designation: 'VP INTERNAL COMMUNICATIONS',
+      company: 'FORTUNE 100 ITES ENTERPRISE',
+      image: {
+        srcSet: `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 4,
-    quote:
-      'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
-    name: 'SUNIL SURESH',
-    designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
-    company: 'CAPILLARY TECHNOLOGIES',
-    image: {
-      srcSet:
-        `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 4,
+      quote:
+        'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
+      name: 'SUNIL SURESH',
+      designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
+      company: 'CAPILLARY TECHNOLOGIES',
+      image: {
+        srcSet: `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  }
   ]
 
   const FAQ = [
-  {
-    key: 0,
-    title: 'Do you follow a specific case study video creation process?',
-    content: (
-      <>
-        <div className="mb-5">
-          As experts who have produced hundreds of B2B case study videos across
-          industries, geographies and video formats - with every new brief,
-          we’re always on the lookout to try something new. This has helped us
-          come up with a tried-and-tested process that enables us to deliver
-          impactful case study videos for your brand. Our typical workflow
-          starts with a clear brief, followed by research, concepts, script,
-          design, production, post-production, reviews, and versioning. But
-          what’s unique about how we do it, is our proprietary platform that
-          facilitates efficient cloud-based workflows. Here’s a quick
-          run-through of how it helps:
-        </div>
-        <ul>
-          <li className="mb-5">
-            - Your brief is loaded on our platform. This contains all the
-            information you&apos;ve shared, everything we&apos;ve dug up, and
-            all the creative assets we need to work on. Everything is in one
-            place.
-          </li>
-          <li className="mb-5">
-            - We use rate cards, add-ons, and an efficient costing tool on our
-            platform to speed up the pricing and contract process for you.
-          </li>
-          <li className="mb-5">
-            - We propose a narrative structure with one or more creative
-            approaches that align with your industry, audience, tone, and brand
-            identity. You can choose what resonates most with your brand and
-            marketing needs.
-          </li>
-          <li className="mb-5">
-            - Our project managers draft the most optimal project schedule on
-            our platform, setting milestones that work best for your
-            requirements. Everyone on the project knows exactly when something
-            is due to you, no follow-ups required.
-          </li>
-          <li className="mb-5">
-            - The creative team gets going with their work, coming to you for
-            reviews at the script and storyboard, or design stages.
-          </li>
-          <li className="mb-5">
-            - Our producers coordinate all logistics - scheduling interviews,
-            sharing prep material, confirming availability, and curating and
-            managing professional on-ground crews.
-          </li>
-          <li className="mb-5">
-            - Files, links, and updates are all on the cloud, so you and your
-            colleagues are never left wondering what&apos;s next or how things
-            are progressing.
-          </li>
-          <li className="mb-5">
-            - Once the post-production team gets going with their work, video
-            drafts are uploaded directly to the platform where you use our
-            interactive review feature to share frame-accurate comments and
-            respond to our creative suggestions - all without lengthy email
-            chains or missed feedback. Additionally, all video drafts on the
-            project are accessible to you on one dashboard, so you won’t have to
-            hunt for links to compare notes.
-          </li>
-          <li>
-            - Once the project is complete, your video assets are uploaded to
-            our platform. Everything is neatly organised, downloadable, and
-            shareable with colleagues and partners, and ready for repurposing in
-            the future.
-          </li>
-        </ul>
-        <div className="mt-5">
-          Our cloud-based platform-led workflow allows us to maintain creative
-          excellence while delivering at speed and scale. It also gives you an
-          efficient and transparent experience from start to finish.
-        </div>
-      </>
-    ),
-  },
-  {
-    key: 1,
-    title:
-      'How do you ensure that the testimonial video made for us reflects our brand?',
-    content:
-      'We always request your brand guidelines at the start of the project and seek an understanding of your business, products, and solutions. This includes guidelines around tone of voice, visual styles, colors, fonts, logo usage, and reading material on your offerings. Our creative teams refer to these throughout the duration of the project to maintain consistency. We also align voiceover tone, music, subtitles, and animation style with your overall brand personality, message, and audience. The final result is a case study video that doesn’t just tell a successful and impressive story - it also feels unmistakably yours, wherever it’s posted.',
-  },
-  {
-    key: 2,
-    title:
-      'What is the typical timeline for case study videos or testimonial videos?',
-    content:
-      'Timelines can vary based on the format, complexity, and number of stakeholders involved. That said, our typical end-to-end timeline ranges anywhere between 1 to 6 weeks for a single video, depending on the level of complexity of the format and style. This timeline includes scripting, production, editing, animation, voice over, and reviews with you.',
-  },
-  {
-    key: 3,
-    title:
-      'Can you create a series of case studies or craft a creative campaign for lead generation?',
-    content:
-      'Yes, we frequently work with brands looking to create a suite of case study videos across geographies, products/services, or verticals. In such cases, we establish a visual and narrative framework upfront that ensures consistency, while allowing each video to reflect the unique customer and outcome. We also set up scalable production plans, centralised asset sharing, and a review process that’s easy to manage with colleagues and with client-side stakeholders. Whether you need three videos or fifteen, no matter how many locations, our professional processes help you roll out case study videos efficiently, without compromising on quality. We also work on projects where we design complete creative campaigns for lead generation, which include case study videos. This involves a unique, central campaign idea, designing a complete campaign plan, and supporting you with creatives required across the campaign, be they well-constructed webpages, LinkedIn banners, or videos.',
-  },
-  {
-    key: 4,
-    title: 'What kind of formats do you offer for case study videos?',
-    content: (
-      <>
-        <div className="mb-5">
-          We offer a range of case study video formats to suit different
-          storytelling styles, platforms, and budgets. These include:
-        </div>
-        <ul>
-          <li className="mb-5">- Live-action interview-led videos</li>
-          <li className="mb-5">- Voiceover-led case study videos</li>
-          <li className="mb-5">- Documentary-style case study videos</li>
-          <li className="mb-5">- Stock-footage based case study videos</li>
-          <li className="mb-5">- Animated case study videos</li>
-          <li>- And, mixed format case study videos</li>
-        </ul>
-        <div className="mt-5">
-          We help you select the right genre and format or a combination of
-          formats, based on your audience, messaging goals, and preferred
-          channels (e.g., LinkedIn, YouTube, internal portals, and sales decks).
-          We also support with promos or teasers, language and vertical adapts.
-        </div>
-      </>
-    ),
-  },
-  {
-    key: 5,
-    title: 'What kind of brands benefit from case study videos?',
-    content:
-      'Whether you’re a manufacturer, a consulting business, a pharmaceutical company, a logistics firm or an energy business - your marketing funnel needs case study videos to attract prospects and expand conversations with customers. A well-told and impactful case study video helps the world see your success stories and adds to your brand’s credibility.',
-  },
-]
+    {
+      key: 0,
+      title: 'Do you follow a specific case study video creation process?',
+      content: (
+        <>
+          <div className="mb-5">
+            As experts who have produced hundreds of B2B case study videos
+            across industries, geographies and video formats - with every new
+            brief, we’re always on the lookout to try something new. This has
+            helped us come up with a tried-and-tested process that enables us to
+            deliver impactful case study videos for your brand. Our typical
+            workflow starts with a clear brief, followed by research, concepts,
+            script, design, production, post-production, reviews, and
+            versioning. But what’s unique about how we do it, is our proprietary
+            platform that facilitates efficient cloud-based workflows. Here’s a
+            quick run-through of how it helps:
+          </div>
+          <ul>
+            <li className="mb-5">
+              - Your brief is loaded on our platform. This contains all the
+              information you&apos;ve shared, everything we&apos;ve dug up, and
+              all the creative assets we need to work on. Everything is in one
+              place.
+            </li>
+            <li className="mb-5">
+              - We use rate cards, add-ons, and an efficient costing tool on our
+              platform to speed up the pricing and contract process for you.
+            </li>
+            <li className="mb-5">
+              - We propose a narrative structure with one or more creative
+              approaches that align with your industry, audience, tone, and
+              brand identity. You can choose what resonates most with your brand
+              and marketing needs.
+            </li>
+            <li className="mb-5">
+              - Our project managers draft the most optimal project schedule on
+              our platform, setting milestones that work best for your
+              requirements. Everyone on the project knows exactly when something
+              is due to you, no follow-ups required.
+            </li>
+            <li className="mb-5">
+              - The creative team gets going with their work, coming to you for
+              reviews at the script and storyboard, or design stages.
+            </li>
+            <li className="mb-5">
+              - Our producers coordinate all logistics - scheduling interviews,
+              sharing prep material, confirming availability, and curating and
+              managing professional on-ground crews.
+            </li>
+            <li className="mb-5">
+              - Files, links, and updates are all on the cloud, so you and your
+              colleagues are never left wondering what&apos;s next or how things
+              are progressing.
+            </li>
+            <li className="mb-5">
+              - Once the post-production team gets going with their work, video
+              drafts are uploaded directly to the platform where you use our
+              interactive review feature to share frame-accurate comments and
+              respond to our creative suggestions - all without lengthy email
+              chains or missed feedback. Additionally, all video drafts on the
+              project are accessible to you on one dashboard, so you won’t have
+              to hunt for links to compare notes.
+            </li>
+            <li>
+              - Once the project is complete, your video assets are uploaded to
+              our platform. Everything is neatly organised, downloadable, and
+              shareable with colleagues and partners, and ready for repurposing
+              in the future.
+            </li>
+          </ul>
+          <div className="mt-5">
+            Our cloud-based platform-led workflow allows us to maintain creative
+            excellence while delivering at speed and scale. It also gives you an
+            efficient and transparent experience from start to finish.
+          </div>
+        </>
+      ),
+    },
+    {
+      key: 1,
+      title:
+        'How do you ensure that the testimonial video made for us reflects our brand?',
+      content:
+        'We always request your brand guidelines at the start of the project and seek an understanding of your business, products, and solutions. This includes guidelines around tone of voice, visual styles, colors, fonts, logo usage, and reading material on your offerings. Our creative teams refer to these throughout the duration of the project to maintain consistency. We also align voiceover tone, music, subtitles, and animation style with your overall brand personality, message, and audience. The final result is a case study video that doesn’t just tell a successful and impressive story - it also feels unmistakably yours, wherever it’s posted.',
+    },
+    {
+      key: 2,
+      title:
+        'What is the typical timeline for case study videos or testimonial videos?',
+      content:
+        'Timelines can vary based on the format, complexity, and number of stakeholders involved. That said, our typical end-to-end timeline ranges anywhere between 1 to 6 weeks for a single video, depending on the level of complexity of the format and style. This timeline includes scripting, production, editing, animation, voice over, and reviews with you.',
+    },
+    {
+      key: 3,
+      title:
+        'Can you create a series of case studies or craft a creative campaign for lead generation?',
+      content:
+        'Yes, we frequently work with brands looking to create a suite of case study videos across geographies, products/services, or verticals. In such cases, we establish a visual and narrative framework upfront that ensures consistency, while allowing each video to reflect the unique customer and outcome. We also set up scalable production plans, centralised asset sharing, and a review process that’s easy to manage with colleagues and with client-side stakeholders. Whether you need three videos or fifteen, no matter how many locations, our professional processes help you roll out case study videos efficiently, without compromising on quality. We also work on projects where we design complete creative campaigns for lead generation, which include case study videos. This involves a unique, central campaign idea, designing a complete campaign plan, and supporting you with creatives required across the campaign, be they well-constructed webpages, LinkedIn banners, or videos.',
+    },
+    {
+      key: 4,
+      title: 'What kind of formats do you offer for case study videos?',
+      content: (
+        <>
+          <div className="mb-5">
+            We offer a range of case study video formats to suit different
+            storytelling styles, platforms, and budgets. These include:
+          </div>
+          <ul>
+            <li className="mb-5">- Live-action interview-led videos</li>
+            <li className="mb-5">- Voiceover-led case study videos</li>
+            <li className="mb-5">- Documentary-style case study videos</li>
+            <li className="mb-5">- Stock-footage based case study videos</li>
+            <li className="mb-5">- Animated case study videos</li>
+            <li>- And, mixed format case study videos</li>
+          </ul>
+          <div className="mt-5">
+            We help you select the right genre and format or a combination of
+            formats, based on your audience, messaging goals, and preferred
+            channels (e.g., LinkedIn, YouTube, internal portals, and sales
+            decks). We also support with promos or teasers, language and
+            vertical adapts.
+          </div>
+        </>
+      ),
+    },
+    {
+      key: 5,
+      title: 'What kind of brands benefit from case study videos?',
+      content:
+        'Whether you’re a manufacturer, a consulting business, a pharmaceutical company, a logistics firm or an energy business - your marketing funnel needs case study videos to attract prospects and expand conversations with customers. A well-told and impactful case study video helps the world see your success stories and adds to your brand’s credibility.',
+    },
+  ]
 
   const icons = [
     {
@@ -1163,7 +1172,7 @@ const CaseStudyVideoProduction = () => {
           },
 
           y: () => -1 * getY(),
-          bottom:'25px'
+          bottom: '25px',
         },
         {
           width: '100%',
@@ -1171,7 +1180,7 @@ const CaseStudyVideoProduction = () => {
           y: 0,
 
           duration: 0.8,
-          bottom:'0px'
+          bottom: '0px',
         }
       )
         .fromTo(
@@ -1350,15 +1359,30 @@ const CaseStudyVideoProduction = () => {
               <div className="mt-6 md:mt-8 heroMarquee">
                 <ul className="list-inside space-y-3 text-[16px] leading-[1.25] tracking-[-0.64px] font-opensans md:text-[24px] md:leading-[32px] md:tracking-[-0.24px] font-semibold">
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>End-to-end video case study creation</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>Case study videos across formats</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>Trusted by Fortune 500 brands</span>
                   </li>
                 </ul>
@@ -1406,7 +1430,7 @@ const CaseStudyVideoProduction = () => {
               </h3>
               <GetUpdatesForm />
             </div>
-            {/* <div
+            <div
               ref={stickyButtonRef}
               className={`hidden fixed top-8 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
                 isSticky ? 'lg:block' : ''
@@ -1430,7 +1454,7 @@ const CaseStudyVideoProduction = () => {
               >
                 Let&apos;s talk
               </Button>
-            </div> */}
+            </div>
           </div>
         </div>
         <div
@@ -1799,7 +1823,7 @@ const CaseStudyVideoProduction = () => {
             loop
             playsInline
             src="/img/services/videos/hero.mp4"
-            poster='/img/services/videos/hero.png'
+            poster="/img/services/videos/hero.png"
             className="w-full"
             width="1920"
             height="1068"
