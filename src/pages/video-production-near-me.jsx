@@ -1,11 +1,10 @@
-
 import styles from '@/styles/services.module.scss'
 import {
   Marquee,
   TrustedBrandsSection,
   testimonialsDefault,
   ServiceHeroSection,
-  ExploreMoreSection
+  ExploreMoreSection,
 } from '@/components/shared'
 import { VideoModal } from '@/components/shared'
 import { LineArrow } from '@/components/icons'
@@ -29,9 +28,7 @@ import { useRef, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import ArrowNavigation from '@/components/arrow/ArrowNavigation'
 import { useRouter } from 'next/router'
-import {
-  serviceVideos,
-} from '@/content/services'
+import { serviceVideos } from '@/content/services'
 
 const CrewsServices = ({ setisPopupOpen }) => {
   // const videoRef = useRef(null)
@@ -57,6 +54,27 @@ const CrewsServices = ({ setisPopupOpen }) => {
       { shallow: true }
     )
   }
+
+  const [isSticky, setSticky] = useState(false)
+  const [isOverlapping, setIsOverlapping] = useState(false)
+  const stickyButtonRef = useRef(null)
+  // Observe the hero section and toggle sticky CTA when it scrolls out
+  useEffect(() => {
+    const hero = document.getElementById('service-hero')
+    if (!hero) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        // when hero is NOT intersecting (scrolled past), set sticky true
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0, rootMargin: '-80px 0px 0px 0px' }
+    )
+
+    observer.observe(hero)
+    return () => observer.disconnect()
+  }, [])
 
   const TNC = [
     {
@@ -91,22 +109,28 @@ const CrewsServices = ({ setisPopupOpen }) => {
       content: (
         <>
           <div>
-            There are several ways in which we ensure quality consistency across locations. These include:
+            There are several ways in which we ensure quality consistency across
+            locations. These include:
           </div>
           <div className="mt-5">
             <ol className="list-disc space-y-4 ml-8">
               <li>Curating the right on-ground crews</li>
               <li>
-                Detailed shoot briefing documents that define everything from cameras, lights and frames to sound, local weather information, shoot-day schedule, footage upload guidelines and more
+                Detailed shoot briefing documents that define everything from
+                cameras, lights and frames to sound, local weather information,
+                shoot-day schedule, footage upload guidelines and more
               </li>
               <li>
-                Active remote Producer involvement in real time to ensure location access and the right video framing and lighting
+                Active remote Producer involvement in real time to ensure
+                location access and the right video framing and lighting
               </li>
               <li>
-                A virtual Film Director for the whole project, if required, to ensure quality consistency across crews, locations and footage
+                A virtual Film Director for the whole project, if required, to
+                ensure quality consistency across crews, locations and footage
               </li>
               <li>
-                And, on more complex projects, a film Director, Assistant Director or Producer on location or on set to guide every crew.
+                And, on more complex projects, a film Director, Assistant
+                Director or Producer on location or on set to guide every crew.
               </li>
             </ol>
           </div>
@@ -119,7 +143,8 @@ const CrewsServices = ({ setisPopupOpen }) => {
       content: (
         <>
           <div>
-          Our on-demand video crew services typically have the following workflow:
+            Our on-demand video crew services typically have the following
+            workflow:
           </div>
           <ol className="list-decimal pl-[25px] py-3">
             <li>Project Briefing</li>
@@ -157,7 +182,10 @@ const CrewsServices = ({ setisPopupOpen }) => {
           >
             send us a brief
           </a>{' '}
-          and we’ll be happy to undertake custom video editing for you. We will also be able to support any additional requirements you may have, such as voice over, music from stock, addition of stock or archival footage, graphic design, motion graphics, colour grading, etc. 
+          and we’ll be happy to undertake custom video editing for you. We will
+          also be able to support any additional requirements you may have, such
+          as voice over, music from stock, addition of stock or archival
+          footage, graphic design, motion graphics, colour grading, etc.
         </>
       ),
     },
@@ -167,7 +195,9 @@ const CrewsServices = ({ setisPopupOpen }) => {
         'What happens if I cannot be at the shoot location? How can I still see or track what’s happening on-ground?',
       content: (
         <>
-         We’ll be happy to organise a live-stream feed of the shoot for you. You won’t miss a thing.<br/>
+          We’ll be happy to organise a live-stream feed of the shoot for you.
+          You won’t miss a thing.
+          <br />
           <a
             onClick={handleClick}
             className="underline cursor-pointer hover:text-rb-link-green"
@@ -177,7 +207,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
           with Makerrs today!
         </>
       ),
-    }
+    },
   ]
 
   const testimonialData = [
@@ -189,8 +219,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       designation: 'FOUNDER',
       company: 'DARUIESTE ARIPI',
       image: {
-        srcSet:
-          `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+        srcSet: `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -202,8 +231,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       designation: 'VICE-PRESIDENT MARKETING',
       company: 'VYMO',
       image: {
-        srcSet:
-          `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
+        srcSet: `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -215,8 +243,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       designation: 'Account Director',
       company: 'BRIGHT PARTNERSHIPS',
       image: {
-        srcSet:
-          `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
+        srcSet: `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -229,8 +256,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       designation: 'Founder',
       company: 'COLEARN',
       image: {
-        srcSet:
-          `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
+        srcSet: `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -242,8 +268,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       designation: 'VP INTERNAL COMMUNICATIONS',
       company: 'FORTUNE 100 ITES ENTERPRISE',
       image: {
-        srcSet:
-          `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
+        srcSet: `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -255,20 +280,15 @@ const CrewsServices = ({ setisPopupOpen }) => {
       designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
       company: 'CAPILLARY TECHNOLOGIES',
       image: {
-        srcSet:
-          `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+        srcSet: `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
-    }
+    },
   ]
 
   const ourOfferings = [
     {
-      title: (
-        <>
-          Single-camera&nbsp;
-        </>
-      ),
+      title: <>Single-camera&nbsp;</>,
       description:
         'Get a single-camera video crew to shoot interview, testimonial and leadership videos wherever you need. Book a curated video crew today.',
       content: [
@@ -280,11 +300,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       img: '/img/services/crew/single-camera-shoot.jpg',
     },
     {
-      title: (
-        <>
-          Multi-camera&nbsp;
-        </>
-      ),
+      title: <>Multi-camera&nbsp;</>,
       description:
         'From a 3-camera video crew to capture a podcast interview to a 6-camera crew to film an event—get professional video crews that scale with your brief.',
       content: [
@@ -297,11 +313,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       img: '/img/services/crew/multi-camera-shoot.webp',
     },
     {
-      title: (
-        <>
-          Multi-location&nbsp;
-        </>
-      ),
+      title: <>Multi-location&nbsp;</>,
       description:
         'When you need a single-camera shoot in multiple cities or a multi-camera shoot in multiple countries. Video production that scales with your business.',
       content: [
@@ -367,19 +379,23 @@ const CrewsServices = ({ setisPopupOpen }) => {
       id: 9,
       imgsrc: '/img/services/crew/card10.png',
       title: 'Product Shoot',
-    }, {
+    },
+    {
       id: 10,
       imgsrc: '/img/services/crew/card11.webp',
       title: 'Leadership Video',
-    }, {
+    },
+    {
       id: 11,
       imgsrc: '/img/services/crew/card12.webp',
       title: 'Studio and Chroma',
-    }, {
+    },
+    {
       id: 12,
       imgsrc: '/img/services/crew/card13.png',
       title: 'Documentary Footage',
-    }, {
+    },
+    {
       id: 13,
       imgsrc: '/img/services/crew/card14.png',
       title: 'BTS Footage',
@@ -422,7 +438,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/advertising-agency',
-    }
+    },
   ]
 
   useEffect(() => {
@@ -438,22 +454,22 @@ const CrewsServices = ({ setisPopupOpen }) => {
     }
   }, [])
 
-   useEffect(() => {
+  useEffect(() => {
     if (!stopVisible) {
       const handleScroll = () => {
-        const section = document.getElementById('leap-explore'); // Replace 'section-id' with the ID of your section
+        const section = document.getElementById('leap-explore') // Replace 'section-id' with the ID of your section
         if (section && window.scrollY > section.offsetTop) {
-          setisPopupOpen(true);
+          setisPopupOpen(true)
           setstopVisible(true)
         }
-      };
+      }
 
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll)
       return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
+        window.removeEventListener('scroll', handleScroll)
+      }
     }
-  }, [stopVisible]);
+  }, [stopVisible])
 
   return (
     <>
@@ -463,23 +479,52 @@ const CrewsServices = ({ setisPopupOpen }) => {
         keywords="Production teams, Global video crews, On-demand video production, Professional filmmakers, Commercial video production, Documentary filming, Video production solutions, Testimonial video services, Testimonial video production"
         url="https://www.b2b.redbangle.com/b2b-international-video-crew-agency"
       />
-
-
-      <ServiceHeroSection
-        className=""
-        type="Book a Crew"
-        video={serviceVideos.book_a_crew.video}
-        fullVideo={serviceVideos.book_a_crew.fullVideo}
-        ctaText="Book a Crew"
-        ctaLink="/contact"
-        textColor='#111010'
-        content={
-          <>
-            <h1 className="inline">Get on-demand professional video crews in London, San Francisco, New York, Singapore, Tokyo, Sydney, Bangalore, Shanghai and 500+ cities across the world. Supercharge your communication teams with all the video footage they need–no matter which city or how many locations.</h1>
-
-          </>
-        }
-      />
+      <div id="service-hero">
+        <ServiceHeroSection
+          className=""
+          type="Book a Crew"
+          video={serviceVideos.book_a_crew.video}
+          fullVideo={serviceVideos.book_a_crew.fullVideo}
+          ctaText="Book a Crew"
+          ctaLink="/contact"
+          textColor="#111010"
+          content={
+            <>
+              <h1 className="inline">
+                Get on-demand professional video crews in London, San Francisco,
+                New York, Singapore, Tokyo, Sydney, Bangalore, Shanghai and 500+
+                cities across the world. Supercharge your communication teams
+                with all the video footage they need–no matter which city or how
+                many locations.
+              </h1>
+            </>
+          }
+        />
+        <div
+          ref={stickyButtonRef}
+          className={`hidden fixed top-20 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+            isSticky ? 'lg:block' : ''
+          } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+        >
+          <Button
+            onClick={() => {
+              setTimeout(() => {
+                router.push(
+                  {
+                    pathname: '/contact',
+                  },
+                  undefined,
+                  { shallow: true }
+                )
+              }, 100)
+            }}
+            className="w-full"
+            suffix={<LineArrow hover />}
+          >
+            Book a Crew
+          </Button>
+        </div>
+      </div>
 
       <section className="md:pb-30 md:pt-12 py-12">
         <div className="container">
@@ -512,7 +557,11 @@ const CrewsServices = ({ setisPopupOpen }) => {
                 Professional Video Crews in 100+ countries
               </h2>
               <p>
-                Our global video crew production service supports your business everywhere you grow. Shoot commercial videos, social media content, customer testimonials, case study videos, recruitment videos, leadership videos and more with our <br />Book a Crew service.
+                Our global video crew production service supports your business
+                everywhere you grow. Shoot commercial videos, social media
+                content, customer testimonials, case study videos, recruitment
+                videos, leadership videos and more with our <br />
+                Book a Crew service.
               </p>
               <div className="md:mt-10 mt-6">
                 <Button
@@ -549,7 +598,9 @@ const CrewsServices = ({ setisPopupOpen }) => {
                   Borderless Production
                 </div>
                 <p className="text-16">
-                  From Paris to Singapore and New York to New Delhi–get professional video crews for hire anywhere you need them. Send us a production brief today.
+                  From Paris to Singapore and New York to New Delhi–get
+                  professional video crews for hire anywhere you need them. Send
+                  us a production brief today.
                 </p>
               </div>
               <div className="order-1 md:order-2">
@@ -566,7 +617,9 @@ const CrewsServices = ({ setisPopupOpen }) => {
                   Curated Crews
                 </div>
                 <p className="text-16">
-                  Get hand-picked professional video crews, custom creative and technical briefs, and hands-on quality control on every shoot. Get professional video production services with Makerrs.
+                  Get hand-picked professional video crews, custom creative and
+                  technical briefs, and hands-on quality control on every shoot.
+                  Get professional video production services with Makerrs.
                 </p>
               </div>
               <div className="order-1 md:order-2">
@@ -591,7 +644,10 @@ const CrewsServices = ({ setisPopupOpen }) => {
                   Scalable Services
                 </div>
                 <p className="text-16">
-                  Be it a single-camera testimonial shoot or a multi-camera event shoot, our managed video crew services scale with your brief—no matter how many shoots you need in one week or how many crews you need on one day.
+                  Be it a single-camera testimonial shoot or a multi-camera
+                  event shoot, our managed video crew services scale with your
+                  brief—no matter how many shoots you need in one week or how
+                  many crews you need on one day.
                 </p>
               </div>
             </div>
@@ -608,7 +664,10 @@ const CrewsServices = ({ setisPopupOpen }) => {
                   Quality & Ownership
                 </div>
                 <p className="text-16">
-                  Our curated film and video crews and tried and tested cloud-based processes drive complete execution ownership at our end. You won’t have to worry about creative quality and consistency.
+                  Our curated film and video crews and tried and tested
+                  cloud-based processes drive complete execution ownership at
+                  our end. You won’t have to worry about creative quality and
+                  consistency.
                 </p>
               </div>
             </div>
@@ -684,14 +743,13 @@ const CrewsServices = ({ setisPopupOpen }) => {
       />
 
       <TrustedBrandsSection className="bg-white py-7.5 md:py-15" />
-      <div id="leap-explore" className='md:py-12'>      
+      <div id="leap-explore" className="md:py-12">
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"
           cards={explorecards}
         />
       </div>
-
 
       <section className="md:pt-12 pt-6 md:pb-24 pb-12">
         <div className="container">
@@ -754,7 +812,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      works
+      works,
     },
   }
 }
