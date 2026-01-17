@@ -6,7 +6,7 @@ import {
   RedbangleWaySection,
   FeaturedWorkSection,
   Testimonials,
-  TrustedBrandsSection
+  TrustedBrandsSection,
 } from '@/components/shared'
 import { SEO } from '@/components/shared/SEO'
 import {
@@ -17,45 +17,74 @@ import {
 import { strategyPosts } from '@/utils/dummy'
 import { postsMapper } from '@/utils/mapper'
 import Script from 'next/script'
-import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
+import { useEffect, useState, useRef } from 'react'
 import { Accordion } from '@/components/ui'
-
-
+import { Button } from '@/components/ui'
+import { LineArrow } from '@/components/icons'
 
 const Design = ({ setisPopupOpen }) => {
-
   const _posts = strategyPosts.map(postsMapper)
   const [stopVisible, setstopVisible] = useState(false)
+  const [isSticky, setSticky] = useState(false)
+  const [isOverlapping, setIsOverlapping] = useState(false)
+  const stickyButtonRef = useRef(null)
+  const router = useRouter()
+  // Observe the hero section and toggle sticky CTA when it scrolls out
+  useEffect(() => {
+    const hero = document.getElementById('service-hero')
+    if (!hero) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        // when hero is NOT intersecting (scrolled past), set sticky true
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0, rootMargin: '-80px 0px 0px 0px' }
+    )
+
+    observer.observe(hero)
+    return () => observer.disconnect()
+  }, [])
 
   const createTestimonialData = [
     {
       key: 0,
-      quote:
-        <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
-        </>,
+      quote: (
+        <>
+          Makerrs brought a unique blend of clarity and creativity—translating
+          complex healthcare concepts into a simple brand identity system that
+          was &apos;full of heart&apos;. They also created a cohesive website
+          experience within incredibly tight deadlines. Their efficiency and
+          understanding of our needs were pivotal in successfully launching our
+          brand.
+        </>
+      ),
       name: 'Rinku Agarwal Basu',
       designation: 'COO',
       company: 'Lillia Care',
       image: {
-        srcSet:
-
-          `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
+        srcSet: `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
     {
       key: 1,
-      quote:
+      quote: (
         <>
-          Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
-        </>,
+          Makerrs was especially impressive with their creative strategy, design
+          and copy. They took the colors, the quirky and iconic signages, and
+          the energy of the local markets and transformed them into a fresh,
+          modern expression for our brand. Our customers are drawn to the unique
+          identity, and it&apos;s translated into a love for the food itself.
+        </>
+      ),
       name: 'KUNCHERIA MARATTUKALAM',
       designation: 'FOUNDER & DIRECTOR',
       company: 'Maratt Group',
       image: {
-        srcSet:
-
-          `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+        srcSet: `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -67,8 +96,7 @@ const Design = ({ setisPopupOpen }) => {
       designation: ' CO-FOUNDER',
       company: 'P.U. DINGDING',
       image: {
-        srcSet:
-          `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
+        srcSet: `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -119,10 +147,15 @@ const Design = ({ setisPopupOpen }) => {
       content: (
         <>
           <div>
-            We provide end-to-end design solutions, managing every aspect of a project from concept to roll out. Our services encompass strategy, design, development, deployment, and ongoing support. Our dedicated design processes ensure a streamlined experience—whether you need comprehensive branding services or a well-designed business presentation.
+            We provide end-to-end design solutions, managing every aspect of a
+            project from concept to roll out. Our services encompass strategy,
+            design, development, deployment, and ongoing support. Our dedicated
+            design processes ensure a streamlined experience—whether you need
+            comprehensive branding services or a well-designed business
+            presentation.
           </div>
         </>
-      )
+      ),
     },
     {
       key: 2,
@@ -136,12 +169,34 @@ const Design = ({ setisPopupOpen }) => {
       content: (
         <>
           <p>
-            We create unique, multi-sensory Brand Design Systems—visual, verbal, and sonic—for a consistent and impactful brand presence which resonates with customers.
+            We create unique, multi-sensory Brand Design Systems—visual, verbal,
+            and sonic—for a consistent and impactful brand presence which
+            resonates with customers.
           </p>
-          <p>The first leg involves market research, competitor analysis, and immersive brand workshops with the client. Then we cull out a creative strategy for the brand, articulate the positioning, brand values, and brand story. </p>
-          <p>Next, we develop a comprehensive brand identity which includes the name, brand voice, logo design, typography, iconography, color palettes, imagery, and usage guidelines–all of which go into a comprehensive Brand Manual. </p>
-          <p>We also create a stipulated number of relevant brand collaterals. These include physical and digital assets that reinforce the new brand identity through various use cases, such as business stationery, email templates, brochures, websites, posters, games, jingles, and other formats.</p>
-          <p>In some cases, we also support brands during the launch phase by executing strategic rollouts across key channels, including social media.</p>
+          <p>
+            The first leg involves market research, competitor analysis, and
+            immersive brand workshops with the client. Then we cull out a
+            creative strategy for the brand, articulate the positioning, brand
+            values, and brand story.{' '}
+          </p>
+          <p>
+            Next, we develop a comprehensive brand identity which includes the
+            name, brand voice, logo design, typography, iconography, color
+            palettes, imagery, and usage guidelines–all of which go into a
+            comprehensive Brand Manual.{' '}
+          </p>
+          <p>
+            We also create a stipulated number of relevant brand collaterals.
+            These include physical and digital assets that reinforce the new
+            brand identity through various use cases, such as business
+            stationery, email templates, brochures, websites, posters, games,
+            jingles, and other formats.
+          </p>
+          <p>
+            In some cases, we also support brands during the launch phase by
+            executing strategic rollouts across key channels, including social
+            media.
+          </p>
         </>
       ),
     },
@@ -155,29 +210,42 @@ const Design = ({ setisPopupOpen }) => {
           </div>
           <h3 className="mt-5 font-semibold  text-base">1. Discovery:</h3>
           <div>
-            We explore and analyse your business origins, offerings, customer segment, competition, etc., through immersive discussions. We also host a brand workshop for all stakeholders to gather diverse opinions + vision for the brand.
+            We explore and analyse your business origins, offerings, customer
+            segment, competition, etc., through immersive discussions. We also
+            host a brand workshop for all stakeholders to gather diverse
+            opinions + vision for the brand.
           </div>
           <h3 className="mt-5 font-semibold  text-base">2. Distillation:</h3>
           <div>
-            We relay back the focal points from the dialogue, and align all parties to lock on business goals, brand vision, brand personality, and broad stylistic preferences.
+            We relay back the focal points from the dialogue, and align all
+            parties to lock on business goals, brand vision, brand personality,
+            and broad stylistic preferences.
           </div>
           <h3 className="mt-5 font-semibold  text-base">3. Strategy:</h3>
           <div>
-            We map out where your brand needs to sit in the minds of your customers, crafting a brand differentiator based on research + on our own creative hunch!
+            We map out where your brand needs to sit in the minds of your
+            customers, crafting a brand differentiator based on research + on
+            our own creative hunch!
           </div>
           <h3 className="mt-5 font-semibold  text-base">4. Creative:</h3>
           <div>
-            We dive into an iterative creative process, exploring visual styles, voice, and personas, to arrive at a unique design direction and brand story.
+            We dive into an iterative creative process, exploring visual styles,
+            voice, and personas, to arrive at a unique design direction and
+            brand story.
           </div>
           <h3 className="mt-5 font-semibold  text-base">5. Brand:</h3>
           <div>
-            We bring the brand to life-compiling all the brand assets and identity guidelines into a comprehensive brand manual that captures the brand story, logo, imagery, colours, typography, usage guidelines, and more!
+            We bring the brand to life-compiling all the brand assets and
+            identity guidelines into a comprehensive brand manual that captures
+            the brand story, logo, imagery, colours, typography, usage
+            guidelines, and more!
           </div>
-          <h3 className="mt-5 font-semibold  text-base">
-            6. Boom:
-          </h3>
+          <h3 className="mt-5 font-semibold  text-base">6. Boom:</h3>
           <div>
-            We help you roll out your brand with the big bang it deserves. This is an ongoing process of implementation that ranges in scope from sales and marketing collateral, launch campaign, website, social media, to merchandise.
+            We help you roll out your brand with the big bang it deserves. This
+            is an ongoing process of implementation that ranges in scope from
+            sales and marketing collateral, launch campaign, website, social
+            media, to merchandise.
           </div>
         </>
       ),
@@ -191,7 +259,8 @@ const Design = ({ setisPopupOpen }) => {
     },
     {
       key: 6,
-      title: 'What industries do you specialize in for brand identity and design?',
+      title:
+        'What industries do you specialize in for brand identity and design?',
       content:
         'With experience in technology, FMCG, healthcare, F&B, manufacturing, aerospace, education, energy, engineering, and pharma-we understand industry-specific demands, design cultures, and market dynamics. We craft compelling brand identities and design solutions with an adaptable approach.',
     },
@@ -201,20 +270,33 @@ const Design = ({ setisPopupOpen }) => {
       content: (
         <>
           <div>
-            <p>We are tech-first in our approach and see AI as a powerful tool to solve for faster outcomes, to enhance creativity with new and infinite possibilities. We actively integrate technology to streamline workflows and to innovate.</p><br />
-            <p>That said, while AI supports our craft, it&apos;s our people who shape the brand vision, bring emotion, human connection, and uniqueness to ideas and design.</p>
+            <p>
+              We are tech-first in our approach and see AI as a powerful tool to
+              solve for faster outcomes, to enhance creativity with new and
+              infinite possibilities. We actively integrate technology to
+              streamline workflows and to innovate.
+            </p>
+            <br />
+            <p>
+              That said, while AI supports our craft, it&apos;s our people who
+              shape the brand vision, bring emotion, human connection, and
+              uniqueness to ideas and design.
+            </p>
           </div>
         </>
-      )
+      ),
     },
     {
       key: 8,
-      title:
-        'Do you handle experiential design for physical spaces?',
+      title: 'Do you handle experiential design for physical spaces?',
       content: (
         <>
           <div>
-            We design interactive and immersive brand experiences that transform physical and digital spaces into dynamic storytelling platforms. From interactive installations or augmented and mixed reality experiences-we design and develop concepts end to end, and even recommend suitable hardware for the on-ground roll out.
+            We design interactive and immersive brand experiences that transform
+            physical and digital spaces into dynamic storytelling platforms.
+            From interactive installations or augmented and mixed reality
+            experiences-we design and develop concepts end to end, and even
+            recommend suitable hardware for the on-ground roll out.
           </div>
         </>
       ),
@@ -225,7 +307,9 @@ const Design = ({ setisPopupOpen }) => {
       content: (
         <>
           <div>
-            Our collateral design services include presentation design, brochure design, poster design, mailer design, coffee table book design, social media creatives, and more.
+            Our collateral design services include presentation design, brochure
+            design, poster design, mailer design, coffee table book design,
+            social media creatives, and more.
           </div>
         </>
       ),
@@ -235,7 +319,13 @@ const Design = ({ setisPopupOpen }) => {
       title: 'How do you approach brand storytelling through design?',
       content: (
         <>
-          We articulate a creative strategy that drives the brand&apos;s narrative and creates an emotional, value-driven connection with your target audience. Everything from the brand voice, colors, typography, and imagery to sound and messaging comes together to form a cohesive personality for the brand. Through this holistic bundle of traits, we tell stories of impact, shared dreams, adventures, or histories to build trust and delight for customers.
+          We articulate a creative strategy that drives the brand&apos;s
+          narrative and creates an emotional, value-driven connection with your
+          target audience. Everything from the brand voice, colors, typography,
+          and imagery to sound and messaging comes together to form a cohesive
+          personality for the brand. Through this holistic bundle of traits, we
+          tell stories of impact, shared dreams, adventures, or histories to
+          build trust and delight for customers.
         </>
       ),
     },
@@ -245,8 +335,19 @@ const Design = ({ setisPopupOpen }) => {
       content: (
         <>
           <div>
-            <p>All your creative assets get stored on a secure cloud and are delivered via our Creative Cloud platform. This ensures easy access, smooth project management, organised storage, and easy repurposing of creative assets in the future.</p><br />
-            <p>All your creative assets are stored for free for up to a year. You can access these anytime to download or share with colleagues. On high-profile or confidential projects, asset access can also be restricted to select individuals within your organisation.</p>
+            <p>
+              All your creative assets get stored on a secure cloud and are
+              delivered via our Creative Cloud platform. This ensures easy
+              access, smooth project management, organised storage, and easy
+              repurposing of creative assets in the future.
+            </p>
+            <br />
+            <p>
+              All your creative assets are stored for free for up to a year. You
+              can access these anytime to download or share with colleagues. On
+              high-profile or confidential projects, asset access can also be
+              restricted to select individuals within your organisation.
+            </p>
           </div>
         </>
       ),
@@ -257,7 +358,9 @@ const Design = ({ setisPopupOpen }) => {
       content: (
         <>
           <div>
-            With the majority of our work, as stipulated in pre-agreed contracts, copyright for creative assets is assigned to the client upon receipt of final payment for the commissioned work.
+            With the majority of our work, as stipulated in pre-agreed
+            contracts, copyright for creative assets is assigned to the client
+            upon receipt of final payment for the commissioned work.
           </div>
         </>
       ),
@@ -266,19 +369,19 @@ const Design = ({ setisPopupOpen }) => {
   useEffect(() => {
     if (!stopVisible) {
       const handleScroll = () => {
-        const section = document.getElementById('leap-explore'); // Replace 'section-id' with the ID of your section
+        const section = document.getElementById('leap-explore') // Replace 'section-id' with the ID of your section
         if (section && window.scrollY > section.offsetTop) {
-          setisPopupOpen(true);
+          setisPopupOpen(true)
           setstopVisible(true)
         }
-      };
+      }
 
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll)
       return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
+        window.removeEventListener('scroll', handleScroll)
+      }
     }
-  }, [stopVisible]);
+  }, [stopVisible])
   return (
     <>
       <SEO
@@ -287,20 +390,50 @@ const Design = ({ setisPopupOpen }) => {
         url="https://www.staging.makerrs.com/brand-design-agency"
         keywords="User interface design, Packaging design, Branding and brand identity, Brand design, Designing illustrations, Experiential design, Brand identity design, Editorial design, Top branding agencies, Branding collateral"
       />
-      <ServiceHeroSection
-        className=""
-        type="GET DESIGN"
-        video={serviceVideos.get_design.video}
-        fullVideo={serviceVideos.get_design.fullVideo}
-        ctaText="Design with us "
-        ctaLink="/contact"
-        textColor='#111010'
-        content={
-          <>
-            <h1 className="inline">From brand identity systems, experiential design, and event branding to editorial design, illustrations, and motion graphics-build brand differentiation and human connect with us.</h1>
-          </>
-        }
-      />
+      <div id="service-hero">
+        <ServiceHeroSection
+          className=""
+          type="GET DESIGN"
+          video={serviceVideos.get_design.video}
+          fullVideo={serviceVideos.get_design.fullVideo}
+          ctaText="Design with us "
+          ctaLink="/contact"
+          textColor="#111010"
+          content={
+            <>
+              <h1 className="inline">
+                From brand identity systems, experiential design, and event
+                branding to editorial design, illustrations, and motion
+                graphics-build brand differentiation and human connect with us.
+              </h1>
+            </>
+          }
+        />
+      </div>
+      <div
+        ref={stickyButtonRef}
+        className={`hidden fixed top-20 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+          isSticky ? 'lg:block' : ''
+        } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+      >
+        <Button
+          onClick={() => {
+            setTimeout(() => {
+              router.push(
+                {
+                  pathname: '/contact',
+                },
+                undefined,
+                { shallow: true }
+              )
+            }, 100)
+          }}
+          className="w-full"
+          suffix={<LineArrow hover />}
+        >
+          Design with us
+        </Button>
+      </div>
       <div style={{ display: 'none' }}>
         <h2>Marketing Agency</h2>
         <h2>Holistic Marketing</h2>
@@ -330,10 +463,14 @@ const Design = ({ setisPopupOpen }) => {
           width: '500',
           height: '500',
         }}
-        heading='Explore Our Design Process'
-        title='How we design for brand growth'
+        heading="Explore Our Design Process"
+        title="How we design for brand growth"
       />
-      <FeaturedWorkSection posts={_posts} href="/work/design" title="Explore Our Design Work" />
+      <FeaturedWorkSection
+        posts={_posts}
+        href="/work/design"
+        title="Explore Our Design Work"
+      />
       <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
       <Testimonials
         title={'WHAT CLIENTS SAY'}
@@ -341,7 +478,7 @@ const Design = ({ setisPopupOpen }) => {
         testimonialData={createTestimonialData}
         type="semi"
       />
-      <div id="leap-explore" className='md:py-12'>
+      <div id="leap-explore" className="md:py-12">
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"
