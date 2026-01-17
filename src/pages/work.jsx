@@ -23,10 +23,10 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
   const _posts = workPosts
 
   const caseStudyTags = [
-    // { 
-    //   name: 'Featured', 
-    //   url: 'featured',
-    // },
+    { 
+      name: 'Featured', 
+      url: 'featured',
+    },
      { 
       name: 'Design', 
       url: 'design',
@@ -650,14 +650,14 @@ const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || ca
 
       <section className="py-14 md:py-24 overflow-hidden bg-rb-mercury text-rb-black ">
         <WorkListHeroSection
-          type="WORK SHOWCASE"
-          typeTwo="WORK SHOWCASE"
+          type="Makerrs Work"
+          typeTwo="Makerrs Work"
           video1="/img/services/strategy2.mp4"
           video2="/img/services/strategy1.mp4"
           pillImg="/img/who-we-are/about-pill.webp"
           marqueType="img"
           contentClassName="max-w-[1100px] w-full leading-[21px] md:text-[32px] md:leading-9.5 mt-8 md:!mt-16 cap-trim font-semibold !tracking-[-0.56px] md:!tracking-[-0.08rem]"
-          content={<>Get big ideas, captivating design, technology magic and flawless production. We&apos;re the engine behind your brand&apos;s unstoppable ride to the top.</>}
+          content={<>Big ideas, captivating design, campaign magic and flawless global video production. We're the creative engine behind unstoppable brand growth.</>}
           duration={25}
         />
       </section>
