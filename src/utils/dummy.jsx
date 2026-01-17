@@ -1649,6 +1649,163 @@ export const workPosts = [
   },
 
 
+// Design starts
+
+
+{
+    key: 11,
+    name: 'Launching an AI-powered healthcare brand in record time',
+    company: 'Lillia Care',
+    image: '/img/works/lillia_img.jpg',
+    alt: 'Lillia Care',
+    tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
+    tabs: ['design'],
+    case_study_title: 'lillia-care-brand-launch',
+    href: '/brand-designs/lillia-care-brand-launch'
+  },
+
+  {
+    key: 6,
+    name: "Exicom Brand Refresh: Choose Smart. Charge Smart.",
+    company: 'Exicom',
+    image: '/img/case-study/exicom_brand_refresh_work.jpg',
+    tags: ['E-Mobility','Design', 'Brand Transformation', 'Visual Identity'],
+    tabs: ['design'],
+    case_study_title: 'exicom-e-mobility-rebrand'
+  },
+
+  {
+    key: 41,
+    name: 'Branding for an Indulgent Dessert Café',
+    company: 'P.U. Dingding',
+    image: '/img/case-study/pudingding-thumbnail.jpg',
+    tags: ['F&B', 'Cafe', 'Brand Identity', 'Launch Video'],
+    tabs: ['design'],
+    case_study_title: 'pu-dingding-dessert-cafe-branding'
+  },
+  
+{
+    key: 8,
+    name: 'Crafting a Symbol of Success in Hospitality',
+    image: '/img/case-study/medalio_thumbnail.webp',
+    company: 'Medalio',
+    alt: 'Medalio',
+    tabs: ['design'],
+   tags: ['Hospitality', 'Brand Identity', 'Logo Design'],
+    case_study_title: 'medalio-hospitality-brand-identity',
+    href:'/brand-designs/medalio-hospitality-brand-identity'
+  },
+
+
+{
+    key: 20,
+    name: 'Branding for a Desi Street Food Restaurant',
+    image: '/img/works/thelagram.jpg',
+    company: 'Thelagram',
+    alt: 'Thelagram',
+    tabs: ['design'],
+    tags: [
+      'Brand Visual Identity',
+      'Pacakaging Design',
+      'Logo Design',
+      'Wall Branding',
+      'Digital Campaign',
+      'F&B',
+    ],
+    case_study_title: 'thelagram',
+  },
+
+  {
+    key: 8,
+    name: 'Augmented Reality that brought the automobile alive',
+    image: '/img/works/bajaj_pulsar_work_age.webp',
+    company: 'Bajaj Auto',
+    alt: 'Augmented Reality that brought the automobile alive',
+    tabs: ['design'],
+    tags: ['Automotive', 'XR Solution (AR/VR/MR)', 'Gamified Experience'],
+    case_study_title: 'bajaj-pulsar-augmented-reality-campaign'
+
+  },
+
+{
+    key: 9,
+    name: 'Immersive 3D Walkthrough for Infosys Topaz',
+    image: '/img/works/infosys-thobaz.webp',
+    company: 'Infosys',
+    alt: 'Immersive 3D Walkthrough for Infosys Topaz',
+    tabs: ['design'],
+    tags: ['Technology', 'Interactive Experience', '3D Animation Video', 'Marketing Video'],
+    case_study_title: 'infosys-topaz-3d-interactive-experience',
+    href: '/brand-experiences/infosys-topaz-3d-interactive-experience'
+
+  },
+
+{
+    key: 58,
+    name: "Nationwide Activation Celebrating Customer Obsession",
+    company: 'Axis Bank',
+    image: '/img/case-study/axis_bank_work_thumbnail.jpg',
+    tags: ['Finance','Internal Communications Campaign', 'Marketing Campaign'],
+    tabs: ['design'],
+    case_study_title: 'axis-bank-activation-campaign'
+  },
+
+ {
+    key: 51,
+    name: 'Social Media Campaign: Meet the AI-First Employees',
+    company: 'Infosys',
+    image: '/img/works/infy-ai-first-work.webp',
+     tags: ['Technology', 'Digital Campaign','Employer Branding video', 'Social Media Content'],
+    tabs: ['design'],
+    case_study_title: 'infosys-employees-social-media-campaign',
+    href: '/campaigns/infosys-employees-social-media-campaign'
+  },
+
+{
+    key: 22,
+    name: 'Launching a Sports Brand logo with a 3D Billboard',
+    image: '/img/works/mumbai-indians.webp',
+    company: 'Mumbai Indians',
+    alt: 'Launching a Sports Brand logo with a 3D Billboard',
+    tabs: ['design'],
+    tags: ['Sports', '3D Billboard Animation'],
+    case_study_title: 'mumbai-indians-3d-billboard-animation'
+
+  },
+ {
+    key: 39,
+    name: "A Design Gallery on Sustainability",
+    image: '/img/works/infosys-living-labs-gallery.jpg',
+    company: 'Infosys',
+    alt: 'infosys-living-labs-gallery',
+    tabs: ['design'],
+    tags: ['Technology', 'Integrated Design Services', 'Brand Experience', 'ESG'],
+    case_study_title: 'infosys-sustainability-design-gallery'
+  },
+
+  {
+    key: 65,
+    name: "Office Branding for Biocon's Global Headquarters",
+    company: 'Biocon',
+    image: '/img/case-study/biocon_work_thumbnail.png',
+    tags: ['Biopharmaceutical', 'Integrated Design Services', 'Brand Experience'],
+    tabs: ['design'],
+    case_study_title: 'office-branding-for-biocon'
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1700,17 +1857,7 @@ export const workPosts = [
     case_study_title: 'infosys-business-agility-solution',
      href: '/videos/infosys-business-agility-solution'
   },
-    {
-    key: 8,
-    name: 'Crafting a Symbol of Success in Hospitality',
-    image: '/img/case-study/medalio_thumbnail.webp',
-    company: 'Medalio',
-    alt: 'Medalio',
-   tabs: [''],
-   tags: ['Hospitality', 'Brand Identity', 'Logo Design'],
-    case_study_title: 'medalio-hospitality-brand-identity',
-    href:'/brand-designs/medalio-hospitality-brand-identity'
-  },
+    
   
   //Technology Tab
   {
@@ -1725,17 +1872,7 @@ export const workPosts = [
     href: '/campaigns/slb-interactive-explainer'
 
   },
-  {
-    key: 11,
-    name: 'Launching an AI-powered healthcare brand in record time',
-    company: 'Lillia Care',
-    image: '/img/works/lillia_img.jpg',
-    alt: 'Lillia Care',
-    tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
-    tabs: ['brand-experiences'],
-    case_study_title: 'lillia-care-brand-launch',
-    href: '/brand-designs/lillia-care-brand-launch'
-  },
+  
   {
     key: 12,
     name: 'Immersive 3D Walkthrough for Infosys Topaz',
@@ -1841,16 +1978,7 @@ export const workPosts = [
     case_study_title: 'hotel-superhero-saas-hiring-video'
   },
 
-  {
-    key: 51,
-    name: 'Social Media Campaign: Meet the AI-First Employees',
-    company: 'Infosys',
-    image: '/img/works/infy-ai-first-work.webp',
-     tags: ['Technology', 'Digital Campaign','Employer Branding video', 'Social Media Content'],
-    tabs: ['videos'],
-    case_study_title: 'infosys-employees-social-media-campaign',
-    href: '/campaigns/infosys-employees-social-media-campaign'
-  },
+ 
   {
     key: 17,
     name: 'HIRING STEM EDUCATORS FOR INDONESIA',
@@ -1961,17 +2089,7 @@ export const workPosts = [
     tabs: ['videos'],
     case_study_title: 'infosys-campus-recruitment-video'
   },
-  {
-    key: 22,
-    name: 'Launching a Sports Brand logo with a 3D Billboard',
-    image: '/img/works/mumbai-indians.webp',
-    company: 'Mumbai Indians',
-    alt: 'Launching a Sports Brand logo with a 3D Billboard',
-    tabs: ['videos'],
-    tags: ['Sports', '3D Billboard Animation'],
-    case_study_title: 'mumbai-indians-3d-billboard-animation'
-
-  },
+  
     {
     key: 62,
     name: "A Vision for Sustainable Social Housing",
@@ -2199,64 +2317,8 @@ export const workPosts = [
     case_study_title: 'vymo-wholesalers-explainer-video'
   },
   //Design
-  {
-    key: 38,
-    name: 'Launching an AI-powered healthcare brand in record time',
-    company: 'Lillia Care',
-    image: '/img/works/lillia_img.jpg',
-    alt: 'Lillia Care',
-    tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
-    tabs: ['design'],
-    case_study_title: 'lillia-care-brand-launch'
-  },
+ 
   
-  {
-    key: 39,
-    name: "A Design Gallery on Sustainability",
-    image: '/img/works/infosys-living-labs-gallery.jpg',
-    company: 'Infosys',
-    alt: 'infosys-living-labs-gallery',
-    tabs: ['design'],
-    tags: ['Technology', 'Integrated Design Services', 'Brand Experience', 'ESG'],
-    case_study_title: 'infosys-sustainability-design-gallery'
-  },
-  {
-    key: 40,
-    name: 'Crafting a Symbol of Success in Hospitality',
-    image: '/img/case-study/medalio_thumbnail.webp',
-    company: 'Medalio',
-    alt: 'Medalio',
-    tabs: ['design'],
-    tags: ['Hospitality', 'Brand Identity', 'Logo Design'],
-    case_study_title: 'medalio-hospitality-brand-identity'
-  },
-  {
-    key: 41,
-    name: 'Branding for an Indulgent Dessert Café',
-    company: 'P.U. Dingding',
-    image: '/img/case-study/pudingding-thumbnail.jpg',
-    tags: ['F&B', 'Cafe', 'Brand Identity', 'Launch Video'],
-    tabs: ['design'],
-    case_study_title: 'pu-dingding-dessert-cafe-branding'
-  },
-   {
-    key: 65,
-    name: "Office Branding for Biocon's Global Headquarters",
-    company: 'Biocon',
-    image: '/img/case-study/biocon_work_thumbnail.png',
-    tags: ['Biopharmaceutical', 'Integrated Design Services', 'Brand Experience'],
-    tabs: ['design'],
-    case_study_title: 'office-branding-for-biocon'
-  },
-  {
-    key: 58,
-    name: "Nationwide Activation Celebrating Customer Obsession",
-    company: 'Axis Bank',
-    image: '/img/case-study/axis_bank_work_thumbnail.jpg',
-    tags: ['Finance','Internal Communications Campaign', 'Marketing Campaign'],
-    tabs: ['design'],
-    case_study_title: 'axis-bank-activation-campaign'
-  },
   {
     key: 45,
     name: "Global Case Study Videos for Infosys",
