@@ -361,7 +361,7 @@ export const scsPosts = [
 export const campaignPosts = [
   {
     key: 0,
-    name: 'RedMi Buds 6',
+    name: 'Action-packed launch film for Redmi Buds 6',
     company: 'XIAOMI',
     image: '/img/works/xiaomi_buds_6_work_thumbnail.png',
     alt:'Action-packed launch film for Redmi Buds 6',
@@ -370,8 +370,8 @@ export const campaignPosts = [
   },
   {
     key: 1,
-    name: 'Vymo SME',
-    company: 'Vymo',
+    name: 'Transforming relationships for SME banks in U.S.A',
+    company: 'VYMO',
     image: '/img/works/vymo_sme.webp',
     alt: 'Vymo SME',
     tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
@@ -380,7 +380,7 @@ export const campaignPosts = [
   },
   {
     key: 2,
-    name: 'Infosys Global Leaders Campaign',
+    name: 'Global Leaders: a Hiring Campaign',
     company: 'Infosys',
     image: '/img/case-study/infosys-global-leaders.webp',
     alt: 'Global Leaders: a Hiring Campaign',
@@ -1474,7 +1474,7 @@ export const strategyPosts = [
     image: '/img/works/exicom_work_thumbnail.png',
     alt: 'Exicom',
     tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
-    href:'/brand-designs/exicom-3d-animation-product-launch'
+    href:'/brand-designs/exicom-e-mobility-rebrand'
   },
 ]
 

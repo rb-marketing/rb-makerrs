@@ -148,8 +148,8 @@ useEffect(() => {
       window.removeEventListener('scroll', scroll)
     }
   }, [])
-const articleUrl = `https://www.b2b.redbangle.com${router.asPath}`
-const seoUrl = `https://www.staging.b2b.redbangle.com${router.asPath}`
+const articleUrl = `https://www.makerrs.com${router.asPath}`
+const seoUrl = `https://www.staging.makerrs.com${router.asPath}`
 
   const copyPageUrl = () => {
     navigator.clipboard.writeText(window.location.href)

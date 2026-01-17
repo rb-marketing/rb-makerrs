@@ -257,7 +257,7 @@ const Design = ({ setisPopupOpen }) => {
   const posts = [
     {
       key: 0,
-      name: 'The Lakshmi Rebecca Show',
+      name: 'The Lakshmi Rebecca Show: YouTube Series on Impact Businesses',
       company: 'Lakshmi Rebecca',
       image: '/img/works/lrs.png',
       alt: 'Lakshmi Rebecca Show',
