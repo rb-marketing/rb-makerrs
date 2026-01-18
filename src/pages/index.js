@@ -623,9 +623,9 @@ const LandPage = () => {
               </span>
             </div>
 
-            <div className={` ${styles.title} block md:hidden mt-[-28px]`}>
+            <div className={` ${styles.title} block md:hidden mt-8`}>
               <span className={`${styles.ltor} `}> CREATIVE </span>
-              <span className="text-[40px] tracking-[-1.4px]"> PARTNER TO</span>
+              <span className="text-[40px] tracking-[-1.4px]"> PARTNER</span>
             </div>
 
             <div className="banner relative h-[50%] w-full overflow-hidden">
@@ -733,7 +733,7 @@ const LandPage = () => {
 
       <Testimonials
         title={'WHAT CLIENTS SAY'}
-        className="pt-18 pb-7.5 md:pt-30 md:pb-15"
+        className="pb-7.5 md:pt-30 md:pb-15"
         testimonialData={createTestimonialData}
         type="semi"
       />

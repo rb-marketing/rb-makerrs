@@ -416,7 +416,7 @@ export const Footer = ({ hasContactForm }) => {
                       <Link
                         href='/brand-identity-design-services'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Brand Identity Design
                       </Link>
@@ -434,35 +434,35 @@ export const Footer = ({ hasContactForm }) => {
                       <Link
                         href='/explainer-video-production-services'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Explainer Videos
                       </Link>
                       <Link
                         href='/corporate-video-production-services'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Corporate Videos
                       </Link>
                       <Link
                         href='/video-testimonial-production'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Case Study Videos
                       </Link>
                       <Link
                         href='recruitment-video-production'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Recruitment Videos
                       </Link>
                       <Link
                         href='/ai-video-agency'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         GenAI Videos
                       </Link>
@@ -557,7 +557,7 @@ export const Footer = ({ hasContactForm }) => {
                   </div>
               </div>
             </div>
-            <div className="w-full mt-4 md:mt-0 md:w-[28%] md:flex md:flex-col px-4">
+            <div className="w-full mt-12 md:mt-0 md:w-[28%] md:flex md:flex-col px-4">
               <NewsletterField />
             </div>
           </div>

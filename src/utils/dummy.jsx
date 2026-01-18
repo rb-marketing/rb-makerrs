@@ -1613,8 +1613,7 @@ export const workPosts = [
     case_study_title: 'vymo-sme-bank-explainer-video'
   },
 
-
-{
+ {
     key: 11,
     name: "Crafting a Unified Employer Brand Across Continents",
     company: 'Infosys',
@@ -1653,7 +1652,7 @@ export const workPosts = [
 
 
 {
-    key: 11,
+    key: 14,
     name: 'Launching an AI-powered healthcare brand in record time',
     company: 'Lillia Care',
     image: '/img/works/lillia_img.jpg',
@@ -1665,7 +1664,7 @@ export const workPosts = [
   },
 
   {
-    key: 6,
+    key: 15,
     name: "Exicom Brand Refresh: Choose Smart. Charge Smart.",
     company: 'Exicom',
     image: '/img/case-study/exicom_brand_refresh_work.jpg',
@@ -1675,7 +1674,7 @@ export const workPosts = [
   },
 
   {
-    key: 41,
+    key: 16,
     name: 'Branding for an Indulgent Dessert Café',
     company: 'P.U. Dingding',
     image: '/img/case-study/pudingding-thumbnail.jpg',
@@ -1685,7 +1684,7 @@ export const workPosts = [
   },
   
 {
-    key: 8,
+    key: 17,
     name: 'Crafting a Symbol of Success in Hospitality',
     image: '/img/case-study/medalio_thumbnail.webp',
     company: 'Medalio',
@@ -1698,7 +1697,7 @@ export const workPosts = [
 
 
 {
-    key: 20,
+    key: 18,
     name: 'Branding for a Desi Street Food Restaurant',
     image: '/img/works/thelagram.jpg',
     company: 'Thelagram',
@@ -1716,7 +1715,7 @@ export const workPosts = [
   },
 
   {
-    key: 8,
+    key: 19,
     name: 'Augmented Reality that brought the automobile alive',
     image: '/img/works/bajaj_pulsar_work_age.webp',
     company: 'Bajaj Auto',
@@ -1728,7 +1727,7 @@ export const workPosts = [
   },
 
 {
-    key: 9,
+    key: 20,
     name: 'Immersive 3D Walkthrough for Infosys Topaz',
     image: '/img/works/infosys-thobaz.webp',
     company: 'Infosys',
@@ -1741,7 +1740,7 @@ export const workPosts = [
   },
 
 {
-    key: 58,
+    key: 21,
     name: "Nationwide Activation Celebrating Customer Obsession",
     company: 'Axis Bank',
     image: '/img/case-study/axis_bank_work_thumbnail.jpg',
@@ -1751,7 +1750,7 @@ export const workPosts = [
   },
 
  {
-    key: 51,
+    key: 22,
     name: 'Social Media Campaign: Meet the AI-First Employees',
     company: 'Infosys',
     image: '/img/works/infy-ai-first-work.webp',
@@ -1762,7 +1761,7 @@ export const workPosts = [
   },
 
 {
-    key: 22,
+    key: 23,
     name: 'Launching a Sports Brand logo with a 3D Billboard',
     image: '/img/works/mumbai-indians.webp',
     company: 'Mumbai Indians',
@@ -1773,7 +1772,7 @@ export const workPosts = [
 
   },
  {
-    key: 39,
+    key: 24,
     name: "A Design Gallery on Sustainability",
     image: '/img/works/infosys-living-labs-gallery.jpg',
     company: 'Infosys',
@@ -1784,7 +1783,7 @@ export const workPosts = [
   },
 
   {
-    key: 65,
+    key: 25,
     name: "Office Branding for Biocon's Global Headquarters",
     company: 'Biocon',
     image: '/img/case-study/biocon_work_thumbnail.png',
@@ -1795,46 +1794,520 @@ export const workPosts = [
 
 
 
+  // Videos starts
+
+  {
+    key: 26,
+    name: 'Global Leaders: a Hiring Campaign',
+    image: '/img/case-study/infosys-global-leaders.webp',
+    company: 'Infosys',
+    alt: 'infosys-global-leaders',
+    tabs: ['videos'],
+    tags: ['Technology', 'Campaign', 'Employer Branding Video', 'Global Video Production'],
+    case_study_title: 'infosys-global-leaders-employer-branding',
+    href: '/brand-campaign/infosys-global-employer-brand'
+  },
+
+  {
+    key: 27,
+    name: '220% Organic YouTube Subscriber Growth in India',
+    company: 'Indeed',
+    alt: 'Indeed YouTube Content',
+    tags: ['Hiring Platform', 'YouTube Content'],
+    tabs: ['videos'],
+    image: '/img/works/indeed_youtube_content_main_thumbnail.png',
+    case_study_title: 'indeed-youtube-content',
+    href: '/video-production/indeed-youtube-content',
+  },
+
+ {
+    key: 28,
+    name: 'Campaign Explainer Video for HRM SAAS product',
+    company: 'MULTIPLIER',
+    image: '/img/works/multiplier_work.webp',
+    tags: ['SaaS', 'Lead Gen Campaign', 'Product Launch Video', 'Explainer Video', '2D Animation Video'],
+    tabs: ['videos'],
+    case_study_title: 'multiplier-hr-saas-explainer-video',
+    href: '/video-production/multiplier-explainer-video'
+  },
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{
+    key: 29,
+    name: "Gordon Ritter on the Future of Software",
+    company: 'Vymo',
+    image: '/img/works/vymo_gordon_ritter.webp',
+    alt: 'Vymo',
+    tags: ['SaaS', 'Thought Leadership Video', 'Corporate Film', 'Interview Video'],
+    tabs: ['videos'],
+    case_study_title: 'vymo-gordon-ritter-thought-leadership-video',
+    href: '/video-production/thought-leadership-vymo-gordon-ritter'
+  },
+{
+    key: 30,
+    name: 'Capturing the Story of Sanganeri Craft for Taneira',
+    company: 'Taneira',
+    alt: 'Sanganeri Craft with Taneira',
+    tags: ['Textile and Apparel', 'Documentary Film'],
+    tabs: ['videos'],
+    image: '/img/works/taneira_main_thumbnail.png',
+    case_study_title: 'taneira-sanganeri',
+    href: '/video-production/taneira-sanganeri'
+  },
+   {
+    key: 31,
+    name: " Celebrating Rural Women in India's Auto Manufacturing",
+    company: 'Tata Motors',
+    alt: " Celebrating Rural Women in India's Auto Manufacturing",
+    tags: [
+      'Manufacturing',
+      'Employer Branding',
+      'Corporate Communication',
+      'Diversity & Inclusion',
+    ],
+    tabs: ['videos'],
+    image: '/img/works/womens-at-tata-autocamp.webp',
+    case_study_title: 'women-in-auto-manufacturing',
+    href: '/video-production/women-in-auto-manufacturing'
+  },
     {
-    key: 4,
+    key: 32,
     name: "Unveiling Harmony Direct 2.0 - Electric Fleet Charger",
     company: 'Exicom',
     image: '/img/works/exicom_work_thumbnail.png',
     alt: 'Exicom',
     tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
-    tabs: [''],
+    tabs: ['videos'],
     case_study_title: 'exicom-3d-animation-product-launch',
-    href:'/videos/exicom-3d-animation-product-launch'
+    href:'/video-production/exicom-3d-animation-product-launch'
   },
     {
-    key: 5,
+    key: 33,
     name: "Global Case Study Videos for Infosys",
     company: 'Infosys',
     image: '/img/works/wsj-thumbnail.png',
     alt: 'Infosys',
     tags: ['Technology', 'Case Study Video', 'Testimonial Video', 'Global Video Production'],
-    tabs: [''],
+    tabs: ['videos'],
     case_study_title: 'infosys-wsj-global-case-study-video',
-    href: '/videos/infosys-wsj-global-case-study-video'
+    href: '/video-production/infosys-wsj-global-case-study-video'
   },
+
+{
+    key: 34,
+    name: 'HIRING STEM EDUCATORS FOR INDONESIA',
+    company: 'COLEARN',
+    image: '/img/works/stem-educators-wanted.png',
+    tags: ['Ed-tech', 'Employer Branding & Recruitment Campaign', 'Hiring Video',],
+    tabs: ['videos'],
+    case_study_title: 'colearn-stem-educators-recruitment-video',
+    href: '/video-production/colearn-stem-educators-recruitment-video'
+  },
+ {
+    key: 35,
+    name: "Powering education in war-torn Ukraine, with Street Child",
+    company: 'Infosys',
+    image: '/img/works/infosys_springboard.webp',
+    alt: 'Infosys',
+    tags: ['Technology', 'Non-profit', 'CSR Video', 'Corporate Film'],
+    tabs: ['videos'],
+    case_study_title: 'infosys-street-child-documentary',
+    href: '/video-production/infosys-street-child-documentary'
+  },
+{
+    key: 36,
+    name: 'Social Media Campaign: Meet the AI-First Employees',
+    company: 'Infosys',
+    image: '/img/works/infy-ai-first-work.webp',
+     tags: ['Technology', 'Digital Campaign','Employer Branding video', 'Social Media Content'],
+    tabs: ['videos'],
+    case_study_title: 'infosys-employees-social-media-campaign',
+    href: '/brand-campaign//infosys-employees-social-media-campaign'
+  },
+
+{
+    key: 37,
+    name: 'Launching a Sports Brand logo with a 3D Billboard',
+    image: '/img/works/mumbai-indians.webp',
+    company: 'Mumbai Indians',
+    alt: 'Launching a Sports Brand logo with a 3D Billboard',
+    tabs: ['videos'],
+    tags: ['Sports', '3D Billboard Animation'],
+    case_study_title: 'mumbai-indians-3d-billboard-animation',
+    href: '/video-production/mumbai-indian'
+
+  },
+{
+    key: 38,
+    name: 'A GenAI Microdrama for Bharat',
+    image: '/img/works/class-room-poster.jpg',
+    company: 'Red Bangle',
+    alt: 'Red Bangle',
+    tabs: ['videos'],
+    tags: ['Gen AI Videos', 'Short-form Content', 'Digital Storytelling'],
+    case_study_title: 'shaanu-ka-viva',
+    href: '/video-production/shaanu-ka-viva',
+  },
+  {
+    key: 39,
+    name: 'An ode to the Security Personnel who Guard our Homes',
+    company: 'MyGate',
+    image: '/img/works/heros-mygate.jpg',
+    alt: 'heros at mygate ad',
+    tags: ['Digital Campaign', 'Video Content', 'B2C SAAS'],
+    tabs: ['videos'],
+    case_study_title: 'mygate-case-study',
+    href: '/video-production/mygate-case-study',
+  },
+  {
+    key: 40,
+    name: 'A Campaign film for Xiaomi Pocket Power Bank',
+    company: 'Xiaomi',
+    alt: 'A Campaign film for Xiaomi Pocket Power Bank',
+    tags: [
+      'Consumer Electronics',
+      'Ad Film',
+      'Digital Campaign',
+      'Product Launch Campaign',
+    ],
+    tabs: ['videos'],
+    image: '/img/works/xiaomi-thumnail.webp',
+    case_study_title: 'xiaomi-pocket-power-bank',
+    href: '/video-production/xiaomi-pocket-power-bank',
+  },
+
+{
+    key: 41,
+    name: 'Launching the Cobalt Cloud Community',
+    company: 'Infosys',
+    alt: 'Cobalt Community Launch',
+    tabs: ['videos'],
+    image: '/img/works/cobalt_community.jpg',
+    tags: ['Technology', 'Digital Campaign', 'Platform Launch Video', '2D Animation Video'],
+    case_study_title: 'infosys-cobalt-community-launch-video',
+    href: '/video-production/infosys-cobalt-community-launch-video'
+  },
+  {
+    key: 42,
+    name: '#HeroesAtMyGate: Celebrating India’s Security Guards',
+    company: 'Mygate',
+    alt: 'Mygate Rewards and Recognition',
+    tags: ['B2C SaaS', 'Digital Campaign', 'Video Content'],
+    tabs: ['videos'],
+    image: '/img/works/mygate_rewards_Thumbnail.png',
+    case_study_title: 'mygate-rewards-recognition',
+    href: '/video-production/mygate-rewards-recognition'
+  },
+{
+    key: 43,
+    name: "Celebrating Wipro's journey and growth in Australia",
+    company: 'Wipro',
+    image: '/img/works/wipro_img.webp',
+    alt: 'Wipro',
+    tags: ['Technology', 'Corporate Film', 'Corporate Communication Campaign'],
+    tabs: ['videos'],
+    case_study_title: 'wipro-australia-corporate-film',
+    href: '/video-production/wipro-australia-corporate-film'
+  },
+   {
+    key: 44,
+    name: 'Gen AI Ad for Single-Origin Coffee Range',
+    image: '/img/works/swiggy_insanely_good_video_thumbnail.png',
+    company: 'Swiggy',
+    alt: 'Swiggy',
+    tabs: ['videos'],
+    tags: ['Quick Commerce', 'Gen AI Video', 'Ad Film'],
+    case_study_title: 'swiggy-insanely-good',
+    href:'/video-production/swiggy-insanely-good'
+  },
+  {
+    key: 45,
+    name: "High-energy rap music video on Tata Women's Cricket Premiere League",
+    image: '/img/works/tata-women cricket-filmwork-thumbnail.webp',
+    company: 'Tata Motors',
+    alt: 'tata-women cricket-filmwork-thumbnail',
+    tabs: ['videos'],
+    tags: ['Video Content', 'Employer Branding', 'Sports League', 'Featured'],
+    case_study_title: 'tata-womens-cricket-league',
+    href: '/video-production/tata-womens-cricket-league',
+  },
+  {
+    key: 46,
+    name: 'Anywhere chat support for Delivery Executives',
+    company: 'Swiggy',
+    alt: 'Swiggy',
+    tags: ['Quick Commerce', 'Product Demo Video', 'Internal Communication'],
+    tabs: ['videos'],
+    image: '/img/works/swiggy-thumbnail.webp',
+    case_study_title: 'swiggy-delivery-executive-app',
+  },
+  {
+    key: 47,
+    name: "How Hansel Helps Brands Boost Conversions",
+    image: '/img/case-study/hansel_work_page_thumbnail.png',
+    company: 'Hansel',
+    alt: 'How Hansel Helps Brands Boost Conversions',
+    tabs: ['videos'],
+     tags: ['SaaS', 'Explainer Video', 'Marketing Video', 'Product Launch Video'],
+    case_study_title: 'hansel-saas-explainer-video',
+  },
+
+{
+    key: 48,
+    name: 'Sales Digitisation Campaign - Interactive Explainer',
+    image: '/img/works/slb_work.webp',
+    company: 'SLB',
+    alt: 'slb',
+    tabs: ['videos'],
+    tags: ['Engineering', 'Campaign', 'Explainer Video', 'Demo Video', 'Interactive Video'],
+    case_study_title: 'slb-interactive-explainer',
+    href: '/campaigns/slb-interactive-explainer'
+
+  },
+ {
+    key: 49,
+    name: "IT Consulting firm delivers Business Agility Solution",
+    company: 'Infosys',
+    image: '/img/works/infosys_business_agility_work_thumbnail.png',
+    alt: 'Infosys',
+    tags: ['Technology', 'Marketing Video'],
+    tabs: ['videos'],
+    case_study_title: 'infosys-business-agility-solution'
+  },
+
+  {
+    key: 50,
+    name: "Corporate Film for Aerospace Manufacturing giant in India",
+    company: 'GE Aerospace',
+    image: '/img/works/ge_aerospace.webp',
+    alt: 'GE Aerospace',
+     tags: ['Manufacturing', 'Aerospace', 'Corporate Films & Videos'],
+    tabs: ['videos'],
+    case_study_title: 'ge-aerospace-corporate-film'
+  },
+  {
+    key: 51,
+    name: 'Documentaries: Traditional Indian Handlooms and Weavers',
+    company: 'Taneira',
+    image: '/img/works/taneira_homepage.jpg',
+    alt: 'Taneira',
+    tags: ['Digital Campaign', 'Video Content', 'Textile &  Apparel'],
+    tabs: ['videos'],
+    case_study_title: 'project-loom',
+  },
+
+ {
+    key: 52,
+    name: 'Hiring for "Hotel Superhero", hospitality SAAS',
+    company: 'Treebo Hotels',
+    image: '/img/works/treebo_img.webp',
+    alt: 'Treebo Hotels',
+    tags: ['Hospitality Tech', 'Hiring Video', 'Employer Branding', 'Testimonial Video'],
+    tabs: ['videos'],
+    case_study_title: 'hotel-superhero-saas-hiring-video'
+  },
+{
+    key: 53,
+    name: "How a Healthtech Startup Gamified Workplace Wellness",
+    image: '/img/case-study/healthify_work_thumbnail.png',
+    company: 'HealthifyMe App',
+    alt: 'How a Healthtech Startup Gamified Workplace Wellness',
+    tabs: ['videos'],
+    tags: ['Health & Fitness', 'Marketing Campaign', 'Product Launch Video', 'Testimonial and Case Study Videos'],
+    case_study_title: 'healthifyme-employee-wellness-app-video',
+  },
+{
+    key: 54,
+    name: ' Documentaries: Indian Handcrafted Jewellery and Craftspeople ',
+    image: '/img/works/jewels_thumbnail.jpg',
+    company: 'Taneira',
+    alt: 'Jewels Of India',
+    tags: ['Digital Campaign', 'Video Content', 'Jewellery'],
+    tabs: ['videos'],
+    case_study_title: 'jewels-case-study',
+  },
+
+{
+    key: 55,
+    name: 'HEALTHTECH AND INSURTECH CASE STUDY VIDEOS FOR HIMSS',
+    company: 'WIPRO',
+    image: '/img/works/casestudy-for-himss.webp',
+    tags: ['Healthtech', 'Case Study Video', 'Explainer Video', '2D Animation Video'],
+    tabs: ['videos'],
+    case_study_title: 'wipro-healthtech-case-study-videos'
+  },
+
+{
+    key: 56,
+    name: "Highlighting the impact of Dozee Beds in India's Healthcare",
+    image: '/img/works/dozee-work.webp',
+    company: 'Dozee',
+    alt: 'dozee',
+    tabs: ['videos'],
+    tags: ['MedTech', 'PR Video', 'Video Report'],
+    case_study_title: 'dozee-beds-healthcare-video-report'
+  },
+
+  {
+    key: 57,
+    name: 'Immersive 3D Walkthrough for Infosys Topaz',
+    image: '/img/works/infosys-thobaz.webp',
+    company: 'Infosys',
+    alt: 'Immersive 3D Walkthrough for Infosys Topaz',
+    tabs: ['videos'],
+    tags: ['Technology', 'Interactive Experience', '3D Animation Video', 'Marketing Video'],
+    case_study_title: 'infosys-topaz-3d-interactive-experience',
+    href: '/brand-experiences/infosys-topaz-3d-interactive-experience'
+
+  },
+{
+    key: 58,
+    name: "Koo Launches Self-Verification",
+    image: '/img/case-study/koo_work_thumbnail.png',
+    company: 'Koo',
+    alt: 'Koo',
+    tabs: ['videos'],
+    tags: ['Social Network', 'Explainer Video', '2D Animation Video'],
+    case_study_title: 'koo-self-verification-explainer-video',
+  },
+
+  {
+    key: 59,
+    name: "A hiring video with humor and heart",
+    company: 'Darwinbox',
+    image: '/img/works/darwinbox_main_thumbnail.png',
+    alt: 'Darwinbox',
+    tags: ['HR Tech', 'Hiring Video', 'Employer Branding', 'Culture Video'],
+    tabs: ['videos'],
+    case_study_title: 'darwinbox-hiring-video'
+  },
+    {
+    key: 60,
+    name: 'Launching the Cyanotype clothing range',
+    image: '/img/works/taneira-cyanotype main-thumbnail.webp',
+    company: 'Taneira',
+    alt: 'Launching the Cyanotype clothing range',
+    tags: ['Textile and Apparel', ' Documentary Film'],
+    tabs: ['videos'],
+    case_study_title: 'taneira-cyanotype',
+  },
+
+{
+    key: 61,
+    name: 'Transforming relationships for SME banks in U.S.A',
+    company: 'VYMO',
+    image: '/img/works/vymo_sme.webp',
+    tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
+    tabs: ['videos'],
+    case_study_title: 'vymo-sme-bank-explainer-video'
+  },
+{
+    key: 62,
+    name: "Stories of Innovation & Impact at Texas instruments India",
+    company: 'Texas Instruments',
+    image: '/img/works/ti_main_work_thumbnail.png',
+    alt: 'Texas Instruments',
+    tags: ['Semiconductor Manufacturing', 'Employer Branding', 'Corporate Commuication', 'Culture Video'],
+    tabs: ['videos'],
+    case_study_title: 'people-first-brand-films-for-ti'
+  },
+ {
+    key: 63,
+    name: "Inspiring Campus Recruitment Video",
+    company: 'Infosys',
+    image: '/img/works/life_infosys_work_thumbnail.png',
+    alt: 'Infosys',
+    tags: ['Technology', 'Hiring Video', 'Employer Branding Video`', 'Culture Video'],
+    tabs: ['videos'],
+    case_study_title: 'infosys-campus-recruitment-video'
+  },
+
+  {
+    key: 64,
+    name: "Supporting young women in pursuit of a Future in STEM",
+    company: 'WeRise',
+    image: '/img/works/we_rise.webp',
+    alt: 'WeRise',
+     tags: ['Non-profit', 'CSR Video', 'Documentary'],
+    tabs: ['videos'],
+    case_study_title: 'werise-women-in-science-documentary'
+  },
+ {
+    key: 65,
+    name: "The Lakshmi Rebecca Show: YouTube Series on Impact Businesses",
+    image: '/img/works/lrs.png',
+    company: 'Lakshmi Rebecca',
+    alt: 'The Lakshmi Rebecca Show',
+    tabs: ['videos'],
+    tags: ['Video Content', 'YouTube Series'],
+    case_study_title: 'lakshmi-rebecca-show',
+  },
+ {
+    key: 66,
+    name: "Crafting a Unified Employer Brand Across Continents",
+    company: 'Infosys',
+    image: '/img/works/infosys_eb_campaign_work_thumbnail.png',
+    alt: 'Infosys',
+    tags: ['Technology', 'Employer Branding Campaign', 'Global Video Production','Interview Video'],
+    tabs: ['videos'],
+    case_study_title: 'infosys-employer-branding',
+    href: '/videos/infosys-employer-branding'
+
+  },
+{
+    key: 67,
+    name: "Launching a brand that makes commerce human",
+    image: '/img/case-study/infy-equinox.webp',
+    company: 'Infosys Equinox',
+    alt: 'infy-equinox',
+    tabs: ['videos'],
+    tags: ['SaaS', 'Marketing Campaign', 'Brand Launch', 'Video', 'Thought Leadership'],
+    case_study_title: 'infosys-equinox-brand-launch',
+    href: '/campaigns/infosys-equinox-brand-launch'
+  },
+ {
+    key: 68,
+    name: "A Vision for Sustainable Social Housing",
+    company: 'WeRise',
+    image: '/img/works/werise.png',
+    alt: 'WeRise',
+    tags: ['Non-profit', 'Documentary'],
+    tabs: ['videos'],
+    case_study_title: 'werise-sustainable-housing-documentary',
+  },
+   {
+    key: 69,
+    name: "Building Pathways for Skilled Plumbers",
+    company: 'Ashirvad',
+    image: '/img/case-study/shirvad_pipes.png',
+    alt: 'Ashirvad',
+    tags: ['Manufacturing', 'CSR Video'],
+    tabs: ['videos'],
+    case_study_title: 'ashirvad-plumbing-school-csr-video',
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
     {
     key: 6,
     name: "AI‑powered Singalong Campaign that united a Global Workforce",
@@ -1860,18 +2333,7 @@ export const workPosts = [
     
   
   //Technology Tab
-  {
-    key: 10,
-    name: 'Sales Digitisation Campaign - Interactive Explainer',
-    image: '/img/works/slb_work.webp',
-    company: 'SLB',
-    alt: 'slb',
-    tabs: ['brand-experiences'],
-    tags: ['Engineering', 'Campaign', 'Explainer Video', 'Demo Video', 'Interactive Video'],
-    case_study_title: 'slb-interactive-explainer',
-    href: '/campaigns/slb-interactive-explainer'
-
-  },
+  
   
   {
     key: 12,
@@ -1946,15 +2408,7 @@ export const workPosts = [
     href: '/campaigns/slb-interactive-explainer'
 
   },
-  {
-    key: 19,
-    name: 'HEALTHTECH AND INSURTECH CASE STUDY VIDEOS FOR HIMSS',
-    company: 'WIPRO',
-    image: '/img/works/casestudy-for-himss.webp',
-    tags: ['Healthtech', 'Case Study Video', 'Explainer Video', '2D Animation Video'],
-    tabs: ['videos'],
-    case_study_title: 'wipro-healthtech-case-study-videos'
-  },
+  
   {
     key: 50,
     name: 'Launching the Cobalt Cloud Community',
@@ -1967,27 +2421,10 @@ export const workPosts = [
     href: '/campaigns/infosys-cobalt-community-launch-video'
   },
 
-  {
-    key: 20,
-    name: 'Hiring for "Hotel Superhero", hospitality SAAS',
-    company: 'Treebo Hotels',
-    image: '/img/works/treebo_img.webp',
-    alt: 'Treebo Hotels',
-    tags: ['Hospitality Tech', 'Hiring Video', 'Employer Branding', 'Testimonial Video'],
-    tabs: ['videos'],
-    case_study_title: 'hotel-superhero-saas-hiring-video'
-  },
+ 
 
  
-  {
-    key: 17,
-    name: 'HIRING STEM EDUCATORS FOR INDONESIA',
-    company: 'COLEARN',
-    image: '/img/works/stem-educators-wanted.png',
-    tags: ['Ed-tech', 'Employer Branding & Recruitment Campaign', 'Hiring Video',],
-    tabs: ['videos'],
-    case_study_title: 'colearn-stem-educators-recruitment-video'
-  },
+  
 
   //  {
   // key: 18,
@@ -2000,28 +2437,8 @@ export const workPosts = [
   // case_study_title:'infosys-wsj'
   // },
 
-  {
-    key: 43,
-    name: "IT Consulting firm delivers Business Agility Solution",
-    company: 'Infosys',
-    image: '/img/works/infosys_business_agility_work_thumbnail.png',
-    alt: 'Infosys',
-    tags: ['Technology', 'Marketing Video'],
-    tabs: ['videos'],
-    case_study_title: 'infosys-business-agility-solution'
-  },
-  {
-    key: 23,
-    name: 'Immersive 3D Walkthrough for Infosys Topaz',
-    image: '/img/works/infosys-thobaz.webp',
-    company: 'Infosys',
-    alt: 'Immersive 3D Walkthrough for Infosys Topaz',
-    tabs: ['videos'],
-    tags: ['Technology', 'Interactive Experience', '3D Animation Video', 'Marketing Video'],
-    case_study_title: 'infosys-topaz-3d-interactive-experience',
-    href: '/brand-experiences/infosys-topaz-3d-interactive-experience'
+ 
 
-  },
 
   {
     key: 24,
@@ -2034,86 +2451,16 @@ export const workPosts = [
     case_study_title: 'ge-aerospace-corporate-film'
   },
 
-  {
-    key: 27,
-    name: "Highlighting the impact of Dozee Beds in India's Healthcare",
-    image: '/img/works/dozee-work.webp',
-    company: 'Dozee',
-    alt: 'dozee',
-    tabs: ['videos'],
-    tags: ['MedTech', 'PR Video', 'Video Report'],
-    case_study_title: 'dozee-beds-healthcare-video-report'
-  },
-
   
 
-  {
-    key: 52,
-    name: "Launching a brand that makes commerce human",
-    image: '/img/case-study/infy-equinox.webp',
-    company: 'Infosys Equinox',
-    alt: 'infy-equinox',
-    tabs: ['videos'],
-    tags: ['SaaS', 'Marketing Campaign', 'Brand Launch', 'Video', 'Thought Leadership'],
-    case_study_title: 'infosys-equinox-brand-launch',
-    href: '/campaigns/infosys-equinox-brand-launch'
-  },
 
-  {
-    key: 26,
-    name: "Supporting young women in pursuit of a Future in STEM",
-    company: 'WeRise',
-    image: '/img/works/we_rise.webp',
-    alt: 'WeRise',
-     tags: ['Non-profit', 'CSR Video', 'Documentary'],
-    tabs: ['videos'],
-    case_study_title: 'werise-women-in-science-documentary'
-  },
-{
-    key: 57,
-    name: "A hiring video with humor and heart",
-    company: 'Darwinbox',
-    image: '/img/works/darwinbox_main_thumbnail.png',
-    alt: 'Darwinbox',
-    tags: ['HR Tech', 'Hiring Video', 'Employer Branding', 'Culture Video'],
-    tabs: ['videos'],
-    case_study_title: 'darwinbox-hiring-video'
-  },
-  {
-    key: 44,
-    name: "Inspiring Campus Recruitment Video",
-    company: 'Infosys',
-    image: '/img/works/life_infosys_work_thumbnail.png',
-    alt: 'Infosys',
-    tags: ['Technology', 'Hiring Video', 'Employer Branding Video`', 'Culture Video'],
-    tabs: ['videos'],
-    case_study_title: 'infosys-campus-recruitment-video'
-  },
+
+
+
+ 
   
-    {
-    key: 62,
-    name: "A Vision for Sustainable Social Housing",
-    company: 'WeRise',
-    image: '/img/works/werise.png',
-    alt: 'WeRise',
-    tags: ['Non-profit', 'Documentary'],
-    tabs: ['videos'],
-    case_study_title: 'werise-sustainable-housing-documentary',
    
 
-  },
-   {
-    key:61,
-    name: "Building Pathways for Skilled Plumbers",
-    company: 'Ashirvad',
-    image: '/img/case-study/shirvad_pipes.png',
-    alt: 'Ashirvad',
-    tags: ['Manufacturing', 'CSR Video'],
-    tabs: ['videos'],
-    case_study_title: 'ashirvad-plumbing-school-csr-video',
-   
-
-  },
   {
     key: 53,
     name: 'Digital Campaign videos for E-learning courses',
@@ -2135,26 +2482,8 @@ export const workPosts = [
     case_study_title: 'vymo-lead-management ',
     href: '/campaigns/vymo-lead-management'
   },
-   {
-    key: 59,
-    name: "Koo Launches Self-Verification",
-    image: '/img/case-study/koo_work_thumbnail.png',
-    company: 'Koo',
-    alt: 'Koo',
-    tabs: ['videos'],
-    tags: ['Social Network', 'Explainer Video', '2D Animation Video'],
-    case_study_title: 'koo-self-verification-explainer-video',
-  },
- {
-    key: 60,
-    name: "How a Healthtech Startup Gamified Workplace Wellness",
-    image: '/img/case-study/healthify_work_thumbnail.png',
-    company: 'HealthifyMe App',
-    alt: 'How a Healthtech Startup Gamified Workplace Wellness',
-    tabs: ['videos'],
-    tags: ['Health & Fitness', 'Marketing Campaign', 'Product Launch Video', 'Testimonial and Case Study Videos'],
-    case_study_title: 'healthifyme-employee-wellness-app-video',
-  },
+   
+ 
    {
     key: 63,
     name: "How Hansel Helps Brands Boost Conversions",
@@ -2165,16 +2494,7 @@ export const workPosts = [
      tags: ['SaaS', 'Explainer Video', 'Marketing Video', 'Product Launch Video'],
     case_study_title: 'hansel-saas-explainer-video',
   },
-  {
-    key: 66,
-    name: "Stories of Innovation & Impact at Texas instruments India",
-    company: 'Texas Instruments',
-    image: '/img/works/ti_main_work_thumbnail.png',
-    alt: 'Texas Instruments',
-    tags: ['Semiconductor Manufacturing', 'Employer Branding', 'Corporate Commuication', 'Culture Video'],
-    tabs: ['videos'],
-    case_study_title: 'people-first-brand-films-for-ti'
-  },
+  
   {
     key: 55,
     name: "AI‑powered Singalong Campaign that united a Global Workforce",
@@ -2201,16 +2521,7 @@ export const workPosts = [
 
 
   //Campaign  
-  {
-    key: 28,
-    name: 'Campaign Explainer Video for HRM SAAS product',
-    company: 'MULTIPLIER',
-    image: '/img/works/multiplier_work.webp',
-    tags: ['SaaS', 'Lead Gen Campaign', 'Product Launch Video', 'Explainer Video', '2D Animation Video'],
-    tabs: ['campaign'],
-    case_study_title: 'multiplier-hr-saas-explainer-video',
-    href: '/campaigns/multiplier-hr-saas-explainer-video'
-  },
+ 
   {
     key: 29,
     name: 'Launching the Cobalt Cloud Community',
@@ -2331,16 +2642,5 @@ export const workPosts = [
     href: '/videos/infosys-wsj-global-case-study-video'
 
   },
-  {
-    key: 46,
-    name: "Crafting a Unified Employer Brand Across Continents",
-    company: 'Infosys',
-    image: '/img/works/infosys_eb_campaign_work_thumbnail.png',
-    alt: 'Infosys',
-    tags: ['Technology', 'Employer Branding Campaign', 'Global Video Production','Interview Video'],
-    tabs: ['international-video-crews'],
-    case_study_title: 'infosys-employer-branding',
-    href: '/videos/infosys-employer-branding'
-
-  },
+ 
 ]

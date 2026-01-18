@@ -9,7 +9,7 @@ export const PressSection = ({ className = '', title, image, content, type = '',
   return (
     <section className={className}>
 
-      <div className="container py-10 md:py-[70px] text-white overflow-hidden">
+      <div className="container py-10 md:pb-[70px] md:pt-8 text-black overflow-hidden">
         <LineHeading white className="mb-6 md:mb-9">
           {presstitle ? presstitle : 'Press'}
         </LineHeading>
@@ -37,7 +37,6 @@ export const PressSection = ({ className = '', title, image, content, type = '',
             />
             <Link className={readmore === false ? 'hidden' : 'block'} href={'https://www.exchange4media.com/advertising-news/security-agency-mygates-campaign-is-an-ode-to-security-guards-94402.html'} target="_blank">
               <Button
-                intent="secondary"
                 suffix={<LineArrow hover />}
                 className="w-full md:w-auto"
               >

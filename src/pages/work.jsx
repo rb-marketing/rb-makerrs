@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { workPosts } from '@/utils/dummy'
-import { SEO, TrustedBrandsSection, WorkListHeroSection, LineHeading, PlayCard, 
+import {
+  SEO, TrustedBrandsSection, WorkListHeroSection, LineHeading, PlayCard,
   VideoMetaModal
 } from '@/components/shared'
 import { ContentPostCard } from '@/components/shared/Cards/ContentPostCard'
@@ -23,24 +24,24 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
   const _posts = workPosts
 
   const caseStudyTags = [
-    { 
-      name: 'Featured', 
+    {
+      name: 'Featured',
       url: 'featured',
     },
-     { 
-      name: 'Design', 
+    {
+      name: 'Design',
       url: 'design',
     },
-    { 
-      name: 'Videos', 
+    {
+      name: 'Videos',
       url: 'videos',
     },
-     { 
-      name: 'Podcast', 
+    {
+      name: 'Podcast',
       url: 'podcast',
     },
-    { 
-      name: 'Campaign', 
+    {
+      name: 'Campaign',
       url: 'campaign',
     }
   ]
@@ -527,75 +528,75 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     sessionStorage.setItem('work-selectedTag', selectedTag || 'featured')
   }
 
-useEffect(() => {
-  const scrollToPosts = () => {
-    //after hard refresh we need to scrolls tabs section right..for that
-    const postsGrid = document.querySelector(".work-posts-section")
-    const stickyTabs = document.querySelector(".sticky-tab-section")
-    if (postsGrid) {
-      const gridTop = postsGrid.getBoundingClientRect().top + window.scrollY
-      const stickyHeight = stickyTabs?.offsetHeight || 0
-      window.scrollTo({ top: gridTop - stickyHeight - 70, behavior: "smooth" })
+  useEffect(() => {
+    const scrollToPosts = () => {
+      //after hard refresh we need to scrolls tabs section right..for that
+      const postsGrid = document.querySelector(".work-posts-section")
+      const stickyTabs = document.querySelector(".sticky-tab-section")
+      if (postsGrid) {
+        const gridTop = postsGrid.getBoundingClientRect().top + window.scrollY
+        const stickyHeight = stickyTabs?.offsetHeight || 0
+        window.scrollTo({ top: gridTop - stickyHeight - 70, behavior: "smooth" })
+      }
     }
-  }
 
-  const restore = () => {
-  const navEntries = performance.getEntriesByType("navigation")
-  const isReload = navEntries.length && navEntries[0].type === "reload"
-  const storedTag = sessionStorage.getItem("work-selectedTag")
-  const storedScroll = sessionStorage.getItem("work-scroll")
+    const restore = () => {
+      const navEntries = performance.getEntriesByType("navigation")
+      const isReload = navEntries.length && navEntries[0].type === "reload"
+      const storedTag = sessionStorage.getItem("work-selectedTag")
+      const storedScroll = sessionStorage.getItem("work-scroll")
 
-  if (storedTag) {
-    setSelectedTag(storedTag)
-  }
+      if (storedTag) {
+        setSelectedTag(storedTag)
+      }
 
-  if (isReload) {
-    // Hard refresh → reset to 6 posts & scroll to tabs
-    setVisiblePosts(6)
-    sessionStorage.setItem("work-visiblePosts", "6")
-    scrollToPosts()
-  } else if (storedScroll && !isNaN(parseInt(storedScroll, 10))) {
-    // Back/forward navigation → restore posts & scroll
-    const storedVisible = sessionStorage.getItem("work-visiblePosts")
-    if (storedVisible) setVisiblePosts(parseInt(storedVisible, 10))
+      if (isReload) {
+        // Hard refresh → reset to 6 posts & scroll to tabs
+        setVisiblePosts(6)
+        sessionStorage.setItem("work-visiblePosts", "6")
+        scrollToPosts()
+      } else if (storedScroll && !isNaN(parseInt(storedScroll, 10))) {
+        // Back/forward navigation → restore posts & scroll
+        const storedVisible = sessionStorage.getItem("work-visiblePosts")
+        if (storedVisible) setVisiblePosts(parseInt(storedVisible, 10))
 
-    setTimeout(() => {
-      window.scrollTo(0, parseInt(storedScroll, 10))
-    }, 50)
-  } else {
-    // First visit → reset to 6 posts (NO SCROLL)
-    setVisiblePosts(6)
-    sessionStorage.setItem("work-visiblePosts", "6")
-  }
-}
-restore()
- 
-}, [])
+        setTimeout(() => {
+          window.scrollTo(0, parseInt(storedScroll, 10))
+        }, 50)
+      } else {
+        // First visit → reset to 6 posts (NO SCROLL)
+        setVisiblePosts(6)
+        sessionStorage.setItem("work-visiblePosts", "6")
+      }
+    }
+    restore()
+
+  }, [])
 
 
   useEffect(() => {
-    setVisiblePosts(6) 
+    setVisiblePosts(6)
   }, [selectedTag])
 
   const handleTagClick = (tagUrl) => {
-  // Reset visible posts to 6 when switching tab
-  setVisiblePosts(6)
-  setSelectedTag(tagUrl)
+    // Reset visible posts to 6 when switching tab
+    setVisiblePosts(6)
+    setSelectedTag(tagUrl)
 
-  // Shallow route update
-  router.push(`/work/${tagUrl}`, undefined, { shallow: true, scroll: false })
+    // Shallow route update
+    router.push(`/work/${tagUrl}`, undefined, { shallow: true, scroll: false })
 
-  // Scroll to posts
-  setTimeout(() => {
-    const postsGrid = document.querySelector('.work-posts-section')
-    const stickyTabs = document.querySelector('.sticky-tab-section')
-    if (postsGrid) {
-      const topOffset = postsGrid.getBoundingClientRect().top + window.scrollY
-      const stickyHeight = stickyTabs?.offsetHeight || 0
-      window.scrollTo({ top: topOffset - stickyHeight - 70, behavior: 'smooth' })
-    }
-  }, 50)
-}
+    // Scroll to posts
+    setTimeout(() => {
+      const postsGrid = document.querySelector('.work-posts-section')
+      const stickyTabs = document.querySelector('.sticky-tab-section')
+      if (postsGrid) {
+        const topOffset = postsGrid.getBoundingClientRect().top + window.scrollY
+        const stickyHeight = stickyTabs?.offsetHeight || 0
+        window.scrollTo({ top: topOffset - stickyHeight - 70, behavior: 'smooth' })
+      }
+    }, 50)
+  }
 
   const handleSeeMore = () => {
     const newVisible = visiblePosts + 6
@@ -638,15 +639,15 @@ restore()
     .filter(post => selectedTag && post.tabs?.map(tab => tab.toLowerCase()).includes(selectedTag.toLowerCase()))
     .slice(0, visiblePosts)
 
-    // Derived metadata for SEO
-const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || caseStudyTags[0];
+  // Derived metadata for SEO
+  const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || caseStudyTags[0];
   return (
     <>
-      <SEO 
+      <SEO
         title="Top Branding, Video Production & Podcast Solutions | Makerrs"
         description="Get great brand design, scalable video production, branded podcast production, and winning creative campaigns for your borderless business."
-        url={`https://www.staging.makerrs.com/work/${selectedTag || 'featured'}`} 
-        keywords="B2B Brands, Brand solutions, B2B Business, Work, Portfolio, Big Ideas, Projects, Work Showcase, Case Study, Case Studies, Creativity, Innovation, B2C Brands, B2C Business"/>
+        url={`https://www.staging.makerrs.com/work/${selectedTag || 'featured'}`}
+        keywords="B2B Brands, Brand solutions, B2B Business, Work, Portfolio, Big Ideas, Projects, Work Showcase, Case Study, Case Studies, Creativity, Innovation, B2C Brands, B2C Business" />
 
       <section className="py-14 md:py-24 overflow-hidden bg-rb-mercury text-rb-black ">
         <WorkListHeroSection
@@ -669,7 +670,7 @@ const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || ca
             <div ref={scrollRef} className="flex gap-3 overflow-x-auto overflow-y-hidden no-scrollbar md:justify-center md:gap-12">
               {caseStudyTags.map(tag => (
                 <a key={tag.url} href="#" onClick={e => { e.preventDefault(); handleTagClick(tag.url) }}
-                   className={`inline-block align-top leading-[1] p-0 m-0 !mr-[9px] text-[32px] font-medium font-everett relative whitespace-nowrap
+                  className={`inline-block align-top leading-[1] p-0 m-0 !mr-[9px] text-[32px] font-medium font-everett relative whitespace-nowrap
                    ${selectedTag === tag.url ? 'text-rb-link-green after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[7px]' : 'text-[#11101080] hover:text-rb-link-green'}`}>
                   {tag.name}
                 </a>
@@ -679,7 +680,7 @@ const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || ca
         </div>
 
         {/* Posts */}
-        {selectedTag === 'videos' ? (
+        {/* {selectedTag === 'videos' ? (
           <section className={`overflow-hidden pb-18 pt-18 md:pb-0`}>
             <div className="container">
               <div className="grid gap-y-8 md:gap-y-[42px] gap-x-5 md:gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 md:mt-0">
@@ -720,28 +721,28 @@ const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || ca
               />
             </div>
           </section>
-        ):(
-          <div className="container work-posts-section">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-16 md:mt-18">
-              {filteredPosts.length > 0 ? (
-                filteredPosts.map(p => (
-                  <div key={p.key} onPointerDown={() => saveState()}>
-                    <ContentPostCard href={`/${selectedTag}/${p.case_study_title}`} page="work" {...p} />
-                  </div>
-                ))
-              ) : (
-                <p className="col-span-full text-center text-gray-500">
-                  No case studies available for &ldquo;{selectedTag}&ldquo;
-                </p>
-              )}
-            </div>
+        ):( */}
+        <div className="container work-posts-section">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-16 md:mt-18">
+            {filteredPosts.length > 0 ? (
+              filteredPosts.map(p => (
+                <div key={p.key} onPointerDown={() => saveState()}>
+                  <ContentPostCard href={`/${selectedTag}/${p.case_study_title}`} page="work" {...p} />
+                </div>
+              ))
+            ) : (
+              <p className="col-span-full text-center text-gray-500">
+                No case studies available for &ldquo;{selectedTag}&ldquo;
+              </p>
+            )}
           </div>
-        )}
+        </div>
+        {/* )} */}
 
-        
+
 
         {/* See More / See Less */}
-        {filteredPosts.length > 0 && selectedTag !== 'videos' && (
+        {filteredPosts.length > 0 && (
           <div className="text-center">
             {(() => {
               const total = _posts.filter(post => post.tabs?.map(t => t.toLowerCase()).includes(selectedTag.toLowerCase())).length
@@ -756,8 +757,8 @@ const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || ca
       </div>
 
       <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
-      
-      
+
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
