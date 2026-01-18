@@ -2539,7 +2539,7 @@ export const workPosts = [
     'Product Launch Campaign'
   ],
   case_study_title: 'xiaomi',
-  href: '/brand-campaign/xiaomi-buds-5C'
+  href: '/brand-campaign/xiaomi-buds-5c'
 },
 
 {
