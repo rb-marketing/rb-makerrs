@@ -722,39 +722,50 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
             </div>
           </section>
         ):( */}
-        <div className="container work-posts-section">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-16 md:mt-18">
+
+        {selectedTag === 'podcast' ? (
+          <div className='flex justify-center items-center'>
+                      <h2 className='mt-10 mb-10 text-3xl font-bold'>Coming Soon!</h2>
+
+            </div>
+        ): (
+
+            <div className = "container work-posts-section">
+          <div className = "grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-16 md:mt-18">
             {filteredPosts.length > 0 ? (
               filteredPosts.map(p => (
-                <div key={p.key} onPointerDown={() => saveState()}>
-                  <ContentPostCard href={`/${selectedTag}/${p.case_study_title}`} page="work" {...p} />
-                </div>
-              ))
-            ) : (
-              <p className="col-span-full text-center text-gray-500">
-                No case studies available for &ldquo;{selectedTag}&ldquo;
-              </p>
-            )}
-          </div>
+        <div key={p.key} onPointerDown={() => saveState()}>
+          <ContentPostCard href={`/${selectedTag}/${p.case_study_title}`} page="work" {...p} />
         </div>
-        {/* )} */}
-
-
-
-        {/* See More / See Less */}
-        {filteredPosts.length > 0 && (
-          <div className="text-center">
-            {(() => {
-              const total = _posts.filter(post => post.tabs?.map(t => t.toLowerCase()).includes(selectedTag.toLowerCase())).length
-              if (total > 6 && visiblePosts < total)
-                return <Button className="w-fit mx-auto mt-[30px] md:mt-15" onClick={handleSeeMore} suffix={<LineArrow />}>SEE MORE</Button>
-              if (total > 6 && visiblePosts >= total)
-                return <Button className="w-fit mx-auto mt-[30px] md:mt-15" onClick={handleSeeLess} suffix={<LineArrow />}>SEE LESS</Button>
-              return null
-            })()}
-          </div>
-        )}
+        ))
+        ) : (
+        <p className="col-span-full text-center text-gray-500">
+          No case studies available for &ldquo;{selectedTag}&ldquo;
+        </p>
+            )}
       </div>
+    </div >
+      )
+}
+
+
+
+{/* See More / See Less */ }
+{
+  filteredPosts.length > 0 && (
+    <div className="text-center">
+      {(() => {
+        const total = _posts.filter(post => post.tabs?.map(t => t.toLowerCase()).includes(selectedTag.toLowerCase())).length
+        if (total > 6 && visiblePosts < total)
+          return <Button className="w-fit mx-auto mt-[30px] md:mt-15" onClick={handleSeeMore} suffix={<LineArrow />}>SEE MORE</Button>
+        if (total > 6 && visiblePosts >= total)
+          return <Button className="w-fit mx-auto mt-[30px] md:mt-15" onClick={handleSeeLess} suffix={<LineArrow />}>SEE LESS</Button>
+        return null
+      })()}
+    </div>
+  )
+}
+      </div >
 
       <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
 

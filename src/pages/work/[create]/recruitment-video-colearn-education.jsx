@@ -232,6 +232,7 @@ function Colearn() {
           }
         ]}
         className="md:!pb-30 md:pt-15 pb-15 md:!mt-0"
+        title = 'WHAT OUR CLIENT SAYS'
       />
 
       {/* <SimilarPosts
