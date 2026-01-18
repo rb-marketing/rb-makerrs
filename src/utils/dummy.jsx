@@ -2316,7 +2316,7 @@ export const workPosts = [
   tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
   tabs: ['campaign'],
   case_study_title: 'vymo-sme-bank-explainer-video',
-  href: '/brand-campaign/vymo-USA-banking'
+  href: '/brand-campaign/vymo-usa-banking'
 },
 
 {
