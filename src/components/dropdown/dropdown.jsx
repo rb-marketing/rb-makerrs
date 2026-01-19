@@ -2,11 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 
 export const Dropdown = ({ placeholder, options = [], onChange }) => {
 
-    let selected_options = placeholder !== 'Select Category'
-        ? placeholder === 'all-blogs'
+    let selected_options = placeholder === 'all'
             ? 'All Blogs'
-            : options.find(option => option.slug === placeholder)?.name
-        : 'Select Category';
+            : (options.find(option => option.slug === placeholder)?.name || 'All Blogs');
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
 
