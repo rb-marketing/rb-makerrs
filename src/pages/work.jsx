@@ -19,7 +19,19 @@ const INIT_MODAL = {
   title: null,
 }
 
-export default function WorkPage({ selectedvalue = 'featured' }) {
+// Utility to detect user country
+// const getUserCountry = async () => {
+//   try {
+//     const res = await fetch('https://ipapi.co/json/');
+//     const data = await res.json();
+//     return data.country_code; // 'IN' for India
+//   } catch (err) {
+//     console.error('Failed to fetch geo info:', err);
+//     return null;
+//   }
+// };
+
+export default function WorkPage({ country, selectedvalue = 'featured' }) {
   const router = useRouter()
   const _posts = workPosts
 
@@ -503,6 +515,22 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
   const [visiblePosts, setVisiblePosts] = useState(6)
   const scrollRef = React.useRef(null)
   const [modal, setModal] = useState(INIT_MODAL)
+  // const [country, setCountry] = useState(null);
+  // const [loading, setLoading] = useState(true);
+
+    const isIndia = country === 'IN';
+    console.log('isIndia', isIndia, country);
+
+  // Detect user country on mount
+  // useEffect(() => {
+  //   const detectCountry = async () => {
+  //     const userCountry = await getUserCountry();
+  //     setCountry(userCountry);
+  //     setLoading(false);
+  //     console.log('userCountry', userCountry)
+  //   };
+  //   detectCountry();
+  // }, []);
 
   useEffect(() => {
     const storedVisible = sessionStorage.getItem('work-visiblePosts')
@@ -639,6 +667,28 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     .filter(post => selectedTag && post.tabs?.map(tab => tab.toLowerCase()).includes(selectedTag.toLowerCase()))
     .slice(0, visiblePosts)
 
+
+  // const filteredPosts = _posts
+  // .filter(post => {
+  //   //🌍 Region filter
+  //   if (post.region?.length && country && post.region.includes(country)) {
+  //     return false;
+  //   }
+
+  //   // 🏷 Tag filter
+  //   if (selectedTag) {
+  //     return post.tabs?.map(
+  //       t => t?.toLowerCase().includes(selectedTag.toLowerCase())
+  //     );
+  //   }
+
+  //   // No tag selected → show post
+  //   // return true;
+  // })
+  // .slice(0, visiblePosts);
+
+
+
   // Derived metadata for SEO
   const selectedTagData = caseStudyTags.find(tag => tag.url === selectedTag) || caseStudyTags[0];
   return (
@@ -725,28 +775,28 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
 
         {selectedTag === 'podcast' ? (
           <div className='flex justify-center items-center'>
-                      <h2 className='mt-10 mb-10 text-3xl font-bold'>Coming Soon!</h2>
+            <h2 className='mt-10 mb-10 text-3xl font-bold'>Coming Soon!</h2>
 
-            </div>
-        ): (
-
-            <div className = "container work-posts-section">
-          <div className = "grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-16 md:mt-18">
-            {filteredPosts.length > 0 ? (
-              filteredPosts.map(p => (
-        <div key={p.key} onPointerDown={() => saveState()}>
-          <ContentPostCard href={`/${selectedTag}/${p.case_study_title}`} page="work" {...p} />
-        </div>
-        ))
+          </div>
         ) : (
-        <p className="col-span-full text-center text-gray-500">
-          No case studies available for &ldquo;{selectedTag}&ldquo;
-        </p>
-            )}
-      </div>
-    </div >
-      )
-}
+
+          <div className="container work-posts-section">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-16 md:mt-18">
+              {filteredPosts.length > 0 ? (
+                filteredPosts.map(p => (
+                  <div key={p.key} onPointerDown={() => saveState()}>
+                    <ContentPostCard href={`/${selectedTag}/${p.case_study_title}`} page="work" {...p} />
+                  </div>
+                ))
+              ) : (
+                <p className="col-span-full text-center text-gray-500">
+                  No case studies available for &ldquo;{selectedTag}&ldquo;
+                </p>
+              )}
+            </div>
+          </div >
+        )
+        }
 
 
 
@@ -776,4 +826,23 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
       ></script>
     </>
   )
+}
+
+
+export async function getServerSideProps({ req }) {
+  console.log('getServerSideProps executed');
+  let country =
+    req.headers['cloudfront-viewer-country'] ||
+    req.headers['CloudFront-Viewer-Country'] ||
+    null;
+
+    if (process.env.NODE_ENV === 'development') {
+    country = 'IN'; // dev convenience
+  }
+
+  return {
+    props: {
+      country,
+    },
+  };
 }
