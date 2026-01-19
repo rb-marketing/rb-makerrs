@@ -54,23 +54,23 @@ const ArticleSingle = ({ article, relatedArticle, tocTree }) => {
   const tocTrigger = () => {
     settoc((state) => !state)
   }
+// dynamic faq content from blog
+// useEffect(() => {
+//   const wrapper = blogRef.current.querySelector('.schema-faq.wp-block-yoast-faq-block')
 
-useEffect(() => {
-  const wrapper = blogRef.current.querySelector('.schema-faq.wp-block-yoast-faq-block')
+//   const faqs = wrapper && [...wrapper?.querySelectorAll('.schema-faq-section')]
+//     .map((section, index) => {
+//       const question = section.querySelector('.schema-faq-question')?.innerText.trim()
+//       const answer = section.querySelector('.schema-faq-answer')?.innerHTML.trim()
 
-  const faqs = wrapper && [...wrapper?.querySelectorAll('.schema-faq-section')]
-    .map((section, index) => {
-      const question = section.querySelector('.schema-faq-question')?.innerText.trim()
-      const answer = section.querySelector('.schema-faq-answer')?.innerHTML.trim()
-
-      return question && answer? { key: index + 1, title: question, content: answer}: null
-    })
-  setFaqs(faqs)
-  if(wrapper){
-    wrapper.style.display = 'none'
-  }
+//       return question && answer? { key: index + 1, title: question, content: answer}: null
+//     })
+//   setFaqs(faqs)
+//   if(wrapper){
+//     wrapper.style.display = 'none'
+//   }
   
-}, [])
+// }, [])
 
 
 
@@ -169,18 +169,18 @@ const seoUrl = `https://www.staging.makerrs.com${router.asPath}`
   'top-explainer-video-companies': ExplainerVideosCompany,
   'saas-explainer-videos': SaasExplainerVideos,
   'b2b-explainer-videos': B2BExplainerVideos,
-  'custom-explainer-videos': CustomExplainerVideos,
+  'custom-b2b-explainer-videos': CustomExplainerVideos,
   'corporate-explainer-videos': CorporateExplainerVideos,
   'ai-explainer-videos': AIblogFAQ,
   'animated-explainer-videos': AnimatedblogFAQ,
   'best-animated-explainer': AnimatedExplainerFAQ,
   'tech-explainer-videos': TechExplainerVideosFAQ,
   'product': ProductFAQ,
-  'different-types': DifferentTypesFAQ,
-  'healthcare': HealthcareFAQ,
+  'types': DifferentTypesFAQ,
+  'healthcare-marketing': HealthcareFAQ,
   '3d-explainer-videos': ThreeDExplainerFAQ,
   'how-to-create': HowCreateFAQ,
-  'whiteboard': WhiteboardFAQ,
+  'whiteboard-explainer-videos': WhiteboardFAQ,
   'funny-explainer-videos': FunnyExplainerFAQ,
   'benefits-of-explainer-videos': BenefitsExplainerFAQ,
   'explainer-videos-help-businesses': ExplainerVideosHelpBusinessesFAQ,
@@ -188,26 +188,26 @@ const seoUrl = `https://www.staging.makerrs.com${router.asPath}`
   'startup-explainer-videos': StartupExplainerVideosFAQ,
   'customer-case-study-videos': CustomerCaseStudyFAQ,
   'best-case-study-videos': BestCaseStudyFAQ,
-  'corporate-case-study-videos': CorporateCaseStudyFAQ,
+  'corporate-video-case-studies': CorporateCaseStudyFAQ,
   'award-winning-case-study-videos': AwardWinningCaseStudyFAQ,
   'saas-case-study-videos': SaasCaseStudyFAQ,
   'marketing-case-study-videos': MarketingCaseStudyFAQ,
-  'case-study-videos': CaseStudyVideosFAQ,
+  'case-study-video-strategy': CaseStudyVideosFAQ,
   'employer-branding-strategy': EmployerBrandingStrategyFAQ,
   'why-is-employer-branding-important': WhyIsEmployerBrandingImportantFAQ,
   'employer-branding-framework': EmployerBrandingFrameworkFAQ,
   'employer-branding-video': EmployerBrandingVideoFAQ,
-  'employer-branding-examples': EmployerBrandingExamplesFAQ,
+  'employer-branding-campaigns-2026': EmployerBrandingExamplesFAQ,
   'employer-branding-companies': EmployerBrandingCompaniesFAQ,
-  'employer-branding-best-practices': EmployerBrandingBestPracticesFAQ,
-  'employer-branding': EmployerBrandingFAQ,
+  'best-practices-to-attract-top-talent': EmployerBrandingBestPracticesFAQ,
+  'employer-branding-guide': EmployerBrandingFAQ,
   'elements-of-employer-branding': ElementsEmployerBrandingFAQ,
   'employer-branding-mistakes': EmployerBrandingMistakesFAQ,
-  'employer-branding-challenges': EmployerBrandingChallengesFAQ,
-  'b2b-employer-branding': B2BEmployerBrandingFAQ,
+  'employer-branding-solutions': EmployerBrandingChallengesFAQ,
+  'b2b-employer-branding-campaigns-and-videos': B2BEmployerBrandingFAQ,
   'improve-employer-branding': ImproveEmployerBrandingFAQ,
   'employer-branding-content': EmployerBrandingContentFAQ,
-  'employer-branding-storytelling': EmployerBrandingStorytellingFAQ
+  'storytelling-for-modern-teams': EmployerBrandingStorytellingFAQ
 };
 
 const slugToSchema = {
@@ -215,10 +215,10 @@ const slugToSchema = {
   'how-to-make-explainer-videos': HowToMakeExplainerVideosSchema,
   'explainer-videos-help-businesses': ExplainerVideosHelpBusinessesSchema,
   '3d-explainer-videos': ThreeDExplainerSchema,
-  'different-types': DifferentTypesSchema,
+  'types': DifferentTypesSchema,
   'tech-explainer-videos': TechExplainerVideosSchema,
-  'whiteboard': WhiteboardSchema,
-  'healthcare': HealthcareSchema,
+  'whiteboard-explainer-videos': WhiteboardSchema,
+  'healthcare-marketing': HealthcareSchema,
   'best-animated-explainer': BestAnimatedExplainerSchema,
   'best-explainer-videos': BestExplainerVideosSchema,
   'what-are-explainer-videos': WhatAreExplainerVideosSchema,
@@ -226,22 +226,22 @@ const slugToSchema = {
   'top-explainer-video-companies': TopExplainerVideosCompanySchema,
   'saas-explainer-videos': SaasExplainerVideosSchema,
   'b2b-explainer-videos': B2BExplainerVideosSchema,
-  'custom-explainer-videos': CustomExplainerVideosSchema,
+  'custom-b2b-explainer-videos': CustomExplainerVideosSchema,
   'corporate-explainer-videos': CorporateExplainerVideosSchema,
   //case-study
-  'case-study-videos': CaseStudyVideosSchema,
+  'case-study-video-strategy': CaseStudyVideosSchema,
   'marketing-case-study-videos': MarketingCaseStudySchema,
   'saas-case-study-videos': SaasCaseStudySchema,
   'award-winning-case-study-videos': AwardWinningCaseStudySchema,
-  'corporate-case-study-videos': CorporateCaseStudySchema,
+  'corporate-video-case-studies': CorporateCaseStudySchema,
   'best-case-study-videos': BestCaseStudyVideosSchema,
   'customer-case-study-videos': CustomerCaseStudySchema,
   //Employer Branding
   'elements-of-employer-branding': ElementsEmployerBrandingSchema,
-  'employer-branding': EmployerBrandingSchema,
-  'employer-branding-best-practices': EmployerBrandingBestPracticesSchema,
+  'employer-branding-guide': EmployerBrandingSchema,
+  'best-practices-to-attract-top-talent': EmployerBrandingBestPracticesSchema,
   'employer-branding-companies': EmployerBrandingCompaniesSchema,
-  'employer-branding-examples': EmployerBrandingExamplesSchema,
+  'employer-branding-campaigns-2026': EmployerBrandingExamplesSchema,
   'employer-branding-video': EmployerBrandingVideoSchema,
   'employer-branding-framework': EmployerBrandingFrameworkSchema,
   'why-is-employer-branding-important': WhyIsEmployerBrandingImportantSchema,
@@ -539,7 +539,7 @@ const selectedSchema = slugToSchema[article.slug] || [];
         </section>
       </article>
 
-      { faq?.length > 0 && (
+      { selectedFAQ?.length > 0 && (
           <section className="pb-12 md:pb-24 md:pt-12">
             <div className="container">
               <div className="rb-row">
@@ -553,7 +553,7 @@ const selectedSchema = slugToSchema[article.slug] || [];
                 <div className="w-full md:w-7/12">
                   <Accordion
                     data={
-                      faq.map((c) => ({
+                      selectedFAQ.map((c) => ({
                       key: `${c.key}`,
                       heading: c?.title,
                       content: c?.content,
