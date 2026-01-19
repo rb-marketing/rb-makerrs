@@ -1,22 +1,23 @@
-const {
-  NextFederationPlugin
-} = require('@module-federation/nextjs-mf')
+const { NextFederationPlugin } = require('@module-federation/nextjs-mf')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // images: {
-  //   unoptimized: true,
-  // },
+
   webpack: (config, options) => {
-    const {
-      isServer
-    } = options
+    const { isServer } = options
+
     config.experiments = {
       ...config.experiments,
       topLevelAwait: true,
       layers: true,
     }
-    config.output.publicPath = 'auto'
+
+    // 🔑 FIX: DO NOT use 'auto' in browser builds
+    if (!isServer) {
+      config.output.publicPath = '/_next/'
+    }
+
     config.plugins.push(
       new NextFederationPlugin({
         name: 'rbGroup',
@@ -25,29 +26,22 @@ const nextConfig = {
           rbGlobal: `rbGlobal@${process.env.NEXT_PUBLIC_HOST_URL}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
         },
         filename: 'static/chunks/remoteEntry.js',
-        exposes: {
-          // './collab': 'src/pages/collab.jsx'
-        },
         extraOptions: {
           exposePages: true,
         },
         shared: {
-          tailwindcss: {
-            singleton: true,
-            eager: true
-          },
-          postcss: {
-            singleton: true,
-            eager: true
-          },
-          autoprefixer: {
-            singleton: true,
-            eager: true
-          },
+          tailwindcss: { singleton: true, eager: true },
+          postcss: { singleton: true, eager: true },
+          autoprefixer: { singleton: true, eager: true },
         },
       })
     )
+
     return config
+  },
+
+  experimental: {
+    middlewarePrefetch: 'strict',
   },
 }
 
