@@ -1489,8 +1489,8 @@ export const workPosts = [
   alt: 'Indeed',
   tags: ['Digital Campaign', 'Ad Film', ' Jobs'],
   tabs: ['Featured'],
-  case_study_title: 'indeed-case-study',
-  href: '/brand-campaign/indeed-india-radhika-apte',
+  case_study_title: 'indeed-India-radhika-apte',
+  href: '/brand-campaign/indeed-India-radhika-apte',
   region: ['IN'] // only visible for India
 },
 {
@@ -2480,9 +2480,9 @@ export const workPosts = [
   alt: 'Indeed',
   tags: ['Digital Campaign', 'Ad Film', ' Jobs'],
   tabs: ['campaign'],
-  case_study_title: 'indeed-case-study',
-  href: '/brand-campaign/indeed-india-radhika-apte',
-      region: []
+  case_study_title: 'indeed-India-radhika-apte',
+  href: '/brand-campaign/indeed-India-radhika-apte',
+      region: ['IN']
 
 },
 
@@ -2566,7 +2566,7 @@ export const workPosts = [
   tabs: ['campaign'],
   case_study_title: 'swiggy-extra-earning-case-study',
   href: '/brand-campaign/swiggy-extra-earnings',
-      region: []
+      region: ['IN']
 
 },
 
@@ -2605,7 +2605,7 @@ export const workPosts = [
   ],
   case_study_title: 'xiaomi-a4-5g',
   href: '/brand-campaign/xiaomi-a4-5g-phone',
-      region: []
+      region: ['IN']
 
 },
 
@@ -2619,7 +2619,7 @@ export const workPosts = [
   tags: ['Digital Campaign', 'Ad Film', 'Fintech'],
   case_study_title: 'indiagold',
   href: '/brand-campaign/indiagold',
-      region: []
+      region: ['IN']
 
 },
 
@@ -2673,7 +2673,7 @@ export const workPosts = [
   tabs: ['campaign'],
   case_study_title: 'my11circle-case-study',
   href: '/brand-campaign/my11circle-digital-ad-film',
-      region: []
+      region: ['IN']
 
 },
 
@@ -2763,8 +2763,8 @@ export const workPosts = [
     'Digital Campaign',
     'Product Launch Campaign'
   ],
-  case_study_title: 'xiaomi',
-  href: '/brand-campaign/xiaomi-buds-5c',
+  case_study_title: 'xiaomi-buds-5C',
+  href: '/brand-campaign/xiaomi-buds-5C',
       region: []
 
 },
@@ -2806,7 +2806,7 @@ export const workPosts = [
   tabs: ['campaign'],
   case_study_title: 'metro-wholesale-case-study',
   href: '/brand-campaign/metro-wholesale-5-star-quality',
-      region: []
+      region: ['IN']
 
 },
 
@@ -2872,7 +2872,7 @@ export const workPosts = [
   image: '/img/works/metro-wholesale-one-minute.webp',
   case_study_title: 'metro-wholesale-one-minute',
   href: '/brand-campaign/metro-wholesale-one-more',
-      region: []
+      region: ['IN']
 
 },
 
@@ -2885,7 +2885,7 @@ export const workPosts = [
   tags: ['Digital Campaign', 'Ad Film', 'Quick Commerce'],
   tabs: ['campaign'],
   href: '/brand-campaign/swiggy-winter-jackets',
-      region: []
+      region: ['IN']
 
 },
 
