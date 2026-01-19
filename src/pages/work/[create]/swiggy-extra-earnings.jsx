@@ -182,8 +182,8 @@ function MetroWholesale() {
   return (
     <>
       <SEO 
-      title="Case Study: Swiggy | Creative Advertising & Digital Marketing Campaign | Red Bangle" 
-      description="Explore how Red Bangle - Creative Advertising Agency, crafted creative video content for Swiggy's creative ad campaign & digital marketing campaign, using b2c marketing communication strategy. "
+      title="Case Study: Swiggy | Creative Advertising & Digital Marketing Campaign | Makerrs" 
+      description="Explore how Makerrs - Creative Advertising Agency, crafted creative video content for Swiggy's creative ad campaign & digital marketing campaign, using b2c marketing communication strategy. "
       url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/swiggy-extra-earning-case-study"
       />
       <WorkHeroSection

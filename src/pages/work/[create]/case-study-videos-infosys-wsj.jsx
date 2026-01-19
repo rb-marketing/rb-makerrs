@@ -182,7 +182,7 @@ function InfosysWSJ() {
   return (
     <>
       <SEO
-        title="Infosys x WSJ Global Case Study Videos | Red Bangle"
+        title="Infosys x WSJ Global Case Study Videos | Makerrs"
         description="We crafted multi-location case study videos for Infosys and WSJ, showcasing digital transformation stories that resonate with global leaders."
         url="https://www.b2b.redbangle.com/work/videos/infosys-wsj-global-case-study-video"
       />

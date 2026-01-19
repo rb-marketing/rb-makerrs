@@ -106,7 +106,7 @@ function MumbaiIndian() {
   return (
     <>
       <SEO 
-      title="Case Study: MI 3D Billboard | Red Bangle" 
+      title="Case Study: MI 3D Billboard | Makerrs"
       url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/mumbai-indian"
       />
       <WorkHeroSection

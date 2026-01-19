@@ -33,7 +33,7 @@ export const RedbangleAdvantageSection = ({ data = [] }) => {
         <div className="overflow-hidden">
           <div className="container">
             <LineHeading className="mb-6 md:mb-9">
-              The Red Bangle Way
+              The Makerrs Way
             </LineHeading>
             <h3 className="text-title md:text-title-md font-everett mb-10 md:mb-18 md:max-w-[780px]">
               Content, conversations and community

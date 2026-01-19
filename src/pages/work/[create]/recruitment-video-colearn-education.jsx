@@ -130,7 +130,7 @@ function Colearn() {
   return (
     <>
       <SEO 
-      title="CoLearn Employer Branding STEM Educators | Red Bangle" 
+      title="CoLearn Employer Branding STEM Educators | Makerrs" 
       description="We helped CoLearn inspire STEM educators in Indonesia with testimonial videos that elevated teaching and scaled recruitment"
       url="https://www.b2b.redbangle.com/work/videos/colearn-stem-educators-recruitment-video"
       />

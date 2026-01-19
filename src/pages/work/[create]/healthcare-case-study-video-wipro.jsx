@@ -165,7 +165,7 @@ function Wipro() {
   return (
     <>
       <SEO 
-      title="Wipro Healthtech Case Study Videos for HIMSS | Red Bangle" 
+      title="Wipro Healthtech Case Study Videos for HIMSS | Makerrs" 
       description="We crafted healthtech and insurtech case study films for Wipro, revealing complex solutions with innovation and strengthening their presence at HIMSS."
       url="https://www.b2b.redbangle.com/work/videos/wipro-healthtech-case-study-videos"
       />

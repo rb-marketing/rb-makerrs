@@ -20,7 +20,7 @@ export const testimonialsDefault = [
   {
     key: 1,
     quote:
-      'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Red Bangle supported us on the ground and even helped us manage our golfing ambassador. Thanks team!',
+      'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Makerrs supported us on the ground and even helped us manage our golfing ambassador. Thanks team!',
     name: 'MATT WALKINGTON',
     designation: 'Account Director',
     company: 'BRIGHT PARTNERSHIPS',
@@ -33,7 +33,7 @@ export const testimonialsDefault = [
   {
     key: 2,
     quote:
-      'The Red Bangle team is fantastic to work with! They add value not just from a creative standpoint but also in terms of communication strategy.',
+      'The Makerrs team is fantastic to work with! They add value not just from a creative standpoint but also in terms of communication strategy.',
     name: 'ROSHAN CARIAPPA',
     designation: 'VICE-PRESIDENT MARKETING',
     company: 'VYMO',
@@ -46,7 +46,7 @@ export const testimonialsDefault = [
   {
     key: 3,
     quote:
-      'It has been a pleasure to work with the Red Bangle team on Project Loom. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
+      'It has been a pleasure to work with the Makerrs team on Project Loom. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
     name: 'SHOBA NARAYAN',
     designation: 'FOUNDER',
     company: 'PROJECT LOOMS',
@@ -59,7 +59,7 @@ export const testimonialsDefault = [
   {
     key: 4,
     quote:
-      'It’s never easy creating a great video and in a fast-growing business like ours, we are always looking for a lot of videos. We struggled, till we came across Red Bangle.',
+      'It’s never easy creating a great video and in a fast-growing business like ours, we are always looking for a lot of videos. We struggled, till we came across Makerrs.',
     name: 'SUNIL SURESH',
     designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
     company: 'CAPILLARY TECHNOLOGIES',
@@ -72,7 +72,7 @@ export const testimonialsDefault = [
   {
     key: 5,
     quote:
-      'We partnered with Red Bangle to create video content for our internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
+      'We partnered with Makerrs to create video content for our internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
     name: 'Lissa Smith',
     designation: 'Marketing Manager',
     company: 'FORTUNE 100 ITES ENTERPRISE',
@@ -88,7 +88,7 @@ const testimonialsSemi = [
   {
     key: 3,
     quote:
-      'It has been a pleasure to work with the Red Bangle team on Project Loom. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
+      'It has been a pleasure to work with the Makerrs team on Project Loom. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
     name: 'SHOBA NARAYAN',
     designation: 'FOUNDER',
     company: 'PROJECT LOOMS',
@@ -101,7 +101,7 @@ const testimonialsSemi = [
   {
     key: 4,
     quote:
-      'It’s never easy creating a great video and in a fast-growing business like ours, we are always looking for a lot of videos. We struggled, till we came across Red Bangle.',
+      'It’s never easy creating a great video and in a fast-growing business like ours, we are always looking for a lot of videos. We struggled, till we came across Makerrs.',
     name: 'SUNIL SURESH',
     designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
     company: 'CAPILLARY TECHNOLOGIES',
@@ -114,7 +114,7 @@ const testimonialsSemi = [
   {
     key: 5,
     quote:
-      'We partnered with Red Bangle to create video content for our internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
+      'We partnered with Makerrs to create video content for our internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
 
     designation: 'VP INTERNAL COMMUNICATIONS',
     company: 'FORTUNE 100 ITES ENTERPRISE',

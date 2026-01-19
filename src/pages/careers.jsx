@@ -188,7 +188,7 @@ const Career = () => {
           <div style={{ display: 'none' }}>
             <h2>Career Opportunities in Advertising Agency</h2>
             <h2>Join Our Team of Creative Marketing experts</h2>
-            <h2>Employment At Red Bangle</h2>
+            <h2>Employment At Makerrs</h2>
             <h2>Job Openings in Creative Marketing and Digital Campaign</h2>
             <h2>Work With Us in Creative Agency</h2>
             <h2>Careers In Marketing Digital Campaign</h2>

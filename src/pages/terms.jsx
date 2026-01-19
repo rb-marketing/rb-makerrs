@@ -69,7 +69,7 @@ const Terms = () => {
                   <p className=" mb-6">
                     Unless otherwise specified, all content on this website —
                     including original text, logos, images, and code — is the
-                    property of Red Bangle Film Collaborative Ltd., operating
+                    property of Makerrs Film Collaborative Ltd., operating
                     under the brand name ‘Makerrs’, and is protected under
                     applicable copyright and intellectual property laws.
                   </p>

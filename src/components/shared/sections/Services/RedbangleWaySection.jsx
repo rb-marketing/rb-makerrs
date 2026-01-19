@@ -6,7 +6,7 @@ export const RedbangleWaySection = ({
   data,
   image,
   video,
-  heading = 'The Red Bangle Way',
+  heading = 'The Makerrs Way',
   sectionBG = 'bg-white',
   flexValue='md:flex-row-reverse'
 }) => (

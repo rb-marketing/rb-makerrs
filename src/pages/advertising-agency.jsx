@@ -106,7 +106,7 @@ const Campaign = ({ setisPopupOpen }) => {
       id: 0,
       serviceTitle: 'GET VIDEO',
       serviceDescription:
-        'Get marketing explainer videos, video case studies, corporate videos, hiring and culture videos and more. Red Bangle offers end to end video production services across locations and formats. Get scalable video production services for your B2B brand.',
+        'Get marketing explainer videos, video case studies, corporate videos, hiring and culture videos and more. Makerrs offers end to end video production services across locations and formats. Get scalable video production services for your B2B brand.',
       bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/video-production',

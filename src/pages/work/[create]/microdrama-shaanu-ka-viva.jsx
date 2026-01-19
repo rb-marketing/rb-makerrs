@@ -28,7 +28,7 @@ const pageData = {
         duration: 15,
         vimeoId: '1104052700/0557aba876',
         name: 'Episode 1',
-        company: 'Red Bangle',
+        company: 'Makerrs',
         thumbnail: {
           width: 446,
           height: 265,
@@ -40,7 +40,7 @@ const pageData = {
         duration: 15,
         vimeoId: '1104054925/9577a7810f',
         name: 'Episode 2',
-        company: 'Red Bangle',
+        company: 'Makerrs',
         thumbnail: {
           width: 446,
           height: 265,
@@ -52,7 +52,7 @@ const pageData = {
         duration: 15,
         vimeoId: '1106110249/6bd07928bd',
         name: 'Episode 3',
-        company: 'Red Bangle',
+        company: 'Makerrs',
         thumbnail: {
           width: 446,
           height: 265,
@@ -67,7 +67,7 @@ const testimonialsDefault = [
   {
     key: 0,
     quote:
-      'We partnered with Red Bangle to create video content for our internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
+      'We partnered with Makerrs to create video content for our internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
     name: 'Lissa Smith',
     designation: 'Marketing Manager',
     company: 'FORTUNE 100 ITES ENTERPRISE',
@@ -104,7 +104,7 @@ function XiaomiBuds() {
     <>
       <SEO
         title="Case Study: Shaanu ka Viva"
-        description="Explore how Red Bangle, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
+        description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
         url="https://www.b2c.redbangle.com/work/creative-ai-agency-india/shaanu-ka-viva"
       />
       <WorkHeroSection

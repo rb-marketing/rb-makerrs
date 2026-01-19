@@ -107,7 +107,7 @@ function Multiplier() {
   return (
     <>
       <SEO 
-      title="Multiplier HR Tech SaaS Explainer Video | Red Bangle" 
+      title="Multiplier HR Tech SaaS Explainer Video | Makerrs" 
       description="For HR tech SaaS brand Multiplier, we crafted an explainer video that revealed global hiring challenges and drove expansion with clarity."
       url="https://www.b2b.redbangle.com/work/campaign/multiplier-hr-saas-explainer-video"
       />
@@ -140,7 +140,7 @@ function Multiplier() {
               <p className=" mb-6 md:mb-7.5">
                 And communicating the complex set of problems as well as the
                 solutions that Multiplier offers in a contemporary way – is the
-                challenge posed to Red Bangle. It was time for Multiplier to
+                challenge posed to Makerrs. It was time for Multiplier to
                 multiply its customers and a great marketing explainer video
                 that would go a long way.
               </p>

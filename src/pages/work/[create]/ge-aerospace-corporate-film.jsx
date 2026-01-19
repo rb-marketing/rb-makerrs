@@ -98,7 +98,7 @@ function Aerospace() {
   return (
     <>
       <SEO 
-      title="GE Aerospace India Corporate Film | Red Bangle" 
+      title="GE Aerospace India Corporate Film | Makerrs" 
       description="We created a corporate film for GE Aerospace India, showcasing its 40-year aviation legacy, local partnerships, and vision for the future of flight."
       url="https://www.b2b.redbangle.com/work/videos/ge-aerospace-corporate-film"
       />

@@ -114,7 +114,7 @@ function BajajAuto() {
   return (
     <>
       <SEO 
-      title="Bajaj Pulsar Augmented Reality Campaign | Red Bangle" 
+      title="Bajaj Pulsar Augmented Reality Campaign | Makerrs" 
       description="We crafted an AR campaign for Bajaj Pulsar that turned static print into interactive 3D journeys, engaging riders at scale and inspiring test rides."
       url="https://www.b2b.redbangle.com/work/brand-experiences/bajaj-pulsar-augmented-reality-campaign"
       />

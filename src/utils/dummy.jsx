@@ -2,7 +2,7 @@ export const createTestimonialData = [
   {
     key: 0,
     quote:
-      'Working with Red Bangle has been an excellent experience. Their team was able to effortlessly transform our communication needs into a well crafted campaign. They have been perceptive in understanding our needs as a business, this is what I believe allowed them to come up with creative ideas for the campaign. The team has smoothly executed the plan for us in a short amount of time, with commendable agility for on the fly changes.',
+      'Working with Makerrs has been an excellent experience. Their team was able to effortlessly transform our communication needs into a well crafted campaign. They have been perceptive in understanding our needs as a business, this is what I believe allowed them to come up with creative ideas for the campaign. The team has smoothly executed the plan for us in a short amount of time, with commendable agility for on the fly changes.',
     name: 'KALP PATEL & AYUSH PATEL',
     designation: 'FOUNDERS',
     company: 'L74 CRAFT CIDERS',
@@ -18,7 +18,7 @@ export const createTestimonialData = [
     quote:
       <>
         <div>
-          Red Bangle captured the very essence of our brand –the vibrant energy, the quirky charm, and the pure joy of gathering around delicious food. What was especially impressive was the creative strategy that led to the curation of design and copy. They took the colors, the iconic signages, the energy of the local markets, and transformed them into a fresh, modern expression. We&apos;ve seen a tremendous response since the launch. People are drawn to the unique identity. We couldn&apos;t be happier.
+          Makerrs captured the very essence of our brand –the vibrant energy, the quirky charm, and the pure joy of gathering around delicious food. What was especially impressive was the creative strategy that led to the curation of design and copy. They took the colors, the iconic signages, the energy of the local markets, and transformed them into a fresh, modern expression. We&apos;ve seen a tremendous response since the launch. People are drawn to the unique identity. We couldn&apos;t be happier.
         </div>
       </>,
     name: 'KUNCHERIA MARATTUKALAM',
@@ -33,7 +33,7 @@ export const createTestimonialData = [
   {
     key: 2,
     quote:
-      'It has been a pleasure to work with the Red Bangle team on Project Loom. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
+      'It has been a pleasure to work with the Makerrs team on Project Loom. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
     name: 'SHOBA NARAYAN',
     designation: 'FOUNDER',
     company: 'PROJECT LOOMS',
@@ -46,7 +46,7 @@ export const createTestimonialData = [
   {
     key: 3,
     quote:
-      'We worked on 2 films with Red Bangle and I can confidently say that the output exceeded our expectations. The team was able to come up with a concept that combined the strong recall of popular culture and at the same time incorporated the brand messaging clearly in the campaign. I would highly recommend them as a reliable and kickass creative partner',
+      'We worked on 2 films with Makerrs and I can confidently say that the output exceeded our expectations. The team was able to come up with a concept that combined the strong recall of popular culture and at the same time incorporated the brand messaging clearly in the campaign. I would highly recommend them as a reliable and kickass creative partner',
     name: 'BHARAT VIRMANI',
     designation: 'Marketing Manager',
     company: 'Games24x7',
@@ -55,48 +55,9 @@ export const createTestimonialData = [
         '/img/testimonials/bharat.webp 533w, /img/testimonials/bharat.webp 1066w',
       sizes: '(max-width:768px) 533px, 1066px',
     },
-  },
-
-  // {
-  //   key: 0,
-  //   quote:
-  //     'We worked on 2 films with Red Bangle and I can confidently say that the output exceeded our expectations. The team was able to come up with a concept that combined the strong recall of popular culture and at the same time incorporated the brand messaging clearly in the campaign. I would highly recommend them as a reliable and kickass creative partner',
-  //   name: 'BHARAT VIRMANI',
-  //   designation: 'Marketing Manager',
-  //   company: 'Games24x7',
-  //   image: {
-  //     srcSet:
-  //       '/img/testimonials/bharat.webp 533w, /img/testimonials/bharat.webp 1066w',
-  //     sizes: '(max-width:768px) 533px, 1066px',
-  //   },
-  // },
-  // {
-  //   key: 1,
-  //   quote:
-  //     'It has been a pleasure to work with the Red Bangle team on Project Loom. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
-  //   name: 'ROSHAN CARIAPPA ',
-  //   designation: 'VICE-PRESIDENT MARKETING',
-  //   company: 'VYMO',
-  //   image: {
-  //     srcSet:
-  //       '/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w',
-  //     sizes: '(max-width:768px) 533px, 1066px',
-  //   },
-  // },
-  // {
-  //   key: 2,
-  //   quote:
-  //     'Red Bangle’s work has been exemplary for the Season of Joy Campaign. The video does what it set out to do – touch people’s hearts.',
-  //   name: 'PEARLRAJ CANNIVADY',
-  //   designation: 'VICE PRESIDENT - MARKETING',
-  //   company: 'SPAR HYPERMARKETS',
-  //   image: {
-  //     srcSet:
-  //       '/img/testimonials/pearlraj.webp 533w, /img/testimonials/pearlraj.webp 1066w',
-  //     sizes: '(max-width:768px) 533px, 1066px',
-  //   },
-  // },
+  }
 ]
+
 export const scs = {
   logo: {
     src: '/img/dummy/scs/nu-bank.svg',
@@ -118,12 +79,12 @@ export const scs = {
   },
   problem: {
     title:
-      'Neubank, a fast-growing fintech startup, approached Red Bangle with the challenge of transforming their digital banking platform. Neubank struggled to deliver a seamless user experience, resulting in low customer satisfaction and retention rates.',
+      'Neubank, a fast-growing fintech startup, approached Makerrs with the challenge of transforming their digital banking platform. Neubank struggled to deliver a seamless user experience, resulting in low customer satisfaction and retention rates.',
     content: null,
   },
   work: {
     title:
-      'Neubank, a leading financial institution, sought to elevate its digital banking experience to meet the evolving needs and expectations of its customers. To achieve this, they partnered with Red Bangle, a trusted digital solutions provider, to address their challenges.',
+      'Neubank, a leading financial institution, sought to elevate its digital banking experience to meet the evolving needs and expectations of its customers. To achieve this, they partnered with Makerrs, a trusted digital solutions provider, to address their challenges.',
     content: `
       <picture>
         <source
@@ -144,17 +105,17 @@ export const scs = {
   },
   approach: {
     title:
-      'At Red Bangle, we believe in the power of creative collaboration to drive impactful results.',
+      'At Makerrs, we believe in the power of creative collaboration to drive impactful results.',
     content:
       'Through a strategic and integrated approach, we worked closely with Nubank to create a range of engaging and visually stunning content pieces. <br/><br/>From concept development to production and post-production, our dedicated team of experts brought their creative prowess and technical expertise to the table.',
     image1: '/img/dummy/scs/image1.webp',
     image2: '/img/dummy/scs/image2.webp',
     secondaryContent: `
     <h3>
-      Red Bangle&apos;s Innovative Approach for Seamless Customer Onboarding
+      Makerrs&apos;s Innovative Approach for Seamless Customer Onboarding
     </h3>
     <p>
-      At Red Bangle, we devised an innovative solution to address
+      At Makerrs, we devised an innovative solution to address
       Neubank&apos;s challenges with customer onboarding and engagement. Our
       approach focused on creating a seamless and user-friendly onboarding
       experience for Neubank&apos;s customers. By leveraging cutting-edge
@@ -237,14 +198,14 @@ export const scs = {
     ],
   },
   press: {
-    title: 'Red Bangle’s strategic content solutions drive success for Neu',
+    title: 'Makerrs’s strategic content solutions drive success for Neu',
     image: {
       src: '/img/dummy/scs/press.webp',
       width: '820',
       height: '486',
     },
     content:
-      "In a recent collaboration, Red Bangle's strategic content solutions proved instrumental in propelling Neubank to new heights. Through meticulous planning and innovative storytelling, Red Bangle crafted engaging video content that resonated with Neubank's target audience.",
+      "In a recent collaboration, Makerrs's strategic content solutions proved instrumental in propelling Neubank to new heights. Through meticulous planning and innovative storytelling, Makerrs crafted engaging video content that resonated with Neubank's target audience.",
     href: '#!',
   },
 }
@@ -622,14 +583,14 @@ export const ccs = {
     ],
   },
   press: {
-    title: 'Red Bangle’s strategic content solutions drive success for Neu',
+    title: 'Makerrs’s strategic content solutions drive success for Neu',
     image: {
       src: '/img/dummy/scs/press.webp',
       width: '820',
       height: '486',
     },
     content:
-      "In a recent collaboration, Red Bangle's strategic content solutions proved instrumental in propelling Neubank to new heights. Through meticulous planning and innovative storytelling, Red Bangle crafted engaging video content that resonated with Neubank's target audience.",
+      "In a recent collaboration, Makerrs's strategic content solutions proved instrumental in propelling Neubank to new heights. Through meticulous planning and innovative storytelling, Makerrs crafted engaging video content that resonated with Neubank's target audience.",
     href: '#!',
   },
 }

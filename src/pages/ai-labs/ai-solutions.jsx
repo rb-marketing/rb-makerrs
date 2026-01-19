@@ -324,7 +324,7 @@ const AISolutions = () => {
   return (
     <>
       <SEO
-        title="Red Bangle | Unlock the AI Advantage for Your Brand"
+        title="Makerrs | Unlock the AI Advantage for Your Brand"
         description="We harness creativity, artificial intelligence and technology to help B2B and B2C brands differentiate, connect, endure in a world that’s rapidly evolving."
         url="https://www.redbangle.com/ai-labs/ai-solutions"
       />

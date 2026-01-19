@@ -158,7 +158,7 @@ function Colearn() {
   return (
     <>
       <SEO 
-      title="Infosys Employer Branding Humanizing AI Campaign | Red Bangle" 
+      title="Infosys Employer Branding Humanizing AI Campaign | Makerrs" 
       description="We elevated Infosys employer branding by spotlighting employee voices and humanizing AI to reinforce its position as an AI-first workplace."
       url="https://www.b2b.redbangle.com/work/campaign/infosys-employees-social-media-campaign"
       />

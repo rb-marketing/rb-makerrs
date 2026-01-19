@@ -3,8 +3,8 @@ import { useRouter } from 'next/router'
 import Script from 'next/script'
 
 export const SEO = ({
-  title = 'Film & Video Production company for TV Ads & more|Red Bangle',
-  description = 'Red Bangle is a global full-service film and video production company. Get TV Ads, Digital Ads, Marketing Videos, Corporate Videos and more with one company.',
+  title = 'Film & Video Production company for TV Ads & more|Makerrs',
+  description = 'Makerrs is a global full-service film and video production company. Get TV Ads, Digital Ads, Marketing Videos, Corporate Videos and more with one company.',
   image = 'https://www.redbangle.com/img/redbangle.jpg',
   url,
   keywords,
@@ -20,7 +20,7 @@ export const SEO = ({
         <meta name="robots" content="noindex, nofollow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
-        <meta name="author" content="Red Bangle" />
+        <meta name="author" content="Makerrs" />
         <meta name="geo.region" content="IN" />
         <meta name="geo.position" content="13.120320;77.625270" />
 

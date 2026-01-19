@@ -107,7 +107,7 @@ function Colearn() {
   return (
     <>
       <SEO 
-      title="Dozee Beds Healthcare Video | Red Bangle" 
+      title="Dozee Beds Healthcare Video | Makerrs" 
       description="Our video for Dozee Beds and Sattva Consulting showcased how smart hospital beds elevate care and drive large-scale public health impact in India."
       url="https://www.b2b.redbangle.com/work/videos/dozee-beds-healthcare-video-report"
       />

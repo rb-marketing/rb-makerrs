@@ -66,7 +66,7 @@ const pageData = {
       height: '486',
     },
     content:
-      'MyGate has come up with a campaign, which is an ode to the security guards. The film has been created by Red Bangle. It highlights the hard work put in by the security guards, which often go unappreciated',
+      'MyGate has come up with a campaign, which is an ode to the security guards. The film has been created by Makerrs. It highlights the hard work put in by the security guards, which often go unappreciated',
     href: '#!',
   },
 }
@@ -124,8 +124,8 @@ function MyGate() {
   return (
     <>
       <SEO 
-      title="Case Study - Heroes at MyGate | Content Strategy, Creative Ad Campaign, Digital Marketing Campaign | Red Bangle"
-      description="Explore how Red Bangle - Holistic Marketing Agency, crafted an impactful marketing campaign for MyGate with strategic b2c marketing insights. " 
+      title="Case Study - Heroes at MyGate | Content Strategy, Creative Ad Campaign, Digital Marketing Campaign | Makerrs"
+      description="Explore how Makerrs - Holistic Marketing Agency, crafted an impactful marketing campaign for MyGate with strategic b2c marketing insights. " 
       url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/mygate-case-study"
       />
       <WorkHeroSection

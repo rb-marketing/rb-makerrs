@@ -142,8 +142,8 @@ function MetroWholesale() {
   return (
     <>
       <SEO 
-      title="Case Study: Swiggy | Creative Advertising & Digital Marketing Campaign | Red Bangle"
-      description="Explore how Red Bangle, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Swiggy using b2c marketing campaign strategy." 
+      title="Case Study: Swiggy | Creative Advertising & Digital Marketing Campaign | Makerrs"
+      description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Swiggy using b2c marketing campaign strategy." 
       url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/swiggy-winter-jacket-case-study"
       />
       <WorkHeroSection
@@ -188,7 +188,7 @@ function MetroWholesale() {
                 </span>
               </LineHeading>
               <div className="text-base md:text-xl text-rb-black/80 mb-4 font-opensans">
-                The Red Bangle creative team understood that the Delivery Partners were always on the move, and lengthy ads just wouldn&apos;t cut it. So to communicate the best features of the jacket - warmth, practicality, and affordability - in an interesting manner, we went with snackable duration of 30-second ads, and created a cool gang of characters that helped us show off the product in a fun way.
+                The Makerrs creative team understood that the Delivery Partners were always on the move, and lengthy ads just wouldn&apos;t cut it. So to communicate the best features of the jacket - warmth, practicality, and affordability - in an interesting manner, we went with snackable duration of 30-second ads, and created a cool gang of characters that helped us show off the product in a fun way.
               </div>
               <div className="text-base md:text-xl text-rb-black/80 mb-4 font-opensans">
                 Take a look at the characters that inspired love for the “Swiggy wali jacket”.

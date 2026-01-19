@@ -105,8 +105,8 @@ function ExicomMobility() {
     return (
         <>
             <SEO
-                title="Exicom E-Mobility Rebrand | Red Bangle"
-                description="Discover how Red Bangle transformed Exicom with a bold new brand identity, voice, and design system built for the fast-growing EV charging market."
+                title="Exicom E-Mobility Rebrand | Makerrs"
+                description="Discover how Makerrs transformed Exicom with a bold new brand identity, voice, and design system built for the fast-growing EV charging market."
                 url="https://www.b2b.redbangle.com/work/design/exicom-e-mobility-rebrand"
             />
             <WorkHeroSection

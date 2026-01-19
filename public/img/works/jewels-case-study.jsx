@@ -16,7 +16,7 @@ const jewelsTestimonialData = [
     {
       key: 0,
       quote:
-        'It has been a pleasure to work with the Red Bangle team on Project Loom. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
+        'It has been a pleasure to work with the Makerrs team on Project Loom. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
       name: 'SHOBA NARAYAN',
       designation: 'FOUNDER',
       image: {

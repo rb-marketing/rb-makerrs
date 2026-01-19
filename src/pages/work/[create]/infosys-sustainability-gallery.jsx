@@ -54,7 +54,7 @@ const lilliaCareData = [
     {
         key: 0,
         quote:
-            <>Red Bangle brought a combination of clarity and creativity to our brand launch. They translated complex healthcare ideas into a design system that felt simple, intuitive, and full of heart. <br />
+            <>Makerrs brought a combination of clarity and creativity to our brand launch. They translated complex healthcare ideas into a design system that felt simple, intuitive, and full of heart. <br />
                 What impressed us most was their ability to move fast in delivering an insight-driven brand identity and website experience in really crunched timelines.
             </>,
         name: 'KUNCHERIA MARATTUKALAM',
@@ -135,7 +135,7 @@ function InfosysLivingLabs() {
     return (
     <>
          <SEO 
-         title="Infosys Sustainability Design Gallery | Red Bangle"
+         title="Infosys Sustainability Design Gallery | Makerrs"
          description="Infosys’ Living Labs gallery showcased sustainability leadership with immersive design, recycled materials, and data-driven storytelling." 
          url="https://www.b2b.redbangle.com/work/design/infosys-sustainability-design-gallery"
          />
