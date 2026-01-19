@@ -384,7 +384,7 @@ const Campaign = ({ setisPopupOpen }) => {
         sectionStyle={{ 'padding-bottom': 0 }}
       />
 
-      <div className="md:pt-15">
+      <div className="pt-10 md:pt-15">
         <RedbangleWaySection
           data={campaignCards3}
           video={{
@@ -407,10 +407,10 @@ const Campaign = ({ setisPopupOpen }) => {
         }
         iconClassName="w-15 h-15"
         cards={campaignCards2}
-        containerClassName="flex flex-row items-center gap-6 camaign-cards"
+        containerClassName="flex flex-row items-center gap-3 md:gap-6 camaign-cards"
       />
 
-      <div className="md:pt-15">
+      <div className="pt-8 md:pt-15">
         <FeaturedWorkSection
           posts={_posts}
           href="/work/campaign"
@@ -426,7 +426,7 @@ const Campaign = ({ setisPopupOpen }) => {
         testimonialData={testimonialData}
         type="semi"
       />
-      <div id="leap-explore" className="md:py-12">
+      <div id="leap-explore" className="py-6 md:py-12">
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"

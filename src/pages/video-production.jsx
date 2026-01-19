@@ -1158,7 +1158,8 @@ const VideosServices = ({ setisPopupOpen }) => {
               </p>
               <div className="md:mt-10 mt-6">
                 <Button
-                  onClick={handleClick}
+                  // onClick={handleClick}
+                  href="/contact"
                   className="font-bold  w-full md:w-auto !inline-flex"
                   suffix={<LineArrow hover />}
                 >
@@ -1188,7 +1189,7 @@ const VideosServices = ({ setisPopupOpen }) => {
 
       <TrustedBrandsSection className="bg-white py-7.5 md:py-15" />
 
-      <div id="leap-explore" className="md:py-12">
+      <div id="leap-explore" className="py-6 md:py-12">
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"
