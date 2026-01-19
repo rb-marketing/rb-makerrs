@@ -366,7 +366,7 @@ export const campaignPosts = [
     image: '/img/works/xiaomi_buds_6_work_thumbnail.png',
     alt: 'Action-packed launch film for Redmi Buds 6',
     tags: ['Consumer Electronics', 'Ad Film', 'Digital Campaign', 'Product Launch Campaign'],
-    href: '/campaigns/xiaomi-buds',
+    href: '/brand-campaign-agency-india/xiaomi-buds',
   },
   {
     key: 1,
@@ -375,8 +375,8 @@ export const campaignPosts = [
     image: '/img/works/vymo_sme.webp',
     alt: 'Vymo SME',
     tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
-    case_study_title: 'vymo-sme-bank-explainer-video',
-    href: '/campaigns/vymo-sme-bank-explainer-video',
+    case_study_title: 'explainer-video-vymo-USA-banking',
+    href: '/brand-campaign/explainer-video-vymo-USA-banking',
   },
   {
     key: 2,
@@ -385,7 +385,7 @@ export const campaignPosts = [
     image: '/img/case-study/infosys-global-leaders.webp',
     alt: 'Global Leaders: a Hiring Campaign',
     tags: ['Technology', 'Campaign', 'Employer Branding Video', 'Global Video Production'],
-    href: '/campaigns/infosys-global-leaders-employer-branding',
+    href: '/brand-campaign/infosys-global-employer-brand',
   }
 ]
 

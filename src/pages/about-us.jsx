@@ -806,6 +806,14 @@ const WhoWeAre = () => {
         </div>
       )}
 
+      <div className="pt-0 pb-15 md:pb-15 md:pt-0">
+        <ExploreMoreSection
+          className="pb-15 md:pb-30"
+          cards={explorecards}
+          title='Explore our services'
+        />
+      </div>
+
       <TrustedBrandsSection
         className="bg-white pt-10 pb-15 md:pb-12"
         heading="Our clients"
@@ -813,18 +821,12 @@ const WhoWeAre = () => {
 
       <Testimonials
         title={'WHAT CLIENTS SAY'}
-        className="pt-10 pb-7.5 md:pt-15 md:pb-15"
+        className="pt-10 pb-15 md:pt-20 md:pb-25"
         testimonialData={testimonials}
         type="semi"
       />
 
-      <div className="pt-15 pb-15 md:pb-15 md:pt-12">
-        <ExploreMoreSection
-          className="pb-15 md:pb-30"
-          cards={explorecards}
-          title='Explore our services'
-        />
-      </div>
+    
 
 
       <VideoModal

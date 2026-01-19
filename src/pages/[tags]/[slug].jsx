@@ -171,7 +171,7 @@ const seoUrl = `https://www.staging.makerrs.com${router.asPath}`
   'b2b-explainer-videos': B2BExplainerVideos,
   'custom-b2b-explainer-videos': CustomExplainerVideos,
   'corporate-explainer-videos': CorporateExplainerVideos,
-  'ai-explainer-videos': AIblogFAQ,
+  'ai-explainer-video-tools-trends': AIblogFAQ,
   'animated-explainer-videos': AnimatedblogFAQ,
   'best-animated-explainer': AnimatedExplainerFAQ,
   'tech-explainer-videos': TechExplainerVideosFAQ,
