@@ -891,13 +891,13 @@ const BrandIdentityDesign = () => {
         <>
           Of course. We have an extensive portfolio of brand identity examples
           across technology, automotive, F&B, and hospitality. You can explore
-          our brand collateral projects
+          our brand collateral projects{' '}
+
           <a
-            href="https://www.b2b.redbangle.com/work/b2b-brand-design-agency"
-            className="text-rb-red"
+            href="https://www.makerrs.com//work/design"
+            className="text-black underline hover:text-rb-link-green"
             target="_blank"
           >
-            {' '}
             here
           </a>
           .

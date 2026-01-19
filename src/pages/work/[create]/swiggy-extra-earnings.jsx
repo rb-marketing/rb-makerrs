@@ -227,7 +227,7 @@ function MetroWholesale() {
 
             <div className='text-xl md:text-[32px] text-black mb-4 font-medium lg:leading-14 font-everett'>The Return of Pyaare Pankaj and Sweety</div>
             <div className="text-base md:text-xl text-rb-black/80 mb-8 md:mb-[30px] leading-7">
-              Remember Pyaare Pankaj and Sweety from our <a href="/work/create/swiggy-winter-jacket-case-study" target="_blank" rel="noopener noreferrer"><span className='no-underline text-rb-red font-semibold'>&quot;Swiggy Wali Jacket&quot;</span></a> campaign? Well, this newly-wed couple turned out to be a hit! Their charm and relatability created a special place in the hearts of our target audience. And, we saw a fantastic opportunity to deepen this connection and continue their story with brand Swiggy, and to do something a little EXTRA.
+              Remember Pyaare Pankaj and Sweety from our <a href="/work/create/swiggy-winter-jacket-case-study" target="_blank" rel="noopener noreferrer"><span className='underline text-black hover:text-rb-link-green font-semibold'>&quot;Swiggy Wali Jacket&quot;</span></a> campaign? Well, this newly-wed couple turned out to be a hit! Their charm and relatability created a special place in the hearts of our target audience. And, we saw a fantastic opportunity to deepen this connection and continue their story with brand Swiggy, and to do something a little EXTRA.
             </div>
             <div className='text-xl md:text-[32px] text-black mb-4 font-medium lg:leading-14 font-everett'>Crafting the EXTRA campaign</div>
             <div className="text-base md:text-xl text-rb-black/80 leading-7">

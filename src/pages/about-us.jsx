@@ -474,7 +474,7 @@ const WhoWeAre = () => {
       />
 
       <section
-        className="pt-15 md:pb-24 md:pt-24 relative text-rb-black bg-rb-mercury"
+        className="pt-15 pb-15 md:pb-24 md:pt-24 relative text-rb-black bg-rb-mercury"
         ref={heroSection}
       >
         <div className="height-div aspect-video absolute w-full opacity-0 pointer-events-none z-30 bg-rb-red top-0" />
@@ -518,7 +518,7 @@ const WhoWeAre = () => {
       </section>
 
 
-      <section className="bg-white md:pt-30 md:pb-15 py-10">
+      <section className="bg-white md:pt-30 md:pb-15 py-20">
         <div className="container">
           <h2 className="text-center text-title md:text-title-md mb-10 md:mb-18 font-everett">
             Our Core Principles
@@ -612,7 +612,7 @@ const WhoWeAre = () => {
         }}
       />
 
-      <section className="pb-5 md:pb-7.5 md:pt-15 pt-7.5 bg-white">
+      <section className="pb-5 md:pb-7.5 md:pt-15 pt-20 bg-white">
         <div className="container">
           <h1 className="text-title md:text-title-md font-everett mb-6 md:mb-8 md:!tracking-[-2.08px] !tracking-[-.52px] ">
             Meet the Makerrs
@@ -653,7 +653,7 @@ const WhoWeAre = () => {
                   className="flex items-center gap-2 md:hidden"
                   onClick={() => setBioModal({ open: true, data: d })}
                 >
-                  <span className="font-bold text-rb-red text-xs font-opensans">
+                  <span className="font-bold text-rb-black underline hover:text-rb-link-green text-xs font-opensans">
                     Read More
                   </span>
                   <svg
@@ -666,7 +666,7 @@ const WhoWeAre = () => {
                     <g clipPath="url(#clip0_3013_987)">
                       <path
                         d="M9.70274 10.703C9.90863 10.4973 9.90876 10.1636 9.70303 9.95772L6.35042 6.60249C6.14469 6.3966 5.811 6.39647 5.6051 6.6022C5.39921 6.80794 5.39908 7.14163 5.60481 7.34752L8.58491 10.3299L5.60249 13.31C5.3966 13.5158 5.39647 13.8495 5.6022 14.0554C5.80794 14.2612 6.14163 14.2614 6.34752 14.0556L9.70274 10.703ZM-0.326678 10.8535L9.33002 10.8572L9.33043 9.80321L-0.326268 9.79946L-0.326678 10.8535Z"
-                        fill="#EF001C"
+                        fill="#000"
                       />
                     </g>
                     <defs>
@@ -807,18 +807,18 @@ const WhoWeAre = () => {
       )}
 
       <TrustedBrandsSection
-        className="bg-white pb-15 md:pb-12"
+        className="bg-white pt-10 pb-15 md:pb-12"
         heading="Our clients"
       />
 
       <Testimonials
         title={'WHAT CLIENTS SAY'}
-        className="pt-18 pb-7.5 md:pt-15 md:pb-15"
+        className="pt-10 pb-7.5 md:pt-15 md:pb-15"
         testimonialData={testimonials}
         type="semi"
       />
 
-      <div className="pb-15 md:pb-15 md:pt-12">
+      <div className="pt-15 pb-15 md:pb-15 md:pt-12">
         <ExploreMoreSection
           className="pb-15 md:pb-30"
           cards={explorecards}
