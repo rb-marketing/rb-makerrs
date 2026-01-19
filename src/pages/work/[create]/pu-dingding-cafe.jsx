@@ -9,9 +9,7 @@ import {
     StatsContainer,
     Testimonials,
     FeaturedWorkSection,
-    WorkHeroSection,
-    testimonialsDefault,
-    testimonialsDesign
+    WorkHeroSection
 } from '@/components/shared'
 import { useRouter } from 'next/router'
 import { CommercialSection } from '@/components/pages/work'
@@ -102,6 +100,20 @@ const pageData = {
         ],
     },
 }
+
+const testimonialsDesign = [{
+    key: 0,
+    quote:
+      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Red Bangle has given us a brand bursting with character and joy!',
+    name: 'NAKUL KULKARNI',
+    designation: ' CO-FOUNDER',
+    company: 'P.U. DINGDING',
+    image: {
+      srcSet:
+        '/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w',
+      sizes: '(max-width:768px) 533px, 1066px',
+    },
+  }]
 
 function Colearn() {
     const router = useRouter()
@@ -499,7 +511,7 @@ function Colearn() {
             </section>
 
             <Testimonials
-                heading='what our client says'
+                title='what our client says'
                 testimonialData={testimonialsDesign.filter(t => t.name === "NAKUL KULKARNI")}
                 className="pb-15 md:pb-30"
             />
