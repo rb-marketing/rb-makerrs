@@ -1593,7 +1593,7 @@ const BrandIdentityDesign = () => {
       </section>
 
       <Testimonials
-        className="py-18 md:py-30 !mt-0"
+        className="pb-18 pt-8 md:py-30 !mt-0"
         testimonialData={testimonialsDefault}
         type="semi"
         title={' Why Clients Trust Us'}
