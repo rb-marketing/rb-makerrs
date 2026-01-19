@@ -1924,7 +1924,7 @@ export const workPosts = [
     image: '/img/works/indeed_youtube_content_main_thumbnail.png',
     case_study_title: 'indeed-youtube-content',
     href: '/video-production/indeed-youtube-content',
-        region: []
+        region: ['IN']
 
   },
   {
@@ -1975,7 +1975,7 @@ export const workPosts = [
     image: '/img/works/womens-at-tata-autocamp.webp',
     case_study_title: 'women-in-auto-manufacturing',
     href: '/video-production/tata-inclusion-auto-comp',
-        region: []
+        region: ['IN']
 
   },
   {
@@ -1986,8 +1986,8 @@ export const workPosts = [
     alt: 'Exicom',
     tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
     tabs: ['videos'],
-    case_study_title: 'exicom-3d-animation-product-launch',
-    href: '/video-production/3d-product-reveal-video-exicom',
+    case_study_title: '3d-product-reveal-video-Exicom',
+    href: '/video-production/3d-product-reveal-video-Exicom',
         region: []
 
   },
@@ -2024,8 +2024,8 @@ export const workPosts = [
     alt: 'Infosys',
     tags: ['Technology', 'Non-profit', 'CSR Video', 'Corporate Film'],
     tabs: ['videos'],
-    case_study_title: 'infosys-street-child-documentary',
-    href: '/video-production/csr-video-infosys-street-child',
+    case_study_title: 'CSR-video-infosys-street-child',
+    href: '/video-production/CSR-video-infosys-street-child',
         region: []
 
   },
@@ -2065,7 +2065,7 @@ export const workPosts = [
     tags: ['Gen AI Videos', 'Short-form Content', 'Digital Storytelling'],
     case_study_title: 'shaanu-ka-viva',
     href: '/video-production/microdrama-shaanu-ka-viva',
-        region: []
+        region: ['IN']
 
   },
   {
@@ -2078,7 +2078,7 @@ export const workPosts = [
     tabs: ['videos'],
     case_study_title: 'mygate-case-study',
     href: '/video-production/poetic-video-mygate',
-        region: []
+        region: ['IN']
 
   },
   {
@@ -2117,7 +2117,7 @@ export const workPosts = [
     image: '/img/works/mygate_rewards_Thumbnail.png',
     case_study_title: 'mygate-rewards-recognition',
     href: '/video-production/mygate-rewards-recognition',
-        region: []
+        region: ['IN']
 
   },
   {
@@ -2141,8 +2141,8 @@ export const workPosts = [
     alt: 'Swiggy',
     tabs: ['videos'],
     tags: ['Quick Commerce', 'Gen AI Video', 'Ad Film'],
-    case_study_title: 'swiggy-insanely-good',
-    href: '/video-production/ai-video-swiggy',
+    case_study_title: 'ai-video-Swiggy',
+    href: '/video-production/ai-video-Swiggy',
         region: []
 
   },
@@ -2167,9 +2167,9 @@ export const workPosts = [
     tags: ['Quick Commerce', 'Product Demo Video', 'Internal Communication'],
     tabs: ['videos'],
     image: '/img/works/swiggy-thumbnail.webp',
-    case_study_title: 'swiggy-delivery-executive-app',
+    case_study_title: 'app-walkthrough-swiggy-delivery',
     href: '/brand-campaign/app-walkthrough-swiggy-delivery',
-        region: []
+        region: ['IN']
 
   },
   {
@@ -2193,8 +2193,8 @@ export const workPosts = [
     alt: 'slb',
     tabs: ['videos'],
     tags: ['Engineering', 'Campaign', 'Explainer Video', 'Demo Video', 'Interactive Video'],
-    case_study_title: 'slb-interactive-explainer',
-    href: '/brand-campaign/interactive-explainer-slb',
+    case_study_title: 'interactive-explainer-SLB',
+    href: '/brand-campaign/interactive-explainer-SLB',
         region: []
 
   },
@@ -2271,8 +2271,8 @@ export const workPosts = [
     alt: 'Jewels Of India',
     tags: ['Digital Campaign', 'Video Content', 'Jewellery'],
     tabs: ['videos'],
-    case_study_title: 'jewels-case-study',
-    href: '/video-production/documentary-tanishq-jewels',
+    case_study_title: 'documentary-Tanishq-jewels',
+    href: '/video-production/documentary-Tanishq-jewels',
         region: []
 
   },
@@ -2360,8 +2360,8 @@ export const workPosts = [
     image: '/img/works/vymo_sme.webp',
     tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
     tabs: ['videos'],
-    case_study_title: 'vymo-sme-bank-explainer-video',
-    href: '/brand-campaign/explainer-video-vymo-usa-banking',
+    case_study_title: 'explainer-video-vymo-USA-banking',
+    href: '/brand-campaign/explainer-video-vymo-USA-banking',
         region: []
 
   },
