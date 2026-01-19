@@ -1361,7 +1361,7 @@ const CorporateVideoLandPage = () => {
           <div className="overflow-hidden">
             <div className="container">
               <LineHeading className="mb-6 md:mb-7.5">
-                Get High-Quality Corporate Storytelling'
+                Get High-Quality Corporate Storytelling
               </LineHeading>
               <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-[620px] mb-8 md:mb-[70px]">
                 What makes us a great Corporate Video Agency
