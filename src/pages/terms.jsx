@@ -29,7 +29,7 @@ const Terms = () => {
                     By accessing or using our websites (
                     <a
                       href="https://www.makerrs.com"
-                      className="hover:text-rb-red"
+                      className="hover:text-rb-link-green text-black underline"
                     >
                       www.makerrs.com
                     </a>
@@ -226,7 +226,7 @@ const Terms = () => {
                     Privacy Policy, please contact us at:{' '}
                     <a
                       href="mailto:hello@makerrs.com"
-                      className="hover:text-rb-red duration-300 ease-out"
+                      className="hover:text-rb-link-green text-black underline duration-300 ease-out"
                     >
                       hello@makerrs.com
                     </a>
