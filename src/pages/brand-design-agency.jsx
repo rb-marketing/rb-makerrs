@@ -412,9 +412,8 @@ const Design = ({ setisPopupOpen }) => {
       </div>
       <div
         ref={stickyButtonRef}
-        className={`hidden fixed top-20 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
-          isSticky ? 'lg:block' : ''
-        } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+        className={`hidden fixed top-20 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${isSticky ? 'lg:block' : ''
+          } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
       >
         <Button
           onClick={() => {
@@ -466,11 +465,14 @@ const Design = ({ setisPopupOpen }) => {
         heading="Explore Our Design Process"
         title="How we design for brand growth"
       />
-      <FeaturedWorkSection
-        posts={_posts}
-        href="/work/design"
-        title="Explore Our Design Work"
-      />
+      <div className='pt-8 md:pt-0'>
+        <FeaturedWorkSection
+          posts={_posts}
+          href="/work/design"
+          title="Explore Our Design Work"
+        />
+      </div>
+
       <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
       <Testimonials
         title={'WHAT CLIENTS SAY'}
@@ -478,7 +480,7 @@ const Design = ({ setisPopupOpen }) => {
         testimonialData={createTestimonialData}
         type="semi"
       />
-      <div id="leap-explore" className="md:py-12">
+      <div id="leap-explore" className="py-6 md:py-12">
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"

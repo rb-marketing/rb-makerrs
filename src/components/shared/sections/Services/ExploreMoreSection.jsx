@@ -95,7 +95,7 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[], 
                       className={`h-[18rem] p-8 md:p-14 relative overflow-hidden min-h-full md:h-[31rem] border border-rb-black hover:bg-rb-gray/10 transition-colors duration-300`}
                       style={{ backgroundColor: bgColor }}
                     >
-                      <h3 className="relative text-black text-3xl md:text-6xl font-semibold flex items-center gap-3 mb-15 md:mb-[160px] ">
+                      <h3 className="relative text-black text-3xl font-semibold flex items-center gap-3 mb-8">
                         {serviceTitle}
                         <svg
                           width="34"
@@ -111,7 +111,7 @@ export const ExploreMoreSection = ({ type = 'create', className = '', cards=[], 
                         </svg>
                       </h3>
 
-                      <p className="text-sm md:text-xl text-black">{serviceDescription}</p>
+                      <p className="text-sm text-black">{serviceDescription}</p>
                     </div>
                   </Link>
                 )

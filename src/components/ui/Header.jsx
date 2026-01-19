@@ -540,7 +540,7 @@ export const Header = () => {
                   <div className="flex gap-2">
                     <a
                       target="_blank"
-                      href="https://www.linkedin.com/company/redbanglecreative/"
+                      href="https://www.linkedin.com/company/makerrsagency"
                       className="w-10 h-10 flex justify-center items-center border border-[#069] rounded-full"
                     >
                       <svg
@@ -557,7 +557,7 @@ export const Header = () => {
                     </a>
                     <a
                       target="_blank"
-                      href="https://www.instagram.com/redbangle.global?igsh=MW8wc28xZHY4MGN2bQ=="
+                      href="https://www.instagram.com/makerrsagency/"
                       className="w-10 h-10 flex justify-center items-center border border-[#C2377B] rounded-full"
                     >
                       <svg
@@ -610,7 +610,7 @@ export const Header = () => {
                     </a>
                     <a
                       target="_blank"
-                      href="https://www.youtube.com/channel/UCbPlh2ukO1Qz6Ib2fY724QQ"
+                      href="https://www.youtube.com/@MakerrsAgency"
                       className="w-10 h-10 flex justify-center items-center border border-[#F00] rounded-full"
                     >
                       <svg

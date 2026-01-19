@@ -84,50 +84,6 @@ export const testimonialsDefault = [
   },
 ]
 
-export const testimonialsDesign = [
-  {
-    key: 0,
-    quote:
-      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Red Bangle has given us a brand bursting with character and joy!',
-    name: 'NAKUL KULKARNI',
-    designation: ' CO-FOUNDER',
-    company: 'P.U. DINGDING',
-    image: {
-      srcSet:
-        '/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w',
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  },
-  {
-    key: 2,
-    quote:
-      'We partnered with Red Bangle to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
-
-    designation: 'VP INTERNAL COMMUNICATIONS',
-    company: 'FORTUNE 100 ITES ENTERPRISE',
-    image: {
-      srcSet:
-        '/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w',
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  },
-  {
-    key: 3,
-    quote:
-      <>Red Bangle brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
-      </>,
-    name: 'Rinku Agarwal Basu',
-    designation: 'COO',
-    company: 'Lillia Care',
-    image: {
-      srcSet:
-
-        '/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w',
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  }
-]
-
 const testimonialsSemi = [
   {
     key: 3,

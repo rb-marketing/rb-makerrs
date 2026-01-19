@@ -19,19 +19,16 @@ const INIT_MODAL = {
   title: null,
 }
 
-// Utility to detect user country
-// const getUserCountry = async () => {
-//   try {
-//     const res = await fetch('https://ipapi.co/json/');
-//     const data = await res.json();
-//     return data.country_code; // 'IN' for India
-//   } catch (err) {
-//     console.error('Failed to fetch geo info:', err);
-//     return null;
-//   }
-// };
+const getCountryFromCookie = () => {
+  if (typeof document === 'undefined') return null;
 
-export default function WorkPage({ country, selectedvalue = 'featured' }) {
+  const match = document.cookie.match(/user-country=([^;]+)/);
+  return match ? match[1] : null;
+};
+
+
+
+export default function WorkPage({ selectedvalue = 'featured' }) {
   const router = useRouter()
   const _posts = workPosts
 
@@ -515,22 +512,14 @@ export default function WorkPage({ country, selectedvalue = 'featured' }) {
   const [visiblePosts, setVisiblePosts] = useState(6)
   const scrollRef = React.useRef(null)
   const [modal, setModal] = useState(INIT_MODAL)
-  // const [country, setCountry] = useState(null);
-  // const [loading, setLoading] = useState(true);
+  const [country, setCountry] = useState(null);
 
-    const isIndia = country === 'IN';
-    console.log('isIndia', isIndia, country);
+  useEffect(() => {
+    const detectedCountry = getCountryFromCookie();
+    setCountry(detectedCountry);
+  }, []);
 
-  // Detect user country on mount
-  // useEffect(() => {
-  //   const detectCountry = async () => {
-  //     const userCountry = await getUserCountry();
-  //     setCountry(userCountry);
-  //     setLoading(false);
-  //     console.log('userCountry', userCountry)
-  //   };
-  //   detectCountry();
-  // }, []);
+
 
   useEffect(() => {
     const storedVisible = sessionStorage.getItem('work-visiblePosts')
@@ -663,30 +652,30 @@ export default function WorkPage({ country, selectedvalue = 'featured' }) {
   }
 
 
-  const filteredPosts = _posts
-    .filter(post => selectedTag && post.tabs?.map(tab => tab.toLowerCase()).includes(selectedTag.toLowerCase()))
-    .slice(0, visiblePosts)
-
-
   // const filteredPosts = _posts
-  // .filter(post => {
-  //   //🌍 Region filter
-  //   if (post.region?.length && country && post.region.includes(country)) {
-  //     return false;
-  //   }
+  //   .filter(post => selectedTag && post.tabs?.map(tab => tab.toLowerCase()).includes(selectedTag.toLowerCase()))
+  //   .slice(0, visiblePosts)
 
-  //   // 🏷 Tag filter
-  //   if (selectedTag) {
-  //     return post.tabs?.map(
-  //       t => t?.toLowerCase().includes(selectedTag.toLowerCase())
-  //     );
-  //   }
+  const filteredPosts = _posts
+    .filter(post => {
+      // 1️⃣ Region filter
+      if (post.region?.length && country && !post.region.includes(country)) {
+        return false;
+      }
 
-  //   // No tag selected → show post
-  //   // return true;
-  // })
-  // .slice(0, visiblePosts);
+      // 2️⃣ Tag filter
+      if (selectedTag) {
+        return post.tabs?.some(
+          tab =>
+            typeof tab === 'string' &&
+            tab.toLowerCase() === selectedTag.toLowerCase()
+        );
+      }
 
+      // 3️⃣ No tag selected → show post
+      return true;
+    })
+    .slice(0, visiblePosts);
 
 
   // Derived metadata for SEO
@@ -800,21 +789,81 @@ export default function WorkPage({ country, selectedvalue = 'featured' }) {
 
 
 
-{/* See More / See Less */ }
-{
-  filteredPosts.length > 0 && (
-    <div className="text-center">
-      {(() => {
-        const total = _posts.filter(post => post.tabs?.map(t => t.toLowerCase()).includes(selectedTag.toLowerCase())).length
-        if (total > 6 && visiblePosts < total)
-          return <Button className="w-fit mx-auto mt-[30px] md:mt-15" onClick={handleSeeMore} suffix={<LineArrow />}>SEE MORE</Button>
-        if (total > 6 && visiblePosts >= total)
-          return <Button className="w-fit mx-auto mt-[30px] md:mt-15" onClick={handleSeeLess} suffix={<LineArrow />}>SEE LESS</Button>
-        return null
-      })()}
-    </div>
-  )
-}
+        {/* See More / See Less */}
+        {
+          filteredPosts.length > 0 && (
+            <div className="text-center">
+              {(() => {
+                // If no tag selected → total is filteredPosts length
+                if (!selectedTag) {
+                  const total = filteredPosts.length;
+
+                  if (total > 6 && visiblePosts < total) {
+                    return (
+                      <Button
+                        className="w-fit mx-auto mt-[30px] md:mt-15"
+                        onClick={handleSeeMore}
+                        suffix={<LineArrow />}
+                      >
+                        SEE MORE
+                      </Button>
+                    );
+                  }
+
+                  if (total > 6 && visiblePosts >= total) {
+                    return (
+                      <Button
+                        className="w-fit mx-auto mt-[30px] md:mt-15"
+                        onClick={handleSeeLess}
+                        suffix={<LineArrow />}
+                      >
+                        SEE LESS
+                      </Button>
+                    );
+                  }
+
+                  return null;
+                }
+
+                // Tag selected → count safely
+                const total = _posts.filter(post =>
+                  post.tabs?.some(
+                    tab =>
+                      typeof tab === 'string' &&
+                      tab.toLowerCase() === selectedTag.toLowerCase()
+                  )
+                ).length;
+
+                if (total > 6 && visiblePosts < total) {
+                  return (
+                    <Button
+                      className="w-fit mx-auto mt-[30px] md:mt-15"
+                      onClick={handleSeeMore}
+                      suffix={<LineArrow />}
+                    >
+                      SEE MORE
+                    </Button>
+                  );
+                }
+
+                if (total > 6 && visiblePosts >= total) {
+                  return (
+                    <Button
+                      className="w-fit mx-auto mt-[30px] md:mt-15"
+                      onClick={handleSeeLess}
+                      suffix={<LineArrow />}
+                    >
+                      SEE LESS
+                    </Button>
+                  );
+                }
+
+                return null;
+              })()}
+            </div>
+          )
+        }
+
       </div >
 
       <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
@@ -826,23 +875,4 @@ export default function WorkPage({ country, selectedvalue = 'featured' }) {
       ></script>
     </>
   )
-}
-
-
-export async function getServerSideProps({ req }) {
-  console.log('getServerSideProps executed');
-  let country =
-    req.headers['cloudfront-viewer-country'] ||
-    req.headers['CloudFront-Viewer-Country'] ||
-    null;
-
-    if (process.env.NODE_ENV === 'development') {
-    country = 'IN'; // dev convenience
-  }
-
-  return {
-    props: {
-      country,
-    },
-  };
 }

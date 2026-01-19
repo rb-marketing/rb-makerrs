@@ -1,4 +1,3 @@
-
 import styles from '@/styles/services.module.scss'
 import {
   LineHeading,
@@ -8,7 +7,7 @@ import {
   ExploreMoreSection,
   ServiceCardSection,
   VideoMetaModal,
-  PlayCard
+  PlayCard,
 } from '@/components/shared'
 import { VideoModal } from '@/components/shared'
 import { LineArrow } from '@/components/icons'
@@ -28,17 +27,14 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import { useRef, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import {
-  serviceVideos,
-  videosCards
-} from '@/content/services'
+import { serviceVideos, videosCards } from '@/content/services'
 import statsStyles from '@/styles/sections/StatsSection.module.scss'
 
 const INIT_MODAL = {
   open: false,
   video: null,
   loading: false,
-  title: null
+  title: null,
 }
 
 const VideosServices = ({ setisPopupOpen }) => {
@@ -49,6 +45,27 @@ const VideosServices = ({ setisPopupOpen }) => {
   const router = useRouter()
   const [modal, setModal] = useState(INIT_MODAL)
   const [stopVisible, setstopVisible] = useState(false)
+
+  const [isSticky, setSticky] = useState(false)
+  const [isOverlapping, setIsOverlapping] = useState(false)
+  const stickyButtonRef = useRef(null)
+  // Observe the hero section and toggle sticky CTA when it scrolls out
+  useEffect(() => {
+    const hero = document.getElementById('service-hero')
+    if (!hero) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        // when hero is NOT intersecting (scrolled past), set sticky true
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0, rootMargin: '-80px 0px 0px 0px' }
+    )
+
+    observer.observe(hero)
+    return () => observer.disconnect()
+  }, [])
 
   const onModalOpen = (e) => {
     setHerovideoOpen(true)
@@ -67,71 +84,72 @@ const VideosServices = ({ setisPopupOpen }) => {
   }
 
   const stats = [
-  {
-    id: 0,
-    countUpProps: {
-      value: 60,
-      suffix: <span className="text-rb-red">+</span>,
-    },
-    text: (
-      <span className="md:max-w-[188px]">
-        global <br />
-        clients
-      </span>
-    ),
-  },
-  {
-    id: 1,
-    countUpProps: {
-      value: 3,
-      suffix: (
-        <div className="inline-flex">
-          K <span className="text-rb-red">+</span>
-        </div>
+    {
+      id: 0,
+      countUpProps: {
+        value: 60,
+        suffix: <span className="text-rb-red">+</span>,
+      },
+      text: (
+        <span className="md:max-w-[188px]">
+          global <br />
+          clients
+        </span>
       ),
     },
-    text: (
-      <>
-      videos <br/>produced
-      </>
-    ),
-  },
-  {
-    id: 2,
-    countUpProps: {
-      value: 1,
-      suffix: (
-        <div className="inline-flex">
-          K <span className="text-rb-red">+</span>
-        </div>
+    {
+      id: 1,
+      countUpProps: {
+        value: 3,
+        suffix: (
+          <div className="inline-flex">
+            K <span className="text-rb-red">+</span>
+          </div>
+        ),
+      },
+      text: (
+        <>
+          videos <br />
+          produced
+        </>
       ),
     },
-    text:
-      <>
-       global <br />
-       filmmakers
-      </>,
-  },
-  {
-    id: 3,
-    countUpProps: {
-      value: 600,
-      suffix: <span className="text-rb-red">+</span>,
+    {
+      id: 2,
+      countUpProps: {
+        value: 1,
+        suffix: (
+          <div className="inline-flex">
+            K <span className="text-rb-red">+</span>
+          </div>
+        ),
+      },
+      text: (
+        <>
+          global <br />
+          filmmakers
+        </>
+      ),
     },
-    text: (
-      <>
-        international <br />
-        shoots
-      </>
-    ),
-  },
+    {
+      id: 3,
+      countUpProps: {
+        value: 600,
+        suffix: <span className="text-rb-red">+</span>,
+      },
+      text: (
+        <>
+          international <br />
+          shoots
+        </>
+      ),
+    },
   ]
 
   const TNC = [
     {
       key: 0,
-      title:
-        'What types of videos do you create?',
+      title: 'What types of videos do you create?',
       content:
         'We offer a wide range of video content services for brand growth. Whether it is commercial videos, social media videos, case study videos, thought leadership videos, product explainer videos, recruitment videos, documentary films of other formats – we create content that connects with your audiences.',
     },
@@ -155,14 +173,15 @@ const VideosServices = ({ setisPopupOpen }) => {
     },
     {
       key: 4,
-      title:
-        'Do you create branded content?',
-      content: 'Yes, we can strategise and create branded content IPs. This could be specific to one platform or adaptable across platforms. From a limited video series to an ongoing branded IP - we strategise, plan, conceptualise, produce and help amplify branded video content.'
+      title: 'Do you create branded content?',
+      content:
+        'Yes, we can strategise and create branded content IPs. This could be specific to one platform or adaptable across platforms. From a limited video series to an ongoing branded IP - we strategise, plan, conceptualise, produce and help amplify branded video content.',
     },
     {
       key: 5,
       title: 'Do you create illustrated and animated content?',
-      content: 'Our in-house illustrators, designers and animators collaborate closely with each other – and, sometimes also with specialised collaborators – to craft stunning illustrated and animated videos for your brand.'
+      content:
+        'Our in-house illustrators, designers and animators collaborate closely with each other – and, sometimes also with specialised collaborators – to craft stunning illustrated and animated videos for your brand.',
     },
     {
       key: 6,
@@ -175,35 +194,81 @@ const VideosServices = ({ setisPopupOpen }) => {
       title: 'What is your video production process? ',
       content: (
         <>
-         <p>Over the years, we’ve crafted and shaped thousands of videos. We have a tried-and-tested process that enables our clients to grow their brands and us to keep delivering on-point and on-time. Here’s a look at our cloud-based workflow for on-demand video services. (Note: our process for strategic, long-term video engagements are slightly different to this.)</p>
-         <h3 className="mt-4 font-semibold">1. Project Briefing</h3>
-         <p>We start by understanding your business objectives, target audience, and key messages. Our Client Servicing team collaborates closely with you to outline project goals, ensuring a clear and actionable direction from the start.</p>
+          <p>
+            Over the years, we’ve crafted and shaped thousands of videos. We
+            have a tried-and-tested process that enables our clients to grow
+            their brands and us to keep delivering on-point and on-time. Here’s
+            a look at our cloud-based workflow for on-demand video services.
+            (Note: our process for strategic, long-term video engagements are
+            slightly different to this.)
+          </p>
+          <h3 className="mt-4 font-semibold">1. Project Briefing</h3>
+          <p>
+            We start by understanding your business objectives, target audience,
+            and key messages. Our Client Servicing team collaborates closely
+            with you to outline project goals, ensuring a clear and actionable
+            direction from the start.
+          </p>
 
-                  <h3 className="mt-4 font-semibold">1. Project Briefing</h3>
-         <p>We start by understanding your business objectives, target audience, and key messages. Our Client Servicing team collaborates closely with you to outline project goals, ensuring a clear and actionable direction from the start.</p>
+          <h3 className="mt-4 font-semibold">1. Project Briefing</h3>
+          <p>
+            We start by understanding your business objectives, target audience,
+            and key messages. Our Client Servicing team collaborates closely
+            with you to outline project goals, ensuring a clear and actionable
+            direction from the start.
+          </p>
 
+          <h3 className="mt-4 font-semibold">2. Research & Insights</h3>
+          <p>
+            Before diving into the creative process, we do our own research and
+            understand the brief as well as the context. This ensures that our
+            solutions align with your business goals and resonate with your
+            target audience.
+          </p>
 
-         <h3 className="mt-4 font-semibold">2. Research & Insights</h3>
-         <p>Before diving into the creative process, we do our own research and understand the brief as well as the context. This ensures that our solutions align with your business goals and resonate with your target audience.</p>
+          <h3 className="mt-4 font-semibold">3. Concepts & Estimates</h3>
+          <p>
+            We develop and present a couple of creative concepts and estimate
+            options for your brief, to help you choose the most suitable way
+            forward.
+          </p>
 
+          <h3 className="mt-4 font-semibold">4. Copy & Design</h3>
+          <p>
+            Our creative team works on copy and design to bring our unique
+            concept to life. For videos, this includes scripting, visualisation,
+            graphic design, music research, mood boards, location scouting,
+            curated crews, styling and more.
+          </p>
 
-         <h3 className="mt-4 font-semibold">3. Concepts & Estimates</h3>
-         <p>We develop and present a couple of creative concepts and estimate options for your brief, to help you choose the most suitable way forward.</p>
+          <h3 className="mt-4 font-semibold">5. Execution / Production</h3>
+          <p>
+            From one-camera testimonial videos at an office to a series of
+            videos produced across 5 countries - we support videos across
+            formats, locations and at any scales. For projects that don’t
+            require a live shoot, we go from design to post production, and
+            deliver the initial draft. We then refine the draft video based on
+            your feedback, delivering a final product that aligns perfectly with
+            the business intent and brand aesthetics.
+          </p>
 
+          <h3 className="mt-4 font-semibold">
+            6. Video Post-Production & Versioning
+          </h3>
+          <p>
+            We manage the entire post production process — from editing,
+            animation, sound design to audio mixing and mastering and colour
+            grading – ensuring quality consistency across all creative assets.
+            We also handle video versioning supporting custom adaptations
+            requirements so that your content is tailored to engage your
+            audience across mediums.
+          </p>
 
-         <h3 className="mt-4 font-semibold">4. Copy & Design</h3>
-         <p>Our creative team works on copy and design to bring our unique concept to life. For videos, this includes scripting, visualisation, graphic design, music research, mood boards, location scouting, curated crews, styling and more.</p>
-
-         <h3 className="mt-4 font-semibold">5.  Execution / Production</h3>
-         <p>From one-camera testimonial videos at an office to a series of videos produced across 5 countries - we support videos across formats, locations and at any scales. For projects that don’t require a live shoot, we go from design to post production, and deliver the initial draft. We then refine the draft video based on your feedback, delivering a final product that aligns perfectly with the business intent and brand aesthetics.</p>
-
-         <h3 className="mt-4 font-semibold">6.  Video Post-Production & Versioning</h3>
-         <p>We manage the entire post production process — from editing, animation, sound design to audio mixing and mastering and colour grading – ensuring quality consistency across all creative assets.
-We also handle video versioning supporting custom adaptations requirements so that your content is tailored to engage your audience across mediums.</p>
-
-         <h3 className="mt-4 font-semibold">7.  Asset Delivery</h3>
-         <p>All final creative assets are uploaded to our technology platform, ensuring easy access, downloads and repurposing for your brand.</p>
-
+          <h3 className="mt-4 font-semibold">7. Asset Delivery</h3>
+          <p>
+            All final creative assets are uploaded to our technology platform,
+            ensuring easy access, downloads and repurposing for your brand.
+          </p>
         </>
       ),
     },
@@ -211,8 +276,9 @@ We also handle video versioning supporting custom adaptations requirements so th
       key: 8,
       title:
         'How do you ensure that the videos you create are right for my brand and audience?',
-      content: 'We begin our engagement with you by understanding your product/service, brand and audience. Our work begins here. And everything we do for you is influenced by our knowledge of creative innovations happening around us, and industry and audience trends.',
-    }
+      content:
+        'We begin our engagement with you by understanding your product/service, brand and audience. Our work begins here. And everything we do for you is influenced by our knowledge of creative innovations happening around us, and industry and audience trends.',
+    },
   ]
 
   const testimonialData = [
@@ -224,8 +290,7 @@ We also handle video versioning supporting custom adaptations requirements so th
       designation: 'FOUNDER',
       company: 'DARUIESTE ARIPI',
       image: {
-        srcSet:
-          `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+        srcSet: `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -237,8 +302,7 @@ We also handle video versioning supporting custom adaptations requirements so th
       designation: 'VICE-PRESIDENT MARKETING',
       company: 'VYMO',
       image: {
-        srcSet:
-          `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
+        srcSet: `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -250,8 +314,7 @@ We also handle video versioning supporting custom adaptations requirements so th
       designation: 'VP INTERNAL COMMUNICATIONS',
       company: 'FORTUNE 100 ITES ENTERPRISE',
       image: {
-        srcSet:
-          `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
+        srcSet: `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -263,11 +326,10 @@ We also handle video versioning supporting custom adaptations requirements so th
       designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
       company: 'CAPILLARY TECHNOLOGIES',
       image: {
-        srcSet:
-          `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+        srcSet: `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
-    }
+    },
   ]
 
   const explorecards = [
@@ -830,7 +892,7 @@ We also handle video versioning supporting custom adaptations requirements so th
       others: 'Mostly English only',
       redBangle: 'Any language Adapt',
     },
-     {
+    {
       icon: '/img/services/videos/grid-icon12.svg',
       need: 'Project Management',
       others: 'Emails, spreadsheets',
@@ -869,22 +931,22 @@ We also handle video versioning supporting custom adaptations requirements so th
     }
   }, [])
 
-    useEffect(() => {
+  useEffect(() => {
     if (!stopVisible) {
       const handleScroll = () => {
-        const section = document.getElementById('leap-explore'); // Replace 'section-id' with the ID of your section
+        const section = document.getElementById('leap-explore') // Replace 'section-id' with the ID of your section
         if (section && window.scrollY > section.offsetTop) {
-          setisPopupOpen(true);
+          setisPopupOpen(true)
           setstopVisible(true)
         }
-      };
+      }
 
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll)
       return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
+        window.removeEventListener('scroll', handleScroll)
+      }
     }
-  }, [stopVisible]);
+  }, [stopVisible])
 
   return (
     <>
@@ -894,25 +956,56 @@ We also handle video versioning supporting custom adaptations requirements so th
         keywords="Content creation, Video production services, Digital content creation, Corporate video production agency, Agency content creation, Animated video production, Corporate promotional video production, Social media video creation, Branded content creation, Branded content production company, Marketing video production, Influencer marketing services"
         url="https://www.staging.makerrs.com/video-production"
       />
+      <div id="service-hero">
+        <ServiceHeroSection
+          className=""
+          type="GET VIDEO"
+          video={serviceVideos.get_videos.video}
+          fullVideo={serviceVideos.get_videos.fullVideo}
+          ctaText="Video with us"
+          ctaLink="/contact"
+          textColor="#000000"
+          content={
+            <>
+              <h1 className="inline">
+                Be it your next big product launch video or YouTube channel
+                growth, be it on-demand video production or a branded video
+                series - we strategise, script and produce videos across
+                formats, genres and locations. On-brand and on-time, <br />
+                every time.
+              </h1>
+            </>
+          }
+        />
+        <div
+          ref={stickyButtonRef}
+          className={`hidden fixed top-20 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+            isSticky ? 'lg:block' : ''
+          } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+        >
+          <Button
+            onClick={() => {
+              setTimeout(() => {
+                router.push(
+                  {
+                    pathname: '/contact',
+                  },
+                  undefined,
+                  { shallow: true }
+                )
+              }, 100)
+            }}
+            className="w-full"
+            suffix={<LineArrow hover />}
+          >
+            Video with us
+          </Button>
+        </div>
+      </div>
 
-
-      <ServiceHeroSection
-        className=""
-        type="GET VIDEO"
-        video={serviceVideos.get_videos.video}
-        fullVideo={serviceVideos.get_videos.fullVideo}
-        ctaText="Video with us"
-        ctaLink="/contact"
-        textColor='#000000'
-        content={
-          <>
-            <h1 className="inline">Be it your next big product launch video or YouTube channel growth, be it on-demand video production or a branded video series - we strategise, script and produce videos across formats, genres and locations. On-brand and on-time, <br />every time.</h1>
-          </>
-        }
-      />
-
-
-     <section className={`bg-white overflow-hidden pb-7.5 md:pb-15 pt-15 md:pt-30 `}> 
+      <section
+        className={`bg-white overflow-hidden pb-7.5 md:pb-15 pt-15 md:pt-30 `}
+      >
         <div className="container">
           <LineHeading className="mb-6 md:mb-7.5">Why Makerrs</LineHeading>
           <div className="grid lg:flex grid-cols-2 gap-x-5 md:gap-x-[124px] gap-y-12 md:gap-y-6 max-w-full md:max-w-none ml-5 transform -translate-x-5 sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-12">
@@ -921,11 +1014,15 @@ We also handle video versioning supporting custom adaptations requirements so th
                 className={`w-full lg:w-1/4 text-[42px] leading-14 tracking-[-1.44px] md:text-stat group relative ${statsStyles.statline}`}
                 key={s.id}
               >
-                <div className={`${i == 2 && 'lg:ml-[20%]'} ${s.id === 3 ? 'ipad-mini-ml':''}`}>
-                  <div className='lg:w-fit lg:mx-auto'>
-                    <div className={`${s.id === 1 ? '!-ml-[4px] md:!-ml-[8px]':''} ${s.id === 0 ? '!-ml-[4px] md:!-ml-[7px]':''} ${s.id === 2 ? '!-ml-[2px] md:!-ml-[3px]':''} ${s.id === 3 ? '!-ml-[3px] md:!-ml-[5px]':''}`}>
-                        <RollupNumber {...s.countUpProps} />
-                      </div>
+                <div
+                  className={`${i == 2 && 'lg:ml-[20%]'} ${s.id === 3 ? 'ipad-mini-ml' : ''}`}
+                >
+                  <div className="lg:w-fit lg:mx-auto">
+                    <div
+                      className={`${s.id === 1 ? '!-ml-[4px] md:!-ml-[8px]' : ''} ${s.id === 0 ? '!-ml-[4px] md:!-ml-[7px]' : ''} ${s.id === 2 ? '!-ml-[2px] md:!-ml-[3px]' : ''} ${s.id === 3 ? '!-ml-[3px] md:!-ml-[5px]' : ''}`}
+                    >
+                      <RollupNumber {...s.countUpProps} />
+                    </div>
                     <div className="text-sm leading-[17px] md:text-2xl md:leading-7 tracking-normal md:tracking-[-0.96px] text-rb-black mt-0 md:mt-3 font-medium font-everett">
                       {s.text}
                     </div>
@@ -935,9 +1032,9 @@ We also handle video versioning supporting custom adaptations requirements so th
             ))}
           </div>
         </div>
-    </section>
+      </section>
 
-    <ServiceCardSection
+      <ServiceCardSection
         tag="How we work"
         title={
           <div className="md:max-w-[620px]">
@@ -1053,11 +1150,16 @@ We also handle video versioning supporting custom adaptations requirements so th
                 Video production across 100+ Countries
               </h2>
               <p>
-                From London to Tokyo, from San Francisco to Bangalore - we offer end to end video production services across locations. Just send us a brief, and we&apos;ll take care of the concepts, scripts, design, production, post production and more. On time, every time. No matter how many videos.
+                From London to Tokyo, from San Francisco to Bangalore - we offer
+                end to end video production services across locations. Just send
+                us a brief, and we&apos;ll take care of the concepts, scripts,
+                design, production, post production and more. On time, every
+                time. No matter how many videos.
               </p>
               <div className="md:mt-10 mt-6">
                 <Button
-                  onClick={handleClick}
+                  // onClick={handleClick}
+                  href="/contact"
                   className="font-bold  w-full md:w-auto !inline-flex"
                   suffix={<LineArrow hover />}
                 >
@@ -1087,7 +1189,7 @@ We also handle video versioning supporting custom adaptations requirements so th
 
       <TrustedBrandsSection className="bg-white py-7.5 md:py-15" />
 
-      <div id="leap-explore" className='md:py-12'>
+      <div id="leap-explore" className="py-6 md:py-12">
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"
@@ -1156,7 +1258,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      works
+      works,
     },
   }
 }
