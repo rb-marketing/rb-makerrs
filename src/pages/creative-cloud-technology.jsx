@@ -352,7 +352,7 @@ export const TechnologyPlatform = () => {
       </div>
 
       <RedbangleWaySection
-        sectionBG="!pb-[40px] !pt-15 md:!py-15"
+        sectionBG="!pb-[40px] !pt-30 md:!py-15"
         title={
           <div className="md:max-w-[720px]">
            We run on a Creative Cloud Platform
@@ -367,7 +367,7 @@ export const TechnologyPlatform = () => {
         heading="Our patent-pending technology"
       />
       
-      <Scrollspy centered secStyles = "md:!pb-15 md:!pt-15">
+      <Scrollspy centered secStyles = "pt-15 md:!pb-15 md:!pt-15">
         {services.map((s, si) => (
           <section
             key={s.key}
@@ -412,7 +412,7 @@ export const TechnologyPlatform = () => {
         ))}
       </Scrollspy>
 
-      <section className={`overflow-hidden bg-white !pt-[32px] !pb-15 md:!pb-15 md:!pt-30 `}>
+      <section className={`overflow-hidden bg-white !pt-20 !pb-20 md:!pb-15 md:!pt-30 `}>
         <div className="container text-center">
           <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
             Our Platform vs Other Workflow <br className='hidden md:block'/>Management Platforms

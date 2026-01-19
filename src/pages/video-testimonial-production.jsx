@@ -1697,7 +1697,7 @@ const CaseStudyVideoProduction = () => {
         </div>
       </section>
 
-      <section className="bg-white pb-12 md:pb-20">
+      <section className="bg-white pb-0 md:pb-20">
         <div className="container">
           <LineHeading className="mb-7 md:mb-10">
             Trusted by Global Brands
@@ -1786,7 +1786,7 @@ const CaseStudyVideoProduction = () => {
       </section>
 
       <Testimonials
-        className="py-18 md:py-30 !mt-0"
+        className="pb-18 pt-8 md:py-30 !mt-0"
         testimonialData={testimonialsDefault}
         type="semi"
         title="Why Our Clients Trust Us"

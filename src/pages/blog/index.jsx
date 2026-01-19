@@ -127,7 +127,7 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
         keywords="Creative marketing, Knowledge sharing, Innovative technology, Content Strategies, B2B Growth, Content Blog"
         url={category !== undefined ? `https://www.staging.makerrs.com/blog?category=${category}`:`https://www.staging.makerrs.com/blog`}
       />
-      <section className="py-23">
+      <section className="py-23 md:py-23">
         <div className="container">
           <h1 className="font-everett text-[32px] md:text-[64px] xl:text-[120px] font-normal mb-8 md:mb-18 leading-[100%]">
             Read Our Blog
@@ -193,13 +193,13 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="pb-24 pt-0 md:pt-10 md:pb-24">
         <div className="container">
           <LineHeading className="mb-6 md:mb-9">Explore more</LineHeading>
          
           <div className='blogs-dd'>
             <Dropdown
-              placeholder={selectedCategory && selectedCategory !== 'all-blogs' ? selectedCategory : 'ALL BLOGS'}
+              placeholder={selectedCategory || 'all'}
               options={categoryOptions}
               onChange={handleCategoryChange} // Handle the value change
             />

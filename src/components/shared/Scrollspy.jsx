@@ -69,7 +69,7 @@ export const Scrollspy = ({ children, centered = false, secStyles = '' }) => {
                   <Link
                     key={`${props['data-spy-id']}`}
                     href={`#${props['data-spy-id']}`}
-                    className={`${styles.link} !mr-[9px]  !text-[12px] md:!text-[32px] md:!mx-[1.5rem]`}
+                    className={`${styles.link} !mr-[9px]  !text-[16px] md:!text-[32px] md:!mx-[1.5rem]`}
                     data-active={props['data-spy-id'] === activeSection}
                     onClick={linkClickHandler}
                   >

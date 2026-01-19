@@ -66,7 +66,7 @@ const outsideLinks = [
       },
       {
         title: 'Recruitment Video',
-        href: '/recruitment-video-production-services',
+        href: '/recruitment-video-production',
         type: 'videos',
       },
       { title: 'GenAI Video', href: '/ai-video-agency', type: 'videos' },
@@ -84,7 +84,7 @@ const outsideLinks2 = [
     title: 'ABOUT',
     menu: [
       { title: 'About Us', href: '/about-us' },
-      { title: 'Our Technology', href: '/creative-cloud-platform' },
+      { title: 'Our Technology', href: '/creative-cloud-technology' },
       { title: 'Our Impact', href: '/impact' },
     ],
   },
