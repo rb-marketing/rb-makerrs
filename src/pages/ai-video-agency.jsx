@@ -77,6 +77,175 @@ const AIvideoAgency = () => {
     }
   }, [])
 
+     const icons = [
+    {
+      id: 0,
+      name: 'cain.webp',
+      width: '100px',
+      height: '34px',
+      alt: 'Mccain',
+    },
+    {
+      id: 1,
+      name: 'infosys-logo.jpg',
+      width: '90',
+      height: '30',
+      alt: 'Infosys',
+    },
+    {
+      id: 2,
+      name: 'indeed.webp',
+      width: '132',
+      height: '36',
+      alt: 'Indeed',
+      className: '',
+    },
+    {
+      id: 3,
+      name: 'pudingding.png',
+      width: '100',
+      height: '30',
+      alt: 'pudingding',
+      className: '',
+    },
+    {
+      id: 4,
+      name: 'taneria.png',
+      width: '132',
+      height: '36',
+      alt: 'taneria',
+      className: '',
+    },
+    {
+      id: 5,
+      name: 'general-electric.png',
+      width: '200',
+      height: '150',
+      alt: 'general-electric',
+    },
+    {
+      id: 6,
+      name: 'darwinbox.webp',
+      width: '132',
+      height: '36',
+      alt: 'darwinbox',
+      className: '',
+    },
+    {
+      id: 7,
+      name: 'itc.png',
+      width: '60px',
+      // height: '30px',
+      alt: 'itc',
+    },
+    {
+      id: 8,
+      name: 'wipro.svg',
+      width: '83',
+      height: '66',
+      alt: 'Wipro',
+    },
+    {
+      id: 9,
+      name: 'mumbai-indians.png',
+      width: '100px',
+      // height: '40px',
+      alt: 'mumbai-indians',
+    },
+    {
+      id: 10,
+      name: 'sequoia.png',
+      width: '167',
+      height: '52',
+      alt: 'sequoia',
+    },
+    {
+      id: 11,
+      name: 'swiggy.svg',
+      width: '157',
+      height: '39',
+      alt: 'swiggy',
+    },
+    {
+      id: 12,
+      name: 'Tanishq.png',
+      width: '80',
+      height: '67',
+      alt: 'Tanishq',
+    },
+    {
+      id: 13,
+      name: 'bosch.webp',
+      width: '151',
+      height: '33',
+      alt: 'bosch',
+    },
+    {
+      id: 14,
+      name: 'slb.webp',
+      width: '113',
+      height: '52',
+      alt: 'slb',
+    },
+    {
+      id: 15,
+      name: 'dara.png',
+      width: '200',
+      height: '150',
+      alt: 'dara',
+    },
+    {
+      id: 16,
+      name: 'vymo-logo.webp',
+      width: '127',
+      height: '52',
+      alt: 'vymo-logo',
+    },
+    {
+      id: 17,
+      name: 'exicom.png',
+      width: '163',
+      height: '44',
+      alt: 'exicom',
+    },
+    {
+      id: 18,
+      name: 'treebo.png',
+      width: '163',
+      height: '44',
+      alt: 'treebo',
+    },
+    {
+      id: 19,
+      name: 'virtusa.png',
+      width: '120',
+      height: '44',
+      alt: 'virtusa',
+    },
+    {
+      id: 20,
+      name: 'bagmane.png',
+      width: '140',
+      height: '44',
+      alt: 'bagmane',
+    },
+    {
+      id: 21,
+      name: 'komatsu.png',
+      width: '140',
+      height: '44',
+      alt: 'komatsu',
+    },
+    {
+      id: 22,
+      name: 'aarki.png',
+      width: '140',
+      height: '44',
+      alt: 'aarki',
+    },
+  ]
+
+
   const stats = [
     {
       id: 0,
@@ -148,7 +317,7 @@ const AIvideoAgency = () => {
       imgurl: '/motion_graphics_new.svg',
       alt: 'motion_graphics',
       title: 'AI Videos At Scale',
-      desc: 'From AI-powered explainer videos to thought leadership videos crafted using Gen AI - our creative cloud workflows help you scale Gen AI video asset creation seamlessly across your marketing funnel.',
+      desc: 'From AI-powered explainer videos to thought leadership videos crafted using Gen AI – our creative cloud workflows help you scale Gen AI video asset creation seamlessly across your marketing funnel.',
     },
     {
       key: 5,
@@ -234,49 +403,6 @@ const AIvideoAgency = () => {
       key: 6,
       title: 'On-time Delivery, Everytime',
       desc: 'You’ll never have to follow up or miss a deadline. We’ve got cloud-based workflows and proactive teams.',
-    },
-  ]
-
-  const testimonialsDefault = [
-    {
-      key: 0,
-      quote: (
-        <>
-          Red Bangle brought a unique blend of clarity and creativity,
-          translating complex healthcare concepts into a simple brand identity
-          system that was &apos;full of heart&apos;. They also created a
-          cohesive website within incredibly tight deadlines. Their efficiency
-          was pivotal in successfully launching our brand.
-        </>
-      ),
-      name: 'Rinku Agarwal Basu',
-      designation: 'COO',
-      company: 'Lillia Care',
-      image: {
-        srcSet:
-          '/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w',
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
-    },
-    {
-      key: 1,
-      quote: (
-        <>
-          Red Bangle was especially impressive with their creative strategy,
-          design, and copy. They took the quirk and the energy of local markets
-          and their iconic signs and transformed them into a fresh, modern
-          expression for our brand. Our customers are drawn to the unique
-          identity, and it has translated into a love for the product itself.
-        </>
-      ),
-      name: 'KUNCHERIA MARATTUKALAM',
-      designation: 'FOUNDER & DIRECTOR',
-      company: 'Maratt Group',
-      image: {
-        srcSet:
-          '/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w',
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
     },
   ]
 
@@ -942,7 +1068,7 @@ const AIvideoAgency = () => {
     {
       key: 0,
       quote:
-        'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+        'We are delighted to team up with Makerrs. The video showcases the ability of the team at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of our audience.',
       name: 'ALINA PATRAHAU',
       designation: 'FOUNDER',
       company: 'DARUIESTE ARIPI',
@@ -954,7 +1080,7 @@ const AIvideoAgency = () => {
     {
       key: 1,
       quote:
-        'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
+        'Despite difficulties one might expect when shooting in 2 countries where various languages are spoken - we created these awesome videos.',
       name: 'MARC IRAWAN',
       designation: 'Founder',
       company: 'COLEARN',
@@ -978,7 +1104,7 @@ const AIvideoAgency = () => {
     {
       key: 3,
       quote:
-        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
 
       designation: 'VP INTERNAL COMMUNICATIONS',
       company: 'FORTUNE 100 ITES ENTERPRISE',
@@ -1521,7 +1647,46 @@ const AIvideoAgency = () => {
         </div>
       </section>
 
-      <TrustedBrandsSection className="bg-white pb-[48px] md:!pb-[80px]" />
+      <section className="bg-white pb-12 md:pb-20">
+        <div className="container">
+          <LineHeading className="mb-7 md:mb-10">
+            Trusted by Global Brands
+          </LineHeading>
+          <div className="overflow-hidden md:min-h-[188px]">
+            <Marquee duration={50}>
+              <div className="flex items-center">
+                {icons
+                  .slice(0, icons.length / 2)
+                  .map(({ name, id, ...rest }) => (
+                    <div key={id} className="mx-6 md:mx-12">
+                      <img
+                        src={`/img/logos/${name}`}
+                        loading="lazy"
+                        alt=""
+                        {...rest}
+                      />
+                    </div>
+                  ))}
+              </div>
+            </Marquee>
+            <div className="mt-0 md:mt-0"></div>
+            <Marquee duration={50} direction={-1}>
+              <div className="flex items-center">
+                {icons.slice(icons.length / 2).map(({ name, id, ...rest }) => (
+                  <div key={id} className="mx-6 md:mx-12">
+                    <img
+                      src={`/img/logos/${name}`}
+                      loading="lazy"
+                      alt=""
+                      {...rest}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Marquee>
+          </div>
+        </div>
+      </section>
 
       <section className="py-18 md:py-15 overflow-hidden">
         <div className="container">

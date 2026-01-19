@@ -44,7 +44,7 @@ const RecruitmentVideoProduction = () => {
     {
     key: 0,
     quote:
-      'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+      'We are delighted to team up with Makerrs. The video showcases the ability of the team at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of our audience.',
     name: 'ALINA PATRAHAU',
     designation: 'FOUNDER',
     company: 'DARUIESTE ARIPI',
@@ -57,7 +57,7 @@ const RecruitmentVideoProduction = () => {
   {
     key: 1,
     quote:
-      'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
+      'Despite difficulties one might expect when shooting in 2 countries where various languages are spoken - we created these awesome videos.',
     name: 'MARC IRAWAN',
     designation: 'Founder',
     company: 'COLEARN',
@@ -83,7 +83,7 @@ const RecruitmentVideoProduction = () => {
   {
     key: 3,
     quote:
-      'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+      'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
 
     designation: 'VP INTERNAL COMMUNICATIONS',
     company: 'FORTUNE 100 ITES ENTERPRISE',
@@ -189,7 +189,7 @@ const RecruitmentVideoProduction = () => {
           </div>
         ),
       },
-      text: <>videos created </>,
+      text: <>videos <br /> created </>,
     },
     {
       id: 1,
@@ -205,7 +205,7 @@ const RecruitmentVideoProduction = () => {
         value: 60,
         suffix: <span className="text-rb-red">+</span>,
       },
-      text: <>global clients </>,
+      text: <>global <br /> clients </>,
     },
     {
       id: 3,
@@ -1040,97 +1040,44 @@ const RecruitmentVideoProduction = () => {
     },
   ]
 
-  const testimonialsDefault = [
-    {
-      key: 0,
-      quote:
-        'We are delighted to team up with Red Bangle. The video showcases the ability of the team at Red Bangle to deliver a very compelling case for our innovative work, and to capture the hearts and minds of our audience.',
-      name: 'Alina Pătrăhău',
-      designation: 'Founder',
-      company: 'Dăruiește Aripi',
-      image: {
-        srcSet:
-          '/img/testimonials/alina-patrahau.jpg, /img/testimonials/alina-patrahau.jpg',
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
-    },
-    {
-      key: 1,
-      quote:
-        'Despite difficulties one might expect when shooting in 2 countries where various languages are spoken, we created these awesome videos.',
-      name: 'MARC IRAWAN',
-      designation: 'FOUNDER',
-      company: 'COLEARN',
-      image: {
-        srcSet:
-          '/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w',
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
-    },
-    {
-      key: 2,
-      quote:
-        'The Red Bangle team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
-      name: 'ROSHAN CARIAPPA',
-      designation: 'VICE-PRESIDENT MARKETING',
-      company: 'VYMO',
-      image: {
-        srcSet:
-          '/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w',
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
-    },
-    // {
-    //   key: 3,
-    //   quote:
-    //     'Because of Covid restrictions, our team was unable to travel to India for the event. But the team at Red Bangle supported us on the ground and even helped us manage our golfing ambassador. Thanks team!',
-    //   name: 'MATT WALKINGTON',
-    //   designation: 'ACCOUNT DIRECTOR',
-    //   company: 'BRIGHT PARTNERSHIPS',
-    //   image: {
-    //     srcSet:
-    //       '/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w',
-    //     sizes: '(max-width:768px) 533px, 1066px',
-    //   },
-    // },
-  ]
-
-  const icons = [
+   const icons = [
     {
       id: 0,
-      name: 'vymo-logo.webp',
-      width: '127',
-      height: '52',
-      alt: 'vymo-logo',
+      name: 'cain.webp',
+      width: '100px',
+      height: '34px',
+      alt: 'Mccain',
     },
     {
       id: 1,
       name: 'infosys-logo.jpg',
       width: '90',
       height: '30',
-      alt: 'infosys',
+      alt: 'Infosys',
     },
-
     {
       id: 2,
-      name: 'gupshup_logo.webp',
-      width: '163',
-      height: '44',
-      alt: 'gupshup_logo',
+      name: 'indeed.webp',
+      width: '132',
+      height: '36',
+      alt: 'Indeed',
+      className: '',
     },
     {
       id: 3,
-      name: 'biocon.jpg',
-      width: '145',
-      height: '55',
-      alt: 'biocon',
+      name: 'pudingding.png',
+      width: '100',
+      height: '30',
+      alt: 'pudingding',
+      className: '',
     },
     {
       id: 4,
-      name: 'allen-digital.png',
-      width: '155',
-      height: '43',
-      alt: 'allen-digital',
+      name: 'taneria.png',
+      width: '132',
+      height: '36',
+      alt: 'taneria',
+      className: '',
     },
     {
       id: 5,
@@ -1141,17 +1088,18 @@ const RecruitmentVideoProduction = () => {
     },
     {
       id: 6,
-      name: 'dara.png',
-      width: '200',
-      height: '150',
-      alt: 'dara',
+      name: 'darwinbox.webp',
+      width: '132',
+      height: '36',
+      alt: 'darwinbox',
+      className: '',
     },
     {
       id: 7,
-      name: 'tata-logo.svg',
-      width: '157',
-      height: '40',
-      alt: 'tata',
+      name: 'itc.png',
+      width: '60px',
+      // height: '30px',
+      alt: 'itc',
     },
     {
       id: 8,
@@ -1162,68 +1110,104 @@ const RecruitmentVideoProduction = () => {
     },
     {
       id: 9,
-      name: 'indeed.webp',
-      width: '110',
-      height: '30',
-      alt: 'indeed',
+      name: 'mumbai-indians.png',
+      width: '100px',
+      // height: '40px',
+      alt: 'mumbai-indians',
     },
     {
       id: 10,
-      name: 'toddle.webp',
-      width: '146',
-      height: '49',
-      alt: 'toddle',
+      name: 'sequoia.png',
+      width: '167',
+      height: '52',
+      alt: 'sequoia',
     },
     {
       id: 11,
-      name: 'slb.webp',
-      width: '113',
-      height: '52',
-      alt: 'slb',
+      name: 'swiggy.svg',
+      width: '157',
+      height: '39',
+      alt: 'swiggy',
     },
     {
       id: 12,
-      name: 'virtusa.png',
-      width: '120',
-      height: '34',
-      alt: 'virtusa',
+      name: 'Tanishq.png',
+      width: '80',
+      height: '67',
+      alt: 'Tanishq',
     },
     {
       id: 13,
-      name: 'emeritus.webp',
-      width: '157',
-      height: '50',
-      alt: 'emeritus',
-    },
-    {
-      id: 14,
-      name: 'infosis_equinox_logo.jpg',
-      width: '135',
-      height: '40',
-      alt: 'infosys_equinox',
-    },
-    {
-      id: 15,
       name: 'bosch.webp',
       width: '151',
       height: '33',
       alt: 'bosch',
     },
     {
+      id: 14,
+      name: 'slb.webp',
+      width: '113',
+      height: '52',
+      alt: 'slb',
+    },
+    {
+      id: 15,
+      name: 'dara.png',
+      width: '200',
+      height: '150',
+      alt: 'dara',
+    },
+    {
       id: 16,
-      name: 'lentra.webp',
-      width: '145',
-      height: '42',
-      alt: 'lentra',
+      name: 'vymo-logo.webp',
+      width: '127',
+      height: '52',
+      alt: 'vymo-logo',
     },
     {
       id: 17,
-      name: 'hexware.png',
-      width: '100',
-      height: '35',
-      alt: 'hexaware',
+      name: 'exicom.png',
+      width: '163',
+      height: '44',
+      alt: 'exicom',
+    },
+    {
+      id: 18,
+      name: 'treebo.png',
+      width: '163',
+      height: '44',
+      alt: 'treebo',
+    },
+    {
+      id: 19,
+      name: 'virtusa.png',
+      width: '120',
+      height: '44',
+      alt: 'virtusa',
+    },
+    {
+      id: 20,
+      name: 'bagmane.png',
+      width: '140',
+      height: '44',
+      alt: 'bagmane',
+    },
+    {
+      id: 21,
+      name: 'komatsu.png',
+      width: '140',
+      height: '44',
+      alt: 'komatsu',
+    },
+    {
+      id: 22,
+      name: 'aarki.png',
+      width: '140',
+      height: '44',
+      alt: 'aarki',
     },
   ]
+
   const handleRelatedVideoClick = (videolink) => {
     const clickedVideoData = workData.find(
       (item) => item.video.workDetails.videolink === videolink
@@ -1721,7 +1705,7 @@ const RecruitmentVideoProduction = () => {
       </section>
 
       <section className="overflow-hidden bg-white md:pt-4 pt-4 md:pb-0">
-        <Marquee duration={30}>
+        <Marquee duration={50}>
           {[
             {
               id: 0,
@@ -1831,7 +1815,7 @@ const RecruitmentVideoProduction = () => {
             Trusted by Global Brands
           </LineHeading>
           <div className="overflow-hidden md:min-h-[188px]">
-            <Marquee duration={25}>
+            <Marquee duration={50}>
               <div className="flex items-center">
                 {icons
                   .slice(0, icons.length / 2)
@@ -1848,7 +1832,7 @@ const RecruitmentVideoProduction = () => {
               </div>
             </Marquee>
             <div className="mt-0 md:mt-0"></div>
-            <Marquee duration={25} direction={-1}>
+            <Marquee duration={50} direction={-1}>
               <div className="flex items-center">
                 {icons.slice(icons.length / 2).map(({ name, id, ...rest }) => (
                   <div key={id} className="mx-6 md:mx-12">
