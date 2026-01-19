@@ -1544,7 +1544,7 @@ export const workPosts = [
   tabs: ['Featured'],
   case_study_title: 'my11circle-case-study',
   href: '/brand-campaign/my11circle-digital-ad-film',
-  region: []
+  region: ['IN'] // only visible for India
 },
 {
   key: 99,
@@ -1556,7 +1556,7 @@ export const workPosts = [
   image: '/img/works/metro-wholesale-one-minute.webp',
   case_study_title: 'metro-wholesale-one-minute',
   href: '/brand-campaign/metro-wholesale-one-more',
-  region: []
+  region: ['IN']
 },
   {
     key: 2,
@@ -1584,6 +1584,7 @@ export const workPosts = [
     tabs: ['Featured'],
     image: '/img/works/pdd_intergrated_work_thumbnail.jpg',
     case_study_title: 'pdd-integrated',
+    href: '/brand-campaign/pudingding-cafe-design-launch',
         region: []
 
   },
@@ -1596,7 +1597,8 @@ export const workPosts = [
     alt: 'Infosys',
     tags: ['Technology', 'Non-profit', 'CSR Video', 'Corporate Film'],
     tabs: ['Featured'],
-    case_study_title: 'infosys-street-child-documentary',
+    case_study_title: 'CSR-video-infosys-street-child',
+    href: '/video-production/CSR-video-infosys-street-child',
         region: []
 
   },
@@ -1608,8 +1610,8 @@ export const workPosts = [
     alt: 'slb',
     tabs: ['Featured'],
     tags: ['Engineering', 'Campaign', 'Explainer Video', 'Demo Video', 'Interactive Video'],
-    case_study_title: 'slb-interactive-explainer',
-    href: '/campaigns/slb-interactive-explainer',
+    case_study_title: 'interactive-explainer-SLB',
+    href: '/brand-campaign/interactive-explainer-SLB',
         region: []
 
 
@@ -1622,6 +1624,7 @@ export const workPosts = [
     tags: ['E-Mobility', 'Design', 'Brand Transformation', 'Visual Identity'],
     tabs: ['Featured'],
     case_study_title: 'exicom-EV-charger-rebrand',
+    href: '/brand-designs/exicom-EV-charger-rebrand',
         region: []
 
   },
@@ -1635,6 +1638,7 @@ export const workPosts = [
     tags: ['SaaS', 'Thought Leadership Video', 'Corporate Film', 'Interview Video'],
     tabs: ['Featured'],
     case_study_title: 'vymo-gordon-ritter-thought-leadership-video',
+    href: '/video-production/thought-leadership-vymo-gordon-ritter',
         region: []
 
   },
@@ -1648,6 +1652,7 @@ export const workPosts = [
     tabs: ['Featured'],
     tags: ['Automotive', 'XR Solution (AR/VR/MR)', 'Gamified Experience'],
     case_study_title: 'bajaj-pulsar-augmented-reality',
+    href: '/brand-design/bajaj-pulsar-augmented-reality',
         region: []
 
 
@@ -1662,7 +1667,7 @@ export const workPosts = [
     tabs: ['Featured'],
     tags: ['Technology', 'Interactive Experience', '3D Animation Video', 'Marketing Video'],
     case_study_title: 'infosys-topaz-3d-interactive-experience',
-    href: '/brand-experiences/infosys-topaz-3d-interactive-experience',
+    href: '/brand-design/3d-interactive-experience-infosys-topaz',
         region: []
 
 
@@ -1676,6 +1681,7 @@ export const workPosts = [
     tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
     tabs: ['Featured'],
     case_study_title: 'vymo-sme-bank-explainer-video',
+    href: '/brand-campaign/vymo-usa-banking',
         region: []
 
   },
@@ -1689,7 +1695,7 @@ export const workPosts = [
     tags: ['Technology', 'Employer Branding Campaign', 'Global Video Production', 'Interview Video'],
     tabs: ['Featured'],
     case_study_title: 'infosys-employer-branding',
-    href: '/videos/infosys-employer-branding',
+    href: '/video-production/global-employer-branding',
         region: []
 
   },
@@ -1702,7 +1708,7 @@ export const workPosts = [
     tags: ['SaaS', 'Lead Gen Campaign', 'Product Launch Video', 'Explainer Video', '2D Animation Video'],
     tabs: ['Featured'],
     case_study_title: 'multiplier-hr-saas-explainer-video',
-    href: '/campaigns/multiplier-hr-saas-explainer-video',
+    href: '/video-production/multiplier-explainer-video',
         region: []
 
   },
@@ -1716,6 +1722,7 @@ export const workPosts = [
     tabs: ['Featured'],
     tags: ['Technology', 'AI', 'Digital Campaign', 'Hyper-Personalized Campaign'],
     case_study_title: 'infosys-thrive-ai-powered-campaign',
+    href: '/brand-campaign/employee-wellbeing-ai-experience',
         region: []
 
   },
