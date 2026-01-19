@@ -254,14 +254,14 @@ export const SolutionsSection = () => {
             {sReverse.map((s, i) => (
               <div
                 key={s.key}
-                className="min-h-screen md:min-h-0 md:h-full border-t last:border-b border-rb-black w-full flex-shrink-0 grid place-content-center first:pt-18  first:md:pt-24 pt-16 md:py-24 top-0 left-0 sticky md:static"
+                className="min-h-screen md:min-h-0 md:h-full border-t last:border-b border-rb-black w-full flex-shrink-0 grid place-content-center  first:md:pt-24 pt-16 md:py-24 top-0 left-0 sticky md:static"
                 style={{ backgroundColor: s.color }}
                 data-solutionsection={s.color}
               >
                 <div className="container">
                   <h3
                     className={
-                      styles.title + ` text-5xl -mt-14 lg:text-[100px] lg:mt-0`
+                      styles.title + ` md:text-5xl -mt-14 lg:text-[100px] lg:mt-0`
                     }
                     style={{ color: s.textColor }}
                   >

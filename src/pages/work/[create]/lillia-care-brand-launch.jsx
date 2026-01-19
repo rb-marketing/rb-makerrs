@@ -137,7 +137,7 @@ function Lilliacare() {
       <SEO
         title="Lillia Care AI-powered Healthcare Brand Launch | Red Bangle"
         description="We partnered with Lillia Care AI to design a brand identity and website in 5 weeks, delivering trust, precision, and a standout presence for AI in healthcare."
-        url="https://www.b2b.redbangle.com/work/brand-designs/lillia-care-brand-launch"
+        url="https://www.b2b.redbangle.com/work/design/lillia-care-brand-launch"
       />
       <WorkHeroSection
         logo={logo}

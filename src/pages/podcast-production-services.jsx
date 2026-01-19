@@ -6,7 +6,7 @@ import {
   RedbangleWaySection,
   FeaturedWorkSection,
   Testimonials,
-  TrustedBrandsSection
+  TrustedBrandsSection,
 } from '@/components/shared'
 import { SEO } from '@/components/shared/SEO'
 import {
@@ -16,44 +16,72 @@ import {
 } from '@/content/services'
 import { postsMapper } from '@/utils/mapper'
 import Script from 'next/script'
-import { useEffect, useState } from 'react'
-import { Accordion } from '@/components/ui'
-
-
+import { useEffect, useRef, useState } from 'react'
+import { Accordion, Button } from '@/components/ui'
+import { LineArrow } from '@/components/icons'
+import { useRouter } from 'next/router'
 
 const Design = ({ setisPopupOpen }) => {
-
   const [stopVisible, setstopVisible] = useState(false)
+  const [isSticky, setSticky] = useState(false)
+  const [isOverlapping, setIsOverlapping] = useState(false)
+  const stickyButtonRef = useRef(null)
+  const router = useRouter()
+  // Observe the hero section and toggle sticky CTA when it scrolls out
+  useEffect(() => {
+    const hero = document.getElementById('service-hero')
+    if (!hero) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        // when hero is NOT intersecting (scrolled past), set sticky true
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0, rootMargin: '-80px 0px 0px 0px' }
+    )
+
+    observer.observe(hero)
+    return () => observer.disconnect()
+  }, [])
 
   const createTestimonialData = [
     {
       key: 0,
-      quote:
-        <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
-        </>,
+      quote: (
+        <>
+          Makerrs brought a unique blend of clarity and creativity—translating
+          complex healthcare concepts into a simple brand identity system that
+          was &apos;full of heart&apos;. They also created a cohesive website
+          experience within incredibly tight deadlines. Their efficiency and
+          understanding of our needs were pivotal in successfully launching our
+          brand.
+        </>
+      ),
       name: 'Rinku Agarwal Basu',
       designation: 'COO',
       company: 'Lillia Care',
       image: {
-        srcSet:
-
-          `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
+        srcSet: `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
     {
       key: 1,
-      quote:
+      quote: (
         <>
-          Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
-        </>,
+          Makerrs was especially impressive with their creative strategy, design
+          and copy. They took the colors, the quirky and iconic signages, and
+          the energy of the local markets and transformed them into a fresh,
+          modern expression for our brand. Our customers are drawn to the unique
+          identity, and it&apos;s translated into a love for the food itself.
+        </>
+      ),
       name: 'KUNCHERIA MARATTUKALAM',
       designation: 'FOUNDER & DIRECTOR',
       company: 'Maratt Group',
       image: {
-        srcSet:
-
-          `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+        srcSet: `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -65,8 +93,7 @@ const Design = ({ setisPopupOpen }) => {
       designation: ' CO-FOUNDER',
       company: 'P.U. DINGDING',
       image: {
-        srcSet:
-          `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
+        srcSet: `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -95,7 +122,7 @@ const Design = ({ setisPopupOpen }) => {
       serviceTitle: 'GET CAMPAIGN',
       serviceDescription:
         'From digital campaigns and integrated campaigns, to outdoor and print campaigns – our creative strategy is rooted in a simple yet powerful human insight unique to your brand and product or service. Send us a campaign brief today.',
-     bgColor: '#ffffff',
+      bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/advertising-agency',
     },
@@ -117,10 +144,14 @@ const Design = ({ setisPopupOpen }) => {
       content: (
         <>
           <div>
-            Yes. We offer full, flexible, and scalable podcast production services. Whether you want traditional audio-only episodes for platforms like Spotify and Apple Podcasts, video podcasts optimized for YouTube and LinkedIn, or hybrid content that works across both mediums, we deliver professional-quality content.
+            Yes. We offer full, flexible, and scalable podcast production
+            services. Whether you want traditional audio-only episodes for
+            platforms like Spotify and Apple Podcasts, video podcasts optimized
+            for YouTube and LinkedIn, or hybrid content that works across both
+            mediums, we deliver professional-quality content.
           </div>
         </>
-      )
+      ),
     },
     {
       key: 2,
@@ -132,19 +163,19 @@ const Design = ({ setisPopupOpen }) => {
       key: 3,
       title: 'Do you work with remote guests and distributed teams?',
       content:
-        'Many of our podcast projects involve guests and team members across different time zones and locations. We coordinate remote recordings using professional-grade audio/video setups and provide technical guidance to ensure broadcast-quality results. We seamlessly integrate content from multiple locations into cohesive episodes while maintaining consistent quality and branding throughout.'
+        'Many of our podcast projects involve guests and team members across different time zones and locations. We coordinate remote recordings using professional-grade audio/video setups and provide technical guidance to ensure broadcast-quality results. We seamlessly integrate content from multiple locations into cohesive episodes while maintaining consistent quality and branding throughout.',
     },
     {
       key: 4,
       title: 'How do you create podcasts that are engaging? ',
-      content: (
-        'This goes well beyond a great shoot and a good edit. We ensure that your podcast themes align with your business intent and brand purpose, that guests and hosts align with your podcast concept, that the format makes your content flow, that the branding is memorable, and that the call to actions deliver the desired interactions.'
-      ),
+      content:
+        'This goes well beyond a great shoot and a good edit. We ensure that your podcast themes align with your business intent and brand purpose, that guests and hosts align with your podcast concept, that the format makes your content flow, that the branding is memorable, and that the call to actions deliver the desired interactions.',
     },
 
     {
       key: 5,
-      title: 'How do you ensure consistent audio and video quality across episodes?',
+      title:
+        'How do you ensure consistent audio and video quality across episodes?',
       content:
         'We maintain broadcast-standard quality through professional equipment, controlled recording environments, and rigorous post-production processes. Our audio experts handle noise reduction, level balancing, and sound design to ensure consistent listening experiences. For video podcasts, we provide professional lighting setups, multiple camera angles, and color grading. Every episode goes through our quality control process before delivery, ensuring your podcast maintains the professional standard your brand demands.',
     },
@@ -156,21 +187,57 @@ const Design = ({ setisPopupOpen }) => {
           <div>
             <p>Broadly, here’s our workflow.</p>
             <h3 className="mt-5 font-semibold text-base">Discovery:</h3>
-            <p>We explore your brand’s voice, themes, and audience to identify the conversation your podcast can uniquely own.</p><br />
+            <p>
+              We explore your brand’s voice, themes, and audience to identify
+              the conversation your podcast can uniquely own.
+            </p>
+            <br />
             <h3 className="mt-5 font-semibold text-base">Strategy & SEO:</h3>
-            <p>We research, strategise, and position your podcast. We take a thorough look at SEO to identify key buckets to lean into for strong traction.</p><br />
-            <h3 className="mt-5 font-semibold text-base">Concept and Design:</h3>
-            <p>We conceptualise and design your podcast around a unique theme to start creating content that aligns with business, brand, and communication goals.</p><br />
+            <p>
+              We research, strategise, and position your podcast. We take a
+              thorough look at SEO to identify key buckets to lean into for
+              strong traction.
+            </p>
+            <br />
+            <h3 className="mt-5 font-semibold text-base">
+              Concept and Design:
+            </h3>
+            <p>
+              We conceptualise and design your podcast around a unique theme to
+              start creating content that aligns with business, brand, and
+              communication goals.
+            </p>
+            <br />
             <h3 className="mt-5 font-semibold text-base">Episode Construct:</h3>
-            <p>We design frameworks, hooks, segments, question maps, and more to turn complex expertise into sharp, engaging episodes.</p><br />
-            <h3 className="mt-5 font-semibold text-base">Production & Post Production:</h3>
-            <p>From crews, locations, and lighting to episodes, teasers, extracts, thumbnails, and more–we offer scalable and efficient end-to-end podcast production and post-production solutions.</p><br />
-            <h3 className="mt-5 font-semibold text-base">Publishing, Distribution & Amplification:</h3>
-            <p>We publish, we post, we report, we review, we optimize, and we do it all again. We publish on YouTube, Spotify, and Apple Podcast, and elsewhere via distribution platforms. We post about the show and the episodes on LinkedIn, Instagram, X, Facebook, and other social platforms to build visibility, community, and long-term ROI.</p>
+            <p>
+              We design frameworks, hooks, segments, question maps, and more to
+              turn complex expertise into sharp, engaging episodes.
+            </p>
+            <br />
+            <h3 className="mt-5 font-semibold text-base">
+              Production & Post Production:
+            </h3>
+            <p>
+              From crews, locations, and lighting to episodes, teasers,
+              extracts, thumbnails, and more–we offer scalable and efficient
+              end-to-end podcast production and post-production solutions.
+            </p>
+            <br />
+            <h3 className="mt-5 font-semibold text-base">
+              Publishing, Distribution & Amplification:
+            </h3>
+            <p>
+              We publish, we post, we report, we review, we optimize, and we do
+              it all again. We publish on YouTube, Spotify, and Apple Podcast,
+              and elsewhere via distribution platforms. We post about the show
+              and the episodes on LinkedIn, Instagram, X, Facebook, and other
+              social platforms to build visibility, community, and long-term
+              ROI.
+            </p>
           </div>
         </>
-      )
-    }
+      ),
+    },
   ]
 
   const data = [
@@ -257,34 +324,33 @@ const Design = ({ setisPopupOpen }) => {
   const posts = [
     {
       key: 0,
-      name: 'The Lakshmi Rebecca Show',
+      name: 'The Lakshmi Rebecca Show: YouTube Series on Impact Businesses',
       company: 'Lakshmi Rebecca',
       image: '/img/works/lrs.png',
       alt: 'Lakshmi Rebecca Show',
       tags: ['Video Content', 'YouTube Series'],
-      href: '/brand-designs/lakshmi-rebecca-show'
-    }
+      href: '/brand-designs/lakshmi-rebecca-show',
+    },
   ]
 
   const _posts = posts.map(postsMapper)
 
-
   useEffect(() => {
     if (!stopVisible) {
       const handleScroll = () => {
-        const section = document.getElementById('leap-explore'); // Replace 'section-id' with the ID of your section
+        const section = document.getElementById('leap-explore') // Replace 'section-id' with the ID of your section
         if (section && window.scrollY > section.offsetTop) {
-          setisPopupOpen(true);
+          setisPopupOpen(true)
           setstopVisible(true)
         }
-      };
+      }
 
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll', handleScroll)
       return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
+        window.removeEventListener('scroll', handleScroll)
+      }
     }
-  }, [stopVisible]);
+  }, [stopVisible])
   return (
     <>
       <SEO
@@ -293,21 +359,51 @@ const Design = ({ setisPopupOpen }) => {
         url="https://www.staging.makerrs.com/podcast-production-services"
         keywords="Podcast production services, Branded podcast production, Podcast production for brands, Business podcast production, Video podcast production"
       />
-      <ServiceHeroSection
-        className=""
-        type="GET PODCAST"
-        video={serviceVideos.get_podcast.video}
-        fullVideo={serviceVideos.get_podcast.fullVideo}
-        ctaText="Podcast with us "
-        ctaLink="/contact"
-        textColor='#111010'
-        content={
-          <>
-            <h1 className="inline">Build market leadership and influence through podcasts. Go from podcast research and strategy to concept, design, production, distribution, and amplification with Makerrs. We don’t just make podcasts, we make podcasts work hard for you.</h1>
-
-          </>
-        }
-      />
+      <div id="service-hero">
+        <ServiceHeroSection
+          className=""
+          type="GET PODCAST"
+          video={serviceVideos.get_podcast.video}
+          fullVideo={serviceVideos.get_podcast.fullVideo}
+          ctaText="Podcast with us "
+          ctaLink="/contact"
+          textColor="#111010"
+          content={
+            <>
+              <h1 className="inline">
+                Build market leadership and influence through podcasts. Go from
+                podcast research and strategy to concept, design, production,
+                distribution, and amplification with Makerrs. We don’t just make
+                podcasts, we make podcasts work hard for you.
+              </h1>
+            </>
+          }
+        />
+        <div
+          ref={stickyButtonRef}
+          className={`hidden fixed top-20 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+            isSticky ? 'lg:block' : ''
+          } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+        >
+          <Button
+            onClick={() => {
+              setTimeout(() => {
+                router.push(
+                  {
+                    pathname: '/contact',
+                  },
+                  undefined,
+                  { shallow: true }
+                )
+              }, 100)
+            }}
+            className="w-full"
+            suffix={<LineArrow hover />}
+          >
+            Podcast with us
+          </Button>
+        </div>
+      </div>
       <div style={{ display: 'none' }}>
         <h2>Marketing Agency</h2>
         <h2>Holistic Marketing</h2>
@@ -330,14 +426,15 @@ const Design = ({ setisPopupOpen }) => {
         cards={podcastCards}
       />
 
-
-      <section className={`overflow-hidden bg-white pt-[48px] pb-15 md:pt-30 md:pb-15`}>
+      <section
+        className={`overflow-hidden bg-white pt-[48px] pb-15 md:pt-30 md:pb-15`}
+      >
         <div className="container text-center">
-
           <div className="w-full overflow-x-auto md:p-0">
             <div className="max-w-full">
               <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett md:w-[940px] mx-auto">
-                Why choose Makerrs <br /> over other podcast production agencies?
+                Why choose Makerrs <br /> over other podcast production
+                agencies?
               </h3>
 
               <table className="w-full max-w-full md:w-[940px] mx-auto text-sm border-collapse border-spacing-0 text-left font-everett leading-[24px]">
@@ -386,20 +483,22 @@ const Design = ({ setisPopupOpen }) => {
       </section>
 
       <div className="md:pt-15">
-        <FeaturedWorkSection posts={_posts} href="/work/brand-designs" title="Explore Our Podcast Work" />
+        <FeaturedWorkSection
+          posts={_posts}
+          href="/work/design"
+          title="Explore Our Podcast Work"
+        />
       </div>
 
-
       <TrustedBrandsSection className="py-12 md:pt-15 md:pb-15" />
-     
-     <div id="leap-explore" className='md:py-12'>
+
+      <div id="leap-explore" className="md:py-12">
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-0 pb-15 md:pb-3"
           cards={cards}
         />
-     </div>
-     
+      </div>
 
       <section className="md:pt-12 pt-6 md:pb-24 pb-12">
         <div className="container">

@@ -84,14 +84,21 @@ const ExplainerVideoLandPage = () => {
   })
 
   useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY >= 350)
-    }
+    const videoEl = document.getElementById('video-section')
+    if (!videoEl) return
 
-    window.addEventListener('scroll', handleScroll)
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // show sticky once the video is out of view
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0 }
+    )
+
+    observer.observe(videoEl)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      observer.disconnect()
     }
   }, [])
 
@@ -233,8 +240,7 @@ const ExplainerVideoLandPage = () => {
       designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
       company: 'CAPILLARY TECHNOLOGIES',
       image: {
-        srcSet:
-          `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+        srcSet: `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -246,8 +252,7 @@ const ExplainerVideoLandPage = () => {
       designation: 'FOUNDER',
       company: 'DARUIESTE ARIPI',
       image: {
-        srcSet:
-          `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+        srcSet: `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -318,7 +323,7 @@ const ExplainerVideoLandPage = () => {
       icon: '/img/services/explainer-video/professional_project_management.svg',
       need: 'Project Management',
       others: 'Emails, spreadsheets',
-      redBangle: 'Cloud-based workflows, notifications'
+      redBangle: 'Cloud-based workflows, notifications',
     },
   ]
 
@@ -329,7 +334,7 @@ const ExplainerVideoLandPage = () => {
         src: '/img/explainer-video/SLB.png',
       },
 
-      title: 'Interactive Explainer for oilfield services',
+      title: 'SLB interactive explainer',
       company: {
         name: 'SLB',
       },
@@ -358,25 +363,25 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092040991?share=copy',
           thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Whiteboard Explainer Video on DAM',
+          title: 'Adobe eDam',
           duration: '02:21',
         },
         {
           videolink: 'https://vimeo.com/867141400?share=copy',
           thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Live Action Explainer for SAAS product',
+          title: 'Hansel / Superbeard',
           duration: '01:30',
         },
         {
           videolink: 'https://vimeo.com/1092042256?share=copy',
           thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'Animated Explainer for DCMO Services',
+          title: 'DCMO',
           duration: '02:20',
         },
         {
           videolink: 'https://vimeo.com/1092041941?share=copy',
           thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Motion Graphics Case Study for HIMSS',
+          title: 'Wipro Animated Case Study',
           duration: '01:50',
         },
       ],
@@ -386,7 +391,7 @@ const ExplainerVideoLandPage = () => {
       featuredImage: {
         src: '/img/explainer-video/adobe.png',
       },
-      title: 'Whiteboard Explainer Video on DAM',
+      title: 'Adobe eDam',
       company: {
         name: 'Infosys',
       },
@@ -413,25 +418,25 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/867141400?share=copy',
           thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Live Action Explainer for SAAS product',
+          title: 'Hansel / Superbeard',
           duration: '01:30',
         },
         {
           videolink: 'https://vimeo.com/1092042256?share=copy',
           thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'Animated Explainer for DCMO Services',
+          title: 'DCMO',
           duration: '02:20',
         },
         {
           videolink: 'https://vimeo.com/1092041941?share=copy',
           thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Motion Graphics Case Study for HIMSS',
+          title: 'Wipro Animated Case Study',
           duration: '01:50',
         },
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Live action explainer with Motion Graphics',
+          title: 'Vymo SMB Explainer',
           duration: '02:05',
         },
       ],
@@ -441,7 +446,7 @@ const ExplainerVideoLandPage = () => {
       featuredImage: {
         src: '/img/explainer-video/Hansel.png',
       },
-      title: 'Live Action Explainer for SAAS product',
+      title: 'Hansel / Superbeard',
       company: {
         name: 'Hansel.io',
       },
@@ -469,25 +474,25 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092042256?share=copy',
           thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'Animated Explainer for DCMO Services',
+          title: 'DCMO',
           duration: '02:20',
         },
         {
           videolink: 'https://vimeo.com/1092041941?share=copy',
           thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Motion Graphics Case Study for HIMSS',
+          title: 'Wipro Animated Case Study',
           duration: '01:50',
         },
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Live action explainer with Motion Graphics',
+          title: 'Vymo SMB Explainer',
           duration: '02:05',
         },
         {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Mixed Media Explainer Video Case Study',
+          title: 'Collage style explainer - Univ Upskilling (Infosys)',
           duration: '01:20',
         },
       ],
@@ -497,7 +502,7 @@ const ExplainerVideoLandPage = () => {
       featuredImage: {
         src: '/img/explainer-video/DCMO.png',
       },
-      title: 'Animated Explainer for DCMO Services',
+      title: 'DCMO',
       company: {
         name: 'Infosys Equinox',
       },
@@ -525,25 +530,25 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092041941?share=copy',
           thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Motion Graphics Case Study for HIMSS',
+          title: 'Wipro Animated Case Study',
           duration: '01:50',
         },
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Live action explainer with Motion Graphics',
+          title: 'Vymo SMB Explainer',
           duration: '02:05',
         },
         {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Mixed Media Explainer Video Case Study',
+          title: 'Collage style explainer - Univ Upskilling (Infosys)',
           duration: '01:20',
         },
         {
           videolink: 'https://vimeo.com/1030707001',
           thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'SAAS Marketing Explainer',
+          title: 'Introducing Multiplier',
           duration: '01:29',
         },
       ],
@@ -554,7 +559,7 @@ const ExplainerVideoLandPage = () => {
       featuredImage: {
         src: '/img/explainer-video/wipro.png',
       },
-      title: 'Motion Graphics Case Study for HIMSS',
+      title: 'Wipro Animated Case Study',
       company: {
         name: 'Wipro',
       },
@@ -582,26 +587,26 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Live action explainer with Motion Graphics',
+          title: 'Vymo SMB Explainer',
           duration: '02:05',
         },
         {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Mixed Media Explainer Video Case Study',
+          title: 'Collage style explainer - Univ Upskilling (Infosys)',
           duration: '01:20',
         },
         {
           videolink: 'https://vimeo.com/1030707001',
           thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'SAAS Marketing Explainer',
+          title: 'Introducing Multiplier',
           duration: '01:29',
         },
         {
           videolink:
             'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
           thumbnail: '/img/explainer-video/SLB.png',
-          title: 'Interactive Explainer for oilfield services',
+          title: 'SLB interactive explainer',
           duration: '09:03',
         },
       ],
@@ -611,7 +616,7 @@ const ExplainerVideoLandPage = () => {
       featuredImage: {
         src: '/img/explainer-video/vymo_sme.png',
       },
-      title: 'Live action explainer with Motion Graphics',
+      title: 'Vymo SMB Explainer',
       company: {
         name: 'Vymo',
       },
@@ -639,26 +644,26 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Mixed Media Explainer Video Case Study',
+          title: 'Collage style explainer - Univ Upskilling (Infosys)',
           duration: '01:20',
         },
         {
           videolink: 'https://vimeo.com/1030707001',
           thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'SAAS Marketing Explainer',
+          title: 'Introducing Multiplier',
           duration: '01:29',
         },
         {
           videolink:
             'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
           thumbnail: '/img/explainer-video/SLB.png',
-          title: 'Interactive Explainer for oilfield services',
+          title: 'SLB interactive explainer',
           duration: '09:03',
         },
         {
           videolink: 'https://vimeo.com/1092040991?share=copy',
           thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Whiteboard Explainer Video on DAM',
+          title: 'Adobe eDam',
           duration: '02:21',
         },
       ],
@@ -668,7 +673,7 @@ const ExplainerVideoLandPage = () => {
       featuredImage: {
         src: '/img/explainer-video/ai_first_employees.png',
       },
-      title: 'Mixed Media Explainer Video Case Study',
+      title: 'Collage style explainer - Univ Upskilling (Infosys)',
       company: {
         name: 'Infosys',
       },
@@ -688,31 +693,31 @@ const ExplainerVideoLandPage = () => {
         '05. Music & SFX',
         '06. Video Thumbnail',
       ],
-      redText: 'Mixed Media Explainer Video Case Study',
+      redText: 'Collage style explainer - Univ Upskilling (Infosys)',
       relatedVideos: [
         {
           videolink: 'https://vimeo.com/1030707001',
           thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'SAAS Marketing Explainer',
+          title: 'Introducing Multiplier',
           duration: '01:29',
         },
         {
           videolink:
             'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
           thumbnail: '/img/explainer-video/SLB.png',
-          title: 'Interactive Explainer for oilfield services',
+          title: 'SLB interactive explainer',
           duration: '09:03',
         },
         {
           videolink: 'https://vimeo.com/1092040991?share=copy',
           thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Whiteboard Explainer Video on DAM',
+          title: 'Adobe eDam',
           duration: '02:21',
         },
         {
           videolink: 'https://vimeo.com/867141400?share=copy',
           thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Live Action Explainer for SAAS product',
+          title: 'Hansel / Superbeard',
           duration: '01:30',
         },
       ],
@@ -722,7 +727,7 @@ const ExplainerVideoLandPage = () => {
       featuredImage: {
         src: '/img/explainer-video/Multiplier.png',
       },
-      title: 'SAAS Marketing Explainer',
+      title: 'Introducing Multiplier',
       company: {
         name: 'Multiplier',
       },
@@ -751,25 +756,25 @@ const ExplainerVideoLandPage = () => {
           videolink:
             'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
           thumbnail: '/img/explainer-video/SLB.png',
-          title: 'Interactive Explainer for oilfield services',
+          title: 'SLB interactive explainer',
           duration: '09:03',
         },
         {
           videolink: 'https://vimeo.com/1092040991?share=copy',
           thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Whiteboard Explainer Video on DAM',
+          title: 'Adobe eDam',
           duration: '02:21',
         },
         {
           videolink: 'https://vimeo.com/867141400?share=copy',
           thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Live Action Explainer for SAAS product',
+          title: 'Hansel / Superbeard',
           duration: '01:30',
         },
         {
           videolink: 'https://vimeo.com/1092042256?share=copy',
           thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'Animated Explainer for DCMO Services',
+          title: 'DCMO',
           duration: '02:20',
         },
       ],
@@ -777,111 +782,111 @@ const ExplainerVideoLandPage = () => {
   ]
 
   const FAQ = [
-  {
-    key: 0,
-    title: 'Do you have a unique explainer video creation process?',
-    content: (
-      <>
-        <div className="mb-5">
-          Over the years, we have scripted, designed and produced hundreds of
-          explainer videos across industries such as SAAS, technology,
-          manufacturing, logistics, education and more. And while on every
-          project we ask ourselves what we might do differently, and what we
-          might do better – we also follow a tried-and-tested process that
-          enables our clients to grow their brands and us to keep delivering
-          on-point, on-quality. Our typical project workflow is something that
-          starts with a clear brief, moves on to research, concepts, script,
-          visualisation, design, storyboards, post production, reviews and
-          versioning. But what’s unique about how we do it, is our proprietary
-          platform that facilitates efficient cloud-based workflows. Here’s a
-          quick run through of how it helps:
-        </div>
-        <ul>
-          <li className="mb-5">
-            - Your brief is loaded on our platform: this contains all the
-            information you give us, we dig up, and all the creative assets we
-            need to work on. Everything is in one place.
-          </li>
-          <li className="mb-5">
-            - We use rate cards, add-ons and an efficient costing tool on our
-            platform to speed up the pricing and contract process for you.
-          </li>
-          <li className="mb-5">
-            - A great creative team is assigned to your project and briefed in
-            detail.
-          </li>
-          <li className="mb-5">
-            - Our producers choose the most optimal schedule on our platform,
-            and update the dates as per your requirement. This way, everyone on
-            the project knows exactly when something is due to you.
-          </li>
-          <li className="mb-5">
-            - The creative team gets going with their work, coming to you for
-            reviews at the script, storyboard or design stage.
-          </li>
-          <li className="mb-5">
-            - We deliver the draft video on our platform and make it easy for
-            you to review videos using our interactive review feature.
-          </li>
-          <li>
-            - Once done, all the project assets are also uploaded to our
-            platform so you can find them anytime you need and even share them
-            with colleagues.
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    key: 1,
-    title:
-      'How do you ensure that the explainer and demo videos you create are engaging for our target audience?',
-    content:
-      'We don’t just spend time understanding your business and competitors to arrive at a great video idea for you, we are also tuned into design and animation trends, AI innovations, content consumption platforms and marketing shifts happening around us. We track and continuously gather fresh knowledge and creative inspiration that keeps us delivering amazing and effective work for you. With every new creative idea we unleash and bring to life, we focus on what’s going to work for your business, brand, audience and mediums.',
-  },
-  {
-    key: 2,
-    title:
-      'How do you ensure that the films and videos created for us align with our brand?',
-    content:
-      'We start by getting to know your brand, its values and audiences. We always ask for your brand manual. We use our understanding of your brand and business, as well as your brand guidelines to align our creative craft and develop videos that not only reflect your brand but also support your business objectives.',
-  },
-  {
-    key: 3,
-    title: 'Which platforms do you create videos for?',
-    content:
-      'As a B2B video and creative agency, we conceptualize and craft videos that work across a range of platforms such as YouTube, LinkedIn, WhatsApp, events and internal portals. Our goal is to ensure every piece of video content you commission connects with your audience, and drives engagement, no matter where it’s seen. Let’s say you are making a B2B explainer video with us, we are able to also help you create versions and thumbnails of this film for various platforms.',
-  },
-  {
-    key: 4,
-    title: 'Do you create live action explainer videos?',
-    content:
-      'Yes, whether it’s featuring your team members or professional actors - we script, storyboard, cast, style, scout locations, do art direction, Direction, Production, post production, animation and more to create live-action explainer videos that work for your brand.',
-  },
-  {
-    key: 5,
-    title: 'How do you handle copyright and ownership of the video content?',
-    content: (
-      <>
-        <div>
-          With the majority of our work, as per our pre-agreed contracts with
-          our clients, the copyright for creative assets are transferred to the
-          client upon receipt of final payment for the commissioned work.
-        </div>
-        <br />
-        <div>
-          In some cases though, the copyright is not assigned or transferred for
-          perpetuity. Examples of short-term rights assignment include
-          custom-composed music, celebrity cast, etc. Rights with these creators
-          and artists are agreed to on a case-to-case basis, and usually are for
-          a year or three to begin with for specific mediums. Clients may extend
-          such rights for additional years and mediums via Red Bangle, at a
-          future date and at an additional cost.
-        </div>
-      </>
-    ),
-  },
-]
+    {
+      key: 0,
+      title: 'Do you have a unique explainer video creation process?',
+      content: (
+        <>
+          <div className="mb-5">
+            Over the years, we have scripted, designed and produced hundreds of
+            explainer videos across industries such as SAAS, technology,
+            manufacturing, logistics, education and more. And while on every
+            project we ask ourselves what we might do differently, and what we
+            might do better – we also follow a tried-and-tested process that
+            enables our clients to grow their brands and us to keep delivering
+            on-point, on-quality. Our typical project workflow is something that
+            starts with a clear brief, moves on to research, concepts, script,
+            visualisation, design, storyboards, post production, reviews and
+            versioning. But what’s unique about how we do it, is our proprietary
+            platform that facilitates efficient cloud-based workflows. Here’s a
+            quick run through of how it helps:
+          </div>
+          <ul>
+            <li className="mb-5">
+              - Your brief is loaded on our platform: this contains all the
+              information you give us, we dig up, and all the creative assets we
+              need to work on. Everything is in one place.
+            </li>
+            <li className="mb-5">
+              - We use rate cards, add-ons and an efficient costing tool on our
+              platform to speed up the pricing and contract process for you.
+            </li>
+            <li className="mb-5">
+              - A great creative team is assigned to your project and briefed in
+              detail.
+            </li>
+            <li className="mb-5">
+              - Our producers choose the most optimal schedule on our platform,
+              and update the dates as per your requirement. This way, everyone
+              on the project knows exactly when something is due to you.
+            </li>
+            <li className="mb-5">
+              - The creative team gets going with their work, coming to you for
+              reviews at the script, storyboard or design stage.
+            </li>
+            <li className="mb-5">
+              - We deliver the draft video on our platform and make it easy for
+              you to review videos using our interactive review feature.
+            </li>
+            <li>
+              - Once done, all the project assets are also uploaded to our
+              platform so you can find them anytime you need and even share them
+              with colleagues.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      key: 1,
+      title:
+        'How do you ensure that the explainer and demo videos you create are engaging for our target audience?',
+      content:
+        'We don’t just spend time understanding your business and competitors to arrive at a great video idea for you, we are also tuned into design and animation trends, AI innovations, content consumption platforms and marketing shifts happening around us. We track and continuously gather fresh knowledge and creative inspiration that keeps us delivering amazing and effective work for you. With every new creative idea we unleash and bring to life, we focus on what’s going to work for your business, brand, audience and mediums.',
+    },
+    {
+      key: 2,
+      title:
+        'How do you ensure that the films and videos created for us align with our brand?',
+      content:
+        'We start by getting to know your brand, its values and audiences. We always ask for your brand manual. We use our understanding of your brand and business, as well as your brand guidelines to align our creative craft and develop videos that not only reflect your brand but also support your business objectives.',
+    },
+    {
+      key: 3,
+      title: 'Which platforms do you create videos for?',
+      content:
+        'As a B2B video and creative agency, we conceptualize and craft videos that work across a range of platforms such as YouTube, LinkedIn, WhatsApp, events and internal portals. Our goal is to ensure every piece of video content you commission connects with your audience, and drives engagement, no matter where it’s seen. Let’s say you are making a B2B explainer video with us, we are able to also help you create versions and thumbnails of this film for various platforms.',
+    },
+    {
+      key: 4,
+      title: 'Do you create live action explainer videos?',
+      content:
+        'Yes, whether it’s featuring your team members or professional actors - we script, storyboard, cast, style, scout locations, do art direction, Direction, Production, post production, animation and more to create live-action explainer videos that work for your brand.',
+    },
+    {
+      key: 5,
+      title: 'How do you handle copyright and ownership of the video content?',
+      content: (
+        <>
+          <div>
+            With the majority of our work, as per our pre-agreed contracts with
+            our clients, the copyright for creative assets are transferred to
+            the client upon receipt of final payment for the commissioned work.
+          </div>
+          <br />
+          <div>
+            In some cases though, the copyright is not assigned or transferred
+            for perpetuity. Examples of short-term rights assignment include
+            custom-composed music, celebrity cast, etc. Rights with these
+            creators and artists are agreed to on a case-to-case basis, and
+            usually are for a year or three to begin with for specific mediums.
+            Clients may extend such rights for additional years and mediums via
+            Red Bangle, at a future date and at an additional cost.
+          </div>
+        </>
+      ),
+    },
+  ]
 
   const handleRelatedVideoClick = (videolink) => {
     const clickedVideoData = workData.find(
@@ -974,7 +979,7 @@ const ExplainerVideoLandPage = () => {
           },
 
           y: () => -1 * getY(),
-          bottom: '10px'
+          bottom: '10px',
         },
         {
           width: '100%',
@@ -982,7 +987,7 @@ const ExplainerVideoLandPage = () => {
           y: 0,
 
           duration: 0.8,
-          bottom: '0px'
+          bottom: '0px',
         }
       )
         .fromTo(
@@ -1168,15 +1173,31 @@ const ExplainerVideoLandPage = () => {
               <div className="mt-6 md:mt-8 heroMarquee">
                 <ul className="list-inside space-y-3 text-[16px] leading-[1.25] tracking-[-0.64px] font-opensans md:text-[24px] md:leading-[32px] md:tracking-[-0.24px] font-semibold">
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>End-to-end explainer video production</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>Experienced explainer video agency</span>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} className='mt-[7px]' />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                      className="mt-[7px]"
+                    />
                     <span>
                       Whiteboard animation, live action explainers,{' '}
                       <br className="hidden md:block" />
@@ -1229,6 +1250,31 @@ const ExplainerVideoLandPage = () => {
               </h3>
               <GetUpdatesForm />
             </div>
+            <div
+              ref={stickyButtonRef}
+              className={`hidden fixed top-8 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+                isSticky ? 'lg:block' : ''
+              } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+            >
+              <Button
+                onClick={() => {
+                  setTimeout(() => {
+                    router.push(
+                      {
+                        pathname: router.pathname,
+                        query: { type: 'send-us-a-brief' },
+                      },
+                      undefined,
+                      { shallow: true }
+                    )
+                  }, 100)
+                }}
+                className="w-full"
+                suffix={<LineArrow hover />}
+              >
+                Let&apos;s talk
+              </Button>
+            </div>
           </div>
         </div>
         <div
@@ -1265,18 +1311,22 @@ const ExplainerVideoLandPage = () => {
                 className={`text-[42px] leading-14 tracking-[-1.44px] md:text-stat group relative ${statstyles.statlinecorporate}`}
               >
                 <div
-                  className={`w-fit ${i === 0
-                    ? 'md:ml-0 md:mr-[clamp(10px,5vw,80px)]'
-                    : 'md:mr-[clamp(10px,5vw,80px)] md:ml-[clamp(10px,5vw,60px)]'
-                    }`}
+                  className={`w-fit ${
+                    i === 0
+                      ? 'md:ml-0 md:mr-[clamp(10px,5vw,80px)]'
+                      : 'md:mr-[clamp(10px,5vw,80px)] md:ml-[clamp(10px,5vw,60px)]'
+                  }`}
                 >
                   <RollupNumber
                     {...s.countUpProps}
                     {...s.countUpProps}
-                    className={`${s.countUpProps.value === 15 ? '-ml-3' : '-ml-[6px]'
-                      } ${s.id === 0 ? 'md:!-ml-[7px] !-ml-[4px]' : ''} ${s.id === 1 ? 'md:!-ml-[5px] !-ml-[4px]' : ''
-                      } ${s.id === 2 ? 'md:!-ml-[6px] !-ml-[3px]' : ''}${s.id === 3 ? ' md:!-ml-[12px] !-ml-[6px]' : ''
-                      } `}
+                    className={`${
+                      s.countUpProps.value === 15 ? '-ml-3' : '-ml-[6px]'
+                    } ${s.id === 0 ? 'md:!-ml-[7px] !-ml-[4px]' : ''} ${
+                      s.id === 1 ? 'md:!-ml-[5px] !-ml-[4px]' : ''
+                    } ${s.id === 2 ? 'md:!-ml-[6px] !-ml-[3px]' : ''}${
+                      s.id === 3 ? ' md:!-ml-[12px] !-ml-[6px]' : ''
+                    } `}
                   />
                   <div className="text-sm leading-[17px] md:text-2xl md:leading-7 tracking-normal md:tracking-[-0.96px] text-rb-black mt-0 md:mt-3 font-medium font-everett">
                     {s.text}
@@ -1469,7 +1519,6 @@ const ExplainerVideoLandPage = () => {
         </div>
       </section>
       <TrustedBrandsSection className="bg-white pb-12 md:pb-20" />
-
 
       <section className="py-18 md:py-15 overflow-hidden">
         <div className="container">

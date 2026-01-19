@@ -18,7 +18,7 @@ const Success = () => {
             { type === 'collab'? 'Hey Makerr! We got your message.':'Thank you for contacting us!'}
             
           </h1>
-          <p className="text-rb-black/80 font-normal text-sm md:text-2xl opacity-90 md:max-w-[65%] text-center">
+          <p className="text-rb-black font-normal text-sm md:text-2xl opacity-90 md:max-w-[65%] text-center">
           { type === 'collab' 
           ?'Thanks for writing to us. We’ll get back to you soon. In the meantime, please feel free to explore more on our website.'
           :'We appreciate your interest and will respond to your message shortly. In the meantime, feel free to explore our website.'}

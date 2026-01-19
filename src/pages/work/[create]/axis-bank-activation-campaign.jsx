@@ -117,7 +117,7 @@ function AxisBankActivation() {
             <SEO
                 title="Axis Bank Activation Campaign | Red Bangle"
                 description="Inside our LTSY Campaign for Axis Bank: A country-wide activation that celebrates frontline excellence and everyday customer obsession."
-                url="https://www.b2b.redbangle.com/work/brand-designs/axis-bank-activation-campaign"
+                url="https://www.b2b.redbangle.com/work/design/axis-bank-activation-campaign"
             />
             <WorkHeroSection
                 title={'Nationwide Activation Celebrating Customer Obsession'}

@@ -42,7 +42,7 @@ const socials = [
         />
       </svg>
     ),
-    href: 'https://www.linkedin.com/company/redbanglecreative/',
+    href: 'https://www.linkedin.com/company/makerrsagency',
     title: (
       <span className="group-hover:text-[#006699] transition-all">
         LinkedIn
@@ -160,7 +160,7 @@ const socials = [
         </svg>
       </div>
     ),
-    href: 'https://www.instagram.com/redbangle.global?igsh=MW8wc28xZHY4MGN2bQ==',
+    href: 'https://www.instagram.com/makerrsagency/',
     className: styles.instagram,
     title: <span className="transition-all">Instagram</span>,
   },
@@ -189,7 +189,7 @@ const socials = [
         <path fill="#fff" d="m18.09 22.611 5.254-3.033-5.254-3.033v6.066Z" />
       </svg>
     ),
-     href: 'https://www.youtube.com/@RedBangleIndia',
+     href: 'https://www.youtube.com/@MakerrsAgency',
     title: (
       <span className="group-hover:text-[#FF0000] transition-all">YouTube</span>
     ),
@@ -416,7 +416,7 @@ export const Footer = ({ hasContactForm }) => {
                       <Link
                         href='/brand-identity-design-services'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Brand Identity Design
                       </Link>
@@ -434,35 +434,35 @@ export const Footer = ({ hasContactForm }) => {
                       <Link
                         href='/explainer-video-production-services'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Explainer Videos
                       </Link>
                       <Link
                         href='/corporate-video-production-services'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Corporate Videos
                       </Link>
                       <Link
                         href='/video-testimonial-production'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Case Study Videos
                       </Link>
                       <Link
                         href='recruitment-video-production'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         Recruitment Videos
                       </Link>
                       <Link
                         href='/ai-video-agency'
                         data-rb-cursor-state="invisible"
-                        className="max-w-max ml-5 mt-[-5px]"
+                        className="max-w-max ml-3 md:ml-5 mt-[-5px]"
                       >
                         GenAI Videos
                       </Link>
@@ -557,7 +557,7 @@ export const Footer = ({ hasContactForm }) => {
                   </div>
               </div>
             </div>
-            <div className="w-full mt-4 md:mt-0 md:w-[28%] md:flex md:flex-col px-4">
+            <div className="w-full mt-12 md:mt-0 md:w-[28%] md:flex md:flex-col px-4">
               <NewsletterField />
             </div>
           </div>

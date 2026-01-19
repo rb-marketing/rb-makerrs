@@ -59,14 +59,21 @@ const AIvideoAgency = () => {
   })
 
   useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY >= 350)
-    }
+    const videoEl = document.getElementById('video-section')
+    if (!videoEl) return
 
-    window.addEventListener('scroll', handleScroll)
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // show sticky once the video is out of view
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0 }
+    )
+
+    observer.observe(videoEl)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      observer.disconnect()
     }
   }, [])
 
@@ -149,53 +156,53 @@ const AIvideoAgency = () => {
       alt: 'platform_content',
       title: 'End-to-End Services',
       desc: 'From concept to script, AI-generation, post-processing, voice-overs, music, and more. Leverage our end-to-end Gen AI video creation services to fuel brand growth for your enterprise.',
-    }
+    },
   ]
 
   const sliderVerticleCards = [
-  {
-    key: 1,
-    imgurl: 'img/collab/print_and_posm.svg',
-    alt: 'print_and_posm',
-    title: 'Brief & Planning',
-    desc: 'We understand your brief, your creative objectives, and your brand identity.',
-  },
-  {
-    key: 2,
-    imgurl: 'img/collab/distribution_optimisation.svg',
-    alt: 'distribution_optimisation',
-    title: 'Concept & Estimate',
-    desc: 'Choose from unique creative concepts – complete with estimates and production timelines.',
-  },
-  {
-    key: 3,
-    imgurl: 'img/collab/print_and_posm.svg',
-    alt: 'print_and_posm',
-    title: 'Script & Story',
-    desc: 'Our best creative team works on the copy and visualization for your next AI video.',
-  },
-  {
-    key: 4,
-    imgurl: 'img/collab/copy_of_interactive.svg',
-    alt: 'copy_of_interactive',
-    title: 'Prompting & Storyboards',
-    desc: 'From expert AI-prompting to custom-designed storyboards, we begin crafting your Gen AI video.',
-  },
-  {
-    key: 5,
-    imgurl: 'img/collab/robotic_brand_ambassadors.svg',
-    alt: 'robotic_brand_ambassadors',
-    title: 'AI Production & Direction',
-    desc: 'We use premium AI tools and dedicated experts for optimal video outcomes.',
-  },
-  {
-    key: 6,
-    imgurl: 'img/collab/tech_powered_experiences.svg',
-    alt: 'tech_powered_experiences',
-    title: 'Voice-over & Music',
-    desc: 'Select premium voice-over and music to enhance your video’s impact.',
-  },
-]
+    {
+      key: 1,
+      imgurl: 'img/collab/print_and_posm.svg',
+      alt: 'print_and_posm',
+      title: 'Brief & Planning',
+      desc: 'We understand your brief, your creative objectives, and your brand identity.',
+    },
+    {
+      key: 2,
+      imgurl: 'img/collab/distribution_optimisation.svg',
+      alt: 'distribution_optimisation',
+      title: 'Concept & Estimate',
+      desc: 'Choose from unique creative concepts – complete with estimates and production timelines.',
+    },
+    {
+      key: 3,
+      imgurl: 'img/collab/print_and_posm.svg',
+      alt: 'print_and_posm',
+      title: 'Script & Story',
+      desc: 'Our best creative team works on the copy and visualization for your next AI video.',
+    },
+    {
+      key: 4,
+      imgurl: 'img/collab/copy_of_interactive.svg',
+      alt: 'copy_of_interactive',
+      title: 'Prompting & Storyboards',
+      desc: 'From expert AI-prompting to custom-designed storyboards, we begin crafting your Gen AI video.',
+    },
+    {
+      key: 5,
+      imgurl: 'img/collab/robotic_brand_ambassadors.svg',
+      alt: 'robotic_brand_ambassadors',
+      title: 'AI Production & Direction',
+      desc: 'We use premium AI tools and dedicated experts for optimal video outcomes.',
+    },
+    {
+      key: 6,
+      imgurl: 'img/collab/tech_powered_experiences.svg',
+      alt: 'tech_powered_experiences',
+      title: 'Voice-over & Music',
+      desc: 'Select premium voice-over and music to enhance your video’s impact.',
+    },
+  ]
 
   const processCards = [
     {
@@ -232,36 +239,45 @@ const AIvideoAgency = () => {
 
   const testimonialsDefault = [
     {
-    key: 0,
-    quote:
-      <>
-      Red Bangle brought a unique blend of clarity and creativity, translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website within incredibly tight deadlines. Their efficiency was pivotal in successfully launching our brand.
-      </>,
-    name: 'Rinku Agarwal Basu',
-    designation: 'COO',
-    company: 'Lillia Care',
-    image: {
-      srcSet:
-        '/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w',
-      sizes: '(max-width:768px) 533px, 1066px',
-    },
-  },
-  {
-    key: 1,
-    quote:
+      key: 0,
+      quote: (
         <>
-        Red Bangle was especially impressive with their creative strategy, design, and copy. They took the quirk and the energy of local markets and their iconic signs and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it has translated into a love for the product itself.
-        </>,
-    name: 'KUNCHERIA MARATTUKALAM',
-    designation: 'FOUNDER & DIRECTOR',
-    company: 'Maratt Group',
-    image: {
+          Red Bangle brought a unique blend of clarity and creativity,
+          translating complex healthcare concepts into a simple brand identity
+          system that was &apos;full of heart&apos;. They also created a
+          cohesive website within incredibly tight deadlines. Their efficiency
+          was pivotal in successfully launching our brand.
+        </>
+      ),
+      name: 'Rinku Agarwal Basu',
+      designation: 'COO',
+      company: 'Lillia Care',
+      image: {
         srcSet:
-
-            '/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w',
+          '/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w',
         sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-    }
+    {
+      key: 1,
+      quote: (
+        <>
+          Red Bangle was especially impressive with their creative strategy,
+          design, and copy. They took the quirk and the energy of local markets
+          and their iconic signs and transformed them into a fresh, modern
+          expression for our brand. Our customers are drawn to the unique
+          identity, and it has translated into a love for the product itself.
+        </>
+      ),
+      name: 'KUNCHERIA MARATTUKALAM',
+      designation: 'FOUNDER & DIRECTOR',
+      company: 'Maratt Group',
+      image: {
+        srcSet:
+          '/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w',
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
+    },
   ]
 
   const data = [
@@ -787,151 +803,203 @@ const AIvideoAgency = () => {
     },
   ]
 
-  const genAIdesignFaq =[
+  const genAIdesignFaq = [
     {
-    key: 1,
-    title: 'What types of Gen AI videos do you create?',
-    content:(
-      <>
-        <div className="mb-5">
-         We craft a wide range of AI-powered videos suited to communication needs and channels. These include: 
-        </div>
-        <ul>
-          <li className="mb-5">- Animated avatar video presentations</li>
-          <li className="mb-5">- AI lip-sync videos</li>
-          <li className="mb-5">- AI Video Explainers</li>
-          <li className="mb-5">- Gen AI Video Commercials</li>
-          <li className="mb-5">- Cinematic AI Videos</li>
-          <li className="mb-5">- Brand mascot videos</li>
-          <li className="mb-5">- AI Videos for Training</li>
-          <li className="mb-5">- AI Videos for Social Media</li>
-          <li className="mb-5">- And more!</li>
-        </ul>
-        <div className="mt-5">
-          We help you choose the right AI video format and creative approach to build your brand awareness and drive engagement.
-        </div>
-      </>
-    )
+      key: 1,
+      title: 'What types of Gen AI videos do you create?',
+      content: (
+        <>
+          <div className="mb-5">
+            We craft a wide range of AI-powered videos suited to communication
+            needs and channels. These include:
+          </div>
+          <ul>
+            <li className="mb-5">- Animated avatar video presentations</li>
+            <li className="mb-5">- AI lip-sync videos</li>
+            <li className="mb-5">- AI Video Explainers</li>
+            <li className="mb-5">- Gen AI Video Commercials</li>
+            <li className="mb-5">- Cinematic AI Videos</li>
+            <li className="mb-5">- Brand mascot videos</li>
+            <li className="mb-5">- AI Videos for Training</li>
+            <li className="mb-5">- AI Videos for Social Media</li>
+            <li className="mb-5">- And more!</li>
+          </ul>
+          <div className="mt-5">
+            We help you choose the right AI video format and creative approach
+            to build your brand awareness and drive engagement.
+          </div>
+        </>
+      ),
     },
     {
-    key: 2,
-    title: 'How do you ensure that AI videos accurately reflect our brand?',
-    content:
-      'We work with your brand teams to align the AI video with your brand positioning, tone of voice, visual identity, and key messaging pillars. We reference your brand guidelines, audience personas, and communication strategy throughout the creative process. From colors and music to characters and motion graphics, we craft every element to look and feel like a natural extension of your brand.',
+      key: 2,
+      title: 'How do you ensure that AI videos accurately reflect our brand?',
+      content:
+        'We work with your brand teams to align the AI video with your brand positioning, tone of voice, visual identity, and key messaging pillars. We reference your brand guidelines, audience personas, and communication strategy throughout the creative process. From colors and music to characters and motion graphics, we craft every element to look and feel like a natural extension of your brand.',
     },
     {
-    key: 3,
-    title: 'Do you follow a specific AI video creation process?',
-    content:(
-      <>
-      <p className="mb-5">As an AI-first agency experienced in crafting AI-powered videos across industries, genres, and formats – we&apos;re always on the lookout to try something innovative on every new brief. This approach has helped us develop a tried-and-true process that delivers impactful Gen AI videos for B2B brands.</p>
-      <p className="mb-5">Our typical AI video workflow starts with a clear brief, followed by research, AI-first concepts, script, design, post-production, and reviews. But what&apos;s unique about how we do it is our proprietary platform that facilitates efficient cloud-based workflows and seamless collaboration across our teams and with you. Here&apos;s a quick run-through of how our platform helps you scale AI video assets:</p>
-      <ul className="list-disc space-y-3 ml-5">
-        <li className="mb-5">Your brief is loaded on our platform. This contains all the information you&apos;ve shared, everything we&apos;ve researched, and all the assets we need to work on. Everything is in one place.</li>
-        <li className="mb-5">We propose one or more AI-first concepts that align with your brief, audience, tone, brand and industry. You choose what resonates most with your brand and communication needs.</li>
-        <li className="mb-5">We schedule your project on our platform, setting milestones that work best for your requirements. Everyone on the project knows exactly when something is due to you, no follow-ups required.</li>
-        <li className="mb-5">Our creative team gets going with their work, coming to you for reviews at the concept and design stages.</li>
-        <li className="mb-5">Files, links, and updates are all on the cloud, so you are never left wondering what&apos;s next or how things are progressing.</li>
-        <li className="mb-5">Once your AI video generation begins, outputs are uploaded to the platform where you use our interactive review feature to share frame-accurate feedback and iterate on AI-generated content- all without lengthy email chains or missed feedback. Additionally, all video drafts on the project are accessible to you on one dashboard, so you won&apos;t have to hunt for links to compare notes.</li>
-        <li className="mb-5">Once the project is complete, your Gen AI videos are uploaded to our platform. Everything is neatly organised, downloadable, shareable, and ready for future repurposing.</li>
-      </ul>
-      <p className="mt-5">Our cloud-based platform-led workflow allows us to maintain creative excellence while delivering AI innovation at speed and scale. It also gives you an efficient and transparent experience from start to finish.</p>
-      </>
-    ) 
-  },
-    {
-    key: 4,
-    title: 'How do you make Gen AI videos that feel authentic and not robotic?',
-    content:(
-      <>
-      The key to authentic AI videos lies in two things: the tools/ technology you use and how you craft the narrative. We work closely with you to identify the right approach and shape your Gen AI videos that feel natural and human. We guide AI models to produce content that appears genuine and relatable, rather than mechanical or artificial. Shaping the story around real emotions, brand values, and audience needs with carefully crafted prompts. We also capture supporting elements and design branded graphics to enhance the AI-generated video.
-      </>
-    )
+      key: 3,
+      title: 'Do you follow a specific AI video creation process?',
+      content: (
+        <>
+          <p className="mb-5">
+            As an AI-first agency experienced in crafting AI-powered videos
+            across industries, genres, and formats – we&apos;re always on the
+            lookout to try something innovative on every new brief. This
+            approach has helped us develop a tried-and-true process that
+            delivers impactful Gen AI videos for B2B brands.
+          </p>
+          <p className="mb-5">
+            Our typical AI video workflow starts with a clear brief, followed by
+            research, AI-first concepts, script, design, post-production, and
+            reviews. But what&apos;s unique about how we do it is our
+            proprietary platform that facilitates efficient cloud-based
+            workflows and seamless collaboration across our teams and with you.
+            Here&apos;s a quick run-through of how our platform helps you scale
+            AI video assets:
+          </p>
+          <ul className="list-disc space-y-3 ml-5">
+            <li className="mb-5">
+              Your brief is loaded on our platform. This contains all the
+              information you&apos;ve shared, everything we&apos;ve researched,
+              and all the assets we need to work on. Everything is in one place.
+            </li>
+            <li className="mb-5">
+              We propose one or more AI-first concepts that align with your
+              brief, audience, tone, brand and industry. You choose what
+              resonates most with your brand and communication needs.
+            </li>
+            <li className="mb-5">
+              We schedule your project on our platform, setting milestones that
+              work best for your requirements. Everyone on the project knows
+              exactly when something is due to you, no follow-ups required.
+            </li>
+            <li className="mb-5">
+              Our creative team gets going with their work, coming to you for
+              reviews at the concept and design stages.
+            </li>
+            <li className="mb-5">
+              Files, links, and updates are all on the cloud, so you are never
+              left wondering what&apos;s next or how things are progressing.
+            </li>
+            <li className="mb-5">
+              Once your AI video generation begins, outputs are uploaded to the
+              platform where you use our interactive review feature to share
+              frame-accurate feedback and iterate on AI-generated content- all
+              without lengthy email chains or missed feedback. Additionally, all
+              video drafts on the project are accessible to you on one
+              dashboard, so you won&apos;t have to hunt for links to compare
+              notes.
+            </li>
+            <li className="mb-5">
+              Once the project is complete, your Gen AI videos are uploaded to
+              our platform. Everything is neatly organised, downloadable,
+              shareable, and ready for future repurposing.
+            </li>
+          </ul>
+          <p className="mt-5">
+            Our cloud-based platform-led workflow allows us to maintain creative
+            excellence while delivering AI innovation at speed and scale. It
+            also gives you an efficient and transparent experience from start to
+            finish.
+          </p>
+        </>
+      ),
     },
     {
-    key: 5,
-    title: 'What is the typical turnaround time for crafting a Gen AI video?',
-    content:
-      "Gen AI video turnaround times vary basis the style and duration. A simple AI avatar video created with a pre-designed template can typically be completed within  2 days, while an explainer video featuring 2D AI characters may require 10-20 days of AI production or post production.The end to end project process includes briefing and goal alignment, concept development, scripting, design, AI production, followed by post-production, which includes editing, music, subtitles, effects, and optimization. Our workflows give you enough time to share feedback and approvals at every key milestone. In case you have a set launch or campaign deadline, we'll plan backward from there to ensure everything's ready on time.",
+      key: 4,
+      title:
+        'How do you make Gen AI videos that feel authentic and not robotic?',
+      content: (
+        <>
+          The key to authentic AI videos lies in two things: the tools/
+          technology you use and how you craft the narrative. We work closely
+          with you to identify the right approach and shape your Gen AI videos
+          that feel natural and human. We guide AI models to produce content
+          that appears genuine and relatable, rather than mechanical or
+          artificial. Shaping the story around real emotions, brand values, and
+          audience needs with carefully crafted prompts. We also capture
+          supporting elements and design branded graphics to enhance the
+          AI-generated video.
+        </>
+      ),
     },
     {
-    key: 6,
-    title: 'Do you create Gen AI videos for campaigns and product launches?',
-    content:
-      'Yes, we create Gen AI videos tailored for campaigns and product launches. Whether it’s AI-powered explainers or cinematic AI-video content, we help you launch your product with a bang—boosting conversions, enhancing customer engagement, and ensuring your brand stands out. Our focus is on delivering high-quality, brand-aligned campaigns that differentiate your solutions and create market stickiness.',
+      key: 5,
+      title: 'What is the typical turnaround time for crafting a Gen AI video?',
+      content:
+        "Gen AI video turnaround times vary basis the style and duration. A simple AI avatar video created with a pre-designed template can typically be completed within  2 days, while an explainer video featuring 2D AI characters may require 10-20 days of AI production or post production.The end to end project process includes briefing and goal alignment, concept development, scripting, design, AI production, followed by post-production, which includes editing, music, subtitles, effects, and optimization. Our workflows give you enough time to share feedback and approvals at every key milestone. In case you have a set launch or campaign deadline, we'll plan backward from there to ensure everything's ready on time.",
+    },
+    {
+      key: 6,
+      title: 'Do you create Gen AI videos for campaigns and product launches?',
+      content:
+        'Yes, we create Gen AI videos tailored for campaigns and product launches. Whether it’s AI-powered explainers or cinematic AI-video content, we help you launch your product with a bang—boosting conversions, enhancing customer engagement, and ensuring your brand stands out. Our focus is on delivering high-quality, brand-aligned campaigns that differentiate your solutions and create market stickiness.',
     },
   ]
 
-
-   const createTestimonialAIData = [
+  const createTestimonialAIData = [
     {
-    key: 0,
-    quote:
-      'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
-    name: 'ALINA PATRAHAU',
-    designation: 'FOUNDER',
-    company: 'DARUIESTE ARIPI',
-    image: {
-      srcSet:
-        `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      key: 0,
+      quote:
+        'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+      name: 'ALINA PATRAHAU',
+      designation: 'FOUNDER',
+      company: 'DARUIESTE ARIPI',
+      image: {
+        srcSet: `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 1,
-    quote:
-      'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
-    name: 'MARC IRAWAN',
-    designation: 'Founder',
-    company: 'COLEARN',
-    image: {
-      srcSet:
-        `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 1,
+      quote:
+        'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
+      name: 'MARC IRAWAN',
+      designation: 'Founder',
+      company: 'COLEARN',
+      image: {
+        srcSet: `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 2,
-    quote:
-      'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
-    name: 'ROSHAN CARIAPPA',
-    designation: 'VICE-PRESIDENT MARKETING',
-    company: 'VYMO',
-    image: {
-      srcSet:
-        `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 2,
+      quote:
+        'The Makerrs team is fantastic to work with. They add value not just from a creative standpoint but also in terms of communication strategy.',
+      name: 'ROSHAN CARIAPPA',
+      designation: 'VICE-PRESIDENT MARKETING',
+      company: 'VYMO',
+      image: {
+        srcSet: `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 3,
-    quote:
-      'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+    {
+      key: 3,
+      quote:
+        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
 
-    designation: 'VP INTERNAL COMMUNICATIONS',
-    company: 'FORTUNE 100 ITES ENTERPRISE',
-    image: {
-      srcSet:
-        `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+      designation: 'VP INTERNAL COMMUNICATIONS',
+      company: 'FORTUNE 100 ITES ENTERPRISE',
+      image: {
+        srcSet: `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  {
-    key: 4,
-    quote:
-      'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
-    name: 'SUNIL SURESH',
-    designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
-    company: 'CAPILLARY TECHNOLOGIES',
-    image: {
-      srcSet:
-        `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
-      sizes: '(max-width:768px) 533px, 1066px',
+    {
+      key: 4,
+      quote:
+        'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
+      name: 'SUNIL SURESH',
+      designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
+      company: 'CAPILLARY TECHNOLOGIES',
+      image: {
+        srcSet: `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
     },
-  },
-  
   ]
-
 
   const handleRelatedVideoClick = (videolink) => {
     const clickedVideoData = workData.find(
@@ -965,7 +1033,7 @@ const AIvideoAgency = () => {
           start: '50% 40%',
           end: '80% 20%',
           trigger: heroSection.current,
-          
+
           // markers: true,
         },
       })
@@ -1024,7 +1092,7 @@ const AIvideoAgency = () => {
           },
 
           y: () => -1 * getY(),
-          bottom:'10px'
+          bottom: '10px',
         },
         {
           width: '100%',
@@ -1032,7 +1100,7 @@ const AIvideoAgency = () => {
           y: 0,
 
           duration: 0.8,
-          bottom:'0px'
+          bottom: '0px',
         }
       )
         .fromTo(
@@ -1200,7 +1268,7 @@ const AIvideoAgency = () => {
                 </div>
 
                 <div>
-                  <span >Services</span>
+                  <span>Services</span>
                 </div>
               </h1>
 
@@ -1208,15 +1276,30 @@ const AIvideoAgency = () => {
               <div className="mt-6 md:mt-8 heroMarquee relative md:bottom-[3.8rem]">
                 <ul className="list-inside space-y-3 text-[16px] leading-[1.25] tracking-[-0.64px] font-opensans md:text-[24px] md:leading-[32px] md:tracking-[-0.24px] font-semibold">
                   <li className="flex items-center space-x-3">
-                     <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>Custom GenAI videos for brands</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                     <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>End-to-end GenAI video production</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                     <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>AI Videos at scale</span>
                   </li>
                 </ul>
@@ -1265,6 +1348,31 @@ const AIvideoAgency = () => {
               </h3>
               <GetUpdatesForm />
             </div>
+            <div
+              ref={stickyButtonRef}
+              className={`hidden fixed top-8 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+                isSticky ? 'lg:block' : ''
+              } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+            >
+              <Button
+                onClick={() => {
+                  setTimeout(() => {
+                    router.push(
+                      {
+                        pathname: router.pathname,
+                        query: { type: 'send-us-a-brief' },
+                      },
+                      undefined,
+                      { shallow: true }
+                    )
+                  }, 100)
+                }}
+                className="w-full"
+                suffix={<LineArrow hover />}
+              >
+                Let&apos;s talk
+              </Button>
+            </div>
           </div>
         </div>
         <div
@@ -1289,22 +1397,29 @@ const AIvideoAgency = () => {
         </div>
       </section>
 
-
-     <section className="bg-white overflow-hidden pt-18 md:pt-30 pb-[48px] md:pb-0">
+      <section className="bg-white overflow-hidden pt-18 md:pt-30 pb-[48px] md:pb-0">
         <div className="container">
-          <LineHeading className="mb-6 md:mb-7.5">Trusted AI Video Company</LineHeading>
+          <LineHeading className="mb-6 md:mb-7.5">
+            Trusted AI Video Company
+          </LineHeading>
           <div className="grid lg:flex grid-cols-2 gap-x-5 md:gap-x-[124px] gap-y-12 md:gap-y-6 max-w-[1200px] mx-auto w-full pl-6 md:px-6 ml-0 md:ml-5 md:ml-[2.8rem] transform transform -translate-x-[24px] sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-20">
             {stats.map((s, i) => (
               <div
-                className={`w-full lg:w-1/4 text-[42px] leading-14 tracking-[-1.44px] md:text-stat group relative ${statstyles.statline} [&:nth-child(3)]:md:pr-[13px] ${s.id === 3 ? 'md:!pr-[26px] md:!pl-6':''}`}
+                className={`w-full lg:w-1/4 text-[42px] leading-14 tracking-[-1.44px] md:text-stat group relative ${statstyles.statline} [&:nth-child(3)]:md:pr-[13px] ${s.id === 3 ? 'md:!pr-[26px] md:!pl-6' : ''}`}
                 key={s.id}
               >
-                <div className={`${s.id === 3 ? 'ipad-mini-ml':''}`}>
-                  <div className={`lg:w-fit lg:mx-auto relative ${s.id === 0 ? 'md:!mr-[24px]':''} ${s.id === 1 ? 'md:!ml-[28px]':''} ${s.id === 2 ? 'md:!ml-[28px]':''} ${s.id === 3 ? 'md:-left-[29px]':''}`}>
-                    <div className={`${s.id === 1 ? '!-ml-[8px] md:!-ml-[14px]':''} ${s.id === 0 ? '!-ml-[4px] md:!-ml-[7px]':''} ${s.id === 2 ? '!-ml-[4px] md:!-ml-[3px]':''} ${s.id === 3 ? '!-ml-[3px] md:!-ml-[7px]':''}`}>
-                        <RollupNumber {...s.countUpProps} />
-                      </div>
-                    <div className={`text-sm leading-[17px] md:text-2xl md:leading-7 tracking-normal md:tracking-[-0.96px] text-rb-black mt-0 md:mt-3 font-medium font-everett ${s.id === 2 ? 'md:ml-[3px] md:w-[160px]':''}`}>
+                <div className={`${s.id === 3 ? 'ipad-mini-ml' : ''}`}>
+                  <div
+                    className={`lg:w-fit lg:mx-auto relative ${s.id === 0 ? 'md:!mr-[24px]' : ''} ${s.id === 1 ? 'md:!ml-[28px]' : ''} ${s.id === 2 ? 'md:!ml-[28px]' : ''} ${s.id === 3 ? 'md:-left-[29px]' : ''}`}
+                  >
+                    <div
+                      className={`${s.id === 1 ? '!-ml-[8px] md:!-ml-[14px]' : ''} ${s.id === 0 ? '!-ml-[4px] md:!-ml-[7px]' : ''} ${s.id === 2 ? '!-ml-[4px] md:!-ml-[3px]' : ''} ${s.id === 3 ? '!-ml-[3px] md:!-ml-[7px]' : ''}`}
+                    >
+                      <RollupNumber {...s.countUpProps} />
+                    </div>
+                    <div
+                      className={`text-sm leading-[17px] md:text-2xl md:leading-7 tracking-normal md:tracking-[-0.96px] text-rb-black mt-0 md:mt-3 font-medium font-everett ${s.id === 2 ? 'md:ml-[3px] md:w-[160px]' : ''}`}
+                    >
                       {s.text}
                     </div>
                   </div>
@@ -1313,17 +1428,17 @@ const AIvideoAgency = () => {
             ))}
           </div>
         </div>
-    </section>
-      
+      </section>
+
       <section className="pb-[48px] pt-[24px] md:pt-30 md:!pb-0 bg-white h-[300vh] featured-section">
         <div className="sticky top-[10%] md:top-5">
           <div className="overflow-hidden">
             <div className="container">
               <LineHeading className="mb-6 md:mb-7.5">
-                 The Makerrs Advantage
+                The Makerrs Advantage
               </LineHeading>
               <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
-                How we craft Gen AI videos  {' '}
+                How we craft Gen AI videos{' '}
                 <br className="hidden md:inline-block" />
                 for Brand Communications
               </div>
@@ -1353,7 +1468,7 @@ const AIvideoAgency = () => {
           </div>
         </div>
       </section>
-    
+
       <section className={`overflow-hidden bg-white pt-[48px] pb-18 md:py-30 `}>
         <div className="container text-center">
           <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
@@ -1408,7 +1523,7 @@ const AIvideoAgency = () => {
 
       <TrustedBrandsSection className="bg-white pb-[48px] md:!pb-[80px]" />
 
-        <section className="py-18 md:py-15 overflow-hidden">
+      <section className="py-18 md:py-15 overflow-hidden">
         <div className="container">
           <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
             How do we create GenAI Videos
@@ -1453,12 +1568,12 @@ const AIvideoAgency = () => {
         </div>
       </section>
 
-       <Testimonials
-      title={'Why Our Clients Trust Us'}
-      className="py-18 md:py-30"
-      testimonialData={createTestimonialAIData}
-      type="semi"
-    />
+      <Testimonials
+        title={'Why Our Clients Trust Us'}
+        className="py-18 md:py-30"
+        testimonialData={createTestimonialAIData}
+        type="semi"
+      />
 
       <section className="py-18 md:pt-0 md:pb-30">
         <div className="container">
@@ -1497,10 +1612,12 @@ const AIvideoAgency = () => {
           ></video>
         </div>
       </VideoModal>
-       <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(explainerVideoProductionSchema) }}
-        ></script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(explainerVideoProductionSchema),
+        }}
+      ></script>
     </>
   )
 }

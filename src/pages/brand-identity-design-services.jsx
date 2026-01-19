@@ -59,14 +59,21 @@ const BrandIdentityDesign = () => {
   })
 
   useEffect(() => {
-    const handleScroll = () => {
-      setSticky(window.scrollY >= 350)
-    }
+    const videoEl = document.getElementById('video-section')
+    if (!videoEl) return
 
-    window.addEventListener('scroll', handleScroll)
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // show sticky once the video is out of view
+        setSticky(!entry.isIntersecting)
+      },
+      { root: null, threshold: 0 }
+    )
+
+    observer.observe(videoEl)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      observer.disconnect()
     }
   }, [])
 
@@ -81,7 +88,11 @@ const BrandIdentityDesign = () => {
           </div>
         ),
       },
-      text: <>brands  <br />  nurtured</>,
+      text: (
+        <>
+          brands <br /> nurtured
+        </>
+      ),
     },
     {
       id: 1,
@@ -89,7 +100,11 @@ const BrandIdentityDesign = () => {
         value: 10,
         suffix: <span className="text-rb-red">+</span>,
       },
-      text: <>industries  <br className="md:hidden" /> championed</>,
+      text: (
+        <>
+          industries <br className="md:hidden" /> championed
+        </>
+      ),
     },
     {
       id: 2,
@@ -110,7 +125,11 @@ const BrandIdentityDesign = () => {
           </span>
         ),
       },
-      text: <>thinkers and  <br className="md:hidden" /> creators</>,
+      text: (
+        <>
+          thinkers and <br className="md:hidden" /> creators
+        </>
+      ),
     },
   ]
 
@@ -149,7 +168,7 @@ const BrandIdentityDesign = () => {
       alt: 'ai_based_tech_solutionss',
       title: 'Future-Ready Branding',
       desc: 'Your identity is built to thrive in a fast-evolving digital world, designed for today’s business landscape and powered by the latest tech to keep your brand fresh and relevant.',
-    }
+    },
   ]
 
   const sliderVerticleCards = [
@@ -233,10 +252,15 @@ const BrandIdentityDesign = () => {
   const testimonialsDefault = [
     {
       key: 0,
-      quote:
+      quote: (
         <>
-          Makerrs brought a unique blend of clarity and creativity, translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website within incredibly tight deadlines. Their efficiency was pivotal in successfully launching our brand.
-        </>,
+          Makerrs brought a unique blend of clarity and creativity, translating
+          complex healthcare concepts into a simple brand identity system that
+          was &apos;full of heart&apos;. They also created a cohesive website
+          within incredibly tight deadlines. Their efficiency was pivotal in
+          successfully launching our brand.
+        </>
+      ),
       name: 'Rinku Agarwal Basu',
       designation: 'COO',
       company: 'Lillia Care',
@@ -248,20 +272,24 @@ const BrandIdentityDesign = () => {
     },
     {
       key: 1,
-      quote:
+      quote: (
         <>
-          Makerrs was especially impressive with their creative strategy, design, and copy. They took the quirk and the energy of local markets and their iconic signs and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it has translated into a love for the product itself.
-        </>,
+          Makerrs was especially impressive with their creative strategy,
+          design, and copy. They took the quirk and the energy of local markets
+          and their iconic signs and transformed them into a fresh, modern
+          expression for our brand. Our customers are drawn to the unique
+          identity, and it has translated into a love for the product itself.
+        </>
+      ),
       name: 'KUNCHERIA MARATTUKALAM',
       designation: 'FOUNDER & DIRECTOR',
       company: 'Maratt Group',
       image: {
         srcSet:
-
           '/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w',
         sizes: '(max-width:768px) 533px, 1066px',
       },
-    }
+    },
   ]
 
   const data = [
@@ -312,7 +340,7 @@ const BrandIdentityDesign = () => {
       need: 'Project management',
       others: 'Emails, spreadsheets',
       redBangle: 'Cloud-based workflows',
-    }
+    },
   ]
 
   const workData = [
@@ -787,22 +815,62 @@ const BrandIdentityDesign = () => {
       title: 'What’s included in your brand identity services?',
       content: (
         <>
-          <p>We craft a brand identity system that covers everything you need to build a strong, cohesive brand.</p><br />
-          <p>We start with market research, competitor analysis, and collaborative brand workshops to understand your business, audience, and competition. From there, we define your brand strategy, values, voice, and story.</p><br />
-          <p>Next, we design a complete identity system: brand name, logo, typography, colour palette, iconography, imagery, and usage guidelines, all documented in a detailed brand manual.</p><br />
-          <p>We also develop essential brand collateral tailored to your needs, such as business stationery, emailers, brochures, websites, posters, merchandise, and more.</p><br />
-          <p>Where needed, we support rollout as well, helping launch your new identity across digital channels like social media and campaign assets.</p>
+          <p>
+            We craft a brand identity system that covers everything you need to
+            build a strong, cohesive brand.
+          </p>
+          <br />
+          <p>
+            We start with market research, competitor analysis, and
+            collaborative brand workshops to understand your business, audience,
+            and competition. From there, we define your brand strategy, values,
+            voice, and story.
+          </p>
+          <br />
+          <p>
+            Next, we design a complete identity system: brand name, logo,
+            typography, colour palette, iconography, imagery, and usage
+            guidelines, all documented in a detailed brand manual.
+          </p>
+          <br />
+          <p>
+            We also develop essential brand collateral tailored to your needs,
+            such as business stationery, emailers, brochures, websites, posters,
+            merchandise, and more.
+          </p>
+          <br />
+          <p>
+            Where needed, we support rollout as well, helping launch your new
+            identity across digital channels like social media and campaign
+            assets.
+          </p>
         </>
-      )
+      ),
     },
     {
       key: 4,
       title: 'What’s your process for creating a brand identity?',
       content: (
         <>
-          We follow a structured 6-step process to craft a unique and impactful brand identity. It begins with <span className='font-bold'>Discovery</span>, where we engage in deep conversations and workshops to understand your business, audience, and market. In the <span className='font-bold'>Distillation</span> phase, we refine these insights into a clear brand vision and personality. Next comes <span className='font-bold'>Strategy</span>, where we define your positioning with a strong differentiator, backed by research. The <span className='font-bold'>Creative</span> phase brings this to life through storytelling, brand voice and visual identity development. In the <span className='font-bold'>Brand</span> phase, we compile all assets of the identity system—logo, colour palettes, typography, and define the usage guidelines in the form of a manual. Finally, in the <span className='font-bold'>Buzz</span> phase, we help you launch your brand through marketing assets, social media posts, websites, and other essential touchpoints to ensure it lands with impact.
+          We follow a structured 6-step process to craft a unique and impactful
+          brand identity. It begins with{' '}
+          <span className="font-bold">Discovery</span>, where we engage in deep
+          conversations and workshops to understand your business, audience, and
+          market. In the <span className="font-bold">Distillation</span> phase,
+          we refine these insights into a clear brand vision and personality.
+          Next comes <span className="font-bold">Strategy</span>, where we
+          define your positioning with a strong differentiator, backed by
+          research. The <span className="font-bold">Creative</span> phase brings
+          this to life through storytelling, brand voice and visual identity
+          development. In the <span className="font-bold">Brand</span> phase, we
+          compile all assets of the identity system—logo, colour palettes,
+          typography, and define the usage guidelines in the form of a manual.
+          Finally, in the <span className="font-bold">Buzz</span> phase, we help
+          you launch your brand through marketing assets, social media posts,
+          websites, and other essential touchpoints to ensure it lands with
+          impact.
         </>
-      )
+      ),
     },
     {
       key: 5,
@@ -821,10 +889,20 @@ const BrandIdentityDesign = () => {
       title: 'Can I see brand identity examples?',
       content: (
         <>
-          Of course. We have an extensive portfolio of brand identity examples across technology, automotive, F&B, and hospitality. You can explore our brand collateral projects
-          <a href="https://www.b2b.redbangle.com/work/b2b-brand-design-agency" className="text-rb-red" target='_blank'> here</a>.
+          Of course. We have an extensive portfolio of brand identity examples
+          across technology, automotive, F&B, and hospitality. You can explore
+          our brand collateral projects
+          <a
+            href="https://www.b2b.redbangle.com/work/b2b-brand-design-agency"
+            className="text-rb-red"
+            target="_blank"
+          >
+            {' '}
+            here
+          </a>
+          .
         </>
-      )
+      ),
     },
     {
       key: 8,
@@ -854,7 +932,7 @@ const BrandIdentityDesign = () => {
       company: 'Meladio',
       alt: 'Medalio',
       tags: ['Hospitality', 'Brand Identity', 'Logo Design'],
-      href: '/brand-designs/medalio-hospitality-brand-identity'
+      href: '/brand-designs/medalio-hospitality-brand-identity',
     },
     {
       key: 2,
@@ -862,7 +940,12 @@ const BrandIdentityDesign = () => {
       company: 'Lillia Care',
       image: '/img/works/lillia_img.jpg',
       alt: 'Lillia Care',
-      tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
+      tags: [
+        'Healthtech',
+        'Brand Identity',
+        'Website Design',
+        'Website Development',
+      ],
       case_study_title: 'lillia-care-brand-launch',
       href: '/brand-designs/lillia-care-brand-launch',
     },
@@ -951,7 +1034,7 @@ const BrandIdentityDesign = () => {
           },
 
           y: () => -1 * getY(),
-          bottom: '10px'
+          bottom: '10px',
         },
         {
           width: '100%',
@@ -959,7 +1042,7 @@ const BrandIdentityDesign = () => {
           y: 0,
 
           duration: 0.8,
-          bottom: '0px'
+          bottom: '0px',
         }
       )
         .fromTo(
@@ -1139,19 +1222,39 @@ const BrandIdentityDesign = () => {
               <div className="mt-6 md:mt-8 heroMarquee">
                 <ul className="list-inside space-y-3 text-[16px] leading-[1.25] tracking-[-0.64px] font-opensans md:text-[24px] md:leading-[32px] md:tracking-[-0.24px] font-semibold">
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>From strategy to brand launch</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>Branding that&apos;s crafted for recall</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>Design that works across platforms</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <img src="/img/services/crew/success-check.svg" alt="check" height={24} width={24} />
+                    <img
+                      src="/img/services/crew/success-check.svg"
+                      alt="check"
+                      height={24}
+                      width={24}
+                    />
                     <span>Design that aligns with your goals</span>
                   </li>
                 </ul>
@@ -1199,6 +1302,31 @@ const BrandIdentityDesign = () => {
                 Connect with us. Let’s get started.
               </h3>
               <GetUpdatesForm />
+            </div>
+            <div
+              ref={stickyButtonRef}
+              className={`hidden fixed top-8 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+                isSticky ? 'lg:block' : ''
+              } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+            >
+              <Button
+                onClick={() => {
+                  setTimeout(() => {
+                    router.push(
+                      {
+                        pathname: router.pathname,
+                        query: { type: 'send-us-a-brief' },
+                      },
+                      undefined,
+                      { shallow: true }
+                    )
+                  }, 100)
+                }}
+                className="w-full"
+                suffix={<LineArrow hover />}
+              >
+                Let&apos;s talk
+              </Button>
             </div>
           </div>
         </div>
@@ -1287,7 +1415,9 @@ const BrandIdentityDesign = () => {
 
       <section className="bg-white overflow-hidden pt-18 md:pt-30 pb-[48px] md:pb-0">
         <div className="container">
-          <LineHeading className="mb-6 md:mb-7.5">WE POWER IDENTITY</LineHeading>
+          <LineHeading className="mb-6 md:mb-7.5">
+            WE POWER IDENTITY
+          </LineHeading>
           <div className="grid lg:flex grid-cols-2 gap-x-5 md:gap-x-[124px] gap-y-12 md:gap-y-6 max-w-[1200px] mx-auto w-full pl-6 md:px-6 ml-0 md:ml-5 md:ml-[3.1rem] transform transform -translate-x-[24px] sm:-translate-x-6 lg:-translate-x-6 xl:-translate-x-20">
             {stats.map((s, i) => (
               <div
@@ -1295,11 +1425,17 @@ const BrandIdentityDesign = () => {
                 key={s.id}
               >
                 <div className={`${s.id === 3 ? 'ipad-mini-ml' : ''}`}>
-                  <div className={`lg:w-fit lg:mx-auto relative ${s.id === 1 ? 'md:!ml-[28px]' : ''} ${s.id === 2 ? 'md:!ml-[28px]' : ''} ${s.id === 3 ? 'md:-left-[30px]' : ''}`}>
-                    <div className={`${s.id === 1 ? '!-ml-[4px] md:!-ml-[14px]' : ''} ${s.id === 0 ? '!-ml-[4px] md:!-ml-[3px]' : ''} ${s.id === 2 ? '!-ml-[2px] md:!-ml-[3px]' : ''} ${s.id === 3 ? '!-ml-[2px] md:!-ml-[4px]' : ''}`}>
+                  <div
+                    className={`lg:w-fit lg:mx-auto relative ${s.id === 1 ? 'md:!ml-[28px]' : ''} ${s.id === 2 ? 'md:!ml-[28px]' : ''} ${s.id === 3 ? 'md:-left-[30px]' : ''}`}
+                  >
+                    <div
+                      className={`${s.id === 1 ? '!-ml-[4px] md:!-ml-[14px]' : ''} ${s.id === 0 ? '!-ml-[4px] md:!-ml-[3px]' : ''} ${s.id === 2 ? '!-ml-[2px] md:!-ml-[3px]' : ''} ${s.id === 3 ? '!-ml-[2px] md:!-ml-[4px]' : ''}`}
+                    >
                       <RollupNumber {...s.countUpProps} />
                     </div>
-                    <div className={`text-sm leading-[17px] md:text-2xl md:leading-7 tracking-normal md:tracking-[-0.96px] text-rb-black mt-0 md:mt-3 font-medium font-everett ${s.id === 2 ? 'md:ml-[3px] md:w-[160px]' : ''} ${s.id === 0 ? 'md:ml-[2px]' : ''}`}>
+                    <div
+                      className={`text-sm leading-[17px] md:text-2xl md:leading-7 tracking-normal md:tracking-[-0.96px] text-rb-black mt-0 md:mt-3 font-medium font-everett ${s.id === 2 ? 'md:ml-[3px] md:w-[160px]' : ''} ${s.id === 0 ? 'md:ml-[2px]' : ''}`}
+                    >
                       {s.text}
                     </div>
                   </div>
@@ -1318,7 +1454,7 @@ const BrandIdentityDesign = () => {
                 The Makerrs Advantage
               </LineHeading>
               <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
-                Get brand identity services {' '}
+                Get brand identity services{' '}
                 <br className="hidden md:inline-block" />
                 that elevate your business
               </div>
@@ -1352,14 +1488,15 @@ const BrandIdentityDesign = () => {
       <div className="md:pt-20">
         <FeaturedWorkSection
           posts={brandIdentityDesignPosts}
-          href="/work/brand-designs"
+          href="/work/design"
           title="EXPLORE BRAND IDENTITY PROJECTS"
-          pageName='servicebrand'
+          pageName="servicebrand"
         />
       </div>
 
-
-      <section className={`overflow-hidden bg-white pt-[48px] pb-18 md:pb-30 md:pt-15 `}>
+      <section
+        className={`overflow-hidden bg-white pt-[48px] pb-18 md:pb-30 md:pt-15 `}
+      >
         <div className="container text-center">
           <h3 className="text-title md:text-title-md mb-8 md:mb-14 font-everett">
             Why choose Makerrs <br /> over other agencies?
