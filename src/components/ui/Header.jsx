@@ -66,7 +66,7 @@ const outsideLinks = [
       },
       {
         title: 'Recruitment Video',
-        href: '/recruitment-video-production-services',
+        href: '/recruitment-video-production',
         type: 'videos',
       },
       { title: 'GenAI Video', href: '/ai-video-agency', type: 'videos' },
