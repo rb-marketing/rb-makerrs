@@ -1465,7 +1465,7 @@ export const strategyPosts = [
     company: 'P.U. Dingding',
     image: '/img/works/pudingding-thumbnail.jpg',
     tags: ['Brand Identity', 'Design Collateral', 'Film & Video Content', 'F&B'],
-    href: '/brand-designs/pu-dingding-dessert-cafe-branding',
+    href: '/brand-designs/pu-dingding-cafe',
   },
   {
     key: 2,
@@ -1474,7 +1474,7 @@ export const strategyPosts = [
     image: '/img/works/exicom_work_thumbnail.png',
     alt: 'Exicom',
     tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
-    href: '/brand-designs/exicom-e-mobility-rebrand'
+    href: '/brand-designs/exicom-EV-charger-rebrand'
   },
 ]
 
@@ -1621,7 +1621,7 @@ export const workPosts = [
     image: '/img/case-study/exicom_brand_refresh_work.jpg',
     tags: ['E-Mobility', 'Design', 'Brand Transformation', 'Visual Identity'],
     tabs: ['Featured'],
-    case_study_title: 'exicom-e-mobility-rebrand',
+    case_study_title: 'exicom-EV-charger-rebrand',
         region: []
 
   },
@@ -1647,7 +1647,7 @@ export const workPosts = [
     alt: 'Augmented Reality that brought the automobile alive',
     tabs: ['Featured'],
     tags: ['Automotive', 'XR Solution (AR/VR/MR)', 'Gamified Experience'],
-    case_study_title: 'bajaj-pulsar-augmented-reality-campaign',
+    case_study_title: 'bajaj-pulsar-augmented-reality',
         region: []
 
 
@@ -1745,7 +1745,8 @@ export const workPosts = [
     image: '/img/case-study/exicom_brand_refresh_work.jpg',
     tags: ['E-Mobility', 'Design', 'Brand Transformation', 'Visual Identity'],
     tabs: ['design'],
-    case_study_title: 'exicom-e-mobility-rebrand',
+    case_study_title: 'exicom-EV-charger-rebrand',
+    href: '/brand-designs/exicom-EV-charger-rebrand',
         region: []
 
   },
@@ -1757,7 +1758,8 @@ export const workPosts = [
     image: '/img/case-study/pudingding-thumbnail.jpg',
     tags: ['F&B', 'Cafe', 'Brand Identity', 'Launch Video'],
     tabs: ['design'],
-    case_study_title: 'pu-dingding-dessert-cafe-branding',
+    case_study_title: 'pu-dingding-cafe',
+    href: '/brand-designs/pu-dingding-cafe',
         region: []
 
   },
@@ -1770,8 +1772,8 @@ export const workPosts = [
     alt: 'Medalio',
     tabs: ['design'],
     tags: ['Hospitality', 'Brand Identity', 'Logo Design'],
-    case_study_title: 'medalio-hospitality-brand-identity',
-    href: '/brand-designs/medalio-hospitality-brand-identity',
+    case_study_title: 'medalio-hotel-brand-identity',
+    href: '/brand-designs/medalio-hotel-brand-identity',
         region: []
 
   },
@@ -1793,6 +1795,7 @@ export const workPosts = [
       'F&B',
     ],
     case_study_title: 'thelagram',
+    href: '/brand-design/thelagram-restaurant',
         region: []
 
   },
@@ -1805,7 +1808,8 @@ export const workPosts = [
     alt: 'Augmented Reality that brought the automobile alive',
     tabs: ['design'],
     tags: ['Automotive', 'XR Solution (AR/VR/MR)', 'Gamified Experience'],
-    case_study_title: 'bajaj-pulsar-augmented-reality-campaign',
+    case_study_title: 'bajaj-pulsar-augmented-reality',
+    href: '/brand-design/bajaj-pulsar-augmented-reality',
         region: []
 
 
@@ -1820,7 +1824,7 @@ export const workPosts = [
     tabs: ['design'],
     tags: ['Technology', 'Interactive Experience', '3D Animation Video', 'Marketing Video'],
     case_study_title: 'infosys-topaz-3d-interactive-experience',
-    href: '/brand-experiences/infosys-topaz-3d-interactive-experience',
+    href: '/brand-design/infosys-topaz-3d-interactive-experience',
         region: []
 
 
@@ -1834,6 +1838,7 @@ export const workPosts = [
     tags: ['Finance', 'Internal Communications Campaign', 'Marketing Campaign'],
     tabs: ['design'],
     case_study_title: 'axis-bank-activation-campaign',
+    href: '/brand-design/axis-bank-activation-campaign',
         region: []
 
   },
@@ -1845,8 +1850,8 @@ export const workPosts = [
     image: '/img/works/infy-ai-first-work.webp',
     tags: ['Technology', 'Digital Campaign', 'Employer Branding video', 'Social Media Content'],
     tabs: ['design'],
-    case_study_title: 'infosys-employees-social-media-campaign',
-    href: '/campaigns/infosys-employees-social-media-campaign',
+    case_study_title: 'animated-case-study-videos-Infosys-employees',
+    href: '/brand-campaign/animated-case-study-videos-Infosys-employees',
         region: []
 
   },
@@ -1859,7 +1864,8 @@ export const workPosts = [
     alt: 'Launching a Sports Brand logo with a 3D Billboard',
     tabs: ['design'],
     tags: ['Sports', '3D Billboard Animation'],
-    case_study_title: 'mumbai-indians-3d-billboard-animation',
+    case_study_title: '3D-logo-animation-mumbai-indians',
+    href: '/video-production/3D-logo-animation-mumbai-indians',
         region: []
 
 
@@ -1872,7 +1878,8 @@ export const workPosts = [
     alt: 'infosys-living-labs-gallery',
     tabs: ['design'],
     tags: ['Technology', 'Integrated Design Services', 'Brand Experience', 'ESG'],
-    case_study_title: 'infosys-sustainability-design-gallery',
+    case_study_title: 'infosys-sustainability-gallery',
+    href: '/brand-design/infosys-sustainability-gallery',    
         region: []
 
   },
@@ -1884,7 +1891,8 @@ export const workPosts = [
     image: '/img/case-study/biocon_work_thumbnail.png',
     tags: ['Biopharmaceutical', 'Integrated Design Services', 'Brand Experience'],
     tabs: ['design'],
-    case_study_title: 'office-branding-for-biocon',
+    case_study_title: 'biocon-office-branding',
+    href: '/brand-design/biocon-office-branding',
         region: []
 
   },
@@ -2028,8 +2036,8 @@ export const workPosts = [
     image: '/img/works/infy-ai-first-work.webp',
     tags: ['Technology', 'Digital Campaign', 'Employer Branding video', 'Social Media Content'],
     tabs: ['videos'],
-    case_study_title: 'infosys-employees-social-media-campaign',
-    href: '/brand-campaign/animated-case-study-videos-infosys-employees',
+    case_study_title: 'animated-case-study-videos-Infosys-employees',
+    href: '/brand-campaign/animated-case-study-videos-Infosys-employees',
         region: []
 
   }
@@ -2042,7 +2050,7 @@ export const workPosts = [
     alt: 'Launching a Sports Brand logo with a 3D Billboard',
     tabs: ['videos'],
     tags: ['Sports', '3D Billboard Animation'],
-    case_study_title: 'mumbai-indians-3d-billboard-animation',
+    case_study_title: '3D-logo-animation-mumbai-indians',
     href: '/video-production/3d-logo-animation-mumbai-indians',
         region: []
 
@@ -2681,7 +2689,7 @@ export const workPosts = [
     'Social Media Content'
   ],
   tabs: ['campaign'],
-  case_study_title: 'infosys-employees-social-media-campaign',
+  case_study_title: 'animated-case-study-videos-Infosys-employees',
   href: '/brand-campaign/animated-case-study-videos',
       region: []
 
@@ -2769,7 +2777,7 @@ export const workPosts = [
   alt: 'Augmented Reality that brought the automobile alive',
   tabs: ['campaign'],
   tags: ['Automotive', 'XR Solution (AR/VR/MR)', 'Gamified Experience'],
-  case_study_title: 'bajaj-pulsar-augmented-reality-campaign',
+  case_study_title: 'bajaj-pulsar-augmented-reality',
   href: '/brand-design/bajaj-pulsar-augmented-reality',
       region: []
 
