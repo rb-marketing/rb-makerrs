@@ -158,7 +158,7 @@ const CorporateVideoLandPage = () => {
       imgurl: 'img/services/videos/icon7.svg',
       alt: 'creative_ideation',
       title: 'Great Video Concepts',
-      desc: 'Work with a corporate video production agency that understands your communication goals and business context; presents you with at least two exciting video concepts and helps you choose the best storytelling approach.',
+      desc: 'Work with a corporate video production agency that understands your communication goals and business context; gives you unique video concepts and helps you choose the best storytelling approach.',
     },
     {
       key: 2,
@@ -186,7 +186,7 @@ const CorporateVideoLandPage = () => {
       imgurl: 'img/services/videos/icon8.svg',
       alt: 'icon_2',
       title: 'Premium Post Production',
-      desc: ' From editing, animation, sound design, and voice-overs to sound effects, VFX, CGI, and colour grading, get consistent quality across the entire post-production process, without breaking a sweat.',
+      desc: 'From editing, animation, sound design and voice overs to sound effects, VFX, CGI and colour grading – now you can get consistent quality across the post production process without breaking a sweat.',
     },
     {
       key: 6,
@@ -203,7 +203,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/infosys_europe_localisation.png',
       },
-      title: 'Infosys Europe Localisation',
+      title: 'Corporate Video for Europe region for a large IT firm',
       company: {
         name: 'Infosys',
       },
@@ -231,25 +231,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092046382?share=copy',
           thumbnail: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
-          title: 'Honasa Pre-IPO Corporate Film',
+          title: 'Pre-IPO Corporate Film for a D2C Startup',
           duration: '03:10',
         },
         {
           videolink: 'https://vimeo.com/1031074650',
           thumbnail: '/img/corporate-video/wipro_australia.png',
-          title: 'Wipro Australia',
+          title: 'Australia-region Corporate Film for an IT Giant',
           duration: '01:10',
         },
         {
           videolink: 'https://vimeo.com/1092044663?share=copy',
           thumbnail: '/img/corporate-video/bagmane_corporate_film.png',
-          title: 'Bagmane Corporate Film',
+          title: 'Corporate Film for Real Estate Conglomorate',
           duration: '03:17',
         },
         {
           videolink: 'https://vimeo.com/1078429989',
           thumbnail: '/img/corporate-video/ge_aerospace.png',
-          title: 'GE Aerospace Brand film',
+          title: 'Premium Corporate Film for Aerospace Manufacturer',
           duration: '02:10',
         },
       ],
@@ -259,7 +259,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
       },
-      title: 'Honasa Pre-IPO Corporate Film',
+      title: 'Pre-IPO Corporate Film for a D2C Startup',
       company: {
         name: 'Honasa',
       },
@@ -287,25 +287,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1031074650',
           thumbnail: '/img/corporate-video/wipro_australia.png',
-          title: 'Wipro Australia',
+          title: 'Australia-region Corporate Film for an IT Giant',
           duration: '01:10',
         },
         {
           videolink: 'https://vimeo.com/1092044663?share=copy',
           thumbnail: '/img/corporate-video/bagmane_corporate_film.png',
-          title: 'Bagmane Corporate Film',
+          title: 'Corporate Film for Real Estate Conglomorate',
           duration: '03:17',
         },
         {
           videolink: 'https://vimeo.com/1078429989',
           thumbnail: '/img/corporate-video/ge_aerospace.png',
-          title: 'GE Aerospace Brand film',
+          title: 'Premium Corporate Film for Aerospace Manufacturer',
           duration: '02:10',
         },
         {
           videolink: 'https://vimeo.com/1031815235',
           thumbnail: '/img/corporate-video/infosys_andrea_hendricks.png',
-          title: 'Infosys - Andrea Hendricks',
+          title: 'Corporate Video Featuring Global Leaders',
           duration: '01:28',
         },
       ],
@@ -315,7 +315,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/wipro_australia.png',
       },
-      title: 'Wipro Australia',
+      title: 'Australia-region Corporate Film for an IT Giant',
       company: {
         name: 'Wipro',
       },
@@ -343,25 +343,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092044663?share=copy',
           thumbnail: '/img/corporate-video/bagmane_corporate_film.png',
-          title: 'Bagmane Corporate Film',
+          title: 'Corporate Film for Real Estate Conglomorate',
           duration: '03:17',
         },
         {
           videolink: 'https://vimeo.com/1078429989',
           thumbnail: '/img/corporate-video/ge_aerospace.png',
-          title: 'GE Aerospace Brand film',
+          title: 'Premium Corporate Film for Aerospace Manufacturer',
           duration: '02:10',
         },
         {
           videolink: 'https://vimeo.com/1031815235',
           thumbnail: '/img/corporate-video/infosys_andrea_hendricks.png',
-          title: 'Infosys - Andrea Hendricks',
+          title: 'Corporate Video Featuring Global Leaders',
           duration: '01:28',
         },
         {
           videolink: 'https://vimeo.com/1092045236?share=copy',
           thumbnail: '/img/corporate-video/stopak_corporate_film.png',
-          title: 'Stopak corporate film',
+          title: 'Corporate Video for Packaging Manufacturer',
           duration: '01:34',
         },
       ],
@@ -371,7 +371,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/bagmane_corporate_film.png',
       },
-      title: 'Bagmane Corporate Film',
+      title: 'Corporate Film for Real Estate Conglomorate',
       company: {
         name: 'Bagmane',
       },
@@ -399,25 +399,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1078429989',
           thumbnail: '/img/corporate-video/ge_aerospace.png',
-          title: 'GE Aerospace Brand film',
+          title: 'Premium Corporate Film for Aerospace Manufacturer',
           duration: '02:10',
         },
         {
           videolink: 'https://vimeo.com/1031815235',
           thumbnail: '/img/corporate-video/infosys_andrea_hendricks.png',
-          title: 'Infosys - Andrea Hendricks',
+          title: 'Corporate Video Featuring Global Leaders',
           duration: '01:28',
         },
         {
           videolink: 'https://vimeo.com/1092045236?share=copy',
           thumbnail: '/img/corporate-video/stopak_corporate_film.png',
-          title: 'Stopak corporate film',
+          title: 'Corporate Video for Packaging Manufacturer',
           duration: '01:34',
         },
         {
           videolink: 'https://vimeo.com/1078406512',
           thumbnail: '/img/corporate-video/gordon_ritter.png',
-          title: 'Gordon Ritter',
+          title: 'Thought Leadership Videos for Vymo',
           duration: '10:18',
         },
       ],
@@ -427,7 +427,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/ge_aerospace.png',
       },
-      title: 'GE Aerospace Brand film',
+      title: 'Premium Corporate Film for Aerospace Manufacturer',
       company: {
         name: 'GE Aerospace',
       },
@@ -454,25 +454,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1031815235',
           thumbnail: '/img/corporate-video/infosys_andrea_hendricks.png',
-          title: 'Infosys - Andrea Hendricks',
+          title: 'Corporate Video Featuring Global Leaders',
           duration: '01:28',
         },
         {
           videolink: 'https://vimeo.com/1092045236?share=copy',
           thumbnail: '/img/corporate-video/stopak_corporate_film.png',
-          title: 'Stopak corporate film',
+          title: 'Corporate Video for Packaging Manufacturer',
           duration: '01:34',
         },
         {
           videolink: 'https://vimeo.com/1078406512',
           thumbnail: '/img/corporate-video/gordon_ritter.png',
-          title: 'Gordon Ritter',
+          title: 'Thought Leadership Videos for Vymo',
           duration: '10:18',
         },
         {
           videolink: 'https://vimeo.com/1092044365/6eb7300c7c?share=copy',
           thumbnail: '/img/corporate-video/infosys_europe_localisation.png',
-          title: 'Infosys Europe Localisation',
+          title: 'Corporate Video for Europe region for a large IT firm',
           duration: '02:01',
         },
       ],
@@ -482,7 +482,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/infosys_andrea_hendricks.png',
       },
-      title: 'Infosys - Andrea Hendricks',
+      title: 'Corporate Video Featuring Global Leaders',
       company: {
         name: 'Infosys',
       },
@@ -508,25 +508,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092045236?share=copy',
           thumbnail: '/img/corporate-video/stopak_corporate_film.png',
-          title: 'Stopak corporate film',
+          title: 'Corporate Video for Packaging Manufacturer',
           duration: '01:34',
         },
         {
           videolink: 'https://vimeo.com/1078406512',
           thumbnail: '/img/corporate-video/gordon_ritter.png',
-          title: 'Gordon Ritter',
+          title: 'Thought Leadership Videos for Vymo',
           duration: '10:18',
         },
         {
           videolink: 'https://vimeo.com/1092044365/6eb7300c7c?share=copy',
           thumbnail: '/img/corporate-video/infosys_europe_localisation.png',
-          title: 'Infosys Europe Localisation',
+          title: 'Corporate Video for Europe region for a large IT firm',
           duration: '02:01',
         },
         {
           videolink: 'https://vimeo.com/1092046382?share=copy',
           thumbnail: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
-          title: 'Honasa Pre-IPO Corporate Film',
+          title: 'Pre-IPO Corporate Film for a D2C Startup',
           duration: '03:10',
         },
       ],
@@ -536,7 +536,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/stopak_corporate_film.png',
       },
-      title: 'Stopak corporate film',
+      title: 'Corporate Video for Packaging Manufacturer',
       company: {
         name: 'Stopak',
       },
@@ -564,25 +564,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1078406512',
           thumbnail: '/img/corporate-video/gordon_ritter.png',
-          title: 'Gordon Ritter',
+          title: 'Thought Leadership Videos for Vymo',
           duration: '10:18',
         },
         {
           videolink: 'https://vimeo.com/1092044365/6eb7300c7c?share=copy',
           thumbnail: '/img/corporate-video/infosys_europe_localisation.png',
-          title: 'Infosys Europe Localisation',
+          title: 'Corporate Video for Europe region for a large IT firm',
           duration: '02:01',
         },
         {
           videolink: 'https://vimeo.com/1092046382?share=copy',
           thumbnail: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
-          title: 'Honasa Pre-IPO Corporate Film',
+          title: 'Pre-IPO Corporate Film for a D2C Startup',
           duration: '03:10',
         },
         {
           videolink: 'https://vimeo.com/1031074650',
           thumbnail: '/img/corporate-video/wipro_australia.png',
-          title: 'Wipro Australia',
+          title: 'Australia-region Corporate Film for an IT Giant',
           duration: '01:10',
         },
       ],
@@ -592,7 +592,7 @@ const CorporateVideoLandPage = () => {
       featuredImage: {
         src: '/img/corporate-video/gordon_ritter.png',
       },
-      title: 'Gordon Ritter',
+      title: 'Thought Leadership Videos for Vymo',
       company: {
         name: 'Vymo',
       },
@@ -620,25 +620,25 @@ const CorporateVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092044365/6eb7300c7c?share=copy',
           thumbnail: '/img/corporate-video/infosys_europe_localisation.png',
-          title: 'Infosys Europe Localisation',
+          title: 'Corporate Video for Europe region for a large IT firm',
           duration: '02:01',
         },
         {
           videolink: 'https://vimeo.com/1092046382?share=copy',
           thumbnail: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
-          title: 'Honasa Pre-IPO Corporate Film',
+          title: 'Pre-IPO Corporate Film for a D2C Startup',
           duration: '03:10',
         },
         {
           videolink: 'https://vimeo.com/1031074650',
           thumbnail: '/img/corporate-video/wipro_australia.png',
-          title: 'Wipro Australia',
+          title: 'Australia-region Corporate Film for an IT Giant',
           duration: '01:10',
         },
         {
           videolink: 'https://vimeo.com/1092044663?share=copy',
           thumbnail: '/img/corporate-video/bagmane_corporate_film.png',
-          title: 'Bagmane Corporate Film',
+          title: 'Corporate Film for Real Estate Conglomorate',
           duration: '03:17',
         },
       ],
@@ -1361,7 +1361,7 @@ const CorporateVideoLandPage = () => {
           <div className="overflow-hidden">
             <div className="container">
               <LineHeading className="mb-6 md:mb-7.5">
-                Get High-Quality Branded Storytelling
+                Get High-Quality Corporate Storytelling'
               </LineHeading>
               <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-[620px] mb-8 md:mb-[70px]">
                 What makes us a great Corporate Video Agency
@@ -1439,7 +1439,7 @@ const CorporateVideoLandPage = () => {
       </section>
 
       <section className="overflow-hidden   pt-4 ">
-        <Marquee duration={30}>
+        <Marquee duration={50}>
           {[
             {
               id: 0,
