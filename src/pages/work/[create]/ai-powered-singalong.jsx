@@ -76,7 +76,7 @@ function InfosysSingalong() {
   return (
     <>
       <SEO
-        title="Infosys AI-powered Engagement Campaign | Red Bangle"
+        title="Infosys AI-powered Engagement Campaign | Makerrs"
         description="See how Infosys ran an AI-powered Singalong campaign where employees starred in personalized videos, driving global participation and lasting impact."
         url="https://www.b2b.redbangle.com/work/ai-creatives/infosys-ai-powered-singalong-campaign"
       />

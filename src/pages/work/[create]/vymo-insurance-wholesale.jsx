@@ -103,7 +103,7 @@ function VymoWholeSalers() {
   return (
     <>
       <SEO 
-      title="Vymo Insurance Wholesalers Explainer Video | Red Bangle" 
+      title="Vymo Insurance Wholesalers Explainer Video | Makerrs" 
       description="We created a Vymo campaign that helped insurance wholesalers streamline leads, strengthen ties, and boost sales."
       url="https://www.b2b.redbangle.com/work/campaign/vymo-wholesalers-explainer-video"
       />

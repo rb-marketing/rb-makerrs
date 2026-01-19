@@ -915,7 +915,7 @@ const CorporateVideoLandPage = () => {
             creators and artists are agreed to on a case-to-case basis, and
             usually are for a year or three to begin with for specific mediums.
             Clients may extend such rights for additional years and mediums via
-            Red Bangle, at a future date and at an additional cost.
+            Makerrs, at a future date and at an additional cost.
           </div>
         </>
       ),

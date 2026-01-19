@@ -42,7 +42,7 @@ const testimonialsDefault = [
     {
         key: 0,
         quote:
-        'We partnered with Red Bangle to create video content for our internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
+        'We partnered with Makerrs to create video content for our internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends and are always experimental and open to feedback. They’re an amazing lot to work with!',
         name: 'Lissa Smith',
         designation: 'Marketing Manager',
         company: 'FORTUNE 100 ITES ENTERPRISE',
@@ -80,7 +80,7 @@ function MygateRewards() {
         <>
             <SEO
                 title="Case Study: MyGate Rewards & Recognition "
-                description="Explore how Red Bangle, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
+                description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
                 url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/mygate-rewards-recognition"   
             />
             <WorkHeroSection

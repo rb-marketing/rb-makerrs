@@ -131,8 +131,8 @@ function My11Circle() {
   return (
     <>
       <SEO
-        title="Case Study: My11Circle | Creative Advertising & Digital Marketing Campaign | Red Bangle"
-        description="Explore how Red Bangle, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for My11Circle using b2c marketing campaign strategy. "
+        title="Case Study: My11Circle | Creative Advertising & Digital Marketing Campaign | Makerrs"
+        description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for My11Circle using b2c marketing campaign strategy. "
         url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/my11circle-case-study"
       />
       <WorkHeroSection
@@ -171,7 +171,7 @@ function My11Circle() {
               </LineHeading>
 
              <p className="text-base md:text-2xl text-rb-black/80 leading-7 mb-[30px]">
-                Red Bangle’s creative strategy leveraged the two beloved aspects
+                Makerrs’s creative strategy leveraged the two beloved aspects
                 of Indian culture - Cricket and Bollywood - to effectively
                 invite new users. We used the phrase “Try Ball Offer” to
                 communicate a zero-loss first game to new users. Our scripts

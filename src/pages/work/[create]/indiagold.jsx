@@ -10,22 +10,6 @@ import {
 import { CommercialSection } from '@/components/pages/work'
 import { useRouter } from 'next/router';
 
-
-// const jewelsTestimonialData = [
-//   {
-//     key: 0,
-//     quote:
-//       'It has been a pleasure to work with the Red Bangle team. They are a unique platform that works with a range of directors and cinematographers to produce content across multiple languages and locations. This makes them nimble and effective.',
-//     name: 'SHOBA NARAYAN',
-//     designation: 'FOUNDER',
-//     image: {
-//       srcSet:
-//         '/img/testimonials/shoba-narayan.webp 533w, /img/testimonials/shoba-narayan.webp 1066w',
-//       sizes: '(max-width:768px) 533px, 1066px',
-//     },
-//   }
-// ]
-
 const pageData = {
   logo: {
     src: '/img/logos/indiagold-logo.png',
@@ -80,7 +64,7 @@ function IndiaGold() {
     <>
       <SEO
         title="Case Study: IndiaGold"
-        description="Explore how Red Bangle, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
+        description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
         url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/indiagold"
       />
       <WorkHeroSection

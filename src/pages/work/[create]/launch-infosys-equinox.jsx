@@ -153,7 +153,7 @@ function InfosysEquinox() {
     return (
         <>
             <SEO
-                title="Infosys Equinox Brand Launch Campaign | Red Bangle"
+                title="Infosys Equinox Brand Launch Campaign | Makerrs"
                 description="We launched Infosys Equinox with a human-centric campaign uniting thought leadership, social reach, and client advocacy."
                 url="https://www.b2b.redbangle.com/work/campaign/infosys-equinox-brand-launch"
             />

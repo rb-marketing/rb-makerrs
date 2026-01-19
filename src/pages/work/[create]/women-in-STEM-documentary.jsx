@@ -121,7 +121,7 @@ function WeRise() {
   return (
     <>
       <SEO 
-      title="WeRise Women in STEM Documentary | Red Bangle" 
+      title="WeRise Women in STEM Documentary | Makerrs" 
       url="https://www.b2b.redbangle.com/work/videos/werise-women-in-science-documentary"
       description="We collaborated with WeRise to reveal young women’s STEM journeys, capturing resilience and showcasing a path that inspires tomorrow’s innovators."
       />

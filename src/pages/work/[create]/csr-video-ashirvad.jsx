@@ -119,7 +119,7 @@ function Colearn() {
   return (
     <>
       <SEO
-        title="Ashirvad Plumbing School CSR Video | Red Bangle"
+        title="Ashirvad Plumbing School CSR Video | Makerrs"
         description="We crafted a film that shows how Ashirvad’s Gurukul-style Plumbing School gives young plumbers dignity, purpose & opportunity."
         url="https://www.b2b.redbangle.com/work/videos/ashirvad-plumbing-school-csr-video"
       />

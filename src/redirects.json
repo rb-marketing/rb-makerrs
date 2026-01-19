@@ -1,4 +1,32 @@
 {
+  "/about/who-we-are":"/about-us",
+  "/work/brand-designs": "/work/design",
+  "/work/campaigns": "/work/campaign",
+  "/work/ai-creatives": "/work/featured",
+  "/work/brand-experiences": "/work/featured",
+  "/work/international-video-crews": "/work/featured",
+  "/b2b-brand-strategy-agency": "/brand-design-agency",
+  "/b2b-video-production-agency": "/video-production",
+  "/case-study-video-production-services": "/video-testimonial-production",
+  "/recruitment-video-production-services": "/recruitment-video-production",
+  "/b2b-brand-design-agency": "/brand-design-agency",
+  "/b2b-brand-campaign-agency": "/advertising-agency",
+  "/b2b-international-video-crew-agency": "/video-production-near-me",
+  "/about": "/about-us",
+  "/collab": "/freelance-gigs",
+  "/who-we-are": "/about-us",
+  "/team": "/about-us",
+  "/brand-design-agency-india": "/brand-design-agency",
+  "/brand-campaign-agency-india": "/advertising-agency",
+  "/video-content-production-agency-india": "/video-production",
+  "/film-and-video-production-agency-india": "/video-production-near-me",
+
+
+
+
+
+
+
   "/blog/the-sound-of-success-how-sonic-branding-hits-all-the-right-notes":
     "/brand-identity/sonic-branding-success",
 
@@ -184,9 +212,6 @@
 
   "/blog/rejoice-mirrorless-cameras-not-endangered-anymore":
     "/video-production/mirrorless-cameras",
-
-  "/explainer-videos/ai-explainer-videos":
-    "/explainer-video/ai-explainer-videos",
 
   "/case-study-videos/customer-case-study-videos":
     "/case-study-video/customer-case-study-videos",

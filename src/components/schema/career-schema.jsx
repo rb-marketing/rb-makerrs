@@ -175,7 +175,7 @@ export const schemaCareer = [
   {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'Employment At Red Bangle',
+    name: 'Employment At Makerrs',
     image: 'https://www.redbangle.com/wp-content/uploads/2021/02/logored.png',
     url: 'https://www.redbangle.com/join-our-team-of-creative-marketing-experts',
     telephone: '',
@@ -210,8 +210,8 @@ export const schemaCareer = [
   {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Employment At Red Bangle',
-    alternateName: 'Employment At Red Bangle',
+    name: 'Employment At Makerrs',
+    alternateName: 'Employment At Makerrs',
     url: 'https://www.redbangle.com/join-our-team-of-creative-marketing-experts',
     logo: 'https://www.redbangle.com/wp-content/uploads/2021/02/logored.png',
     contactPoint: {
@@ -238,7 +238,7 @@ export const schemaCareer = [
         'https://www.redbangle.com/join-our-team-of-creative-marketing-experts',
       image: 'https://www.redbangle.com/wp-content/uploads/2021/02/logored.png',
     },
-    headline: 'Employment At Red Bangle',
+    headline: 'Employment At Makerrs',
     datePublished: '2011-01-28T17:15:23+08:00',
     dateModified: '2022-01-28T16:12:29+08:00',
     author: {
@@ -248,7 +248,7 @@ export const schemaCareer = [
     description: '',
     publisher: {
       '@type': 'Organization',
-      name: 'Employment At Red Bangle',
+      name: 'Employment At Makerrs',
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.redbangle.com/wp-content/uploads/2021/02/logored.png',

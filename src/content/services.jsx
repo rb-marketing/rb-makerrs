@@ -563,7 +563,7 @@ export const TNC = [
     content: (
       <>
         <div>
-          Red Bangle offers a range of creative services to global businesses.
+          Makerrs offers a range of creative services to global businesses.
         </div>
         <h3 className="mt-5 font-semibold  text-base">1. Strategy:</h3>
         <div>
@@ -616,7 +616,7 @@ export const TNC = [
         </div>
         <h3 className="mt-5 font-semibold  text-base">7. Crews:</h3>
         <div>
-          With Red Bangle, you can get professional video crews on-demand in 100
+          With Makerrs, you can get professional video crews on-demand in 100
           countries. Be it a single-camera testimonial shoot or a multi-camera
           event shoot - our curated video crew services scale to your brief, no
           matter how many cities and continents.
@@ -655,7 +655,7 @@ export const TNC = [
     key: 3,
     title: 'Typically, what business verticals do you create videos for?',
     content:
-      'Red Bangle produces a variety of videos and video content to meet the diverse needs of global B2B brands. This includes videos for marketing, corporate communications and public relations, employer branding, internal communications, sales and RFPs, and more. The formats range from corporate films to marketing explainers.',
+      'Makerrs produces a variety of videos and video content to meet the diverse needs of global B2B brands. This includes videos for marketing, corporate communications and public relations, employer branding, internal communications, sales and RFPs, and more. The formats range from corporate films to marketing explainers.',
   },
   {
     key: 5,
@@ -1416,7 +1416,7 @@ export const AnimatedblogFAQ = [
     key: 4,
     title: ' How much does an animated explainer video cost?',
     content:
-      'Costs vary based on style, length, and complexity. At Red Bangle, we scope projects based on your goals and the production treatment best suited for your brand.',
+      'Costs vary based on style, length, and complexity. At Makerrs, we scope projects based on your goals and the production treatment best suited for your brand.',
   },
   {
     key: 5,
@@ -1463,7 +1463,7 @@ export const ExplainerVideos = [
     key: 5,
     title: 'What tools or software can I use to make an explainer video?',
     content:
-      'Red Bangle is a top choice for AI-powered, professionally produced, and high-quality explainer videos tailored to your brand and audience. For do-it-yourself options, platforms like Animaker and Synthesia offer user-friendly templates, animation, and AI features. These tools help teams create engaging videos without needing advanced technical skills.',
+      'Makerrs is a top choice for AI-powered, professionally produced, and high-quality explainer videos tailored to your brand and audience. For do-it-yourself options, platforms like Animaker and Synthesia offer user-friendly templates, animation, and AI features. These tools help teams create engaging videos without needing advanced technical skills.',
   },
   {
     key: 6,
@@ -1512,7 +1512,7 @@ export const BestExplainerVideos = [
     title:
       'Should I use a professional agency or DIY tools for creating explainer videos?',
     content:
-      'Professional agencies like Red Bangle offer expertise in scripting, animation, and brand alignment, ideal for high-stakes marketing. They handle complex messaging and brand alignment. DIY tools like Vyond or Animaker are suitable for budget-conscious projects or internal training. The choice depends on budget, complexity, and desired production quality.',
+      'Professional agencies like Makerrs offer expertise in scripting, animation, and brand alignment, ideal for high-stakes marketing. They handle complex messaging and brand alignment. DIY tools like Vyond or Animaker are suitable for budget-conscious projects or internal training. The choice depends on budget, complexity, and desired production quality.',
   },
   {
     key: 6,
@@ -1593,7 +1593,7 @@ export const ExplainerVideosCompany = [
     key: 3,
     title: 'Which is the best explainer videos company for SaaS?',
     content:
-      'Red Bangle is one of the best explainer video companies for SaaS brands. Their Creative Cloud Platform, global delivery, and experience with leading B2B clients make them a trusted choice for product demos, onboarding videos, and branded explainers.',
+      'Makerrs is one of the best explainer video companies for SaaS brands. Their Creative Cloud Platform, global delivery, and experience with leading B2B clients make them a trusted choice for product demos, onboarding videos, and branded explainers.',
   },
   {
     key: 4,
@@ -1692,7 +1692,7 @@ export const B2BExplainerVideos = [
     key: 5,
     title: 'How do I choose the right agency for a B2B explainer video?',
     content:
-      'When choosing an agency, look for one with proven B2B experience, a collaborative briefing process, and storytelling expertise that aligns with your sales funnel. Red Bangle is a trusted partner for many B2B brands, offering end-to-end production, strategic scripting, and video formats tailored to different industries and funnel stages.',
+      'When choosing an agency, look for one with proven B2B experience, a collaborative briefing process, and storytelling expertise that aligns with your sales funnel. Makerrs is a trusted partner for many B2B brands, offering end-to-end production, strategic scripting, and video formats tailored to different industries and funnel stages.',
   },
   {
     key: 6,
@@ -1893,7 +1893,7 @@ export const FAQ = [
           custom-composed music, celebrity cast, etc. Rights with these creators
           and artists are agreed to on a case-to-case basis, and usually are for
           a year or three to begin with for specific mediums. Clients may extend
-          such rights for additional years and mediums via Red Bangle, at a
+          such rights for additional years and mediums via Makerrs, at a
           future date and at an additional cost.
         </div>
       </>
@@ -2000,7 +2000,7 @@ export const corporateFaq = [
           custom-composed music, celebrity cast, etc. Rights with these creators
           and artists are agreed to on a case-to-case basis, and usually are for
           a year or three to begin with for specific mediums. Clients may extend
-          such rights for additional years and mediums via Red Bangle, at a
+          such rights for additional years and mediums via Makerrs, at a
           future date and at an additional cost.
         </div>
       </>
@@ -2217,7 +2217,7 @@ export const  TechExplainerVideosFAQ  = [
     key: 6,
     title: 'What tools or agencies specialize in tech explainer videos?',
     content:
-  'Specialized tech video agencies like Red Bangle offer end-to-end production services, from scriptwriting and storyboarding to animation and post-production. DIY tools such as Adobe After Effects, Vyond, and AI-based platforms like Synthesia are often used for production under a tight budget.'    
+  'Specialized tech video agencies like Makerrs offer end-to-end production services, from scriptwriting and storyboarding to animation and post-production. DIY tools such as Adobe After Effects, Vyond, and AI-based platforms like Synthesia are often used for production under a tight budget.'    
   }, 
 ]
 
@@ -2254,7 +2254,7 @@ export const  ProductFAQ  = [
     key: 5,
     title: 'Which tools or platforms can I use to create product explainer videos?',
     content:
-    'Popular DIY tools include Vyond, Adobe After Effects, and AI-based platforms like Synthesia. For fully custom videos, many companies partner with explainer video agencies like Red Bangle that manage scripting, animation, and production end-to-end.'
+    'Popular DIY tools include Vyond, Adobe After Effects, and AI-based platforms like Synthesia. For fully custom videos, many companies partner with explainer video agencies like Makerrs that manage scripting, animation, and production end-to-end.'
   },
    {
     key: 6,
@@ -2377,7 +2377,7 @@ export const  ThreeDExplainerFAQ  = [
     key: 4,
     title: 'How do I choose the right partner for a 3D explainer video?',
     content:
-    'Partner with agencies like Red Bangle that offer custom 3D animation, industry expertise, and a collaborative workflow involving scriptwriting, storyboarding, and modeling. Review their portfolio for realism, clarity, and storytelling strength. Prioritize studios that understand your product’s complexity and can deliver visual quality aligned with your brand.'  
+    'Partner with agencies like Makerrs that offer custom 3D animation, industry expertise, and a collaborative workflow involving scriptwriting, storyboarding, and modeling. Review their portfolio for realism, clarity, and storytelling strength. Prioritize studios that understand your product’s complexity and can deliver visual quality aligned with your brand.'  
   },
    {
     key: 5,
@@ -2457,7 +2457,7 @@ export const  HowCreateFAQ  = [
     (
       <>
       It varies widely based on length, complexity, style, and production quality. At 
-      <a href="https://www.redbangle.com/" className="text-rb-red" target='_blank'> Red Bangle</a>
+      <a href="https://www.redbangle.com/" className="text-rb-red" target='_blank'> Makerrs</a>
       , we offer transparent pricing based on your brief with multiple creative options and timelines upfront. Whether it’s animation, live action, or a full campaign series, we tailor costs to outcomes.
       </>
     )
@@ -2546,7 +2546,7 @@ export const  FunnyExplainerFAQ  = [
     key: 5,
     title: 'Do you need a professional agency to make a funny product explainer video?',
     content:
-    'Working with an experienced agency helps strike the right balance between storytelling, humor, and business messaging. At Red Bangle, we specialize in making explainers that not only entertain but also stick in the minds of B2B audiences.'
+    'Working with an experienced agency helps strike the right balance between storytelling, humor, and business messaging. At Makerrs, we specialize in making explainers that not only entertain but also stick in the minds of B2B audiences.'
   } 
 ]
 
@@ -2624,7 +2624,7 @@ export const  CustomerCaseStudyFAQ  = [
     content:(
       <>
       Not necessarily; good audio, lighting, and authentic storytelling matter more. For polished results, reach out to experts for help at
-      <a href="https://www.b2b.redbangle.com/" className="text-rb-red" target='_blank'> Red Bangle</a>
+      <a href="https://www.b2b.redbangle.com/" className="text-rb-red" target='_blank'> Makerrs</a>
       </>
     )
      },
@@ -2943,7 +2943,7 @@ export const  HowToMakeExplainerVideosFAQ  = [
     key: 3,
     title: 'Which software or tools are best for making explainer videos?',
     content:
-  'Top tools for explainer video creation include Vyond for animation, Loom for screencasts, and Synthesia for AI-generated videos. Choose based on your preferred style, budget, and production needs. While these tools make DIY possible, working with a creative agency like Red Bangle ensures professional storytelling, high-quality visuals, and end-to-end production support that’s hard to match on your own.'
+  'Top tools for explainer video creation include Vyond for animation, Loom for screencasts, and Synthesia for AI-generated videos. Choose based on your preferred style, budget, and production needs. While these tools make DIY possible, working with a creative agency like Makerrs ensures professional storytelling, high-quality visuals, and end-to-end production support that’s hard to match on your own.'
   },
    {
     key: 4,

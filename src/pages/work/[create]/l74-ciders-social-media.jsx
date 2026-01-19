@@ -15,7 +15,7 @@ const createTestimonialData = [
   {
     key: 1,
     quote:
-      'Working with Red Bangle has been an excellent experience. Their team was able to effortlessly transform our communication needs into a well-crafted campaign. They have been perceptive in understanding our needs as a business, this is what I believe allowed them to come up with creative ideas for our campaign.',
+      'Working with Makerrs has been an excellent experience. Their team was able to effortlessly transform our communication needs into a well-crafted campaign. They have been perceptive in understanding our needs as a business, this is what I believe allowed them to come up with creative ideas for our campaign.',
     name: 'Kalp Patel & Ayush Patel',
     designation: 'Founders',
     company: 'Wild Harvest Brewing Company (Craft Cider - L74)',

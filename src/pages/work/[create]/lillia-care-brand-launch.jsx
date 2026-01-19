@@ -53,7 +53,7 @@ const lilliaCareData = [
   {
     key: 0,
     quote:
-      <>Red Bangle brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
+      <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
       </>,
     name: 'Rinku Agarwal Basu',
     designation: 'COO',
@@ -135,7 +135,7 @@ function Lilliacare() {
   return (
     <>
       <SEO
-        title="Lillia Care AI-powered Healthcare Brand Launch | Red Bangle"
+        title="Lillia Care AI-powered Healthcare Brand Launch | Makerrs"
         description="We partnered with Lillia Care AI to design a brand identity and website in 5 weeks, delivering trust, precision, and a standout presence for AI in healthcare."
         url="https://www.b2b.redbangle.com/work/design/lillia-care-brand-launch"
       />
@@ -440,7 +440,7 @@ function Lilliacare() {
 
                 <p className="md:text-xl text-rb-black/70 !leading-[170%]">
 
-                  In just five weeks, Red Bangle transformed Lillia Care from a bold idea into a fully realized brand with a striking visual identity, powerful brand voice, and an intuitive, high-impact digital presence. Along with a compelling website that effectively communicates Lillia’s impact, driving engagement among healthcare providers and patients. We established Lillia as a leader in AI-driven chronic care. Delivering a launch-ready brand that stands out in the rapidly evolving health-tech space.
+                  In just five weeks, Makerrs transformed Lillia Care from a bold idea into a fully realized brand with a striking visual identity, powerful brand voice, and an intuitive, high-impact digital presence. Along with a compelling website that effectively communicates Lillia’s impact, driving engagement among healthcare providers and patients. We established Lillia as a leader in AI-driven chronic care. Delivering a launch-ready brand that stands out in the rapidly evolving health-tech space.
 
                 </p>
 

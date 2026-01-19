@@ -191,8 +191,8 @@ export const CSRPage = () => {
   return (
     <>
       <SEO
-        title="Inspiring Social Impact with Creative Ad Campaigns | Red Bangle"
-        description="Take a look at Red Bangle's powerful social impact videos content & brand communicaton. We create compelling content that drives positive change in our environment and communities."
+        title="Inspiring Social Impact with Creative Ad Campaigns | Makerrs"
+        description="Take a look at Makerrs's powerful social impact videos content & brand communicaton. We create compelling content that drives positive change in our environment and communities."
         url="https://www.redbangle.com/about/giving-back"
       />
 
@@ -358,11 +358,11 @@ export const CSRPage = () => {
                 </h3>
               </div>
               <p className="text-lg text-rb-black/80 hidden md:block">
-                Positive social change is a shared goal at Red Bangle. We
+                Positive social change is a shared goal at Makerrs. We
                 believe that an inspiring true story can inspire a hundred more.
                 That’s why we created The Lakshmi Rebecca Show, a YouTube series
                 on social entrepreneurs in India. Hosted by Lakshmi Rebecca
-                (Founder & CEO, Red Bangle,{' '}
+                (Founder & CEO, Makerrs,{' '}
                 <a
                   href="https://www.linkedin.com/in/lakshmirebecca/"
                   className="underline text-[#007BFF]"
@@ -396,11 +396,11 @@ export const CSRPage = () => {
             </picture>
 
             <p className="text-lg text-rb-black/80 block md:hidden pt-12 px-4 md:py-12">
-              Positive social change is a shared goal at Red Bangle. We believe
+              Positive social change is a shared goal at Makerrs. We believe
               that an inspiring true story can inspire a hundred more. That’s
               why we created The Lakshmi Rebecca Show, a YouTube series on
               social entrepreneurs in India. Hosted by Lakshmi Rebecca (Founder
-              & CEO, Red Bangle,{' '}
+              & CEO, Makerrs,{' '}
               <a
                 href="https://www.linkedin.com/in/lakshmirebecca/"
                 className="underline text-[#007BFF]"

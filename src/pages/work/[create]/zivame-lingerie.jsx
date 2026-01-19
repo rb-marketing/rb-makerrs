@@ -143,7 +143,7 @@ function Zivame() {
   return (
     <>
       <SEO 
-      title="Case Study: zivame | Red Bangle" 
+      title="Case Study: zivame | Makerrs" 
       url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/zivame"
       />
       <WorkHeroSection

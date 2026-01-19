@@ -48,7 +48,7 @@ export const explainerVideoProductionSchema = [
         "name": "How do you handle copyright and ownership of the video content?",
         "acceptedAnswer": {
             "@type": "Answer",
-            "text": "With the majority of our work, as per our pre-agreed contracts with our clients, the copyright for creative assets are transferred to the client upon receipt of final payment for the commissioned work.\n\nIn some cases though, the copyright is not assigned or transferred for perpetuity. Examples of short-term rights assignment include custom-composed music, celebrity cast, etc. Rights with these creators and artists are agreed to on a case-to-case basis, and usually are for a year or three to begin with for specific mediums. Clients may extend such rights for additional years and mediums via Red Bangle, at a future date and at an additional cost."
+            "text": "With the majority of our work, as per our pre-agreed contracts with our clients, the copyright for creative assets are transferred to the client upon receipt of final payment for the commissioned work.\n\nIn some cases though, the copyright is not assigned or transferred for perpetuity. Examples of short-term rights assignment include custom-composed music, celebrity cast, etc. Rights with these creators and artists are agreed to on a case-to-case basis, and usually are for a year or three to begin with for specific mediums. Clients may extend such rights for additional years and mediums via Makerrs, at a future date and at an additional cost."
         }
         }
     ]

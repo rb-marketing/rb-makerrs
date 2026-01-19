@@ -563,7 +563,7 @@ export const Footer = ({ hasContactForm }) => {
           </div>
           
           <div className="flex flex-col-reverse md:flex-row border-t mt-10.5 md:mt-[80px] border-t-rb-black/20 pt-10.5 md:pt-8 justify-between">
-            <span>Copyright ©{new Date().getFullYear()} Red Bangle</span>
+            <span>Copyright ©{new Date().getFullYear()} Makerrs</span>
             <div className="flex justify-between md:justify-start md:gap-x-8 mb-7.5 md:mb-0">
               <Link
                 href="/terms"

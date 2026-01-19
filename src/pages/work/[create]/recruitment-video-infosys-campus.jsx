@@ -102,7 +102,7 @@ function LifeInfosys() {
   return (
     <>
       <SEO 
-      title="Infosys Campus Recruitment Video | Red Bangle" 
+      title="Infosys Campus Recruitment Video | Makerrs" 
       description="We produced a culture-driven video for Infosys that empowered its recruitment narrative by showcasing employee growth, balance, and inclusion"
       url="https://www.b2b.redbangle.com/work/videos/infosys-campus-recruitment-video"
       />

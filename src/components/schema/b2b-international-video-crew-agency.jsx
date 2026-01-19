@@ -4,14 +4,14 @@ export const brandCrewsSchema = [
   "@type": "FAQPage",
   mainEntity: [{
     "@type": "Question",
-    name: "What is the scale of production Red Bangle can handle?",
+    name: "What is the scale of production Makerrs can handle?",
     acceptedAnswer: {
       "@type": "Answer",
       text: "From a skeleton crew for a simple testimonial shoot to a full-fledged team of Directors, Producers, Camera persons, Sound Technicians, and Editors at a large-scale shoot - we support every production requirement our clients have."
     }
   },{
     "@type": "Question",
-    name: "Would Red Bangle be able to facilitate a multi-location shoot?",
+    name: "Would Makerrs be able to facilitate a multi-location shoot?",
     acceptedAnswer: {
       "@type": "Answer",
       text: "Be it a 3-location shoot in 1 city or a 10-city project - talk to us for everything from simple interview shoots to event coverage and more. No matter where you need a shoot done, our producers curate and brief local crews, and manage the production end to end."
@@ -21,7 +21,7 @@ export const brandCrewsSchema = [
     name: "Do you run the entire production process in-house?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "The entire production process is managed by the Global Production team at Red Bangle. This experienced team of producers has worked with crews across continents, on a wide range of productions. They craft custom shoot briefs, curate crews for every requirement, and run shoots on-time as well as on-quality."
+      text: "The entire production process is managed by the Global Production team at Makerrs. This experienced team of producers has worked with crews across continents, on a wide range of productions. They craft custom shoot briefs, curate crews for every requirement, and run shoots on-time as well as on-quality."
     }
   },{
     "@type": "Question",
@@ -42,14 +42,14 @@ export const brandCrewsSchema = [
     name: "What does a typical on-demand video shoot workflow look like?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Red Bangle's on-demand video crew services typically have the following workflow:\nProject Briefing\nCrew Curation\nEstimate & Proposal\nShoot Detailing\nCrew Briefing\nScheduling & Coordination\nProduction / Shoot\nFootage Upload to Cloud\nQuality Checks of the Footage\nAsset Delivery to the Client"
+      text: "Makerrs's on-demand video crew services typically have the following workflow:\nProject Briefing\nCrew Curation\nEstimate & Proposal\nShoot Detailing\nCrew Briefing\nScheduling & Coordination\nProduction / Shoot\nFootage Upload to Cloud\nQuality Checks of the Footage\nAsset Delivery to the Client"
     }
   },{
     "@type": "Question",
     name: "How do you deliver the footage after the shoot?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "All the captured footage is uploaded to the cloud and delivered via our Red BangleX -- our production management platform."
+      text: "All the captured footage is uploaded to the cloud and delivered via our MakerrsX -- our production management platform."
     }
   },{
     "@type": "Question",

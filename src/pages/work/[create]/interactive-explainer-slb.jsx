@@ -113,7 +113,7 @@ function Slb() {
   return (
     <>
       <SEO 
-      title="SLB Sales Digitisation Explainer Video | Red Bangle" 
+      title="SLB Sales Digitisation Explainer Video | Makerrs" 
       description="We built a modular explainer video that streamlined SLB’s digital transformation, scaling adoption and showcasing the value of its new sales toolkit"
       url="https://www.b2b.redbangle.com/work/campaign/slb-interactive-explainer"
       />
@@ -149,7 +149,7 @@ function Slb() {
                 groups.
               </p>
               <p className=" mb-6 md:mb-7.5">
-                Their ask to Red Bangle: equip internal teams with a
+                Their ask to Makerrs: equip internal teams with a
                 comprehensive understanding of their evolving digital toolkit.
                 The starting point for us: detailed user journeys built for the
                 tech team!

@@ -232,8 +232,8 @@ function IndeedYouTubeContent() {
   return (
     <>
       <SEO
-        title="Case Study: Indeed YouTube Content | Red Bangle"
-        description="Explore how Red Bangle, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
+        title="Case Study: Indeed YouTube Content | Makerrs"
+        description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
         url="https://www.b2c.redbangle.com/work/integrated-brand-campaign-agency-india/indeed-youtube-content"
       />
       <WorkHeroSection

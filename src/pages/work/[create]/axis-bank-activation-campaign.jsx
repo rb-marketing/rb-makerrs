@@ -43,25 +43,7 @@ export const similarPostsData = [
     href: '/work/b2b-brand-design-agency/pu-dingding-dessert-cafe-branding'
   },
 ]
-// const thelagramData = [
-//     {
-//         key: 0,
-//         quote:
-//             <>
-//                 <div>
-//                     Red Bangle captured the very essence of our brand –the vibrant energy, the quirky charm, and the pure joy of gathering around delicious food. What was especially impressive was the creative strategy that led to the curation of design and copy. They took the colors, the iconic signages, the energy of the local markets, and transformed them into a fresh, modern expression. We&apos;ve seen a tremendous response since the launch. People are drawn to the unique identity. We couldn&apos;t be happier.
-//                 </div>
-//             </>,
-//         name: 'KUNCHERIA MARATTUKALAM',
-//         designation: 'FOUNDER & DIRECTOR',
-//         image: {
-//             srcSet:
 
-//                 '/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w',
-//             sizes: '(max-width:768px) 533px, 1066px',
-//         },
-//     }
-// ]
 
 const pageData = {
     logo: {
@@ -115,7 +97,7 @@ function AxisBankActivation() {
     return (
         <>
             <SEO
-                title="Axis Bank Activation Campaign | Red Bangle"
+                title="Axis Bank Activation Campaign | Makerrs"
                 description="Inside our LTSY Campaign for Axis Bank: A country-wide activation that celebrates frontline excellence and everyday customer obsession."
                 url="https://www.b2b.redbangle.com/work/design/axis-bank-activation-campaign"
             />

@@ -82,7 +82,7 @@ function Colearn() {
     return (
         <>
             <SEO
-                title="WeRise Sustainable Social Housing Documentary | Red Bangle"
+                title="WeRise Sustainable Social Housing Documentary | Makerrs"
                 description="We produced a powerful film for WeRise that humanised India’s housing crisis — showing how sustainable design & community building can restore dignity and hope."
                 url="https://www.b2b.redbangle.com/work/videos/werise-sustainable-housing-documentary"
             />

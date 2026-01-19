@@ -104,7 +104,7 @@ const pageData = {
 const testimonialsDesign = [{
     key: 0,
     quote:
-      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Red Bangle has given us a brand bursting with character and joy!',
+      'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Makerrs has given us a brand bursting with character and joy!',
     name: 'NAKUL KULKARNI',
     designation: ' CO-FOUNDER',
     company: 'P.U. DINGDING',
@@ -138,7 +138,7 @@ function Colearn() {
     return (
         <>
             <SEO
-                title="P.U. Dingding Dessert Café Branding | Red Bangle"
+                title="P.U. Dingding Dessert Café Branding | Makerrs"
                 description="We designed a joyful brand identity for P.U. Dingding dessert café, uniting mascots, design, and storytelling to grow loyalty and spark community."
                 url="https://www.b2b.redbangle.com/work/design/pu-dingding-dessert-cafe-branding"
             />

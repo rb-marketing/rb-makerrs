@@ -15,7 +15,7 @@ const lilliaCareData = [
   {
     key: 0,
     quote:
-      <>Red Bangle brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
+      <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
       </>,
     name: 'Rinku Agarwal Basu',
     designation: 'COO',
@@ -118,7 +118,7 @@ function Lilliacare() {
   return (
     <>
       <SEO
-        title="People-First Brand Films for TI | Red Bangle"
+        title="People-First Brand Films for TI | Makerrs"
         description="A deep dive into how we crafted people-driven stories for Texas Instruments India, blending engineering culture, employee insights, and global brand identity."
         url="https://www.b2b.redbangle.com/work/videos/people-first-brand-films-for-ti"
       />

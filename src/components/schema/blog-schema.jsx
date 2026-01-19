@@ -7,7 +7,7 @@ export const blogSchema = [
   {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'Explore the World of Red Bangle Productions',
+    name: 'Explore the World of Makerrs Productions',
     image: 'https://www.redbangle.com/wp-content/uploads/2021/02/logored.png',
     url: 'https://www.redbangle.com/marketing-blogs-brand-content-resources',
     telephone: '9876543210',
@@ -42,8 +42,8 @@ export const blogSchema = [
   {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Explore the World of Red Bangle Productions',
-    alternateName: 'Explore the World of Red Bangle Productions',
+    name: 'Explore the World of Makerrs Productions',
+    alternateName: 'Explore the World of Makerrs Productions',
     url: 'https://www.redbangle.com/marketing-blogs-brand-content-resources',
     logo: 'https://www.redbangle.com/wp-content/uploads/2021/02/logored.png',
     contactPoint: {
@@ -71,7 +71,7 @@ export const blogSchema = [
         'https://www.redbangle.com/marketing-blogs-brand-content-resources',
       image: 'https://www.redbangle.com/wp-content/uploads/2021/02/logored.png',
     },
-    headline: 'Explore the World of Red Bangle Productions',
+    headline: 'Explore the World of Makerrs Productions',
     datePublished: '2011-01-28T17:15:23+08:00',
     dateModified: '2022-01-28T16:12:29+08:00',
     author: {
@@ -81,7 +81,7 @@ export const blogSchema = [
     description: '',
     publisher: {
       '@type': 'Organization',
-      name: 'Explore the World of Red Bangle Productions',
+      name: 'Explore the World of Makerrs Productions',
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.redbangle.com/wp-content/uploads/2021/02/logored.png',

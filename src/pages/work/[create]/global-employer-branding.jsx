@@ -323,7 +323,7 @@ function InfosysWb() {
     return (
         <>
             <SEO
-                title="Infosys Global Employer Branding Campaign | Red Bangle"
+                title="Infosys Global Employer Branding Campaign | Makerrs"
                 description="We crafted 16 employee-led films across 5 countries for Infosys, scaling its global employer brand and attracting diverse talent with authentic stories."
                 url="https://www.b2b.redbangle.com/work/videos/infosys-employer-branding"
             />
@@ -471,7 +471,7 @@ function InfosysWb() {
                                 Week 2–3: Our teams conducted pre-interviews with all 16 Infosys speakers, developed detailed talking points and story outlines, and locked scripts. We also designed motion graphic templates and defined graphic assets to be used across all videos in the series.
                             </p>
                             <p className="md:text-xl text-rb-black/70 !leading-[170%] mb-6 md:mb-[30px]">
-                                Week 3–4: Our production team reached out to local crews in all 5 global locations for the remote shoots. They were briefed on scripts, visual language, interview styles, and cultural nuances. Soon after, local recces were completed. We shot across 5 global locations where every shoot was remotely directed by Red Bangle’s creative leadership, providing real-time feedback for tight quality control.
+                                Week 3–4: Our production team reached out to local crews in all 5 global locations for the remote shoots. They were briefed on scripts, visual language, interview styles, and cultural nuances. Soon after, local recces were completed. We shot across 5 global locations where every shoot was remotely directed by Makerrs’s creative leadership, providing real-time feedback for tight quality control.
                                 Despite spanning five time zones, the process remained smooth - no footage lost, no brief misunderstood.
                             </p>
                             <p className="md:text-xl text-rb-black/70 !leading-[170%] mb-6 md:mb-[30px]">

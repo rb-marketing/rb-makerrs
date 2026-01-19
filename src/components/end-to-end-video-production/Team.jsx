@@ -34,8 +34,8 @@ const teamData = [
         <br />
         <br />
         Drawing upon these experiences in storytelling and content across the
-        United Kingdom, India and Sri Lanka - Lakshmi founded Red Bangle. Her
-        vision is for Red Bangle to grow into a global tech-enabled creative
+        United Kingdom, India and Sri Lanka - Lakshmi founded Makerrs. Her
+        vision is for Makerrs to grow into a global tech-enabled creative
         enterprise.
         <br />
         <br />
@@ -141,7 +141,7 @@ const teamData = [
         hand at running her own boutique practice too.
         <br />
         <br />
-        Today, Mandy heads up design at Red Bangle. In fact, she’s been doing
+        Today, Mandy heads up design at Makerrs. In fact, she’s been doing
         this since 2017 and is now a custodian for our Brand and part of a core
         team that drives our culture. Mandy’s passionate about Indian
         philosophy, travel and cats. She’s super work proud and so is her entire
@@ -185,7 +185,7 @@ const teamData = [
     content: (
       <>
         The quiet one who is always observant and insightful. Jaya asks all the
-        good questions that drive technology development at Red Bangle.
+        good questions that drive technology development at Makerrs.
         <br />
         <br />
         She’s excited about tackling complex human challenges through technology
@@ -193,9 +193,9 @@ const teamData = [
         <br />
         <br />
         Jaya has worked in software solutioning with Tech Mahindra, Symantec and
-        HCL. She joined Red Bangle in the first few months of our own beginning
+        HCL. She joined Makerrs in the first few months of our own beginning
         when she was nursing her new baby. Today, he’s 7 and so is Jaya’s
-        relationship with Red Bangle.
+        relationship with Makerrs.
         <br />
         <br />
         Jaya works closely with Sunil, and heads our dynamic technology team.
@@ -219,7 +219,7 @@ const teamData = [
         developed Royal Stag’s Large Short Films.
         <br />
         <br />
-        Today, Debarti heads Red Bangle&apos;s recruitment and project
+        Today, Debarti heads Makerrs&apos;s recruitment and project
         management, and takes a keen interest in building new processes. She
         also rescues and feeds nearly 700 stray dogs and cats in the city of
         Mumbai.
