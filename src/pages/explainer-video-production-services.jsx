@@ -166,21 +166,21 @@ const ExplainerVideoLandPage = () => {
       imgurl: '/img/services/videos/icon9.svg',
       alt: 'website_editorial_content',
       title: 'Detailed Storyboards',
-      desc: 'Are you looking to make an awesome explainer video and want unique characters, design and UI screen recreations? Trust us to deliver an impressive, detailed storyboard for your next B2B explainer video.',
+      desc: 'Are you looking to make an awesome explainer video? Do you want unique characters, design and UI screen animations? Trust us to deliver a unique and detailed storyboard for your next explainer video.',
     },
     {
       key: 4,
       imgurl: '/img/services/videos/icon10.svg',
       alt: 'design_collateral',
       title: 'Any Video Format',
-      desc: 'Whether you need whiteboard explainer videos, 3D explainer videos, interactive explainer videos, mixed-media explainer videos  or live action explainer videos shot with actors on set—we’ve got you covered.',
+      desc: 'Whether you need whiteboard explainer videos, 2D character explainer videos, 3D explainer videos, interactive explainer videos, mixed-media explainer videos  or live action explainer videos shot with actors on set—we’ve got you covered.',
     },
     {
       key: 5,
       imgurl: '/img/services/videos/icon11.svg',
       alt: 'motion_graphics',
       title: 'Premium Animation',
-      desc: 'Are you looking for premium motion graphics or 3D animation, and inspiring sound design? We’ve got you covered. Our Post Production and Sound Design experts will craft fantastic B2B explainer videos for your business.',
+      desc: 'Are you looking for premium motion graphics or 3D animation, and inspiring sound design? We’ve got you covered. Our Post Production and Sound Design experts will craft fantastic explainer videos for your brand.',
     },
     {
       key: 6,
@@ -194,7 +194,7 @@ const ExplainerVideoLandPage = () => {
       imgurl: '/img/services/videos/icon13.svg',
       alt: 'platform_content',
       title: 'Global Languages',
-      desc: 'If you are a global business, look no further for explainer videos you can deploy across regions and languages. We support foreign language translation, voice-overs and versioning for B2B explainer videos.',
+      desc: 'If you are a global business, look no further for explainer videos you can deploy across regions and languages. We support foreign language translation, voice overs and versioning for branded explainer videos.',
     },
   ]
 
@@ -247,7 +247,7 @@ const ExplainerVideoLandPage = () => {
     {
       key: 1,
       quote:
-        'We are delighted to team up with Makerrs to promote the fight against childhood cancer in Romania! The video showcases the ability of the creatives and product managers at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of the audience.',
+        'We are delighted to team up with Makerrs. The video showcases the ability of the team at Makerrs to deliver a very compelling case for our innovative work, and to capture the hearts and minds of our audience.',
       name: 'ALINA PATRAHAU',
       designation: 'FOUNDER',
       company: 'DARUIESTE ARIPI',
@@ -329,12 +329,12 @@ const ExplainerVideoLandPage = () => {
 
   const workData = [
     {
-      slug: 'SLB interactive explainers',
+      slug: 'Interactive Explainer for oilfield servicess',
       featuredImage: {
         src: '/img/explainer-video/SLB.png',
       },
 
-      title: 'SLB interactive explainer',
+      title: 'Live action explainer with Motion Graphics',
       company: {
         name: 'SLB',
       },
@@ -363,35 +363,35 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092040991?share=copy',
           thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Adobe eDam',
+          title: 'Whiteboard Explainer Video on DAM',
           duration: '02:21',
         },
         {
           videolink: 'https://vimeo.com/867141400?share=copy',
           thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Hansel / Superbeard',
+          title: 'Live Action Explainer for SAAS product',
           duration: '01:30',
         },
         {
           videolink: 'https://vimeo.com/1092042256?share=copy',
           thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'DCMO',
+          title: 'Animated Explainer for DCMO Services',
           duration: '02:20',
         },
         {
           videolink: 'https://vimeo.com/1092041941?share=copy',
           thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Wipro Animated Case Study',
+          title: 'Motion Graphics Case Study for HIMSS',
           duration: '01:50',
         },
       ],
     },
     {
-      slug: 'Adobe eDam',
+      slug: 'Whiteboard Explainer Video on DAM',
       featuredImage: {
         src: '/img/explainer-video/adobe.png',
       },
-      title: 'Adobe eDam',
+      title: 'Whiteboard Explainer Video on DAM',
       company: {
         name: 'Infosys',
       },
@@ -418,35 +418,35 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/867141400?share=copy',
           thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Hansel / Superbeard',
+          title: 'Live Action Explainer for SAAS product',
           duration: '01:30',
         },
         {
           videolink: 'https://vimeo.com/1092042256?share=copy',
           thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'DCMO',
+          title: 'Animated Explainer for DCMO Services',
           duration: '02:20',
         },
         {
           videolink: 'https://vimeo.com/1092041941?share=copy',
           thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Wipro Animated Case Study',
+          title: 'Motion Graphics Case Study for HIMSS',
           duration: '01:50',
         },
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Vymo SMB Explainer',
+          title: 'Live action explainer with Motion Graphics',
           duration: '02:05',
         },
       ],
     },
     {
-      slug: 'Hansel / Superbeard',
+      slug: 'Live Action Explainer for SAAS product',
       featuredImage: {
         src: '/img/explainer-video/Hansel.png',
       },
-      title: 'Hansel / Superbeard',
+      title: 'Live Action Explainer for SAAS product',
       company: {
         name: 'Hansel.io',
       },
@@ -474,35 +474,35 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092042256?share=copy',
           thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'DCMO',
+          title: 'Animated Explainer for DCMO Services',
           duration: '02:20',
         },
         {
           videolink: 'https://vimeo.com/1092041941?share=copy',
           thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Wipro Animated Case Study',
+          title: 'Motion Graphics Case Study for HIMSS',
           duration: '01:50',
         },
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Vymo SMB Explainer',
+          title: 'Live action explainer with Motion Graphics',
           duration: '02:05',
         },
         {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Collage style explainer - Univ Upskilling (Infosys)',
+          title: 'Mixed Media Explainer Video Case Study',
           duration: '01:20',
         },
       ],
     },
     {
-      slug: 'DCMO',
+      slug: 'Animated Explainer for DCMO Services',
       featuredImage: {
         src: '/img/explainer-video/DCMO.png',
       },
-      title: 'DCMO',
+      title: 'Animated Explainer for DCMO Services',
       company: {
         name: 'Infosys Equinox',
       },
@@ -530,36 +530,36 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092041941?share=copy',
           thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Wipro Animated Case Study',
+          title: 'Motion Graphics Case Study for HIMSS',
           duration: '01:50',
         },
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Vymo SMB Explainer',
+          title: 'Live action explainer with Motion Graphics',
           duration: '02:05',
         },
         {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Collage style explainer - Univ Upskilling (Infosys)',
+          title: 'Mixed Media Explainer Video Case Study',
           duration: '01:20',
         },
         {
           videolink: 'https://vimeo.com/1030707001',
           thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'Introducing Multiplier',
+          title: 'SAAS Marketing Explainer',
           duration: '01:29',
         },
       ],
     },
 
     {
-      slug: 'Wipro Animated Case Study',
+      slug: 'Motion Graphics Case Study for HIMSS',
       featuredImage: {
         src: '/img/explainer-video/wipro.png',
       },
-      title: 'Wipro Animated Case Study',
+      title: 'Motion Graphics Case Study for HIMSS',
       company: {
         name: 'Wipro',
       },
@@ -587,36 +587,36 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Vymo SMB Explainer',
+          title: 'Live action explainer with Motion Graphics',
           duration: '02:05',
         },
         {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Collage style explainer - Univ Upskilling (Infosys)',
+          title: 'Mixed Media Explainer Video Case Study',
           duration: '01:20',
         },
         {
           videolink: 'https://vimeo.com/1030707001',
           thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'Introducing Multiplier',
+          title: 'SAAS Marketing Explainer',
           duration: '01:29',
         },
         {
           videolink:
             'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
           thumbnail: '/img/explainer-video/SLB.png',
-          title: 'SLB interactive explainer',
+          title: 'Interactive Explainer for oilfield services',
           duration: '09:03',
         },
       ],
     },
     {
-      slug: 'Vymo SMB Explainer',
+      slug: 'Live action explainer with Motion Graphics',
       featuredImage: {
         src: '/img/explainer-video/vymo_sme.png',
       },
-      title: 'Vymo SMB Explainer',
+      title: 'Live action explainer with Motion Graphics',
       company: {
         name: 'Vymo',
       },
@@ -644,36 +644,36 @@ const ExplainerVideoLandPage = () => {
         {
           videolink: 'https://vimeo.com/1042874327',
           thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Collage style explainer - Univ Upskilling (Infosys)',
+          title: 'Mixed Media Explainer Video Case Study',
           duration: '01:20',
         },
         {
           videolink: 'https://vimeo.com/1030707001',
           thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'Introducing Multiplier',
+          title: 'SAAS Marketing Explainer',
           duration: '01:29',
         },
         {
           videolink:
             'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
           thumbnail: '/img/explainer-video/SLB.png',
-          title: 'SLB interactive explainer',
+          title: 'Interactive Explainer for oilfield services',
           duration: '09:03',
         },
         {
           videolink: 'https://vimeo.com/1092040991?share=copy',
           thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Adobe eDam',
+          title: 'Whiteboard Explainer Video on DAM',
           duration: '02:21',
         },
       ],
     },
     {
-      slug: 'Collage style explainer - Univ Upskilling (Infosys)',
+      slug: 'Mixed Media Explainer Video Case Study',
       featuredImage: {
         src: '/img/explainer-video/ai_first_employees.png',
       },
-      title: 'Collage style explainer - Univ Upskilling (Infosys)',
+      title: 'Mixed Media Explainer Video Case Study',
       company: {
         name: 'Infosys',
       },
@@ -693,41 +693,41 @@ const ExplainerVideoLandPage = () => {
         '05. Music & SFX',
         '06. Video Thumbnail',
       ],
-      redText: 'Collage style explainer - Univ Upskilling (Infosys)',
+      redText: 'Mixed Media Explainer Video Case Study',
       relatedVideos: [
         {
           videolink: 'https://vimeo.com/1030707001',
           thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'Introducing Multiplier',
+          title: 'SAAS Marketing Explainer',
           duration: '01:29',
         },
         {
           videolink:
             'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
           thumbnail: '/img/explainer-video/SLB.png',
-          title: 'SLB interactive explainer',
+          title: 'Interactive Explainer for oilfield services',
           duration: '09:03',
         },
         {
           videolink: 'https://vimeo.com/1092040991?share=copy',
           thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Adobe eDam',
+          title: 'Whiteboard Explainer Video on DAM',
           duration: '02:21',
         },
         {
           videolink: 'https://vimeo.com/867141400?share=copy',
           thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Hansel / Superbeard',
+          title: 'Live Action Explainer for SAAS product',
           duration: '01:30',
         },
       ],
     },
     {
-      slug: 'Introducing Multiplier',
+      slug: 'SAAS Marketing Explainer',
       featuredImage: {
         src: '/img/explainer-video/Multiplier.png',
       },
-      title: 'Introducing Multiplier',
+      title: 'SAAS Marketing Explainer',
       company: {
         name: 'Multiplier',
       },
@@ -756,25 +756,25 @@ const ExplainerVideoLandPage = () => {
           videolink:
             'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
           thumbnail: '/img/explainer-video/SLB.png',
-          title: 'SLB interactive explainer',
+          title: 'Interactive Explainer for oilfield services',
           duration: '09:03',
         },
         {
           videolink: 'https://vimeo.com/1092040991?share=copy',
           thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Adobe eDam',
+          title: 'Whiteboard Explainer Video on DAM',
           duration: '02:21',
         },
         {
           videolink: 'https://vimeo.com/867141400?share=copy',
           thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Hansel / Superbeard',
+          title: 'Live Action Explainer for SAAS product',
           duration: '01:30',
         },
         {
           videolink: 'https://vimeo.com/1092042256?share=copy',
           thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'DCMO',
+          title: 'Animated Explainer for DCMO Services',
           duration: '02:20',
         },
       ],
@@ -788,18 +788,7 @@ const ExplainerVideoLandPage = () => {
       content: (
         <>
           <div className="mb-5">
-            Over the years, we have scripted, designed and produced hundreds of
-            explainer videos across industries such as SAAS, technology,
-            manufacturing, logistics, education and more. And while on every
-            project we ask ourselves what we might do differently, and what we
-            might do better – we also follow a tried-and-tested process that
-            enables our clients to grow their brands and us to keep delivering
-            on-point, on-quality. Our typical project workflow is something that
-            starts with a clear brief, moves on to research, concepts, script,
-            visualisation, design, storyboards, post production, reviews and
-            versioning. But what’s unique about how we do it, is our proprietary
-            platform that facilitates efficient cloud-based workflows. Here’s a
-            quick run through of how it helps:
+            Over the years, we have scripted, designed and produced hundreds of explainer videos across industries such as technology, F&B, manufacturing, fashion, logistics, hiring, energy, education, real estate and more. And while on every project we ask ourselves what we might do differently, and what we might do better – we also follow a tried-and-tested process that enables our clients to grow their brands and us to keep delivering on-point, on-quality. Our typical project workflow is something that starts with a clear brief, moves on to research, concepts, script, visualisation, design, storyboards, post production, reviews and versioning. But what’s unique about how we do it is our creative cloud platform that facilitates efficient workflows. Here’s a quick run through of how it helps: 
           </div>
           <ul>
             <li className="mb-5">
@@ -855,7 +844,7 @@ const ExplainerVideoLandPage = () => {
       key: 3,
       title: 'Which platforms do you create videos for?',
       content:
-        'As a B2B video and creative agency, we conceptualize and craft videos that work across a range of platforms such as YouTube, LinkedIn, WhatsApp, events and internal portals. Our goal is to ensure every piece of video content you commission connects with your audience, and drives engagement, no matter where it’s seen. Let’s say you are making a B2B explainer video with us, we are able to also help you create versions and thumbnails of this film for various platforms.',
+        'As a creative agency and collaborative, we conceptualize and craft videos that work across a range of platforms such as YouTube, LinkedIn, WhatsApp, events and internal portals. Our goal is to ensure every piece of video content you commission connects with your audience, and drives engagement, no matter where it’s seen. Let’s say you are making a explainer video with us, we are able to also help you create versions and thumbnails of this film for various platforms.',
     },
     {
       key: 4,
@@ -881,7 +870,7 @@ const ExplainerVideoLandPage = () => {
             creators and artists are agreed to on a case-to-case basis, and
             usually are for a year or three to begin with for specific mediums.
             Clients may extend such rights for additional years and mediums via
-            Red Bangle, at a future date and at an additional cost.
+            Makerrs, at a future date and at an additional cost.
           </div>
         </>
       ),
@@ -1343,7 +1332,7 @@ const ExplainerVideoLandPage = () => {
           <div className="overflow-hidden">
             <div className="container">
               <LineHeading className="mb-6 md:mb-7.5">
-                Explainers for B2B Businesses
+                Explainers for Global Businesses
               </LineHeading>
               <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
                 How we transform complex information{' '}
@@ -1423,7 +1412,7 @@ const ExplainerVideoLandPage = () => {
       </section>
 
       <section className="overflow-hidden bg-white md:pt-4 pt-4 md:pb-0">
-        <Marquee duration={30}>
+        <Marquee duration={50}>
           {[
             {
               id: 0,
