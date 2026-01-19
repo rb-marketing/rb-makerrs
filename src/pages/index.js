@@ -692,7 +692,7 @@ const LandPage = () => {
             <RevealText text="We craft brands and engagement in the age of the borderless customer. Our creative teams, strategic approach, human insights, global collaborative of creators and makerrs, and cloud-based workflows make us the right partner for your ambitious brand." />
           </div>
           <Button
-            href="/about/who-we-are"
+            href="/about-us"
             className="font-bold mt-11 md:mt-16 w-full md:w-auto !inline-flex"
             suffix={<LineArrow hover />}
           >
