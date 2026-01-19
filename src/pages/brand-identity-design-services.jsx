@@ -932,7 +932,7 @@ const BrandIdentityDesign = () => {
       company: 'Meladio',
       alt: 'Medalio',
       tags: ['Hospitality', 'Brand Identity', 'Logo Design'],
-      href: '/brand-designs/medalio-hospitality-brand-identity',
+      href: '/brand-designs/medalio-hotel-brand-identity',
     },
     {
       key: 2,
@@ -957,7 +957,7 @@ const BrandIdentityDesign = () => {
       tags: ['F&B', 'Cafe', 'Brand Identity', 'Launch Video'],
       tabs: ['b2b-brand-design-agency'],
       case_study_title: 'pu-dingding-dessert-cafe-branding',
-      href: '/brand-designs/pu-dingding-dessert-cafe-branding',
+      href: '/brand-designs/pu-dingding-cafe',
     },
   ]
 

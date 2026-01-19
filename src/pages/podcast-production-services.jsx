@@ -329,7 +329,7 @@ const Design = ({ setisPopupOpen }) => {
       image: '/img/works/lrs.png',
       alt: 'Lakshmi Rebecca Show',
       tags: ['Video Content', 'YouTube Series'],
-      href: '/brand-designs/lakshmi-rebecca-show',
+      href: '/video-podcast/podcast-lakshmi-rebecca',
     },
   ]
 
