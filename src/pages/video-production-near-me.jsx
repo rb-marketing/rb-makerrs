@@ -526,7 +526,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
         </div>
       </div>
 
-      <section className="md:pb-30 md:pt-12 py-12">
+      <section className="md:pb-30 md:pt-12 pb-18 pt-18">
         <div className="container">
           <div className="md:text-[40px] font-everett text-[26px] md:mb-15 mb-8  font-medium md:leading-[44px] leading-[28px] tracking-[-0.52px] md:tracking-[-1.6px]">
             International Video Production Services for B2B Brands
@@ -565,7 +565,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
               </p>
               <div className="md:mt-10 mt-6">
                 <Button
-                  onClick={handleClick}
+                  href="/contact"
                   className="font-bold  w-full md:w-auto !inline-flex"
                   suffix={<LineArrow hover />}
                 >
@@ -586,7 +586,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
         </div>
       </section>
 
-      <section className="md:pt-30 md:pb-15 py-7.5">
+      <section className="md:pt-30 md:pb-15 pb-15 pt-18">
         <div className="container">
           <h2 className="text-center text-title md:text-title-md mb-10 md:mb-18 font-everett">
             Your international video crew booking agency
@@ -743,7 +743,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       />
 
       <TrustedBrandsSection className="bg-white py-7.5 md:py-15" />
-      <div id="leap-explore" className="md:py-12">
+      <div id="leap-explore" className="py-6 md:py-12">
         <ExploreMoreSection
           type="think"
           className="pt-7.5 md:pt-15 pb-15 md:pb-30"

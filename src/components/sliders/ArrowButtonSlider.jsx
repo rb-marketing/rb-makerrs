@@ -49,7 +49,7 @@ export const ArrowButtonSlider = ({
           className={` ${
             type == 'default'
               ? 'mt-6 md:mt-0 md:absolute z-[1] right-0 bottom-0'
-              : `md:mt-10 ${arrowBtnClassName}`
+              : `mt-6 md:mt-10 ${arrowBtnClassName}`
           }`}
         >
           <SliderButton
