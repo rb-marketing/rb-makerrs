@@ -617,7 +617,7 @@ const selectedSchema = slugToSchema[article.slug] || [];
 
                     <Link 
                      href={`/${tags[0]?.name || 'blog'}/${slug}`} 
-                      className="inline-flex gap-2 items-center text-rb-red font-semibold"
+                      className="inline-flex gap-2 items-center text-black underline hover:text-rb-link-green font-semibold"
                     >
                       Continue reading
                       <LineArrow className=" max-w-[20px]" />
