@@ -104,7 +104,7 @@ function Xiaomi() {
       <SEO
         title="Case Study: Xiaomi Redmi Buds 5C | Red Bangle"
         description="Explore how Red Bangle, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/xiaomi"
+        url="https://www.makerrs.com/work/brand-campaign/xiaomi-buds-5c"
       />
       <WorkHeroSection
         title={'Launch Campaign for Redmi Buds 5C'}
