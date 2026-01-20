@@ -730,7 +730,7 @@ export const Header = () => {
                         data-rb-cursor-state="invisible"
                         className="max-w-max !flex items-center gap-3"
                       >
-                        <span>Videos</span>
+                        <span>Video</span>
                         <div className="dropdown-arrow rotate-90 mt-0.5">
                           {dropDownArrowMini}
                         </div>

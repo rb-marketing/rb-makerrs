@@ -177,7 +177,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
           Yes, often clients require video post-production services once a shoot
           is done. Just{' '}
           <a
-            onClick={handleClick}
+            href='/contact'
             className="underline cursor-pointer hover:text-rb-link-green"
           >
             send us a brief
@@ -199,7 +199,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
           You won’t miss a thing.
           <br />
           <a
-            onClick={handleClick}
+             href='/contact'
             className="underline cursor-pointer hover:text-rb-link-green"
           >
             Book a video crew
@@ -529,7 +529,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
       <section className="md:pb-30 md:pt-12 pb-18 pt-18">
         <div className="container">
           <div className="md:text-[40px] font-everett text-[26px] md:mb-15 mb-8  font-medium md:leading-[44px] leading-[28px] tracking-[-0.52px] md:tracking-[-1.6px]">
-            International Video Production Services for B2B Brands
+            Anywhere Video Production Services for your Brand
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10">
             {cards.map((c) => (
