@@ -134,7 +134,7 @@ function ProjectLoom() {
         <>
             <SEO
                 title="Documentaries: Traditional Indian Handlooms and Weavers"
-                url="https://www.makerrs.com/work/video-content-production-agency-india/project-loom"
+                url="https://www.makerrs.com/work/video-production/documentary-taneira-fashion"
             />
             <WorkHeroSection
                 title={'Documentaries: Traditional Indian Handlooms and Weavers'}

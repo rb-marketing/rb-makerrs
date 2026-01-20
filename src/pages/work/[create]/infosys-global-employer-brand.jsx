@@ -144,7 +144,7 @@ function GlobalLeaders() {
             <SEO
                 title="Infosys Global Leaders Hiring Campaign | Makerrs"
                 description="We created a hiring campaign for Infosys showcasing global leaders, strengthening employer branding and attracting diverse talent to scale future growth."
-                url="https://www.makerrs.com/work/campaign/infosys-global-leaders-employer-branding"
+                url="https://www.makerrs.com/work/brand-campaign/infosys-global-employer-brand"
             />
             <WorkHeroSection
                 logo={logo}

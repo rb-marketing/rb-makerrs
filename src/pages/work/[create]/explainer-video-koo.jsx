@@ -113,7 +113,7 @@ function KooSelfVerification() {
     <>
       <SEO 
       title="Koo's Self-Verification Launch Video | Makerrs" 
-      url="https://www.makerrs.com/work/videos/koo-self-verification-explainer-video"
+      url="https://www.makerrs.com/work/video-production/explainer-video-koo"
       description="We created a launch video for Koo, a social media platform, to introduce the verification feature, showcasing how users earn the coveted yellow tick."
       />
       <WorkHeroSection

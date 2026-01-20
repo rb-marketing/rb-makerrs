@@ -108,7 +108,7 @@ function Colearn() {
       <SEO
         title="Infosys Topaz Immersive 3D Walkthrough | Makerrs"
         description="Infosys Topaz unlocked AI innovation with our futuristic 3D walkthrough, creating a seamless interactive showcase that redefined enterprise storytelling"
-        url="https://www.makerrs.com/work/brand-experiences/infosys-topaz-3d-interactive-experience"
+        url="https://www.makerrs.com/work/brand-design/infosys-topaz-3d-interactive-experience"
       />
       <WorkHeroSection
         logo={logo}

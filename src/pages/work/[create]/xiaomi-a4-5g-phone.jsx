@@ -67,7 +67,7 @@ function XiaomiA45G() {
             <SEO
                 title="Case Study: Xiaomi A4 5G"
                 description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-                url="https://www.makerrs.com/work/brand-campaign-agency-india/xiaomi-a4-5g"
+                url="https://www.makerrs.com/work/brand-campaign/xiaomi-a4-5g-phone"
             />
             <WorkHeroSection
                 title={'Launch Campaign for Redmi A4 5G'}

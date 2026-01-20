@@ -132,7 +132,7 @@ function Colearn() {
       <SEO 
       title="CoLearn Employer Branding STEM Educators | Makerrs" 
       description="We helped CoLearn inspire STEM educators in Indonesia with testimonial videos that elevated teaching and scaled recruitment"
-      url="https://www.makerrs.com/work/videos/colearn-stem-educators-recruitment-video"
+      url="https://www.makerrs.com/work/video-production/recruitment-video-colearn-education"
       />
       <WorkHeroSection
         logo={logo}

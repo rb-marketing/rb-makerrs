@@ -144,7 +144,7 @@ function MetroWholesale() {
       <SEO 
       title="Case Study: Metro Wholesale | Creative Advertising & Digital Marketing Campaign | Makerrs" 
       description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-      url="https://www.makerrs.com/work/brand-campaign-agency-india/metro-wholesale-case-study"
+      url="https://www.makerrs.com/work/brand-campaign/metro-wholesale-5-star-quality"
       />
       <WorkHeroSection
       title={'5 Star Quality at Wholesale Prices'}

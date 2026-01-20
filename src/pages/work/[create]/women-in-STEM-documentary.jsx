@@ -122,7 +122,7 @@ function WeRise() {
     <>
       <SEO 
       title="WeRise Women in STEM Documentary | Makerrs" 
-      url="https://www.makerrs.com/work/videos/werise-women-in-science-documentary"
+      url="https://www.makerrs.com/work/video-production/women-in-STEM-documentary"
       description="We collaborated with WeRise to reveal young women’s STEM journeys, capturing resilience and showcasing a path that inspires tomorrow’s innovators."
       />
       <WorkHeroSection

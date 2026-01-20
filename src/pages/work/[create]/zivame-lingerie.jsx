@@ -144,7 +144,7 @@ function Zivame() {
     <>
       <SEO 
       title="Case Study: zivame | Makerrs" 
-      url="https://www.makerrs.com/work/video-content-production-agency-india/zivame"
+      url="https://www.makerrs.com/work/brand-campaign/zivame-lingerie"
       />
       <WorkHeroSection
       title={'Campaign on Inclusive Lingerie'}

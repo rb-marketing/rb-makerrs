@@ -109,7 +109,7 @@ function Colearn() {
       <SEO 
       title="Dozee Beds Healthcare Video | Makerrs" 
       description="Our video for Dozee Beds and Sattva Consulting showcased how smart hospital beds elevate care and drive large-scale public health impact in India."
-      url="https://www.makerrs.com/work/videos/dozee-beds-healthcare-video-report"
+      url="https://www.makerrs.com/work/video-production/video-report-dozee-public-health"
       />
       <WorkHeroSection
         logo={logo}

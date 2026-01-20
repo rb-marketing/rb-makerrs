@@ -107,7 +107,7 @@ function ExicomMobility() {
             <SEO
                 title="Exicom E-Mobility Rebrand | Makerrs"
                 description="Discover how Makerrs transformed Exicom with a bold new brand identity, voice, and design system built for the fast-growing EV charging market."
-                url="https://www.makerrs.com/work/design/exicom-e-mobility-rebrand"
+                url="https://www.makerrs.com/work/brand-designs/exicom-EV-charger-rebrand"
             />
             <WorkHeroSection
                 logo={logo}

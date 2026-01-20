@@ -116,7 +116,7 @@ function BajajAuto() {
       <SEO 
       title="Bajaj Pulsar Augmented Reality Campaign | Makerrs" 
       description="We crafted an AR campaign for Bajaj Pulsar that turned static print into interactive 3D journeys, engaging riders at scale and inspiring test rides."
-      url="https://www.makerrs.com/work/brand-experiences/bajaj-pulsar-augmented-reality-campaign"
+      url="https://www.makerrs.com/work/brand-design/bajaj-pulsar-augmented-reality"
       />
       <WorkHeroSection
       title={'Augmented Reality that brought the automobile alive'}

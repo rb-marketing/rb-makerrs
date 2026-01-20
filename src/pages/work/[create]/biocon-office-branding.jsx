@@ -128,7 +128,7 @@ function Biocon() {
             <SEO
                 title="Office Branding for Biocon's HQ | Makerrs"
                 description="We reimagined Biocon's headquarters with visual storytelling, powered by the ‘Sphaera’ motif that reflects global growth, innovation, and purpose."
-                url="https://www.makerrs.com/work/design/office-branding-for-biocon"
+                url="https://www.makerrs.com/work/brand-design/biocon-office-branding"
             />
             <WorkHeroSection
                 logo={logo}

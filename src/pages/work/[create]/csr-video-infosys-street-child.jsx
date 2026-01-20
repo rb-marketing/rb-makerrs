@@ -113,7 +113,7 @@ function Ukraine() {
     <>
       <SEO 
       title="Infosys Springboard Ukraine Documentary Video | Makerrs" 
-      url="https://www.makerrs.com/work/videos/infosys-street-child-documentary"
+      url="https://www.makerrs.com/work/video-production/csr-video-infosys-street-child"
       description="We showcased Infosys Springboard’s role in empowering Ukraine’s war-affected children with digital learning centres, reclaiming education and hope."
       />
       <WorkHeroSection

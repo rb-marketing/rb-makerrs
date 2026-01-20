@@ -112,7 +112,7 @@ function Exicom() {
       <SEO 
       title="Exicom Harmony 2.0 Product Launch Video | Makerrs" 
       description="We produced a sleek 3D launch video for Exicom’s Harmony 2.0, revealing design precision and amplifying impact for EV partners and manufacturers."
-      url="https://www.b2b.redbangle.com/work/videos/exicom-3d-animation-product-launch"
+      url="https://www.b2b.redbangle.com/work/video-production/3d-product-reveal-video-exicom"
       />
       <WorkHeroSection
         logo={logo}

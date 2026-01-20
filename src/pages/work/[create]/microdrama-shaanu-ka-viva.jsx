@@ -105,7 +105,7 @@ function XiaomiBuds() {
       <SEO
         title="Case Study: Shaanu ka Viva"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.makerrs.com/work/creative-ai-agency-india/shaanu-ka-viva"
+        url="https://www.makerrs.com/work/video-production/microdrama-shaanu-ka-viva"
       />
       <WorkHeroSection
         title={'Shaanu Ka Viva - A GenAI Microdrama for Bharat'}

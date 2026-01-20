@@ -235,7 +235,7 @@ function L74() {
 
     <>
       <SEO title="Case Study | L74" 
-      url="https://www.makerrs.com/work/integrated-brand-campaign-agency-india/l74-case-study"
+      url="https://www.makerrs.com/work/brand-campaign/l74-ciders-social-media"
       />
       <WorkHeroSection
         logo={logo}

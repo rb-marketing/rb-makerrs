@@ -171,7 +171,7 @@ function Thelagram() {
         <>
             <SEO
                 title="Case Study: Thelagram"
-                url="https://www.makerrs.com/work/brand-design-agency-india/thelagram"
+                url="https://www.makerrs.com/work/brand-design/thelagram-restaurant"
             />
             <WorkHeroSection
                 title={'Desi Branding for a Street Food Restaurant'}

@@ -160,7 +160,7 @@ function Colearn() {
       <SEO 
       title="Infosys Employer Branding Humanizing AI Campaign | Makerrs" 
       description="We elevated Infosys employer branding by spotlighting employee voices and humanizing AI to reinforce its position as an AI-first workplace."
-      url="https://www.makerrs.com/work/campaign/infosys-employees-social-media-campaign"
+      url="https://www.makerrs.com/work/brand-campaign/animated-case-study-videos-infosys-employees"
       />
       <WorkHeroSection
         logo={logo}

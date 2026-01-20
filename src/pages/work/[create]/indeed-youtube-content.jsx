@@ -234,7 +234,7 @@ function IndeedYouTubeContent() {
       <SEO
         title="Case Study: Indeed YouTube Content | Makerrs"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.makerrs.com/work/integrated-brand-campaign-agency-india/indeed-youtube-content"
+        url="https://www.makerrs.com/work/video-production/indeed-youtube-content"
       />
       <WorkHeroSection
         title={'220% Organic YouTube Subscriber Growth in India'}

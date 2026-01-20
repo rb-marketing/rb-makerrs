@@ -334,7 +334,7 @@ const ExplainerVideoLandPage = () => {
         src: '/img/explainer-video/SLB.png',
       },
 
-      title: 'Live action explainer with Motion Graphics',
+      title: 'Interactive Explainer for oilfield services',
       company: {
         name: 'SLB',
       },

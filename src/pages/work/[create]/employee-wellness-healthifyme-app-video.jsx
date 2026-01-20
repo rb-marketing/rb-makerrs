@@ -112,7 +112,7 @@ function HealthifyEmployeeWell() {
     <>
       <SEO 
       title="HealthifyMe Employee Wellness App Video | Makerrs" 
-      url="https://www.makerrs.com/work/videos/healthifyme-employee-wellness-app-video"
+      url="https://www.makerrs.com/work/video-production/employee-wellness-healthifyme-app-video"
       description="We crafted a marketing video for HealthifyMe that showcased its gamified employee wellness app, inspiring HR teams to drive healthier, happier workplaces."
       />
       <WorkHeroSection
