@@ -103,7 +103,7 @@ function Indeed() {
             <SEO
                 title="Transforming how Indian SMBs Hire case study"
                 description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-                url="https://www.makerrs.com/work/brand-campaign-agency-india/indeed-case-study"
+                url="https://www.makerrs.com/work/brand-campaign/indeed-india-radhika-apte"
             />
             <WorkHeroSection
                 title={'Transforming how Indian SMBs Hire'}

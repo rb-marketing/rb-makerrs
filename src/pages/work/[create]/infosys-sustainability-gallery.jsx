@@ -137,7 +137,7 @@ function InfosysLivingLabs() {
          <SEO 
          title="Infosys Sustainability Design Gallery | Makerrs"
          description="Infosys’ Living Labs gallery showcased sustainability leadership with immersive design, recycled materials, and data-driven storytelling." 
-         url="https://www.makerrs.com/work/design/infosys-sustainability-design-gallery"
+         url="https://www.makerrs.com/work/brand-design/infosys-sustainability-gallery"
          />
             <WorkHeroSection
                 logo={logo}

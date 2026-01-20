@@ -107,7 +107,7 @@ function MumbaiIndian() {
     <>
       <SEO 
       title="Case Study: MI 3D Billboard | Makerrs"
-      url="https://www.makerrs.com/work/video-content-production-agency-india/mumbai-indian"
+      url="https://www.makerrs.com/work/video-production/3d-logo-animation-mumbai-indians"
       />
       <WorkHeroSection
       title={'Launching a Sports Brand logo with a 3D Billboard'}

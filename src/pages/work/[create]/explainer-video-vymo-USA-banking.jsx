@@ -111,7 +111,7 @@ function Vymo() {
       <SEO 
       title="Vymo SME Banking Explainer Video | Makerrs" 
       description="For Vymo, we produced a creative digital campaign that helped SME banks in the US connect with customers and strengthen long-term relationships."
-      url="https://www.makerrs.com/work/campaign/vymo-sme-bank-explainer-video"
+      url="https://www.makerrs.com/work/brand-campaign/explainer-video-vymo-USA-banking"
       />
       <WorkHeroSection
         logo={logo}

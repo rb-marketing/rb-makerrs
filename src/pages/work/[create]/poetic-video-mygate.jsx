@@ -126,7 +126,7 @@ function MyGate() {
       <SEO 
       title="Case Study - Heroes at MyGate | Content Strategy, Creative Ad Campaign, Digital Marketing Campaign | Makerrs"
       description="Explore how Makerrs - Holistic Marketing Agency, crafted an impactful marketing campaign for MyGate with strategic b2c marketing insights. " 
-      url="https://www.makerrs.com/work/video-content-production-agency-india/mygate-case-study"
+      url="https://www.makerrs.com/work/video-production/poetic-video-mygate"
       />
       <WorkHeroSection
         title={'An ode to the Security Personnel who Guard our Homes'}

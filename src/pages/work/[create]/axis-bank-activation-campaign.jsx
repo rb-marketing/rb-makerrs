@@ -99,7 +99,7 @@ function AxisBankActivation() {
             <SEO
                 title="Axis Bank Activation Campaign | Makerrs"
                 description="Inside our LTSY Campaign for Axis Bank: A country-wide activation that celebrates frontline excellence and everyday customer obsession."
-                url="https://www.makerrs.com/work/design/axis-bank-activation-campaign"
+                url="https://www.makerrs.com/work/brand-design/axis-bank-activation-campaign"
             />
             <WorkHeroSection
                 title={'Nationwide Activation Celebrating Customer Obsession'}

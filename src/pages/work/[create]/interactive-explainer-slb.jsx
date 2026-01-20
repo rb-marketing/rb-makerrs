@@ -115,7 +115,7 @@ function Slb() {
       <SEO 
       title="SLB Sales Digitisation Explainer Video | Makerrs" 
       description="We built a modular explainer video that streamlined SLB’s digital transformation, scaling adoption and showcasing the value of its new sales toolkit"
-      url="https://www.makerrs.com/work/campaign/slb-interactive-explainer"
+      url="https://www.makerrs.com/work/brand-campaign/interactive-explainer-slb"
       />
       <WorkHeroSection
         logo={logo}

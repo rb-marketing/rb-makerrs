@@ -71,7 +71,7 @@ function SwiggyDeliveryExecutiveSupport() {
       <SEO
         title="Case Study: Swiggy Delivery Support Executive Support App"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.makerrs.com/work/brand-campaign-agency-india/swiggy-delivery-executive-app"
+        url="https://www.makerrs.com/work/brand-campaign/app-walkthrough-swiggy-delivery"
       />
       <WorkHeroSection
         title={'Anywhere chat support for Delivery Executives'}

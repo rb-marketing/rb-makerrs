@@ -105,7 +105,7 @@ function PDDIntegrated() {
   return (
     <>
       <SEO title="Case Study: PDD Integrated " 
-      url="https://www.makerrs.com/work/integrated-brand-campaign-agency-india/pdd-integrated"
+      url="https://www.makerrs.com/work/brand-campaign/pudingding-cafe-design-launch"
       />
       <WorkHeroSection
         title={'Branding and Launch Campaign for a Dessert Cafe'}

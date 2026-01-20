@@ -68,7 +68,7 @@ function XiaomiBreadTrimmer() {
       <SEO
         title="Case Study: Xiaomi Beard Trimmer 2C"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.makerrs.com/work/brand-campaign-agency-india/xiaomi-beard-trimmer"
+        url="https://www.makerrs.com/work/brand-campaign/xiaomi-beard-trimmer"
       />
       <WorkHeroSection
         title={'A Trimmer Launch Campaign that’s as Sharp as the Product'}
