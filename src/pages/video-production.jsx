@@ -16,13 +16,11 @@ import { Button } from '@/components/ui'
 
 import { similarPosts } from '@/utils/dummy'
 import { postsMapper } from '@/utils/mapper'
-import Script from 'next/script'
 import { Accordion } from '@/components/ui'
-import { Testimonials, WorkListHeroSection } from '@/components/shared'
+import { Testimonials } from '@/components/shared'
 import { useState } from 'react'
 import { getPlayWorks } from '@/utils/graphql'
 import { formatPlayPosts } from '@/utils/formate'
-import Link from 'next/link'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { useRef, useEffect } from 'react'
@@ -38,7 +36,6 @@ const INIT_MODAL = {
 }
 
 const VideosServices = ({ setisPopupOpen }) => {
-  const _posts = similarPosts.map(postsMapper)
   const [herovideoOpen, setHerovideoOpen] = useState(false)
   const prevButtonRef = useRef(null)
   const nextButtonRef = useRef(null)
@@ -373,405 +370,185 @@ const VideosServices = ({ setisPopupOpen }) => {
 
   const workData = [
     {
-      slug: 'SLB interactive explainers',
+      slug: 'Corporate Video Production',
       featuredImage: {
-        src: '/img/explainer-video/SLB.png',
+        src: '/img/corporate-video/honasa_pre-ipo_corporate_film.png',
+      },
+      title: 'Corporate Video Production',
+      company: {
+        name: 'Honasa',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1092046382?share=copy',
+        },
+        content:
+          'In the lead-up to their public listing, Honasa went on a roadshow to meet a range of stakeholders. Our corporate video helped them pitch their growth story with a lot of heart and data.',
+      },
+      popUpTitle: 'Pre-IPO Corporate Film for D2C Startup, Honasa',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script',
+        '03. Visualisation',
+        '04. Graphic Design',
+        '05. Multi-location Shoot',
+        '06. Editing',
+        '07. Motion Graphics',
+        '08. Voice Over',
+      ],
+
+      redText: 'Live Action Corporate Film with Motion Graphics',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1084658661/b2d6c34787',
+          thumbnail: '/img/case-study-video/kia.png',
+          title: 'Live Action Case Study Video',
+          duration: '02:43',
+        },
+        {
+          videolink: 'https://vimeo.com/1078406512',
+          thumbnail: '/img/corporate-video/gordon_ritter.png',
+          title: 'Thought Leadership Video',
+          duration: '10:18',
+        },
+        {
+          videolink: 'https://vimeo.com/1030707001',
+          thumbnail: '/img/explainer-video/Multiplier.png',
+          title: '2D Explainer Video',
+          duration: '01:29',
+        },
+        {
+          videolink: 'https://vimeo.com/1092039633?share=copy',
+          thumbnail: '/img/explainer-video/vymo_sme.png',
+          title: 'Live Action Explainer',
+          duration: '02:05',
+        },
+      ],
+    },
+
+    {
+      slug: 'Live Action Case Study Video',
+      featuredImage: {
+        src: '/img/case-study-video/kia.png',
+      },
+      title: 'Live Action Case Study Video',
+      company: {
+        name: 'Infosys, USA',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1084658661/b2d6c34787',
+        },
+        content:
+          'A well-rounded visually impressive case study video on how Infosys transformed Kia America’s car delivery process. Filmed in Irvine, California, over two days. ',
       },
 
-      title: 'Commercial Video',
-      company: {
-        name: 'Xiaomi',
-      },
-      video: {
-        workDetails: {
-          videolink:
-            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
-        },
-        content:
-          'SLB was digitizing its sales, manufacturing, and product engineering workflows. And this interactive explainer helped their IT team launch and drive adoption across the organisation.',
-      },
-      popUpTitle:
-        'Animated Explainer on Sales Digitization for ~30,000 employees',
+      popUpTitle: 'How Infosys Transformed Kia America’s Customer Experience',
       popUpPoints: [
-        '01. Data sorting',
-        '02. Creative Consulting',
-        '03. Concept',
-        '04. Script',
-        '05. Storyboard',
-        '06. Animation',
-        '07. Interactivity',
-        '08. Hosting',
-      ],
-      redText: 'Premium Interactive Explainer',
-      relatedVideos: [
-        {
-          videolink: 'https://vimeo.com/1092040991?share=copy',
-          thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Whiteboard Explainer Video on DAM',
-          duration: '02:21',
-        },
-        {
-          videolink: 'https://vimeo.com/867141400?share=copy',
-          thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Live Action Explainer for SAAS product',
-          duration: '01:30',
-        },
-        {
-          videolink: 'https://vimeo.com/1092042256?share=copy',
-          thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'Animated Explainer for DCMO Services',
-          duration: '02:20',
-        },
-        {
-          videolink: 'https://vimeo.com/1092041941?share=copy',
-          thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Motion Graphics Case Study for HIMSS',
-          duration: '01:50',
-        },
-      ],
-    },
-    {
-      slug: 'Adobe eDam',
-      featuredImage: {
-        src: '/img/explainer-video/adobe.png',
-      },
-      title: 'Whiteboard Explainer Video on DAM',
-      company: {
-        name: 'Infosys',
-      },
-      video: {
-        workDetails: {
-          videolink: 'https://vimeo.com/1092040991?share=copy',
-        },
-        content:
-          'How do you pitch a great Digital Asset Management to busy marketers? By telling them an engaging persona-driven story (made using custom whiteboard illustration) that hits the mark.',
-      },
-      popUpTitle: 'Whiteboard Explainer Video on Digital Asset Management',
-      popUpPoints: [
-        '01. Concept',
-        '02. Script',
-        '03. Illustrations',
-        '04. Storyboard',
-        '05. Animation',
-        '06. Voice over',
-        '07. Music & SFX',
-        '08. Project Management',
-      ],
-      redText: 'Premium Whiteboard Animation',
-      relatedVideos: [
-        {
-          videolink: 'https://vimeo.com/867141400?share=copy',
-          thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Live Action Explainer for SAAS product',
-          duration: '01:30',
-        },
-        {
-          videolink: 'https://vimeo.com/1092042256?share=copy',
-          thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'Animated Explainer for DCMO Services',
-          duration: '02:20',
-        },
-        {
-          videolink: 'https://vimeo.com/1092041941?share=copy',
-          thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Motion Graphics Case Study for HIMSS',
-          duration: '01:50',
-        },
-        {
-          videolink: 'https://vimeo.com/1092039633?share=copy',
-          thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Live action explainer with Motion Graphics',
-          duration: '02:05',
-        },
-      ],
-    },
-    {
-      slug: 'Hansel / Superbeard',
-      featuredImage: {
-        src: '/img/explainer-video/Hansel.png',
-      },
-      title: 'Live Action Explainer for SAAS product',
-      company: {
-        name: 'Hansel.io',
-      },
-      video: {
-        workDetails: {
-          videolink: 'https://vimeo.com/867141400?share=copy',
-        },
-        content:
-          'How we communicated complex information using a simple, human-centric story. Here’s our live action explainer for Hansel - a SAAS product for context aware A/B testing.',
-      },
-      popUpTitle:
-        'Live Action Explainer on user drop-off management product - Hansel',
-      popUpPoints: [
-        '01. Concept',
-        '02. Script',
-        '03. Custom UI Graphics',
-        '04. Fictitious brand ',
-        '05. Casting & Styling',
-        '06. Production',
-        '07. Post Production',
-        '08. Versioning',
-      ],
-      redText: 'Live Action Explainer',
-      relatedVideos: [
-        {
-          videolink: 'https://vimeo.com/1092042256?share=copy',
-          thumbnail: '/img/explainer-video/DCMO.png',
-          title: 'Animated Explainer for DCMO Services',
-          duration: '02:20',
-        },
-        {
-          videolink: 'https://vimeo.com/1092041941?share=copy',
-          thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Motion Graphics Case Study for HIMSS',
-          duration: '01:50',
-        },
-        {
-          videolink: 'https://vimeo.com/1092039633?share=copy',
-          thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Live action explainer with Motion Graphics',
-          duration: '02:05',
-        },
-        {
-          videolink: 'https://vimeo.com/1042874327',
-          thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Mixed Media Explainer Video Case Study',
-          duration: '01:20',
-        },
-      ],
-    },
-    {
-      slug: 'DCMO',
-      featuredImage: {
-        src: '/img/explainer-video/DCMO.png',
-      },
-      title: 'Animated Explainer for DCMO Services',
-      company: {
-        name: 'Infosys Equinox',
-      },
-      video: {
-        workDetails: {
-          videolink: 'https://vimeo.com/1092042256?share=copy',
-        },
-        content:
-          'An exciting explainer video to help increase awareness for Digital Commerce Marketing Offerings from Infosys Equinox. The target audience: CXOs at E-Commerce businesses.',
-      },
-      popUpTitle: 'Animated Explainer for Digital Commerce Marketing  Services',
-      popUpPoints: [
-        '01. Concept',
-        '02. Script',
+        '01. Crew Curation',
+        '02. Multi-location Shoot',
         '03. Graphic Design',
-        '04. Storyboard',
-        '05. Animation',
-        '06. Voice Over',
-        '07. Music',
-        '08. Teaser Video',
+        '04. Video Structuring',
+        '05. Editing',
+        '06. Motion Graphics',
+        '07. Curated Stock Music',
+        '08. Colour Correction',
       ],
+      redText: 'Premium Live Action Case Study',
 
-      redText: 'Custom 2D Animation',
       relatedVideos: [
+         {
+          videolink: 'https://vimeo.com/1078406512',
+          thumbnail: '/img/corporate-video/gordon_ritter.png',
+          title: 'Thought Leadership Video',
+          duration: '10:18',
+        },
         {
-          videolink: 'https://vimeo.com/1092041941?share=copy',
-          thumbnail: '/img/explainer-video/wipro.png',
-          title: 'Motion Graphics Case Study for HIMSS',
-          duration: '01:50',
+          videolink: 'https://vimeo.com/1030707001',
+          thumbnail: '/img/explainer-video/Multiplier.png',
+          title: '2D Explainer Video',
+          duration: '01:29',
         },
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Live action explainer with Motion Graphics',
+          title: 'Live Action Explainer',
           duration: '02:05',
         },
         {
-          videolink: 'https://vimeo.com/1042874327',
-          thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Mixed Media Explainer Video Case Study',
-          duration: '01:20',
-        },
-        {
-          videolink: 'https://vimeo.com/1030707001',
-          thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'SAAS Marketing Explainer',
-          duration: '01:29',
+          videolink:
+            'https://vimeo.com/1153861064/061b34dd9d?share=copy&fl=sv&fe=ci',
+          thumbnail: 'https://vimeo.com/1008706015?share=copy',
+          title: 'Interactive Video',
+          duration: '09:02',
         },
       ],
     },
 
     {
-      slug: 'Wipro Animated Case Study',
+      slug: 'Gordon Ritter',
       featuredImage: {
-        src: '/img/explainer-video/wipro.png',
+        src: '/img/corporate-video/gordon_ritter.png',
       },
-      title: 'Motion Graphics Case Study for HIMSS',
+      title: 'Thought Leadership Video',
       company: {
-        name: 'Wipro',
+        name: 'Vymo, USA',
       },
       video: {
         workDetails: {
-          videolink: 'https://vimeo.com/1092041941?share=copy',
+          videolink: 'https://vimeo.com/1078406512',
         },
         content:
-          'IT giant Wipro had a challenging task for us: 24 case study videos in 90 days. We made them and delivered them on time! Check out one of the sophisticated videos from the project.',
+          'When Vymo wanted to capture a conversation with Gordon Ritter at Emergence Capital on software trends – we proposed a unique thought leadership video format that would feature both.',
       },
-      popUpTitle: 'Motion Graphics Case Study for Wipro’s booth at HIMSS event',
+      popUpTitle:
+        'Thought Leadership Videos for Vymo, featuring their investor',
       popUpPoints: [
-        '01. Concept',
-        '02. Script',
-        '03. Design & Storyboard',
-        '04. Motion Graphics',
-        '05. Voice over',
-        '06. Music & SFX',
-        '07. Project Management',
-        '08. Asset Management',
+        '01. Visualisation',
+        '02. Graphic Design',
+        '03. Production',
+        '04. Stock footage curation',
+        '05. Stock Music Curation',
+        '06. Editing ',
+        '07. Motion Graphics',
+        '08. Colouring',
       ],
-
-      redText: 'Sophisticated Motion Graphics',
+      redText: 'Premium Live Action & Motion Graphics',
       relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1030707001',
+          thumbnail: '/img/explainer-video/Multiplier.png',
+          title: '2D Explainer Video',
+          duration: '01:29',
+        },
         {
           videolink: 'https://vimeo.com/1092039633?share=copy',
           thumbnail: '/img/explainer-video/vymo_sme.png',
-          title: 'Live action explainer with Motion Graphics',
+          title: 'Live Action Explainer',
           duration: '02:05',
         },
         {
-          videolink: 'https://vimeo.com/1042874327',
-          thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Mixed Media Explainer Video Case Study',
-          duration: '01:20',
-        },
-        {
-          videolink: 'https://vimeo.com/1030707001',
-          thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'SAAS Marketing Explainer',
-          duration: '01:29',
-        },
-        {
           videolink:
-            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
-          thumbnail: '/img/explainer-video/SLB.png',
-          title: 'Interactive Explainer for oilfield services',
-          duration: '09:03',
+            'https://vimeo.com/1153861064/061b34dd9d?share=copy&fl=sv&fe=ci',
+          thumbnail: 'https://vimeo.com/1008706015?share=copy',
+          title: 'Interactive Video',
+          duration: '09:02',
+        },
+        {
+          videolink: 'https://vimeo.com/1051442842',
+          thumbnail: '/img/recruitment-video/tata_cricket_film.png',
+          title: 'Music Video',
+          duration: '01:52',
         },
       ],
     },
-    {
-      slug: 'Vymo SMB Explainer',
-      featuredImage: {
-        src: '/img/explainer-video/vymo_sme.png',
-      },
-      title: 'Live action explainer with Motion Graphics',
-      company: {
-        name: 'Vymo',
-      },
-      video: {
-        workDetails: {
-          videolink: 'https://vimeo.com/1092039633?share=copy',
-        },
-        content:
-          'When Vymo wanted a great explainer to target North American regional banks - we created a studio-shot live-action film with a fun set, actors and custom motion graphics.',
-      },
-      popUpTitle: 'Live action explainer with Motion Graphics for SAAS Brand',
-      popUpPoints: [
-        '01. Concept',
-        '02. Script Customisation',
-        '03. Graphic design',
-        '04. Casting & Styling',
-        '05. Set Design',
-        '06. Production',
-        '07. Editing & Animation',
-        '08. Music, SFX & more',
-      ],
 
-      redText: 'Studio-Shot Explainer Video',
-      relatedVideos: [
-        {
-          videolink: 'https://vimeo.com/1042874327',
-          thumbnail: '/img/explainer-video/ai_first_employees.png',
-          title: 'Mixed Media Explainer Video Case Study',
-          duration: '01:20',
-        },
-        {
-          videolink: 'https://vimeo.com/1030707001',
-          thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'SAAS Marketing Explainer',
-          duration: '01:29',
-        },
-        {
-          videolink:
-            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
-          thumbnail: '/img/explainer-video/SLB.png',
-          title: 'Interactive Explainer for oilfield services',
-          duration: '09:03',
-        },
-        {
-          videolink: 'https://vimeo.com/1092040991?share=copy',
-          thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Whiteboard Explainer Video on DAM',
-          duration: '02:21',
-        },
-      ],
-    },
     {
-      slug: 'Collage style explainer - Univ Upskilling (Infosys)',
-      featuredImage: {
-        src: '/img/explainer-video/ai_first_employees.png',
-      },
-      title: 'Mixed Media Explainer Video Case Study',
-      company: {
-        name: 'Infosys',
-      },
-      video: {
-        workDetails: {
-          videolink: 'https://vimeo.com/1042874327',
-        },
-        content:
-          'We flipped the script of typical case study videos by placing our client’s employees at the center of the story—giving them the spotlight as enablers of AI-first software solutions.',
-      },
-      popUpTitle: 'Mixed Media Explainer Video Case Studies for Social Media',
-      popUpPoints: [
-        '01. Script',
-        '02. Graphic design',
-        '03. Motion Graphics',
-        '04. Voice Over',
-        '05. Music & SFX',
-        '06. Video Thumbnail',
-      ],
-      redText: 'Mixed Media Explainer Video Case Study',
-      relatedVideos: [
-        {
-          videolink: 'https://vimeo.com/1030707001',
-          thumbnail: '/img/explainer-video/Multiplier.png',
-          title: 'SAAS Marketing Explainer',
-          duration: '01:29',
-        },
-        {
-          videolink:
-            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
-          thumbnail: '/img/explainer-video/SLB.png',
-          title: 'Interactive Explainer for oilfield services',
-          duration: '09:03',
-        },
-        {
-          videolink: 'https://vimeo.com/1092040991?share=copy',
-          thumbnail: '/img/explainer-video/adobe.png',
-          title: 'Whiteboard Explainer Video on DAM',
-          duration: '02:21',
-        },
-        {
-          videolink: 'https://vimeo.com/867141400?share=copy',
-          thumbnail: '/img/explainer-video/Hansel.png',
-          title: 'Live Action Explainer for SAAS product',
-          duration: '01:30',
-        },
-      ],
-    },
-    {
-      slug: 'Introducing Multiplier',
+      slug: '2D Explainer Video',
       featuredImage: {
         src: '/img/explainer-video/Multiplier.png',
       },
-      title: 'SAAS Marketing Explainer',
+      title: '2D Explainer Video',
       company: {
         name: 'Multiplier',
       },
@@ -823,6 +600,182 @@ const VideosServices = ({ setisPopupOpen }) => {
         },
       ],
     },
+
+        {
+      slug: 'Live Action Explainer',
+      featuredImage: {
+        src: '/img/explainer-video/vymo_sme.png',
+      },
+      title: 'Live Action Explainer',
+      company: {
+        name: 'Vymo',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1092039633?share=copy',
+        },
+        content:
+          'When Vymo wanted a great explainer to target North American regional banks - we created a studio-shot live-action film with a fun set, actors and custom motion graphics.',
+      },
+      popUpTitle: 'Live action explainer with Motion Graphics for SAAS Brand',
+      popUpPoints: [
+        '01. Concept',
+        '02. Script Customisation',
+        '03. Graphic design',
+        '04. Casting & Styling',
+        '05. Set Design',
+        '06. Production',
+        '07. Editing & Animation',
+        '08. Music, SFX & more',
+      ],
+
+      redText: 'Studio-Shot Explainer Video',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1042874327',
+          thumbnail: '/img/explainer-video/ai_first_employees.png',
+          title: 'Mixed Media Explainer Video Case Study',
+          duration: '01:20',
+        },
+        {
+          videolink: 'https://vimeo.com/1030707001',
+          thumbnail: '/img/explainer-video/Multiplier.png',
+          title: 'SAAS Marketing Explainer',
+          duration: '01:29',
+        },
+        {
+          videolink:
+            'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
+          thumbnail: '/img/explainer-video/SLB.png',
+          title: 'Interactive Explainer for oilfield services',
+          duration: '09:03',
+        },
+        {
+          videolink: 'https://vimeo.com/1092040991?share=copy',
+          thumbnail: '/img/explainer-video/adobe.png',
+          title: 'Whiteboard Explainer Video on DAM',
+          duration: '02:21',
+        },
+      ],
+    },
+
+    {
+      slug: 'Interactive Video',
+      featuredImage: {
+        src: '/img/explainer-video/SLB.png',
+      },
+
+      title: 'Interactive Video',
+      company: {
+        name: 'SLB',
+      },
+      video: {
+        workDetails: {
+          videolink:
+            // 'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
+            'https://vimeo.com/1008706015?share=copy'
+        },
+        content:
+          'SLB was digitizing its sales, manufacturing, and product engineering workflows. And this interactive explainer helped their IT team launch and drive adoption across the organisation.',
+      },
+      popUpTitle:
+        'Animated Explainer on Sales Digitization for ~30,000 employees',
+      popUpPoints: [
+        '01. Data sorting',
+        '02. Creative Consulting',
+        '03. Concept',
+        '04. Script',
+        '05. Storyboard',
+        '06. Animation',
+        '07. Interactivity',
+        '08. Hosting',
+      ],
+      redText: 'Premium Interactive Explainer',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1092040991?share=copy',
+          thumbnail: '/img/explainer-video/adobe.png',
+          title: 'Whiteboard Explainer Video on DAM',
+          duration: '02:21',
+        },
+        {
+          videolink: 'https://vimeo.com/867141400?share=copy',
+          thumbnail: '/img/explainer-video/Hansel.png',
+          title: 'Live Action Explainer for SAAS product',
+          duration: '01:30',
+        },
+        {
+          videolink: 'https://vimeo.com/1092042256?share=copy',
+          thumbnail: '/img/explainer-video/DCMO.png',
+          title: 'Animated Explainer for DCMO Services',
+          duration: '02:20',
+        },
+        {
+          videolink: 'https://vimeo.com/1092041941?share=copy',
+          thumbnail: '/img/explainer-video/wipro.png',
+          title: 'Motion Graphics Case Study for HIMSS',
+          duration: '01:50',
+        },
+      ],
+    },
+
+  {
+      slug: 'Tata Women’s Cricket League',
+      featuredImage: {
+        src: '/img/recruitment-video/tata_cricket_film.png',
+      },
+      title: 'Music Video',
+      company: {
+        name: 'Tata',
+      },
+      video: {
+        workDetails: {
+          videolink: 'https://vimeo.com/1051442842',
+        },
+        content:
+          'The Tata Group celebrates inclusion and collaboration through its first ever women employees’ cricket league. Our rap music video spotlights their stars from across 16 group companies.',
+      },
+      popUpTitle:
+        'Inspiring Rap Music Video on Women Employees’ Cricket League',
+      popUpPoints: [
+        '01. Concept',
+        '02. Lyrics',
+        '03. Music Composition',
+        '04. Graphic Design',
+        '05. Creative Direction',
+        '06. Production',
+        '07. Editing',
+        '08. Graphics & Colour',
+      ],
+
+      redText: 'Music Video on Sporting Culture',
+      relatedVideos: [
+        {
+          videolink: 'https://vimeo.com/1030711146',
+          thumbnail: '/img/recruitment-video/ralf.png',
+          title: 'Recruitment Video for Europe Region',
+          duration: '01:30',
+        },
+        {
+          videolink: 'https://vimeo.com/787820271',
+          thumbnail: '/img/recruitment-video/treebo.png',
+          title: 'Premium Live Action Recruitment Film',
+          duration: '02:55',
+        },
+        {
+          videolink: 'https://vimeo.com/1102448563',
+          thumbnail: '/img/recruitment-video/cactus.png',
+          title: 'Motion Graphics Hiring Video for Cactus',
+          duration: '00:47',
+        },
+        {
+          videolink: 'https://vimeo.com/868489633',
+          thumbnail: '/img/recruitment-video/career_site.png',
+          title: 'Career Portal Demo Video for Global Hiring',
+          duration: '02:34',
+        },
+      ],
+    }
   ]
 
   const gridData = [
@@ -1053,7 +1006,7 @@ const VideosServices = ({ setisPopupOpen }) => {
             Explore Our Video Portfolio
           </h3>
           <div className="grid gap-y-8 md:gap-y-[42px] gap-x-5 md:gap-x-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 md:mt-10">
-            {workData.slice(0, 8).map((v) => (
+            {workData.map((v) => (
               <PlayCard
                 onClick={() => {
                   setModal({
@@ -1073,6 +1026,14 @@ const VideosServices = ({ setisPopupOpen }) => {
               />
             ))}
           </div>
+
+          <Button
+              className="w-fit mx-auto mt-[30px] md:mt-15"
+              href="/work/videos"
+              suffix={<LineArrow />}
+            >
+              Explore more
+          </Button>
 
           <VideoMetaModal
             showContent={true}
@@ -1227,13 +1188,6 @@ const VideosServices = ({ setisPopupOpen }) => {
         vimeoId="891125698"
       >
         <div className="relative max-w-[90%] md:max-w-[80%] w-full">
-          {/* <iframe
-            src="https://player.vimeo.com/video/891125698?h=1383313c75&autoplay=1&title=0&byline=0&portrait=0"
-            className="w-full aspect-video h-full"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe> */}
           <video
             autoPlay
             muted
