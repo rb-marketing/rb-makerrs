@@ -18,24 +18,24 @@ const nextConfig = {
       config.output.publicPath = '/_next/'
     }
 
-    config.plugins.push(
-      new NextFederationPlugin({
-        name: 'rbGroup',
-        remotes: {
-          rbIndia: `rbIndia@${process.env.NEXT_PUBLIC_HOST_URL}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
-          rbGlobal: `rbGlobal@${process.env.NEXT_PUBLIC_HOST_URL}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
-        },
-        filename: 'static/chunks/remoteEntry.js',
-        extraOptions: {
-          exposePages: true,
-        },
-        shared: {
-          tailwindcss: { singleton: true, eager: true },
-          postcss: { singleton: true, eager: true },
-          autoprefixer: { singleton: true, eager: true },
-        },
-      })
-    )
+    // config.plugins.push(
+    //   new NextFederationPlugin({
+    //     name: 'rbGroup',
+    //     remotes: {
+    //       rbIndia: `rbIndia@${process.env.NEXT_PUBLIC_HOST_URL}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+    //       rbGlobal: `rbGlobal@${process.env.NEXT_PUBLIC_HOST_URL}/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+    //     },
+    //     filename: 'static/chunks/remoteEntry.js',
+    //     extraOptions: {
+    //       exposePages: true,
+    //     },
+    //     shared: {
+    //       tailwindcss: { singleton: true, eager: true },
+    //       postcss: { singleton: true, eager: true },
+    //       autoprefixer: { singleton: true, eager: true },
+    //     },
+    //   })
+    // )
 
     return config
   },
