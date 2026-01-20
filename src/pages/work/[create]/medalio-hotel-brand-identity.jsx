@@ -81,7 +81,7 @@ function Medalio() {
     const socials = [
         {
             key: 0,
-            href: 'https://twitter.com/intent/post?url=redbangle.com%2Fwork%2Fcreate%2Fjewels-case-study',
+            href: 'https://twitter.com/intent/post?url=makerrs.com%2Fwork%2Fcreate%2Fjewels-case-study',
             color: '#000',
             icon: <Twitter />,
         },
@@ -89,7 +89,7 @@ function Medalio() {
         {
             type: 'linkedin',
             key: 1,
-            href: 'https://www.redbangle.com/work/create/jewels-case-study',
+            href: 'https://www.makerrs.com/work/create/jewels-case-study',
             color: '#006699',
             icon: <Linkedin />,
         },
@@ -99,7 +99,7 @@ function Medalio() {
             <SEO
                 title="Medalio Hospitality Brand Identity Design | Makerrs"
                 description="We created a hospitality brand identity for Medalio that unites elegance and warmth, symbolizing progress and offering a sanctuary for travelers."
-                url="https://www.b2b.redbangle.com/work/design/medalio-hospitality-brand-identity"
+                url="https://www.makerrs.com/work/design/medalio-hospitality-brand-identity"
             />
             <WorkHeroSection
                 title={'Crafting a Symbol of Success in Hospitality'}

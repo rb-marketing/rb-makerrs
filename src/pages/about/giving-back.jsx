@@ -193,7 +193,7 @@ export const CSRPage = () => {
       <SEO
         title="Inspiring Social Impact with Creative Ad Campaigns | Makerrs"
         description="Take a look at Makerrs's powerful social impact videos content & brand communicaton. We create compelling content that drives positive change in our environment and communities."
-        url="https://www.redbangle.com/about/giving-back"
+        url="https://www.makerrs.com/about/giving-back"
       />
 
       <section className="bg-white py-15 md:py-30">

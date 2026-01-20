@@ -85,7 +85,7 @@ const pageData = {
 
 function MumbaiIndian() {
  const router = useRouter();
- const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+ const fullUrl = `https://www.makerrs.com${router.asPath}`;
   const { logo, tags, commercials, image, specifyWidth } = pageData
   const socials = [
     {
@@ -107,7 +107,7 @@ function MumbaiIndian() {
     <>
       <SEO 
       title="Case Study: MI 3D Billboard | Makerrs"
-      url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/mumbai-indian"
+      url="https://www.makerrs.com/work/video-content-production-agency-india/mumbai-indian"
       />
       <WorkHeroSection
       title={'Launching a Sports Brand logo with a 3D Billboard'}

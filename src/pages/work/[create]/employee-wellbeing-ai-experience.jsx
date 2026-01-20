@@ -77,7 +77,7 @@ function AIPoweredCampaign() {
       <SEO
         title="Infosys Thrive AI-Powered Campaign | Makerrs"
         description="See how we used AI to personalize wellness for employees at Infosys - driving global engagement and transforming HR program into an impactful experience."
-        url="https://www.b2b.redbangle.com/work/ai-creatives/infosys-thrive-ai-powered-campaign"
+        url="https://www.makerrs.com/work/ai-creatives/infosys-thrive-ai-powered-campaign"
       />
       <WorkHeroSection
         logo={logo}

@@ -84,7 +84,7 @@ const pageData = {
 
 function PDDIntegrated() {
   const router = useRouter()
-  const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`
+  const fullUrl = `https://www.makerrs.com${router.asPath}`
   const { logo, tags, commercials, desktopVideo, mobileVideo, image, specifyWidth } = pageData
   const socials = [
     {
@@ -105,7 +105,7 @@ function PDDIntegrated() {
   return (
     <>
       <SEO title="Case Study: PDD Integrated " 
-      url="https://www.b2c.redbangle.com/work/integrated-brand-campaign-agency-india/pdd-integrated"
+      url="https://www.makerrs.com/work/integrated-brand-campaign-agency-india/pdd-integrated"
       />
       <WorkHeroSection
         title={'Branding and Launch Campaign for a Dessert Cafe'}

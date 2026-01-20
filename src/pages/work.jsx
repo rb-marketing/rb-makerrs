@@ -685,7 +685,7 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
       <SEO
         title="Top Branding, Video Production & Podcast Solutions | Makerrs"
         description="Get great brand design, scalable video production, branded podcast production, and winning creative campaigns for your borderless business."
-        url={`https://www.staging.makerrs.com/work/${selectedTag || 'featured'}`}
+        url={`https://www.makerrs.com/work/${selectedTag || 'featured'}`}
         keywords="B2B Brands, Brand solutions, B2B Business, Work, Portfolio, Big Ideas, Projects, Work Showcase, Case Study, Case Studies, Creativity, Innovation, B2C Brands, B2C Business" />
 
       <section className="py-14 md:py-24 overflow-hidden bg-rb-mercury text-rb-black ">

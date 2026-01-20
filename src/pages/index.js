@@ -453,7 +453,7 @@ const LandPage = () => {
       content: (
         <>
           Our borderless agency supports clients across time zones. So, {' '}
-          <Link href="https://www.b2b.redbangle.com/contact" className="underline hover:text-rb-link-green2">
+          <Link href="https://www.makerrs.com/contact" className="underline hover:text-rb-link-green2">
             send us a brief
           </Link>{' '}
           and we&apos;ll set up a meeting at a mutually convenient time.

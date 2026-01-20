@@ -149,7 +149,7 @@ const pageData = {
 
 function Thelagram() {
         const router = useRouter();
-    const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+    const fullUrl = `https://www.makerrs.com${router.asPath}`;
     const { logo, tags, commercials, desktopVideo, mobileVideo, image, specifyWidth } = pageData
     const socials = [
           {
@@ -171,7 +171,7 @@ function Thelagram() {
         <>
             <SEO
                 title="Case Study: Thelagram"
-                url="https://www.b2c.redbangle.com/work/brand-design-agency-india/thelagram"
+                url="https://www.makerrs.com/work/brand-design-agency-india/thelagram"
             />
             <WorkHeroSection
                 title={'Desi Branding for a Street Food Restaurant'}

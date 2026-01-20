@@ -60,7 +60,7 @@ const pageData = {
 
 function MetroWholeOneMinute() {
   const router = useRouter();
-  const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+  const fullUrl = `https://www.makerrs.com${router.asPath}`;
   const { logo, tags, commercials, desktopVideo, mobileVideo, image } = pageData
   const socials = [
     {
@@ -83,7 +83,7 @@ function MetroWholeOneMinute() {
       <SEO
         title="Case Study: Metro Wholesale - One Minute"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/metro-wholesale-one-minute"
+        url="https://www.makerrs.com/work/brand-campaign-agency-india/metro-wholesale-one-minute"
       />
       <WorkHeroSection
         title={"Campaign: When you can't resist buying more"}

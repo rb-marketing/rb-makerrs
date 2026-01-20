@@ -149,7 +149,7 @@ const ArticleSingle = ({ article, relatedArticle, tocTree }) => {
     }
   }, [])
 const articleUrl = `https://www.makerrs.com${router.asPath}`
-const seoUrl = `https://www.staging.makerrs.com${router.asPath}`
+const seoUrl = `https://www.makerrs.com${router.asPath}`
 
   const copyPageUrl = () => {
     navigator.clipboard.writeText(window.location.href)
@@ -256,7 +256,7 @@ const selectedSchema = slugToSchema[article.slug] || [];
       <SEO
         title={article?.seoTitle}
         description={article?.seoDesc}
-        image={ article?.featuredImage?.src ?? 'https://www.redbangle.com/img/redbangle.jpg'}
+        image={ article?.featuredImage?.src ?? 'https://www.makerrs.com/img/redbangle.jpg'}
         url={seoUrl}
       />
       <article>

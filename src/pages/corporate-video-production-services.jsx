@@ -1140,7 +1140,7 @@ const CorporateVideoLandPage = () => {
       <SEO
         title="Great Corporate Films and Videos"
         description="Great Corporate Films and Videos"
-        url={`https://www.b2b.redbangle.com${router.asPath}`}
+        url={`https://www.makerrs.com${router.asPath}`}
         keywords="corporate promo videos,
             internal communication videos,
             corporate training videos,

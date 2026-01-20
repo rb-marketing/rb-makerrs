@@ -161,7 +161,7 @@ const pageData = {
 
 function L74() {
   const router = useRouter();
-  const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+  const fullUrl = `https://www.makerrs.com${router.asPath}`;
   const { logo, title, tags, image, press, specifyWidth } = pageData
   const socials = [
     {
@@ -235,7 +235,7 @@ function L74() {
 
     <>
       <SEO title="Case Study | L74" 
-      url="https://www.b2c.redbangle.com/work/integrated-brand-campaign-agency-india/l74-case-study"
+      url="https://www.makerrs.com/work/integrated-brand-campaign-agency-india/l74-case-study"
       />
       <WorkHeroSection
         logo={logo}

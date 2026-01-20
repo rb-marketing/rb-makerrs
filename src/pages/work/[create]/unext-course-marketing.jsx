@@ -172,7 +172,7 @@ function Colearn() {
             <SEO 
             title="Jigsaw E-learning Campaign Video | Makerrs" 
             description="We designed short ad films for Jigsaw Academy that showcased six programs with clarity and impact, inspiring students to envision their career goals."
-            url="https://www.b2b.redbangle.com/work/campaign/jigsaw-e-learning-explainer-video"
+            url="https://www.makerrs.com/work/campaign/jigsaw-e-learning-explainer-video"
             />
             <WorkHeroSection
                 logo={logo}

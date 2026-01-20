@@ -112,7 +112,7 @@ function VymoLeadManagement() {
     <>
       <SEO 
       title="Vymo Future of Software Thought Leadership Video | Makerrs" 
-      url="https://www.b2b.redbangle.com/work/videos/vymo-gordon-ritter-thought-leadership-video"
+      url="https://www.makerrs.com/work/videos/vymo-gordon-ritter-thought-leadership-video"
       description="A thought leadership video blending Gordon Ritter’s insights with Vymo’s vision, revealing the future of enterprise software with clarity and impact."
       />
       <WorkHeroSection

@@ -274,19 +274,7 @@ export const CollabForm = ({ modalTrigger }) => {
           countrylist.push({ label: item?.name, value: item?.name })
         )
         setCountryData(countrylist)
-        // setCityData([])
-        // console.log(cityData)
 
-        // CityList api call
-        // const response2 = await fetch(
-        //   `https://api.redbangle.com/redbangle/user/api/getCityList/India`
-        // )
-        // const jsonData2 = await response2.json()
-
-        // jsonData2?.data.forEach((item) =>
-        //   citylist.push({ label: item, value: item })
-        // )
-        // setCityData(citylist)
       } catch (error) {
         console.log(error)
       }

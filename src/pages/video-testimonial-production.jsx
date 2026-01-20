@@ -1354,7 +1354,7 @@ const CaseStudyVideoProduction = () => {
       <SEO
         title="Case Study Video Production"
         description="Case Study Video Production"
-        url={`https://www.b2b.redbangle.com${router.asPath}`}
+        url={`https://www.makerrs.com${router.asPath}`}
         keywords="case study videos, testimonial video production, client success story videos, testimonial videos, success story videos, client testimonial videos, customer case studies"
       />
       <section

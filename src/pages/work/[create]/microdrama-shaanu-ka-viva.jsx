@@ -81,7 +81,7 @@ const testimonialsDefault = [
 
 function XiaomiBuds() {
   const router = useRouter()
-  const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`
+  const fullUrl = `https://www.makerrs.com${router.asPath}`
   const { logo, tags, commercials, desktopVideo, mobileVideo, image, specifyWidth } = pageData
 
   const socials = [
@@ -105,7 +105,7 @@ function XiaomiBuds() {
       <SEO
         title="Case Study: Shaanu ka Viva"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.b2c.redbangle.com/work/creative-ai-agency-india/shaanu-ka-viva"
+        url="https://www.makerrs.com/work/creative-ai-agency-india/shaanu-ka-viva"
       />
       <WorkHeroSection
         title={'Shaanu Ka Viva - A GenAI Microdrama for Bharat'}
@@ -177,9 +177,9 @@ function XiaomiBuds() {
               <p className="text-base md:text-2xl text-rb-black/80 !leading-[150%] mb-[30px]">
                 Explore our inspirations and complete GenAI workflow in this
                 <a
-                  href="https://www.b2c.redbangle.com/blog/shaanu-ka-viva-a-genai-microdrama-for-bharat"
+                  href="https://www.makerrs.com/blog/shaanu-ka-viva-a-genai-microdrama-for-bharat"
                   target="_blank"
-                  className="text-blue-500"
+                  className="text-black underline hover:text-rb-link-green"
                 >
                   {' '}
                   blog post

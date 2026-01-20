@@ -98,7 +98,7 @@ function BajajAuto() {
   const socials = [
     {
       key: 0,
-      href: 'https://twitter.com/intent/post?url=redbangle.com%2Fwork%2Fcreate%2Fbajaj-auto',
+      href: 'https://twitter.com/intent/post?url=makerrs.com%2Fwork%2Fcreate%2Fbajaj-auto',
       color: '#000',
       icon: <Twitter />,
     },
@@ -106,7 +106,7 @@ function BajajAuto() {
     {
       type: 'linkedin',
       key: 1,
-      href: 'https://www.redbangle.com/work/create/bajaj_auto',
+      href: 'https://www.makerrs.com/work/create/bajaj_auto',
       color: '#006699',
       icon: <Linkedin />,
     },
@@ -116,7 +116,7 @@ function BajajAuto() {
       <SEO 
       title="Bajaj Pulsar Augmented Reality Campaign | Makerrs" 
       description="We crafted an AR campaign for Bajaj Pulsar that turned static print into interactive 3D journeys, engaging riders at scale and inspiring test rides."
-      url="https://www.b2b.redbangle.com/work/brand-experiences/bajaj-pulsar-augmented-reality-campaign"
+      url="https://www.makerrs.com/work/brand-experiences/bajaj-pulsar-augmented-reality-campaign"
       />
       <WorkHeroSection
       title={'Augmented Reality that brought the automobile alive'}

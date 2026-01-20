@@ -80,7 +80,7 @@ const pageData = {
 
 function Indeed() {
      const router = useRouter();
- const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+ const fullUrl = `https://www.makerrs.com${router.asPath}`;
     const { logo, tags, commercials, image } = pageData
     const socials = [
           {
@@ -103,7 +103,7 @@ function Indeed() {
             <SEO
                 title="Transforming how Indian SMBs Hire case study"
                 description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-                url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/indeed-case-study"
+                url="https://www.makerrs.com/work/brand-campaign-agency-india/indeed-case-study"
             />
             <WorkHeroSection
                 title={'Transforming how Indian SMBs Hire'}

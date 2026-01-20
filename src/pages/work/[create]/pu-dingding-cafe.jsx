@@ -140,7 +140,7 @@ function Colearn() {
             <SEO
                 title="P.U. Dingding Dessert Café Branding | Makerrs"
                 description="We designed a joyful brand identity for P.U. Dingding dessert café, uniting mascots, design, and storytelling to grow loyalty and spark community."
-                url="https://www.b2b.redbangle.com/work/design/pu-dingding-dessert-cafe-branding"
+                url="https://www.makerrs.com/work/design/pu-dingding-dessert-cafe-branding"
             />
             <WorkHeroSection
                 logo={logo}

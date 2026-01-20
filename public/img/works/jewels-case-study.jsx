@@ -118,7 +118,7 @@ const stats = [
  
 function Jewels() {
     const router = useRouter();
-    const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+    const fullUrl = `https://www.makerrs.com${router.asPath}`;
     const { logo, tags, commercials, desktopVideo, mobileVideo,  image } = pageData
     const socials = [
    {
@@ -140,7 +140,7 @@ function Jewels() {
         <>
             <SEO
                 title="Case Study: Taneira - Jewels of India"
-                url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/jewels-case-study"
+                url="https://www.makerrs.com/work/video-content-production-agency-india/jewels-case-study"
             />
             <WorkHeroSection
                 title={' Documentaries: Indian Handcrafted Jewellery and Craftspeople '}

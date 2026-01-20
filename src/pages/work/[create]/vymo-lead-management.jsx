@@ -107,7 +107,7 @@ function VymoLeadManagement() {
       <SEO 
       title="Vymo Lead Management Explainer Video | Makerrs" 
       description="We created an explainer video of Vymo’s lead management video that helped financial institutions scale engagement and drive growth."
-      url="https://www.b2b.redbangle.com/work/campaign/vymo-lead-management"
+      url="https://www.makerrs.com/work/campaign/vymo-lead-management"
       />
       <WorkHeroSection
         logo={logo}

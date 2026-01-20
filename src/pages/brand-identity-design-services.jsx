@@ -896,7 +896,7 @@ const BrandIdentityDesign = () => {
           our brand collateral projects{' '}
 
           <a
-            href="https://www.staging.makerrs.com/work/design"
+            href="https://www.makerrs.com/work/design"
             className="text-black underline hover:text-rb-link-green"
             target="_blank"
           >
@@ -1186,7 +1186,7 @@ const BrandIdentityDesign = () => {
       <SEO
         title="B2B Brand Identity Design"
         description="B2B Brand Identity Design"
-        url=" https://www.b2b.redbangle.com/brand-identity-design-services"
+        url=" https://www.makerrs.com/brand-identity-design-services"
         keywords="brand identity design,
           how to create a brand identity,
           brand identity agency,
@@ -1600,61 +1600,6 @@ const BrandIdentityDesign = () => {
         type="semi"
         title={' Why Clients Trust Us'}
       />
-
-      {/* <section className="pb-18 md:!pt-0">
-        <div className="container">
-          <LineHeading className="mb-6 md:mb-9">Discover more</LineHeading> */}
-
-      {/* <h2 className="text-title md:text-title-md mb-0 md:mb-8 font-everett">
-            Paris 2024 Olympics Identity – French Finesse Falls Flat
-          </h2> */}
-
-      {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8">
-            {[
-              {
-                id: 0,
-                img:'/img/explainer-video/paris_blog.jpg',
-                title: 'Paris 2024 Olympics Identity – French Finesse Falls Flat',
-                tag: 'Design',
-                url:'https://www.b2c.redbangle.com/blog/paris-2024-olympics-identity-french-finesse-falls-flat?category=brand-design'
-              }
-            ].map(({ id, img, title, tag, url }) => (
-              <div key={id}>
-                <a
-                  href={url}
-                  className="h-[384px] block md:h-[272px] overflow-hidden relative mb-4 group"
-                  target='_blank'
-                >
-                  <img
-                    src={img}
-                    className="w-full h-full object-cover group-hover:scale-[1.03] transition-all duration-300"
-                    alt=""
-                  />
-
-                  <div className="absolute border border-white rounded-full py-2 px-4 text-[12px] font-semibold bottom-5 left-5 text-white">
-                    {tag}
-                  </div>
-                </a>
-
-                <div>
-                  <h3 className="text-[16px] md:text-[24px] leading-[120%] font-semibold mb-5.5 md:mb-4 tracking-[-0.96px]">
-                    {title}
-                  </h3>
-
-                  <a
-                    href={url}
-                    className="inline-flex gap-2 items-center text-rb-red font-semibold"
-                    target='_blank'
-                  >
-                    Continue reading
-                    <LineArrow className=" max-w-[20px]" />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div> */}
-      {/* </div>
-      </section> */}
 
       <section className=" pb-18 md:pb-30 md:pt-[48px]">
         <div className="container">
