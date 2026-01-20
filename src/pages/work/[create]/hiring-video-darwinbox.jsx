@@ -110,7 +110,7 @@ function DarWinBox() {
       <SEO 
       title="Darwinbox Recruitment Video | Makerrs" 
       description="We made a recruitment video for Darwinbox with humor, authenticity, and founder-led storytelling to showcase their vibrant workplace culture."
-      url="https://www.makerrs.com/work/videos/darwinbox-hiring-video"
+      url="https://www.makerrs.com/work/video-production/hiring-video-darwinbox"
       />
       <WorkHeroSection
         logo={logo}

@@ -327,7 +327,7 @@ export const campaignPosts = [
     image: '/img/works/xiaomi_buds_6_work_thumbnail.png',
     alt: 'Action-packed launch film for Redmi Buds 6',
     tags: ['Consumer Electronics', 'Ad Film', 'Digital Campaign', 'Product Launch Campaign'],
-    href: '/brand-campaign-agency-india/xiaomi-buds',
+    href: '/brand-campaign/xiaomi-buds',
   },
   {
     key: 1,
@@ -1450,8 +1450,8 @@ export const workPosts = [
   alt: 'Indeed',
   tags: ['Digital Campaign', 'Ad Film', ' Jobs'],
   tabs: ['Featured'],
-  case_study_title: 'indeed-India-radhika-apte',
-  href: '/brand-campaign/indeed-India-radhika-apte',
+  case_study_title: 'indeed-india-radhika-apte',
+  href: '/brand-campaign/indeed-india-radhika-apte',
   region: ['IN'] // only visible for India
 },
 {
@@ -1492,7 +1492,7 @@ export const workPosts = [
       'Product Launch Campaign',
     ],
     case_study_title: 'xiaomi-buds',
-    href: '/brand-campaign-agency-india/xiaomi-buds',
+    href: '/brand-campaign/xiaomi-buds',
     region: []
   },
   {
@@ -2448,8 +2448,8 @@ export const workPosts = [
   alt: 'Indeed',
   tags: ['Digital Campaign', 'Ad Film', ' Jobs'],
   tabs: ['campaign'],
-  case_study_title: 'indeed-India-radhika-apte',
-  href: '/brand-campaign/indeed-India-radhika-apte',
+  case_study_title: 'indeed-india-radhika-apte',
+  href: '/brand-campaign/indeed-india-radhika-apte',
       region: ['IN']
 
 },

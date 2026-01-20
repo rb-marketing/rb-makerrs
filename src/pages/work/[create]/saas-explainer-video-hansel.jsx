@@ -112,7 +112,7 @@ function HanselSaasExplainer() {
     <>
       <SEO 
       title="SaaS Explainer Video for Hansel | Makerrs" 
-      url="https://www.makerrs.com/work/videos/hansel-saas-explainer-video"
+      url="https://www.makerrs.com/work/video-production/saas-explainer-video-hansel"
       description="Our explainer video for Hansel uses humour and storytelling to turn complex user drop-off problems into engaging ecommerce success stories."
       />
       <WorkHeroSection

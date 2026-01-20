@@ -184,7 +184,7 @@ function InfosysWSJ() {
       <SEO
         title="Infosys x WSJ Global Case Study Videos | Makerrs"
         description="We crafted multi-location case study videos for Infosys and WSJ, showcasing digital transformation stories that resonate with global leaders."
-        url="https://www.makerrs.com/work/videos/infosys-wsj-global-case-study-video"
+        url="https://www.makerrs.com/work/video-production/case-study-videos-infosys-wsj"
       />
       <WorkHeroSection
         logo={logo}

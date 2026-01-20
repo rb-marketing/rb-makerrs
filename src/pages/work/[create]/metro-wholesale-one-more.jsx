@@ -83,7 +83,7 @@ function MetroWholeOneMinute() {
       <SEO
         title="Case Study: Metro Wholesale - One Minute"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.makerrs.com/work/brand-campaign-agency-india/metro-wholesale-one-minute"
+        url="https://www.makerrs.com/work/brand-campaign/metro-wholesale-one-more"
       />
       <WorkHeroSection
         title={"Campaign: When you can't resist buying more"}

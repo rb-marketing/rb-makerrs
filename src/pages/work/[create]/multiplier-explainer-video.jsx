@@ -109,7 +109,7 @@ function Multiplier() {
       <SEO 
       title="Multiplier HR Tech SaaS Explainer Video | Makerrs" 
       description="For HR tech SaaS brand Multiplier, we crafted an explainer video that revealed global hiring challenges and drove expansion with clarity."
-      url="https://www.makerrs.com/work/campaign/multiplier-hr-saas-explainer-video"
+      url="https://www.makerrs.com/work/video-production/multiplier-explainer-video"
       />
       <WorkHeroSection
         logo={logo}

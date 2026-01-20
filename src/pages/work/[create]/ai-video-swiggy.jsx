@@ -118,7 +118,7 @@ function SwiggyInsenlyGood() {
             <SEO
                 title="Case Study | Swiggy Insanely Good"
                 description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-                url="https://www.makerrs.com/work/creative-ai-agency-india/swiggy-insanely-good"
+                url="https://www.makerrs.com/work/video-production/ai-video-swiggy"
             />
             <WorkHeroSection
                 title={'Gen AI Ad for Single-Origin Coffee Range'}

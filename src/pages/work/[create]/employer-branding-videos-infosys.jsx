@@ -325,7 +325,7 @@ function InfosysWb() {
             <SEO
                 title="Infosys Global Employer Branding Campaign | Makerrs"
                 description="We crafted 16 employee-led films across 5 countries for Infosys, scaling its global employer brand and attracting diverse talent with authentic stories."
-                url="https://www.makerrs.com/work/videos/infosys-employer-branding"
+                url="https://www.makerrs.com/work/video-production/employer-branding-videos-infosys"
             />
             <WorkHeroSection
                 logo={logo}

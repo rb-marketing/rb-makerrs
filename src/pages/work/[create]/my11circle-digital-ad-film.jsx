@@ -133,7 +133,7 @@ function My11Circle() {
       <SEO
         title="Case Study: My11Circle | Creative Advertising & Digital Marketing Campaign | Makerrs"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for My11Circle using b2c marketing campaign strategy. "
-        url="https://www.makerrs.com/work/brand-campaign-agency-india/my11circle-case-study"
+        url="https://www.makerrs.com/work/brand-campaign/my11circle-digital-ad-film"
       />
       <WorkHeroSection
         title={'Never sweat the first game Campaign Films'}

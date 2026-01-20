@@ -78,7 +78,7 @@ function InfosysSingalong() {
       <SEO
         title="Infosys AI-powered Engagement Campaign | Makerrs"
         description="See how Infosys ran an AI-powered Singalong campaign where employees starred in personalized videos, driving global participation and lasting impact."
-        url="https://www.makerrs.com/work/ai-creatives/infosys-ai-powered-singalong-campaign"
+        url="https://www.makerrs.com/work/brand-campaign/ai-powered-singalong"
       />
       <WorkHeroSection
         logo={logo}

@@ -140,7 +140,7 @@ function Jewels() {
         <>
             <SEO
                 title="Case Study: Taneira - Jewels of India"
-                url="https://www.makerrs.com/work/video-content-production-agency-india/jewels-case-study"
+                url="https://www.makerrs.com/work/video-production/documentary-tanishq-jewels"
             />
             <WorkHeroSection
                 title={' Documentaries: Indian Handcrafted Jewellery and Craftspeople '}

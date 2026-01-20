@@ -121,7 +121,7 @@ function Treebo() {
       <SEO 
       title="Treebo Hotels Recruitment Video | Makerrs" 
       description="We produced a recruitment film for Treebo Hotels that revealed Hotel Superhero, a SaaS built to scale hospitality talent and redefine budget travel."
-      url="https://www.makerrs.com/work/videos/hotel-superhero-saas-hiring-video"
+      url="https://www.makerrs.com/work/video-production/hiring-video-hotel-superhero"
       />
       <WorkHeroSection
         logo={logo}

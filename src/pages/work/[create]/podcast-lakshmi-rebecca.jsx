@@ -163,7 +163,7 @@ function LRSTalkShow() {
             <SEO
                 title="Case Study: Lakshmi Rebecca Show"
                 description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-                url="https://www.makerrs.com/work/video-content-production-agency-india/lakshmi-rebecca-show"
+                url="https://www.makerrs.com/work/video-podcast/podcast-lakshmi-rebecca"
             />
             <WorkHeroSection
                 title={'The Lakshmi Rebecca Show: YouTube Series on Impact Businesses'}

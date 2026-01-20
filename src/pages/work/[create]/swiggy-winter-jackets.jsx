@@ -144,7 +144,7 @@ function MetroWholesale() {
       <SEO 
       title="Case Study: Swiggy | Creative Advertising & Digital Marketing Campaign | Makerrs"
       description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Swiggy using b2c marketing campaign strategy." 
-      url="https://www.makerrs.com/work/brand-campaign-agency-india/swiggy-winter-jacket-case-study"
+      url="https://www.makerrs.com/work/brand-campaign/swiggy-winter-jackets"
       />
       <WorkHeroSection
         title={' Campaign films: Winter Jackets'}

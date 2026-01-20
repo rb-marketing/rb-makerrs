@@ -167,7 +167,7 @@ function Wipro() {
       <SEO 
       title="Wipro Healthtech Case Study Videos for HIMSS | Makerrs" 
       description="We crafted healthtech and insurtech case study films for Wipro, revealing complex solutions with innovation and strengthening their presence at HIMSS."
-      url="https://www.makerrs.com/work/videos/wipro-healthtech-case-study-videos"
+      url="https://www.makerrs.com/work/video-production/healthcare-case-study-video-wipro"
       />
       <WorkHeroSection
         logo={logo}

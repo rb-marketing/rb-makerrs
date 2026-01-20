@@ -103,7 +103,7 @@ function InfosysBusinessAgility() {
     <>
       <SEO 
       title="Infosys Business Agility Video | Makerrs" 
-      url="https://www.makerrs.com/work/videos/infosys-business-agility-solution"
+      url="https://www.makerrs.com/work/video-production/stock-footage-video-infosys-business-agility"
       description="We produced a dynamic campaign video for Infosys, showcasing the power of business agility and inspiring teams to scale with precision"
 
       />
