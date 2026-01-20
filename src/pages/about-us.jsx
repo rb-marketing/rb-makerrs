@@ -5,7 +5,7 @@ import {
   VideoModal,
   ExploreMoreSection,
   Testimonials,
-  RedbangleWaySection
+  RedbangleWaySection,
 } from '@/components/shared'
 import { SEO } from '@/components/shared/SEO'
 import Script from 'next/script'
@@ -22,31 +22,45 @@ import React from 'react'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 const WhoWeAre = () => {
-
   const redbangleway = [
     {
       key: '0',
       heading: 'The New Global',
       content:
-        'Experience the power of a global, professional, creative agency that scales with your business. Our central creative teams and our creative collaborative spread across 100 countries come together on our technology platform to meet your brand’s growing needs.'
+        'Experience the power of a global, professional, creative agency that scales with your business. Our central creative teams and our creative collaborative spread across 100 countries come together on our technology platform to meet your brand’s growing needs.',
     },
     {
       key: '1',
       heading: 'Relentless Creativity',
       content:
-        'With nearly a decade in business, we understand what sticks in branding, marketing communications, corporate communications, employer branding, ESG and more. And we always bring fresh ideas to the table.'
+        'With nearly a decade in business, we understand what sticks in branding, marketing communications, corporate communications, employer branding, ESG and more. And we always bring fresh ideas to the table.',
     },
     {
       key: '2',
       heading: 'Borderless Execution',
       content:
-        'Be it 30 customer testimonial videos filmed across 5 continents or never-before event branding for your next big annual event - we’ve got the creative inspiration, the scalable systems and the on-demand creative experts you need.'
+        'Be it 30 customer testimonial videos filmed across 5 continents or never-before event branding for your next big annual event - we’ve got the creative inspiration, the scalable systems and the on-demand creative experts you need.',
     },
     {
       key: '3',
       heading: 'Creative Cloud Workflows',
-      content:
-        'Our patent-pending technology platform is built to support hundreds of projects in parallel. You can upload briefs, track project progress, review draft videos and more on the cloud with great efficiency. And oh, did we mention repurpose creative assets in just a couple of clicks? Yes.'
+      content: (
+        <>
+          Our patent-pending{' '}
+          <a
+            href="/creative-cloud-technology"
+            class="underline hover:text-rb-link-green"
+            target="_blank"
+          >
+            {' '}
+            technology platform{' '}
+          </a>{'  '}
+          is built to support hundreds of projects in parallel. You can upload
+          briefs, track project progress, review draft videos and more on the
+          cloud with great efficiency. And oh, did we mention repurpose creative
+          assets in just a couple of clicks? Yes.
+        </>
+      ),
     },
   ]
 
@@ -348,24 +362,26 @@ const WhoWeAre = () => {
       designation: 'FOUNDER',
       company: 'DARUIESTE ARIPI',
       image: {
-        srcSet:
-          `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+        srcSet: `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
     {
       key: 1,
-      quote:
+      quote: (
         <>
-          Makerrs was especially impressive with their creative strategy, design and copy. They took the colors, the quirky and iconic signages, and the energy of the local markets and transformed them into a fresh, modern expression for our brand. Our customers are drawn to the unique identity, and it&apos;s translated into a love for the food itself.
-        </>,
+          Makerrs was especially impressive with their creative strategy, design
+          and copy. They took the colors, the quirky and iconic signages, and
+          the energy of the local markets and transformed them into a fresh,
+          modern expression for our brand. Our customers are drawn to the unique
+          identity, and it&apos;s translated into a love for the food itself.
+        </>
+      ),
       name: 'KUNCHERIA MARATTUKALAM',
       designation: 'FOUNDER & DIRECTOR',
       company: 'Maratt Group',
       image: {
-        srcSet:
-
-          `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+        srcSet: `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -377,8 +393,7 @@ const WhoWeAre = () => {
       designation: 'VP INTERNAL COMMUNICATIONS',
       company: 'FORTUNE 100 ITES ENTERPRISE',
       image: {
-        srcSet:
-          `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
+        srcSet: `/img/testimonials/fortune-100.webp 533w, /img/testimonials/fortune-100.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -390,8 +405,7 @@ const WhoWeAre = () => {
       designation: 'VICE-PRESIDENT MARKETING',
       company: 'VYMO',
       image: {
-        srcSet:
-          `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
+        srcSet: `/img/testimonials/roshan.webp 533w, /img/testimonials/roshan.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -403,23 +417,27 @@ const WhoWeAre = () => {
       designation: 'Account Director',
       company: 'BRIGHT PARTNERSHIPS',
       image: {
-        srcSet:
-          `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
+        srcSet: `/img/testimonials/matt-walkington.webp 533w, /img/testimonials/matt-walkington.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
     {
       key: 5,
-      quote:
-        <>Makerrs brought a unique blend of clarity and creativity—translating complex healthcare concepts into a simple brand identity system that was &apos;full of heart&apos;. They also created a cohesive website experience within incredibly tight deadlines. Their efficiency and understanding of our needs were pivotal in successfully launching our brand.
-        </>,
+      quote: (
+        <>
+          Makerrs brought a unique blend of clarity and creativity—translating
+          complex healthcare concepts into a simple brand identity system that
+          was &apos;full of heart&apos;. They also created a cohesive website
+          experience within incredibly tight deadlines. Their efficiency and
+          understanding of our needs were pivotal in successfully launching our
+          brand.
+        </>
+      ),
       name: 'Rinku Agarwal Basu',
       designation: 'COO',
       company: 'Lillia Care',
       image: {
-        srcSet:
-
-          `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
+        srcSet: `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -431,8 +449,7 @@ const WhoWeAre = () => {
       designation: ' CO-FOUNDER',
       company: 'P.U. DINGDING',
       image: {
-        srcSet:
-          `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
+        srcSet: `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -444,21 +461,19 @@ const WhoWeAre = () => {
       designation: 'Founder',
       company: 'COLEARN',
       image: {
-        srcSet:
-          `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
+        srcSet: `/img/testimonials/marc.webp 533w, /img/testimonials/marc.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
     {
       key: 8,
       quote:
-        'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
+        'It’s never easy creating great videos for a fast-growing business like ours. We struggled till we came across Makerrs.',
       name: 'SUNIL SURESH',
       designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
       company: 'CAPILLARY TECHNOLOGIES',
       image: {
-        srcSet:
-          `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+        srcSet: `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -480,7 +495,7 @@ const WhoWeAre = () => {
         <div className="height-div aspect-video absolute w-full opacity-0 pointer-events-none z-30 bg-rb-red top-0" />
         <div className="container">
           <h1 className="hero-text md:text-[112px] md:leading-[1.01] font-everett font-medium md:tracking-[-2.24px] uppercase text-[56px] leading-[1.07] tracking-[-1.96px]">
-            The tech-enabled 
+            The tech-enabled
             <br />
             creative{' '}
             <div
@@ -508,15 +523,16 @@ const WhoWeAre = () => {
           </h1>
           <div className="heroMarquee flex md:flex-row flex-col items-start justify-between border-t border-t-rb-davy-grey/50 pt-6 md:pt-8 mt-6 md:mt-20 gap-4 md:gap-0">
             <div className="w-full md:w-1/2 text-[16px] leading-[1.25] tracking-[-0.64px] font-everett md:text-[22px] md:leading-[1.45] md:tracking-[-0.88px] font-medium">
-              For brands that cater to the borderless customer. 
+              For brands that cater to the borderless customer.
             </div>
             <div className="w-full md:w-1/2 text-[16px] leading-[1.5] md:text-[28px] md:leading-[1.28] tracking-[-0.64px] md:tracking-[-1.12px] font-semibold">
-                We are a tech-powered global creative agency and collaborative. We’ve crafted brand design systems, video content, podcast IPs and creative campaigns for over 60 borderless brands. 
+              We are a tech-powered global creative agency and collaborative.
+              We’ve crafted brand design systems, video content, podcast IPs and
+              creative campaigns for over 60 borderless brands.
             </div>
           </div>
         </div>
       </section>
-
 
       <section className="bg-white md:pt-30 md:pb-15 py-20">
         <div className="container">
@@ -530,7 +546,9 @@ const WhoWeAre = () => {
                   For Today’s Enterprises
                 </div>
                 <p className="text-16">
-                  We’re all about helping brands differentiate, connect, endure in a world that’s witnessing a dozen new brands and a hundred new product launches every day.
+                  We’re all about helping brands differentiate, connect, endure
+                  in a world that’s witnessing a dozen new brands and a hundred
+                  new product launches every day.
                 </p>
               </div>
               <div className="order-1 md:order-2">
@@ -547,7 +565,8 @@ const WhoWeAre = () => {
                   With Great Pride
                 </div>
                 <p className="text-16">
-                  We go beyond great creative quality and dependable processes. We believe in pride and ownership in everything we do.
+                  We go beyond great creative quality and dependable processes.
+                  We believe in pride and ownership in everything we do.
                 </p>
               </div>
               <div className="order-1 md:order-2">
@@ -571,7 +590,9 @@ const WhoWeAre = () => {
                   Go the Distance
                 </div>
                 <p className="text-16">
-                  We believe in building long-term relationships with our clients, collaborators and employees, and in constructive, open feedback sharing.
+                  We believe in building long-term relationships with our
+                  clients, collaborators and employees, and in constructive,
+                  open feedback sharing.
                 </p>
               </div>
             </div>
@@ -588,7 +609,9 @@ const WhoWeAre = () => {
                   Borderless Collaboration
                 </div>
                 <p className="text-16">
-                  Our business is designed to nurture creative collaboration with our clients and with independent creators and filmmakers the world over - no matter where they are.
+                  Our business is designed to nurture creative collaboration
+                  with our clients and with independent creators and filmmakers
+                  the world over - no matter where they are.
                 </p>
               </div>
             </div>
@@ -597,7 +620,7 @@ const WhoWeAre = () => {
       </section>
 
       <RedbangleWaySection
-        heading='The Makerrs Way'
+        heading="The Makerrs Way"
         sectionBG="md:py-30 py-10"
         title={
           <div className="md:max-w-[720px]">
@@ -617,8 +640,11 @@ const WhoWeAre = () => {
           <h1 className="text-title md:text-title-md font-everett mb-6 md:mb-8 md:!tracking-[-2.08px] !tracking-[-.52px] ">
             Meet the Makerrs
           </h1>
-          <p className="text-xl md:text-2xl text-rb-black/80 opacity-90 md:leading-[33px] mb-6 md:mb-12">
-            We are a bunch of good people who enjoy working with each other and love creative work. We are curious. We like challenges. We hate bullshit. And we take pride in creating solutions that actually matter.
+          <p className="text-xl md:text-2xl text-black opacity-90 md:leading-[33px] mb-6 md:mb-12">
+            We are a bunch of good people who enjoy working with each other and
+            love creative work. We are curious. We like challenges. We hate
+            bullshit. And we take pride in creating solutions that actually
+            matter.
           </p>
           <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-4">
             {teamData.map((d) => (
@@ -810,7 +836,7 @@ const WhoWeAre = () => {
         <ExploreMoreSection
           className="pb-15 md:pb-30"
           cards={explorecards}
-          title='Explore our services'
+          title="Explore our services"
         />
       </div>
 
@@ -825,9 +851,6 @@ const WhoWeAre = () => {
         testimonialData={testimonials}
         type="semi"
       />
-
-    
-
 
       <VideoModal
         open={herovideoOpen}

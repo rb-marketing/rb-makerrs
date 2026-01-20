@@ -19,6 +19,7 @@ import styles from '@/styles/home.module.scss'
 import { Button } from '@/components/ui'
 import { LineArrow } from '@/components/icons'
 import { explainerVideoProductionSchema } from '@/components/schema/explainer-video-production-services'
+import { useRouter } from 'next/router'
 
 const INIT_MODAL = {
   open: false,
@@ -34,6 +35,7 @@ const BrandIdentityDesign = () => {
   const insetRef = useRef()
   const [herovideoOpen, setHerovideoOpen] = useState(false)
   const [isSticky, setSticky] = useState(false)
+  const router = useRouter()
 
   gsap.registerPlugin(ScrollTrigger)
 

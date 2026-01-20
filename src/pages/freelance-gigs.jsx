@@ -165,7 +165,7 @@ const Agreement = [
   },
   {
     key: 6,
-    title: 'What can I do on the Makerrs Platform?',
+    title: 'What can I do on your Creative Cloud Platform?',
     content:
       "Our proprietary platform serves as your central hub for seamless project work. You can easily upload, download, and review all project files, including briefs, decks, docs, films and footage. Our platform ensures smooth creative workflows between you, our clients, and us by keeping everything organized in one convenient place.",
   },
@@ -591,7 +591,7 @@ const Collab = () => {
         className="bg-white py-12 md:py-30"
         heading="CREATE FOR AMBITIOUS BRANDS"
       />
-      <section className="py-14 md:pb-5 md:pt-0 overflow-hidden">
+      <section className="pt-8 pb-14 md:pb-5 md:pt-0 overflow-hidden">
         <div className="container">
           <div className="text-title md:text-title-md font-everett max-w-[343px] md:max-w-full mb-8 md:mb-[70px]">
           Join our Creative Collaborative

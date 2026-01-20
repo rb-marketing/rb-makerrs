@@ -1,10 +1,22 @@
 import { ContactForm } from '../ContactForm'
 
 import { CollabContactForm } from '../CollabContactForm'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 export const ContactSection = ({ type = '' }) => {
+  const router = useRouter()
+  useEffect(() => {
+    if (router.query.type === 'send-us-a-brief') {
+      const el = document.getElementById('id')
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+
+  }, [router.query])
   return (
-    <section className="bg-rb-black py-12 md:py-23 cursor-auto">
+    <section className="bg-rb-black py-12 md:py-23 cursor-auto" id='id'>
       <div className="container">
         <div className="rb-row md:items-center md:justify-between">
           {type !== 'collab' && (
