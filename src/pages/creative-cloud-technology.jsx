@@ -450,10 +450,10 @@ export const TechnologyPlatform = () => {
                         </div>
                       </td>
                       
-                      <td className="md:!w-[313px] px-4 py-3 font-semibold md:text-[18px] leading-[24px] tracking-[-0.02em] text-rb-dune/90 font-opensans">
+                      <td className="md:!w-[313px] px-4 py-3 font-normal md:text-[18px] leading-[24px] tracking-[-0.02em] text-rb-dune/90 font-opensans">
                         {row.redBangle}
                       </td>
-                      <td className="md:!w-[313px] px-4 py-3 font-normal md:text-[18px] leading-[24px] text-rb-dune tracking-[-0.02em] font-opensans">
+                      <td className="md:!w-[313px] px-4 py-3 font-semibold md:text-[18px] leading-[24px] text-rb-dune tracking-[-0.02em] font-opensans">
                         {row.others}
                       </td>
                     </tr>
@@ -467,7 +467,7 @@ export const TechnologyPlatform = () => {
 
       <TrustedBrandsSection
         className="bg-white pb-15 md:pb-15 md:pt-15"
-        heading="Our Clients"
+        heading="Some Of Our Clients"
       />
 
       <VideoModal

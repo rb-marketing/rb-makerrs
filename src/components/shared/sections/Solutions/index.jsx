@@ -15,7 +15,7 @@ const slides = [
       'Whether you are looking for a new brand identity system,  sticky event branding or well-designed marketing collateral – our design solutions help your business stand out and start conversations.',
     video: {
       src: '/img/design_video.mp4',
-      poster: '/img/services/create-poster.webp',
+      poster: '/img/services/design/design_video.png',
       width: '1440',
       height: '810',
     },
@@ -31,7 +31,7 @@ const slides = [
       'We take a strategic approach to planning, crafting and scaling video content for brands – be it for a product launch or for YouTube channel growth. We also support on-demand end-to-end video production requirements around customer testimonial videos, hiring and culture videos, and more.',
     video: {
       src: '/img/case_study_banner_video.mp4',
-      // poster: '/img/services/think-poster.webp',
+      poster: '/img/services/videos/hero.png',
       width: '1440',
       height: '810',
     },
@@ -47,14 +47,13 @@ const slides = [
       'Looking to lead industry conversations, build community and drive ROI? Go from content research, concept and positioning to podcast branding, production, distribution and amplification with one global podcast partner.',
     video: {
       src: '/img/makers_podcast.mp4',
-      // poster: '/img/services/create-poster.webp',
+      poster: '/img/services/podcast/hero-poster.png',
       width: '1440',
       height: '810',
     },
      color: '#ffffff',
     buttonName: 'Explore Podcast Solutions',
     textColor: '#111010',
-    // href: process.env.NEXT_PUBLIC_B2C,
     href: '/podcast-production-services'
   },
 
@@ -65,8 +64,7 @@ const slides = [
       'From brand awareness campaigns and product launch campaigns to employer branding campaigns and ESG campaigns–we take our cues from people and culture, and turn real insights into relatable campaigns that align perfectly with your business goals.',
     video: {
       src: '/img/makers_campaign.mp4',
-
-      poster: '/img/services/play-poster.webp',
+      poster: '/img/services/campaign/hero.png',
       width: '1440',
       height: '810',
     },
@@ -82,7 +80,7 @@ const slides = [
       'Hire professional video crews across 100 countries. Be it a one-camera shoot, a multi-camera multi-location production or a studio shoot–we curate the right video crews for you, book locations, manage the production, and quality-check the footage before it hits your inbox.',
     video: {
       src: '/img/crew-preview.mp4',
-      poster: '/img/services/play-poster.webp',
+      poster: '/img/services/crew/hero.webp',
       width: '1440',
       height: '810',
     },

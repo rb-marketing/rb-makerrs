@@ -796,13 +796,13 @@ export const serviceVideos = {
   get_campaign: {
     video: {
       src: '/img/services/campaign/hero.mp4',
-      poster: '/img/services/campaign/hero.webp',
+      poster: '/img/services/campaign/hero.png',
       width: '1440',
       height: '810',
     },
     fullVideo: {
       src: '/img/services/campaign/hero.mp4',
-      poster: '/img/services/campaign/hero.webp',
+      poster: '/img/services/campaign/hero.png',
       width: '1920',
       height: '1080',
     },

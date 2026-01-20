@@ -176,12 +176,12 @@ const CrewsServices = ({ setisPopupOpen }) => {
         <>
           Yes, often clients require video post-production services once a shoot
           is done. Just{' '}
-          <a
-            href='/contact'
+          <Link
+            href="/contact"
             className="underline cursor-pointer hover:text-rb-link-green"
           >
             send us a brief
-          </a>{' '}
+          </Link>{' '}
           and we’ll be happy to undertake custom video editing for you. We will
           also be able to support any additional requirements you may have, such
           as voice over, music from stock, addition of stock or archival
@@ -198,12 +198,12 @@ const CrewsServices = ({ setisPopupOpen }) => {
           We’ll be happy to organise a live-stream feed of the shoot for you.
           You won’t miss a thing.
           <br />
-          <a
-             href='/contact'
+          <Link
+            href="/contact"
             className="underline cursor-pointer hover:text-rb-link-green"
           >
             Book a video crew
-          </a>{' '}
+          </Link>{' '}
           with Makerrs today!
         </>
       ),
@@ -511,7 +511,8 @@ const CrewsServices = ({ setisPopupOpen }) => {
               setTimeout(() => {
                 router.push(
                   {
-                    pathname: '/contact',
+                    pathname: router.pathname,
+                    query: { type: 'send-us-a-brief' },
                   },
                   undefined,
                   { shallow: true }
