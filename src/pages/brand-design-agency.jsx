@@ -412,15 +412,17 @@ const Design = ({ setisPopupOpen }) => {
       </div>
       <div
         ref={stickyButtonRef}
-        className={`hidden fixed top-20 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${isSticky ? 'lg:block' : ''
-          } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+        className={`hidden fixed top-20 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+          isSticky ? 'lg:block' : ''
+        } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
       >
         <Button
           onClick={() => {
             setTimeout(() => {
               router.push(
                 {
-                  pathname: '/contact',
+                  pathname: router.pathname,
+                  query: { type: 'send-us-a-brief' },
                 },
                 undefined,
                 { shallow: true }
@@ -465,7 +467,7 @@ const Design = ({ setisPopupOpen }) => {
         heading="Explore Our Design Process"
         title="How we design for brand growth"
       />
-      <div className='pt-8 md:pt-0'>
+      <div className="pt-8 md:pt-0">
         <FeaturedWorkSection
           posts={_posts}
           href="/work/design"
@@ -473,7 +475,10 @@ const Design = ({ setisPopupOpen }) => {
         />
       </div>
 
-      <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" heading='Our Clients' />
+      <TrustedBrandsSection
+        className="py-12 md:pt-24 md:pb-12"
+        heading="Our Clients"
+      />
       <Testimonials
         title={'WHAT CLIENTS SAY'}
         className="py-7.5 md:py-15"

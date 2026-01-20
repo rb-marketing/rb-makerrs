@@ -390,7 +390,8 @@ const Design = ({ setisPopupOpen }) => {
               setTimeout(() => {
                 router.push(
                   {
-                    pathname: '/contact',
+                    pathname: router.pathname,
+                    query: { type: 'send-us-a-brief' },
                   },
                   undefined,
                   { shallow: true }
