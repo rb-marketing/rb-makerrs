@@ -1474,8 +1474,8 @@ export const workPosts = [
     alt: 'infosys-global-leaders',
     tabs: ['Featured'],
     tags: ['Technology', 'Campaign', 'Employer Branding Video', 'Global Video Production'],
-    case_study_title: 'infosys-global-leaders-employer-branding',
-    href: '/campaigns/infosys-global-leaders-employer-branding',
+    case_study_title: 'infosys-global-employer-brand',
+    href: '/brand-campaign/infosys-global-employer-brand',
     region: []
   },
   {
@@ -1558,8 +1558,8 @@ export const workPosts = [
     alt: 'Infosys',
     tags: ['Technology', 'Non-profit', 'CSR Video', 'Corporate Film'],
     tabs: ['Featured'],
-    case_study_title: 'CSR-video-infosys-street-child',
-    href: '/video-production/CSR-video-infosys-street-child',
+    case_study_title: 'csr-video-infosys-street-child',
+    href: '/video-production/csr-video-infosys-street-child',
         region: []
 
   },
@@ -1992,8 +1992,8 @@ export const workPosts = [
     alt: 'Infosys',
     tags: ['Technology', 'Non-profit', 'CSR Video', 'Corporate Film'],
     tabs: ['videos'],
-    case_study_title: 'CSR-video-infosys-street-child',
-    href: '/video-production/CSR-video-infosys-street-child',
+    case_study_title: 'csr-video-infosys-street-child',
+    href: '/video-production/csr-video-infosys-street-child',
         region: []
 
   },
