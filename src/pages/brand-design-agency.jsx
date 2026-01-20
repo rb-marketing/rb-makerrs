@@ -473,7 +473,7 @@ const Design = ({ setisPopupOpen }) => {
         />
       </div>
 
-      <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
+      <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" heading='Our Clients' />
       <Testimonials
         title={'WHAT CLIENTS SAY'}
         className="py-7.5 md:py-15"
