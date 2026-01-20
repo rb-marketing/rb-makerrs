@@ -107,7 +107,7 @@ const testimonialsDefault = [
 
 function LRSTalkShow() {
     const router = useRouter()
-    const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`
+    const fullUrl = `https://www.makerrs.com${router.asPath}`
     const { logo, tags, commercials, desktopVideo, mobileVideo, image, specifyWidth } = pageData
 
     const socials = [
@@ -163,7 +163,7 @@ function LRSTalkShow() {
             <SEO
                 title="Case Study: Lakshmi Rebecca Show"
                 description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-                url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/lakshmi-rebecca-show"
+                url="https://www.makerrs.com/work/video-content-production-agency-india/lakshmi-rebecca-show"
             />
             <WorkHeroSection
                 title={'The Lakshmi Rebecca Show: YouTube Series on Impact Businesses'}

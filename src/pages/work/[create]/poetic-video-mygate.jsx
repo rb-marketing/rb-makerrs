@@ -103,7 +103,7 @@ export const similarPostsData = [
 
 function MyGate() {
     const router = useRouter();
-    const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+    const fullUrl = `https://www.makerrs.com${router.asPath}`;
   const { logo, tags, commercials, press, desktopVideo, mobileVideo } = pageData
   const socials = [
     {
@@ -126,7 +126,7 @@ function MyGate() {
       <SEO 
       title="Case Study - Heroes at MyGate | Content Strategy, Creative Ad Campaign, Digital Marketing Campaign | Makerrs"
       description="Explore how Makerrs - Holistic Marketing Agency, crafted an impactful marketing campaign for MyGate with strategic b2c marketing insights. " 
-      url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/mygate-case-study"
+      url="https://www.makerrs.com/work/video-content-production-agency-india/mygate-case-study"
       />
       <WorkHeroSection
         title={'An ode to the Security Personnel who Guard our Homes'}

@@ -120,7 +120,7 @@ function Lilliacare() {
       <SEO
         title="People-First Brand Films for TI | Makerrs"
         description="A deep dive into how we crafted people-driven stories for Texas Instruments India, blending engineering culture, employee insights, and global brand identity."
-        url="https://www.b2b.redbangle.com/work/videos/people-first-brand-films-for-ti"
+        url="https://www.makerrs.com/work/videos/people-first-brand-films-for-ti"
       />
       <WorkHeroSection
         logo={logo}

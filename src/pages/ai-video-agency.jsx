@@ -1370,7 +1370,7 @@ const AIvideoAgency = () => {
       <SEO
         title="GenAI Videos"
         description="GenAI Videos"
-        url="https://www.staging.makerrs.com/ai-video-agency"
+        url="https://www.makerrs.com/ai-video-agency"
         keywords="ai video creative agency, ai video creative services, gen ai video agency, ai video production services, best ai video agency, ai video production company for businesses"
       />
       <section

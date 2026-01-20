@@ -134,7 +134,7 @@ export const CollabInquiryForm = () => {
   const sourceURL =
     typeof window !== 'undefined'
       ? window.location.href
-      : 'https://redbangle.com/'
+      : 'https://makerrs.com/'
 
   const routerSource = router.query['utm_source']
   const routerCampaign = router.query['utm_campaign']
@@ -327,25 +327,7 @@ export const CollabInquiryForm = () => {
             name="actionType"
             value="TGVhZHM="
           />
-          {/* <input
-            type="text"
-            style={{ display: 'none' }}
-            name="returnURL"
-            // value="https&#x3a;&#x2f;&#x2f;www.redbangle.com&#x2f;success"
-            defaultValue={
-              typeof window !== 'undefined' &&
-                window.location.hostname.includes('staging')
-                ? 'https://www.staging.b2b.redbangle.com/success'
-                : 'https://www.redbangle.com/success'
-            }
-          /> */}
-
-          {/* <input type="hidden" name="zf_referrer_name" value="" /> */}
-          {/* To Track referrals , place the referrer name within the " " in the above hidden input field */}
-          {/* <input type="hidden" name="zf_redirect_url" value="" /> */}
-          {/* To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field */}
-          {/* <input type="hidden" name="zc_gad" value="" /> */}
-          {/* If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM  */}
+        
 
           <input
             name="First Name"

@@ -45,7 +45,7 @@ const pageData = {
 
 function XiaomiBreadTrimmer() {
   const router = useRouter();
-  const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+  const fullUrl = `https://www.makerrs.com${router.asPath}`;
   const { logo, tags, commercials, desktopVideo, mobileVideo, image } = pageData
   const socials = [
     {
@@ -68,7 +68,7 @@ function XiaomiBreadTrimmer() {
       <SEO
         title="Case Study: Xiaomi Beard Trimmer 2C"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/xiaomi-beard-trimmer"
+        url="https://www.makerrs.com/work/brand-campaign-agency-india/xiaomi-beard-trimmer"
       />
       <WorkHeroSection
         title={'A Trimmer Launch Campaign that’s as Sharp as the Product'}

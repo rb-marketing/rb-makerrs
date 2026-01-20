@@ -121,7 +121,7 @@ const commercials= {
 
 function MetroWholesale() {
       const router = useRouter();
-    const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+    const fullUrl = `https://www.makerrs.com${router.asPath}`;
   const { logo, tags, desktopVideo, mobileVideo, image, alt } = pageData
   const socials = [
    {
@@ -144,7 +144,7 @@ function MetroWholesale() {
       <SEO 
       title="Case Study: Swiggy | Creative Advertising & Digital Marketing Campaign | Makerrs"
       description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Swiggy using b2c marketing campaign strategy." 
-      url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/swiggy-winter-jacket-case-study"
+      url="https://www.makerrs.com/work/brand-campaign-agency-india/swiggy-winter-jacket-case-study"
       />
       <WorkHeroSection
         title={' Campaign films: Winter Jackets'}

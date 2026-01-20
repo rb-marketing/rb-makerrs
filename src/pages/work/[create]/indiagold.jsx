@@ -42,7 +42,7 @@ const pageData = {
 
 function IndiaGold() {
   const router = useRouter();
-  const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+  const fullUrl = `https://www.makerrs.com${router.asPath}`;
   const { logo, tags, commercials, desktopVideo, mobileVideo, image } = pageData
   const socials = [
     {
@@ -65,7 +65,7 @@ function IndiaGold() {
       <SEO
         title="Case Study: IndiaGold"
         description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-        url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/indiagold"
+        url="https://www.makerrs.com/work/brand-campaign-agency-india/indiagold"
       />
       <WorkHeroSection
         title={'Campaign film for Door Step Gold Loans'}

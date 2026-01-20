@@ -2457,7 +2457,7 @@ export const  HowCreateFAQ  = [
     (
       <>
       It varies widely based on length, complexity, style, and production quality. At 
-      <a href="https://www.redbangle.com/" className="text-rb-red" target='_blank'> Makerrs</a>
+      <a href="https://www.makerrs.com/" className="text-rb-black underline hover:text-rb-link-green" target='_blank'> Makerrs</a>
       , we offer transparent pricing based on your brief with multiple creative options and timelines upfront. Whether it’s animation, live action, or a full campaign series, we tailor costs to outcomes.
       </>
     )
@@ -2624,7 +2624,7 @@ export const  CustomerCaseStudyFAQ  = [
     content:(
       <>
       Not necessarily; good audio, lighting, and authentic storytelling matter more. For polished results, reach out to experts for help at
-      <a href="https://www.b2b.redbangle.com/" className="text-rb-red" target='_blank'> Makerrs</a>
+      <a href="https://www.makerrs.com/" className="text-rb-black underline hover:text-rb-link-green" target='_blank'> Makerrs</a>
       </>
     )
      },

@@ -155,7 +155,7 @@ function Taneira() {
       <SEO 
       title="Case Study | Taneira" 
       description="Top agency for branding, content creation, animated video production, employer branding campaigns & interactive brand experiences."
-      url="https://www.b2b.redbangle.com/work/videos/taneira"
+      url="https://www.makerrs.com/work/videos/taneira"
       />
       <WorkHeroSection
         logo={logo}

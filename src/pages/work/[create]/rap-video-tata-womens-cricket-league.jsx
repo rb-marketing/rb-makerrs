@@ -43,7 +43,7 @@ const pageData = {
 
 function Tatawomens() {
         const router = useRouter();
-    const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+    const fullUrl = `https://www.makerrs.com${router.asPath}`;
     const { logo, tags, commercials, desktopVideo, mobileVideo, image, specifyWidth } = pageData
     const socials = [
          {
@@ -66,7 +66,7 @@ function Tatawomens() {
             <SEO
                 title="Case Study: Tata Women's Cricket Film"
                 description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-                url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/tata-womens-cricket-league"
+                url="https://www.makerrs.com/work/video-content-production-agency-india/tata-womens-cricket-league"
             />
             <WorkHeroSection
                 title={"High-energy rap music video on Tata Women's Cricket Premiere League"}

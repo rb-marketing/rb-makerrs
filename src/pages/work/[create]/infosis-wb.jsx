@@ -312,7 +312,7 @@ function Colearn() {
       <SEO 
       title="Case Study | Infosys" 
       description="Top agency for branding, content creation, animated video production, employer branding campaigns & interactive brand experiences."
-      url="https://www.b2b.redbangle.com/work/b2b-brand-campaign-agency/infosis-eb"
+      url="https://www.makerrs.com/work/b2b-brand-campaign-agency/infosis-eb"
       />
       <WorkHeroSection
         logo={logo}

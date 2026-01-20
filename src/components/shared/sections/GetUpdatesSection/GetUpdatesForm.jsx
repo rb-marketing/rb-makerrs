@@ -118,7 +118,7 @@ export const GetUpdatesForm = ({
   const sourceURL =
     typeof window !== 'undefined'
       ? window.location.href
-      : 'https://redbangle.com/'
+      : 'https://makerrs.com/'
   const routerSource = router.query['utm_source']
   const routerCampaign = router.query['utm_campaign']
   const routerMedium = router.query['utm_medium']
@@ -291,8 +291,8 @@ export const GetUpdatesForm = ({
           defaultValue={
             typeof window !== 'undefined' &&
             window.location.hostname.includes('staging')
-              ? 'https://www.staging.b2b.redbangle.com/success'
-              : 'https://www.b2b.redbangle.com/success'
+              ? 'https://www.staging.makerrs.com/success'
+              : 'https://www.makerrs.com/success'
           }
         />
 

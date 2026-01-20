@@ -44,7 +44,7 @@ const pageData = {
 
 function XiaomiA45G() {
     const router = useRouter();
-    const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+    const fullUrl = `https://www.makerrs.com${router.asPath}`;
     const { logo, tags, commercials, desktopVideo, mobileVideo, image } = pageData
     const socials = [
         {
@@ -67,7 +67,7 @@ function XiaomiA45G() {
             <SEO
                 title="Case Study: Xiaomi A4 5G"
                 description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-                url="https://www.b2c.redbangle.com/work/brand-campaign-agency-india/xiaomi-a4-5g"
+                url="https://www.makerrs.com/work/brand-campaign-agency-india/xiaomi-a4-5g"
             />
             <WorkHeroSection
                 title={'Launch Campaign for Redmi A4 5G'}

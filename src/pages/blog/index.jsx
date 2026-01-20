@@ -125,7 +125,7 @@ const Articles = ({ featuredPost, posts: { edges, pageInfo } }) => {
         title="The Blog for Borderless Brands | Makerrs"
         description="Explore insights and expert views on branding, design, video content, branded podcast production, marketing campaigns, employer branding campaigns and more."
         keywords="Creative marketing, Knowledge sharing, Innovative technology, Content Strategies, B2B Growth, Content Blog"
-        url={category !== undefined ? `https://www.staging.makerrs.com/blog?category=${category}`:`https://www.staging.makerrs.com/blog`}
+        url={category !== undefined ? `https://www.makerrs.com/blog?category=${category}`:`https://www.makerrs.com/blog`}
       />
       <section className="py-23 md:py-23">
         <div className="container">

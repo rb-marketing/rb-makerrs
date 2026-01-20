@@ -108,7 +108,7 @@ function Colearn() {
       <SEO 
       title="Mumbai Indians 3D Billboard Logo Launch | Makerrs" 
       description="We unveiled Mumbai Indians’ logo with a 3D billboard at Gateway of India, amplifying fan emotion and visibility through immersive cinematic design."
-      url="https://www.b2b.redbangle.com/work/videos/mumbai-indians-3d-billboard-animation"
+      url="https://www.makerrs.com/work/videos/mumbai-indians-3d-billboard-animation"
       />
       <WorkHeroSection
         logo={logo}

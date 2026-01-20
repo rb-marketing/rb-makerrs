@@ -146,7 +146,7 @@ function InfosysWSJ() {
     <>
       <SEO 
       title="Case Study | Infosys x WSJ" 
-      url="https://www.b2b.redbangle.com/work/videos/infosys-wsj"
+      url="https://www.makerrs.com/work/videos/infosys-wsj"
       />
       <WorkHeroSection
         logo={logo}

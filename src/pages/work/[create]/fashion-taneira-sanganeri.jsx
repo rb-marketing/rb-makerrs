@@ -42,7 +42,7 @@ const pageData = {
 
 function TaneiraSanganeri() {
   const router = useRouter()
-  const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`
+  const fullUrl = `https://www.makerrs.com${router.asPath}`
   const { logo, tags, commercials, image } = pageData
   const socials = [
     {

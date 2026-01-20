@@ -119,7 +119,7 @@ function WiproAustralia() {
       <SEO 
       title="Wipro Australia Corporate Video | Makerrs" 
       description="We created Wipro’s 20-year journey in Australia through a cinematic corporate video, amplifying its vision, growth, and industry impact."
-      url="https://www.b2b.redbangle.com/work/videos/wipro-australia-corporate-film"
+      url="https://www.makerrs.com/work/videos/wipro-australia-corporate-film"
       />
       <WorkHeroSection
         logo={logo}

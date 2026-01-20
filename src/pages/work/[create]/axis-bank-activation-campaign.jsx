@@ -81,7 +81,7 @@ function AxisBankActivation() {
     const socials = [
         {
             key: 0,
-            href: 'https://twitter.com/intent/post?url=redbangle.com%2Fwork%2Fcreate%2Fjewels-case-study',
+            href: 'https://twitter.com/intent/post?url=makerrs.com%2Fwork%2Fcreate%2Fjewels-case-study',
             color: '#000',
             icon: <Twitter />,
         },
@@ -89,7 +89,7 @@ function AxisBankActivation() {
         {
             type: 'linkedin',
             key: 1,
-            href: 'https://www.redbangle.com/work/create/jewels-case-study',
+            href: 'https://www.makerrs.com/work/create/jewels-case-study',
             color: '#006699',
             icon: <Linkedin />,
         },
@@ -99,7 +99,7 @@ function AxisBankActivation() {
             <SEO
                 title="Axis Bank Activation Campaign | Makerrs"
                 description="Inside our LTSY Campaign for Axis Bank: A country-wide activation that celebrates frontline excellence and everyday customer obsession."
-                url="https://www.b2b.redbangle.com/work/design/axis-bank-activation-campaign"
+                url="https://www.makerrs.com/work/design/axis-bank-activation-campaign"
             />
             <WorkHeroSection
                 title={'Nationwide Activation Celebrating Customer Obsession'}

@@ -58,7 +58,7 @@ const testimonialsDefault = [
 
 function XiaomiBuds() {
     const router = useRouter();
-    const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+    const fullUrl = `https://www.makerrs.com${router.asPath}`;
     const { logo, tags, commercials, desktopVideo, mobileVideo, image } = pageData
     const socials = [
          {
@@ -81,7 +81,7 @@ function XiaomiBuds() {
             <SEO
                 title="Case Study: Xioami Buds 6"
                 description="Explore how Makerrs, a holistic marketing communication & creative advertising agency, crafted an impactful creative advertising campaign for Metro Wholesale using b2c marketing campaign strategy."
-                url="https://www.staging.b2c.redbangle.com/work/brand-campaign-agency-india/xiaomi-buds"
+                url="https://www.makerrs.com/work/brand-campaign-agency-india/xiaomi-buds"
             />
             <WorkHeroSection
                 title={"Action-packed launch film for Redmi Buds 6"}

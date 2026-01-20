@@ -1446,7 +1446,7 @@ const RecruitmentVideoProduction = () => {
       <SEO
         title="Recruitment Video Production"
         description="Recruitment Video Production"
-        url={`https://www.staging.b2b.redbangle.com${router.asPath}`}
+        url={`https://www.makerrs.com${router.asPath}`}
         keywords="hiring videos, employer branding videos, recruitment video agency, company culture video"
       />
       <section

@@ -122,7 +122,7 @@ const pageData = {
 
 function Zivame() {
       const router = useRouter();
-    const fullUrl = `https://www.b2c.redbangle.com${router.asPath}`;
+    const fullUrl = `https://www.makerrs.com${router.asPath}`;
   const { logo, tags, commercials, image } = pageData
   const socials = [
      {
@@ -144,7 +144,7 @@ function Zivame() {
     <>
       <SEO 
       title="Case Study: zivame | Makerrs" 
-      url="https://www.b2c.redbangle.com/work/video-content-production-agency-india/zivame"
+      url="https://www.makerrs.com/work/video-content-production-agency-india/zivame"
       />
       <WorkHeroSection
       title={'Campaign on Inclusive Lingerie'}
