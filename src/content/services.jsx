@@ -754,13 +754,13 @@ export const serviceVideos = {
   get_design: {
     video: {
       src: '/img/services/service_get_design.mp4',
-      poster: '/img/services/think-poster.webp',
+      poster: '/img/services/design/design_video.png',
       width: '1440',
       height: '810',
     },
     fullVideo: {
       src: '/img/services/service_get_design.mp4',
-      poster: '/img/services/think-full-poster.webp',
+      poster: '/img/services/design/design_video.png',
       width: '1920',
       height: '1080',
     },
@@ -782,13 +782,13 @@ export const serviceVideos = {
    get_podcast: {
     video: {
       src: '/img/services/service_get_podcast.mp4',
-      poster: '/img/services/think-poster.webp',
+      poster: '/img/services/podcast/hero-poster.png',
       width: '1440',
       height: '810',
     },
     fullVideo: {
       src: '/img/services/service_get_podcast.mp4',
-      poster: '/img/services/think-full-poster.webp',
+      poster: '/img/services/podcast/hero-poster.png',
       width: '1920',
       height: '1080',
     },

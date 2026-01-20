@@ -102,8 +102,17 @@ const Campaign = ({ setisPopupOpen }) => {
   ]
 
   const cards = [
-    {
+     {
       id: 0,
+      serviceTitle: 'GET DESIGN',
+      serviceDescription:
+        'Get brand identity systems, event branding, editorial design, illustrations, and motion graphics. Build brand differentiation and human connect with Makerrs. Explore our branding and design services.',
+      bgColor: '#ffffff',
+      textColor: '#13c33f',
+      href: '/brand-design-agency',
+    },
+    {
+      id: 1,
       serviceTitle: 'GET VIDEO',
       serviceDescription:
         'Get marketing explainer videos, video case studies, corporate videos, hiring and culture videos and more. Makerrs offers end to end video production services across locations and formats. Get scalable video production services for your B2B brand.',
@@ -112,22 +121,13 @@ const Campaign = ({ setisPopupOpen }) => {
       href: '/video-production',
     },
     {
-      id: 1,
+      id: 2,
       serviceTitle: 'GET PODCAST',
       serviceDescription:
         'Bowl your audience over with our AI-first campaigns, content, experiences and more. Take your brand into the future with our end-to-end AI solutions: concept, design, curation, development, AI training and more.',
       bgColor: '#ffffff',
       textColor: '#13c33f',
       href: '/podcast-production-services',
-    },
-    {
-      id: 2,
-      serviceTitle: 'GET CAMPAIGN',
-      serviceDescription:
-        'We take our cues from people and culture, turning creative insights into campaigns that cut through the noise. From bold ideas to flawless execution, we create work that gets your brand noticed, talked about, and loved.',
-      bgColor: '#ffffff',
-      textColor: '#13c33f',
-      href: '/advertising-agency',
     },
     {
       id: 3,
@@ -418,7 +418,7 @@ const Campaign = ({ setisPopupOpen }) => {
         />
       </div>
 
-      <TrustedBrandsSection className="py-12 md:pt-15 md:pb-12" />
+      <TrustedBrandsSection className="py-12 md:pt-15 md:pb-12" heading='Our Clients' />
 
       <Testimonials
         title={'WHAT CLIENTS SAY'}
