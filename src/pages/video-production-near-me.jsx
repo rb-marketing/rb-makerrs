@@ -177,7 +177,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
           Yes, often clients require video post-production services once a shoot
           is done. Just{' '}
           <a
-            href='/contact'
+            href="/contact"
             className="underline cursor-pointer hover:text-rb-link-green"
           >
             send us a brief
@@ -199,7 +199,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
           You won’t miss a thing.
           <br />
           <a
-             href='/contact'
+            href="/contact"
             className="underline cursor-pointer hover:text-rb-link-green"
           >
             Book a video crew
@@ -511,7 +511,8 @@ const CrewsServices = ({ setisPopupOpen }) => {
               setTimeout(() => {
                 router.push(
                   {
-                    pathname: '/contact',
+                    pathname: router.pathname,
+                    query: { type: 'send-us-a-brief' },
                   },
                   undefined,
                   { shallow: true }
