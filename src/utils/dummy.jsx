@@ -1571,8 +1571,8 @@ export const workPosts = [
     alt: 'slb',
     tabs: ['Featured'],
     tags: ['Engineering', 'Campaign', 'Explainer Video', 'Demo Video', 'Interactive Video'],
-    case_study_title: 'interactive-explainer-SLB',
-    href: '/brand-campaign/interactive-explainer-SLB',
+    case_study_title: 'interactive-explainer-slb',
+    href: '/brand-campaign/interactive-explainer-slb',
         region: []
 
 
@@ -1818,8 +1818,8 @@ export const workPosts = [
     image: '/img/works/infy-ai-first-work.webp',
     tags: ['Technology', 'Digital Campaign', 'Employer Branding video', 'Social Media Content'],
     tabs: ['design'],
-    case_study_title: 'animated-case-study-videos-Infosys-employees',
-    href: '/brand-campaign/animated-case-study-videos-Infosys-employees',
+    case_study_title: 'animated-case-study-videos-infosys-employees',
+    href: '/brand-campaign/animated-case-study-videos-infosys-employees',
         region: []
 
   },
@@ -1832,8 +1832,8 @@ export const workPosts = [
     alt: 'Launching a Sports Brand logo with a 3D Billboard',
     tabs: ['design'],
     tags: ['Sports', '3D Billboard Animation'],
-    case_study_title: '3D-logo-animation-mumbai-indians',
-    href: '/video-production/3D-logo-animation-mumbai-indians',
+    case_study_title: '3d-logo-animation-mumbai-indians',
+    href: '/video-production/3d-logo-animation-mumbai-indians',
         region: []
 
 
@@ -1954,8 +1954,8 @@ export const workPosts = [
     alt: 'Exicom',
     tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
     tabs: ['videos'],
-    case_study_title: '3d-product-reveal-video-Exicom',
-    href: '/video-production/3d-product-reveal-video-Exicom',
+    case_study_title: '3d-product-reveal-video-exicom',
+    href: '/video-production/3d-product-reveal-video-exicom',
         region: []
 
   },
@@ -2004,8 +2004,8 @@ export const workPosts = [
     image: '/img/works/infy-ai-first-work.webp',
     tags: ['Technology', 'Digital Campaign', 'Employer Branding video', 'Social Media Content'],
     tabs: ['videos'],
-    case_study_title: 'animated-case-study-videos-Infosys-employees',
-    href: '/brand-campaign/animated-case-study-videos-Infosys-employees',
+    case_study_title: 'animated-case-study-videos-infosys-employees',
+    href: '/brand-campaign/animated-case-study-videos-infosys-employees',
         region: []
 
   }
@@ -2018,7 +2018,7 @@ export const workPosts = [
     alt: 'Launching a Sports Brand logo with a 3D Billboard',
     tabs: ['videos'],
     tags: ['Sports', '3D Billboard Animation'],
-    case_study_title: '3D-logo-animation-mumbai-indians',
+    case_study_title: '3d-logo-animation-mumbai-indians',
     href: '/video-production/3d-logo-animation-mumbai-indians',
         region: []
 
@@ -2109,8 +2109,8 @@ export const workPosts = [
     alt: 'Swiggy',
     tabs: ['videos'],
     tags: ['Quick Commerce', 'Gen AI Video', 'Ad Film'],
-    case_study_title: 'ai-video-Swiggy',
-    href: '/video-production/ai-video-Swiggy',
+    case_study_title: 'ai-video-swiggy',
+    href: '/video-production/ai-video-swiggy',
         region: []
 
   },
@@ -2161,8 +2161,8 @@ export const workPosts = [
     alt: 'slb',
     tabs: ['videos'],
     tags: ['Engineering', 'Campaign', 'Explainer Video', 'Demo Video', 'Interactive Video'],
-    case_study_title: 'interactive-explainer-SLB',
-    href: '/brand-campaign/interactive-explainer-SLB',
+    case_study_title: 'interactive-explainer-slb',
+    href: '/brand-campaign/interactive-explainer-slb',
         region: []
 
   },
@@ -2239,8 +2239,8 @@ export const workPosts = [
     alt: 'Jewels Of India',
     tags: ['Digital Campaign', 'Video Content', 'Jewellery'],
     tabs: ['videos'],
-    case_study_title: 'documentary-Tanishq-jewels',
-    href: '/video-production/documentary-Tanishq-jewels',
+    case_study_title: 'documentary-tanishq-jewels',
+    href: '/video-production/documentary-tanishq-jewels',
         region: []
 
   },
@@ -2367,8 +2367,8 @@ export const workPosts = [
     alt: 'WeRise',
     tags: ['Non-profit', 'CSR Video', 'Documentary'],
     tabs: ['videos'],
-    case_study_title: 'werise-women-in-science-documentary',
-    href: '/video-production/women-in-stem-documentary',
+    case_study_title: 'women-in-STEM-documentary',
+    href: '/video-production/women-in-STEM-documentary',
         region: []
 
   },
@@ -2731,8 +2731,8 @@ export const workPosts = [
     'Digital Campaign',
     'Product Launch Campaign'
   ],
-  case_study_title: 'xiaomi-buds-5C',
-  href: '/brand-campaign/xiaomi-buds-5C',
+  case_study_title: 'xiaomi-buds-5c',
+  href: '/brand-campaign/xiaomi-buds-5c',
       region: []
 
 },
