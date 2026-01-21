@@ -7,6 +7,8 @@ export const FeaturedWorkSection = ({
   title = 'Here’s a portfolio of work that worked',
   posts = [],
   href = '/work/play',
+  btnposition = 'right',
+  showbtn = true
 }) => {
   return (
     <section className="bg-white py-7.5 md:py-15">
@@ -19,7 +21,27 @@ export const FeaturedWorkSection = ({
               {title}
             </h3>
           </div>
-          <div className="w-full hidden md:block md:w-5/12">
+          {btnposition === 'right' && showbtn && (
+            <div className="w-full hidden md:block md:w-5/12">
+              <Button
+                suffix={<LineArrow hover />}
+                href={href}
+                className="md:float-right"
+              >
+                EXPLORE WORK
+              </Button>
+            </div>
+          )}
+
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-x-6 mt-12 md:mt-20">
+          {posts.map((p, i) => (
+            <ContentPostCard type={'md'} key={p.key} {...p} />
+          ))}
+        </div>
+
+        {btnposition === 'bottom' && showbtn && (
+          <div className='flex justify-center items-center mt-20'>
             <Button
               suffix={<LineArrow hover />}
               href={href}
@@ -28,19 +50,9 @@ export const FeaturedWorkSection = ({
               EXPLORE WORK
             </Button>
           </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-x-6 mt-12 md:mt-20">
-          {posts.map((p, i) => (
-            <ContentPostCard type={'md'} key={p.key} {...p} />
-          ))}
-        </div>
-        {/* <Button
-          className="w-full md:hidden mt-5"
-          href={href}
-          suffix={<LineArrow />}
-        >
-          EXPLORE ALL
-        </Button> */}
+        )}
+
+
       </div>
     </section>
   )

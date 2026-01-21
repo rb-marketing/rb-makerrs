@@ -1307,7 +1307,7 @@ const BrandIdentityDesign = () => {
             </div>
             <div
               ref={stickyButtonRef}
-              className={`hidden fixed top-8 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
+              className={`hidden fixed top-20 right-8 z-20 md:min-w-[180px] transition-opacity duration-300 ease-in-out ${
                 isSticky ? 'lg:block' : ''
               } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
             >
@@ -1324,7 +1324,7 @@ const BrandIdentityDesign = () => {
                     )
                   }, 100)
                 }}
-                className="w-full"
+          className="w-full md:!px-4 md:!h-11 md:text-[0.9rem]"
                 suffix={<LineArrow hover />}
               >
                 Let&apos;s talk

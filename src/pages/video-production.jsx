@@ -7,7 +7,7 @@ import {
   ExploreMoreSection,
   ServiceCardSection,
   VideoMetaModal,
-  PlayCard,
+  FeaturedWorkSection,
 } from '@/components/shared'
 import { VideoModal } from '@/components/shared'
 import { LineArrow } from '@/components/icons'
@@ -457,7 +457,7 @@ const VideosServices = ({ setisPopupOpen }) => {
       redText: 'Premium Live Action Case Study',
 
       relatedVideos: [
-         {
+        {
           videolink: 'https://vimeo.com/1078406512',
           thumbnail: '/img/corporate-video/gordon_ritter.png',
           title: 'Thought Leadership Video',
@@ -601,7 +601,7 @@ const VideosServices = ({ setisPopupOpen }) => {
       ],
     },
 
-        {
+    {
       slug: 'Live Action Explainer',
       featuredImage: {
         src: '/img/explainer-video/vymo_sme.png',
@@ -719,7 +719,7 @@ const VideosServices = ({ setisPopupOpen }) => {
       ],
     },
 
-  {
+    {
       slug: 'Tata Women’s Cricket League',
       featuredImage: {
         src: '/img/recruitment-video/tata_cricket_film.png',
@@ -853,6 +853,36 @@ const VideosServices = ({ setisPopupOpen }) => {
     },
   ]
 
+  const _posts = [
+    {
+    key: 0,
+    name: 'Global Leaders: a Hiring Campaign',
+    image: '/img/case-study/infosys-global-leaders.webp',
+    company: 'Infosys',
+    alt: 'infosys-global-leaders',
+    tags: ['Technology', 'Campaign', 'Employer Branding Video', 'Global Video Production'],
+    href: '/brand-campaign/infosys-global-employer-brand',
+  },
+  {
+    key: 1,
+    name: '220% Organic YouTube Subscriber Growth in India',
+    company: 'Indeed',
+    alt: 'Indeed YouTube Content',
+    tags: ['Hiring Platform', 'YouTube Content'],
+    image: '/img/works/indeed_youtube_content_main_thumbnail.png',
+    href: '/video-production/indeed-youtube-content',
+  },
+  {
+    key: 2,
+    name: 'Campaign Explainer Video for HRM SAAS product',
+    company: 'MULTIPLIER',
+    image: '/img/works/multiplier_work.webp',
+    alt: 'MULTIPLIER',
+    tags: ['SaaS', 'Lead Gen Campaign', 'Product Launch Video', 'Explainer Video', '2D Animation Video'],
+    href: '/video-production/multiplier-explainer-video',
+  }
+]
+
   const handleRelatedVideoClick = (videolink) => {
     const clickedVideoData = workData.find(
       (item) => item.video.workDetails.videolink === videolink
@@ -932,9 +962,8 @@ const VideosServices = ({ setisPopupOpen }) => {
         />
         <div
           ref={stickyButtonRef}
-          className={`hidden fixed top-20 right-8 z-20 md:min-w-[250px] transition-opacity duration-300 ease-in-out ${
-            isSticky ? 'lg:block' : ''
-          } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
+          className={`hidden fixed top-20 right-8 z-20 md:min-w-[180px] transition-opacity duration-300 ease-in-out ${isSticky ? 'lg:block' : ''
+            } ${isOverlapping ? 'opacity-0' : 'opacity-100'}`}
         >
           <Button
             onClick={() => {
@@ -949,7 +978,7 @@ const VideosServices = ({ setisPopupOpen }) => {
                 )
               }, 100)
             }}
-            className="w-full"
+          className="w-full md:!px-4 md:!h-11 md:text-[0.9rem]"
             suffix={<LineArrow hover />}
           >
             Video with us
@@ -999,7 +1028,16 @@ const VideosServices = ({ setisPopupOpen }) => {
         cards={videosCards}
       />
 
-      <section className={`overflow-hidden pb-18 pt-18 md:pb-18`}>
+      <div className="pt-8 md:pt-0">
+        <FeaturedWorkSection
+          posts={_posts}
+          href="/work/videos"
+          title="Explore Our Video Portfolio"
+          btnposition='bottom'
+        />
+      </div>
+
+      {/* <section className={`overflow-hidden pb-18 pt-18 md:pb-18`}>
         <div className="container">
           <LineHeading className="mb-6 md:mb-9"> Get great videos</LineHeading>
           <h3 className="text-title md:text-title-md mb-12 md:mb-14 font-everett max-w-[911px]">
@@ -1050,7 +1088,7 @@ const VideosServices = ({ setisPopupOpen }) => {
             onRelatedVideoClick={handleRelatedVideoClick}
           />
         </div>
-      </section>
+      </section> */}
 
       <section className={`overflow-hidden bg-white py-18 md:py-30`}>
         <div className="container text-center">

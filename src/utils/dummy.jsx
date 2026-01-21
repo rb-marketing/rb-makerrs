@@ -320,34 +320,41 @@ export const scsPosts = [
 ]
 
 export const campaignPosts = [
+
   {
-    key: 0,
-    name: 'Action-packed launch film for Redmi Buds 6',
-    company: 'XIAOMI',
-    image: '/img/works/xiaomi_buds_6_work_thumbnail.png',
-    alt: 'Action-packed launch film for Redmi Buds 6',
-    tags: ['Consumer Electronics', 'Ad Film', 'Digital Campaign', 'Product Launch Campaign'],
-    href: '/brand-campaign/xiaomi-buds',
-  },
-  {
-    key: 1,
-    name: 'Transforming relationships for SME banks in U.S.A',
-    company: 'VYMO',
-    image: '/img/works/vymo_sme.webp',
-    alt: 'Vymo SME',
-    tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
-    case_study_title: 'explainer-video-vymo-USA-banking',
-    href: '/brand-campaign/explainer-video-vymo-USA-banking',
-  },
-  {
-    key: 2,
-    name: 'Global Leaders: a Hiring Campaign',
-    company: 'Infosys',
-    image: '/img/case-study/infosys-global-leaders.webp',
-    alt: 'Global Leaders: a Hiring Campaign',
-    tags: ['Technology', 'Campaign', 'Employer Branding Video', 'Global Video Production'],
-    href: '/brand-campaign/infosys-global-employer-brand',
-  }
+  key: 0,
+  name: 'Transforming how Indian SMBs Hire',
+  company: 'Indeed',
+  image: '/img/works/indeed.jpg',
+  alt: 'Indeed',
+  tags: ['Digital Campaign', 'Ad Film', ' Jobs'],
+  href: '/brand-campaign/indeed-india-radhika-apte'
+},
+
+{
+  key: 1,
+  name: 'Action-packed campaign film for Redmi Buds 6',
+  image: '/img/works/xiaomi_buds_6_work_thumbnail.png',
+  company: 'Xiaomi',
+  alt: 'Redmi Buds 6',
+  tags: [
+    'Consumer Electronics',
+    'Ad Film',
+    'Digital Campaign',
+    'Product Launch Campaign'
+  ],
+  href: '/brand-campaign/xiaomi-buds-6'
+},
+
+{
+  key: 2,
+  name: 'Transforming relationships for SME banks in U.S.A',
+  company: 'VYMO',
+  alt: 'VYMO',
+  image: '/img/works/vymo_sme.webp',
+  tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
+  href: '/brand-campaign/vymo-usa-banking',
+}
 ]
 
 export const contentSolutionPosts = [
@@ -1420,23 +1427,35 @@ export const strategyPosts = [
     tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
     href: '/brand-designs/lillia-care-brand-launch'
   },
+
   {
     key: 1,
+    name: "Exicom Brand Refresh: Choose Smart. Charge Smart.",
+    company: 'Exicom',
+    image: '/img/case-study/exicom_brand_refresh_work.jpg',
+    alt: 'Exicom',
+    tags: ['E-Mobility', 'Design', 'Brand Transformation', 'Visual Identity'],
+    href: '/brand-designs/exicom-EV-charger-rebrand',
+  },
+
+
+  {
+    key: 2,
     name: 'Branding for an Indulgent Dessert Café',
     company: 'P.U. Dingding',
     image: '/img/works/pudingding-thumbnail.jpg',
     tags: ['Brand Identity', 'Design Collateral', 'Film & Video Content', 'F&B'],
     href: '/brand-designs/pu-dingding-cafe',
   },
-  {
-    key: 2,
-    name: "Unveiling Harmony Direct 2.0 - Electric Fleet Charger",
-    company: 'Exicom',
-    image: '/img/works/exicom_work_thumbnail.png',
-    alt: 'Exicom',
-    tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
-    href: '/brand-designs/exicom-EV-charger-rebrand'
-  },
+  // {
+  //   key: 2,
+  //   name: "Unveiling Harmony Direct 2.0 - Electric Fleet Charger",
+  //   company: 'Exicom',
+  //   image: '/img/works/exicom_work_thumbnail.png',
+  //   alt: 'Exicom',
+  //   tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
+  //   href: '/brand-designs/exicom-EV-charger-rebrand'
+  // },
 ]
 
 export const featuredPlay = ecs.slice(0, 8)
