@@ -8,6 +8,7 @@ import {
 } from '@/components/shared'
 
 import { CommercialSection } from '@/components/pages/work'
+import { useRouter } from 'next/router'
 
 
 
@@ -88,31 +89,34 @@ specifyWidth: 'md:!w-[220px] !w-[200px]',
 
 
 function Lilliacare() {
+  const router = useRouter()
+  const articleUrl = `https://www.makerrs.com${router.pathname}`
   const { logo, tags, featured, commercials, stats, press, image, specifyWidth } = pageData
   const socials = [
-    {
-      key: 0,
-      href: '/',
-      color: '#25D366',
-      icon: <Whatsapp />,
-    },
+    // {
+    //   key: 0,
+    //   href: '/',
+    //   color: '#25D366',
+    //   icon: <Whatsapp />,
+    // },
     {
       key: 1,
-      href: '/',
+      href: `https://twitter.com/intent/tweet?text=${articleUrl}`,
       color: '#1DA1F2',
       icon: <Twitter />,
     },
-    {
-      key: 2,
-      href: '/',
-      color: '#0088cc',
-      icon: <Telegram />,
-    },
+    // {
+    //   key: 2,
+    //   href: '/',
+    //   color: '#0088cc',
+    //   icon: <Telegram />,
+    // },
     {
       key: 3,
-      href: '/',
+      href: `https://www.linkedin.com/shareArticle?mini=true&url=${articleUrl}`,
       color: '#006699',
       icon: <Linkedin />,
+      type: 'linkedin',
     },
   ]
   return (

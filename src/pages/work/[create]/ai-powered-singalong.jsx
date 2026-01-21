@@ -56,7 +56,7 @@ const pageData = {
 
 function InfosysSingalong() {
   const router = useRouter()
-  const articleUrl = `https://www.redbangle.global${router.pathname}`
+  const articleUrl = `https://www.makerrs.com${router.pathname}`
 
   const { logo, tags, commercials, desktopVideo, mobileVideo, image } = pageData
   const socials = [
@@ -71,6 +71,7 @@ function InfosysSingalong() {
       href: `https://www.linkedin.com/shareArticle?mini=true&url=${articleUrl}`,
       color: '#006699',
       icon: <Linkedin />,
+      type: 'linkedin',
     },
   ]
   return (
@@ -81,7 +82,7 @@ function InfosysSingalong() {
         url="https://www.makerrs.com/work/brand-campaign/ai-powered-singalong"
       />
       <WorkHeroSection
-        logo={logo}
+        // logo={logo}
         socials={socials}
         tags={tags}
         title="AI‑powered Singalong campaign that united a global workforce"

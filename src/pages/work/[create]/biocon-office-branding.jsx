@@ -105,7 +105,7 @@ const pageData = {
 
 function Biocon() {
     const router = useRouter()
-    const articleUrl = `https://www.redbangle.global${router.pathname}`
+    const articleUrl = `https://www.makerrs.com${router.pathname}`
 
     const { logo, tags, commercials, desktopVideo, mobileVideo, image, specifyWidth } = pageData
     const socials = [
@@ -121,6 +121,7 @@ function Biocon() {
             href: `https://www.linkedin.com/shareArticle?mini=true&url=${articleUrl}`,
             color: '#006699',
             icon: <Linkedin />,
+            type: 'linkedin',
         },
     ]
     return (

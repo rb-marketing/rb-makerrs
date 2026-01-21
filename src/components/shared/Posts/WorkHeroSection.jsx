@@ -27,7 +27,7 @@ export const WorkHeroSection = ({
         <div className="rb-row md:mt-8.5 mb-12 md:mb-16">
           <div className="w-full md:w-9/12 text-2xl md:leading-9.5 text-rb-black/80">
             <img
-              alt={alt||logo.alt||''}
+              alt=""
               loading="lazy"
               {...logo}
               className="max-w-[160px] md:max-w-full"
