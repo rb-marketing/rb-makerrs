@@ -792,9 +792,7 @@ const ExplainerVideoLandPage = () => {
           </div>
           <ul>
             <li className="mb-5">
-              - Your brief is loaded on our platform: this contains all the
-              information you give us, we dig up, and all the creative assets we
-              need to work on. Everything is in one place.
+              - Your brief is loaded on our platform: this contains all the information you give us and all the creative assets we need to work on. Everything is in one place.
             </li>
             <li className="mb-5">
               - We use rate cards, add-ons and an efficient costing tool on our

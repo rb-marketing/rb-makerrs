@@ -45,59 +45,7 @@ const Design = ({ setisPopupOpen }) => {
     return () => observer.disconnect()
   }, [])
 
-  const createTestimonialData = [
-    {
-      key: 0,
-      quote: (
-        <>
-          Makerrs brought a unique blend of clarity and creativity—translating
-          complex healthcare concepts into a simple brand identity system that
-          was &apos;full of heart&apos;. They also created a cohesive website
-          experience within incredibly tight deadlines. Their efficiency and
-          understanding of our needs were pivotal in successfully launching our
-          brand.
-        </>
-      ),
-      name: 'Rinku Agarwal Basu',
-      designation: 'COO',
-      company: 'Lillia Care',
-      image: {
-        srcSet: `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
-    },
-    {
-      key: 1,
-      quote: (
-        <>
-          Makerrs was especially impressive with their creative strategy, design
-          and copy. They took the colors, the quirky and iconic signages, and
-          the energy of the local markets and transformed them into a fresh,
-          modern expression for our brand. Our customers are drawn to the unique
-          identity, and it&apos;s translated into a love for the food itself.
-        </>
-      ),
-      name: 'KUNCHERIA MARATTUKALAM',
-      designation: 'FOUNDER & DIRECTOR',
-      company: 'Maratt Group',
-      image: {
-        srcSet: `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
-    },
-    {
-      key: 2,
-      quote:
-        'From hand-drawn mascots to quirky doodles, and delicious copy that weaves in witty puns from popular song lyrics—every element of our new brand feels fun, indulgent, and effortlessly us. Makerrs has given us a brand bursting with character and joy! Seeing customers connect with it at our dessert cafe feels incredible.',
-      name: 'NAKUL KULKARNI',
-      designation: ' CO-FOUNDER',
-      company: 'P.U. DINGDING',
-      image: {
-        srcSet: `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
-        sizes: '(max-width:768px) 533px, 1066px',
-      },
-    },
-  ]
+  
   const cards = [
     {
       id: 1,

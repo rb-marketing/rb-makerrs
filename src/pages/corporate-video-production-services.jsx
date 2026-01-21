@@ -165,7 +165,7 @@ const CorporateVideoLandPage = () => {
       imgurl: 'img/services/videos/icon3.svg',
       alt: 'design_collateral',
       title: 'Videos Across Formats',
-      desc: 'Whether it’s a live-action corporate film, a premium 3D corporate video, or a mixed-format video — can corporate films, ESG films, PR videos, internal communication videos and more.',
+      desc: 'Whether it’s a live-action corporate film, a premium 3D corporate video, or a mixed-format video — get corporate films, ESG films, PR videos, internal communication videos and more.',
     },
     {
       key: 3,
@@ -735,17 +735,17 @@ const CorporateVideoLandPage = () => {
     {
       key: 1,
       title: 'Brief & Context',
-      desc: 'Ship us your brief and give us some context. We’ll get started right away.',
+      desc: 'Send us your corporate video brief and business context. We’ll get started right away.',
     },
     {
       key: 2,
       title: 'Concepts & Estimates',
-      desc: 'Choose from exciting creative concepts and estimate options curated for your business.',
+      desc: 'Choose from corporate video concepts and estimate options curated for your enterprise.',
     },
     {
       key: 3,
-      title: 'Copy & Design',
-      desc: 'You’ll get the best creative teams working on copy and design for your corporate film.',
+      title: 'Scripts & Design',
+      desc: 'You’ll get the best creative teams working on the script and design for your next corporate film.',
     },
     {
       key: 4,
@@ -760,7 +760,7 @@ const CorporateVideoLandPage = () => {
     {
       key: 6,
       title: 'Cloud-based Workflows',
-      desc: 'With our cloud-based workflows and experienced producers, you’ll get your films on-time, every time.',
+      desc: 'Our cloud-based workflows and experienced producers turnaround films and videos on-time, every time.',
     },
   ]
 
@@ -780,7 +780,7 @@ const CorporateVideoLandPage = () => {
     {
       key: 7,
       quote:
-        'Despite difficulties faced in shooting in 2 countries, we created these awesome videos, while keeping everyone safe during Covid-19.',
+        'Despite difficulties one might expect when shooting in 2 countries where various languages are spoken - we created these awesome videos.',
       name: 'MARC IRAWAN',
       designation: 'Founder',
       company: 'COLEARN',
@@ -813,6 +813,20 @@ const CorporateVideoLandPage = () => {
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
+
+    {
+      key: 3,
+      quote:
+        'It’s never easy creating great videos for a fast-growing business like ours. We struggled, till we came across Makerrs.',
+      name: 'SUNIL SURESH',
+      designation: 'CHIEF MARKETING AND STRATEGY OFFICER',
+      company: 'CAPILLARY TECHNOLOGIES',
+      image: {
+        srcSet:
+          `/img/testimonials/sunil-suresh.webp 533w, /img/testimonials/sunil-suresh.webp 1066w`,
+        sizes: '(max-width:768px) 533px, 1066px',
+      },
+    },
   ]
 
   const FAQ = [
@@ -822,24 +836,11 @@ const CorporateVideoLandPage = () => {
       content: (
         <>
           <div className="mb-5">
-            Over the years, we have scripted, designed and produced thousands of
-            videos across several countries and industries. On every project, we
-            ask ourselves what we could do differently and how we could do it
-            better—while still following a tried-and-tested process that helps
-            our clients grow their brands and enables us to consistently deliver
-            work that’s on-point and on-quality. Our typical project workflow is
-            something that starts with a clear brief, moves on to research,
-            concepts, script, visualisation, design, production, post
-            production, reviews and versioning. But what’s unique about how we
-            do it, is our proprietary platform that facilitates efficient
-            cloud-based workflows. Here’s a quick run through of how it helps:
+            Over the years, we have scripted, designed and produced thousands of videos across several countries and industries. And while on every project we ask ourselves what we might do differently, and what we might do better – we also follow a tried-and-tested process that enables our clients to grow their brands and us to keep delivering on-point, on-quality. Our typical project workflow is something that starts with a clear brief, moves on to research, concepts, script, visualisation, design, production, post production, reviews and versioning. But what’s unique about how we do it, is our proprietary platform that facilitates efficient cloud-based workflows. Here’s a quick run through of how it helps: 
           </div>
           <ul>
             <li className="mb-5">
-              - Your brief is loaded on our platform. This contains all the
-              information you&apos;ve shared, everything we&apos;ve dug up, and
-              all the creative assets we need to work on. Everything is in one
-              place.
+              - Your brief is loaded on our platform: this contains all the information you give us and all the creative assets we need to work on. Everything is in one place.
             </li>
             <li className="mb-5">
               - We use rate cards, add-ons and an efficient costing tool on our
@@ -889,7 +890,7 @@ const CorporateVideoLandPage = () => {
       key: 3,
       title: 'Which platforms do you create videos for?',
       content:
-        'As a B2B video and creative agency, we conceptualize and craft videos that work across a range of platforms such as YouTube, LinkedIn, WhatsApp, events and internal portals. Our goal is to ensure every piece of video content you commission connects with your audience, and drives engagement, no matter where it’s seen. Let’s say you are making a premium corporate film with us, we are also able to help you create versions and thumbnails of this film for various platforms.',
+        'As a creative agency and collaborative, we conceptualize and craft videos that work across a range of platforms such as YouTube, LinkedIn, WhatsApp, events and internal portals. Our goal is to ensure every piece of video content you commission connects with your audience, and drives engagement, no matter where it’s seen. Let’s say you are making a premium corporate film with us, we are able to also help you create versions and thumbnails of this film for various platforms.',
     },
     {
       key: 4,

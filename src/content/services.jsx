@@ -189,7 +189,9 @@ export const RecruitmentVideoFaq = [
     key: 2,
     title: 'What types of diversity and inclusion videos do you create?',
     content:
-      "We create videos that do more than say you're inclusive—they show it. Whether it’s an employee story that reveals a personal journey, a leadership message grounded in vulnerability, or a vibrant highlight reel from your Pride Month events, we create videos that feel human, thoughtful, and real. Our process starts with understanding your inclusion goals and the communities you want to spotlight. We then shape stories that celebrate authenticity, build empathy, and reflect the everyday experiences of your people. From Employee Resource Group (ERG) showcases to cultural moments and allyship narratives, every frame is crafted to inspire connection and spark conversation.",
+       <>
+       We create videos that do more than <span className='italic'>say</span> you&apos;re inclusive—they show it. Whether it&apos;s an employee story that reveals a personal journey, a leadership message grounded in vulnerability, or a vibrant highlight reel from your Pride Month events, we create videos that feel human, thoughtful, and real. Our process starts with understanding your inclusion goals and the communities you want to spotlight. We then shape stories that celebrate authenticity, build empathy, and reflect the everyday experiences of your people. From Employee Resource Group (ERG) showcases to cultural moments and allyship narratives, every frame is crafted to inspire connection and spark conversation.
+       </>
   },
   {
     key: 3,
@@ -243,7 +245,7 @@ export const RecruitmentVideoFaq = [
     content: (
       <>
         <div className="mb-5">
-          We help B2B brands attract top talent through authentic storytelling
+          We help enterprises attract top talent through authentic storytelling
           and high-quality production. Here&apos;s how our typical recruitment
           video production process works:
         </div>
@@ -954,7 +956,7 @@ export const podcastCards = [
     title: 'Podcast Marketing',
     text: (
           <>
-          We amplify and track your podcast across LinkedIn, X, Instagram, and other social platforms. When you want more than organic audience growth, we&apos;ll propose the media spend strategy that will help you achieve your podcast growth goals.
+          We scale podcast versioning, publishing and marketing for you. We track podcast performance across Twitter, LinkedIn, Instagram and other social platforms. We also plan and execute media spends to help you reach your podcast growth goals.
           </>
     ),
     icon: {
