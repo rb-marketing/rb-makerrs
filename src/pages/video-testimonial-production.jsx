@@ -195,7 +195,7 @@ const CaseStudyVideoProduction = () => {
       imgurl: 'img/services/videos/icon17.svg',
       alt: 'Limitless Versioning',
       title: 'Limitless Versioning',
-      desc: 'Are you looking to make one video and need it adapted to several platforms or languages? Trust our accurately-managed limitless versioning services for your B2B case study video requirements.',
+      desc: 'Are you looking to make one video and need it adapted to several platforms or languages? Trust our accurately-managed limitless versioning services for your case study video requirements.',
     },
   ]
 
@@ -755,7 +755,7 @@ const CaseStudyVideoProduction = () => {
     {
       key: '6',
       title: 'On-time Delivery',
-      desc: 'Your B2B case study videos will be right on time with our cloud-based workflows and experienced teams.',
+      desc: 'Your case study videos will be right on time with our cloud-based workflows and experienced teams.',
     },
   ]
 

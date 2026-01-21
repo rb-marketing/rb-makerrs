@@ -258,7 +258,7 @@ const Campaign = ({ setisPopupOpen }) => {
           </p>
           <br />
           <p>
-            3. Research and Copy Writing We use a range of tools to facilitate
+            3. Research and Copy Writing: We use a range of tools to facilitate
             data gathering, analysis and creative ideation. From Statista, SEM
             Rush and VidIQ to Copy AI and Gemini–we use a wide range of tools to
             strategise, plan and brainstorm creative ideas to ensure the best
