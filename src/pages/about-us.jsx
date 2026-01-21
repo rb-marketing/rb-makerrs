@@ -223,25 +223,20 @@ const WhoWeAre = () => {
     {
       name: 'Ayesha Mir',
       title: 'Group Account Director, Bangalore',
-      img: '/img/our-team/mandira-naidoo.webp',
-      lgimg: '/img/our-team/mandira-naidoo_2x.webp',
+      img: '/img/our-team/ayesha-mir.jpg',
+      lgimg: '/img/our-team/ayesha-mir.jpg',
       content: (
         <>
-          The quiet one who is always observant and insightful. Jaya asks all
-          the good questions that drive technology development at Makerrs.
+          A thoughtful connector of people, clients, and growth, Ayesha brings structure, empathy, and momentum to every challenge she takes on.
           <br />
           <br />
-          She’s excited about tackling complex human challenges through
-          technology and building innovative solutions.
+          She began her journey in B2B as a content writer, gradually evolving into account leadership, sales, and client services. Along the way, she’s worked with mainline agencies across sectors including IT, tech, FMCG, manufacturing, and F&B. This breadth of experience gives her a grounded understanding of business goals and how to help brands tell their stories.
           <br />
           <br />
-          Jaya has worked in software solutioning with Tech Mahindra, Symantec
-          and HCL. She joined Makerrs in the first few months of our own
-          beginning when she was nursing her new baby. Today, he’s 7 and so is
-          Jaya’s relationship with Makerrs.
+          Currently a Group Account Director at Red Bangle, she drives growth through strong client partnerships, operational clarity, and a collaborative approach that brings out the best in both her teams and her clients.
           <br />
           <br />
-          Jaya works closely with Sunil, and heads our dynamic technology team.
+          When she’s not solving client challenges, Ayesha enjoys baking, building Lego sets, and solving puzzles.
         </>
       ),
       linkedIn: 'https://www.linkedin.com/in/jayaloganathan/',
