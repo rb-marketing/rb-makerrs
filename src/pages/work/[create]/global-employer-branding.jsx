@@ -344,13 +344,13 @@ function InfosysWb() {
                             <LineHeading className="mb-6 md:mb-9">
                                 Context & Brief
                             </LineHeading>
-                            <p className=" mb-6 md:mb-7.5">
+                            <p className=" mb-6 md:mb-7.5 !leading-[150%]">
                                 As one of the world’s leading technology consulting firms, Infosys has grown from its roots in India to a global presence spanning 54 countries and over 300,000 employees. But with the expansion came a new brand challenge - to attract local talent in international regions.
                             </p>
-                            <p className=" mb-6 md:mb-7.5">
+                            <p className=" mb-6 md:mb-7.5 !leading-[150%]">
                                 To solve this challenge, Infosys needed a global Employer Branding campaign positioning itself as a global employer. The campaign had to be insight-led with powerful and real narratives to help shift the brand perception and attract local talent.
                             </p>
-                            <p className=" mb-6 md:mb-7.5">
+                            <p className=" mb-6 md:mb-7.5 !leading-[150%]">
                                 We crafted 16 compelling employee-led films - shot in London, Paris, New York, Melbourne, and Richardson - all in 45 days.
                             </p>
                         </div>
@@ -359,10 +359,10 @@ function InfosysWb() {
                                 Creative Approach
                             </LineHeading>
 
-                            <p className="mb-6 md:mb-7.5">
+                            <p className="mb-6 md:mb-7.5 !leading-[150%]">
                                 To bring alive truthful narratives from across continents, we first met dozens of employees and curated campaign voices. Our first week or two were spent in meetings to understand the people at Infosys, learn about their careers and experiences at work, and then craft 16 unique scripts - one for every individual we would feature in the campaign.
                             </p>
-                            <p className="mb-6 md:mb-7.5">
+                            <p className="mb-6 md:mb-7.5 !leading-[150%]">
                                 In parallel, our Directorial and Design teams created a unique Instagram- and LinkedIn-friendly campaign look and feel. A treatment that would lend a unique yet consistent look and feel across all 16 videos and their adapts, yet bring through individual narratives and in a short turnaround time.
                             </p>
                         </div>

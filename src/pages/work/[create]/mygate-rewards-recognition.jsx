@@ -119,7 +119,7 @@ function MygateRewards() {
                                 MyGate wanted a film that would capture the spirit of the guards’ journeys to Bangalore and the pride of being honoured at its Annual Security Guard Day awards ceremony. The film would act as a standout piece of content to deepen the campaign’s impact, generate goodwill, and position MyGate as a brand rooted in empathy and community.
                             </p>
                         </div>
-                        <div className="mt-6 md:mt-[80px]">
+                        <div className="mt-6 md:mt-[80px] md:mb-20">
                             <LineHeading className="mb-6 md:mb-9">
                                 Our Approach
                             </LineHeading>
