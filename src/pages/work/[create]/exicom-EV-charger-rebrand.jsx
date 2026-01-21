@@ -127,7 +127,7 @@ function ExicomMobility() {
                             <LineHeading className="mb-6 md:mb-[30px]">
                                 Background 
                             </LineHeading>
-                            <p className="">
+                            <p className="!leading-[150%]">
                                Electric mobility isn&apos;t a niche anymore. It’s mainstream, and brutally competitive. 
                                What used to be a commodity race, has morphed into a brand game. Exicom’s EV chargers 
                                find themselves in this new landscape. Once viewed as a technical utility, EV chargers 
@@ -150,7 +150,7 @@ function ExicomMobility() {
                             <p className="text-base md:text-2xl text-rb-black/80 !leading-[150%] mb-[24px]">
                             Exicom had credibility. Decades of engineering. Proven hardware. Big partnerships. But here’s the challenge: nobody was hearing that story. The brand came across as functional, industrial, safe. Solid, but a bit too silent for its own good. The task was three-fold:
                             </p>
-                            <p className="mb-6">
+                            <p className="mb-6 !leading-[150%]">
                                 <ul className="list-disc pl-6 leading-7 mb-[24px]">
                                 <li className="list-disc pl-6 leading-7 mb-[24px]">
                                     Exicom needed a brand new look and a whole new voice. It needed to turn up the dial from industrial to inspiring. And be seen as a thought leader, not just a market leader.

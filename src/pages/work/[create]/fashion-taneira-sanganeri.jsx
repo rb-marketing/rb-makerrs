@@ -76,7 +76,7 @@ function TaneiraSanganeri() {
       />
       <section className="bg-white overflow-hidden md:pb-[56px] pb-[36px]">
         <div className="container">
-          <div className="cs-content max-w-[914px]">
+          <div className="cs-content max-w-[914px] md:mb-20">
             <div className="mt-9 md:mb-20">
               <LineHeading className="mb-6 md:mb-9">
                 Background & Brief

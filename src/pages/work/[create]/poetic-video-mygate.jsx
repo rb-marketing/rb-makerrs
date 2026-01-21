@@ -144,13 +144,13 @@ function MyGate() {
                 Background &amp; objective
               </LineHeading>
 
-              <p className="text-base md:text-2xl text-rb-black/80 leading-7 mb-[30px]">
+              <p className="text-base md:text-2xl text-rb-black/80 !leading-[150%] mb-[30px]">
                 MyGate is a smart, technology-forward security solution that
                 helps gated communities manage their security needs including
                 visitor entry and exit, household help and more.
               </p>
 
-              <p className='text-base md:text-2xl text-rb-black/80 leading-7'>
+              <p className='text-base md:text-2xl text-rb-black/80 !leading-[150%]'>
                 However, there was a lack of enthusiasm amongst security guards
                 around the new technology. With the onground security forces
                 forming an important part of the user group, MyGate needed to
@@ -163,13 +163,13 @@ function MyGate() {
                 Creative Solution
               </LineHeading>
 
-              <p className="text-base md:text-2xl text-rb-black/80 leading-7 mb-[30px]">
+              <p className="text-base md:text-2xl text-rb-black/80 !leading-[150%] mb-[30px]">
                 Typically, security guards in India are from smaller towns, work
                 long hours, are an ignored support system and are not tech
                 savvy. They saw the MyGate app as yet another chore - when in
                 fact it was also built to make their work easier.
               </p>
-              <p className="text-base md:text-2xl text-rb-black/80 leading-7 mb-[30px]">
+              <p className="text-base md:text-2xl text-rb-black/80 !leading-[150%] mb-[30px]">
                 With security guards being integral to product adoption, it was
                 crucial that MyGate create a positive association with this user
                 group, drive app usage and demonstrate app effectiveness.
@@ -182,7 +182,7 @@ function MyGate() {
                 guards. We seamlessly integrated MyGate&apos;s brand name into
                 the campaign message.
               </p>
-              <p className="text-base md:text-2xl text-rb-black/80 leading-7">
+              <p className="text-base md:text-2xl text-rb-black/80 !leading-[150%]">
                 The campaign humanized security guards and highlighted their
                 importance, resulting in a positive response from both security
                 guards and apartment residents. The guards also began to

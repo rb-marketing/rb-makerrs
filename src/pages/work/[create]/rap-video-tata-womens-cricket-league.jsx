@@ -108,7 +108,7 @@ function Tatawomens() {
                                 We collaborated with a young rap artist from Mumbai - Meba Ofilia <a href="https://www.instagram.com/mebaofilia/?hl=en" target="_blank" className='text-blue-500'>(Mebaofilia)</a>, to compose and perform the track. While Meba’s style is rooted in Hip Hop and R&B, the lyrics were written in-house in Hinglish to connect with a big internal audience that speaks different languages across companies and teams. Rap allowed us to bring in pace, attitude, but clarity was key - this was an internal audience, and we needed every lyric to land. The format helped us keep the energy high while staying grounded in the real experiences of the players.
                             </p>
                         </div>
-                        <div className="mt-6 md:mt-12">
+                        <div className="mt-6 md:mt-12 md:mb-20">
                             <LineHeading className="mb-6 md:mb-9">
                                 Crafting the Narrative
                             </LineHeading>
