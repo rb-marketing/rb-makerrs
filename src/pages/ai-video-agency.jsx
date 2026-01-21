@@ -971,7 +971,7 @@ const AIvideoAgency = () => {
       content: (
         <>
           <p className="mb-5">
-            As an AI-first agency experienced in crafting AI-powered videos across industries, genres, and formats – we're always on the lookout to try something innovative on every new brief. This approach has helped us develop a tried-and-true process that delivers impactful Gen AI videos for borderless brands. 
+            As an AI-first agency experienced in crafting AI-powered videos across industries, genres, and formats – we&apos;re always on the lookout to try something innovative on every new brief. This approach has helped us develop a tried-and-true process that delivers impactful Gen AI videos for borderless brands. 
           </p>
           <p className="mb-5">
             Our typical AI video workflow starts with a clear brief, followed by

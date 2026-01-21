@@ -190,7 +190,7 @@ export const RecruitmentVideoFaq = [
     title: 'What types of diversity and inclusion videos do you create?',
     content:
        <>
-       We create videos that do more than <span className='italic'>say</span> you're inclusive—they show it. Whether it’s an employee story that reveals a personal journey, a leadership message grounded in vulnerability, or a vibrant highlight reel from your Pride Month events, we create videos that feel human, thoughtful, and real. Our process starts with understanding your inclusion goals and the communities you want to spotlight. We then shape stories that celebrate authenticity, build empathy, and reflect the everyday experiences of your people. From Employee Resource Group (ERG) showcases to cultural moments and allyship narratives, every frame is crafted to inspire connection and spark conversation.
+       We create videos that do more than <span className='italic'>say</span> you&apos;re inclusive—they show it. Whether it&apos;s an employee story that reveals a personal journey, a leadership message grounded in vulnerability, or a vibrant highlight reel from your Pride Month events, we create videos that feel human, thoughtful, and real. Our process starts with understanding your inclusion goals and the communities you want to spotlight. We then shape stories that celebrate authenticity, build empathy, and reflect the everyday experiences of your people. From Employee Resource Group (ERG) showcases to cultural moments and allyship narratives, every frame is crafted to inspire connection and spark conversation.
        </>
   },
   {
