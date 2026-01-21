@@ -55,7 +55,7 @@ const pageData = {
 
 function AIPoweredCampaign() {
   const router = useRouter()
-  const articleUrl = `https://www.redbangle.global${router.pathname}`
+  const articleUrl = `https://www.makerrs.com${router.pathname}`
 
   const { logo, tags, commercials, desktopVideo, mobileVideo, image } = pageData
   const socials = [
@@ -70,6 +70,7 @@ function AIPoweredCampaign() {
       href: `https://www.linkedin.com/shareArticle?mini=true&url=${articleUrl}`,
       color: '#006699',
       icon: <Linkedin />,
+      type: 'linkedin',
     },
   ]
   return (
@@ -80,7 +81,7 @@ function AIPoweredCampaign() {
         url="https://www.makerrs.com/work/brand-campaign/employee-wellbeing-ai-experience"
       />
       <WorkHeroSection
-        logo={logo}
+        // logo={logo}
         socials={socials}
         tags={tags}
         title="AI-Powered Campaign That Inspires Employees To Imagine Their Best Selves"

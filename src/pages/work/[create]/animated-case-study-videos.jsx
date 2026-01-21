@@ -137,7 +137,7 @@ const pageData = {
 
 function Colearn() {
   const router = useRouter()
-  const articleUrl = `https://www.redbangle.global${router.pathname}`
+  const articleUrl = `https://www.makerrs.com${router.pathname}`
 
   const { logo, tags, commercials, desktopVideo, mobileVideo, image } = pageData
   const socials = [

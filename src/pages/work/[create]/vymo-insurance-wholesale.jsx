@@ -82,7 +82,7 @@ export const similarPostsData = [
 
 function VymoWholeSalers() {
   const router = useRouter()
-  const articleUrl = `https://www.redbangle.global${router.pathname}`
+  const articleUrl = `https://www.makerrs.com${router.pathname}`
 
   const { logo, tags, commercials, desktopVideo, mobileVideo,image } = pageData
   const socials = [
@@ -98,6 +98,7 @@ function VymoWholeSalers() {
       href: `https://www.linkedin.com/shareArticle?mini=true&url=${articleUrl}`,
       color: '#006699',
       icon: <Linkedin />,
+      type: 'linkedin',
     },
   ]
   return (
