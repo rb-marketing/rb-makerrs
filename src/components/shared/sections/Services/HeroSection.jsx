@@ -58,7 +58,7 @@ export const ServiceHeroSection = ({
             {...video}
             className="w-[150%] -translate-x-1/4 max-w-max md:max-w-full md:w-full md:translate-x-0"
           ></video>
-          <div className="absolute play-circle flex items-center justify-center md:hidden left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-rb-red rounded-full w-13 h-13">
+          <div className="absolute bottom-4 right-4 z-10 backdrop-blur-2xl bg-rb-black/50 rounded-[32px] py-[17px] px-4.5 pl-[20px] overflow-hidden md:hidden block">
             <svg
               className="block play-icon"
               width="9"
