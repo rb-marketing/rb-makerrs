@@ -181,7 +181,7 @@ function MetroWholesale() {
                 </div>
               </div>
             </div>
-            <div className="">
+            <div className="mt-9 md:mb-20">
               <LineHeading className="mb-6 md:mb-9 font-opensans">
                 <span className='text-[20px]'>
                 Creative approach

@@ -8,14 +8,14 @@ import {
 } from '@/components/shared'
 
 import { CommercialSection } from '@/components/pages/work'
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 export const similarPostsData = [
   {
     key: 0,
     name: '5 Star Campaigns for a Wholesale Brand',
     company: 'Metro Wholesale',
     image: '/img/works/metro-wholesale.jpg',
-    alt:'metro wholesale ad',
+    alt: 'metro wholesale ad',
     tags: ['TV Campaign', 'Ad Film', 'Retail'],
     href: '/work/brand-campaign-agency-india/metro-wholesale-case-study',
   },
@@ -25,7 +25,7 @@ export const similarPostsData = [
     company: 'Indeed',
     image: '/img/works/indeed.jpg',
     alt: 'Indeed',
-   tags: [' Digital Campaign', 'Ad Film', 'Jobs'],
+    tags: [' Digital Campaign', 'Ad Film', 'Jobs'],
     href: '/work/brand-campaign-agency-india/indeed-case-study',
   },
   {
@@ -33,7 +33,7 @@ export const similarPostsData = [
     name: 'Never sweat the first game Campaign Films',
     company: ' My 11 Circle',
     image: '/img/works/my-11-circle.jpg',
-    alt:'my 11 circle ',
+    alt: 'my 11 circle ',
     tags: ['Digital Campaign', 'Ad Film', 'Fantasy Games'],
     href: '/work/brand-campaign-agency-india/my11circle-case-study',
   },
@@ -42,14 +42,14 @@ export const similarPostsData = [
 const pageData = {
   logo: {
     src: '/img/logos/swiggy-logo.webp',
-    alt:'swiggy logo',
+    alt: 'swiggy logo',
     width: '260',
     height: '105',
   },
   tags: ['Digital Campaign', 'Ad Film', 'Quick Commerce'],
   desktopVideo: '/img/works/metro-wholesale-big.mp4',
   image: '/img/works/Swiggy-New-Earnings.jpg',
-  alt:'Swiggy New Earnings',
+  alt: 'Swiggy New Earnings',
   mobileVideo: '/img/works/metro-wholesale.mp4',
   featured: {
     src: '/img/works/ccs_2x.webp',
@@ -119,14 +119,11 @@ const pageData = {
   },
 }
 
-
-
-const commercials =
-{
+const commercials = {
   title: (
     <>
-      Portfolio of video projects that&nbsp;elevated brands and exceeded
-      client expectations.
+      Portfolio of video projects that&nbsp;elevated brands and exceeded client
+      expectations.
     </>
   ),
   excerpt:
@@ -160,8 +157,8 @@ const commercials =
   ],
 }
 function MetroWholesale() {
-      const router = useRouter();
-    const fullUrl = `https://www.makerrs.com${router.asPath}`;
+  const router = useRouter()
+  const fullUrl = `https://www.makerrs.com${router.asPath}`
   const { logo, tags, desktopVideo, mobileVideo, image, alt } = pageData
   const socials = [
     {
@@ -181,10 +178,10 @@ function MetroWholesale() {
   ]
   return (
     <>
-      <SEO 
-      title="Case Study: Swiggy | Creative Advertising & Digital Marketing Campaign | Makerrs" 
-      description="Explore how Makerrs - Creative Advertising Agency, crafted creative video content for Swiggy's creative ad campaign & digital marketing campaign, using b2c marketing communication strategy. "
-      url="https://www.makerrs.com/work/brand-campaign/swiggy-extra-earnings"
+      <SEO
+        title="Case Study: Swiggy | Creative Advertising & Digital Marketing Campaign | Makerrs"
+        description="Explore how Makerrs - Creative Advertising Agency, crafted creative video content for Swiggy's creative ad campaign & digital marketing campaign, using b2c marketing communication strategy. "
+        url="https://www.makerrs.com/work/brand-campaign/swiggy-extra-earnings"
       />
       <WorkHeroSection
         title={"Campaign films: Season's EXTRA Earnings"}
@@ -193,66 +190,102 @@ function MetroWholesale() {
         tags={tags}
         image={image}
         alt={alt}
-      // desktopVideo={desktopVideo}
-      // mobileVideo={mobileVideo}
+        // desktopVideo={desktopVideo}
+        // mobileVideo={mobileVideo}
       />
       <section className="bg-white overflow-hidden md:pb-30 pb-15">
-      <div className="container overflow-hidden">
-        <div className="cs-content max-w-[914px]">
-          <div className="mt-9 md:mb-20">
-            <LineHeading className="mb-6 font-opensans">
-              <span className='text-[20px]'>
-                Background & Problem Statement
-              </span>
-            </LineHeading>
+        <div className="container overflow-hidden">
+          <div className="cs-content max-w-[914px]">
+            <div className="mt-9 md:mb-20">
+              <LineHeading className="mb-6 font-opensans">
+                <span className="text-[20px]">
+                  Background & Problem Statement
+                </span>
+              </LineHeading>
 
-            <div className="text-base md:text-xl text-rb-black/80">
-              <div className='leading-7 mb-[30px]'>
-                The year-end is a time when we get together with family and friends, celebrate and feast. This is probably why Swiggy hits its peak orders season between Christmas and New Year’s.
-              </div>
-              <div className='leading-7 mb-[30px]'>
-                In this super busy season, Swiggy relies heavily on Delivery Partners to handle the huge wave of incoming orders. They need all the Partners they already have, and then some! Think of it like “delivery partner wars”. Swiggy needed to engage its delivery partners with great offers and excite those from competing apps too. Their approach: awesome deals, bigger earnings, mega guarantees, and extra bonuses.
-              </div>
-              <div className='leading-7 mb-[30px]'>
-                The brief was a digital campaign to spread the word on great seasonal benefits and encourage more Delivery Partner engagement as well as sign-ups. And the content needed to be super-relatable for the TG.
+              <div className="text-base md:text-xl text-rb-black/80">
+                <div className="leading-7 mb-[30px]">
+                  The year-end is a time when we get together with family and
+                  friends, celebrate and feast. This is probably why Swiggy hits
+                  its peak orders season between Christmas and New Year’s.
+                </div>
+                <div className="leading-7 mb-[30px]">
+                  In this super busy season, Swiggy relies heavily on Delivery
+                  Partners to handle the huge wave of incoming orders. They need
+                  all the Partners they already have, and then some! Think of it
+                  like “delivery partner wars”. Swiggy needed to engage its
+                  delivery partners with great offers and excite those from
+                  competing apps too. Their approach: awesome deals, bigger
+                  earnings, mega guarantees, and extra bonuses.
+                </div>
+                <div className="leading-7 mb-[30px]">
+                  The brief was a digital campaign to spread the word on great
+                  seasonal benefits and encourage more Delivery Partner
+                  engagement as well as sign-ups. And the content needed to be
+                  super-relatable for the TG.
+                </div>
               </div>
             </div>
-          </div>
-          <div className="mt-6 md:mt-20">
-            <LineHeading className="mb-6 font-opensans">
-              <span className='text-[20px]'>
-                Creative approach
-              </span>
-            </LineHeading>
+            <div className="mt-6 md:mt-20 md:mb-20">
+              <LineHeading className="mb-6 font-opensans">
+                <span className="text-[20px]">Creative approach</span>
+              </LineHeading>
 
-            <div className='text-xl md:text-[32px] text-black mb-4 font-medium lg:leading-14 font-everett'>The Return of Pyaare Pankaj and Sweety</div>
-            <div className="text-base md:text-xl text-rb-black/80 mb-8 md:mb-[30px] leading-7">
-              Remember Pyaare Pankaj and Sweety from our <a href="/work//brand-campaign/swiggy-winter-jackets" target="_blank" rel="noopener noreferrer"><span className='underline text-black hover:text-rb-link-green font-semibold'>&quot;Swiggy Wali Jacket&quot;</span></a> campaign? Well, this newly-wed couple turned out to be a hit! Their charm and relatability created a special place in the hearts of our target audience. And, we saw a fantastic opportunity to deepen this connection and continue their story with brand Swiggy, and to do something a little EXTRA.
-            </div>
-            <div className='text-xl md:text-[32px] text-black mb-4 font-medium lg:leading-14 font-everett'>Crafting the EXTRA campaign</div>
-            <div className="text-base md:text-xl text-rb-black/80 leading-7">
-              <div className='mb-4 md:mb-[30px] '>
-                Well, time had passed since Pankaj and Sweety were newlyweds. All things given - theirs has grown to be a happy married life. And the romance is very much still alive.
+              <div className="text-xl md:text-[32px] text-black mb-4 font-medium lg:leading-14 font-everett">
+                The Return of Pyaare Pankaj and Sweety
               </div>
-              <div className='mb-4 md:mb-[30px]'>
-                So, to highlight the EXTRA incentives Swiggy was dishing out this festive season, we showed Pyaare Pankaj earning EXTRA with Swiggy, just to keep Sweety EXTRA happy.
+              <div className="text-base md:text-xl text-rb-black/80 mb-8 md:mb-[30px] leading-7">
+                Remember Pyaare Pankaj and Sweety from our{' '}
+                <a
+                  href="/work//brand-campaign/swiggy-winter-jackets"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="underline text-black hover:text-rb-link-green font-semibold">
+                    &quot;Swiggy Wali Jacket&quot;
+                  </span>
+                </a>{' '}
+                campaign? Well, this newly-wed couple turned out to be a hit!
+                Their charm and relatability created a special place in the
+                hearts of our target audience. And, we saw a fantastic
+                opportunity to deepen this connection and continue their story
+                with brand Swiggy, and to do something a little EXTRA.
               </div>
-              <div className='mb-4 md:mb-[30px]'>
-                Watch the two films and find out what Pyare Pankaj does to woo his Sweetie over and over again with a little EXTRA. These are just an inspiration for the many things a Delivery Partner could do with their EXTRA earnings with Swiggy.
+              <div className="text-xl md:text-[32px] text-black mb-4 font-medium lg:leading-14 font-everett">
+                Crafting the EXTRA campaign
               </div>
-              <div className='mb-[6px] md:mb-0'>
-                The films significantly boosted Delivery Partner engagement during the busy year-end season. And new Partner sign-ups on the Swiggy app? Well, they grew EXTRA too!
+              <div className="text-base md:text-xl text-rb-black/80 leading-7">
+                <div className="mb-4 md:mb-[30px] ">
+                  Well, time had passed since Pankaj and Sweety were newlyweds.
+                  All things given - theirs has grown to be a happy married
+                  life. And the romance is very much still alive.
+                </div>
+                <div className="mb-4 md:mb-[30px]">
+                  So, to highlight the EXTRA incentives Swiggy was dishing out
+                  this festive season, we showed Pyaare Pankaj earning EXTRA
+                  with Swiggy, just to keep Sweety EXTRA happy.
+                </div>
+                <div className="mb-4 md:mb-[30px]">
+                  Watch the two films and find out what Pyare Pankaj does to woo
+                  his Sweetie over and over again with a little EXTRA. These are
+                  just an inspiration for the many things a Delivery Partner
+                  could do with their EXTRA earnings with Swiggy.
+                </div>
+                <div className="mb-[6px] md:mb-0">
+                  The films significantly boosted Delivery Partner engagement
+                  during the busy year-end season. And new Partner sign-ups on
+                  the Swiggy app? Well, they grew EXTRA too!
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <CommercialSection
+        <CommercialSection
           sources={commercials?.sources}
           type={commercials?.type}
         />
-       </section>
+      </section>
 
       {/* <SimilarPosts
         tag="EXPLORE MORE CASE STUDIES"

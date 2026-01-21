@@ -158,7 +158,7 @@ function ProjectLoom() {
                                 Shoba presented a unique challenge to us: how do you make consumers more aware and appreciative of the artistry in their hands? The mission extended to inspire a deeper understanding and value for the craftsmanship involved. The trickiest part? Creating these stories across the country - with each having their own flavour, inspired by the handloom and the region.
                             </p>
                         </div>
-                        <div className="mt-6 md:mt-20">
+                        <div className="mt-6 md:mt-20 md:mb-20">
                             <LineHeading className="mb-6 md:mb-9">
                                 Creative approach
                             </LineHeading>

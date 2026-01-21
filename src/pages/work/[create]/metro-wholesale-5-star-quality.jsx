@@ -196,7 +196,7 @@ function MetroWholesale() {
                 For distribution, the campaign focused on regional news channels, chosen for their credibility and strong engagement with METRO’s core B2B audience, particularly in Tier I and Tier II markets. To ensure the creative landed with equal impact across these regions, we dubbed the films into eight regional languages, making the message accessible and relatable to viewers.
               </p>
             </div>
-             <div className="mt-6 md:mt-20">
+             <div className="mt-6 md:mt-20 md:mb-20">
               <LineHeading className="mb-6 md:mb-9">
                 Impact
               </LineHeading>
