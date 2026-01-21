@@ -389,7 +389,7 @@ const Team = () => {
         title="International Experts Marketing Agency"
         description="Meet our diverse global team, experts in holistic marketing, ready to deliver brand growth worldwide."
         keywords="Global Team For Holistic Marketing, International Experts Marketing Agency, Diverse Professionals For Marketing Content Strategy, Meet Our Team, Multicultural Team For Digital Brand Management, Global Expertise Marketing Content Strategy, Team Members Marketing Agency, International Presence, Collaborative Team For Creative Content Marketing, Our People"
-       url="https://www.redbangle.com/global-team-for-holistic-marketing"
+       url="https://www.makerrs.com/about-us"
       />
 
       <div style={{ display: 'none' }}>

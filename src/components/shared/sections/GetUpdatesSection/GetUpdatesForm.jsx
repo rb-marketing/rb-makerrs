@@ -287,7 +287,6 @@ export const GetUpdatesForm = ({
           hidden
           style={{ display: 'hidden' }}
           name="returnURL"
-          // value="https&#x3a;&#x2f;&#x2f;www.redbangle.com&#x2f;success"
           defaultValue={
             typeof window !== 'undefined' &&
             window.location.hostname.includes('staging')

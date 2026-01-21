@@ -78,7 +78,7 @@ export const ContactForm = () => {
   const sourceURL =
     typeof window !== 'undefined'
       ? window.location.href
-      : 'https://redbangle.com/'
+      : 'https://www.makerrs.com'
   const routerSource = router.query['utm_source'] || storedSource
   const routerCampaign = router.query['utm_campaign'] || storedCompaign
   const routerMedium = router.query['utm_medium'] || storedMedium
@@ -196,7 +196,7 @@ export const ContactForm = () => {
           hidden
           style={{ display: 'hidden' }}
           name="returnURL"
-          defaultValue="https&#x3a;&#x2f;&#x2f;www.redbangle.com&#x2f;success"
+          defaultValue="https&#x3a;&#x2f;&#x2f;www.makerrs.com&#x2f;success"
         />
 
         <input
