@@ -355,6 +355,89 @@
     "/video-marketing/abm-videos",
 
   "/explainer-videos/explainer-videos-how-to-create":
-    "/explainer-video/explainer-videos-how-to-create"
+    "/explainer-video/explainer-videos-how-to-create",
+
+  "/work/brand-designs/lillia-care-brand-launch": "/work/brand-design/lillia-care-brand-launch",
+  "/work/brand-designs/exicom-e-mobility-rebrand": "/work/brand-design/exicom-EV-charger-rebrand",
+  "/work/brand-designs/pu-dingding-dessert-cafe-branding": "/work/brand-design/pu-dingding-cafe",
+  "/work/brand-designs/medalio-hospitality-brand-identity": "/work/brand-design/medalio-hotel-brand-identity",
+  "/work/brand-design-agency-india/thelagram": "/work/brand-design/thelagram-restaurant",
+
+  "/work/brand-experiences/bajaj-pulsar-augmented-reality-campaign": "/work/brand-design/bajaj-pulsar-augmented-reality",
+  "/work/brand-experiences/infosys-topaz-3d-interactive-experience": "/work/brand-design/infosys-topaz-3d-interactive-experience",
+  "/work/brand-designs/axis-bank-activation-campaign": "/work/brand-design/axis-bank-activation-campaign",
+  "/work/campaigns/infosys-employees-social-media-campaign": "/work/brand-campaign/animated-case-study-videos-Infosys-employees",
+  "/work/video-content-production-agency-india/mumbai-indian": "/work/video-production/3D-logo-animation-mumbai-indians",
+  "/work/brand-designs/infosys-sustainability-design-gallery": "/work/brand-design/infosys-sustainability-gallery",
+  "/work/brand-designs/office-branding-for-biocon": "/work/brand-design/biocon-office-branding",
+
+
+  "/work/campaigns/infosys-global-leaders-employer-branding": "/work/brand-campaign/infosys-global-employer-brand",
+  "/work/integrated-brand-campaign-agency-india/indeed-youtube-content": "/work/video-production/indeed-youtube-content",
+  "/work/campaigns/multiplier-hr-saas-explainer-video": "/work/video-production/thought-leadership-vymo-gordon-ritter",
+  "/work/videos/vymo-gordon-ritter-thought-leadership-video": "/work/video-production/fashion-taneira-sanganeri",
+  "/work/video-content-production-agency-india/taneira-sanganeri": "/work/video-production/tata-inclusion-auto-comp",
+  "/work/video-content-production-agency-india/women-in-auto-manufacturing": "/work/video-production/3d-product-reveal-video-Exicom",
+  "/work/videos/exicom-3d-animation-product-launch": "/work/video-production/case-study-videos-infosys-wsj",
+  "/work/videos/infosys-wsj-global-case-study-video": "/work/video-production/recruitment-video-colearn-education",
+  "/work/videos/colearn-stem-educators-recruitment-video": "/work/video-production/CSR-video-infosys-street-child",
+  "/work/videos/infosys-street-child-documentary": "/work/brand-campaign/animated-case-study-videos-Infosys-employees",
+
+  "/work/creative-ai-agency-india/shaanu-ka-viva": "/work/video-production/poetic-video-mygate",
+  "/work/video-content-production-agency-india/mygate-case-study": "/work/video-production/3d-product-video-xiaomi-mini-power-bank",
+  "/work/brand-campaign-agency-india/xiaomi-pocket-power-bank": "/work/video-production/abstract-animation-video-infosys-cobalt-launch",
+  "/work/campaigns/infosys-cobalt-community-launch-video": "/work/video-production/mygate-rewards-recognition",
+  "/work/video-content-production-agency-india/mygate-rewards-recognition": "/work/video-production/wipro-australia-corporate-film",
+  "/work/videos/wipro-australia-corporate-film": "/work/video-production/ai-video-Swiggy",
+  "/work/creative-ai-agency-india/swiggy-insanely-good": "/work/video-production/rap-video-tata-womens-cricket-league",
+  "/work/video-content-production-agency-india/tata-womens-cricket-league": "/work/brand-campaign/app-walkthrough-swiggy-delivery",
+  "/work/brand-campaign-agency-india/swiggy-delivery-executive-app": "/work/video-production/saas-explainer-video-hansel",
+  "/work/videos/hansel-saas-explainer-video": "/work/brand-campaign/interactive-explainer-SLB",
+  "/work/campaigns/slb-interactive-explainer": "/work/video-production/stock-footage-video-infosys-business-agility",
+  "/work/videos/infosys-business-agility-solution": "/work/video-production/ge-aerospace-corporate-film",
+  "/work/videos/ge-aerospace-corporate-film": "/work/video-production/hiring-video-hotel-superhero",
+  "/work/video-content-production-agency-india/project-loom": "/work/video-production/hiring-video-hotel-superhero",
+  "/work/videos/hotel-superhero-saas-hiring-video": "/work/video-production/employee-wellness-healthifyme-app-video",
+  "/work/videos/healthifyme-employee-wellness-app-video": "/work/video-production/documentary-Tanishq-jewels",
+  "/work/video-content-production-agency-india/jewels-case-study": "/work/video-production/healthcare-case-study-video-wipro",
+  "/work/videos/wipro-healthtech-case-study-videos": "/work/video-production/video-report-dozee-public-health",
+  "/work/videos/dozee-beds-healthcare-video-report": "/work/brand-design/3d-interactive-experience-infosys-topaz",
+  "/work/videos/koo-self-verification-explainer-video": "/work/video-production/hiring-video-darwinbox",
+  "/work/videos/darwinbox-hiring-video": "/work/video-production/fashion-taneira-cyanotype",
+  "/work/video-content-production-agency-india/taneira-cyanotype": "/work/brand-campaign/explainer-video-vymo-USA-banking",
+  "/work/campaigns/vymo-sme-bank-explainer-video": "/work/video-production/culture-videos-texas-instruments",
+  "/work/videos/people-first-brand-films-for-ti": "/work/video-production/recruitment-video-infosys-campus",
+  "/work/videos/infosys-campus-recruitment-video": "/work/video-production/women-in-STEM-documentary",
+  "/work/videos/werise-women-in-science-documentary": "/work/video-podcast/podcast-lakshmi-rebecca",
+
+  "/work/video-content-production-agency-india/lakshmi-rebecca-show": "/work/video-production/employer-branding-videos-infosys",
+  "/work/videos/infosys-employer-branding": "/work/brand-campaign/launch-infosys-equinox",
+  "/work/campaigns/infosys-equinox-brand-launch": "/work/video-production/sustainable-housing-documentary",
+  "/work/videos/werise-sustainable-housing-documentary": "/work/video-production/csr-video-ashirvad",
+  "/work/videos/ashirvad-plumbing-school-csr-video": "/work/video-production/csr-video-ashirvad",
+
+
+  
+  "/work/brand-campaign-agency-india/indeed-case-study": "/work/brand-campaign/indeed-India-radhika-apte",
+  "/work/brand-campaign-agency-india/xiaomi-buds": "/work/brand-campaign/xiaomi-buds-6",
+  "/work/integrated-brand-campaign-agency-india/pdd-integrated": "/work/brand-campaign/pudingding-cafe-design-launch",
+  "/work/brand-campaign-agency-india/swiggy-extra-earning-case-study": "/work/brand-campaign/swiggy-extra-earnings",
+  "/work/brand-campaign-agency-india/xiaomi-a4-5g": "/work/brand-campaign/xiaomi-a4-5g-phone",
+  "/work/brand-campaign-agency-india/indiagold": "/work/brand-campaign/indiagold",
+  "/work/integrated-brand-campaign-agency-india/l74-case-study": "/work/brand-campaign/l74-ciders-social-media",
+  "/work/brand-campaign-agency-india/my11circle-case-study": "/work/brand-campaign/my11circle-digital-ad-film",
+  "/work/brand-campaign-agency-india/xiaomi-beard-trimmer": "/work/brand-campaign/xiaomi-beard-trimmer",
+  "/work/campaigns/jigsaw-e-learning-explainer-video": "/work/brand-campaign/unext-course-marketing",
+  "/work/ai-creatives/infosys-thrive-ai-powered-campaign": "/work/brand-campaign/employee-wellbeing-ai-experience",
+  "/work/brand-campaign-agency-india/xiaomi": "/work/brand-campaign/xiaomi-buds-5C",
+  "/work/video-content-production-agency-india/zivame": "/work/brand-campaign/zivame-lingerie",
+  "/work/brand-campaign-agency-india/metro-wholesale-case-study": "/work/brand-campaign/metro-wholesale-5-star-quality",
+  "/work/campaigns/vymo-lead-management": "/work/brand-campaign/vymo-lead-management",
+  "/work/ai-creatives/infosys-ai-powered-singalong-campaign": "/work/brand-campaign/ai-powered-singalong",
+  "/work/brand-campaign-agency-india/metro-wholesale-one-minute": "/work/brand-campaign/metro-wholesale-one-more",
+  "/work/brand-campaign-agency-india/swiggy-winter-jacket-case-study": "/work/brand-campaign/swiggy-winter-jackets",
+  "/work/campaigns/vymo-wholesalers-explainer-video": "/work/brand-campaign/vymo-insurance-wholesale"
+
+  
 }
 
