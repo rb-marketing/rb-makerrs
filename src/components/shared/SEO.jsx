@@ -5,7 +5,7 @@ import Script from 'next/script'
 export const SEO = ({
   title = 'Film & Video Production company for TV Ads & more | Makerrs',
   description = 'Makerrs is a global full-service film and video production company. Get TV Ads, Digital Ads, Marketing Videos, Corporate Videos and more with one company.',
-  image = 'https://www.makerrs.com/img/redbangle.jpg',
+  image = 'https://www.makerrs.com/img/makerrs.jpg',
   url,
   keywords,
   externalLink = null
@@ -17,7 +17,7 @@ export const SEO = ({
     <>
       <Head>
         <title>{title}</title>
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="author" content="Makerrs" />
