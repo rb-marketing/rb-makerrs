@@ -211,7 +211,7 @@ return (
           marqueType="img"
           contentClassName="max-w-[1100px] w-full leading-[21px] md:text-[32px] md:leading-9.5 mt-8 md:!mt-16 cap-trim font-semibold !tracking-[-0.56px] md:!tracking-[-0.08rem]"
           content={<>Big ideas, captivating design, campaign magic and flawless global video production. We&apos;re the creative engine behind unstoppable brand growth.</>}
-          duration={25}
+          duration={50}
         />
       </section>
 
