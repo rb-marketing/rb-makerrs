@@ -192,7 +192,7 @@ function Jewels() {
                             <p className="text-base md:text-2xl text-rb-black/80 !leading-[150%] mb-[30px]">
                                 Over the course of a few months, we  developed powerful narratives and captured beautiful
                                 footage that would charm customers in Tanishq&apos;s retail environments as well as engage a
-                                broader online audience on <a href="http://www.jewelsofindia.org" target="_blank" className='text-blue-500'>www.jewelsofindia.org.</a>
+                                broader online audience on <a href="http://www.jewelsofindia.org" target="_blank" className='underline'>www.jewelsofindia.org.</a>
                             </p>
                         </div>
                         <div className="mt-6 md:mt-12">
@@ -222,7 +222,7 @@ function Jewels() {
                         data= {stats}
                     /> */}
 
-                  <section className="bg-white overflow-hidden pt-2 md:pt-6 pb-0 md:pb-2">
+                  <section className="bg-white overflow-hidden pt-2 md:pt-6 pb-0 md:pb-[44px]">
                     <div className="container">
                       <LineHeading className="mb-6 md:mb-7.5">Impact and Reach</LineHeading>
                       <p className="text-base lg:w-2/3 md:!text-[20px] text-rb-black/80 !leading-[150%] mb-[30px]">
@@ -264,7 +264,7 @@ function Jewels() {
                 <Testimonials
                     title={'WHAT OUR CLIENT SAYS'}
                     testimonialData={jewelsTestimonialData}
-                    className="pt-30 md:pt-[10rem] md:pb-30 pb-15"
+                    className="pt-30 md:pt-[84px] md:pb-30 pb-15"
                 />
             </section>
 

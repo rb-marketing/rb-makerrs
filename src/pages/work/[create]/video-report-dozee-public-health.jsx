@@ -53,7 +53,7 @@ const pageData = {
     height: '90',
   },
   specifyWidth: 'md:!w-[80px] !w-[60px]',
-  image:"/img/case-study/dozee-banner.webp",
+  // image:"/img/case-study/dozee-banner.webp",
     tags: ['MedTech', 'PR Video', 'Video Report'],
  
   commercials: {
@@ -125,7 +125,7 @@ function Colearn() {
       <section className="bg-white pt-3.5 md:pb-14 pb-[24px] md:pt-0 overflow-hidden">
         <div className="container">
           <div className="cs-content max-w-[914px]">
-            <div className="mt-9 md:mb-20">
+            <div className="mt-0 md:mb-20">
               
 
               <p className=" mb-6 md:mb-7.5">

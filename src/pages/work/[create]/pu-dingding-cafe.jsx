@@ -163,7 +163,7 @@ function Colearn() {
                             </LineHeading>
 
                             <p className=" mb-6 md:mb-7.5">
-                                With India’s dessert industry growing at nearly <a href='https://www.indianretailer.com/restaurant/article/what-s-trending-in-desserts-for-2025-a-sweet-revolution-ahead.12118' className='text-blue-500'>double-digit CAGRs</a>,  standing out is no cakewalk. DBS Ventures saw an opportunity to create more than just another dessert cafe, they wanted to redefine the experience into something more playful, personal, and full of flavour, both on and off the plate. Not just a place to grab a bite, but a space that sparks joy, builds community, and makes you want to stay long after the last bite. A brand that doesn’t just compete on taste, but wins hearts through taste, storytelling, and soul.
+                                With India’s dessert industry growing at nearly <a href='https://www.indianretailer.com/restaurant/article/what-s-trending-in-desserts-for-2025-a-sweet-revolution-ahead.12118' className='underline'>double-digit CAGRs</a>,  standing out is no cakewalk. DBS Ventures saw an opportunity to create more than just another dessert cafe, they wanted to redefine the experience into something more playful, personal, and full of flavour, both on and off the plate. Not just a place to grab a bite, but a space that sparks joy, builds community, and makes you want to stay long after the last bite. A brand that doesn’t just compete on taste, but wins hearts through taste, storytelling, and soul.
 
 
 

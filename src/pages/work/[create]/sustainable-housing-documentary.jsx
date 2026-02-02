@@ -105,7 +105,7 @@ function Colearn() {
                             </LineHeading>
 
                             <p className=" mb-6 md:mb-7.5">
-                                Millions of Indians live in homes that fail to meet basic standards of safety, hygiene, and dignity. Recent studies reveal that approximately 35% of India’s urban population lives in informal settlements or slums, many of which fall far short of basic habitability standards (<a href='https://www.sciencedirect.com/science/article/pii/S0264275125000794' target='_blank' className='text-blue-500' >ScienceDirect, 2025</a>). These substandard homes aren’t merely an issue of infrastructure. They perpetuate cycles of poverty by affecting health, limiting educational attainment, reducing economic opportunities, and undermining social dignity.
+                                Millions of Indians live in homes that fail to meet basic standards of safety, hygiene, and dignity. Recent studies reveal that approximately 35% of India’s urban population lives in informal settlements or slums, many of which fall far short of basic habitability standards (<a href='https://www.sciencedirect.com/science/article/pii/S0264275125000794' target='_blank' className='underline' >ScienceDirect, 2025</a>). These substandard homes aren’t merely an issue of infrastructure. They perpetuate cycles of poverty by affecting health, limiting educational attainment, reducing economic opportunities, and undermining social dignity.
 
 
                             </p>
