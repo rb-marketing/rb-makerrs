@@ -8,7 +8,7 @@ import { ContentPostCard } from '@/components/shared/Cards/ContentPostCard'
 import { Button } from '@/components/ui'
 import { LineArrow } from '@/components/icons'
 import { aboutSchema } from '@/components/schema/about-schema'
-
+import { WorkDropdown } from '@/components/dropdown/work-dropdown'
 
 const getCountryFromCookie = () => {
   if (typeof document === 'undefined') return null;
@@ -21,6 +21,7 @@ const getCountryFromCookie = () => {
 
 export default function WorkPage({ selectedvalue = 'featured' }) {
   const router = useRouter()
+  const { category } = router.query;
   const _posts = workPosts
 
   const caseStudyTags = [
@@ -33,7 +34,7 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
       url: 'design',
     },
     {
-      name: 'Videos',
+      name: 'Video',
       url: 'videos',
     },
     {
@@ -43,26 +44,31 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     {
       name: 'Campaign',
       url: 'campaign',
-    }
+    },
   ]
-
+  const categoryOptions = [
+    { name: 'ALL', slug: 'all' },
+    { name: 'B2B', slug: 'b2b' },
+    { name: 'B2C', slug: 'b2c' },
+  ]
   const [selectedTag, setSelectedTag] = useState(null)
+  const [selectedCategory, setSelectedCategory] = useState('all');
   const [visiblePosts, setVisiblePosts] = useState(9)
   const scrollRef = React.useRef(null)
-  const [country, setCountry] = useState(null);
+  const [country, setCountry] = useState(null)
 
   useEffect(() => {
-    const detectedCountry = getCountryFromCookie();
-    setCountry(detectedCountry);
-  }, []);
-
-
+    const detectedCountry = getCountryFromCookie()
+    setCountry(detectedCountry)
+  }, [])
 
   useEffect(() => {
     const storedVisible = sessionStorage.getItem('work-visiblePosts')
     const storedTag = sessionStorage.getItem('work-selectedTag')
 
-    if (storedVisible) setVisiblePosts(parseInt(storedVisible, 10))
+    if (storedTag === selectedTag && storedVisible) {
+      setVisiblePosts(parseInt(storedVisible, 10))
+    }
     if (storedTag) setSelectedTag(storedTag)
     if (!router.query.work) {
       if (selectedvalue && caseStudyTags.some(tag => tag.url === selectedvalue)) {
@@ -80,13 +86,14 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     sessionStorage.setItem('work-scroll', String(scroll))
     sessionStorage.setItem('work-visiblePosts', String(visiblePosts))
     sessionStorage.setItem('work-selectedTag', selectedTag || 'featured')
+    sessionStorage.setItem('work-selectedCategory', selectedCategory || 'all')
   }
 
   useEffect(() => {
     const scrollToPosts = () => {
       //after hard refresh we need to scrolls tabs section right..for that
-      const postsGrid = document.querySelector(".work-posts-section")
-      const stickyTabs = document.querySelector(".sticky-tab-section")
+      const postsGrid = document.querySelector('.work-posts-section')
+      const stickyTabs = document.querySelector('.sticky-tab-section')
       if (postsGrid) {
         const gridTop = postsGrid.getBoundingClientRect().top + window.scrollY
         const stickyHeight = stickyTabs?.offsetHeight || 0
@@ -95,23 +102,27 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     }
 
     const restore = () => {
-      const navEntries = performance.getEntriesByType("navigation")
-      const isReload = navEntries.length && navEntries[0].type === "reload"
-      const storedTag = sessionStorage.getItem("work-selectedTag")
-      const storedScroll = sessionStorage.getItem("work-scroll")
+      const navEntries = performance.getEntriesByType('navigation')
+      const isReload = navEntries.length && navEntries[0].type === 'reload'
+      const storedTag = sessionStorage.getItem('work-selectedTag')
+      const storedScroll = sessionStorage.getItem('work-scroll')
+      const storedCategory = sessionStorage.getItem('work-selectedCategory')
 
       if (storedTag) {
         setSelectedTag(storedTag)
       }
+      if (storedCategory) {
+        setSelectedCategory(storedCategory)
+      }
 
       if (isReload) {
         // Hard refresh → reset to 6 posts & scroll to tabs
-        setVisiblePosts(6)
-        sessionStorage.setItem("work-visiblePosts", "6")
+        setVisiblePosts(9)
+        sessionStorage.setItem('work-visiblePosts', '9')
         scrollToPosts()
       } else if (storedScroll && !isNaN(parseInt(storedScroll, 10))) {
         // Back/forward navigation → restore posts & scroll
-        const storedVisible = sessionStorage.getItem("work-visiblePosts")
+        const storedVisible = sessionStorage.getItem('work-visiblePosts')
         if (storedVisible) setVisiblePosts(parseInt(storedVisible, 10))
 
         setTimeout(() => {
@@ -119,8 +130,8 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
         }, 50)
       } else {
         // First visit → reset to 6 posts (NO SCROLL)
-        setVisiblePosts(6)
-        sessionStorage.setItem("work-visiblePosts", "6")
+        setVisiblePosts(9)
+        sessionStorage.setItem('work-visiblePosts', '9')
       }
     }
     restore()
@@ -129,13 +140,16 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
 
 
   useEffect(() => {
-    setVisiblePosts(6)
+    setVisiblePosts(9)
   }, [selectedTag])
 
   const handleTagClick = (tagUrl) => {
-    // Reset visible posts to 6 when switching tab
-    setVisiblePosts(6)
+    // Reset visible posts to 9 when switching tab
+    setVisiblePosts(9)
     setSelectedTag(tagUrl)
+
+    sessionStorage.setItem('work-visiblePosts', '9')
+    sessionStorage.setItem('work-selectedTag', tagUrl)
 
     // Shallow route update
     router.push(`/work/${tagUrl}`, undefined, { shallow: true, scroll: false })
@@ -150,7 +164,14 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
         window.scrollTo({ top: topOffset - stickyHeight - 70, behavior: 'smooth' })
       }
     }, 50)
+    setSelectedCategory('all')
   }
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category.slug);
+    setVisiblePosts(9)   // ✅ RESET pagination
+    sessionStorage.setItem('work-visiblePosts', '9')
+  };
 
   const handleSeeMore = () => {
     const newVisible = visiblePosts + 6
@@ -159,10 +180,10 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
   }
 
   const handleSeeLess = () => {
-    setVisiblePosts(6)
+    setVisiblePosts(9)
     setTimeout(() => {
-      const postsGrid = document.querySelector(".work-posts-section")
-      const stickyTabs = document.querySelector(".sticky-tab-section")
+      const postsGrid = document.querySelector('.work-posts-section')
+      const stickyTabs = document.querySelector('.sticky-tab-section')
       if (postsGrid) {
         const gridTop = postsGrid.getBoundingClientRect().top + window.scrollY
         const stickyHeight = stickyTabs?.offsetHeight || 0
@@ -172,28 +193,34 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
   }
 
   const filteredPosts = _posts
-    .filter(post => {
+    .filter((post) => {
       // 1️⃣ Region filter
       if (post.region?.length && country && !post.region.includes(country)) {
-        return false;
+        return false
       }
 
       // 2️⃣ Tag filter
       if (selectedTag) {
-        return post.tabs?.some(
-          tab =>
+        const tagMatch = post.tabs?.some(
+          (tab) =>
             typeof tab === 'string' &&
             tab.toLowerCase() === selectedTag.toLowerCase()
-        );
+        )
+        if (!tagMatch) return false
+      }
+
+      if (selectedCategory !== 'all') {
+        if (!post.filter_type?.includes(selectedCategory)) {
+          return false
+        }
       }
 
       // 3️⃣ No tag selected → show post
-      return true;
+      return true
     })
-    .slice(0, visiblePosts);
+    .slice(0, visiblePosts)
 
-
-return (
+  return (
     <>
       <SEO
         title="Top Branding, Video Production & Podcast Solutions | Makerrs"
@@ -236,6 +263,16 @@ return (
         ) : (
 
           <div className="container work-posts-section">
+            {['featured', 'videos', 'campaign'].includes(selectedTag) && (
+              <div className='blogs-dd mt-6 md:mt-9'>
+                <WorkDropdown
+                  placeholder={selectedCategory || 'all'}
+                  options={categoryOptions}
+                  onChange={handleCategoryChange} // Handle the value change
+                />
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-16 md:mt-18">
               {filteredPosts.length > 0 ? (
                 filteredPosts.map(p => (
@@ -256,7 +293,7 @@ return (
 
 
         {/* See More / See Less */}
-        {
+          {
           filteredPosts.length > 0 && (
             <div className="text-center">
               {(() => {
@@ -292,13 +329,29 @@ return (
                 }
 
                 // Tag selected → count safely
-                const total = _posts.filter(post =>
-                  post.tabs?.some(
-                    tab =>
-                      typeof tab === 'string' &&
-                      tab.toLowerCase() === selectedTag.toLowerCase()
-                  )
-                ).length;
+                 const total = _posts.filter((post) => {
+                // region filter
+                if (post.region?.length && country && !post.region.includes(country)) {
+                  return false
+                }
+
+                // tab filter
+                const tagMatch = post.tabs?.some(
+                  (tab) =>
+                    typeof tab === 'string' &&
+                    tab.toLowerCase() === selectedTag.toLowerCase()
+                )
+                if (!tagMatch) return false
+
+                // dropdown category filter
+                if (selectedCategory !== 'all') {
+                  if (!post.filter_type?.includes(selectedCategory)) {
+                    return false
+                  }
+                }
+
+                return true
+              }).length
 
                 if (total > 6 && visiblePosts < total) {
                   return (
