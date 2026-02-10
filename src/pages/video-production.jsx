@@ -298,7 +298,7 @@ const VideosServices = ({ setisPopupOpen }) => {
     {
       key: 2,
       quote:
-        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They are amazing to work with!',
+        'We partnered with Makerrs to create internal campaigns. They get the brief to the tee, every time and deliver at lightning speed! They’re clued in on the latest trends, are always experimental and open to feedback. They’re an amazing lot to work with!',
 
       designation: 'VP INTERNAL COMMUNICATIONS',
       company: 'FORTUNE 100 ITES ENTERPRISE',
@@ -1150,7 +1150,7 @@ const VideosServices = ({ setisPopupOpen }) => {
         type="semi"
       />
 
-      <TrustedBrandsSection className="bg-white py-7.5 md:py-15" />
+      <TrustedBrandsSection className="bg-white py-7.5 md:py-15" heading="Our Clients"/>
 
       <div id="leap-explore" className="py-6 md:py-12">
         <ExploreMoreSection
