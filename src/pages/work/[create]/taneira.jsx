@@ -1,5 +1,5 @@
 import { SCSLayout } from '@/components/Layout'
-// import { Telegram, Whatsapp, Twitter, Linkedin } from '@/components/icons'
+import { Telegram, Whatsapp, Twitter, Linkedin } from '@/components/icons'
 import {
   LineHeading,
   PostContent,
@@ -12,6 +12,7 @@ import {
   testimonialsDefault,
 } from '@/components/shared'
 import { CommercialSection } from '@/components/pages/work'
+import { useRouter } from 'next/router';
 // // import { createTestimonialData } from '@/pages/services/create'
 
 export const similarPostsData = [
@@ -131,25 +132,25 @@ const pageData = {
 }
 
 function Taneira() {
-  // const router = useRouter()
-  // const articleUrl = `https://www.makerrs.com${router.pathname}`
+  const router = useRouter()
+  const articleUrl = `https://www.makerrs.com${router.pathname}`
 
   const { logo, tags, commercials, desktopVideo, mobileVideo } = pageData
-  // const socials = [
-  //   {
-  //     key: 0,
-  //     href: `https://twitter.com/intent/tweet?text=${articleUrl}`,
-  //     color: '#000',
-  //     icon: <Twitter />,
-  //   },
+  const socials = [
+    {
+      key: 0,
+      href: `https://twitter.com/intent/tweet?text=${articleUrl}`,
+      color: '#000',
+      icon: <Twitter />,
+    },
 
-  //   {
-  //     key: 1,
-  //     href: `https://www.linkedin.com/shareArticle?mini=true&url=${articleUrl}`,
-  //     color: '#006699',
-  //     icon: <Linkedin />,
-  //   },
-  // ]
+    {
+      key: 1,
+      href: `https://www.linkedin.com/shareArticle?mini=true&url=${articleUrl}`,
+      color: '#006699',
+      icon: <Linkedin />,
+    },
+  ]
   return (
     <>
       <SEO 
