@@ -576,7 +576,7 @@ const CrewsServices = ({ setisPopupOpen }) => {
             </div>
             <div className="w-full md:w-3/5 px-4">
               <video
-                src="/img/services/crew/worldmap.mp4"
+                src="/img/services/crew/world_map_new.mp4"
                 autoPlay
                 loop
                 muted
