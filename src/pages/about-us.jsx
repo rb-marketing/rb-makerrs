@@ -18,6 +18,7 @@ import { Navigation } from 'swiper/modules'
 import { useLenis } from '@studio-freight/react-lenis'
 import Link from 'next/link'
 import React from 'react'
+import {explorecards} from '../utils/dummy'
 
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
