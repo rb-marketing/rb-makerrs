@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import { getPlayWorks } from '@/utils/graphql'
+import { formatPlayPosts } from '@/utils/formate'
 import { useRouter } from 'next/router'
 import { workPosts } from '@/utils/dummy'
 import {
-  SEO, TrustedBrandsSection, WorkListHeroSection
+  SEO,
+  TrustedBrandsSection,
+  WorkListHeroSection,
 } from '@/components/shared'
 import { ContentPostCard } from '@/components/shared/Cards/ContentPostCard'
 import { Button } from '@/components/ui'
@@ -11,19 +15,16 @@ import { aboutSchema } from '@/components/schema/about-schema'
 import { WorkDropdown } from '@/components/dropdown/work-dropdown'
 
 const getCountryFromCookie = () => {
-  if (typeof document === 'undefined') return null;
+  if (typeof document === 'undefined') return null
 
-  const match = document.cookie.match(/user-country=([^;]+)/);
-  return match ? match[1] : null;
-};
+  const match = document.cookie.match(/user-country=([^;]+)/)
+  return match ? match[1] : null
+}
 
-
-
-export default function WorkPage({ selectedvalue = 'featured' }) {
+const WorkPage = ({ works, selectedvalue = 'featured' }) => {
   const router = useRouter()
   const { category } = router.query;
-  const _posts = workPosts
-
+  const _posts = works
   const caseStudyTags = [
     {
       name: 'Featured',
@@ -71,7 +72,10 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     }
     if (storedTag) setSelectedTag(storedTag)
     if (!router.query.work) {
-      if (selectedvalue && caseStudyTags.some(tag => tag.url === selectedvalue)) {
+      if (
+        selectedvalue &&
+        caseStudyTags.some((tag) => tag.url === selectedvalue)
+      ) {
         setSelectedTag(selectedvalue)
       } else if (!storedTag) {
         setSelectedTag('featured')
@@ -82,7 +86,8 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
   }, [router.query.work, selectedvalue])
 
   const saveState = (scrollOverride) => {
-    const scroll = scrollOverride !== undefined ? scrollOverride : window.scrollY
+    const scroll =
+      scrollOverride !== undefined ? scrollOverride : window.scrollY
     sessionStorage.setItem('work-scroll', String(scroll))
     sessionStorage.setItem('work-visiblePosts', String(visiblePosts))
     sessionStorage.setItem('work-selectedTag', selectedTag || 'featured')
@@ -97,7 +102,10 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
       if (postsGrid) {
         const gridTop = postsGrid.getBoundingClientRect().top + window.scrollY
         const stickyHeight = stickyTabs?.offsetHeight || 0
-        window.scrollTo({ top: gridTop - stickyHeight - 70, behavior: "smooth" })
+        window.scrollTo({
+          top: gridTop - stickyHeight - 70,
+          behavior: 'smooth',
+        })
       }
     }
 
@@ -135,9 +143,7 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
       }
     }
     restore()
-
   }, [])
-
 
   useEffect(() => {
     setVisiblePosts(9)
@@ -152,7 +158,7 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     sessionStorage.setItem('work-selectedTag', tagUrl)
 
     // Shallow route update
-    router.push(`/work/${tagUrl}`, undefined, { shallow: true, scroll: false })
+    // router.push(`/work/${tagUrl}`, undefined, { shallow: true, scroll: false })
 
     // Scroll to posts
     setTimeout(() => {
@@ -161,7 +167,10 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
       if (postsGrid) {
         const topOffset = postsGrid.getBoundingClientRect().top + window.scrollY
         const stickyHeight = stickyTabs?.offsetHeight || 0
-        window.scrollTo({ top: topOffset - stickyHeight - 70, behavior: 'smooth' })
+        window.scrollTo({
+          top: topOffset - stickyHeight - 70,
+          behavior: 'smooth',
+        })
       }
     }, 50)
     setSelectedCategory('all')
@@ -187,7 +196,10 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
       if (postsGrid) {
         const gridTop = postsGrid.getBoundingClientRect().top + window.scrollY
         const stickyHeight = stickyTabs?.offsetHeight || 0
-        window.scrollTo({ top: gridTop - stickyHeight - 70, behavior: 'smooth' })
+        window.scrollTo({
+          top: gridTop - stickyHeight - 70,
+          behavior: 'smooth',
+        })
       }
     }, 100)
   }
@@ -195,7 +207,7 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
   const filteredPosts = _posts
     .filter((post) => {
       // 1️⃣ Region filter
-      if (post.region?.length && country && !post.region.includes(country)) {
+      if (post?.workDetails?.region?.length && country && !post?.workDetails?.region.includes(country)) {
         return false
       }
 
@@ -210,7 +222,7 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
       }
 
       if (selectedCategory !== 'all') {
-        if (!post.filter_type?.includes(selectedCategory)) {
+        if (!post?.workDetails?.filter_type?.includes(selectedCategory)) {
           return false
         }
       }
@@ -218,6 +230,16 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
       // 3️⃣ No tag selected → show post
       return true
     })
+    .sort((a, b) => {
+      if (!selectedTag) return 0;
+
+      const orderA = a.workDetails?.tab_order?.[selectedTag] ?? Number.MAX_SAFE_INTEGER;
+      const orderB = b.workDetails?.tab_order?.[selectedTag] ?? Number.MAX_SAFE_INTEGER;
+
+      return orderA - orderB;
+    })
+
+
     .slice(0, visiblePosts)
 
   return (
@@ -226,7 +248,8 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
         title="Top Branding, Video Production & Podcast Solutions | Makerrs"
         description="Get great brand design, scalable video production, branded podcast production, and winning creative campaigns for your borderless business."
         url={`https://www.makerrs.com/work/${selectedTag || 'featured'}`}
-        keywords="B2B Brands, Brand solutions, B2B Business, Work, Portfolio, Big Ideas, Projects, Work Showcase, Case Study, Case Studies, Creativity, Innovation, B2C Brands, B2C Business" />
+        keywords="B2B Brands, Brand solutions, B2B Business, Work, Portfolio, Big Ideas, Projects, Work Showcase, Case Study, Case Studies, Creativity, Innovation, B2C Brands, B2C Business"
+      />
 
       <section className="py-14 md:py-24 overflow-hidden bg-rb-mercury text-rb-black ">
         <WorkListHeroSection
@@ -237,8 +260,14 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
           pillImg="/img/who-we-are/about-pill.webp"
           marqueType="img"
           contentClassName="max-w-[1100px] w-full leading-[21px] md:text-[32px] md:leading-9.5 mt-8 md:!mt-16 cap-trim font-semibold !tracking-[-0.56px] md:!tracking-[-0.08rem]"
-          content={<>Big ideas, captivating design, campaign magic and flawless global video production. We&apos;re the creative engine behind unstoppable brand growth.</>}
-          duration={50}
+          content={
+            <>
+              Big ideas, captivating design, campaign magic and flawless global
+              video production. We&apos;re the creative engine behind
+              unstoppable brand growth.
+            </>
+          }
+          duration={25}
         />
       </section>
 
@@ -246,22 +275,32 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
         {/* Tags */}
         <div className="sticky top-0 bg-white z-[2] p-2 md:p-0 border-b border-gray-300 sticky-tab-section">
           <div className="relative mt-0 py-6">
-            <div ref={scrollRef} className="flex gap-3 overflow-x-auto overflow-y-hidden no-scrollbar md:justify-center md:gap-12">
-              {caseStudyTags.map(tag => (
-                <a key={tag.url} href="#" onClick={e => { e.preventDefault(); handleTagClick(tag.url) }}
+            <div
+              ref={scrollRef}
+              className="flex gap-3 overflow-x-auto overflow-y-hidden no-scrollbar md:gap-12"
+            >
+              {caseStudyTags.map((tag) => (
+                <a
+                  key={tag.url}
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    handleTagClick(tag.url)
+                  }}
                   className={`inline-block align-top leading-[1] p-0 m-0 !mr-[9px] text-[32px] font-medium font-everett relative whitespace-nowrap
-                   ${selectedTag === tag.url ? 'text-rb-link-green after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[7px]' : 'text-[#11101080] hover:text-rb-link-green'}`}>
+                   ${selectedTag === tag.url ? 'text-rb-link-green after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[7px]' : 'text-[#11101080] hover:text-rb-link-green'}`}
+                >
                   {tag.name}
                 </a>
               ))}
             </div>
           </div>
         </div>
-
         {selectedTag === 'podcast' ? (
-            <h2 className='w-full text-sm leading-[21px] max-w-[1100px] md:text-[32px] md:leading-9.5 mt-8 md:!mt-16 cap-trim font-semibold !tracking-[-0.56px] md:!tracking-[-0.08rem]'>Coming Soon!</h2>
+          <h2 className="w-full text-sm leading-[21px] max-w-[1100px] md:text-[32px] md:leading-9.5 mt-8 md:!mt-16 cap-trim font-semibold !tracking-[-0.56px] md:!tracking-[-0.08rem]">
+            Coming Soon!
+          </h2>
         ) : (
-
           <div className="container work-posts-section">
             {['featured', 'videos', 'campaign'].includes(selectedTag) && (
               <div className='blogs-dd mt-6 md:mt-9'>
@@ -273,11 +312,15 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
               </div>
             )}
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-16 md:mt-18">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-8">
               {filteredPosts.length > 0 ? (
-                filteredPosts.map(p => (
+                filteredPosts.map((p) => (
                   <div key={p.key} onPointerDown={() => saveState()}>
-                    <ContentPostCard href={`/${selectedTag}/${p.case_study_title}`} page="work" {...p} />
+                    <ContentPostCard
+                      href={`/${p?.workDetails?.url}/${p.case_study_title}`}
+                      page="work"
+                      {...p}
+                    />
                   </div>
                 ))
               ) : (
@@ -286,52 +329,48 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
                 </p>
               )}
             </div>
-          </div >
-        )
-        }
-
-
+          </div>
+        )}
 
         {/* See More / See Less */}
-          {
-          filteredPosts.length > 0 && (
-            <div className="text-center">
-              {(() => {
-                // If no tag selected → total is filteredPosts length
-                if (!selectedTag) {
-                  const total = filteredPosts.length;
+        {filteredPosts.length > 0 && (
+          <div className="text-center">
+            {(() => {
+              // If no tag selected → total is filteredPosts length
+              if (!selectedTag) {
+                const total = filteredPosts.length
 
-                  if (total > 6 && visiblePosts < total) {
-                    return (
-                      <Button
-                        className="w-fit mx-auto mt-[30px] md:mt-15"
-                        onClick={handleSeeMore}
-                        suffix={<LineArrow />}
-                      >
-                        SEE MORE
-                      </Button>
-                    );
-                  }
-
-                  if (total > 6 && visiblePosts >= total) {
-                    return (
-                      <Button
-                        className="w-fit mx-auto mt-[30px] md:mt-15"
-                        onClick={handleSeeLess}
-                        suffix={<LineArrow />}
-                      >
-                        SEE LESS
-                      </Button>
-                    );
-                  }
-
-                  return null;
+                if (total > 9 && visiblePosts < total) {
+                  return (
+                    <Button
+                      className="w-fit mx-auto mt-[30px] md:mt-15"
+                      onClick={handleSeeMore}
+                      suffix={<LineArrow />}
+                    >
+                      SEE MORE
+                    </Button>
+                  )
                 }
 
-                // Tag selected → count safely
-                 const total = _posts.filter((post) => {
+                if (total > 9 && visiblePosts >= total) {
+                  return (
+                    <Button
+                      className="w-fit mx-auto mt-[30px] md:mt-15"
+                      onClick={handleSeeLess}
+                      suffix={<LineArrow />}
+                    >
+                      SEE LESS
+                    </Button>
+                  )
+                }
+
+                return null
+              }
+
+              // Tag selected → count safely
+              const total = _posts.filter((post) => {
                 // region filter
-                if (post.region?.length && country && !post.region.includes(country)) {
+                if (post?.workDetails?.region?.length && country && !post?.workDetails?.region.includes(country)) {
                   return false
                 }
 
@@ -345,7 +384,7 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
 
                 // dropdown category filter
                 if (selectedCategory !== 'all') {
-                  if (!post.filter_type?.includes(selectedCategory)) {
+                  if (!post?.workDetails?.filter_type?.includes(selectedCategory)) {
                     return false
                   }
                 }
@@ -353,40 +392,38 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
                 return true
               }).length
 
-                if (total > 6 && visiblePosts < total) {
-                  return (
-                    <Button
-                      className="w-fit mx-auto mt-[30px] md:mt-15"
-                      onClick={handleSeeMore}
-                      suffix={<LineArrow />}
-                    >
-                      SEE MORE
-                    </Button>
-                  );
-                }
 
-                if (total > 6 && visiblePosts >= total) {
-                  return (
-                    <Button
-                      className="w-fit mx-auto mt-[30px] md:mt-15"
-                      onClick={handleSeeLess}
-                      suffix={<LineArrow />}
-                    >
-                      SEE LESS
-                    </Button>
-                  );
-                }
+              if (total > 9 && visiblePosts < total) {
+                return (
+                  <Button
+                    className="w-fit mx-auto mt-[30px] md:mt-15"
+                    onClick={handleSeeMore}
+                    suffix={<LineArrow />}
+                  >
+                    SEE MORE
+                  </Button>
+                )
+              }
 
-                return null;
-              })()}
-            </div>
-          )
-        }
+              if (total > 9 && visiblePosts >= total) {
+                return (
+                  <Button
+                    className="w-fit mx-auto mt-[30px] md:mt-15"
+                    onClick={handleSeeLess}
+                    suffix={<LineArrow />}
+                  >
+                    SEE LESS
+                  </Button>
+                )
+              }
 
-      </div >
+              return null
+            })()}
+          </div>
+        )}
+      </div>
 
       <TrustedBrandsSection className="py-12 md:pt-24 md:pb-12" />
-
 
       <script
         type="application/ld+json"
@@ -395,3 +432,15 @@ export default function WorkPage({ selectedvalue = 'featured' }) {
     </>
   )
 }
+export async function getStaticProps() {
+  const { data } = await getPlayWorks()
+
+  const works = formatPlayPosts(data?.works?.nodes)
+
+  return {
+    props: {
+      works,
+    },
+  }
+}
+export default WorkPage;

@@ -34,7 +34,7 @@ export const WorkHeroSection = ({
               alt=""
               loading="lazy"
               {...logo}
-              className="max-w-[160px] md:max-w-full"
+              // width={`${specifyWidth}`}
             />
             <h1 className="text-black font-medium mt-6 uppercase text-3xl md:text-[54px] lg:leading-14 font-everett">{title}</h1>
             <div className="flex flex-wrap gap-2 mb-7.5 md:mb-0 mt-10 text-xs leading-5 font-semibold text-rb-black">
@@ -140,7 +140,7 @@ export const WorkHeroSection = ({
               />
             </div>
             <div className={`relative aspect-auto md:aspect-auto w-[calc(100%_+_2rem)] md:w-full -mx-4 md:mx-0 ${!image ? 'hidden' : ''}`}>
-              <img src={image} alt={alt} srcset=""/>
+              <img src={image?.src} alt={alt} srcSet=""/>
             </div>
           </>
         }
