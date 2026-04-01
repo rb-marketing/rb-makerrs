@@ -15,8 +15,8 @@ const ArticleSingle = ({ article }) => {
   const logo = useMemo(() => {
     return {
       src: article?.workDetails?.logo?.sourceUrl,
-      width: 150,
-      height: 70,
+      // width: 150,
+      // height: 'auto'
     }
   }, [])
   const tags = useMemo(() => {
