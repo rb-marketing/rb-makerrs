@@ -1,8 +1,8 @@
-const { NextFederationPlugin } = require('@module-federation/nextjs-mf')
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
+  turbopack: {},
 
   webpack: (config, options) => {
     const { isServer } = options
@@ -42,6 +42,20 @@ const nextConfig = {
 
   experimental: {
     middlewarePrefetch: 'strict',
+  },
+
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'blogs.makerrs.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'secure.gravatar.com',
+      },
+    ],
   },
 }
 

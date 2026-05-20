@@ -2,7 +2,7 @@ import { teamSchema } from '@/components/schema/team-schema'
 import { LineHeading, RollupNumber } from '@/components/shared'
 import { SEO } from '@/components/shared/SEO'
 import styles from '@/styles/sections/StatsSection.module.scss'
-import { useLenis } from '@studio-freight/react-lenis'
+import { useLenis } from 'lenis/react'
 import Script from 'next/script'
 import { Fragment, useEffect, useState } from 'react'
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
@@ -389,7 +389,7 @@ const Team = () => {
         title="International Experts Marketing Agency"
         description="Meet our diverse global team, experts in holistic marketing, ready to deliver brand growth worldwide."
         keywords="Global Team For Holistic Marketing, International Experts Marketing Agency, Diverse Professionals For Marketing Content Strategy, Meet Our Team, Multicultural Team For Digital Brand Management, Global Expertise Marketing Content Strategy, Team Members Marketing Agency, International Presence, Collaborative Team For Creative Content Marketing, Our People"
-       url="https://www.makerrs.com/about-us"
+       url="https://www.redbangle.com/global-team-for-holistic-marketing"
       />
 
       <div style={{ display: 'none' }}>

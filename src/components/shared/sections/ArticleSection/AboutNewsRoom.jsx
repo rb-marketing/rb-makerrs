@@ -108,7 +108,7 @@ const articles = [
     id: 7,
     href: 'https://cxotoday.com/interviews/red-bangles-technological-innovations-navigating-video-demand-in-a-dynamic-landscape/',
     title:
-      'Red Bangle’s Technological Innovations Navigating Video Demand and Brand Content space in a Dynamic Landscape',
+      'Red Bangle Technological Innovations Navigating Video Demand and Brand Content space in a Dynamic Landscape',
     author: 'CXOToday| Interview',
     image: '/img/articles/Lakshmi_Rebecca.webp',
     alt: 'Lakshmi Rebecca',

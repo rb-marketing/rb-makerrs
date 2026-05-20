@@ -418,7 +418,7 @@ const Career = () => {
               },
               {
                 id: 6,
-                title: 'Family & Recovery Leave',
+                 title: 'Family & Recovery Leave',
                 description:
                   'We offer paid maternity, paternity, adoption leave to full time employees.',
               },
@@ -549,10 +549,13 @@ const Career = () => {
           <LineHeading className="mb-7">WE ARE HIRING</LineHeading>
 
           <h2 className="text-title md:text-title-md font-bold md:mb-18 mb-6">
-            Take a look at our open positions
+            <a href="https://www.linkedin.com/company/makerrsagency/jobs/" target="_blank" className="hover:text-blue-600">
+              Click here
+            </a>{" "}
+            to explore open positions
           </h2>
 
-          <div className="mt-20 group">
+          {/* <div className="mt-20 group">
             {filteredJobOpenings.slice(0, displayCount).map(
               ({
                 id,
@@ -597,7 +600,7 @@ const Career = () => {
                   </a>
                 )
             )}
-          </div>
+          </div> */}
 
           {displayCount < filteredJobOpenings.length && (
             <div className="mt-12 text-center">

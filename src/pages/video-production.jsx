@@ -19,8 +19,6 @@ import { postsMapper } from '@/utils/mapper'
 import { Accordion } from '@/components/ui'
 import { Testimonials } from '@/components/shared'
 import { useState } from 'react'
-import { getPlayWorks } from '@/utils/graphql'
-import { formatPlayPosts } from '@/utils/formate'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { useRef, useEffect } from 'react'
@@ -41,9 +39,9 @@ const VideosServices = ({ setisPopupOpen }) => {
   const prevButtonRef = useRef(null)
   const nextButtonRef = useRef(null)
   const router = useRouter()
-  const _posts = videoPosts.map(postsMapper)
   const [modal, setModal] = useState(INIT_MODAL)
   const [stopVisible, setstopVisible] = useState(false)
+  const _posts = videoPosts.map(postsMapper)
 
   const [isSticky, setSticky] = useState(false)
   const [isOverlapping, setIsOverlapping] = useState(false)
@@ -630,7 +628,7 @@ const VideosServices = ({ setisPopupOpen }) => {
         workDetails: {
           videolink:
             // 'https://rb-video-poc.s3.ap-south-1.amazonaws.com/slb/v2/index.html',
-            'https://vimeo.com/1008706015?share=copy'
+            'https://vimeo.com/1008706015?share=copy',
         },
         content:
           'SLB was digitizing its sales, manufacturing, and product engineering workflows. And this interactive explainer helped their IT team launch and drive adoption across the organisation.',
@@ -732,7 +730,7 @@ const VideosServices = ({ setisPopupOpen }) => {
           duration: '02:34',
         },
       ],
-    }
+    },
   ]
 
   const gridData = [
@@ -1110,14 +1108,17 @@ const VideosServices = ({ setisPopupOpen }) => {
         </div>
       </section>
 
+      <TrustedBrandsSection
+        className="bg-white py-7.5 md:py-15"
+        heading="Our Clients"
+      />
+
       <Testimonials
         title={'WHAT CLIENTS SAY'}
         className="pt-18 pb-7.5 md:pt-30 md:pb-15"
         testimonialData={testimonialData}
         type="semi"
       />
-
-      <TrustedBrandsSection className="bg-white py-7.5 md:py-15" heading="Our Clients"/>
 
       <div id="leap-explore" className="py-6 md:py-12">
         <ExploreMoreSection
@@ -1173,16 +1174,5 @@ const VideosServices = ({ setisPopupOpen }) => {
       </Script> */}
     </>
   )
-}
-export async function getStaticProps() {
-  const { data } = await getPlayWorks()
-
-  const works = formatPlayPosts(data?.works?.nodes)
-
-  return {
-    props: {
-      works,
-    },
-  }
 }
 export default VideosServices

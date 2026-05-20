@@ -15,18 +15,25 @@ export const createTestimonialData = [
   ,
   {
     key: 1,
-    quote:
+    quote: (
       <>
         <div>
-          Makerrs captured the very essence of our brand –the vibrant energy, the quirky charm, and the pure joy of gathering around delicious food. What was especially impressive was the creative strategy that led to the curation of design and copy. They took the colors, the iconic signages, the energy of the local markets, and transformed them into a fresh, modern expression. We&apos;ve seen a tremendous response since the launch. People are drawn to the unique identity. We couldn&apos;t be happier.
+          Makerrs captured the very essence of our brand –the vibrant energy,
+          the quirky charm, and the pure joy of gathering around delicious food.
+          What was especially impressive was the creative strategy that led to
+          the curation of design and copy. They took the colors, the iconic
+          signages, the energy of the local markets, and transformed them into a
+          fresh, modern expression. We&apos;ve seen a tremendous response since
+          the launch. People are drawn to the unique identity. We couldn&apos;t
+          be happier.
         </div>
-      </>,
+      </>
+    ),
     name: 'KUNCHERIA MARATTUKALAM',
     designation: 'FOUNDER & DIRECTOR',
     company: 'MARATT GROUP',
     image: {
-      srcSet:
-        '/img/testimonials/kuncheria_marattukalam.jpg',
+      srcSet: '/img/testimonials/kuncheria_marattukalam.jpg',
       sizes: '(max-width:768px) 533px, 1066px',
     },
   },
@@ -55,7 +62,7 @@ export const createTestimonialData = [
         '/img/testimonials/bharat.webp 533w, /img/testimonials/bharat.webp 1066w',
       sizes: '(max-width:768px) 533px, 1066px',
     },
-  }
+  },
 ]
 
 export const scs = {
@@ -217,9 +224,15 @@ export const similarPosts = [
     company: 'L74 Craft Cider',
     image: '/img/works/l74-strategy.jpg',
     alt: 'metro wholesale ad',
-    tags: ['Brand Strategy', 'Campaign Strategy', 'Creative Concepts', 'Content Production', 'Alcobev'],
+    tags: [
+      'Brand Strategy',
+      'Campaign Strategy',
+      'Creative Concepts',
+      'Content Production',
+      'Alcobev',
+    ],
     href: '/work/l74-case-study',
-  }
+  },
   // {
   //   key: 0,
   //   name: '5 STAR QUALITY',
@@ -247,7 +260,6 @@ export const similarPosts = [
   //   tags: ['Creative Ideation', 'Content Production'],
   //   href: '/work/create/swiggy-winter-jacket-case-study',
   // },
-
 ]
 export const campaignSimilarPosts = [
   {
@@ -256,16 +268,21 @@ export const campaignSimilarPosts = [
     name: 'Trip Different',
     company: 'L74 Craft Cider',
     image: '/img/works/l74-strategy.jpg',
-    tags: ['Brand Strategy', 'Campaign Strategy', 'Creative Concepts', 'Content Production', 'Alcobev'],
+    tags: [
+      'Brand Strategy',
+      'Campaign Strategy',
+      'Creative Concepts',
+      'Content Production',
+      'Alcobev',
+    ],
     alt: 'Trip Different with L74 Cider',
-
 
     thumbnail: {
       src: '/img/works/l74-placeholder.jpg',
       width: '606',
       height: '874',
     },
-    href: '/work/l74-case-study'
+    href: '/work/l74-case-study',
   },
   {
     key: 1,
@@ -280,7 +297,7 @@ export const campaignSimilarPosts = [
       width: '606',
       height: '874',
     },
-    href: '/work/create/indeed-case-study'
+    href: '/work/create/indeed-case-study',
   },
   {
     key: 2,
@@ -292,7 +309,6 @@ export const campaignSimilarPosts = [
     tags: ['Creative Ideation', 'Content Production', 'Content Production'],
     href: '/work/create/metro-wholesale-case-study',
   },
-
 ]
 
 export const scsPosts = [
@@ -320,42 +336,41 @@ export const scsPosts = [
 ]
 
 export const campaignPosts = [
+  {
+    key: 0,
+    name: 'Transforming how Indian SMBs Hire',
+    company: 'Indeed',
+    image: '/img/works/indeed.jpg',
+    alt: 'Indeed',
+    tags: ['Digital Campaign', 'Ad Film', ' Jobs'],
+    href: '/brand-campaign/indeed-india-radhika-apte',
+  },
 
   {
-  key: 0,
-  name: 'Transforming how Indian SMBs Hire',
-  company: 'Indeed',
-  image: '/img/works/indeed.jpg',
-  alt: 'Indeed',
-  tags: ['Digital Campaign', 'Ad Film', ' Jobs'],
-  href: '/brand-campaign/indeed-india-radhika-apte'
-},
+    key: 1,
+    name: 'Action-packed campaign film for Redmi Buds 6',
+    image: '/img/works/xiaomi_buds_6_work_thumbnail.png',
+    company: 'Xiaomi',
+    alt: 'Redmi Buds 6',
+    tags: [
+      'Consumer Electronics',
+      'Ad Film',
+      'Digital Campaign',
+      'Product Launch Campaign',
+    ],
+    href: '/brand-campaign/xiaomi-buds-6',
+  },
 
-{
-  key: 1,
-  name: 'Action-packed campaign film for Redmi Buds 6',
-  image: '/img/works/xiaomi_buds_6_work_thumbnail.png',
-  company: 'Xiaomi',
-  alt: 'Redmi Buds 6',
-  tags: [
-    'Consumer Electronics',
-    'Ad Film',
-    'Digital Campaign',
-    'Product Launch Campaign'
-  ],
-  href: '/brand-campaign/xiaomi-buds-6'
-},
-
-{
-  key: 2,
-  name: 'Transforming relationships for SME banks in U.S.A',
-  company: 'VYMO',
-  alt: 'VYMO',
-  image: '/img/works/vymo_sme.webp',
-  tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
-  href: '/brand-campaign/vymo-usa-banking',
-},
-{
+  {
+    key: 2,
+    name: 'Transforming relationships for SME banks in U.S.A',
+    company: 'VYMO',
+    alt: 'VYMO',
+    image: '/img/works/vymo_sme.webp',
+    tags: ['SaaS', 'Digital Campaign', 'Explainer Video', 'Marketing Video'],
+    href: '/brand-campaign/vymo-usa-banking',
+  },
+  {
     key: 3,
     name: 'Global Leaders: a Hiring Campaign',
     image: '/img/case-study/infosys-global-leaders.webp',
@@ -401,8 +416,14 @@ export const contentSolutionPosts = [
     image: '/img/works/jewels_thumbnail.jpg',
     company: 'Taneira',
     alt: 'Jewels Of India',
-    tags: ['Short Film', 'Interview', 'Web Series', 'Handcrafted Jewellery', 'Craftsmanship'],
-    href: '/work/create/jewels-case-study'
+    tags: [
+      'Short Film',
+      'Interview',
+      'Web Series',
+      'Handcrafted Jewellery',
+      'Craftsmanship',
+    ],
+    href: '/work/create/jewels-case-study',
   },
   // {
   //   key: 1,
@@ -440,8 +461,14 @@ export const contentWorkPosts = [
     image: '/img/works/jewels_thumbnail.jpg',
     company: 'Taneira',
     alt: 'Jewels Of India',
-    tags: ['Short Film', 'Interview', 'Web Series', 'Handcrafted Jewellery', 'Craftsmanship'],
-    href: '/work/create/jewels-case-study'
+    tags: [
+      'Short Film',
+      'Interview',
+      'Web Series',
+      'Handcrafted Jewellery',
+      'Craftsmanship',
+    ],
+    href: '/work/create/jewels-case-study',
   },
   // {
   //   key: 1,
@@ -478,13 +505,19 @@ export const ccsPosts = [
     image: '/img/works/l74_strategy_service_work page.jpg',
     company: 'L74 Craft Cider',
     alt: 'Trip Different with L74 Cider',
-    tags: ['Brand Strategy', 'Campaign Strategy', 'Creative Concepts', 'Content Production', 'Alcobev'],
+    tags: [
+      'Brand Strategy',
+      'Campaign Strategy',
+      'Creative Concepts',
+      'Content Production',
+      'Alcobev',
+    ],
     thumbnail: {
       src: '/img/works/l74_strategy_service_work page.jpg',
       width: '606',
       height: '874',
     },
-    href: '/work/l74-case-study'
+    href: '/work/l74-case-study',
   },
   // {
   //   key: 0,
@@ -1461,13 +1494,18 @@ export const strategyPosts = [
     company: 'Lillia Care',
     image: '/img/works/lillia_img.jpg',
     alt: 'Lillia Care',
-    tags: ['Healthtech', 'Brand Identity', 'Website Design', 'Website Development'],
-    href: '/brand-designs/lillia-care-brand-launch'
+    tags: [
+      'Healthtech',
+      'Brand Identity',
+      'Website Design',
+      'Website Development',
+    ],
+    href: '/brand-designs/lillia-care-brand-launch',
   },
 
   {
     key: 1,
-    name: "Exicom Brand Refresh: Choose Smart. Charge Smart.",
+    name: 'Exicom Brand Refresh: Choose Smart. Charge Smart.',
     company: 'Exicom',
     image: '/img/case-study/exicom_brand_refresh_work.jpg',
     alt: 'Exicom',
@@ -1475,13 +1513,12 @@ export const strategyPosts = [
     href: '/brand-designs/exicom-EV-charger-rebrand',
   },
 
-
   {
     key: 2,
     name: 'Branding for an Indulgent Dessert Café',
     company: 'P.U. Dingding',
     image: '/img/works/pudingding-thumbnail.jpg',
-    tags: ['F&B', 'Cafe', 'Brand Identity', 'Launch Video'],
+   tags: ['F&B', 'Cafe', 'Brand Identity', 'Launch Video'],
     href: '/brand-designs/pu-dingding-cafe',
   },
   {
@@ -1515,37 +1552,57 @@ export const strategyPosts = [
     tags: ['Automotive', 'XR Solution (AR/VR/MR)', 'Gamified Experience'],
     href: '/brand-design/bajaj-pulsar-augmented-reality',
   },
+  // {
+  //   key: 2,
+  //   name: "Unveiling Harmony Direct 2.0 - Electric Fleet Charger",
+  //   company: 'Exicom',
+  //   image: '/img/works/exicom_work_thumbnail.png',
+  //   alt: 'Exicom',
+  //   tags: ['Mobility', 'Product Launch Video', 'Marketing Video', '3D Animation Video'],
+  //   href: '/brand-designs/exicom-EV-charger-rebrand'
+  // },
 ]
 
- export const videoPosts = [
+export const videoPosts = [
     {
-    key: 0,
-    name: 'Global Leaders: a Hiring Campaign',
-    image: '/img/case-study/infosys-global-leaders.webp',
-    company: 'Infosys',
-    alt: 'infosys-global-leaders',
-    tags: ['Technology', 'Campaign', 'Employer Branding Video', 'Global Video Production'],
-    href: '/brand-campaign/infosys-global-employer-brand',
-  },
-  {
-    key: 1,
-    name: '220% Organic YouTube Subscriber Growth in India',
-    company: 'Indeed',
-    alt: 'Indeed YouTube Content',
-    tags: ['Hiring Platform', 'YouTube Content'],
-    image: '/img/works/indeed_youtube_content_main_thumbnail.png',
-    href: '/video-production/indeed-youtube-content',
-  },
-  {
-    key: 2,
-    name: 'Campaign Explainer Video for HRM SAAS product',
-    company: 'MULTIPLIER',
-    image: '/img/works/multiplier_work.webp',
-    alt: 'MULTIPLIER',
-    tags: ['SaaS', 'Lead Gen Campaign', 'Product Launch Video', 'Explainer Video', '2D Animation Video'],
-    href: '/video-production/multiplier-explainer-video',
-  },
-  {
+      key: 0,
+      name: 'Global Leaders: a Hiring Campaign',
+      image: '/img/case-study/infosys-global-leaders.webp',
+      company: 'Infosys',
+      alt: 'infosys-global-leaders',
+      tags: [
+        'Technology',
+        'Campaign',
+        'Employer Branding Video',
+        'Global Video Production',
+      ],
+      href: '/brand-campaign/infosys-global-employer-brand',
+    },
+    {
+      key: 1,
+      name: '220% Organic YouTube Subscriber Growth in India',
+      company: 'Indeed',
+      alt: 'Indeed YouTube Content',
+      tags: ['Hiring Platform', 'YouTube Content'],
+      image: '/img/works/indeed_youtube_content_main_thumbnail.png',
+      href: '/video-production/indeed-youtube-content',
+    },
+    {
+      key: 2,
+      name: 'Campaign Explainer Video for HRM SAAS product',
+      company: 'MULTIPLIER',
+      image: '/img/works/multiplier_work.webp',
+      alt: 'MULTIPLIER',
+      tags: [
+        'SaaS',
+        'Lead Gen Campaign',
+        'Product Launch Video',
+        'Explainer Video',
+        '2D Animation Video',
+      ],
+      href: '/video-production/multiplier-explainer-video',
+    },
+    {
       key: 3,
       name: 'Gordon Ritter on the Future of Software',
       company: 'Vymo',
@@ -1582,7 +1639,7 @@ export const strategyPosts = [
       image: '/img/works/womens-at-tata-autocamp.webp',
       href: '/video-production/tata-inclusion-auto-comp',
     },
-]
+  ]
 
 export const featuredPlay = ecs.slice(0, 8)
 
@@ -1954,6 +2011,18 @@ export const workPosts = [
     case_study_title: 'thelagram',
     href: '/brand-design/thelagram-restaurant',
     region: [],
+  },
+  {
+    key: 100,
+    name: 'ABIS Pro Brand Identity: Goodness. Guaranteed.',
+    image: '/img/works/abis_pro_work_thumbnail.jpg',
+    company: 'Abis Pro',
+    alt: 'ABIS Pro',
+    tabs: ['design'],
+    tags: ['FMCG', 'Brand Identity'],
+    case_study_title: 'abis-pro-meats',
+    href: '/brand-design/abis-pro-meats',
+    region: ['IN'],
   },
 
   {
@@ -2730,6 +2799,19 @@ export const workPosts = [
     tabs: ['videos'],
     case_study_title: 'ashirvad-plumbing-school-csr-video',
     href: '/video-production/csr-video-ashirvad',
+    region: [],
+    filter_type : ['b2b'],
+  },
+  {
+    key: 111,
+    name: 'Case Study Video: Tech for Safe Mining',
+    company: 'Infosys',
+    // image: '/img/case-study/shirvad_pipes.png',
+    alt: 'covid',
+    tags: ['2.5D Animation', 'Mining', 'Case Study Video', 'Tech Marketing Video', 'Pandemic'],
+    tabs: ['videos'],
+    case_study_title: 'Case Study Video: Tech for Safe Mining',
+    href: '/video-production/covid-19',
     region: [],
     filter_type : ['b2b'],
   },

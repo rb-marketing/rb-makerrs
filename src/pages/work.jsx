@@ -13,6 +13,7 @@ import { Button } from '@/components/ui'
 import { LineArrow } from '@/components/icons'
 import { aboutSchema } from '@/components/schema/about-schema'
 import { WorkDropdown } from '@/components/dropdown/work-dropdown'
+import workPageOrder from '@/utils/workOrder'
 
 const getCountryFromCookie = () => {
   if (typeof document === 'undefined') return null
@@ -57,6 +58,11 @@ const WorkPage = ({ works, selectedvalue = 'featured' }) => {
   const [visiblePosts, setVisiblePosts] = useState(9)
   const scrollRef = React.useRef(null)
   const [country, setCountry] = useState(null)
+  const currentTabOrder = workPageOrder[selectedTag] || [];
+  const orderMap = currentTabOrder.reduce((acc, title, index) => {
+    acc[title] = index;
+    return acc;
+  }, {});
 
   useEffect(() => {
     const detectedCountry = getCountryFromCookie()
@@ -314,12 +320,13 @@ const WorkPage = ({ works, selectedvalue = 'featured' }) => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-24 mt-8">
               {filteredPosts.length > 0 ? (
-                filteredPosts.map((p) => (
-                  <div key={p.key} onPointerDown={() => saveState()}>
+                filteredPosts.map(({ key, ...post }, idx) => (
+                  <div key={key} onPointerDown={() => saveState()}>
                     <ContentPostCard
-                      href={`/${p?.workDetails?.url}/${p.case_study_title}`}
+                      href={`/${post?.workDetails?.url}/${post.case_study_title}`}
                       page="work"
-                      {...p}
+                      priority={idx < 3}
+                      {...post}
                     />
                   </div>
                 ))
