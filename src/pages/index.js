@@ -1,5 +1,7 @@
+import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import { SEO } from '@/components/shared/SEO'
-import { SolutionsSection, Marquee, VideoModal, RollupNumber, Testimonials } from '@/components/shared'
+import { Marquee, VideoModal, RollupNumber } from '@/components/shared'
 import { Button, Accordion } from '@/components/ui'
 import { LineArrow } from '@/components/icons'
 import { LineHeading, RevealText } from '@/components/shared'
@@ -8,7 +10,16 @@ import { gsap } from 'gsap'
 import statsStyles from '@/styles/sections/StatsSection.module.scss'
 import styles from '@/styles/home.module.scss'
 import Link from 'next/link'
-import { ArticleSection } from '@/components/shared/sections/ArticleSection'
+
+const SolutionsSection = dynamic(() =>
+  import('@/components/shared/sections/Solutions').then(m => ({ default: m.SolutionsSection }))
+)
+const Testimonials = dynamic(() =>
+  import('@/components/shared/sections/Testimonials').then(m => ({ default: m.Testimonials }))
+)
+const ArticleSection = dynamic(() =>
+  import('@/components/shared/sections/ArticleSection/ArticleSection').then(m => ({ default: m.ArticleSection }))
+)
 import { getLatestArticle, getPlaySliderData } from '@/utils/graphql'
 import { formateBlogPostFunc } from '@/utils/formate'
 const LandPage = ({playWorks , articles}) => {
@@ -22,7 +33,7 @@ const LandPage = ({playWorks , articles}) => {
     },
     {
       id: 1,
-      name: 'infosys-logo.jpg',
+      name: 'infosys-logo.webp',
       width: '90',
       height: '30',
       alt: 'Infosys',
@@ -37,7 +48,7 @@ const LandPage = ({playWorks , articles}) => {
     },
     {
       id: 3,
-      name: 'pudingding.png',
+      name: 'pudingding.webp',
       width: '100',
       height: '30',
       alt: 'pudingding',
@@ -82,7 +93,7 @@ const LandPage = ({playWorks , articles}) => {
     },
     {
       id: 9,
-      name: 'mumbai-indians.png',
+      name: 'mumbai-indians.webp',
       width: '100px',
       // height: '40px',
       alt: 'mumbai-indians',
@@ -138,14 +149,14 @@ const LandPage = ({playWorks , articles}) => {
     },
     {
       id: 17,
-      name: 'exicom.png',
+      name: 'exicom.webp',
       width: '163',
       height: '44',
       alt: 'exicom',
     },
     {
       id: 18,
-      name: 'treebo.png',
+      name: 'treebo.webp',
       width: '163',
       height: '44',
       alt: 'treebo',
@@ -166,7 +177,7 @@ const LandPage = ({playWorks , articles}) => {
     },
     {
       id: 21,
-      name: 'komatsu.png',
+      name: 'komatsu.webp',
       width: '140',
       height: '44',
       alt: 'komatsu',
@@ -250,7 +261,7 @@ const LandPage = ({playWorks , articles}) => {
       company: 'DARUIESTE ARIPI',
       image: {
         srcSet:
-          `/img/testimonials/alina-patrahau.jpg 533w, /img/testimonials/alina-patrahau.jpg 1066w`,
+          `/img/testimonials/alina-patrahau.webp 533w, /img/testimonials/alina-patrahau.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -266,7 +277,7 @@ const LandPage = ({playWorks , articles}) => {
       image: {
         srcSet:
 
-          `/img/testimonials/kuncheria_marattukalam.jpg 533w, /img/testimonials/kuncheria_marattukalam.jpg 1066w`,
+          `/img/testimonials/kuncheria_marattukalam.webp 533w, /img/testimonials/kuncheria_marattukalam.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -320,7 +331,7 @@ const LandPage = ({playWorks , articles}) => {
       image: {
         srcSet:
 
-          `/img/testimonials/rinku-agarwal.png 533w, /img/testimonials/rinku-agarwal.png 1066w`,
+          `/img/testimonials/rinku-agarwal.webp 533w, /img/testimonials/rinku-agarwal.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -333,7 +344,7 @@ const LandPage = ({playWorks , articles}) => {
       company: 'P.U. DINGDING',
       image: {
         srcSet:
-          `/img/testimonials/nakul_1.jpg 533w, /img/testimonials/nakul_1.jpg 1066w`,
+          `/img/testimonials/nakul_1.webp 533w, /img/testimonials/nakul_1.webp 1066w`,
         sizes: '(max-width:768px) 533px, 1066px',
       },
     },
@@ -506,56 +517,65 @@ const LandPage = ({playWorks , articles}) => {
     }
     window.addEventListener('resize', resize)
 
-    let singleLetterTimeline = gsap.timeline({
-      ease: 'power2.out',
-      repeat: -1,
-    })
+    let singleLetterTimeline
+    let letterTimeline
 
-    if (document.querySelector(`.${styles.letterRoll}`)) {
-      singleLetterTimeline
-        .to(
-          `.${styles.letterRoll}`,
+    const startHeroAnimations = () => {
+      singleLetterTimeline = gsap.timeline({
+        ease: 'power2.out',
+        repeat: -1,
+      })
 
-          {
-            yPercent: 0,
-            delay: 2,
-          }
-        )
+      if (document.querySelector(`.${styles.letterRoll}`)) {
+        singleLetterTimeline
+          .to(
+            `.${styles.letterRoll}`,
+            {
+              yPercent: 0,
+              delay: 2,
+            }
+          )
+          .to(
+            `.${styles.letterRoll}`,
+            {
+              yPercent: 100,
+            },
+            '+=1'
+          )
+          .to(
+            `.${styles.letterRoll}`,
+            {
+              yPercent: 0,
+            },
+            '+=2'
+          )
+      }
 
-        .to(
-          `.${styles.letterRoll}`,
-
-          {
-            yPercent: 100,
+      letterTimeline = gsap.timeline()
+      letterTimeline.to(
+        `.${styles.rtol}, .${styles.ltor}`,
+        {
+          x: 0,
+          duration: 0.6,
+          stagger: {
+            each: 0.256,
           },
-          '+=1'
-        )
-        .to(
-          `.${styles.letterRoll}`,
-
-          {
-            yPercent: 0,
-          },
-          '+=2'
-        )
+        },
+        0
+      )
     }
 
-    const letterTimeline = gsap.timeline()
-    letterTimeline.to(
-      `.${styles.rtol}, .${styles.ltor}`,
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.6,
-        stagger: {
-          each: 0.256,
-        },
-      },
-      0
-    )
+    if (document.readyState === 'complete') {
+      startHeroAnimations()
+    } else {
+      window.addEventListener('load', startHeroAnimations, { once: true })
+    }
+
     return () => {
+      window.removeEventListener('load', startHeroAnimations)
       window.removeEventListener('resize', resize)
-      letterTimeline.kill()
+      singleLetterTimeline?.kill()
+      letterTimeline?.kill()
       mm.kill()
     }
   }, [])
@@ -564,6 +584,7 @@ const LandPage = ({playWorks , articles}) => {
     e.stopPropagation()
   }
   const videoRef = useRef(null)
+  const [heroVideoReady, setHeroVideoReady] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [hasReachedTop, setHasReachedTop] = useState(false)
   const [herovideoOpen, setHerovideoOpen] = useState(false)
@@ -606,8 +627,36 @@ const LandPage = ({playWorks , articles}) => {
     }
   }, [])
 
+  // Mount the hero video after window.load + a short delay so:
+  // 1. The video never exists in the DOM during the LCP window (poster = LCP)
+  // 2. The 0.6s GSAP text animation completes before the video starts playing,
+  //    ensuring "text first, then video" as required.
+  useEffect(() => {
+    let t
+    const ready = () => { t = setTimeout(() => setHeroVideoReady(true), 1000) }
+    if (document.readyState === 'complete') {
+      ready()
+    } else {
+      window.addEventListener('load', ready, { once: true })
+    }
+    return () => clearTimeout(t)
+  }, [])
+
   return (
     <>
+      <Head>
+        {/* Preload AVIF for browsers that support it — avoids double-download when
+            the <picture> also picks AVIF from its <source type="image/avif"> */}
+        <link
+          rel="preload"
+          as="image"
+          type="image/avif"
+          href="/img/home/creative_agency_banner-768.avif"
+          imageSrcSet="/img/home/creative_agency_banner-480.avif 480w, /img/home/creative_agency_banner-768.avif 768w, /img/home/creative_agency_banner-1280.avif 1280w, /img/home/creative_agency_banner-1920.avif 1920w"
+          imageSizes="100vw"
+          fetchPriority="high"
+        />
+      </Head>
       <SEO
         title="Branding, Video and Podcast Production Agency | Makerrs"
         description="Top agency for branding services, video production, podcast production and video crew services. Global creative partner to borderless brands and enterprises."
@@ -634,15 +683,41 @@ const LandPage = ({playWorks , articles}) => {
             </div>
 
             <div className="banner relative h-[50%] w-full overflow-hidden">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                src="/creative_agency_banner.mp4"
-                poster="/img/home/creative_agency_banner.webp"
-                className="absolute top-0 left-0 w-full h-full object-cover"
-              ></video>
+              {/* Poster image is always present — this becomes the LCP element.
+                  fetchPriority="high" tells the browser to load it first. */}
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet="/img/home/creative_agency_banner-480.avif 480w, /img/home/creative_agency_banner-768.avif 768w, /img/home/creative_agency_banner-1280.avif 1280w, /img/home/creative_agency_banner-1920.avif 1920w"
+                  sizes="100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcSet="/img/home/creative_agency_banner-480.webp 480w, /img/home/creative_agency_banner-768.webp 768w, /img/home/creative_agency_banner-1280.webp 1280w, /img/home/creative_agency_banner-1920.webp 1920w"
+                  sizes="100vw"
+                />
+                <img
+                  src="/img/home/creative_agency_banner-768.webp"
+                  alt=""
+                  width="1920"
+                  height="1080"
+                  fetchPriority="high"
+                  className="absolute top-0 left-0 w-full h-full object-cover"
+                />
+              </picture>
+              {/* Video mounts only after window.load — zero impact on LCP.
+                  It covers the poster once it starts playing. */}
+              {heroVideoReady && (
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  src="/creative_agency_banner.mp4"
+                  preload="none"
+                  className="absolute top-0 left-0 w-full h-full object-cover"
+                />
+              )}
               <div className={` ${styles.title}`}>
                 <div className={` ${styles.textblend} md:whitespace-nowrap`}>
                   TO BORDERLESS BRANDS
@@ -790,12 +865,8 @@ const LandPage = ({playWorks , articles}) => {
 export default LandPage
 
 export async function getStaticProps() {
-  const {
-    status,
-    data: { works },
-  } = await getPlaySliderData()
-  // console.log(status)
-  const playWorks = works?.nodes?.map((n) => ({
+  const playResult = await getPlaySliderData()
+  const playWorks = playResult?.data?.works?.nodes?.map((n) => ({
     key: n?.slug,
     type: 'play',
     title: n?.title,
@@ -804,14 +875,13 @@ export async function getStaticProps() {
       width: n?.workDetails?.previewLink?.mediaDetails?.width ?? '',
       height: n?.workDetails?.previewLink?.mediaDetails?.height ?? '',
     },
-    // href: `/work/play?work=${n?.slug}`,
     href: `?work=${n?.slug}`,
-  }))
-  const { data } = await getLatestArticle()
+  })) ?? []
+  const articleResult = await getLatestArticle()
   return {
     props: {
       playWorks,
-      articles: data?.posts?.nodes?.map(formateBlogPostFunc),
+      articles: articleResult?.data?.posts?.nodes?.map(formateBlogPostFunc) ?? [],
     },
   }
 }

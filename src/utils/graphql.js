@@ -155,6 +155,8 @@ const getWpQuery = async (query, variables) => {
     data: null,
   }
   try {
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 10000)
     const result = await fetch(WP_HOST, {
       method: 'POST',
       headers: {
@@ -164,18 +166,14 @@ const getWpQuery = async (query, variables) => {
         query,
         ...options,
       }),
+      signal: controller.signal,
     })
-    // console.log(result.status)
+    clearTimeout(timeout)
     if (result.ok) {
       resBody.status = 'success'
       resBody.data = (await result.json())?.data
     }
   } catch (error) {
-    // console.log({
-    //   query,
-    //   ...options,
-    // })
-
     console.log(`Error at : ${WP_HOST}`, JSON.stringify(error))
     resBody.status = 'error'
     resBody.data = null
@@ -304,8 +302,20 @@ export const getAllTags = () => {
   `)
 }
 export const getRelatedBlogs = async (slug, tagSlug) => {
-  const { data: similarData } = await getWpQuery(
-    `
+  const { data: latestData } = await getWpQuery(`
+  query getLatestBlogs {
+    posts(first:4, where: {orderby: {field: DATE, order: DESC}}) {
+      nodes{
+        ${POST_QUERY}
+      }
+    }
+  }
+  `)
+
+  let similarData = null
+  if (tagSlug?.length) {
+    ;({ data: similarData } = await getWpQuery(
+      `
   query getBlogsByTag($tagSlug: [String]) {
     posts(first:4, where: {tagSlugIn: $tagSlug, orderby: {field: DATE, order: DESC}}) {
       nodes{
@@ -314,17 +324,10 @@ export const getRelatedBlogs = async (slug, tagSlug) => {
     }
   }
   `,
-    { tagSlug }
-  )
-  const { data: latestData } = await getWpQuery(`
-  query getLatestBlogs($tagSlug: [String]) {
-    posts(first:4, where: {orderby: {field: DATE, order: DESC}}) {
-      nodes{
-        ${POST_QUERY}
-      }
-    }
+      { tagSlug }
+    ))
   }
-  `)
+
   const relatedBlogs = [
     ...(latestData?.posts?.nodes ?? []),
     ...(similarData?.posts?.nodes ?? []),

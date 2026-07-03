@@ -203,7 +203,7 @@ export const Header = () => {
                     className={`md:w-[190px] w-[130px] ${styles.image} cursor-pointer`}
                     width="190"
                     height="44"
-                    src="/makerrs_logo.png"
+                    src="/makerrs_logo.webp"
                     alt="makerrs_logo"
                   />
                 </Link>
@@ -516,7 +516,7 @@ export const Header = () => {
               <div className="py-10 max-w-[430px] flex flex-col h-full">
                 <div className="mb-10">
                   <Link href="/">
-                    <img src="/makerrs_logo.png" alt="" className="w-[190px]" />
+                    <img src="/makerrs_logo.webp" alt="" className="w-[190px]" />
                   </Link>
                 </div>
 
@@ -531,8 +531,10 @@ export const Header = () => {
                   ></video> */}
                   <img
                     className="nav-menu-image w-full h-full rounded-lg"
-                    src="/img/home/hamburger_image_new.png"
+                    src="/img/home/hamburger_image_new.webp"
                     alt="Menu preview"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
 
@@ -675,7 +677,7 @@ export const Header = () => {
                 {/* <div className="overflow-auto nav-wrapper"> */}
                 <div className="mb-12 max-w-[136px] block md:hidden">
                   <Link href="/">
-                    <img src="/makerrs_logo.png" alt="" className="w-[190px]" />
+                    <img src="/makerrs_logo.webp" alt="" className="w-[190px]" />
                   </Link>
                 </div>
 

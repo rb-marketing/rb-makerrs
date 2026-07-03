@@ -15,7 +15,7 @@ const slides = [
       'Whether you are looking for a new brand identity system,  sticky event branding or well-designed marketing collateral – our design solutions help your business stand out and start conversations.',
     video: {
       src: '/img/design_video.mp4',
-      poster: '/img/services/design/design_video.png',
+      poster: '/img/services/design/design_video.webp',
       width: '1440',
       height: '810',
     },
@@ -31,7 +31,7 @@ const slides = [
       'We take a strategic approach to planning, crafting and scaling video content for brands – be it for a product launch or for YouTube channel growth. We also support on-demand end-to-end video production requirements around customer testimonial videos, hiring and culture videos, and more.',
     video: {
       src: '/img/services/videos/hero.mp4',
-      poster: '/img/services/videos/hero.png',
+      poster: '/img/services/videos/hero.webp',
       width: '1440',
       height: '810',
     },
@@ -47,7 +47,7 @@ const slides = [
       'Looking to lead industry conversations, build community and drive ROI? Go from content research, concept and positioning to podcast branding, production, distribution and amplification with one global podcast partner.',
     video: {
       src: '/img/makers_podcast.mp4',
-      poster: '/img/services/podcast/hero-poster.png',
+      poster: '/img/services/podcast/hero-poster.webp',
       width: '1440',
       height: '810',
     },
@@ -64,7 +64,7 @@ const slides = [
       'From brand awareness campaigns and product launch campaigns to employer branding campaigns and ESG campaigns–we take our cues from people and culture, and turn real insights into relatable campaigns that align perfectly with your business goals.',
     video: {
       src: '/img/services/campaign/hero.mp4',
-      poster: '/img/services/campaign/hero.png',
+      poster: '/img/services/campaign/hero.webp',
       width: '1440',
       height: '810',
     },
@@ -104,6 +104,45 @@ export const SolutionsSection = () => {
       )
     } catch {}
   }
+  useEffect(() => {
+    const videos = containerRef.current?.querySelectorAll('[data-lazy-video]')
+    if (!videos?.length) return
+    let observer
+
+    const setupObserver = () => {
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(({ target: video, isIntersecting }) => {
+            if (isIntersecting) {
+              // Set src only on first intersection — no network activity before this point
+              if (video.dataset.src && !video.getAttribute('src')) {
+                video.setAttribute('src', video.dataset.src)
+              }
+              // Assign poster only when the slide is about to play so the
+              // browser doesn't download all poster images at page load.
+              if (video.dataset.poster && !video.getAttribute('poster')) {
+                video.setAttribute('poster', video.dataset.poster)
+              }
+              video.play().catch(() => {})
+            } else {
+              video.pause()
+            }
+          })
+        },
+        { threshold: 0.25 }
+      )
+      videos.forEach((v) => observer.observe(v))
+    }
+
+    if (document.readyState === 'complete') {
+      setupObserver()
+    } else {
+      window.addEventListener('load', setupObserver, { once: true })
+    }
+
+    return () => observer?.disconnect()
+  }, [])
+
   useEffect(() => {
     const container = containerRef.current
     const contents = document.querySelectorAll('.content-track > div')
@@ -269,12 +308,15 @@ export const SolutionsSection = () => {
                     <div className="w-full md:w-1/2 md:pr-7 pt-11 md:pt-0 ">
                       {/* <img alt={s.title} {...s?.image} className="w-full" /> */}
                       <video
-                        autoPlay
                         playsInline
                         muted
                         loop
-                        alt={s.title}
-                        {...s?.video}
+                        data-src={s.video.src}
+                        width={s.video.width}
+                        height={s.video.height}
+                        data-poster={s.video.poster}
+                        preload="none"
+                        data-lazy-video
                         className="w-full h-full object-cover"
                       ></video>
                     </div>

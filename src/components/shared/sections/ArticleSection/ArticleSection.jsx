@@ -2,9 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { cx } from 'class-variance-authority'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { ArrowButton } from '@/components/ui'
 import { LineHeading, NewsletterField } from '@/components/shared'
-import { formateDate } from '@/utils/formate'
 import { ArticleRow } from './ArticleRow'
 import ArticleCard from './ArticleCard'
 import { LineArrow } from '@/components/icons'
@@ -53,6 +51,7 @@ export const ArticleSection = ({
 }) => {
   const [hoveredSlide, setHoveredSlide] = useState()
   const [enter, setEnter] = useState(false)
+  const [hasHovered, setHasHovered] = useState(false)
   const cursor = useRef()
   useEffect(() => {
     const pointerMove = (e) => {
@@ -71,6 +70,7 @@ export const ArticleSection = ({
   }, [])
   const onPointerEnter = (index) => {
     setEnter(true)
+    setHasHovered(true)
     setHoveredSlide(index)
     gsap.to(cursor.current, {
       alpha: 1,
@@ -102,25 +102,25 @@ export const ArticleSection = ({
             </div>
           )}
         </div>
-        <Swiper
-          className="swiper-overflow-visible md:hidden"
-          spaceBetween={24}
-          slidesPerView={1.1}
-        >
-          {articles.map((article, index) => {
-            return (
+        <div className="md:hidden">
+          <Swiper
+            className="swiper-overflow-visible"
+            spaceBetween={16}
+            slidesPerView={1.1}
+          >
+            {articles.map(({ id, tags, slug, ...article }, index) => (
               <SwiperSlide key={index}>
                 <ArticleCard
                   {...article}
-                  href={`/${article?.tags[0].slug || 'blog'}/${article.slug}`}
+                  href={`/${tags?.[0]?.slug}/${slug}`}
                 />
               </SwiperSlide>
-            )
-          })}
-        </Swiper>
+            ))}
+          </Swiper>
+        </div>
         <div
           data-enter={enter}
-          className="hidden flex-col md:flex data-[enter=true]:text-rb-black/60 text-rb-black"
+          className="hidden md:flex flex-col data-[enter=true]:text-rb-black/60 text-rb-black"
         >
           {articles.map(({ id, ...article }, index) => (
             <ArticleRow
@@ -136,7 +136,7 @@ export const ArticleSection = ({
           className="w-[200px] h-[160px] fixed pointer-events-none overflow-hidden left-[-90px] top-[-62px]  opacity-0 z-[2] hidden md:block"
           ref={cursor}
         >
-          {articles.map(({ featuredImage, id }, index) => (
+          {hasHovered && articles.map(({ featuredImage, id }, index) => (
             <img
               {...featuredImage}
               key={index}

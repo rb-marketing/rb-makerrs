@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Everett';
+  src: url('/fonts/Everett-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 // html,
 // body {
 //    // scroll-behavior: smooth;
@@ -9,15 +17,9 @@
 //   @apply md:cursor-none;
 // }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
-
 .font-inter {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter), sans-serif;
   font-optical-sizing: auto;
-  // font-weight: 400;
   font-style: normal;
   font-variation-settings: 'slnt' 0;
 }
@@ -503,6 +505,12 @@ html.lenis {
   }
 
   .wp-block-columns {
+    @apply flex flex-col gap-4 md:flex-row md:flex-wrap;
+
+    > .wp-block-column {
+      @apply w-full md:flex-1 min-w-0;
+    }
+
     &.two-columns {
       @apply md:grid md:grid-cols-2 md:gap-2 max-w-fit;
     }
@@ -1430,6 +1438,13 @@ a:hover {
     }
   }
 
+  .wp-block-column figure.wp-block-image {
+    @media (min-width: 768px) {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
   .verticle {
     @apply max-w-fit;
     img {
@@ -1559,6 +1574,12 @@ a:hover {
   }
 
   .wp-block-columns {
+    @apply flex flex-col gap-4 md:flex-row md:flex-wrap;
+
+    > .wp-block-column {
+      @apply w-full md:flex-1 min-w-0;
+    }
+
     &.two-columns {
       @apply md:grid md:grid-cols-2 md:gap-2 max-w-fit;
     }
