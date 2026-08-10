@@ -11,7 +11,7 @@ import {
 import { ContentPostCard } from '@/components/shared/Cards/ContentPostCard'
 import { Button } from '@/components/ui'
 import { LineArrow } from '@/components/icons'
-import { aboutSchema } from '@/components/schema/about-schema'
+import { pageSchemas } from '@/components/schema/pages'
 import { WorkDropdown } from '@/components/dropdown/work-dropdown'
 import workPageOrder from '@/utils/workOrder'
 
@@ -20,6 +20,14 @@ const getCountryFromCookie = () => {
 
   const match = document.cookie.match(/user-country=([^;]+)/)
   return match ? match[1] : null
+}
+
+// Some case studies are India-only on one tab but still Global-visible on
+// another (see workOverrides.js) — tabRegions carries that per-tab override,
+// falling back to the post-level region when no tab-specific one is set.
+const isHiddenByRegion = (post, tab, country) => {
+  const region = post?.workDetails?.tabRegions?.[tab] ?? post?.workDetails?.region
+  return Boolean(region?.length && country && !region.includes(country))
 }
 
 const caseStudyTags = [
@@ -216,7 +224,7 @@ const WorkPage = ({ works, selectedvalue = DEFAULT_TAB }) => {
   const filteredPosts = _posts
     .filter((post) => {
       // 1️⃣ Region filter
-      if (post?.workDetails?.region?.length && country && !post?.workDetails?.region.includes(country)) {
+      if (isHiddenByRegion(post, selectedTag, country)) {
         return false
       }
 
@@ -334,7 +342,7 @@ const WorkPage = ({ works, selectedvalue = DEFAULT_TAB }) => {
                     <ContentPostCard
                       href={`/${post?.workDetails?.url}/${post.case_study_title}`}
                       page="work"
-                      priority={idx < 3}
+                      priority={idx < 3 && post.isLocalImage}
                       {...post}
                     />
                   </div>
@@ -386,7 +394,7 @@ const WorkPage = ({ works, selectedvalue = DEFAULT_TAB }) => {
               // Tag selected → count safely
               const total = _posts.filter((post) => {
                 // region filter
-                if (post?.workDetails?.region?.length && country && !post?.workDetails?.region.includes(country)) {
+                if (isHiddenByRegion(post, selectedTag, country)) {
                   return false
                 }
 
@@ -443,8 +451,10 @@ const WorkPage = ({ works, selectedvalue = DEFAULT_TAB }) => {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
-      ></script>
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(pageSchemas['work']),
+        }}
+      />
     </>
   )
 }
