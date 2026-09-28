@@ -5,119 +5,988 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+<!-- Main pages -->
 <url>
   <loc>https://www.makerrs.com</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/about-us</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/creative-cloud-technology</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/impact</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/work/featured</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/work/design</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/work/videos</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/work/podcast</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/work/campaign</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/brand-design-agency</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
+  <lastmod>2026-09-28</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.makerrs.com/video-production</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/podcast-production-services</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.makerrs.com/advertising-agency</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://www.makerrs.com/video-production-near-me</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
+  <loc>https://www.makerrs.com/brand-design-agency</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://www.makerrs.com/brand-identity-design-services</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/explainer-video-production-services</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/corporate-video-production-services</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/video-testimonial-production</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.makerrs.com/recruitment-video-production</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
+  <loc>https://www.makerrs.com/podcast-production-services</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.makerrs.com/ai-video-agency</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-production-near-me</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-identity-design-services</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video-production-services</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/corporate-video-production-services</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-testimonial-production</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/recruitment-video-production</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.makerrs.com/blog</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.makerrs.com/freelance-gigs</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
+  <loc>https://www.makerrs.com/about-us</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/creative-cloud-technology</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/impact</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://www.makerrs.com/contact</loc>
-  <lastmod>2026-01-21T16:15:00+05:30</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.70</priority>
 </url>
+<url>
+  <loc>https://www.makerrs.com/careers</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/freelance-gigs</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/terms</loc>
+  <lastmod>2026-09-28</lastmod>
+  <priority>0.30</priority>
+</url>
+<!-- Case studies -->
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/aakash-360-campaign</loc>
+  <lastmod>2026-08-04</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/ai-powered-singalong</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/animated-case-study-videos-infosys-employees</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/employee-wellbeing-ai-experience</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/indeed-india-radhika-apte</loc>
+  <lastmod>2026-08-10</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/indiagold</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/infosys-equinox-launch-4</loc>
+  <lastmod>2026-08-27</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/infosys-global-employer-brand</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/interactive-explainer-slb</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/l74-ciders-social-media</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/metro-wholesale-5-star-quality</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/metro-wholesale-one-more</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/my11circle-digital-ad-film</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/pudingding-cafe-design-launch</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/swiggy-extra-earnings</loc>
+  <lastmod>2026-09-02</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/swiggy-winter-jackets</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/unext-course-marketing</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/vymo-insurance-wholesale</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/vymo-lead-management</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/vymo-usa-banking</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/xiaomi-a4-5g-phone</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/xiaomi-beard-trimmer</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/xiaomi-buds</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/xiaomi-buds-5c</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-campaign/zivame-lingerie</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-design/3d-interactive-experience-infosys-topaz</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-design/abis-pro-meats</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-design/axis-bank-activation-campaign</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-design/bajaj-pulsar-augmented-reality</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-design/biocon-office-branding</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-design/infosys-sustainability-gallery</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-design/lillia-care-brand-launch</loc>
+  <lastmod>2026-05-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-design/thelagram-restaurant</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-designs/exicom-ev-charger-rebrand</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-designs/medalio-hotel-brand-identity</loc>
+  <lastmod>2026-07-10</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/brand-designs/pu-dingding-cafe</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-podcast/podcast-lakshmi-rebecca</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/3d-logo-animation-mumbai-indians</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/3d-product-reveal-video-exicom</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/abstract-animation-video-infosys-cobalt-launch</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/ai-video-swiggy</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/app-walkthrough-swiggy-delivery</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/case-study-videos-infosys-wsj</loc>
+  <lastmod>2026-08-11</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/csr-video-ashirvad</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/csr-video-infosys-street-child</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/culture-videos-texas-instruments</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/dara-explainer-video</loc>
+  <lastmod>2026-08-04</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/documentary-taneira-fashion</loc>
+  <lastmod>2026-09-19</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/documentary-tanishq-jewels</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/employee-wellness-healthifyme-app-video</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/explainer-video-koo</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/fashion-taneira-cyanotype</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/fashion-taneira-sanganeri</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/ge-aerospace-corporate-film</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/global-employer-branding</loc>
+  <lastmod>2026-08-25</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/healthcare-case-study-video-wipro</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/hiring-video-darwinbox</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/hiring-video-hotel-superhero</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/indeed-youtube-content</loc>
+  <lastmod>2026-08-04</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/microdrama-shaanu-ka-viva</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/multiplier-explainer-video</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/mygate-rewards-recognition</loc>
+  <lastmod>2026-09-20</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/poetic-video-mygate</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/rap-video-tata-womens-cricket-league</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/recruitment-video-colearn-education</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/recruitment-video-infosys-campus</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/saas-explainer-video-hansel</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/stock-footage-video-infosys-business-agility</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/sustainable-housing-documentary</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/tata-inclusion-auto-comp</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/thought-leadership-vymo-gordon-ritter</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/video-report-dozee-public-health</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/wipro-australia-corporate-film</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/women-in-stem-documentary</loc>
+  <lastmod>2026-05-08</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/work/video-production/xiaomi-pocket-power-bank</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.70</priority>
+</url>
+<!-- Blog posts -->
+<url>
+  <loc>https://www.makerrs.com/ai-video/gen-ai-microdrama</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/ai-video/generative-ai-reshaping-content</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-campaign/advertising-mens-health-in-india</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-campaign/banking-advertising-campaigns</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-campaign/electric-vehicle-marketing</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-campaign/power-of-brand-promotions</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-campaign/ultimate-guide-to-successful-campaigns</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-design/design-thinking-lessons-from-gerald-genta</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-design/paris-2024-olympics-identity-review</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-design/wellness-brand-packaging-design</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-experience/b2b-private-social-apps</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-experience/experiential-marketing-for-retail-brands</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-experience/fashion-meets-the-future</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-experience/marketing-wisdom-from-marathon-runner</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-identity/sonic-branding-success</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-strategy/alcobev-industrys-toast-to-a-greener-tomorrow</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-strategy/build-brand-goodwill</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-strategy/consumer-durables-content-marketing</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-strategy/consumer-durables-green-marketing</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/brand-strategy/winning-brand-strategy</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/case-study-video/award-winning-case-study-videos</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/case-study-video/b2b-video-case-studies</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/case-study-video/case-study-video-strategy</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/case-study-video/corporate-video-case-studies</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/case-study-video/marketing-case-study-videos</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/case-study-video/saas-case-study-videos</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/content-marketing/automotive-brands</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/content-marketing/content-marketing-trends</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/content-marketing/creative-marketing-indian-alcobev</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/content-marketing/fmcg-storytelling</loc>
+  <lastmod>2026-04-21</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/content-marketing/how-to-create-engaging-storytelling-videos</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/content-marketing/how-to-make-corporate-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/content-marketing/influencer-marketing-fashion-lifestyle</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/content-marketing/insurance-brands</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/content-marketing/storytelling-in-ecommerce-advertising</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/creative-agency/brand-agency-relationships</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding-video/storytelling-for-modern-teams</loc>
+  <lastmod>2026-03-30</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/b2b-employer-branding-campaigns-and-videos</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/best-practices-to-attract-top-talent</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/best-pride-videos</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/employer-branding-campaigns-2026</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/employer-branding-companies</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/employer-branding-content</loc>
+  <lastmod>2026-05-15</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/employer-branding-framework</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/employer-branding-guide</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/employer-branding-solutions</loc>
+  <lastmod>2026-05-15</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/employer-branding-strategy</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/employer-branding-video-guide</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/improve-employer-branding</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/next-in-employer-branding</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/employer-branding/why-is-employer-branding-important</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/3d-explainer-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/b2b-explainer-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/best-animated-explainer</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/best-explainer-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/corporate-explainer-videos</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/custom-b2b-explainer-videos</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/explainer-video-services</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/healthcare-marketing</loc>
+  <lastmod>2026-05-15</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/how-explainer-videos-help-businesses</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/how-to-make-explainer-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/product-explainer-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/saas-explainer-videos</loc>
+  <lastmod>2026-03-30</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/startup-explainer-videos</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/tech-explainer-videos</loc>
+  <lastmod>2026-05-15</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/top-explainer-video-companies</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/types</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/what-are-explainer-videos</loc>
+  <lastmod>2026-05-04</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/explainer-video/whiteboard-explainer-videos</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/podcast-production/podcast-analytics</loc>
+  <lastmod>2026-08-04</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/podcast-production/podcast-consultant</loc>
+  <lastmod>2026-08-04</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/podcast-production/podcast-marketing</loc>
+  <lastmod>2026-08-04</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/podcast-production/podcast-production</loc>
+  <lastmod>2026-08-04</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/podcast-production/podcast-strategy</loc>
+  <lastmod>2026-08-04</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/professional-video-crews/paris-hugo-leenhardt</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/recruitment-video/best-recruitment-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/recruitment-videos/recruitment-videos-for-companies</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/b2b-videos-for-localization</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/best-animated-explainer-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/best-cause-marketing-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/effective-b2b-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/going-viral-now</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/how-to-make-talking-head-videos</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/how-to-write-video-brief</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/interview-video-production</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/pandemic-videos</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/remote-virtual-video-shoot</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/teaser-videos</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/ugc-video-campaign</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/video-examples-bofu-mofu</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/video-marketing-for-b2b-startups</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/video-on-landing-pages</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/videos-drive-customer-acquisition</loc>
+  <lastmod>2026-02-19</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/videos-for-consumer-technology-brands</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/videos-millenials-consume</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/viral-video-ads</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-marketing/vlogging-for-business</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-production/how-to-shoot-interview-videos</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-production/mirrorless-cameras</loc>
+  <lastmod>2026-02-20</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.makerrs.com/video-production/video-production-process</loc>
+  <lastmod>2026-02-23</lastmod>
+  <priority>0.60</priority>
+</url>
+
 </urlset>
